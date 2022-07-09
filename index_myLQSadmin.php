@@ -13,11 +13,11 @@ include_once "./config.servers.php";
 
 
 # my log files for queries and comments 
-$log_comments_path = "../../assets/log-files/log_comments.log";
-$log_queries_path = "../../assets/log-files/log_queries.log";
+$log_comments_path = "./assets/log-files/log_comments.log";
+$log_queries_path = "./assets/log-files/log_queries.log";
 
 # my configuration for redirect errors.log 
-$php_errors_log =  "../../assets/log-files/php_errors.log";
+$php_errors_log =  "./assets/log-files/php_errors.log";
 error_reporting(E_ALL);
 ini_set('ignore_repeated_errors',TRUE);
 ini_set('display_errors', FALSE);
