@@ -1,0 +1,108 @@
+Día: 27-05-2022
+
+Carpeta trabajada en el curso: cómo hacer un gestor de archivos
+    https://docs.google.com/presentation/d/1HKQgUlH7irX9hg64eJYWDCa1q2XpcLHCKnpu7BsNVIY/edit#slide=id.p
+    fopen, fwrite, fclose....
+
+PREGUNTAS going back or forth
+
+LINKS
+
+Teacher doc formularios y sql: 
+   forms: 
+      ppal: https://docs.google.com/presentation/d/10KPVZayCSg29IWvMJfExxNbhR1G-13oPhAculRErREs/edit#slide=id.g11142b17da2_0_11
+
+      gestión proyectos: https://docs.google.com/presentation/d/1T1V1k0XzKObTIOS2_Cor8KFk8PMlLJ-z6jilQgYkilA/edit#slide=id.g12b074cd340_0_0 
+      
+      sql: https://docs.google.com/presentation/d/19ttx2_dnJ03UezVY-OUa4_YW-nCgWD-ti76Sa_qfLac/edit#slide=id.gcee8b4bc24_0_15
+      manejo ficheros: https://docs.google.com/presentation/d/1HKQgUlH7irX9hg64eJYWDCa1q2XpcLHCKnpu7BsNVIY/edit#slide=id.p
+      
+      pdf 1: (estilos css) https://drive.google.com/file/d/1ZQalxTnkpeudBpy3SzCUJBrM_0FUYE0S/view
+      
+      pdf 2: (pasos elaboración pág web) https://drive.google.com/file/d/1A6rvxAsA1WqbOaAHxHP_1ntxEbjVCwVq/view
+      
+      pdf 3: (ejemplo proyecto curso) https://docs.google.com/presentation/d/1Jmp8ov7ZuZKMdrpHbyyfsMQ5Aky6noxitPJ0cQiJVls/edit#slide=id.gc6f3a0a6bb_0_10 
+
+      https://docs.google.com/presentation/d/192qBVZA-2EdqRAwgeeOGqekTO1HkHQUQtqRd_3vrdyU/edit#slide=id.g1271cf198d1_0_0
+      
+      https://docs.google.com/presentation/d/1UkOp5jkjx8Bt-CPllg5Itk9vQmgsQkedmaF1KspnfSo/edit#slide=id.gbc28d3223a_2_12
+      
+      https://docs.google.com/presentation/d/1UkOp5jkjx8Bt-CPllg5Itk9vQmgsQkedmaF1KspnfSo/edit#slide=id.gc44bee3b8b_0_13
+
+   mysql: root @m....@   
+        En Xampp el servidor de MySQL no arranca
+            https://josellovell.com/2020/11/07/xampp/en-xampp-el-servidor-de-mysql-no-arranca/
+    
+
+  C:\Windows\System32\drivers\etc\hosts (para colocar path...)
+
+  DB teacher:
+    http://192.168.1.215/php/06-WEBEJEMPLO/
+
+OBJ SEMANA: 
+    -liniks:
+        - https://docs.google.com/presentation/d/1FsLYhzi__GJJit8LsQtkDjsSpFd01YxvTbKJjQORNi8/edit#slide=id.gd48490cbdf_0_31
+    - SOA (ver google doc - api)
+    - Gestor para pasar data API a tu programa, API-REST
+        - TMDB, registrarse
+        - Buscar al key api
+        - Hacer buscador (formulario) para aplicar fetch y traer el json, usar función de php file content
+            (https://www.php.net/manual/es/function.file-get-contents.php)
+        - usar vewArray, y la función para revisar json    
+    - Instalar wordpress, plugin woocommerce, exportar e importar csv...
+    - Activar tienda Wordpress-Woocommerce
+
+1.- Wordpress (ejercicio 13 carpeta 'ejercicios-curso')
+
+    1.0.- obtener data películas en TMDB
+    1.1.- Welcome to WordPress. Before getting started, you will need to know the following items.
+        Database name, Database username, Database password, Database host
+        Table prefix (if you want to run more than one WordPress in a single database)
+        This information is being used to create a wp-config.php file. If for any reason this automatic file creation does not work, do not worry. All this does is fill in the database information to a configuration file. You may also simply open wp-config-sample.php in a text editor, fill in your information, and save it as wp-config.php. Need more help? Read the support article on wp-config.php.
+        In all likelihood, these items were supplied to you by your web host. If you do not have this information, then you will need to contact them before you can continue. If you are ready…
+    1.2.- Instalar plugins 
+        - woocommerce
+            - https://es.wordpress.org/plugins/woocommerce/
+        - subir db tables a woocommerce
+    
+
+2.- CURL
+    - LINKS 
+        - https://www.hostinger.es/tutoriales/comando-curl
+        - https://stackoverflow.com/questions/3592270/php-get-html-source-code-with-curl
+    - 2.1.- Qué son las cabeceras? y como se usan?
+    - 2.2.- Métodos de HTTP
+
+3.- Extensiones Chrome para ver jsons
+    - https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo?hl=es
+    - https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=es
+
+4.- Content Delivery API & SPA (single page Application)
+    - https://www.contentful.com/developers/docs/references/content-delivery-api/
+    - https://developer.mozilla.org/en-US/docs/Glossary/SPA
+    - Build a Single Page Application (SPA) Site With Vanilla.js (DARREN example)
+
+5.- POSTMAN
+
+6.- APIS - REST
+    - https://install.advancedrestclient.com/install
+        - https://hubworks.com/assets/doc/Rest-Client-Installation.pdf
+    - TBMD: igg pssw iggtmdb
+
+    POSTMAN: 
+        - Raw body editing—For sending data without any encoding
+        
+
+7.- Alimentac automática de info DB en una aplicación 
+        (ejemplo Alberto, matriculación alumnos en plataf 1 para sincron con moodle) 
+
+8.- Comunicación entre servidores           
+
+9.- INSTALAR MANTIS
+
+10.- Servidor NODE
+    - https://geekflare.com/es/nodejs-hosting-platform/
+    - https://docs.google.com/presentation/d/1Fgk6tNfM3X5mCN7idQLJCfjaBrMSAGGvfKaC07g_rkw/edit#slide=id.g122579f2011_0_0
+
+11.- bajar carpeta php/api-php    
+

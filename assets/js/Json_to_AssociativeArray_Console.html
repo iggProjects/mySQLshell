@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">	
+    <title>printJSON's</title>
+    <link rel="icon" type="image/x-icon" href="img-igg/igg-favicon.png">      
+
+    <style>
+      .divDemo { margin-bottom: 20px; ; border:5px solid gray; padding:5px;} 
+      .json_text { text-align:left; margin:auto; margin-top:10px; margin-left:20px; color:blue} 
+      .json_desc { text-align:left; margin:auto; margin-top:10px; margin-left:20px; font-size: 12px;} 
+    </style> 
+
+</head>
+
+<body>
+
+    <div style="text-align:left; margin:auto; margin-top:20px; margin-left:100px;">
+
+        <h1>Print Json structure in HTML and for Console the </h1>
+        
+        <h2 style="color:rgb(134, 8, 8);">Active console to see recursive function</h2>
+
+        <h3>JS functions are <span style="color:blue;">"write_Json_as_Text"</span> & recursive function <span style="color:green;">"json_console"</span></h3>
+
+        <div class="divDemo">
+        <p id="demo_s1" class="json_text"></p>
+        <p id="demo_s2" class="json_desc"></p>
+        </div>   
+
+        <div class="divDemo">
+        <p id="demo1" class="json_text"></p>
+        <p id="demo2" class="json_desc"></p>
+        </div>        
+
+        <div class="divDemo">
+        <p id="demo3" class="json_text"></p>
+        <p id="demo4" class="json_desc"></p>
+        </div>
+
+        <div class="divDemo">
+        <p id="demo5" class="json_text"></p>
+        <p id="demo6" class="json_desc"></p>
+        </div>        
+
+        <div class="divDemo">
+        <p id="demo7" class="json_text"></p>
+        <p id="demo8" class="json_desc"></p>
+        </div>        
+
+    </div>
+
+    <script>
+
+        /*
+            Recursive function to view json in console
+            view -> Json-AssociativeArray-v1.html
+        */
+        
+        function json_console (json){
+            /* Clasical view of JSON using console.log */
+            console_Log('JSON','black','white',1);
+            console.log(Object.entries(json));
+            /* Init function calling 'json_recursive' function */
+            for (key_act in json) {
+                if ( typeof json[key_act] != 'object' ) { 
+                    console_Log('[' + key_act + '] = ' + json[key_act],'','green',1); 
+                } 
+                else {
+                    var prev_key="";           
+                    json_recursive(prev_key,key_act,json[key_act]); 
+                } 
+            }  
+        }
+        /* recursive function */
+        function json_recursive(previous_key,json_key,json_value) {      
+            if ( json_value && (typeof json_value != 'object') ) { 
+                previous_key += "["+json_key+"]";
+                console_Log(previous_key +  ' = ' + json_value,'','green',1);         
+              } else {        
+                previous_key += "["+json_key+"]";
+                for (k in json_value) { json_recursive(previous_key,k,json_value[k]); }
+            }    
+        }
+
+        /* VIEW JSON in HTML ELEMENT. This is for 3 levels only ! */        
+        function write_Json_as_Text(my_json_file,html_id) {
+        
+            var text="<b>JSON elements</b><br><br>";
+            var i=1;    
+            var indice = '00';
+            
+            function index(m){
+                var n="";
+                if ( m < 10 ) { n = '0' + m; } else { n = i;}
+                return n;
+            }
+            
+            for (key in my_json_file) {               
+                indice=index(i);
+                if( typeof my_json_file[key] == 'object' ) {        
+                    for (key1 in my_json_file[key]) {        
+                        indice=index(i);                 
+                        if ( typeof my_json_file[key][key1] == 'object' ) {
+                            for (key2 in my_json_file[key][key1] ) {                         
+                                indice=index(i);                   
+                                // 3 level in key2                    
+                                text += indice + ' → my_json_file[' + key + '][' + key1 + '][' + key2 + '] → ' + my_json_file[key][key1][key2] + '<br>';
+                                i++;     
+                            }
+                        } else {                    
+                            text += indice + ' → my_json_file[' + key + '][' + key1 + '] → ' + my_json_file[key][key1] + '<br>'; 
+                            i++;
+                        }                
+                    }
+                    text += '<br>'; 
+                } else {
+                    indice=index(i);              
+                    text += indice + ' → my_json_file[' + key + '] → ' + my_json_file[key] + '<br>'; 
+                    i++;
+                    text += '<br>';
+                }   
+            }
+        
+            return document.getElementById(html_id).innerHTML = text;        
+        }
+        
+        /* Function to print messages with format in consola */
+        function console_Log (msG,bckgCol,col,lines){
+            var linesJump=''; 
+            for (i=1;i<parseInt(lines);i++){
+                linesJump+='\n';
+            }
+            var msg='%c ' + msG + ' ' + linesJump;
+            var colEffects='line-height:20px; background:'+bckgCol+'; color:'+col; 
+            console.log(msg,colEffects);                
+        }     
+
+</script>    
+
+<script>
+
+    /*  DIFFERENT JSON'S  */
+
+    var tittle_text="";    
+
+    let json_simple = [{"num":[ "cero", "uno", "dos"]},{"letra":["a","b","c","d"]}, {1:"string"},"hola hola"];
+
+    let json_ex = [ {"id" : "1","msg": "hi","tid" : "2013-05-05 23:35", "fromWho": "hello1@email.se"},
+            {"id" : "2","msg": "there","tid" : "2013-05-05 23:45","fromWho": "hello2@email.se"},
+            {"user": {"name":"Iñaki", "age":10} }, {0: ["cero","uno"] }, {"col": ["white","black"] } ] ;
+
+    let json_ex1={"source": "/var/log/apache2/git.1234.de-443-access.json","data": {"http_code": 204,"pid": "-","request_id": "-","log_level": "-","body_size": 0,"host": "git.1234.de","peer_ip": "10.200.13.212","duration": 1693,"source": "-","client_port": "-","error_message": "-","client_ip": "10.200.13.333","elem": {"pais": "eus","continente": "ue", "moneda": {1:"euro",2:"dólar"}}}, "path": "/var/log/apache2"}
+    
+    let json_ex2 = { 
+        "members" : [ 
+            {"name" : "Molecule Man","age" : 29,"secretIdentity" : "Dan Jukes","powers" : ["Radiation resistance", "Turning tiny", "Radiation blast" ] }, 
+            {"name" : "Molecule Man","age" : 29,"secretIdentity" : "Dan Jukes","powers" : ["Radiation resistance", "Turning tiny", "Radiation blast" ] } 
+        ] 
+    } ;       
+
+    let json_ex3={
+  "squadName" : "Super Hero Squad",
+  "homeTown" : "Metro City",
+  "formed" : 2016,
+  "secretBase" : "Super tower",
+  "active" : true,
+  "members" : [
+    {
+      "name" : "Molecule Man",
+      "age" : 29,
+      "secretIdentity" : "Dan Jukes",
+      "powers" : [
+        "Radiation resistance",
+        "Turning tiny",
+        "Radiation blast"
+        ]   
+    },
+    {
+      "name" : "Madame Uppercut",
+      "age" : 39,
+      "secretIdentity" : "Jane Wilson",
+      "powers" : [
+        "Million tonne punch",
+        "Damage resistance",
+        "Superhuman reflexes"
+        ]
+    },
+    {
+      "name" : "Eternal Flame",
+      "age" : 1000000,
+      "secretIdentity" : "Unknown",
+      "powers" : [
+        "Immortality",
+        "Heat Immunity",
+        "Inferno",
+        "Teleportation",
+        "Interdimensional travel"
+      ]
+    }
+    ],
+
+    "hola":"hola"
+}
+
+    // writing "json" in html    
+    tittle_text = `<b><span style='color:blue;'>1.- Length of JSON:</span> ${json_simple.length}</b><br><br>`;
+    document.getElementById("demo_s1").innerHTML = tittle_text + JSON.stringify(json_simple,null,4);
+    console_Log('MAIN: Entrando al 1er JSON','blue','white',2);
+    // call to write JSON
+    write_Json_as_Text(json_simple,'demo_s2');   
+
+    // writing "json_ex" in html    
+    tittle_text = `<b><span style='color:blue;'>1.- Length of JSON:</span> ${json_ex.length}</b><br><br>`;
+    document.getElementById("demo1").innerHTML = tittle_text + JSON.stringify(json_ex,null,4);
+    console_Log('MAIN: Entrando al 2do JSON','blue','white',2);
+    // call to write JSON 
+    write_Json_as_Text(json_ex,'demo2');   
+
+    // writing "json_ex1" in html
+    tittle_text = `<b><span style='color:blue;'>2.- Length of JSON:</span> ${Object.keys(json_ex1).length}</b><br><br>`;
+    document.getElementById("demo3").innerHTML = tittle_text + JSON.stringify(json_ex1,null,4);
+    console_Log('MAIN: Entrando al 3er JSON','blue','white',2);
+    // call to write JSON
+    write_Json_as_Text(json_ex1,'demo4');   
+
+    // writing "json_ex2" in html
+    tittle_text = `<b><span style='color:blue;'>2.- Length of JSON:</span> ${Object.keys(json_ex2).length}</b><br><br>`;
+    document.getElementById("demo5").innerHTML = tittle_text + JSON.stringify(json_ex2,null,4);
+    console_Log('MAIN: Entrando al 4to JSON','blue','white',2);
+    // call to write JSON
+    write_Json_as_Text(json_ex2,'demo6');   
+
+    // writing "json_ex3" in html
+    tittle_text = `<b><span style='color:blue;'>2.- Length of JSON:</span> ${Object.keys(json_ex3).length}</b><br><br>`;
+    document.getElementById("demo7").innerHTML = tittle_text + JSON.stringify(json_ex3,null,4);
+    console_Log('MAIN: Entrando al 5to JSON','blue','white',2);
+    // call to write JSON
+    write_Json_as_Text(json_ex3,'demo8');       
+
+    /*
+    **    PRINT IN CONSOLE WITH RECURSIVE FUNCTION  
+    */
+    console_Log('=======Recursive version for json_ex=======','blue','white',2);
+    // call to view json in console
+    json_console(json_ex);
+
+    console_Log('=======Recursive version for json_ex1=======','blue','white',2);
+    // call to view json in console
+    json_console(json_ex1);
+
+    console_Log('=======Recursive version for json_ex2=======','blue','white',2);
+    // call to view json in console
+    json_console(json_ex2);    
+
+    console_Log('=======Recursive version for json_ex3=======','blue','white',2);
+    // call to view json in console
+    json_console(json_ex3);    
+
+
+</script>
+
+</body>
+</html>

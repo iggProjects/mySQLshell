@@ -1,0 +1,61 @@
+# Historia/Evolución COMMITs
+----------------------------
+
+      -------------------
+      |                 |
+      |  Último Commit  |      HEAD       Identificador SHA1     Más Nuevo
+      |                 |
+      -------------------
+
+      -------------------
+      |                 |
+      |  N. Commit      |      HEAD~1     Identificador SHA1
+      |                 |
+      -------------------
+
+      -------------------
+      |                 |
+      |  2do. Commit    |      HEAD~2     Identificador SHA1
+      |                 |
+      -------------------
+
+      -------------------
+      |                 |
+      |  Commit Inicial |      HEAD~N     Identificador SHA1        Más Viejo
+      |                 |
+      -------------------
+
+# 3 areas de trabajo
+----------------------
+
+                                -------------------------- Ocultos en .git
+                                |                      |
+                                |                      |
+      Arbol de Trabajo       Area Staging      Historia/Evolución
+      .- agrego                 Index            .- COMMITS
+      .- borro                  Stage
+      .- edito                Compromiso?
+      ------------------    ------------------    -------------------
+      |                |    |                |    |                 |
+      |                |    |                |    |  Último Commit  |      HEAD     Identificador SHA1
+      |                |    |                |    |                 |
+      |                |    |                |    ------------------
+      |                |    |                |
+      |                |    |                |    -------------------
+      |                |    |                |    |                 |
+      |                |    |                |    |  N. Commit      |      HEAD~1     Identificador SHA1
+      |                |    |                |    |                 |
+      |                |    |                |    -------------------
+      |                |    |                |
+      |                |    |                |    -------------------
+      |                |    |                |    |                 |
+      |                |    |                |    |  2do. Commit    |      HEAD~2     Identificador SHA1
+      |                |    |                |    |                 |
+      |                |    |                |    -------------------
+      |                |    |                |
+      |                |    |                |    -------------------
+      |                |    |                |    |                 |
+      |                |    |                |    |  Commit Inicial |      HEAD~N     Identificador SHA1
+      |                |    |                |    |                 |
+      ------------------    ------------------    -------------------
+

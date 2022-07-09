@@ -1,0 +1,177 @@
+# Git Clone, clonar proyectos de algun repositorio con diferentes protocolos
+git clone https://github.com/samoshkin/tmux-config.git
+git clone https://github.com/prettier/vim-prettier
+git clone ssh://git-master@haumea/~/ProbandoGit
+
+# Configurar una Identidad GIT para el usuario actual
+git config --global user.name "Ziggy"
+git config --global user.email "jpelorat@gmail.com"
+
+# Configurar detalles del usuario actual
+git config --global color.ui auto
+git config --global core.editor "vim"
+
+# Listar las configuraciones del usuario actual
+git config --list 
+
+# Documentacion (Tutorial, chuleta, etc.)
+wget https://cse.unl.edu/~cbourke/gitTutorial.pdf
+wget https://about.gitlab.com/images/press/git-cheat-sheet.pdf
+wget https://github.com/progit/progit2/releases/download/2.1.338/progit.pdf
+
+# Version de GIT
+git --version
+
+# Inicializar un proyecto/repositorio en el directorio actual
+git init
+
+# Estado del repositorio/proyecto
+git status
+
+# Bitácora del repositorio
+git log
+
+# Bitácora simplificada en una sola línea por COMMIT
+git log --oneline 
+
+# Agregar Archivo
+git add [ARCHIVO]
+
+# Borrar Archivo
+git rm [ARCHIVO]
+
+# Recuperar archivo
+git checkout [ID SHA1 del COMMIT DESEADO] -- [ARCHIVO]
+
+# Agregar un monton de Archivos
+git add --all 
+
+# Commit cambios del proyecto pasando un mensaje con -m
+git commit -m "Commit $(date)"
+
+# Commit de archivos reconocidos por el STAGE
+git commit -a
+
+# Listar Ramas/Branches
+git branch
+
+# Crear Branch/Rama
+git branch [RAMA]
+
+# Cambiar a la Rama/Branch
+git checkout [RAMA]
+
+# Cambiar a la Rama/branch principal
+git checkout master
+
+# Mezclar [RAMA] con la Rama/Branch master
+git merge [RAMA]
+
+# Borrar Rama/Branch
+git branch -d [RAMA]
+
+# Diferencias contra los diferentes COMMITs
+git diff							# Working Space contra STAGE
+git diff HEAD HEAD~1	# Stage contra último COMMIT
+git diff HEAD~2				# Working Space	conta penúltimo COMMIT
+git diff HEAD~3
+git diff HEAD~4
+git diff HEAD~5
+
+# Diferencias entre COMMITs específicos
+git diff 57ec922								# Eorkin
+git diff 57ec922 f50359a
+git diff f50359a 57ec922
+git diff b31cd6e f28c378
+
+# Bitacora de un archivo específico
+git log -- [ARCHIVO]
+
+# Ignorar archivos temporales de vi: listarlos en .gitignore, agregarlo al STAGE y hacerle COMMIT
+> echo ".*.swp" > .gitignore
+> git add .gitignore
+> git commit -a (comentar en el editor usando el template de GIT)
+
+# Recuperar archivo borrado de un COMMIT específico
+git checkout [ID COMMIT] -- [ARCHIVO]
+
+## MERGE
+# Listar logs de manera gráfica
+> git log --all --decorate --oneline --graph
+
+# Crear Alias de presentación gráfica de logs de commits
+alias graph="git log --all --decorate --oneline --graph"
+
+#### Repositorios Remotos
+# Clonamos el proyecto frutas desde gitlab.com
+> git clone git@gitlab.com:jpelorat/frutas
+> cd frutas
+
+# Verificar las fuentes remotas del proyecto
+> git remote -v
+
+# Otra vez el GRAPH de commits
+> alias graph="git log --all --decorate --oneline --graph"
+
+# Muestro el estado
+> git status; echo "-----------"; graph
+
+# Luego de modificar un archivo hacemos commit y vemos el estado
+> git commit -a
+
+# Incorporamos las modificaciones hechas en el commit anterior al repositorio en gitlab.com
+> git push origin main
+
+# Traer modificaciones del proyecto fuente y lo visualizamos
+> git fetch origin
+> git status; echo "-----------"; graph
+
+# Comparamos deacurdo a los diferentes commits
+> git diff 7c552da a76ffb8
+
+# Si todo esta chévere hacemos merge
+> git merge origin/main
+> git commit -a
+
+# Visualizar diferencias entre archivos de diferentes commits
+> diff -y <( cat lista.txt ) <( git show [#COMMIT]:lista.txt ) | cat -n
+> git diff [#COMMIT 1] [#COMMIT 2]
+> git difftool --tool=[HERRAMIENTA] [#COMMIT 1] [#COMMIT 2]
+# Ayuda para usar git difftool (listar herramientas)
+> git difftool --tool-help
+
+cat ~/.gitconfig 
+history | grep git | cat -n >> docs/chuleta-git.txt
+git sta
+git add .
+git stage
+history | grep git | sort -u -k2 | sort -n > docs/chuleta-git.txt
+git log commit
+git commit -m "chuleta"
+git checkout -- docs/chuleta-git.txt
+git reset HEAD docs/chuleta-git.txt
+git reset HEAD~2 docs/chuleta-git.txt
+vi docs/chuleta-git.txt 
+bajar-videos like git
+git -a commit -m "AA"
+git commit -a -m "AA"
+git init Hola
+git commit -a -m "Agregué archivo-01 y archivo-02"
+git commit -a -m "Modifiqué archivo-01 y archivo-02"
+git commit -a -m "Agregué archivo-03"
+git commit -a -m "Modifiqué archivo-01, archivo-02 y archivo-03"
+git add chuleta-git.txt 
+git rm archivo-02.txt 
+git commit 
+cat -n ~/.bash_history | grep git | sort -u -k2 | sort -n | cut -f2- > chuleta-git.txt
+git status 
+git checkout -- chuleta-git.txt
+more chuleta-git.txt 
+git commit -a
+git add archivo-01.txt 
+git diff --staged 
+git reset HEAD archivo-01.txt
+git checkout -- archivo-01.txt
+git diff
+
+history | grep git | sort -u -k2 | sort -n | cut -d' ' -f4- > chuleta-git.txt 

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<!--  
+    https://javascript.espaciolatino.com/dhtml/el_bom.htm 
+    https://www.codegrepper.com/code-examples/javascript/window.document.body
+-->
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>BLOW-demo</title>
+</head>
+
+<script>
+
+    function listAtrib(el_id) {
+        var el = document.getElementById(el_id);
+        console.log('listAtrib of id: ' + el_id);
+        for (var i = 0, atts = el.attributes, n = atts.length, arr = []; i < n; i++){
+            // arr.push(atts[i].nodeName);
+            console.log('attrib: ' + i + ' -> ' + atts[i].nodeName  + ' | value -> ' + atts[i].nodeValue);
+        }
+    }
+
+    function listHTML_tags(html_collection) {
+        // var el = document.getElementsByName(html_val);
+        // console.log('listAtrib of id: ' + html_collection);        
+        // atts = html_collection.attributes;
+        n = html_collection.length;
+        // n = html_collection[0].attributes.length;
+        console.log('object html: ' + html_collection[0] + ' | length of object html: ' + n);
+       
+        arr = [];
+
+        for (var i = 0;  i < n; i++ ) {
+            // arr.push(atts[i].nodeName);
+            console.log('attrib: ' + i + ' -> ' + html_collection[i]  + ' | value -> ' + html_collection[i]);        
+        }
+        console.log('%c salí del FOR','background: blue; color: white','\n\n\n');
+        
+        Array.from(html_collection).forEach(function(element) {
+            console.log('elemento');
+            console.log(element);
+        });
+        console.log('%c salí del ARRAY.from','background: blue; color: white','\n\n\n');
+
+    }
+
+</script>
+
+<script>
+    function  demo(){ return this };
+    function  demo2(x) { console.log('x es ' + x); return x; } 
+
+    var padre = demo();
+    console.log('demo');
+    console.log(padre);   //Window
+    
+    padre = window.demo();
+    console.log('window');
+    console.log(padre);   //Window
+
+    padre = demo2(window.clientInformation);
+    console.log('clientInformation ');
+    console.log(padre);    
+
+    padre = demo2(window.navigator);
+    console.log('navigator ');
+    console.log(padre);  
+
+    padre = demo2(window.navigator.connection);
+    console.log('navigator -> connection');
+    console.log(padre);     
+
+    padre = demo2(window.screen);
+    console.log('screen ');
+    console.log(padre);   
+
+    padre = demo2(window.history); // ???
+    console.log('history');
+    console.log(padre);   
+
+    padre = demo2(window.localStorage); // ???
+    console.log('local storage');
+    console.log(padre);       
+
+    padre = demo2(window.localStorage.removeItem); // ???
+    console.log('local storage-> remove item');
+    console.log(padre);   
+
+
+    padre = demo2(window.document);
+    console.log('document html');
+    console.log(padre);   
+
+    /* 
+    como inspeccionar los tags internos 
+    padre = demo2(window.document.body); // ???
+    console.log('document body');
+    console.log(padre);  
+    */
+    var html = demo2(window.document.all);
+    listHTML_tags(html);
+
+</script>
+
+
+</head>
+
+<body>
+
+    <h1 id="h1">Dale Click para ejecutar funcion demo en console.log</h1>
+
+</body>
+</html>    

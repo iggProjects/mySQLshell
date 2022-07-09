@@ -1,0 +1,16 @@
+Git
+   https://git-scm.com/	
+
+   https://www.digitalocean.com/community/tutorials/how-to-contribute-to-open-source-getting-started-with-git
+
+   file:///C:/Program%20Files/Git/ReleaseNotes.html
+
+
+
+GIT HUB PAGES
+
+   https://pages.github.com/ -> video y pasos
+   https://www.youtube.com/watch?v=wL8gCda3pG4
+
+
+https://iggprojects.github.io/

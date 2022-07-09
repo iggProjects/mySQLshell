@@ -1,0 +1,78 @@
+Día: 30-04-2022
+
+Carpeta trabajada en el curso: 
+
+Google doc: https://docs.google.com/presentation/d/10KPVZayCSg29IWvMJfExxNbhR1G-13oPhAculRErREs/edit?usp=sharing 
+
+links: 
+
+    crear dominio en (sub) en 00webhosting
+
+	https://www.apachefriends.org/es/download.html
+	php.net
+	instalar plugins para PHP
+
+	https://bitnami.com/stack/xampp?utm_source=bitnami&utm_medium=installer&utm_campaign=XAMPP%2BInstaller
+
+	Incluye: Apache 2.4.53, MariaDB 10.4.24, PHP 8.1.5, phpMyAdmin 5.1.3, OpenSSL 1.1.1, XAMPP Control Panel 3.2.4, 
+		 	 Webalizer 2.23-04, Mercury Mail Transport System 4.63, FileZilla FTP Server 0.9.41, 
+			 Tomcat 8.5.78 (with mod_proxy_ajp as connector), Strawberry Perl 5.32.1.1 Portable
+
+	OJO: chequear html que invocan php
+
+	Tomcat - Apache
+	   Apache is the Apache Web Server also known as httpd. See http://httpd.apache.org
+	   Tomcat is Apache Tomcat. See http://tomcat.apache.org
+	   httpd is a web server whereas Tomcat is a Servlet Container. While at the simplest level both 
+	   can be viewed as web servers that serve static files they have very different focuses. 
+	   httpd is typically used to host static content and dynamic content written in perl, php 
+	   amongst others. Tomcat is primarily intended to be used to serve web applications developed 
+	   in Java to the Java Servlet specification.
+	
+	FileZilla (free FTP solution) -> https://filezilla-project.org/faq.php
+	   FileZilla Client is a fast and reliable cross-platform FTP, FTPS and SFTP client 
+	   with lots of useful features and an intuitive graphical user interface.
+
+
+
+
+Observac
+
+1.- Instalar el xampp desde https://www.apachefriends.org/es/download.html
+	- FAQ: https://www.apachefriends.org/es/faq_windows.html
+	paso 1: ejecutar xampp-windows-x64-8.1.5-0-VS16-installer.exe como administrador 
+		    y verificar casillas... ver cuales no necesitas (ej. filezilla, tomcat..)
+	paso 2: darle start al "apache" xampp
+    paso 3: grabar files en el dir xampp/htdocs
+    paso 4: renombrar index.php para poder ver el directorio de php files
+    paso 5: al subir a producción (dist), ponerlo como index.php
+
+	ver el file xampp/apache/conf/httpd.conf
+		- servidores virtuales...
+
+   UNINSTALL XAMPP: 
+	https://www.youtube.com/watch?v=0lu6KtqdvSY
+	https://www.javatpoint.com/uninstalling-xampp-completely
+
+   RSYNC in windows10:
+	https://www.ubackup.com/windows-10/rsync-windows-10-1021.html#H2-1
+
+   Rsync Alternative in Windows 10 to Backup and Sync Files
+	https://www.ubackup.com/windows-10/rsync-windows-10-1021.html#H2-2   	
+
+2.- Instalar codigos php... carpeta PHP/01-INTRO (buscar www del apache en linux)
+
+3.- estudiar variables de entorno
+
+4.- pasando variables de JS a PHP: usando "" y $var o '' con concatenación . var . 
+
+5.- elementos de programación
+    - variables, operadores, if else, case, estructuras control, ...
+    - se usa poco el var type	
+
+6.- var_dump, print_r
+
+7.- operadores aritméticos, boleanos, fechas (usar timestamp y luego interpretar), 
+
+
+

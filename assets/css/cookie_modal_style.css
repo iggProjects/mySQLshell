@@ -1,0 +1,58 @@
+/*
+*   cookie modal style
+*/
+
+.cookie-consent-modal{
+    height: 120vh;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+    align-items: flex-end;
+}
+
+.cookie-consent-modal.active{
+    display: flex;
+}
+
+.cookie-content{
+    background-color: #b2b266;
+    width:100%;
+    padding: 10px;    
+    /* padding: 5vw 3vw; */
+    border-radius: 20px 20px 0 0;
+    color:#5c5c1b;
+}
+
+.cookie-content h1 { text-align:center;}
+.cookie-content p { text-align:center; margin-top:10px; font-size:15px;}
+
+.btns-cook{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 12em;
+}
+
+.btn-cook{
+    border: none;
+    outline: none;
+    padding: .8em 1.5em;
+    width: 100px;
+    margin-right: 2em;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.btn-cook.accept{
+    background-color: #4f4f17;
+    color: #fff;
+}
+
+.btn-cook.cancel{    
+    color: #4f4f17;;
+}
+

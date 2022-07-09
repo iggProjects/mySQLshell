@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+}
+
+.container{
+    padding: 10px;
+    font-family: helvetica;
+}
+
+header { border-bottom: 10px solid rgb(231, 229, 229); height: auto; padding: 20px;}
+
+.disp_center {
+    // display properties
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: stretch;
+}
+
+header div { width:25%;}
+
+header .toggle-container { text-align:right;}
+
+#pageTitle {
+    margin: auto;
+    text-align: center;
+    color:rgb(163, 19, 19);
+    font-size: 30px;
+    font-weight: bold;    
+}
+
+section {    
+    border: 10px solid rgb(233, 232, 232);
+    margin : auto;
+    text-align: center;
+
+    article {
+        width:80%;
+        border:1px solid gray;
+    }
+}
+
+#profesor { width: 40%;}
+#alumnos { width: 80%; }
+
+header {
+    margin: 30px;
+     display:flex; 
+    flex-direction: row;  
+} 
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin:auto;
+    margin-top:20px;   
+}
+  
+th, td {
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+}
+  
+tr:nth-child(even){background-color: #f2f2f2}
+  
+th {
+    background-color: #80c4fc;
+    color: white;
+}
+
+
+h1, h2 { text-align: center; margin-top:20px; margin-bottom:20px; color:blue;}
+
+#logotipo {
+    font-family: 'Press Start 2P', cursive;
+    margin:auto;
+    border: 1px solid;
+}  
+
+#profesor { margin:auto; padding:30px;}
+
+#profesor, #alumnos{
+    ul {
+        list-style: none;
+        display: table;
+        vertical-align: middle;
+    }
+}
+
+
+#alumnos{    
+    article{      
+        margin: 5px; 
+        padding: 5px;
+        border: 1px solid rgb(175, 175, 253);
+    }
+}
+
+#barra{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    width: 100%;
+}
+
+nav {
+    ul {
+        margin-top:10px;
+
+        li {            
+            display: inline;
+            text-align: center;
+            
+        }
+    }
+}
+
+#rel_icons { height: 40px; }
+
+li a {  margin-left: 20px;}
+
+li a img { margin-left:5px; }
+
+#liName { margin-top:10px; font-size: 20px; text-align: center;}
+
+.imagengithub{
+    border-radius: 50%;
+    width:70px;
+}
+
+@font-face {
+    font-family: "punk";
+    src: url('../font/Punkkid/punk_kid.ttf') format('truetype'), ;
+    /* OJO!!!!  las rutas son relativas al css */ 
+} 
+
+.kidpunk {
+    font-family: "punk";
+}
+
+@import 'color-schemes';
+
+

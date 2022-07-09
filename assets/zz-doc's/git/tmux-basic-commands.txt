@@ -1,0 +1,52 @@
+https://github.com/samoshkin/tmux-config
+
+https://tmuxcheatsheet.com/
+
+# https://www.howtoforge.com/sharing-terminal-sessions-with-tmux-and-screen
+
+# TMUX [USUARIO 1]
+
+    Split screen vertically:    Ctrl + b  and  Shift + 5
+    Split screen horizontally: Ctrl + b  and  Shift + "
+    Toggle between panes:   Ctrl + b and o
+    Close current pane:        Ctrl + b and x
+
+    list open sessions: tmux ls 	
+                  "	      : tmux list-sessions
+		  "	      : ctrl + b and s
+
+   create window:              Ctrl + b and c
+   rename current window: Ctrl + b  and ,
+
+   Close current window:                  Ctrl + b and &
+   Previous window:                         Ctrl + b and p
+   Next window:                               Ctrl + b and n
+   Switch/select window by number:  Ctrl + b and 0 ... 9
+   Toggle last active window:            Ctrl + b and l
+
+Other commands
+    rename session:            Ctrl + b  and $
+    detach from session:	Ctrl + b  and d
+
+PANE
+
+	Ctrl + b ;
+	Toggle last active pane
+	
+	Ctrl + b %
+	Split pane with horizontal layout
+	
+	Ctrl + b "
+	Split pane with vertical layout
+	
+	Ctrl + b {
+	Move the current pane left
+	
+	Ctrl + b }
+	Move the current pane right
+	
+	Ctrl + b and up arrow
+	Ctrl + b and down arrow
+	Ctrl + b and keft arrow
+	Ctrl + b and rigth arrow
+	Switch to pane to the direction

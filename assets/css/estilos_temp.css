@@ -1,0 +1,121 @@
+/* 
+    Temporal css file 
+*/
+
+#home { width:95%; height:95%; overflow:scroll; margin: auto; margin-top:15px; padding:5px; border: 10px solid rgb(206, 206, 206);}
+
+#home .nav3 { width:100%; height:80px; background-color: rgb(214, 213, 213); border: 2px solid rgb(217, 217, 253); } 
+
+#home .titulo { margin-top:10px;}
+
+.disp-col-center {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content:  space-around;
+	align-items: center;
+	align-content: stretch;	
+}
+
+.disp-row-center {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: baseline;
+	align-content: stretch;
+}
+
+#home table { margin-top:30px; margin-bottom:30px; width:90% }
+
+#home table, th, td {
+	padding:5px; border: 1px solid rgb(206, 206, 206);
+}
+
+#home .homeTutor { height: 50px; vertical-align:center; } 
+#home .homeTutor td { border: 2px solid rgb(152, 143, 252); }
+
+#home .verArreglos1 {width:400px; height:350px; overflow:scroll; margin-top:20px; padding-left: 30px; border:5px solid #a8dffd; font-size:12px;} 
+#home .verArreglos2 {width:90%; height:350px; overflow:scroll; margin-top:20px; padding-left: 30px; border:5px solid #a8dffd; font-size:12px;} 
+
+/*  tag's css */
+.container .cursor {
+	cursor: pointer;
+}
+.container .row {         
+	width:90%; 
+	margin:auto; 
+	margin-bottom: 20px;
+	height:30px;       
+	/* display properties
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: left;    
+	align-items: stretch;
+	align-content: center; */
+}		
+.container .columna {
+	float: left;
+	width: 48%;
+	margin-top:0px;
+	border: 1px solid #b2b266;
+	/* border-top-right-radius: 15px; 
+	border-left:none;
+	margin-left:-3px; */
+	/* display properties */  
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	align-content: space-around;
+}
+
+.columna p {
+		margin-top:10px;	 		
+}
+
+.container .c1 {
+	/* border-left: 1px solid #b2b266; */
+	margin-left:0;
+}
+/*		
+#name-text {
+	text-align: left;
+	font-size: 20px;
+	margin:auto;
+	padding-left: 20px;
+	width:auto;
+	height:40px;
+	border-width:0;
+	color:white;
+	background-color:rgb(150, 109, 245);        
+	// display properties
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: left;
+	align-items: stretch;
+	align-content: center;			
+}
+*/		
+.container #name-text { text-align: left;}
+.container #name-text::before { content: "Opción Seleccionada: "; } 
+.container .titleInfo { color:blue; font-size: 20px;}
+.container .hideDiv { display: none; }
+.container .showDiv { display: block; }	
+.container .hideTag { background-color: transparent; color: #b2b266; }
+.container .showTag { background-color: #b2b266;  }
+.container .zoom {
+	transition: transform .2s;
+	width: auto;
+	height: 30px;
+	/* margin: auto; */     
+}
+.container .zoom:hover {
+	-ms-transform: scale(1.2); /* IE 9 */
+	-webkit-transform: scale(1.2); /* Safari 3-8 */
+	transform: scale(1.2); 
+	opacity:1 !important;
+}
