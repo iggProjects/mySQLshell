@@ -44,8 +44,9 @@ function Display_div_nav_izq(tag,php_sql_url){
 */
 
 function DescribeTbl_js(tag,php_sql_url){   
-    console.log('tag ' + tag + ', php_sql_url ' + php_sql_url) 
-
+    console.log('tag=> ' + tag) 
+    console.log('php_sql_url=> ' + php_sql_url) 
+    
     fetch(php_sql_url)
 
     .then(response => {
@@ -70,7 +71,9 @@ function DescribeTbl_js(tag,php_sql_url){
 
 
 function DescribeTbl_Users_js(php_origin,tag,php_sql_url){   
-    console.log('php_origin ' + php_origin + ', tag ' + tag + ', php_sql_url ' + php_sql_url) 
+    console.log('php_origin=> ' + php_origin) 
+    console.log('tag=> ' + tag ) 
+    console.log('php_sql_url=> ' + php_sql_url) 
 
     fetch(php_sql_url)
 
