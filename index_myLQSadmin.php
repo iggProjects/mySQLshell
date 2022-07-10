@@ -3,7 +3,6 @@
 include_once "./include/php_funct/navegacion_servers.php";
 include_once "./include/php_funct/my_PHP_functions.php";
 include_once "./include/sql_funct/my_SQL_functions_servers.php";
-include_once "./include/js_funct/my_AJAX_functions.js";
 include_once "./config/config.servers.php";
 // include_once "../../config.servers.php";
 

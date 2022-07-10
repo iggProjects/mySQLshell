@@ -9003,3 +9003,9 @@ Stack trace:
 [10-Jul-2022 11:54:54 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 54
 [10-Jul-2022 11:54:54 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 74
 [10-Jul-2022 11:55:02 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions.php on line 219
+[10-Jul-2022 11:57:24 Europe/Berlin] PHP Warning:  Undefined variable $host_db_array in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 140
+[10-Jul-2022 11:57:44 Europe/Berlin] PHP Warning:  Undefined variable $host_db_array in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 140
+[10-Jul-2022 11:58:30 Europe/Berlin] PHP Warning:  Undefined variable $host_db_array in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 140
+[10-Jul-2022 11:58:36 Europe/Berlin] PHP Warning:  Undefined variable $host_db_array in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 140
+[10-Jul-2022 11:58:47 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions.php on line 219
+[10-Jul-2022 11:58:54 Europe/Berlin] PHP Warning:  Undefined variable $host_db_array in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 140
