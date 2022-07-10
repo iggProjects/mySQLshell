@@ -8946,3 +8946,60 @@ Stack trace:
 [09-Jul-2022 12:52:33 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\my_SQL_functions.php on line 219
 [09-Jul-2022 13:14:49 Europe/Berlin] PHP Warning:  Undefined variable $host_db_array in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 238
 [09-Jul-2022 13:14:57 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\my_SQL_functions.php on line 219
+[10-Jul-2022 10:55:20 Europe/Berlin] PHP Warning:  Undefined variable $host_db_array in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 238
+[10-Jul-2022 10:55:31 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\my_SQL_functions.php on line 219
+[10-Jul-2022 11:05:15 Europe/Berlin] PHP Warning:  Undefined variable $host_db_array in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 139
+[10-Jul-2022 11:05:25 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\my_SQL_functions.php on line 219
+[10-Jul-2022 11:33:19 Europe/Berlin] PHP Warning:  Undefined variable $i_serv in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 54
+[10-Jul-2022 11:33:19 Europe/Berlin] PHP Warning:  Undefined variable $host_serv in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 138
+[10-Jul-2022 11:33:19 Europe/Berlin] PHP Warning:  Undefined variable $host_db_array in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 139
+[10-Jul-2022 11:33:46 Europe/Berlin] PHP Warning:  Undefined variable $i_serv in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 54
+[10-Jul-2022 11:33:46 Europe/Berlin] PHP Warning:  Undefined variable $host_serv in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 138
+[10-Jul-2022 11:33:46 Europe/Berlin] PHP Warning:  Undefined variable $host_db_array in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 139
+[10-Jul-2022 11:33:58 Europe/Berlin] PHP Warning:  Undefined variable $i_serv in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 54
+[10-Jul-2022 11:33:58 Europe/Berlin] PHP Warning:  Undefined variable $host_serv in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 138
+[10-Jul-2022 11:33:58 Europe/Berlin] PHP Warning:  Undefined variable $host_db_array in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 139
+[10-Jul-2022 11:36:41 Europe/Berlin] PHP Warning:  Undefined variable $i_serv in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 54
+[10-Jul-2022 11:36:41 Europe/Berlin] PHP Warning:  Undefined variable $host_serv in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 138
+[10-Jul-2022 11:36:42 Europe/Berlin] PHP Warning:  Undefined variable $host_db_array in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 139
+[10-Jul-2022 11:36:46 Europe/Berlin] PHP Warning:  Undefined variable $i_serv in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 54
+[10-Jul-2022 11:36:46 Europe/Berlin] PHP Warning:  Undefined variable $host_serv in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 138
+[10-Jul-2022 11:36:46 Europe/Berlin] PHP Warning:  Undefined variable $host_db_array in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 139
+[10-Jul-2022 11:37:10 Europe/Berlin] PHP Warning:  Undefined variable $i_serv in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 54
+[10-Jul-2022 11:37:10 Europe/Berlin] PHP Warning:  Undefined variable $host_serv in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 138
+[10-Jul-2022 11:37:10 Europe/Berlin] PHP Warning:  Undefined variable $host_db_array in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 139
+[10-Jul-2022 11:37:27 Europe/Berlin] PHP Warning:  Undefined variable $i_serv in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 54
+[10-Jul-2022 11:37:27 Europe/Berlin] PHP Warning:  Undefined variable $host_serv in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 138
+[10-Jul-2022 11:37:27 Europe/Berlin] PHP Warning:  Undefined variable $host_db_array in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 139
+[10-Jul-2022 11:38:01 Europe/Berlin] PHP Warning:  Undefined variable $host_db_array in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 139
+[10-Jul-2022 11:39:13 Europe/Berlin] PHP Warning:  Undefined variable $host_db_array in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 139
+[10-Jul-2022 11:44:18 Europe/Berlin] PHP Warning:  Undefined variable $host_db_array in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 140
+[10-Jul-2022 11:52:05 Europe/Berlin] PHP Warning:  Undefined variable $host_db_array in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 140
+[10-Jul-2022 11:53:19 Europe/Berlin] PHP Warning:  Undefined variable $host_db_array in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 140
+[10-Jul-2022 11:54:04 Europe/Berlin] PHP Warning:  Undefined variable $host_db_array in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\index_myLQSadmin.php on line 140
+[10-Jul-2022 11:54:13 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions.php on line 219
+[10-Jul-2022 11:54:54 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 35
+[10-Jul-2022 11:54:54 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 40
+[10-Jul-2022 11:54:54 Europe/Berlin] PHP Warning:  Undefined variable $h in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 49
+[10-Jul-2022 11:54:54 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 54
+[10-Jul-2022 11:54:54 Europe/Berlin] PHP Warning:  Undefined variable $hostUser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 54
+[10-Jul-2022 11:54:54 Europe/Berlin] PHP Warning:  Undefined variable $hostPassw in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 54
+[10-Jul-2022 11:54:54 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 54
+[10-Jul-2022 11:54:54 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 35
+[10-Jul-2022 11:54:54 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 40
+[10-Jul-2022 11:54:54 Europe/Berlin] PHP Warning:  Undefined variable $h in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 49
+[10-Jul-2022 11:54:54 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 54
+[10-Jul-2022 11:54:54 Europe/Berlin] PHP Warning:  Undefined variable $hostUser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 54
+[10-Jul-2022 11:54:54 Europe/Berlin] PHP Warning:  Undefined variable $hostPassw in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 54
+[10-Jul-2022 11:54:54 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 54
+[10-Jul-2022 11:54:54 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 74
+[10-Jul-2022 11:54:54 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 74
+[10-Jul-2022 11:54:54 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 35
+[10-Jul-2022 11:54:54 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 40
+[10-Jul-2022 11:54:54 Europe/Berlin] PHP Warning:  Undefined variable $h in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 49
+[10-Jul-2022 11:54:54 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 54
+[10-Jul-2022 11:54:54 Europe/Berlin] PHP Warning:  Undefined variable $hostUser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 54
+[10-Jul-2022 11:54:54 Europe/Berlin] PHP Warning:  Undefined variable $hostPassw in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 54
+[10-Jul-2022 11:54:54 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 54
+[10-Jul-2022 11:54:54 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 74
+[10-Jul-2022 11:55:02 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions.php on line 219

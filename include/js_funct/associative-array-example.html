@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+
+<body>
+    <div style="text-align:center; margin:auto; margin-top:50px;">
+        <h2>JavaScript Objects</h2>
+        <p>Associtive array JavaScript uses names to access object properties.</p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+    </div>
+
+<script>
+
+    const person = [{firstName:"John", lastName:"Doe", age:46},{firstName:"John", lastName:"Doe", age:46}];
+    // document.getElementById("demo1").innerHTML = person.firstName;
+    
+    console.log('associative array');
+
+    var text="";
+    for ( i=0; i< person.length; i++ ){
+        for (key in person[i]) { text += i + ' : ' + key + ' - ' + person[i][key] ; }
+        text += '<br>';
+        
+    }
+    document.getElementById("demo2").innerHTML = text;
+    
+</script>
+
+</body>
+</html>
