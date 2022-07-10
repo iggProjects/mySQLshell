@@ -41,15 +41,15 @@ if ( $dbhost == 'POAPMYSQL119.dns-servicio.com:3306' ) {
 }
 
 # connection to DB using $db_parameters
-$conn = try_catch_connect($dbhost,$dbname,$dbuser,$dbpass,$dbcharset,$log_queries_path);
+$conex_db = try_catch_connect($dbhost,$dbname,$dbuser,$dbpass,$dbcharset,$log_queries_path);
 
 $route = "";
 $error_msg = "MySql error was found";
 
-if ( gettype($conn) === 'object' ) {
+if ( gettype($conex_db) === 'object' ) {
 
     $describetables_query = "desc $dbtable;";
-    $resultado = DescribeTables_try_catch($conn,$dbname,$dbuser,$describetables_query,$log_queries_path);
+    $resultado = DescribeTables_try_catch($conex_db,$dbname,$dbuser,$describetables_query,$log_queries_path);
 
     if ( gettype($resultado) === 'object' || gettype($resultado) === 'array' ) {  
         $route = "display_data";        
@@ -60,14 +60,14 @@ if ( gettype($conn) === 'object' ) {
 
 } else {    
     $route = "display_error";
-    $error_msg = "MySql error: Connection to $dbname FAILED !<br>Contact Admin.";
+    $error_msg = "MySql error: Connection to host and $dbname FAILED !<br>Contact Admin.";
 }
 
 # HTML DATA FOR DIV
 if ($route == 'display_data') { # display html data   
 
-    $divHtml  = "<p>\$conn is: " . gettype($conn) . " | var_dump(\$conn)</p>";
-    $divHtml .= "<pre>" . var_dump($conn) . "</pre>";   
+    $divHtml  = "<p>\$conex_db is: " . gettype($conex_db) . " | var_dump(\$conex_db)</p>";
+    $divHtml .= "<pre>" . var_dump($conex_db) . "</pre>";   
             
     $thead_titles = ['#','Field','type','Null','Key','Default','Extra'];        
     $divHtml .= displayTable("Fields in table $dbtable",50,$thead_titles,$resultado);
