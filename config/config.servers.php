@@ -51,8 +51,6 @@ $cfg_s['Servers'][$i_serv]['hostShortName'] = 'Localhost DB server';
 $cfg_s['Servers'][$i_serv]['connect_type'] = 'tcp';
 
 
-
-
 // Change variable
 $host_serv = [];
 $host_serv_ShortName = [];

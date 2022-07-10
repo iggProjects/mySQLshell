@@ -89,6 +89,7 @@
   }
 
   .nested {
+    cursor: alias;
     display: none;
     margin: 2px;
     padding-left: 20px;

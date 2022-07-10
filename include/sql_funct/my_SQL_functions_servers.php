@@ -24,6 +24,9 @@ function try_catch_connect_host($db_host,$db_user,$db_pass,$db_charset,$log_comm
         // // mail($mailto,$subject1,$cuerpo1,$cabeceras);
         # Log file updated
         My_Log_Message ($subject1 . $cuerpo1, $log_comments );
+
+        # retunr array ['host'-> pdo conection Host, [ 'db1'->connection_DB1, 'db2' ->connection_DB2, ...]]
+        
         return $conex;	
 
     } catch (PDOException $e) {
@@ -43,7 +46,6 @@ function try_catch_connect_host($db_host,$db_user,$db_pass,$db_charset,$log_comm
 
 
 function try_catch_connect_host_db($db_host,$db_name,$db_user,$db_pass,$db_charset,$log_comments) {
-
 
     $mailto='igg.git.h@gmail.com';
     // $mailto='igg.git.h@gmail.com,albertomozodocente@gmail.com;';

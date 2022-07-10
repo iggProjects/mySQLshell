@@ -9,7 +9,7 @@
 
 function Display_div_nav_izq(tag,php_sql_url){
 
-    console.log('tag: ' + tag + '\nphp_sql_url: ' + php_sql_url) 
+    console.log('tag=> ' + tag + '\nphp_sql_url=> ' + php_sql_url) 
 
     fetch(php_sql_url)
 
@@ -22,8 +22,9 @@ function Display_div_nav_izq(tag,php_sql_url){
 
     .then(data => {        
         document.getElementById(tag).innerHTML = data;  
-        openTree();  
-        
+
+        /* call function for display tree structure of tables by each DB in HOST*/
+        openTree();          
     })
 
     .catch(err => {
@@ -34,15 +35,11 @@ function Display_div_nav_izq(tag,php_sql_url){
 
 }
 
-
-
-
-
-
 /*
  *  JS functions for db sql queries
 */
 
+/*   For describe table structure */ 
 function DescribeTbl_js(tag,php_sql_url){   
     console.log('tag=> ' + tag) 
     console.log('php_sql_url=> ' + php_sql_url) 
@@ -68,30 +65,3 @@ function DescribeTbl_js(tag,php_sql_url){
 
 }
 
-
-
-function DescribeTbl_Users_js(php_origin,tag,php_sql_url){   
-    console.log('php_origin=> ' + php_origin) 
-    console.log('tag=> ' + tag ) 
-    console.log('php_sql_url=> ' + php_sql_url) 
-
-    fetch(php_sql_url)
-
-    .then(response => {
-        if (response.ok)
-            return response.text()
-        else
-            throw new Error(response.status)
-    })
-
-    .then(data => {        
-        document.getElementById(tag).innerHTML = data;         
-    })
-
-    .catch(err => {
-        console.error("Desde " + php_origin + ", ERROR: ", err.message);
-        document.getElementById(tag).innerHTML = "Desde " + php_origin + "ERROR: " + err.message; 
-
-    });
-
-}

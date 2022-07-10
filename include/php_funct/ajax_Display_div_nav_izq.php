@@ -51,19 +51,19 @@ $db_pointer = 1;
 $array_pointer= 0;        
 $host_db_array = [ 1 => [] ];          
 
-$conex = try_catch_connect_host($hostName,$hostUser,$hostPassw,$dbcharset,$log_queries_path);
+$conex_host = try_catch_connect_host($hostName,$hostUser,$hostPassw,$dbcharset,$log_queries_path);
 
 $route = "";
-$error_msg = "MySql error was found";
+$error_msg = "";
 
-if ( gettype($conex) === 'object' ) {
+if ( gettype($conex_host) === 'object' ) {
 
-    # SELECT query for display info of distintc DB in DB server
+    # SELECT query for display info of distintc DB tables in SERVER
     $select_query = "SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;";
-    $result = SELECT_try_catch($conex,'',$hostUser,'information_schema.tables',$select_query,$log_queries_path);
+    $result = SELECT_try_catch($conex_host,'',$hostUser,'information_schema.tables',$select_query,$log_queries_path);
 
     if ( gettype($result) === 'object' || gettype($result) === 'array' ) {  
-        $route = "display_data";        
+        $route = "display_data";    
     } else {
         $route = "display_error";
         $error_msg = "MySql error: describe '$dbtable' query FAILED !<br>Contact Admin.";
@@ -74,7 +74,7 @@ if ( gettype($conex) === 'object' ) {
     $error_msg = "MySql error: Connection to $dbname FAILED !<br>Contact Admin.";
 }
 
-# HTML DATA FOR DIV
+# HTML DATA FOR DIV WHICH CONTENT IS HOST-DB-TABLES TREE
 if ($route == 'display_data') { # display html data   
 
     $divHtml  = "<p style='color:#cc8800; font-size='9px;''>(Click on + to see tables)</p>";     
@@ -112,7 +112,7 @@ if ($route == 'display_data') { # display html data
 
     $divHtml .= "</ul>";  
 
-} else { # display error msq
+} else { # display error msg
     $divHtml = $error_msg;  
 }
 

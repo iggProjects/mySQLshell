@@ -11,7 +11,6 @@ include_once "./config/config.servers.php";
 // https://stackoverflow.com/questions/50999862/reuse-database-connection-pdo-in-php-file-sent-by-ajax
 // https://stackoverflow.com/questions/4171593/how-to-use-persistent-connection-of-pdo
 
-
 # my log files for queries and comments 
 $log_comments_path = "./assets/log-files/log_comments.log";
 $log_queries_path = "./assets/log-files/log_queries.log";
@@ -24,6 +23,8 @@ ini_set('display_errors', FALSE);
 ini_set("log_errors",TRUE);
 ini_set('error_log',$php_errors_log);
 // ini_set('display_errors', 1);
+
+$conex = ""; # variable global de conexión a la servidor seleccionado
 
 ?>
 
@@ -87,29 +88,12 @@ echo "
 
 <script>
     
+    // Select HOST
     var hostSelected = document.getElementById("serverList");
-    /*
-        if ( $hostName == 'POAPMYSQL119.dns-servicio.com:3306' ) {
-        $dbuser = "inaki2022";
-        $dbpass = "Inaki@2022";
-        $dbcharset = 'utf8mb4';
-        $h=1;
-    } elseif ( $hostName == '127.0.0.1' ) {
-        $dbuser = "root";
-        $dbpass = "@mysql@";
-        $dbcharset = 'utf8mb4';
-        $h=2;
-    } else {
-        // upssssss msg
-    }
-    */
-
     hostSelected.addEventListener("click", () => {
-        hostSelected.addEventListener("change", () => {
-            // console.log('host Selected ' + hostSelected.value); 
+        hostSelected.addEventListener("change", () => {            
             document.getElementById('hostNavIzq').innerHTML = hostSelected.value;  
-
-            // call ajax function to display DB-info area   
+            // call ajax function to display DB-info area in div_nav_izq
             php_sql_url = './include/php_funct/ajax_Display_div_nav_izq.php?hostName='+hostSelected.value;
             console.log('ajax php=> ' + php_sql_url); 
             Display_div_nav_izq('html_div_nav_izq',php_sql_url);
@@ -123,6 +107,7 @@ echo "
         var i;
         console.log('caret length ' + toggler.length);
 
+        /* Define listeners for "caret" class */ 
         for (i = 0; i < toggler.length; i++) {
             toggler[i].addEventListener("click", function() {
                 console.log('this class: ' + this.classList + ', tag: '+ this.tagName);
@@ -132,11 +117,10 @@ echo "
             });
         }
 
-        /* For listening table display via sql query */
+        /* Define listeners for "dispTbl" class, to display table structure (via sql query)  */
         var tableDisplay = document.getElementsByClassName("dispTbl");
         var j;
-        var host_server = <?php echo json_encode($host_serv); ?>;
-        //var host_db_tbl_array = <?php echo json_encode($host_db_array); ?>;
+        var host_server = <?php echo json_encode($host_serv); ?>;        
 
         for (j = 0; j < tableDisplay.length; j++) {    
             
@@ -145,20 +129,12 @@ echo "
                 // Parameters for calling ajax junction
                 var point = this.getAttribute('point');
                 var hostNumb = this.getAttribute('host');
-                // var dbNumb = this.getAttribute('db');
-                var tblName = this.getAttribute('table-name');   
-                
+                var tblName = this.getAttribute('table-name'); 
                 var dbName = this.getAttribute('db');
-
-                // var hostName = host_db_tbl_array[hostNumb][point][0];
-                // var dbName = host_db_tbl_array[hostNumb][point][1];   
                 var _tag='display_sql_result';
-
-                // if ( hostNumb == 1 ) { _tag='display_sql_1'; } else { _tag='display_sql_2'; }
-                
+               
                 // call ajax table function
-                DescribeTbl_js(_tag,'./include/php_funct/ajax_DescribeTbl.php?hostName='+host_server[hostNumb]+'&dbName='+dbName+'&tblName='+tblName);    
-                // DescribeTbl_js(_tag,'ajax_DescribeTbl.php?hostName='+hostName+'&dbName='+dbName+'&tblName='+tblName);    
+                DescribeTbl_js(_tag,'./include/php_funct/ajax_DescribeTbl.php?hostName='+host_server[hostNumb]+'&dbName='+dbName+'&tblName='+tblName);                    
                 
             });      
       
