@@ -26,6 +26,27 @@ function try_catch_connect_host($db_host,$db_user,$db_pass,$db_charset,$log_comm
         My_Log_Message ($subject1 . $cuerpo1, $log_comments );
 
         # retunr array ['host'-> pdo conection Host, [ 'db1'->connection_DB1, 'db2' ->connection_DB2, ...]]
+
+    /*  
+        manual : https://dev.mysql.com/doc/refman/8.0/en/
+
+        conexiones persistentes https://www.php.net/manual/es/pdo.connections.php  
+        $mbd = new PDO('mysql:host=localhost;dbname=prueba', $usuario, $contraseña, array(
+            PDO::ATTR_PERSISTENT => true
+        ));
+        $dbh = new PDO('mysql:host=localhost;dbname=test', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+
+        stmt->closeCursor(); http://php.adamharvey.name/manual/en/pdo.connections.php
+
+        //Kill the connection with a KILL Statement.  //https://thisinterestsme.com/close-pdo-connection/
+        $pdo->query('KILL CONNECTION_ID()');
+
+        //Set the PDO object to NULL.
+        $pdo = null;
+
+        // laravel->  https://laravel.com/docs/9.x/database
+
+    */    
         
         return $conex;	
 
