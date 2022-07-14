@@ -4286,3 +4286,12 @@
 [14-Jul-2022 12:17:12] [Connection to 'phpmyadmin' DB OK | Date: 2022-07-14 12:17:12 | root connect succesfully to 'phpmyadmin']
 [14-Jul-2022 12:17:12] [Date: 2022-07-14 12:17:12 | root execute succesfully show tables query
  'desc pma__bookmark;']
+[14-Jul-2022 12:23:40] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-14 12:23:40 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[14-Jul-2022 12:23:40] [Date: 2022-07-14 12:23:40 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[14-Jul-2022 12:23:44] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-14 12:23:44 | inaki2022 connect succesfully to '8661316_laninaki22']
+[14-Jul-2022 12:23:44] [Date: 2022-07-14 12:23:44 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[14-Jul-2022 12:23:53] [Connection to 'information_schema' DB OK | Date: 2022-07-14 12:23:53 | inaki2022 connect succesfully to 'information_schema']
+[14-Jul-2022 12:23:53] [Date: 2022-07-14 12:23:53 | inaki2022 execute succesfully show tables query
+ 'desc COLLATION_CHARACTER_SET_APPLICABILITY;']
