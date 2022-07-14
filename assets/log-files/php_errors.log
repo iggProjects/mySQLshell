@@ -9055,3 +9055,23 @@ Stack trace:
 #2 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_DescribeTbl.php(46): try_catch_connect_host_db(NULL, NULL, NULL, NULL, NULL, NULL)
 #3 {main}
   thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\my_PHP_functions.php on line 15
+[14-Jul-2022 15:43:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function My_Log_Message() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions_servers.php:26
+Stack trace:
+#0 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php(54): try_catch_connect_host('POAPMYSQL119.dn...', 'inaki2022', 'Inaki@2022', 'utf8mb4', '../../assets/lo...')
+#1 {main}
+  thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions_servers.php on line 26
+[14-Jul-2022 15:54:14 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function My_Log_Message() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions_servers.php:90
+Stack trace:
+#0 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php(45): try_catch_connect_host_db('POAPMYSQL119.dn...', '8661316_laninak...', 'inaki2022', 'Inaki@2022', 'utf8mb4', '../../assets/lo...')
+#1 {main}
+  thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions_servers.php on line 90
+[14-Jul-2022 15:55:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function My_Log_Message() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions_servers.php:90
+Stack trace:
+#0 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php(45): try_catch_connect_host_db('127.0.0.1', 'mysql', 'root', '@mysql@', 'utf8mb4', '../../assets/lo...')
+#1 {main}
+  thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions_servers.php on line 90
+[14-Jul-2022 15:59:29 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function My_Log_Message() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions_servers.php:90
+Stack trace:
+#0 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php(45): try_catch_connect_host_db('POAPMYSQL119.dn...', '8661316_laninak...', 'inaki2022', 'Inaki@2022', 'utf8mb4', '../../assets/lo...')
+#1 {main}
+  thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions_servers.php on line 90

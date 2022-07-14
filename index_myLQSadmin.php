@@ -1,7 +1,7 @@
 <?php
 
-include_once "./include/php_funct/navegacion_servers.php";
-include_once "./include/php_funct/my_PHP_functions.php";
+include_once "./include/php_general_funct/navegacion_servers.php";
+include_once "./include/php_general_funct/my_PHP_functions.php";
 include_once "./include/sql_funct/my_SQL_functions_servers.php";
 include_once "./config/config.servers.php";
 // include_once "../../config.servers.php";
@@ -33,7 +33,7 @@ $conex = ""; # variable global de conexión a la servidor seleccionado
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/css/myLQSadmin.css">
-    <script type='text/javascript' src='./include/js_funct/my_AJAX_functions.js'></script>
+    <script type='text/javascript' src='./include/AJAX_php_js/my_AJAX_functions.js'></script>
   <style></style>
 </head>
 <body>
@@ -63,7 +63,8 @@ echo "
 
             echo "</div>";
 
-            echo "<div class='div-der'>";
+            echo "<div class='div-der disp-col-center'>";
+
                     echo "<div class='nav-btns disp-col-center'>";
                         echo "<button>Desc<br>Table</button>";
                         echo "<button>View<br>Table</button>";
@@ -75,8 +76,11 @@ echo "
                         echo "<button>Restore</button>";
                     echo "</div>";
 
-                    echo "<div class='der-console disp-row-center'>";
-                        echo "<div id='display_sql_result'></div>";
+                    echo "<div class='der-console disp-col-center' style='margin-left:10px;'>";
+
+                        echo "<div id='display_result'><div id='display_sql_result'></div></div>";
+                        echo "<div id='display_left_aside'></div>";
+
                     echo "</div>";
                     
             echo "</div>";
@@ -87,63 +91,23 @@ echo "
 ?>
 
 <script>
+
+    /*
+     *  Listeners  
+    */
     
-    // Select HOST
+    // Select HOST and Display TREE of DB and Tbl's
     var hostSelected = document.getElementById("serverList");
     hostSelected.addEventListener("click", () => {
         hostSelected.addEventListener("change", () => {            
             document.getElementById('hostNavIzq').innerHTML = hostSelected.value;  
             // call ajax function to display DB-info area in div_nav_izq
-            php_sql_url = './include/php_funct/ajax_Display_div_nav_izq.php?hostName='+hostSelected.value;
+            php_sql_url = './include/AJAX_php_js/ajax_Display_div_nav_izq.php?hostName='+hostSelected.value;
             console.log('ajax php=> ' + php_sql_url); 
-            Display_div_nav_izq('html_div_nav_izq',php_sql_url);
+            var host_array = <?php echo json_encode($host_serv); ?>;
+            Display_div_nav_izq('html_div_nav_izq',host_array,php_sql_url);
         })
-    })    
-
-    // view Tree UL
-    function openTree() {
-
-        var toggler = document.getElementsByClassName("caret");
-        var i;
-        console.log('caret length ' + toggler.length);
-
-        /* Define listeners for "caret" class */ 
-        for (i = 0; i < toggler.length; i++) {
-            toggler[i].addEventListener("click", function() {
-                console.log('this class: ' + this.classList + ', tag: '+ this.tagName);
-                console.log('parent El: ' + this.parentElement.tagName  + ', class: '+ this.parentElement.classList);
-                this.parentElement.querySelector(".nested").classList.toggle("active");
-                this.classList.toggle("caret-down");
-            });
-        }
-
-        /* Define listeners for "dispTbl" class, to display table structure (via sql query)  */
-        var tableDisplay = document.getElementsByClassName("dispTbl");
-        var j;
-        var host_server = <?php echo json_encode($host_serv); ?>;        
-
-        for (j = 0; j < tableDisplay.length; j++) {    
-            
-            tableDisplay[j].addEventListener("click", function() {    
-                
-                // Parameters for calling ajax junction
-                var point = this.getAttribute('point');
-                var hostNumb = this.getAttribute('host');
-                var tblName = this.getAttribute('table-name'); 
-                var dbName = this.getAttribute('db');
-                var _tag='display_sql_result';
-               
-                // call ajax table function
-                DescribeTbl_js(_tag,'./include/php_funct/ajax_SelectTbl.php?hostName='+host_server[hostNumb]+'&dbName='+dbName+'&tblName='+tblName);                    
-                
-            });      
-      
-        }
-
-    }
-
-
-
+    })  
 
 </script>
 

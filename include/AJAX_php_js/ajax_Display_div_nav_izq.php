@@ -1,6 +1,6 @@
 <?php
 
-include_once "./my_PHP_functions.php";
+include_once "../php_general_funct/my_PHP_functions.php";
 include_once "../sql_funct/my_SQL_functions_servers.php";
 
 $log_comments_path = "../../assets/log-files/log_comments.log";
