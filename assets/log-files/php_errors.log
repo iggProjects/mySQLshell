@@ -9034,3 +9034,7 @@ Stack trace:
 [10-Jul-2022 21:06:07 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions.php on line 219
 [14-Jul-2022 10:54:37 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions.php on line 219
 [14-Jul-2022 10:55:01 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions.php on line 219
+[14-Jul-2022 11:12:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function try_catch_connect_host() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\z_ViewTree_DBs_MultServers.php:162
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\z_ViewTree_DBs_MultServers.php on line 162
