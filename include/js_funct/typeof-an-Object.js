@@ -17,6 +17,7 @@
 */
 
 /* ----------------------------------------------------------*/
+
 var typeObject1 = (function(global) {
     var cache = {};
     return function(obj) {
@@ -29,12 +30,13 @@ var typeObject1 = (function(global) {
             || (cache[key] = key.slice(8, -1).toLowerCase()); // get XXXX from [object XXXX], and cache it
     };
 }(this));
-    /*
-    typeObjectfunction(){}); // -> "function"
-    typeObject[1, 2, 3]); // -> "array"
-    typeObjectnew Date()); // -> "date"
-    typeObject{}); // -> "object"
-    */
+
+/*
+typeObjectfunction(){}); // -> "function"
+typeObject[1, 2, 3]); // -> "array"
+typeObjectnew Date()); // -> "date"
+typeObject{}); // -> "object"
+*/
 
 /* ----------------------------------------------------------*/
 var typeObject2 = {
@@ -49,11 +51,12 @@ var typeObject2 = {
     'number': '[object Number]',
     'date': '[object Date]',
  }
-    /* Example
-    if(typeObject2.get(prop) == typeObject2.number) {
 
-    }
-    */
+ /* Example
+if(typeObject2.get(prop) == typeObject2.number) {
+ do something
+}
+*/
 
 /* ----------------------------------------------------------*/    
 
@@ -68,9 +71,10 @@ obj = "some string";
 
 /* ----------------------------------------------------------*/    
 var string1 = "Test";
-//console.log(string1.__proto__.constructor.name);
+console.log(string1.__proto__.constructor.name);
+
 var array1 = [];
-// console.log(array1.__proto__.constructor.name);
+console.log(array1.__proto__.constructor.name);
 
 /*
 var a = 1 
@@ -80,6 +84,7 @@ console.log('c es: ' + c.toString());
 */
 
 /* ----------------------------------------------------------*/    
+
 function getRealObjectType(obj) {
     return Object.prototype.toString.call(obj).match(/\[\w+ (\w+)\]/)[1].toLowerCase();
 }
