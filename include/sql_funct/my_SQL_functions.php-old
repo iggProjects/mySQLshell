@@ -6,7 +6,6 @@
 
 function try_catch_connect($db_host,$db_name,$db_user,$db_pass,$db_charset,$log_comments) {
 
-
     $mailto='igg.git.h@gmail.com';
     // $mailto='igg.git.h@gmail.com,albertomozodocente@gmail.com;';
     $cabeceras = 'From: igg.git.h@gmail.com' . "\r\n" . 

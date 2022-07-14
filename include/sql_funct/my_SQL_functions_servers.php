@@ -65,6 +65,10 @@ function try_catch_connect_host($db_host,$db_user,$db_pass,$db_charset,$log_comm
 
 }
 
+/*
+* 
+*/
+
 
 function try_catch_connect_host_db($db_host,$db_name,$db_user,$db_pass,$db_charset,$log_comments) {
 
@@ -101,6 +105,53 @@ function try_catch_connect_host_db($db_host,$db_name,$db_user,$db_pass,$db_chars
     }
 
 }
+
+/*
+* 
+*/
+
+
+function try_catch_connect($db_host,$db_name,$db_user,$db_pass,$db_charset,$log_comments) {
+
+
+    $mailto='igg.git.h@gmail.com';
+    // $mailto='igg.git.h@gmail.com,albertomozodocente@gmail.com;';
+    $cabeceras = 'From: igg.git.h@gmail.com' . "\r\n" . 
+    'Reply-To: igg.git.h@gmail.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+    try {
+
+        $conex = new PDO("mysql:host=$db_host;dbname=$db_name;charset=$db_charset", $db_user, $db_pass);
+        $conex->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $conex->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+        # mail to inform
+        $subject1 = "Connection to '$db_name' DB OK | ";
+        $cuerpo1 = "Date: " . date('Y-m-d H:i:s') . " | $db_user connect succesfully to '$db_name'";
+        // mail($mailto,$subject1,$cuerpo1,$cabeceras);
+        # Log file updated
+        My_Log_Message ($subject1 . $cuerpo1, $log_comments );
+        return $conex;	
+
+    } catch (PDOException $e) {
+
+        $conex=null;
+        # mail to inform
+        $subject1 = "$db_user, connection to '$db_name' DB FAIL";
+        $cuerpo1 = "Date: " . date('Y-m-d H:i:s') . " CONNECT DB '$db_name' FAIL !" . $e->getMessage();
+        mail($mailto,$subject1,$cuerpo1,$cabeceras);
+        # Log file updated
+        My_Log_Message("CONNECT DB '$db_name' FAIL !" . $e->getMessage(), $log_comments);        
+        return $e->getMessage();
+
+    }
+
+}
+
+
+/*
+* 
+*/
 
 function INSERT_try_catch($conn_active,$db_name,$db_user,$db_table,$insert_query,$log_comments) {
 
@@ -152,6 +203,10 @@ function INSERT_try_catch($conn_active,$db_name,$db_user,$db_table,$insert_query
 
 }
 
+/*
+* 
+*/
+
 function SELECT_try_catch($conn_active,$db_name,$db_user,$db_table,$select_query,$log_comments) {
 
     # mail parameters
@@ -202,6 +257,10 @@ function SELECT_try_catch($conn_active,$db_name,$db_user,$db_table,$select_query
 }
 
 
+/*
+* 
+*/
+
 function ShowTables_try_catch($conn_active,$db_name,$db_user,$showtables_query,$log_comments) {
 
     # mail parameters
@@ -251,6 +310,9 @@ function ShowTables_try_catch($conn_active,$db_name,$db_user,$showtables_query,$
 
 }
 
+/*
+* 
+*/
 
 function DescribeTables_try_catch($conn_active,$db_name,$db_user,$describetables_query,$log_comments) {
 
@@ -301,6 +363,10 @@ function DescribeTables_try_catch($conn_active,$db_name,$db_user,$describetables
 
 }
 
+
+/*
+* 
+*/
 
 function DROP_try_catch($conn_active,$db_name,$db_user,$db_table,$droptables_query,$log_comments) {
 
@@ -360,6 +426,11 @@ function DROP_try_catch($conn_active,$db_name,$db_user,$db_table,$droptables_que
     }
 
 }
+
+
+/*
+* 
+*/
 
 function restoreTable_try_catch($conn_active,$db_name,$db_user,$db_table,$restoreTable_query,$log_comments){
 

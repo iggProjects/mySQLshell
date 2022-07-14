@@ -9038,3 +9038,7 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\z_ViewTree_DBs_MultServers.php on line 162
+[14-Jul-2022 11:39:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function try_catch_connect() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_DescribeTbl.php:44
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_DescribeTbl.php on line 44
