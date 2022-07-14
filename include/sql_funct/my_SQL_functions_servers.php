@@ -69,7 +69,6 @@ function try_catch_connect_host($db_host,$db_user,$db_pass,$db_charset,$log_comm
 * 
 */
 
-
 function try_catch_connect_host_db($db_host,$db_name,$db_user,$db_pass,$db_charset,$log_comments) {
 
     $mailto='igg.git.h@gmail.com';
@@ -110,7 +109,7 @@ function try_catch_connect_host_db($db_host,$db_name,$db_user,$db_pass,$db_chars
 * 
 */
 
-
+/* sustituida por la anterior
 function try_catch_connect($db_host,$db_name,$db_user,$db_pass,$db_charset,$log_comments) {
 
 
@@ -147,7 +146,7 @@ function try_catch_connect($db_host,$db_name,$db_user,$db_pass,$db_charset,$log_
     }
 
 }
-
+*/
 
 /*
 * 

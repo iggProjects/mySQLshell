@@ -134,7 +134,7 @@ echo "
                 var _tag='display_sql_result';
                
                 // call ajax table function
-                DescribeTbl_js(_tag,'./include/php_funct/ajax_DescribeTbl.php?hostName='+host_server[hostNumb]+'&dbName='+dbName+'&tblName='+tblName);                    
+                DescribeTbl_js(_tag,'./include/php_funct/ajax_SelectTbl.php?hostName='+host_server[hostNumb]+'&dbName='+dbName+'&tblName='+tblName);                    
                 
             });      
       

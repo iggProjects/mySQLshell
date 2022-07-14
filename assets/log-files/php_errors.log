@@ -9042,3 +9042,16 @@ Stack trace:
 Stack trace:
 #0 {main}
   thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_DescribeTbl.php on line 44
+[14-Jul-2022 12:40:22 Europe/Berlin] PHP Warning:  Undefined variable $db_host in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_DescribeTbl.php on line 46
+[14-Jul-2022 12:40:22 Europe/Berlin] PHP Warning:  Undefined variable $db_name in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_DescribeTbl.php on line 46
+[14-Jul-2022 12:40:22 Europe/Berlin] PHP Warning:  Undefined variable $db_user in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_DescribeTbl.php on line 46
+[14-Jul-2022 12:40:22 Europe/Berlin] PHP Warning:  Undefined variable $db_pass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_DescribeTbl.php on line 46
+[14-Jul-2022 12:40:22 Europe/Berlin] PHP Warning:  Undefined variable $db_charset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_DescribeTbl.php on line 46
+[14-Jul-2022 12:40:22 Europe/Berlin] PHP Warning:  Undefined variable $log_comments in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_DescribeTbl.php on line 46
+[14-Jul-2022 12:40:22 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\my_PHP_functions.php:15
+Stack trace:
+#0 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\my_PHP_functions.php(15): error_log('[14-Jul-2022 12...', 3, NULL)
+#1 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions_servers.php(102): My_Log_Message('CONNECT DB '' F...', NULL)
+#2 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_DescribeTbl.php(46): try_catch_connect_host_db(NULL, NULL, NULL, NULL, NULL, NULL)
+#3 {main}
+  thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\my_PHP_functions.php on line 15
