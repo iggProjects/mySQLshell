@@ -63,7 +63,7 @@ echo "
 
             echo "</div>";
 
-            echo "<div class='div-der disp-col-center'>";
+            echo "<div class='div-der disp-row-center'>";
 
                     echo "<div class='nav-btns disp-col-center'>";
                         echo "<button>Desc<br>Table</button>";
@@ -76,9 +76,12 @@ echo "
                         echo "<button>Restore</button>";
                     echo "</div>";
 
-                    echo "<div class='der-console disp-col-center' style='margin-left:10px;'>";
+                    echo "<div class='der-console disp-row-center' >";
 
-                        echo "<div id='display_result'><div id='display_sql_result'></div></div>";
+                        echo "<div id='display_result'>
+                            <div class='display-result-nav'><p>second nav for sql console</p></div>
+                            <div id='display_sql_result'></div>
+                        </div>";
                         echo "<div id='display_left_aside'></div>";
 
                     echo "</div>";

@@ -2,7 +2,7 @@
  *  PROVISIONAL CSS FILE
 */
 
-  .div-DB-view { width:95%; height:94vh; overflow-y: scroll; margin:auto; margin-top:2px; padding:5px; border:5px solid #e2e2e2; } 
+  .div-DB-view { width:98%; height:92vh; overflow-y: scroll; margin:auto; margin-top:2px; padding:5px; /*border:5px solid #e2e2e2;*/ } 
 
   .div-DB-view p { color:blue; margin-left:5px;}
 
@@ -10,7 +10,7 @@
 
   .div-DB-view .div-header-text h2 {margin-top:3px;  text-align:center; color:gray;}
   
-  .div-DB-view .DB-info { width:100%; height:94%; margin-top:0px;} 
+  .div-DB-view .DB-info { width:100%; height:93%; margin-top:0px;} 
 
   .div-DB-view .DB-info .nav-izq { width:20%; border: 5px solid #e6e6e6; padding-left:5px; overflow-wrap: break-word; overflow: scroll;}
 
@@ -18,17 +18,21 @@
 
   .div-DB-view .DB-info .nav-izq .servers_List { width:98%; min-height:30px; margin:auto;  margin-top:0px; margin-bottom:10px; color:blue; }
 
-  .div-DB-view .DB-info .div-der { width:80%; height:100%; border: 5px solid #e6e6e6; margin-top:0px; margin-left:10px; padding-left:5px; border:1px solid #e21919; background-color: #f2f2f2;  overflow: scroll;} 
+  .div-DB-view .DB-info .div-der { width:80%; height:100%; border: 5px solid #e6e6e6; margin-top:0px; margin-left:10px;  border:5px solid #c3c3c3; background-color: #f2f2f2;  overflow: scroll;} 
   
-  .div-DB-view .DB-info .div-der .nav-btns { width:100%; height: 40px; margin:0px; background-color: #a6a6a6; }
+  .div-DB-view .DB-info .div-der .nav-btns { width:100%; height: 40px; margin:0px; background-color: #e2e2e2; }
 
-  .div-DB-view .DB-info .div-der #display_result { width:82%; height:96%; margin-top:3px; padding-top:30px; text-align:center; border:5px solid #e2e2e2; }
+  .div-DB-view .DB-info .div-der .der-console { width:100%; height: 90%; margin:0px; /* border:2px solid #a6a6a6; */}
 
-  .div-DB-view .DB-info .div-der #display_result #display_sql_result { width:800px; height: 500px;  overflow:scroll; margin-left:auto; text-align: center; }
+  .div-DB-view .DB-info .div-der .der-console #display_result { width:84%; height:96%; margin-top:0px; padding-top:0px; text-align:center;  }
 
-  /* .div-DB-view .DB-info .div-der #display_result #display_sql_result table {  margin-right: auto;} */
+  .div-DB-view .DB-info .div-der .der-console #display_result .display-result-nav { width: 100%; height:50px; margin:auto; border:2px solid white; background-color: #e2e2e2; }
 
-  .div-DB-view .DB-info .div-der #display_left_aside { width:15%; height:96%; margin-top:3px; padding-top:30px; background-color: #a5dffe;}
+  .div-DB-view .DB-info .div-der .der-console #display_result #display_sql_result { width:100%; height: 460px; overflow:scroll; margin:auto; padding-top:10px; text-align: center; }
+
+  .div-DB-view .DB-info .div-der .der-console #display_result #display_sql_result table {  margin-right: auto; margin-left:auto;} 
+
+  .div-DB-view .DB-info .div-der .der-console #display_left_aside { width:14%; height:96%; margin-top:0px; padding-top:10px; border:2px solid white; background-color: #e2e2e2;}
 
   .nav-btns button {min-width: 80px; height: 30px; font-size:11px; border:1px solid orange; background-color:orange; border-radius: 5px;}
 
@@ -46,9 +50,9 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: baseline;
-    align-content: stretch;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
   }
 
   .disp-col-center {
