@@ -1,7 +1,6 @@
 <?php
 /*
- * This is needed for cookie based authentication to encrypt password in
- * cookie
+ * This is needed for cookie based authentication to encrypt password in cookie
 */ 
 
 // $cfg_s['blowfish_secret'] = 'xampp'; // YOU SHOULD CHANGE THIS FOR A MORE SECURE COOKIE AUTH! 

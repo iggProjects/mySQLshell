@@ -9032,3 +9032,46 @@ Stack trace:
 [10-Jul-2022 20:45:53 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_Display_div_nav_izq.php on line 71
 [10-Jul-2022 20:58:56 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions.php on line 219
 [10-Jul-2022 21:06:07 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions.php on line 219
+[14-Jul-2022 10:54:37 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions.php on line 219
+[14-Jul-2022 10:55:01 Europe/Berlin] PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions.php on line 219
+[14-Jul-2022 11:12:27 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function try_catch_connect_host() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\z_ViewTree_DBs_MultServers.php:162
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\z_ViewTree_DBs_MultServers.php on line 162
+[14-Jul-2022 11:39:05 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function try_catch_connect() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_DescribeTbl.php:44
+Stack trace:
+#0 {main}
+  thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_DescribeTbl.php on line 44
+[14-Jul-2022 12:40:22 Europe/Berlin] PHP Warning:  Undefined variable $db_host in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_DescribeTbl.php on line 46
+[14-Jul-2022 12:40:22 Europe/Berlin] PHP Warning:  Undefined variable $db_name in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_DescribeTbl.php on line 46
+[14-Jul-2022 12:40:22 Europe/Berlin] PHP Warning:  Undefined variable $db_user in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_DescribeTbl.php on line 46
+[14-Jul-2022 12:40:22 Europe/Berlin] PHP Warning:  Undefined variable $db_pass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_DescribeTbl.php on line 46
+[14-Jul-2022 12:40:22 Europe/Berlin] PHP Warning:  Undefined variable $db_charset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_DescribeTbl.php on line 46
+[14-Jul-2022 12:40:22 Europe/Berlin] PHP Warning:  Undefined variable $log_comments in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_DescribeTbl.php on line 46
+[14-Jul-2022 12:40:22 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\my_PHP_functions.php:15
+Stack trace:
+#0 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\my_PHP_functions.php(15): error_log('[14-Jul-2022 12...', 3, NULL)
+#1 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions_servers.php(102): My_Log_Message('CONNECT DB '' F...', NULL)
+#2 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\ajax_DescribeTbl.php(46): try_catch_connect_host_db(NULL, NULL, NULL, NULL, NULL, NULL)
+#3 {main}
+  thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_funct\my_PHP_functions.php on line 15
+[14-Jul-2022 15:43:48 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function My_Log_Message() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions_servers.php:26
+Stack trace:
+#0 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php(54): try_catch_connect_host('POAPMYSQL119.dn...', 'inaki2022', 'Inaki@2022', 'utf8mb4', '../../assets/lo...')
+#1 {main}
+  thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions_servers.php on line 26
+[14-Jul-2022 15:54:14 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function My_Log_Message() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions_servers.php:90
+Stack trace:
+#0 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php(45): try_catch_connect_host_db('POAPMYSQL119.dn...', '8661316_laninak...', 'inaki2022', 'Inaki@2022', 'utf8mb4', '../../assets/lo...')
+#1 {main}
+  thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions_servers.php on line 90
+[14-Jul-2022 15:55:03 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function My_Log_Message() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions_servers.php:90
+Stack trace:
+#0 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php(45): try_catch_connect_host_db('127.0.0.1', 'mysql', 'root', '@mysql@', 'utf8mb4', '../../assets/lo...')
+#1 {main}
+  thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions_servers.php on line 90
+[14-Jul-2022 15:59:29 Europe/Berlin] PHP Fatal error:  Uncaught Error: Call to undefined function My_Log_Message() in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions_servers.php:90
+Stack trace:
+#0 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php(45): try_catch_connect_host_db('POAPMYSQL119.dn...', '8661316_laninak...', 'inaki2022', 'Inaki@2022', 'utf8mb4', '../../assets/lo...')
+#1 {main}
+  thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions_servers.php on line 90

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A description of the page" />	
+    <title>HTML CARPETA BASE</title>
+    <link rel="icon" type="image/x-icon" href="../../assets/img-igg/igg-favicon.png">
+    <script type="text/javascript" src="myFunct-htmlAnalysis.js"></script>
+    <script type="text/javascript" src="typeof-an-Object.js"></script>
+<!--
+	<link type="text/css" href="css/????.css" rel="stylesheet">
+    <script type="text/javascript" src="js/???.js"></script>
+-->    
+
+    <style>   /* local style file */
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;             
+        }  
+        
+        body { text-align: center; }
+        h1 { margin-top: 200px; }
+        p {color: blue; margin-top: 20px;}
+
+    </style>
+
+
+
+</head>
+
+<body>
+<h1 id="h1">PROBANDO FUNCIONES<br>PARA ENCONTRAR<br>EL TIPO DEL OBJETO</h1>
+<p><b>(Activar consola javascript)</b></h1>
+
+<!--  
+<script>     
+    JS code to use for HTML COLLECTION analysis. 
+    Is at the end, to be able to read the complete html code  
+</script>    
+-->
+
+</body>
+
+<script>   /* local JS code */
+
+    console_Log('---------------- INIT typeObject1 function ----------------','','',2);
+    
+    console_Log('true ->           ' + typeObject1(true),'','gray',1); // -> "boolean"
+    console_Log('"abc def" ->      ' + typeObject1("abc def"),'','',1); // -> "string"
+    console_Log('function(){} ->   ' + typeObject1(function(){}),'','blue',1); // -> "function"
+    console_Log(typeObject1([1, 2, 3]),'','green',1); // -> "array"
+    console_Log(typeObject1(new Date()),'','red',1); // -> "date"
+    console_Log(typeObject1({}),'','gray',1); // -> "object"
+    console_Log(typeObject1(document.getElementById("h1")),'','red',1); // -> "object"
+    
+    console_Log('---------------- End typeObject function ---------------','','',2);
+
+    console_Log('---------------- INIT typeObject2 function ----------------','','',2);
+
+    console_Log(typeObject2.get(true),'','gray',1);
+    console_Log(typeObject2.get("abc def"),'','',1);
+    console_Log(typeObject2.get(function(){}),'','blue',1);
+    console_Log(typeObject2.get([1, 2, 3]),'','green',1);
+    console_Log(typeObject2.get(new Date()),'','red',1);
+    console_Log(typeObject2.get({}),'','blue',1);
+    console_Log(typeObject2.get(document.getElementById("h1")),'','blue',1);
+    
+
+    console_Log('---------------- End typeObject2 function ---------------','','',2);
+
+    console_Log('---------------- INIT typeObject3 function ----------------','','',2);
+    // hacer un for con lista de objetos para buscar áquel cuyo valor sea true
+    var obj = [1, 2, 3];                
+    console_Log(`[${obj}] checking prototype Array -> ${Object.getPrototypeOf(obj) === Array.prototype}`,'','blue',1);
+    var obj = document.getElementById("h1");                
+    console_Log(`${obj} checking prototype html dom -> ${Object.getPrototypeOf(obj) === HTMLHeadingElement.prototype}`,'','blue',1);
+
+
+    console_Log('---------------- End typeObject3 function ---------------','','',2);
+
+    console_Log('---------------- INIT typeObject4 function ----------------','','',2);
+
+    var obj1; // undefine
+    console.log(typeof obj1);        
+    //console_Log(obj1.__proto__.constructor.name,'','green',1);
+    var obj = 1001;        
+    console_Log(obj.__proto__.constructor.name,'','violet',1);
+    var obj = true;        
+    console_Log(obj.__proto__.constructor.name,'','gray',1);
+    var obj = "abc def";        
+    console_Log(obj.__proto__.constructor.name,'','',1);
+    var obj = function(){};        
+    console_Log(obj.__proto__.constructor.name,'','blue',1);
+    var obj = [1, 2, 3];
+    console_Log(obj.__proto__.constructor.name,'','green',1);
+    var obj = [ { "num": [ "cero", "uno", "dos" ] }, { "letra": [ "a", "b", "c", "d" ] } ];
+    console_Log(obj.__proto__.constructor.name,'','green',1);
+    var obj = new Date();
+    console_Log(obj.__proto__.constructor.name,'','red',1);
+    var obj = {};
+    console_Log(obj.__proto__.constructor.name,'','blue',1);
+    var obj = { "source": "/var/log/apache2/git.1234.de-443-access.json", "data": { "http_code": 204, "pid": "-", "request_id": "-", "log_level": "-", "body_size": 0, "host": "git.1234.de", "peer_ip": "10.200.13.212", "duration": 1693, "source": "-", "client_port": "-", "error_message": "-", "client_ip": "10.200.13.333", "elem": { "pais": "eus", "continente": "ue", "moneda": { "1": "euro", "2": "dólar" } } }, "path": "/var/log/apache2" }
+    console_Log(obj.__proto__.constructor.name,'','blue',1);
+    var obj = { "members": [ { "name": "Molecule Man", "age": 29, "secretIdentity": "Dan Jukes", "powers": [ "Radiation resistance", "Turning tiny", "Radiation blast"  ] } ] }; 
+    console_Log(obj.__proto__.constructor.name,'','blue',1);
+    var obj = document.getElementById("h1"); 
+    console_Log(obj.__proto__.constructor.name,'','blue',1);
+
+    console_Log('---------------- End typeObject4 function ---------------','','',2);
+
+    console_Log('---------------- INIT typeObject5 function ----------------','','',2);
+
+    console_Log(`${getRealObjectType(1001)}`,'','green',2);
+    console_Log(`${getRealObjectType("abc def")}`,'','violet',2);
+    console_Log(`${getRealObjectType([1, 2, 3])}`,'','red',2);
+    console_Log(`${getRealObjectType(new Date())}`,'','gray',2);
+    console_Log(`${getRealObjectType({})}`,'','blue',2);
+    console_Log(`${getRealObjectType([])}`,'','',2);
+    console_Log(`${getRealObjectType(document.getElementById("h1"))}`,'','green',2);
+
+    console_Log('---------------- End typeObject5 function ---------------','','',2);
+
+</script>
+
+</html>    
