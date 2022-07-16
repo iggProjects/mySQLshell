@@ -43,7 +43,7 @@ if ( $dbhost == 'POAPMYSQL119.dns-servicio.com:3306' ) {
 # connection to DB using $db_parameters
 
 $conex_db = try_catch_connect_host_db($dbhost,$dbname,$dbuser,$dbpass,$dbcharset,$log_queries_path);
-
+$divHtml  = "";
 $route = "";
 $error_msg = "MySql error was found";
 
@@ -67,11 +67,20 @@ if ( gettype($conex_db) === 'object' ) {
 # HTML DATA FOR DIV
 if ($route == 'display_data') { # display html data   
 
-    $divHtml  = "<p>\$conex_db is: " . gettype($conex_db) . " | var_dump(\$conex_db)</p>";
-    $divHtml .= "<pre>" . var_dump($conex_db) . "</pre>";   
+    //$divHtml  = "<p>\$conex_db is: " . gettype($conex_db) . " | var_dump(\$conex_db)</p>";
+    //$divHtml .= "<pre>" . var_dump($conex_db) . "</pre>";   
             
-    $thead_titles = ['#','Field','type','Null','Key','Default','Extra'];        
-    $divHtml .= displayTable("Fields in table $dbtable",90,$thead_titles,$resultado);
+    $thead_titles = ['#','Field'];   
+    $cols = array();
+    $i = 0;
+
+    foreach ( $resultado as $key => $value) {        
+        //echo $key . " - " . $value['Field'] . "<br>";
+        $cols[$i]['Field'] = $value['Field']; 
+        $i++;              
+    }   
+    
+    $divHtml .= displayTable("Table $dbtable",90,$thead_titles,$cols);
 
 } else { # display error msq
 
