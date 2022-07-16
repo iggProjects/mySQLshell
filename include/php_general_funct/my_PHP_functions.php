@@ -227,25 +227,25 @@
 
     function displayTable($table_title,$table_width,$thead_titles_array,$data_array){
 
-
         // echo "<p style = 'margin-top:80px;'>$table_title</p>";
         $i=1;
-        echo "<table style='width: $table_width%; overflow:scroll;'>";          
-
+        echo "<table style='max-width: $table_width%; overflow:scroll;'>";          
+        
             $tr_thead = "<tr>";
-            for ($j=0; $j<count($thead_titles_array); $j++) {
-                $th = "<th style='padding:1px;'>" . $thead_titles_array[$j]  . "</th>";
-                $tr_thead .= $th; 
+            $tr_thead .= "<th style='text-align:center; padding-right:10px; font-size:12px; color:#666666; '>#</th>";
+            if ( count($data_array) > 0 ) {
+                foreach ( $data_array[0] as $key => $value ) {  
+                    $th = "<th style='padding:1px; font-size:13px; color:#666666;'>" . $key  . "</th>"; 
+                    $tr_thead .= $th;
+                }                
             }
-            $tr_thead .="</tr>";  
-            
-            echo $tr_thead;          
-            
+            $tr_thead .="</tr>";            
+            echo $tr_thead; 
             foreach ( $data_array as $row ) {
                 echo "<tr>
-                <td style='text-align:center;'>$i</td>";      
+                <td style='text-align:center; padding-right:10px; font-size:12px; color:green;'>$i → </td>";      
                 foreach ( $row as $col ) {
-                    echo "<td style='text-align:center; padding-top:3px;'>" .$col . "</td>";
+                    echo "<td style='text-align:center; font-size:13px; color:#1a1aff; padding-left:3px;padding-right:3px;'>" .$col . "</td>";
                 }
                 echo "</tr>";
                 $i++;

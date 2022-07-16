@@ -1,0 +1,15 @@
+PENDIENTE
+
+LOGIN 
+    - login como root
+    - creación de usuarios
+    - login usuario - privilegios
+
+display_sql_result -> colocar al inicio <p id='sql-query'></p> , letra pequeña, color vinotinto    
+
+SQL BUTTON
+    - subdividir 'der-console' en 3:
+      - área para escribir sql y ejecutar       
+      - area resultado: caso positivo tabla, caso error: mensaje y help
+
+

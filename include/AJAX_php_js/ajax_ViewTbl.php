@@ -40,8 +40,6 @@ if ( $dbhost == 'POAPMYSQL119.dns-servicio.com:3306' ) {
     // upssssss msg
 }
 
-
-
 # connection to DB using $db_parameters
 $conex_db = try_catch_connect_host_db($dbhost,$dbname,$dbuser,$dbpass,$dbcharset,$log_queries_path);
 
@@ -50,8 +48,8 @@ $error_msg = "MySql error was found";
 
 if ( gettype($conex_db) === 'object' ) {
 
-    $describetables_query = "desc $dbtable;";
-    $resultado = DescribeTables_try_catch($conex_db,$dbname,$dbuser,$describetables_query,$log_queries_path);
+    $select_query = "SELECT * FROM $dbtable LIMIT 10;";
+    $resultado = SELECT_try_catch($conex_db,$dbname,$dbuser,$dbtable,$select_query,$log_queries_path);      
 
     if ( gettype($resultado) === 'object' || gettype($resultado) === 'array' ) {  
         $route = "display_data";        
@@ -71,8 +69,9 @@ if ($route == 'display_data') { # display html data
     //$divHtml  = "<p>\$conex_db is: " . gettype($conex_db) . " | var_dump(\$conex_db)</p>";
     //$divHtml .= "<pre>" . var_dump($conex_db) . "</pre>";   
             
+    //$thead_titles = [];        
     // $thead_titles = ['#','Field','type','Null','Key','Default','Extra'];        
-    $divHtml .= displayTable("Fields in table $dbtable",90,$thead_titles,$resultado);
+    $divHtml .= displayTable("Elements in table $dbtable",90,$thead_titles,$resultado);
 
 } else { # display error msq
 

@@ -6208,3 +6208,1189 @@
 [16-Jul-2022 20:30:06] [Connection to 'information_schema' DB OK | Date: 2022-07-16 20:30:06 | inaki2022 connect succesfully to 'information_schema']
 [16-Jul-2022 20:30:06] [Date: 2022-07-16 20:30:06 | inaki2022 execute succesfully show tables query
  'desc COLLATIONS;']
+[16-Jul-2022 20:31:00] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[16-Jul-2022 20:31:03] [Connection to host '127.0.0.1' OK | Date: 2022-07-16 20:31:03 | root connect succesfully to '127.0.0.1']
+[16-Jul-2022 20:31:03] [Date: 2022-07-16 20:31:03 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[16-Jul-2022 20:31:09] [Connection to 'employees' DB OK | Date: 2022-07-16 20:31:09 | root connect succesfully to 'employees']
+[16-Jul-2022 20:31:09] [Date: 2022-07-16 20:31:09 | root execute succesfully show tables query
+ 'desc dept_emp;']
+[16-Jul-2022 20:31:10] [Connection to 'employees' DB OK | Date: 2022-07-16 20:31:10 | root connect succesfully to 'employees']
+[16-Jul-2022 20:31:10] [Date: 2022-07-16 20:31:10 | root execute succesfully show tables query
+ 'desc dept_emp;']
+[16-Jul-2022 20:31:28] [Connection to 'employees' DB OK | Date: 2022-07-16 20:31:28 | root connect succesfully to 'employees']
+[16-Jul-2022 20:31:28] [Date: 2022-07-16 20:31:28 | root execute succesfully show tables query
+ 'desc current_dept_emp;']
+[16-Jul-2022 20:31:30] [Connection to 'employees' DB OK | Date: 2022-07-16 20:31:30 | root connect succesfully to 'employees']
+[16-Jul-2022 20:31:30] [Date: 2022-07-16 20:31:30 | root execute succesfully show tables query
+ 'desc salaries;']
+[16-Jul-2022 20:31:31] [Connection to 'employees' DB OK | Date: 2022-07-16 20:31:31 | root connect succesfully to 'employees']
+[16-Jul-2022 20:31:31] [Date: 2022-07-16 20:31:31 | root execute succesfully show tables query
+ 'desc titles;']
+[16-Jul-2022 20:31:34] [Connection to 'employees' DB OK | Date: 2022-07-16 20:31:34 | root connect succesfully to 'employees']
+[16-Jul-2022 20:31:34] [Date: 2022-07-16 20:31:34 | root execute succesfully show tables query
+ 'desc employees;']
+[16-Jul-2022 20:31:36] [Connection to 'employees' DB OK | Date: 2022-07-16 20:31:36 | root connect succesfully to 'employees']
+[16-Jul-2022 20:31:36] [Date: 2022-07-16 20:31:36 | root execute succesfully show tables query
+ 'desc users;']
+[16-Jul-2022 20:31:37] [Connection to 'employees' DB OK | Date: 2022-07-16 20:31:37 | root connect succesfully to 'employees']
+[16-Jul-2022 20:31:38] [Date: 2022-07-16 20:31:38 | root execute succesfully show tables query
+ 'desc current_dept_emp;']
+[16-Jul-2022 23:45:02] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-16 23:45:02 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[16-Jul-2022 23:45:02] [Date: 2022-07-16 23:45:02 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[16-Jul-2022 23:45:05] [Connection to 'information_schema' DB OK | Date: 2022-07-16 23:45:05 | inaki2022 connect succesfully to 'information_schema']
+[16-Jul-2022 23:45:05] [Date: 2022-07-16 23:45:05 | inaki2022 execute succesfully show tables query
+ 'desc COLLATIONS;']
+[16-Jul-2022 23:45:07] [Connection to 'information_schema' DB OK | Date: 2022-07-16 23:45:07 | inaki2022 connect succesfully to 'information_schema']
+[16-Jul-2022 23:45:07] [Date: 2022-07-16 23:45:07 | inaki2022 execute succesfully show tables query
+ 'desc COLLATIONS;']
+[16-Jul-2022 23:46:03] [Connection to 'information_schema' DB OK | Date: 2022-07-16 23:46:03 | inaki2022 connect succesfully to 'information_schema']
+[16-Jul-2022 23:46:03] [Date: 2022-07-16 23:46:03 | inaki2022 execute succesfully show tables query
+ 'desc KEY_COLUMN_USAGE;']
+[16-Jul-2022 23:46:08] [Connection to 'information_schema' DB OK | Date: 2022-07-16 23:46:08 | inaki2022 connect succesfully to 'information_schema']
+[16-Jul-2022 23:46:08] [Date: 2022-07-16 23:46:08 | inaki2022 execute succesfully show tables query
+ 'desc KEY_COLUMN_USAGE;']
+[16-Jul-2022 23:48:14] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-16 23:48:14 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[16-Jul-2022 23:48:14] [Date: 2022-07-16 23:48:14 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[16-Jul-2022 23:48:16] [Connection to 'information_schema' DB OK | Date: 2022-07-16 23:48:16 | inaki2022 connect succesfully to 'information_schema']
+[16-Jul-2022 23:48:16] [Date: 2022-07-16 23:48:16 | inaki2022 execute succesfully show tables query
+ 'desc COLLATIONS;']
+[16-Jul-2022 23:50:04] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-16 23:50:04 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[16-Jul-2022 23:50:04] [Date: 2022-07-16 23:50:04 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[16-Jul-2022 23:50:07] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-16 23:50:07 | inaki2022 connect succesfully to '8661316_laninaki22']
+[16-Jul-2022 23:50:07] [Date: 2022-07-16 23:50:07 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[16-Jul-2022 23:50:10] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-16 23:50:10 | inaki2022 connect succesfully to '8661316_laninaki22']
+[16-Jul-2022 23:50:10] [Date: 2022-07-16 23:50:10 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[16-Jul-2022 23:50:30] [Connection to 'information_schema' DB OK | Date: 2022-07-16 23:50:30 | inaki2022 connect succesfully to 'information_schema']
+[16-Jul-2022 23:50:30] [Date: 2022-07-16 23:50:30 | inaki2022 execute succesfully show tables query
+ 'desc KEY_COLUMN_USAGE;']
+[17-Jul-2022 00:02:34] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 00:02:34 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 00:02:35] [Date: 2022-07-17 00:02:35 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 00:02:37] [Connection to 'information_schema' DB OK | Date: 2022-07-17 00:02:37 | root connect succesfully to 'information_schema']
+[17-Jul-2022 00:02:37] [Date: 2022-07-17 00:02:37 | root execute succesfully show tables query
+ 'desc ALL_PLUGINS;']
+[17-Jul-2022 00:02:41] [Connection to 'information_schema' DB OK | Date: 2022-07-17 00:02:41 | root connect succesfully to 'information_schema']
+[17-Jul-2022 00:02:41] [Date: 2022-07-17 00:02:41 | root execute succesfully show tables query
+ 'desc ALL_PLUGINS;']
+[17-Jul-2022 00:03:56] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 00:03:56 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 00:03:56] [Date: 2022-07-17 00:03:56 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 00:03:59] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 00:03:59 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 00:03:59] [Date: 2022-07-17 00:03:59 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[17-Jul-2022 00:04:02] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 00:04:02 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 00:04:02] [Date: 2022-07-17 00:04:02 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[17-Jul-2022 00:04:05] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 00:04:05 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 00:04:06] [Date: 2022-07-17 00:04:06 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users LIMIT 10;']
+[17-Jul-2022 00:05:36] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 00:05:36 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 00:05:36] [Date: 2022-07-17 00:05:36 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[17-Jul-2022 00:05:43] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 00:05:43 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 00:05:43] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 00:05:43 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 00:05:43] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 00:05:43 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 00:05:43] [Date: 2022-07-17 00:05:43 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 00:05:43] [Date: 2022-07-17 00:05:43 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;'][17-Jul-2022 00:05:43] [Date: 2022-07-17 00:05:43 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+
+[17-Jul-2022 00:05:58] [Connection to 'mysql' DB OK | Date: 2022-07-17 00:05:58 | root connect succesfully to 'mysql']
+[17-Jul-2022 00:05:58] [Date: 2022-07-17 00:05:58 | root execute succesfully show tables query
+ 'desc columns_priv;']
+[17-Jul-2022 00:06:04] [Connection to 'mysql' DB OK | Date: 2022-07-17 00:06:04 | root connect succesfully to 'mysql']
+[17-Jul-2022 00:06:04] [Date: 2022-07-17 00:06:04 | root execute succesfully show tables query
+ 'desc columns_priv;']
+[17-Jul-2022 00:06:08] [Connection to 'mysql' DB OK | Date: 2022-07-17 00:06:08 | root connect succesfully to 'mysql']
+[17-Jul-2022 00:06:08] [Date: 2022-07-17 00:06:08 | root execute succesfully show tables query
+ 'desc db;']
+[17-Jul-2022 00:06:11] [Connection to 'mysql' DB OK | Date: 2022-07-17 00:06:11 | root connect succesfully to 'mysql']
+[17-Jul-2022 00:06:11] [Date: 2022-07-17 00:06:11 | root execute succesfully show tables query
+ 'desc db;']
+[17-Jul-2022 00:06:26] [Connection to 'mysql' DB OK | Date: 2022-07-17 00:06:26 | root connect succesfully to 'mysql']
+[17-Jul-2022 00:06:26] [Date: 2022-07-17 00:06:26 | root execute succesfully Select query in mysql
+ 'SELECT * FROM db LIMIT 10;']
+[17-Jul-2022 00:17:19] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 00:17:19 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 00:17:19] [Date: 2022-07-17 00:17:19 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 00:17:22] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 00:17:22 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 00:17:22] [Date: 2022-07-17 00:17:22 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[17-Jul-2022 00:17:26] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 00:17:26 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 00:17:26] [Date: 2022-07-17 00:17:26 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users LIMIT 10;']
+[17-Jul-2022 00:19:55] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 00:19:55 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 00:19:56] [Date: 2022-07-17 00:19:56 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 00:19:58] [Connection to 'information_schema' DB OK | Date: 2022-07-17 00:19:58 | inaki2022 connect succesfully to 'information_schema']
+[17-Jul-2022 00:19:58] [Date: 2022-07-17 00:19:58 | inaki2022 execute succesfully show tables query
+ 'desc COLLATIONS;']
+[17-Jul-2022 00:20:14] [Connection to 'information_schema' DB OK | Date: 2022-07-17 00:20:14 | inaki2022 connect succesfully to 'information_schema']
+[17-Jul-2022 00:20:14] [Date: 2022-07-17 00:20:14 | inaki2022 execute succesfully show tables query
+ 'desc INNODB_BUFFER_PAGE_LRU;']
+[17-Jul-2022 00:20:17] [Connection to 'information_schema' DB OK | Date: 2022-07-17 00:20:17 | inaki2022 connect succesfully to 'information_schema']
+[17-Jul-2022 00:20:17] [Date: 2022-07-17 00:20:17 | inaki2022 execute succesfully show tables query
+ 'desc INNODB_BUFFER_PAGE_LRU;']
+[17-Jul-2022 00:20:20] [Connection to 'information_schema' DB OK | Date: 2022-07-17 00:20:20 | inaki2022 connect succesfully to 'information_schema']
+[17-Jul-2022 00:20:20] [Date: 2022-07-17 00:20:20 | select query in information_schema FAILED 
+ 'SELECT * FROM INNODB_BUFFER_PAGE_LRU LIMIT 10;' SQLSTATE[42000]: Syntax error or access violation: 1227 Access denied; you need (at least one of) the PROCESS privilege(s) for this operation]
+[17-Jul-2022 00:20:23] [Connection to 'information_schema' DB OK | Date: 2022-07-17 00:20:23 | inaki2022 connect succesfully to 'information_schema']
+[17-Jul-2022 00:20:23] [Date: 2022-07-17 00:20:23 | inaki2022 execute succesfully show tables query
+ 'desc INNODB_CMP_RESET;']
+[17-Jul-2022 00:20:32] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 00:20:32 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 00:20:32] [Date: 2022-07-17 00:20:32 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[17-Jul-2022 00:20:35] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 00:20:35 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 00:20:35] [Date: 2022-07-17 00:20:35 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users LIMIT 10;']
+[17-Jul-2022 00:21:15] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 00:21:15 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 00:21:15] [Date: 2022-07-17 00:21:15 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 00:21:18] [Connection to 'employees' DB OK | Date: 2022-07-17 00:21:18 | root connect succesfully to 'employees']
+[17-Jul-2022 00:21:18] [Date: 2022-07-17 00:21:18 | root execute succesfully show tables query
+ 'desc departments;']
+[17-Jul-2022 00:21:20] [Connection to 'employees' DB OK | Date: 2022-07-17 00:21:20 | root connect succesfully to 'employees']
+[17-Jul-2022 00:21:20] [Date: 2022-07-17 00:21:20 | root execute succesfully Select query in employees
+ 'SELECT * FROM departments LIMIT 10;']
+[17-Jul-2022 00:21:29] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:21:29 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:21:29] [Date: 2022-07-17 00:21:29 | root execute succesfully show tables query
+ 'desc tbl_archivos;']
+[17-Jul-2022 00:21:32] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:21:32 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:21:32] [Date: 2022-07-17 00:21:32 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_archivos LIMIT 10;']
+[17-Jul-2022 00:22:09] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 00:22:09 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 00:22:09] [Date: 2022-07-17 00:22:09 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 00:22:17] [Connection to 'employees' DB OK | Date: 2022-07-17 00:22:17 | root connect succesfully to 'employees']
+[17-Jul-2022 00:22:17] [Date: 2022-07-17 00:22:17 | root execute succesfully show tables query
+ 'desc dept_manager;']
+[17-Jul-2022 00:22:19] [Connection to 'employees' DB OK | Date: 2022-07-17 00:22:19 | root connect succesfully to 'employees']
+[17-Jul-2022 00:22:19] [Date: 2022-07-17 00:22:19 | root execute succesfully Select query in employees
+ 'SELECT * FROM dept_manager LIMIT 10;']
+[17-Jul-2022 00:22:36] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:22:36 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:22:36] [Date: 2022-07-17 00:22:36 | root execute succesfully show tables query
+ 'desc tbl_ciudad;']
+[17-Jul-2022 00:22:39] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:22:39 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:22:39] [Date: 2022-07-17 00:22:39 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad LIMIT 10;']
+[17-Jul-2022 00:26:10] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:26:10 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:26:10] [Date: 2022-07-17 00:26:10 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad LIMIT 10;']
+[17-Jul-2022 00:26:20] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 00:26:20 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 00:26:20] [Date: 2022-07-17 00:26:20 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 00:26:22] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 00:26:22 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 00:26:22] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 00:26:22 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 00:26:22] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 00:26:22 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 00:26:23] [Date: 2022-07-17 00:26:23 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;'][17-Jul-2022 00:26:23] [Date: 2022-07-17 00:26:23 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;'][17-Jul-2022 00:26:23] [Date: 2022-07-17 00:26:23 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+
+
+[17-Jul-2022 00:26:31] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:26:31 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:26:31] [Date: 2022-07-17 00:26:31 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 00:26:36] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:26:36 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:26:36] [Date: 2022-07-17 00:26:36 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 00:26:43] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:26:43 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:26:43] [Date: 2022-07-17 00:26:43 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona LIMIT 10;']
+[17-Jul-2022 00:26:57] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:26:57 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:26:57] [Date: 2022-07-17 00:26:57 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 00:27:36] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 00:27:36 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 00:27:36] [Date: 2022-07-17 00:27:36 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 00:27:41] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 00:27:41 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 00:27:41] [Date: 2022-07-17 00:27:41 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[17-Jul-2022 00:27:45] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 00:27:45 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 00:27:45] [Date: 2022-07-17 00:27:45 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[17-Jul-2022 00:27:49] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 00:27:49 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 00:27:49] [Date: 2022-07-17 00:27:49 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users LIMIT 10;']
+[17-Jul-2022 00:28:59] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 00:28:59 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 00:28:59] [Date: 2022-07-17 00:28:59 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 00:29:03] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:29:03 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:29:03] [Date: 2022-07-17 00:29:03 | root execute succesfully show tables query
+ 'desc tbl_ciudad;']
+[17-Jul-2022 00:29:05] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:29:05 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:29:05] [Date: 2022-07-17 00:29:05 | root execute succesfully show tables query
+ 'desc tbl_ciudad;']
+[17-Jul-2022 00:29:07] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:29:07 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:29:07] [Date: 2022-07-17 00:29:07 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad LIMIT 10;']
+[17-Jul-2022 00:29:23] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:29:23 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:29:23] [Date: 2022-07-17 00:29:23 | root execute succesfully show tables query
+ 'desc tbl_relacion;']
+[17-Jul-2022 00:29:26] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:29:26 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:29:26] [Date: 2022-07-17 00:29:26 | root execute succesfully show tables query
+ 'desc tbl_relacion;']
+[17-Jul-2022 00:30:01] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:30:01 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:30:01] [Date: 2022-07-17 00:30:01 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_relacion LIMIT 10;']
+[17-Jul-2022 00:30:05] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:30:05 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:30:05] [Date: 2022-07-17 00:30:05 | root execute succesfully show tables query
+ 'desc tbl_provincia;']
+[17-Jul-2022 00:30:06] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:30:06 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:30:06] [Date: 2022-07-17 00:30:06 | root execute succesfully show tables query
+ 'desc tbl_provincia;']
+[17-Jul-2022 00:30:11] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:30:11 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:30:11] [Date: 2022-07-17 00:30:11 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_provincia LIMIT 10;']
+[17-Jul-2022 00:30:25] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:30:25 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:30:25] [Date: 2022-07-17 00:30:25 | root execute succesfully show tables query
+ 'desc tbl_relacion_persona;']
+[17-Jul-2022 00:30:32] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:30:32 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:30:32] [Date: 2022-07-17 00:30:32 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_relacion_persona LIMIT 10;']
+[17-Jul-2022 00:34:24] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 00:34:24 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 00:34:24] [Date: 2022-07-17 00:34:24 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 00:34:28] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 00:34:28 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 00:34:28] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 00:34:28 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 00:34:28] [Date: 2022-07-17 00:34:28 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 00:34:28] [Date: 2022-07-17 00:34:28 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;'][17-Jul-2022 00:34:28] [Date: 2022-07-17 00:34:28 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+
+[17-Jul-2022 00:34:33] [Connection to 'performance_schema' DB OK | Date: 2022-07-17 00:34:33 | root connect succesfully to 'performance_schema']
+[17-Jul-2022 00:34:33] [Date: 2022-07-17 00:34:33 | root execute succesfully show tables query
+ 'desc events_waits_current;']
+[17-Jul-2022 00:34:35] [Connection to 'performance_schema' DB OK | Date: 2022-07-17 00:34:35 | root connect succesfully to 'performance_schema']
+[17-Jul-2022 00:34:35] [Date: 2022-07-17 00:34:35 | root execute succesfully Select query in performance_schema
+ 'SELECT * FROM events_waits_current LIMIT 10;']
+[17-Jul-2022 00:34:45] [Connection to 'performance_schema' DB OK | Date: 2022-07-17 00:34:45 | root connect succesfully to 'performance_schema']
+[17-Jul-2022 00:34:45] [Date: 2022-07-17 00:34:45 | root execute succesfully show tables query
+ 'desc events_waits_summary_by_host_by_event_name;']
+[17-Jul-2022 00:34:46] [Connection to 'performance_schema' DB OK | Date: 2022-07-17 00:34:46 | root connect succesfully to 'performance_schema']
+[17-Jul-2022 00:34:46] [Date: 2022-07-17 00:34:46 | root execute succesfully show tables query
+ 'desc events_waits_summary_by_host_by_event_name;']
+[17-Jul-2022 00:34:48] [Connection to 'performance_schema' DB OK | Date: 2022-07-17 00:34:48 | root connect succesfully to 'performance_schema']
+[17-Jul-2022 00:34:48] [Date: 2022-07-17 00:34:48 | root execute succesfully Select query in performance_schema
+ 'SELECT * FROM events_waits_summary_by_host_by_event_name LIMIT 10;']
+[17-Jul-2022 00:35:02] [Connection to 'performance_schema' DB OK | Date: 2022-07-17 00:35:02 | root connect succesfully to 'performance_schema']
+[17-Jul-2022 00:35:02] [Date: 2022-07-17 00:35:02 | root execute succesfully show tables query
+ 'desc session_account_connect_attrs;']
+[17-Jul-2022 00:35:03] [Connection to 'performance_schema' DB OK | Date: 2022-07-17 00:35:03 | root connect succesfully to 'performance_schema']
+[17-Jul-2022 00:35:04] [Date: 2022-07-17 00:35:04 | root execute succesfully show tables query
+ 'desc session_account_connect_attrs;']
+[17-Jul-2022 00:35:05] [Connection to 'performance_schema' DB OK | Date: 2022-07-17 00:35:05 | root connect succesfully to 'performance_schema']
+[17-Jul-2022 00:35:05] [Date: 2022-07-17 00:35:05 | root execute succesfully Select query in performance_schema
+ 'SELECT * FROM session_account_connect_attrs LIMIT 10;']
+[17-Jul-2022 00:35:10] [Connection to 'performance_schema' DB OK | Date: 2022-07-17 00:35:10 | root connect succesfully to 'performance_schema']
+[17-Jul-2022 00:35:10] [Date: 2022-07-17 00:35:10 | root execute succesfully show tables query
+ 'desc cond_instances;']
+[17-Jul-2022 00:35:13] [Connection to 'performance_schema' DB OK | Date: 2022-07-17 00:35:13 | root connect succesfully to 'performance_schema']
+[17-Jul-2022 00:35:13] [Date: 2022-07-17 00:35:13 | root execute succesfully show tables query
+ 'desc cond_instances;']
+[17-Jul-2022 00:35:19] [Connection to 'employees' DB OK | Date: 2022-07-17 00:35:19 | root connect succesfully to 'employees']
+[17-Jul-2022 00:35:19] [Date: 2022-07-17 00:35:19 | root execute succesfully show tables query
+ 'desc dept_emp;']
+[17-Jul-2022 00:35:20] [Connection to 'employees' DB OK | Date: 2022-07-17 00:35:20 | root connect succesfully to 'employees']
+[17-Jul-2022 00:35:20] [Date: 2022-07-17 00:35:20 | root execute succesfully Select query in employees
+ 'SELECT * FROM dept_emp LIMIT 10;']
+[17-Jul-2022 00:39:01] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 00:39:01 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 00:39:01] [Date: 2022-07-17 00:39:01 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 00:39:08] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:39:08 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:39:08] [Date: 2022-07-17 00:39:08 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad LIMIT 10;']
+[17-Jul-2022 00:39:10] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:39:10 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:39:10] [Date: 2022-07-17 00:39:10 | root execute succesfully show tables query
+ 'desc tbl_ciudad;']
+[17-Jul-2022 00:43:55] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:43:55 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:43:55] [Date: 2022-07-17 00:43:55 | root execute succesfully show tables query
+ 'desc tbl_ciudad;']
+[17-Jul-2022 00:44:02] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:44:02 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:44:02] [Date: 2022-07-17 00:44:02 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad LIMIT 10;']
+[17-Jul-2022 00:44:04] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:44:04 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:44:04] [Date: 2022-07-17 00:44:04 | root execute succesfully show tables query
+ 'desc tbl_ciudad;']
+[17-Jul-2022 00:44:53] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 00:44:53 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 00:44:53] [Date: 2022-07-17 00:44:53 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 00:45:00] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:45:00 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:45:00] [Date: 2022-07-17 00:45:00 | root execute succesfully show tables query
+ 'desc tbl_ciudad;']
+[17-Jul-2022 00:45:02] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:45:02 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:45:02] [Date: 2022-07-17 00:45:02 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad LIMIT 10;']
+[17-Jul-2022 00:45:35] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 00:45:35 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 00:45:36] [Date: 2022-07-17 00:45:36 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 00:45:42] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:45:42 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:45:42] [Date: 2022-07-17 00:45:42 | root execute succesfully show tables query
+ 'desc tbl_ciudad;']
+[17-Jul-2022 00:45:45] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:45:45 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:45:45] [Date: 2022-07-17 00:45:45 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad LIMIT 10;']
+[17-Jul-2022 00:46:24] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 00:46:24 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 00:46:24] [Date: 2022-07-17 00:46:24 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 00:46:30] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:46:30 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:46:30] [Date: 2022-07-17 00:46:30 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 00:46:34] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:46:34 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:46:34] [Date: 2022-07-17 00:46:34 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona LIMIT 10;']
+[17-Jul-2022 00:47:15] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 00:47:15 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 00:47:15] [Date: 2022-07-17 00:47:15 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 00:47:23] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:47:23 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:47:23] [Date: 2022-07-17 00:47:23 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 00:47:28] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:47:28 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:47:28] [Date: 2022-07-17 00:47:28 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona LIMIT 10;']
+[17-Jul-2022 00:47:36] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:47:36 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:47:36] [Date: 2022-07-17 00:47:36 | root execute succesfully show tables query
+ 'desc tbl_arch_imagen_persona;']
+[17-Jul-2022 00:47:38] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:47:38 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:47:38] [Date: 2022-07-17 00:47:38 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_arch_imagen_persona LIMIT 10;']
+[17-Jul-2022 00:48:09] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:48:09 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:48:09] [Date: 2022-07-17 00:48:09 | root execute succesfully show tables query
+ 'desc tbl_arch_imagen_persona;']
+[17-Jul-2022 00:48:14] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:48:14 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:48:14] [Date: 2022-07-17 00:48:14 | root execute succesfully show tables query
+ 'desc tbl_ciudad;']
+[17-Jul-2022 00:48:18] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:48:18 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:48:18] [Date: 2022-07-17 00:48:18 | root execute succesfully show tables query
+ 'desc tbl_provincia;']
+[17-Jul-2022 00:48:19] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:48:19 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:48:19] [Date: 2022-07-17 00:48:19 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_provincia LIMIT 10;']
+[17-Jul-2022 00:48:52] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 00:48:52 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 00:48:52] [Date: 2022-07-17 00:48:52 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 00:48:57] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:48:57 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:48:57] [Date: 2022-07-17 00:48:57 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 00:48:59] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:48:59 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:48:59] [Date: 2022-07-17 00:48:59 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona LIMIT 10;']
+[17-Jul-2022 00:49:04] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:49:04 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:49:04] [Date: 2022-07-17 00:49:04 | root execute succesfully show tables query
+ 'desc tbl_relacion_persona;']
+[17-Jul-2022 00:49:05] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:49:05 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:49:05] [Date: 2022-07-17 00:49:05 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_relacion_persona LIMIT 10;']
+[17-Jul-2022 00:49:18] [Connection to 'mvc_example' DB OK | Date: 2022-07-17 00:49:18 | root connect succesfully to 'mvc_example']
+[17-Jul-2022 00:49:18] [Date: 2022-07-17 00:49:18 | root execute succesfully show tables query
+ 'desc products;']
+[17-Jul-2022 00:49:28] [Connection to 'mvc_example' DB OK | Date: 2022-07-17 00:49:28 | root connect succesfully to 'mvc_example']
+[17-Jul-2022 00:49:28] [Date: 2022-07-17 00:49:28 | root execute succesfully Select query in mvc_example
+ 'SELECT * FROM products LIMIT 10;']
+[17-Jul-2022 00:49:29] [Connection to 'mvc_example' DB OK | Date: 2022-07-17 00:49:29 | root connect succesfully to 'mvc_example']
+[17-Jul-2022 00:49:29] [Date: 2022-07-17 00:49:29 | root execute succesfully show tables query
+ 'desc products;']
+[17-Jul-2022 00:49:31] [Connection to 'mvc_example' DB OK | Date: 2022-07-17 00:49:31 | root connect succesfully to 'mvc_example']
+[17-Jul-2022 00:49:31] [Date: 2022-07-17 00:49:31 | root execute succesfully Select query in mvc_example
+ 'SELECT * FROM products LIMIT 10;']
+[17-Jul-2022 00:52:15] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 00:52:15 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 00:52:15] [Date: 2022-07-17 00:52:15 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 00:52:19] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:52:19 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:52:19] [Date: 2022-07-17 00:52:19 | root execute succesfully show tables query
+ 'desc tbl_ciudad;']
+[17-Jul-2022 00:52:32] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:52:32 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:52:32] [Date: 2022-07-17 00:52:32 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 00:52:35] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:52:35 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:52:35] [Date: 2022-07-17 00:52:35 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona LIMIT 10;']
+[17-Jul-2022 00:53:09] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 00:53:09 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 00:53:09] [Date: 2022-07-17 00:53:09 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 00:53:12] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:53:12 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:53:12] [Date: 2022-07-17 00:53:12 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 00:53:14] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:53:14 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:53:14] [Date: 2022-07-17 00:53:14 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona LIMIT 10;']
+[17-Jul-2022 00:53:16] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:53:16 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:53:16] [Date: 2022-07-17 00:53:16 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 00:53:49] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 00:53:49 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 00:53:49] [Date: 2022-07-17 00:53:49 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 00:53:52] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:53:52 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:53:52] [Date: 2022-07-17 00:53:52 | root execute succesfully show tables query
+ 'desc tbl_archivos;']
+[17-Jul-2022 00:53:54] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:53:54 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:53:54] [Date: 2022-07-17 00:53:54 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_archivos LIMIT 10;']
+[17-Jul-2022 00:54:04] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:54:04 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:54:04] [Date: 2022-07-17 00:54:04 | root execute succesfully show tables query
+ 'desc tbl_archivos;']
+[17-Jul-2022 00:54:11] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:54:11 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:54:11] [Date: 2022-07-17 00:54:11 | root execute succesfully show tables query
+ 'desc tbl_consulado;']
+[17-Jul-2022 00:54:12] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:54:12 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:54:12] [Date: 2022-07-17 00:54:12 | root execute succesfully show tables query
+ 'desc tbl_consulado;']
+[17-Jul-2022 00:54:13] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:54:13 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:54:13] [Date: 2022-07-17 00:54:13 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_consulado LIMIT 10;']
+[17-Jul-2022 00:54:57] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:54:57 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:54:57] [Date: 2022-07-17 00:54:57 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 00:54:58] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:54:58 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:54:58] [Date: 2022-07-17 00:54:58 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona LIMIT 10;']
+[17-Jul-2022 00:55:00] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:55:00 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:55:00] [Date: 2022-07-17 00:55:00 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 00:55:35] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 00:55:35 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 00:55:35] [Date: 2022-07-17 00:55:35 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 00:55:39] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:55:39 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:55:39] [Date: 2022-07-17 00:55:39 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 00:55:41] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:55:41 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:55:41] [Date: 2022-07-17 00:55:41 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona LIMIT 10;']
+[17-Jul-2022 00:55:42] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:55:42 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:55:42] [Date: 2022-07-17 00:55:42 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 00:56:18] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:56:18 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:56:18] [Date: 2022-07-17 00:56:18 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona LIMIT 10;']
+[17-Jul-2022 00:57:35] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 00:57:35 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 00:57:35] [Date: 2022-07-17 00:57:35 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 00:57:38] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 00:57:38 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 00:57:38] [Date: 2022-07-17 00:57:38 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[17-Jul-2022 00:57:39] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 00:57:39 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 00:57:39] [Date: 2022-07-17 00:57:39 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users LIMIT 10;']
+[17-Jul-2022 00:57:41] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 00:57:41 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 00:57:41] [Date: 2022-07-17 00:57:41 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[17-Jul-2022 00:58:08] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 00:58:08 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 00:58:08] [Date: 2022-07-17 00:58:08 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 00:58:12] [Connection to 'mysql' DB OK | Date: 2022-07-17 00:58:12 | root connect succesfully to 'mysql']
+[17-Jul-2022 00:58:12] [Date: 2022-07-17 00:58:12 | root execute succesfully show tables query
+ 'desc db;']
+[17-Jul-2022 00:58:13] [Connection to 'mysql' DB OK | Date: 2022-07-17 00:58:13 | root connect succesfully to 'mysql']
+[17-Jul-2022 00:58:13] [Date: 2022-07-17 00:58:13 | root execute succesfully Select query in mysql
+ 'SELECT * FROM db LIMIT 10;']
+[17-Jul-2022 00:58:16] [Connection to 'mysql' DB OK | Date: 2022-07-17 00:58:16 | root connect succesfully to 'mysql']
+[17-Jul-2022 00:58:16] [Date: 2022-07-17 00:58:16 | root execute succesfully show tables query
+ 'desc db;']
+[17-Jul-2022 00:58:46] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 00:58:46 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 00:58:47] [Date: 2022-07-17 00:58:47 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 00:58:51] [Connection to 'employees' DB OK | Date: 2022-07-17 00:58:51 | root connect succesfully to 'employees']
+[17-Jul-2022 00:58:51] [Date: 2022-07-17 00:58:51 | root execute succesfully show tables query
+ 'desc employees;']
+[17-Jul-2022 00:58:52] [Connection to 'employees' DB OK | Date: 2022-07-17 00:58:52 | root connect succesfully to 'employees']
+[17-Jul-2022 00:58:52] [Date: 2022-07-17 00:58:52 | root execute succesfully show tables query
+ 'desc employees;']
+[17-Jul-2022 00:58:53] [Connection to 'employees' DB OK | Date: 2022-07-17 00:58:53 | root connect succesfully to 'employees']
+[17-Jul-2022 00:58:53] [Date: 2022-07-17 00:58:53 | root execute succesfully show tables query
+ 'desc employees;']
+[17-Jul-2022 00:58:54] [Connection to 'employees' DB OK | Date: 2022-07-17 00:58:54 | root connect succesfully to 'employees']
+[17-Jul-2022 00:58:54] [Date: 2022-07-17 00:58:54 | root execute succesfully Select query in employees
+ 'SELECT * FROM employees LIMIT 10;']
+[17-Jul-2022 00:59:24] [Connection to 'employees' DB OK | Date: 2022-07-17 00:59:24 | root connect succesfully to 'employees']
+[17-Jul-2022 00:59:24] [Date: 2022-07-17 00:59:24 | root execute succesfully show tables query
+ 'desc employees;']
+[17-Jul-2022 00:59:32] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 00:59:32 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 00:59:32] [Date: 2022-07-17 00:59:32 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 00:59:37] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:59:37 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:59:37] [Date: 2022-07-17 00:59:37 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 00:59:38] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:59:38 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:59:38] [Date: 2022-07-17 00:59:38 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona LIMIT 10;']
+[17-Jul-2022 00:59:40] [Connection to 'penjub' DB OK | Date: 2022-07-17 00:59:40 | root connect succesfully to 'penjub']
+[17-Jul-2022 00:59:40] [Date: 2022-07-17 00:59:40 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 01:00:01] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:00:01 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 01:00:02] [Date: 2022-07-17 01:00:02 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:00:06] [Connection to 'employees' DB OK | Date: 2022-07-17 01:00:06 | root connect succesfully to 'employees']
+[17-Jul-2022 01:00:06] [Date: 2022-07-17 01:00:06 | root execute succesfully show tables query
+ 'desc departments;']
+[17-Jul-2022 01:00:08] [Connection to 'employees' DB OK | Date: 2022-07-17 01:00:08 | root connect succesfully to 'employees']
+[17-Jul-2022 01:00:08] [Date: 2022-07-17 01:00:08 | root execute succesfully show tables query
+ 'desc departments;']
+[17-Jul-2022 01:00:10] [Connection to 'employees' DB OK | Date: 2022-07-17 01:00:10 | root connect succesfully to 'employees']
+[17-Jul-2022 01:00:10] [Date: 2022-07-17 01:00:10 | root execute succesfully Select query in employees
+ 'SELECT * FROM departments LIMIT 10;']
+[17-Jul-2022 01:00:35] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:00:35 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 01:00:35] [Date: 2022-07-17 01:00:35 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:00:39] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:00:39 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:00:39] [Date: 2022-07-17 01:00:39 | root execute succesfully show tables query
+ 'desc db;']
+[17-Jul-2022 01:00:40] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:00:40 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:00:40] [Date: 2022-07-17 01:00:40 | root execute succesfully Select query in mysql
+ 'SELECT * FROM db LIMIT 10;']
+[17-Jul-2022 01:00:48] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:00:48 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:00:48] [Date: 2022-07-17 01:00:48 | root execute succesfully show tables query
+ 'desc db;']
+[17-Jul-2022 01:01:00] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:01:00 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:01:00] [Date: 2022-07-17 01:01:00 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 01:01:01] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:01:01 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:01:01] [Date: 2022-07-17 01:01:01 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona LIMIT 10;']
+[17-Jul-2022 01:01:19] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:01:19 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:01:19] [Date: 2022-07-17 01:01:19 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 01:02:26] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:02:26 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 01:02:26] [Date: 2022-07-17 01:02:26 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:02:30] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:02:30 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:02:30] [Date: 2022-07-17 01:02:30 | root execute succesfully show tables query
+ 'desc tbl_ciudad;']
+[17-Jul-2022 01:02:31] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:02:31 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:02:31] [Date: 2022-07-17 01:02:31 | root execute succesfully show tables query
+ 'desc tbl_ciudad;']
+[17-Jul-2022 01:02:33] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:02:33 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:02:33] [Date: 2022-07-17 01:02:33 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad LIMIT 10;']
+[17-Jul-2022 01:03:17] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:03:17 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 01:03:17] [Date: 2022-07-17 01:03:17 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:03:19] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 01:03:19 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 01:03:19] [Date: 2022-07-17 01:03:19 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[17-Jul-2022 01:03:20] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 01:03:20 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 01:03:20] [Date: 2022-07-17 01:03:20 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users LIMIT 10;']
+[17-Jul-2022 01:03:22] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 01:03:22 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 01:03:22] [Date: 2022-07-17 01:03:22 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[17-Jul-2022 01:04:22] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:04:22 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 01:04:23] [Date: 2022-07-17 01:04:23 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:04:26] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:04:26 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:04:26] [Date: 2022-07-17 01:04:26 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 01:04:27] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:04:27 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:04:27] [Date: 2022-07-17 01:04:27 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 01:04:29] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:04:29 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:04:29] [Date: 2022-07-17 01:04:29 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona LIMIT 10;']
+[17-Jul-2022 01:04:32] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:04:32 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:04:32] [Date: 2022-07-17 01:04:32 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 01:05:18] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:05:18 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 01:05:18] [Date: 2022-07-17 01:05:18 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:05:20] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 01:05:20 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 01:05:20] [Date: 2022-07-17 01:05:20 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[17-Jul-2022 01:05:22] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 01:05:22 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 01:05:22] [Date: 2022-07-17 01:05:22 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[17-Jul-2022 01:05:24] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 01:05:24 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 01:05:24] [Date: 2022-07-17 01:05:24 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users LIMIT 10;']
+[17-Jul-2022 01:05:46] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:05:46 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 01:05:46] [Date: 2022-07-17 01:05:46 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:05:50] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:05:50 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:05:50] [Date: 2022-07-17 01:05:50 | root execute succesfully show tables query
+ 'desc tbl_ciudad;']
+[17-Jul-2022 01:05:52] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:05:52 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:05:52] [Date: 2022-07-17 01:05:52 | root execute succesfully show tables query
+ 'desc tbl_ciudad;']
+[17-Jul-2022 01:05:53] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:05:53 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:05:53] [Date: 2022-07-17 01:05:53 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad LIMIT 10;']
+[17-Jul-2022 01:06:02] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:06:02 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:06:02] [Date: 2022-07-17 01:06:02 | root execute succesfully show tables query
+ 'desc tbl_relacion_persona;']
+[17-Jul-2022 01:06:03] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:06:03 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:06:03] [Date: 2022-07-17 01:06:03 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_relacion_persona LIMIT 10;']
+[17-Jul-2022 01:06:05] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:06:05 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:06:05] [Date: 2022-07-17 01:06:05 | root execute succesfully show tables query
+ 'desc tbl_relacion_persona;']
+[17-Jul-2022 01:06:47] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:06:47 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 01:06:47] [Date: 2022-07-17 01:06:47 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:06:51] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:06:51 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:06:51] [Date: 2022-07-17 01:06:51 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 01:06:52] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:06:52 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:06:52] [Date: 2022-07-17 01:06:52 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 01:06:56] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:06:56 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:06:56] [Date: 2022-07-17 01:06:56 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona LIMIT 10;']
+[17-Jul-2022 01:07:53] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:07:53 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 01:07:53] [Date: 2022-07-17 01:07:53 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:07:56] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:07:56 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:07:56] [Date: 2022-07-17 01:07:56 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 01:08:00] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:08:00 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:08:00] [Date: 2022-07-17 01:08:00 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona LIMIT 10;']
+[17-Jul-2022 01:09:40] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:09:40 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:09:40] [Date: 2022-07-17 01:09:40 | root execute succesfully show tables query
+ 'desc tbl_relacion_persona;']
+[17-Jul-2022 01:09:47] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:09:47 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:09:47] [Date: 2022-07-17 01:09:47 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_relacion_persona LIMIT 10;']
+[17-Jul-2022 01:09:53] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:09:53 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:09:53] [Date: 2022-07-17 01:09:53 | root execute succesfully show tables query
+ 'desc tbl_relacion_persona;']
+[17-Jul-2022 01:10:27] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:10:27 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 01:10:27] [Date: 2022-07-17 01:10:27 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:10:32] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:10:32 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:10:32] [Date: 2022-07-17 01:10:32 | root execute succesfully show tables query
+ 'desc tbl_consulado;']
+[17-Jul-2022 01:10:33] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:10:33 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:10:33] [Date: 2022-07-17 01:10:33 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_consulado LIMIT 10;']
+[17-Jul-2022 01:10:35] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:10:35 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:10:35] [Date: 2022-07-17 01:10:35 | root execute succesfully show tables query
+ 'desc tbl_consulado;']
+[17-Jul-2022 01:11:18] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:11:18 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 01:11:18] [Date: 2022-07-17 01:11:18 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:11:21] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 01:11:21 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 01:11:21] [Date: 2022-07-17 01:11:21 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[17-Jul-2022 01:11:24] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 01:11:24 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 01:11:24] [Date: 2022-07-17 01:11:24 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users LIMIT 10;']
+[17-Jul-2022 01:11:27] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 01:11:27 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 01:11:27] [Date: 2022-07-17 01:11:27 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[17-Jul-2022 01:11:52] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:11:52 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 01:11:52] [Date: 2022-07-17 01:11:52 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:11:56] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:11:56 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:11:56] [Date: 2022-07-17 01:11:56 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 01:11:58] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:11:58 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:11:58] [Date: 2022-07-17 01:11:58 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 01:12:02] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:12:02 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:12:02] [Date: 2022-07-17 01:12:02 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona LIMIT 10;']
+[17-Jul-2022 01:12:07] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:12:07 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:12:07] [Date: 2022-07-17 01:12:07 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 01:14:47] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 01:14:50] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:14:50 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 01:14:50] [Date: 2022-07-17 01:14:50 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:14:56] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:14:56 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:14:56] [Date: 2022-07-17 01:14:56 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 01:14:58] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:14:58 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:14:58] [Date: 2022-07-17 01:14:58 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 01:15:00] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:15:00 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:15:00] [Date: 2022-07-17 01:15:00 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona LIMIT 10;']
+[17-Jul-2022 01:15:16] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:15:16 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:15:16] [Date: 2022-07-17 01:15:16 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona LIMIT 10;']
+[17-Jul-2022 01:15:17] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:15:17 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:15:17] [Date: 2022-07-17 01:15:17 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[17-Jul-2022 01:15:54] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:15:54 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:15:54] [Date: 2022-07-17 01:15:54 | root execute succesfully show tables query
+ 'desc tbl_relacion_persona;']
+[17-Jul-2022 01:15:56] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:15:56 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:15:56] [Date: 2022-07-17 01:15:56 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_relacion_persona LIMIT 10;']
+[17-Jul-2022 01:16:06] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:16:06 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:16:06] [Date: 2022-07-17 01:16:06 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_relacion_persona LIMIT 10;']
+[17-Jul-2022 01:16:07] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:16:07 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:16:07] [Date: 2022-07-17 01:16:07 | root execute succesfully show tables query
+ 'desc tbl_relacion_persona;']
+[17-Jul-2022 01:16:20] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:16:20 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:16:20] [Date: 2022-07-17 01:16:20 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_relacion_persona LIMIT 10;']
+[17-Jul-2022 01:16:39] [Connection to 'employees' DB OK | Date: 2022-07-17 01:16:39 | root connect succesfully to 'employees']
+[17-Jul-2022 01:16:39] [Date: 2022-07-17 01:16:39 | root execute succesfully show tables query
+ 'desc employees;']
+[17-Jul-2022 01:16:42] [Connection to 'employees' DB OK | Date: 2022-07-17 01:16:42 | root connect succesfully to 'employees']
+[17-Jul-2022 01:16:42] [Date: 2022-07-17 01:16:42 | root execute succesfully Select query in employees
+ 'SELECT * FROM employees LIMIT 10;']
+[17-Jul-2022 01:16:48] [Connection to 'employees' DB OK | Date: 2022-07-17 01:16:48 | root connect succesfully to 'employees']
+[17-Jul-2022 01:16:48] [Date: 2022-07-17 01:16:48 | root execute succesfully show tables query
+ 'desc employees;']
+[17-Jul-2022 01:17:35] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:17:35 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 01:17:35] [Date: 2022-07-17 01:17:35 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:17:38] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:17:38 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:17:38] [Date: 2022-07-17 01:17:38 | root execute succesfully show tables query
+ 'desc tbl_archivos;']
+[17-Jul-2022 01:17:41] [Connection to 'penjub' DB OK | Date: 2022-07-17 01:17:41 | root connect succesfully to 'penjub']
+[17-Jul-2022 01:17:41] [Date: 2022-07-17 01:17:41 | root execute succesfully show tables query
+ 'desc tbl_archivos;']
+[17-Jul-2022 01:18:00] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:18:00 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:18:00] [Date: 2022-07-17 01:18:00 | root execute succesfully show tables query
+ 'desc COLLATION_CHARACTER_SET_APPLICABILITY;']
+[17-Jul-2022 01:18:04] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:18:04 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:18:04] [Date: 2022-07-17 01:18:04 | root execute succesfully show tables query
+ 'desc COLLATION_CHARACTER_SET_APPLICABILITY;']
+[17-Jul-2022 01:18:13] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:18:13 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:18:13] [Date: 2022-07-17 01:18:13 | root execute succesfully Select query in information_schema
+ 'SELECT * FROM COLLATION_CHARACTER_SET_APPLICABILITY LIMIT 10;']
+[17-Jul-2022 01:18:20] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:18:20 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:18:20] [Date: 2022-07-17 01:18:20 | root execute succesfully show tables query
+ 'desc COLUMN_PRIVILEGES;']
+[17-Jul-2022 01:18:23] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:18:23 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:18:23] [Date: 2022-07-17 01:18:23 | root execute succesfully show tables query
+ 'desc COLUMN_PRIVILEGES;']
+[17-Jul-2022 01:18:27] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:18:27 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:18:27] [Date: 2022-07-17 01:18:27 | root execute succesfully Select query in information_schema
+ 'SELECT * FROM COLUMN_PRIVILEGES LIMIT 10;']
+[17-Jul-2022 01:18:30] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:18:30 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:18:30] [Date: 2022-07-17 01:18:30 | root execute succesfully show tables query
+ 'desc COLUMN_PRIVILEGES;']
+[17-Jul-2022 01:18:37] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:18:37 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:18:37] [Date: 2022-07-17 01:18:37 | root execute succesfully show tables query
+ 'desc ENABLED_ROLES;']
+[17-Jul-2022 01:18:39] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:18:39 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:18:39] [Date: 2022-07-17 01:18:39 | root execute succesfully show tables query
+ 'desc ENABLED_ROLES;']
+[17-Jul-2022 01:18:41] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:18:41 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:18:41] [Date: 2022-07-17 01:18:41 | root execute succesfully Select query in information_schema
+ 'SELECT * FROM ENABLED_ROLES LIMIT 10;']
+[17-Jul-2022 01:18:45] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:18:45 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:18:45] [Date: 2022-07-17 01:18:45 | root execute succesfully show tables query
+ 'desc ENABLED_ROLES;']
+[17-Jul-2022 01:18:47] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:18:47 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:18:47] [Date: 2022-07-17 01:18:47 | root execute succesfully show tables query
+ 'desc ENABLED_ROLES;']
+[17-Jul-2022 01:18:50] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:18:50 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:18:50] [Date: 2022-07-17 01:18:50 | root execute succesfully show tables query
+ 'desc ENABLED_ROLES;']
+[17-Jul-2022 01:18:52] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:18:52 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:18:52] [Date: 2022-07-17 01:18:52 | root execute succesfully show tables query
+ 'desc COLLATIONS;']
+[17-Jul-2022 01:18:54] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:18:54 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:18:54] [Date: 2022-07-17 01:18:54 | root execute succesfully show tables query
+ 'desc COLLATIONS;']
+[17-Jul-2022 01:18:56] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:18:56 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:18:56] [Date: 2022-07-17 01:18:56 | root execute succesfully show tables query
+ 'desc COLLATION_CHARACTER_SET_APPLICABILITY;']
+[17-Jul-2022 01:18:57] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:18:57 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:18:57] [Date: 2022-07-17 01:18:57 | root execute succesfully show tables query
+ 'desc COLLATION_CHARACTER_SET_APPLICABILITY;']
+[17-Jul-2022 01:18:58] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:18:58 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:18:58] [Date: 2022-07-17 01:18:58 | root execute succesfully Select query in information_schema
+ 'SELECT * FROM COLLATION_CHARACTER_SET_APPLICABILITY LIMIT 10;']
+[17-Jul-2022 01:19:01] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:19:01 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:19:01] [Date: 2022-07-17 01:19:01 | root execute succesfully show tables query
+ 'desc CHECK_CONSTRAINTS;']
+[17-Jul-2022 01:19:02] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:19:02 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:19:02] [Date: 2022-07-17 01:19:02 | root execute succesfully show tables query
+ 'desc CHECK_CONSTRAINTS;']
+[17-Jul-2022 01:19:05] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:19:05 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:19:05] [Date: 2022-07-17 01:19:05 | root execute succesfully show tables query
+ 'desc CHARACTER_SETS;']
+[17-Jul-2022 01:19:06] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:19:06 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:19:06] [Date: 2022-07-17 01:19:06 | root execute succesfully show tables query
+ 'desc CHARACTER_SETS;']
+[17-Jul-2022 01:19:08] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:19:08 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:19:08] [Date: 2022-07-17 01:19:08 | root execute succesfully show tables query
+ 'desc APPLICABLE_ROLES;']
+[17-Jul-2022 01:19:09] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:19:09 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:19:09] [Date: 2022-07-17 01:19:09 | root execute succesfully show tables query
+ 'desc APPLICABLE_ROLES;']
+[17-Jul-2022 01:19:11] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:19:11 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:19:11] [Date: 2022-07-17 01:19:11 | root execute succesfully show tables query
+ 'desc ALL_PLUGINS;']
+[17-Jul-2022 01:19:12] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:19:12 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:19:12] [Date: 2022-07-17 01:19:12 | root execute succesfully show tables query
+ 'desc ALL_PLUGINS;']
+[17-Jul-2022 01:19:17] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:19:17 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:19:17] [Date: 2022-07-17 01:19:17 | root execute succesfully show tables query
+ 'desc EVENTS;']
+[17-Jul-2022 01:19:18] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:19:18 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:19:18] [Date: 2022-07-17 01:19:18 | root execute succesfully show tables query
+ 'desc EVENTS;']
+[17-Jul-2022 01:19:20] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:19:20 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:19:20] [Date: 2022-07-17 01:19:20 | root execute succesfully show tables query
+ 'desc COLUMN_PRIVILEGES;']
+[17-Jul-2022 01:19:21] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:19:21 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:19:21] [Date: 2022-07-17 01:19:21 | root execute succesfully show tables query
+ 'desc COLUMN_PRIVILEGES;']
+[17-Jul-2022 01:19:23] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:19:23 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:19:23] [Date: 2022-07-17 01:19:23 | root execute succesfully Select query in information_schema
+ 'SELECT * FROM COLUMN_PRIVILEGES LIMIT 10;']
+[17-Jul-2022 01:19:41] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:19:41 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:19:41] [Date: 2022-07-17 01:19:41 | root execute succesfully Select query in information_schema
+ 'SELECT * FROM COLUMN_PRIVILEGES LIMIT 10;']
+[17-Jul-2022 01:19:44] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:19:44 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:19:44] [Date: 2022-07-17 01:19:44 | root execute succesfully show tables query
+ 'desc EVENTS;']
+[17-Jul-2022 01:19:47] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:19:47 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:19:47] [Date: 2022-07-17 01:19:47 | root execute succesfully show tables query
+ 'desc EVENTS;']
+[17-Jul-2022 01:19:48] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:19:48 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:19:48] [Date: 2022-07-17 01:19:48 | root execute succesfully Select query in information_schema
+ 'SELECT * FROM EVENTS LIMIT 10;']
+[17-Jul-2022 01:19:51] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:19:51 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:19:51] [Date: 2022-07-17 01:19:51 | root execute succesfully show tables query
+ 'desc COLLATION_CHARACTER_SET_APPLICABILITY;']
+[17-Jul-2022 01:19:54] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:19:54 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:19:54] [Date: 2022-07-17 01:19:54 | root execute succesfully show tables query
+ 'desc COLLATION_CHARACTER_SET_APPLICABILITY;']
+[17-Jul-2022 01:19:55] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:19:55 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:19:55] [Date: 2022-07-17 01:19:55 | root execute succesfully Select query in information_schema
+ 'SELECT * FROM COLLATION_CHARACTER_SET_APPLICABILITY LIMIT 10;']
+[17-Jul-2022 01:20:10] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:20:10 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:20:10] [Date: 2022-07-17 01:20:10 | root execute succesfully show tables query
+ 'desc COLLATION_CHARACTER_SET_APPLICABILITY;']
+[17-Jul-2022 01:20:14] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:20:14 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:20:14] [Date: 2022-07-17 01:20:14 | root execute succesfully show tables query
+ 'desc COLLATION_CHARACTER_SET_APPLICABILITY;']
+[17-Jul-2022 01:20:16] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:20:16 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:20:16] [Date: 2022-07-17 01:20:16 | root execute succesfully Select query in information_schema
+ 'SELECT * FROM COLLATION_CHARACTER_SET_APPLICABILITY LIMIT 10;']
+[17-Jul-2022 01:20:27] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:20:27 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:20:27] [Date: 2022-07-17 01:20:27 | root execute succesfully show tables query
+ 'desc INNODB_SYS_FOREIGN_COLS;']
+[17-Jul-2022 01:20:29] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:20:29 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:20:29] [Date: 2022-07-17 01:20:29 | root execute succesfully show tables query
+ 'desc INNODB_SYS_FOREIGN_COLS;']
+[17-Jul-2022 01:20:30] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:20:30 | root connect succesfully to 'information_schema']
+[17-Jul-2022 01:20:30] [Date: 2022-07-17 01:20:30 | root execute succesfully Select query in information_schema
+ 'SELECT * FROM INNODB_SYS_FOREIGN_COLS LIMIT 10;']
+[17-Jul-2022 01:20:46] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:20:46 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:20:46] [Date: 2022-07-17 01:20:46 | root execute succesfully show tables query
+ 'desc help_category;']
+[17-Jul-2022 01:20:47] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:20:47 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:20:47] [Date: 2022-07-17 01:20:47 | root execute succesfully show tables query
+ 'desc help_category;']
+[17-Jul-2022 01:20:48] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:20:48 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:20:48] [Date: 2022-07-17 01:20:48 | root execute succesfully Select query in mysql
+ 'SELECT * FROM help_category LIMIT 10;']
+[17-Jul-2022 01:20:55] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:20:55 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:20:55] [Date: 2022-07-17 01:20:55 | root execute succesfully show tables query
+ 'desc help_relation;']
+[17-Jul-2022 01:20:56] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:20:56 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:20:56] [Date: 2022-07-17 01:20:56 | root execute succesfully show tables query
+ 'desc help_relation;']
+[17-Jul-2022 01:21:00] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:21:00 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:21:00] [Date: 2022-07-17 01:21:00 | root execute succesfully Select query in mysql
+ 'SELECT * FROM help_relation LIMIT 10;']
+[17-Jul-2022 01:21:06] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:21:06 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:21:06] [Date: 2022-07-17 01:21:06 | root execute succesfully show tables query
+ 'desc help_relation;']
+[17-Jul-2022 01:21:07] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:21:07 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:21:07] [Date: 2022-07-17 01:21:07 | root execute succesfully show tables query
+ 'desc help_relation;']
+[17-Jul-2022 01:21:09] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:21:09 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:21:09] [Date: 2022-07-17 01:21:09 | root execute succesfully Select query in mysql
+ 'SELECT * FROM help_relation LIMIT 10;']
+[17-Jul-2022 01:21:25] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:21:25 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:21:25] [Date: 2022-07-17 01:21:25 | root execute succesfully show tables query
+ 'desc help_relation;']
+[17-Jul-2022 01:21:33] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:21:33 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:21:33] [Date: 2022-07-17 01:21:33 | root execute succesfully show tables query
+ 'desc global_priv;']
+[17-Jul-2022 01:21:34] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:21:34 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:21:34] [Date: 2022-07-17 01:21:34 | root execute succesfully show tables query
+ 'desc global_priv;']
+[17-Jul-2022 01:21:41] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:21:41 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:21:41] [Date: 2022-07-17 01:21:41 | root execute succesfully show tables query
+ 'desc index_stats;']
+[17-Jul-2022 01:21:43] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:21:43 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:21:43] [Date: 2022-07-17 01:21:43 | root execute succesfully show tables query
+ 'desc index_stats;']
+[17-Jul-2022 01:21:58] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:21:58 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:21:58] [Date: 2022-07-17 01:21:58 | root execute succesfully Select query in mysql
+ 'SELECT * FROM index_stats LIMIT 10;']
+[17-Jul-2022 01:22:10] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:22:10 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:22:10] [Date: 2022-07-17 01:22:10 | root execute succesfully show tables query
+ 'desc index_stats;']
+[17-Jul-2022 01:22:15] [Connection to 'employees' DB OK | Date: 2022-07-17 01:22:15 | root connect succesfully to 'employees']
+[17-Jul-2022 01:22:15] [Date: 2022-07-17 01:22:15 | root execute succesfully show tables query
+ 'desc current_dept_emp;']
+[17-Jul-2022 01:22:20] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:22:20 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 01:22:20] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:22:20 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306'][17-Jul-2022 01:22:20] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:22:20 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+
+[17-Jul-2022 01:22:20] [Date: 2022-07-17 01:22:20 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+
+[17-Jul-2022 01:22:24] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 01:22:24 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 01:22:24] [Date: 2022-07-17 01:22:24 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[17-Jul-2022 01:22:32] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 01:22:32 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 01:22:32] [Date: 2022-07-17 01:22:32 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[17-Jul-2022 01:22:59] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:22:59 | inaki2022 connect succesfully to 'information_schema']
+[17-Jul-2022 01:23:00] [Date: 2022-07-17 01:23:00 | inaki2022 execute succesfully show tables query
+ 'desc USER_PRIVILEGES;']
+[17-Jul-2022 01:23:01] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:23:01 | inaki2022 connect succesfully to 'information_schema']
+[17-Jul-2022 01:23:01] [Date: 2022-07-17 01:23:01 | inaki2022 execute succesfully show tables query
+ 'desc USER_PRIVILEGES;']
+[17-Jul-2022 01:23:07] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:23:07 | inaki2022 connect succesfully to 'information_schema']
+[17-Jul-2022 01:23:07] [Date: 2022-07-17 01:23:07 | inaki2022 execute succesfully Select query in information_schema
+ 'SELECT * FROM USER_PRIVILEGES LIMIT 10;']
+[17-Jul-2022 01:23:23] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:23:23 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 01:23:23] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:23:23 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 01:23:23] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:23:23 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 01:23:23] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:23:23 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 01:23:23] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:23:23 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 01:23:23] [Date: 2022-07-17 01:23:23 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:23:23] [Date: 2022-07-17 01:23:23 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+17-Jul-2022 01:23:23] [Date: 2022-07-17 01:23:23 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:23:23] [Date: 2022-07-17 01:23:23 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:23:23] [Date: 2022-07-17 01:23:23 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:23:49] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:23:49 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:23:49] [Date: 2022-07-17 01:23:49 | root execute succesfully show tables query
+ 'desc user;']
+[17-Jul-2022 01:23:51] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:23:51 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:23:51] [Date: 2022-07-17 01:23:51 | root execute succesfully show tables query
+ 'desc user;']
+[17-Jul-2022 01:23:54] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:23:54 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:23:54] [Date: 2022-07-17 01:23:54 | root execute succesfully Select query in mysql
+ 'SELECT * FROM user LIMIT 10;']
+[17-Jul-2022 01:24:44] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:24:44 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:24:44] [Date: 2022-07-17 01:24:44 | root execute succesfully show tables query
+ 'desc transaction_registry;']
+[17-Jul-2022 01:24:45] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:24:45 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:24:45] [Date: 2022-07-17 01:24:45 | root execute succesfully show tables query
+ 'desc transaction_registry;']
+[17-Jul-2022 01:24:49] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:24:49 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:24:49] [Date: 2022-07-17 01:24:49 | root execute succesfully Select query in mysql
+ 'SELECT * FROM transaction_registry LIMIT 10;']
+[17-Jul-2022 01:24:51] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:24:51 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:24:51] [Date: 2022-07-17 01:24:51 | root execute succesfully show tables query
+ 'desc time_zone;']
+[17-Jul-2022 01:24:53] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:24:53 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:24:53] [Date: 2022-07-17 01:24:53 | root execute succesfully show tables query
+ 'desc time_zone;']
+[17-Jul-2022 01:24:54] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:24:54 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:24:54] [Date: 2022-07-17 01:24:54 | root execute succesfully Select query in mysql
+ 'SELECT * FROM time_zone LIMIT 10;']
+[17-Jul-2022 01:25:21] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:25:21 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:25:21] [Date: 2022-07-17 01:25:21 | root execute succesfully show tables query
+ 'desc tbl_archivos;']
+[17-Jul-2022 01:25:23] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:25:23 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:25:23] [Date: 2022-07-17 01:25:23 | root execute succesfully show tables query
+ 'desc tbl_archivos;']
+[17-Jul-2022 01:25:26] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:25:26 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:25:26] [Date: 2022-07-17 01:25:26 | root execute succesfully show tables query
+ 'desc tbl_ciudad;']
+[17-Jul-2022 01:25:27] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:25:27 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:25:27] [Date: 2022-07-17 01:25:27 | root execute succesfully show tables query
+ 'desc tbl_ciudad;']
+[17-Jul-2022 01:25:28] [Connection to 'mysql' DB OK | Date: 2022-07-17 01:25:28 | root connect succesfully to 'mysql']
+[17-Jul-2022 01:25:28] [Date: 2022-07-17 01:25:28 | root execute succesfully Select query in mysql
+ 'SELECT * FROM tbl_ciudad LIMIT 10;']
+[17-Jul-2022 01:25:43] [Connection to 'mvc_example' DB OK | Date: 2022-07-17 01:25:43 | root connect succesfully to 'mvc_example']
+[17-Jul-2022 01:25:43] [Date: 2022-07-17 01:25:43 | root execute succesfully show tables query
+ 'desc products;']
+[17-Jul-2022 01:25:44] [Connection to 'mvc_example' DB OK | Date: 2022-07-17 01:25:44 | root connect succesfully to 'mvc_example']
+[17-Jul-2022 01:25:44] [Date: 2022-07-17 01:25:44 | root execute succesfully Select query in mvc_example
+ 'SELECT * FROM products LIMIT 10;']
+[17-Jul-2022 01:26:00] [Connection to 'performance_schema' DB OK | Date: 2022-07-17 01:26:00 | root connect succesfully to 'performance_schema']
+[17-Jul-2022 01:26:00] [Date: 2022-07-17 01:26:00 | root execute succesfully show tables query
+ 'desc cond_instances;']
+[17-Jul-2022 01:26:02] [Connection to 'performance_schema' DB OK | Date: 2022-07-17 01:26:02 | root connect succesfully to 'performance_schema']
+[17-Jul-2022 01:26:02] [Date: 2022-07-17 01:26:02 | root execute succesfully show tables query
+ 'desc cond_instances;']
+[17-Jul-2022 01:26:04] [Connection to 'performance_schema' DB OK | Date: 2022-07-17 01:26:04 | root connect succesfully to 'performance_schema']
+[17-Jul-2022 01:26:04] [Date: 2022-07-17 01:26:04 | root execute succesfully Select query in performance_schema
+ 'SELECT * FROM cond_instances LIMIT 10;']
+[17-Jul-2022 01:26:10] [Connection to 'performance_schema' DB OK | Date: 2022-07-17 01:26:10 | root connect succesfully to 'performance_schema']
+[17-Jul-2022 01:26:10] [Date: 2022-07-17 01:26:10 | root execute succesfully show tables query
+ 'desc events_waits_history_long;']
+[17-Jul-2022 01:26:11] [Connection to 'performance_schema' DB OK | Date: 2022-07-17 01:26:11 | root connect succesfully to 'performance_schema']
+[17-Jul-2022 01:26:11] [Date: 2022-07-17 01:26:11 | root execute succesfully show tables query
+ 'desc events_waits_history_long;']
+[17-Jul-2022 01:26:13] [Connection to 'performance_schema' DB OK | Date: 2022-07-17 01:26:13 | root connect succesfully to 'performance_schema']
+[17-Jul-2022 01:26:13] [Date: 2022-07-17 01:26:13 | root execute succesfully Select query in performance_schema
+ 'SELECT * FROM events_waits_history_long LIMIT 10;']
+[17-Jul-2022 01:26:15] [Connection to 'performance_schema' DB OK | Date: 2022-07-17 01:26:15 | root connect succesfully to 'performance_schema']
+[17-Jul-2022 01:26:15] [Date: 2022-07-17 01:26:15 | root execute succesfully show tables query
+ 'desc events_waits_summary_by_user_by_event_name;']
+[17-Jul-2022 01:26:16] [Connection to 'performance_schema' DB OK | Date: 2022-07-17 01:26:16 | root connect succesfully to 'performance_schema']
+[17-Jul-2022 01:26:16] [Date: 2022-07-17 01:26:16 | root execute succesfully show tables query
+ 'desc events_waits_summary_by_user_by_event_name;']
+[17-Jul-2022 01:26:17] [Connection to 'performance_schema' DB OK | Date: 2022-07-17 01:26:17 | root connect succesfully to 'performance_schema']
+[17-Jul-2022 01:26:17] [Date: 2022-07-17 01:26:17 | root execute succesfully Select query in performance_schema
+ 'SELECT * FROM events_waits_summary_by_user_by_event_name LIMIT 10;']
+[17-Jul-2022 01:26:21] [Connection to 'performance_schema' DB OK | Date: 2022-07-17 01:26:21 | root connect succesfully to 'performance_schema']
+[17-Jul-2022 01:26:21] [Date: 2022-07-17 01:26:21 | root execute succesfully show tables query
+ 'desc events_waits_summary_by_user_by_event_name;']
+[17-Jul-2022 01:26:28] [Connection to 'performance_schema' DB OK | Date: 2022-07-17 01:26:28 | root connect succesfully to 'performance_schema']
+[17-Jul-2022 01:26:28] [Date: 2022-07-17 01:26:28 | root execute succesfully show tables query
+ 'desc events_waits_history_long;']
+[17-Jul-2022 01:26:29] [Connection to 'performance_schema' DB OK | Date: 2022-07-17 01:26:29 | root connect succesfully to 'performance_schema']
+[17-Jul-2022 01:26:29] [Date: 2022-07-17 01:26:29 | root execute succesfully show tables query
+ 'desc events_waits_history_long;']
+[17-Jul-2022 01:27:25] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:27:25 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 01:27:25] [Date: 2022-07-17 01:27:25 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:27:28] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:27:28 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 01:27:28] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:27:28 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 01:27:28] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:27:28 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 01:27:28] [Date: 2022-07-17 01:27:28 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+
+[17-Jul-2022 01:27:28] [Date: 2022-07-17 01:27:28 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:27:30] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:27:30 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 01:27:31] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:27:31 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 01:27:31] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:27:31 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 01:27:31] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:27:31 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 01:27:31] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:27:31 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 01:27:31] [Date: 2022-07-17 01:27:31 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:27:31] [Date: 2022-07-17 01:27:31 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:27:31] [Date: 2022-07-17 01:27:31 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:27:31] [Date: 2022-07-17 01:27:31 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;'][17-Jul-2022 01:27:31] [Date: 2022-07-17 01:27:31 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+
+[17-Jul-2022 01:29:00] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:29:00 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 01:29:00] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:29:00 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 01:29:00] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:29:00 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 01:29:00] [Date: 2022-07-17 01:29:00 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:29:01] [Date: 2022-07-17 01:29:01 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:29:01] [Date: 2022-07-17 01:29:01 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:29:04] [CONNECT DB '' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 01:29:04] [CONNECT DB '' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 01:29:04] [CONNECT DB '' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 01:29:04] [CONNECT DB '' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 01:29:04] [CONNECT DB '' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 01:30:07] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:30:07 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 01:30:07] [Date: 2022-07-17 01:30:07 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:30:10] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:30:10 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 01:30:10] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:30:10 | root connect succesfully to '127.0.0.1']
+
+[17-Jul-2022 01:30:10] [Date: 2022-07-17 01:30:10 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:30:10] [Date: 2022-07-17 01:30:10 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:30:10] [Date: 2022-07-17 01:30:10 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:31:28] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:31:28 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 01:31:28] [Date: 2022-07-17 01:31:28 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:31:37] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 01:31:40] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:31:40 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 01:31:40] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:31:40 | root connect succesfully to '127.0.0.1'][17-Jul-2022 01:31:40] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:31:40 | root connect succesfully to '127.0.0.1']
+17-Jul-2022 01:31:40] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:31:40 | root connect succesfully to '127.0.0.1']
+
+[17-Jul-2022 01:31:40] [Date: 2022-07-17 01:31:40 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:31:40] [Date: 2022-07-17 01:31:40 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:31:40] [Date: 2022-07-17 01:31:40 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;'][17-Jul-2022 01:31:40] [Date: 2022-07-17 01:31:40 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+
+[17-Jul-2022 01:31:43] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 01:31:44] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 01:31:47] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 01:31:50] [Connection to 'mvc_example' DB OK | Date: 2022-07-17 01:31:50 | root connect succesfully to 'mvc_example']
+[17-Jul-2022 01:31:50] [Date: 2022-07-17 01:31:50 | root execute succesfully show tables query
+ 'desc products;']
+[17-Jul-2022 01:31:59] [Connection to 'mvc_example' DB OK | Date: 2022-07-17 01:31:59 | root connect succesfully to 'mvc_example']
+[17-Jul-2022 01:31:59] [Date: 2022-07-17 01:31:59 | root execute succesfully Select query in mvc_example
+ 'SELECT * FROM products LIMIT 10;']
+[17-Jul-2022 01:32:01] [Connection to 'mvc_example' DB OK | Date: 2022-07-17 01:32:01 | root connect succesfully to 'mvc_example']
+[17-Jul-2022 01:32:01] [Date: 2022-07-17 01:32:01 | root execute succesfully show tables query
+ 'desc products;']
+[17-Jul-2022 01:33:06] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:33:06 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 01:33:06] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:33:06 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306'][17-Jul-2022 01:33:06] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:33:06 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 01:33:06] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:33:06 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 01:33:06] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:33:06 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 01:33:06] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:33:06 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 01:33:06] [Date: 2022-07-17 01:33:06 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:33:06] [Date: 2022-07-17 01:33:06 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:33:06] [Date: 2022-07-17 01:33:06 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:33:06] [Date: 2022-07-17 01:33:06 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;'][17-Jul-2022 01:33:06] [Date: 2022-07-17 01:33:06 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+
+[17-Jul-2022 01:33:06] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:33:06 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 01:33:06] [Date: 2022-07-17 01:33:06 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:34:37] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:34:37 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 01:34:37] [Date: 2022-07-17 01:34:37 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:34:40] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 01:34:43] [Connection to 'information_schema' DB OK | Date: 2022-07-17 01:34:43 | inaki2022 connect succesfully to 'information_schema']
+[17-Jul-2022 01:34:43] [Date: 2022-07-17 01:34:43 | inaki2022 execute succesfully show tables query
+ 'desc COLLATIONS;']
+[17-Jul-2022 01:35:07] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:35:07 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 01:35:07] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:35:07 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 01:35:07] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:35:07 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 01:35:07] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:35:07 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 01:35:07] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 01:35:07 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 01:35:07] [Date: 2022-07-17 01:35:07 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:35:07] [Date: 2022-07-17 01:35:07 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:35:07] [Date: 2022-07-17 01:35:07 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 01:35:07] [Date: 2022-07-17 01:35:07 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;'][17-Jul-2022 01:35:07] [Date: 2022-07-17 01:35:07 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+
+[17-Jul-2022 01:35:10] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 01:35:10 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 01:35:10] [Date: 2022-07-17 01:35:10 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[17-Jul-2022 01:35:15] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 01:35:15 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 01:35:15] [Date: 2022-07-17 01:35:15 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[17-Jul-2022 01:35:18] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 01:35:18 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 01:35:18] [Date: 2022-07-17 01:35:18 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users LIMIT 10;']
+[17-Jul-2022 01:37:24] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 01:37:24 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 01:37:24] [Date: 2022-07-17 01:37:24 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users LIMIT 10;']
+[17-Jul-2022 01:37:32] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 01:37:32 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 01:37:32] [Date: 2022-07-17 01:37:32 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users LIMIT 10;']
+[17-Jul-2022 01:37:34] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 01:37:34 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 01:37:34] [Date: 2022-07-17 01:37:34 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[17-Jul-2022 01:39:06] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 01:39:06 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 01:39:06] [Date: 2022-07-17 01:39:06 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']

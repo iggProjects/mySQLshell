@@ -84,7 +84,8 @@ function openTree(host_arr) {
             document.getElementById(_titleTag).setAttribute('table',tblName);
 
             // call ajax table function
-            ShowTblCols_Left_Aside_js(_tag,'./include/AJAX_php_js/ajax_SelectTbl.php?hostName='+host_arr[hostNumb]+'&dbName='+dbName+'&tblName='+tblName);                    
+            Fetch_js(_tag,'./include/AJAX_php_js/ajax_SelectTbl.php?hostName='+host_arr[hostNumb]+'&dbName='+dbName+'&tblName='+tblName);                    
+            //ShowTblCols_Left_Aside_js(_tag,'./include/AJAX_php_js/ajax_SelectTbl.php?hostName='+host_arr[hostNumb]+'&dbName='+dbName+'&tblName='+tblName);                    
             //DescribeTbl_js(_tag,'./include/AJAX_php_js/ajax_DescribeTbl.php?hostName='+host_arr[hostNumb]+'&dbName='+dbName+'&tblName='+tblName);                    
             
         });      
@@ -98,7 +99,35 @@ function openTree(host_arr) {
  *  JS functions for db sql queries
 */
 
-/*   For List Table Columns  */ 
+/*   For describe table structure */ 
+function Fetch_js(tag,php_sql_url){   
+    console.log('tag=> ' + tag) 
+    console.log('php_sql_url====> ' + php_sql_url) 
+    
+    fetch(php_sql_url)
+
+    .then(response => {
+        if (response.ok)
+            return response.text()
+        else
+            throw new Error(response.status)
+    })
+
+    .then(data => {        
+        document.getElementById(tag).innerHTML = data;         
+    })
+
+    .catch(err => {
+        console.error("ERROR: ", err.message);
+        document.getElementById(tag).innerHTML = "ERROR: " + err.message; 
+
+    });
+
+}
+
+/*
+
+//   For List Table Columns  
 function ShowTblCols_Left_Aside_js(tag,php_sql_url){   
     console.log('tag=> ' + tag) 
     console.log('php_sql_url=> ' + php_sql_url)     
@@ -124,7 +153,7 @@ function ShowTblCols_Left_Aside_js(tag,php_sql_url){
 
 }
 
-/*   For describe table structure */ 
+//   For describe table structure  
 function DescribeTbl_js(tag,php_sql_url){   
     console.log('tag=> ' + tag) 
     console.log('php_sql_url====> ' + php_sql_url) 
@@ -149,6 +178,9 @@ function DescribeTbl_js(tag,php_sql_url){
     });
 
 }
+*/
+
+
 
 
 /*    

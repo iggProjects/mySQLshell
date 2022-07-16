@@ -43,17 +43,17 @@ $conex = ""; # variable global de conexión a la servidor seleccionado
 echo "    
     <div class='div-DB-view disp-row-center'>
         <div class='div-header-text'>
-            <h2>my SQL admin</h2>  
+            <h2>my LQS admin</h2>  
         </div>";
 
         echo "<div id='div-DB-info' class='DB-info' style='display:flex;'>";
             echo "<div id='div_nav_izq' class='nav-izq'>";  
-                echo "<p><span style='color:#990000;'>SERVER AREA</span></p>"; 
+                echo "<p><span style='color:#990000;'>USER: </span></p>"; 
                 
                 echo "<select class='servers_List' name='servers_List' id='serverList'>";                
                     echo "<option class='serverOpt' value='' selected>Select Server</option>"; 
                     for ( $k=0; $k < $i_serv; $k++ ) {                         
-                        echo "<option class='serverOpt'  value='" . $host_serv[$k+1] . "'>" . $host_serv_ShortName[$k+1] . "</option>"; 
+                        echo "<option class='serverOpt'  value='" . $host_serv[$k+1] . "' >" . $host_serv_ShortName[$k+1] . "</option>"; 
                     }
                 echo "</select>"; 
 
@@ -106,12 +106,18 @@ echo "
     var hostSelected = document.getElementById("serverList");
     hostSelected.addEventListener("click", () => {
         hostSelected.addEventListener("change", () => {            
-            document.getElementById('hostNavIzq').innerHTML = hostSelected.value;  
-            // call ajax function to display DB-info area in div_nav_izq
-            php_sql_url = './include/AJAX_php_js/ajax_Display_div_nav_izq.php?hostName='+hostSelected.value;
-            console.log('ajax php=> ' + php_sql_url); 
-            var host_array = <?php echo json_encode($host_serv); ?>;
-            Display_div_nav_izq('html_div_nav_izq',host_array,php_sql_url);
+            document.getElementById('hostNavIzq').innerHTML = hostSelected.value; 
+            if (hostSelected.value != 0 ) {
+                // call ajax function to display DB-info area in div_nav_izq
+                php_sql_url = './include/AJAX_php_js/ajax_Display_div_nav_izq.php?hostName='+hostSelected.value;
+                console.log('ajax php=> ' + php_sql_url); 
+                var host_array = <?php echo json_encode($host_serv); ?>;            
+                Display_div_nav_izq('html_div_nav_izq',host_array,php_sql_url);
+            } else {
+                document.getElementById('html_div_nav_izq').innerHTML = ""; 
+                document.getElementById('display-result-nav-title').innerHTML = ""; 
+                document.getElementById('display_left_aside').innerHTML = ""; 
+            }
         })
     });
 
@@ -122,17 +128,22 @@ echo "
 
     function doButtonAction(){
 
+        var table_param = document.getElementById('display-result-nav-title');
+        var _tag = 'display_sql_result';
+        document.getElementById(_tag).innerHTML = "";
+
         switch (this.id) {
 
-            case 'btn-desc':
-                console.log('button selected: ' + this.id);
-                var table_param = document.getElementById('display-result-nav-title');
-                var _tag = 'display_sql_result';
-                DescribeTbl_js(_tag,'./include/AJAX_php_js/ajax_DescribeTbl.php?hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table'));                    
+            case 'btn-desc':                
+                Fetch_js(_tag,'./include/AJAX_php_js/ajax_DescribeTbl.php?hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table'));                                    
                 break;
 
+            case 'btn-view':                
+                Fetch_js(_tag,'./include/AJAX_php_js/ajax_ViewTbl.php?hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table'));
+                break;    
+
             default:    
-                console.log('button selected: ' + this.id);
+                alert('button selected has not method associated !');
 
         }
        
