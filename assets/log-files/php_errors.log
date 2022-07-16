@@ -9075,3 +9075,201 @@ Stack trace:
 #0 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php(45): try_catch_connect_host_db('POAPMYSQL119.dn...', '8661316_laninak...', 'inaki2022', 'Inaki@2022', 'utf8mb4', '../../assets/lo...')
 #1 {main}
   thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions_servers.php on line 90
+[16-Jul-2022 10:59:58 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 35
+[16-Jul-2022 10:59:58 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 40
+[16-Jul-2022 10:59:58 Europe/Berlin] PHP Warning:  Undefined variable $h in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 49
+[16-Jul-2022 10:59:58 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 10:59:58 Europe/Berlin] PHP Warning:  Undefined variable $hostUser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 10:59:58 Europe/Berlin] PHP Warning:  Undefined variable $hostPassw in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 10:59:58 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 10:59:58 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 35
+[16-Jul-2022 10:59:58 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 40
+[16-Jul-2022 10:59:58 Europe/Berlin] PHP Warning:  Undefined variable $h in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 49
+[16-Jul-2022 10:59:58 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 74
+[16-Jul-2022 10:59:58 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 35
+[16-Jul-2022 10:59:58 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 10:59:58 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 40
+[16-Jul-2022 10:59:58 Europe/Berlin] PHP Warning:  Undefined variable $hostUser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 10:59:58 Europe/Berlin] PHP Warning:  Undefined variable $h in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 49
+[16-Jul-2022 10:59:58 Europe/Berlin] PHP Warning:  Undefined variable $hostPassw in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 10:59:58 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 10:59:58 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 10:59:58 Europe/Berlin] PHP Warning:  Undefined variable $hostUser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 10:59:58 Europe/Berlin] PHP Warning:  Undefined variable $hostPassw in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 10:59:58 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 10:59:58 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 74
+[16-Jul-2022 10:59:58 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 74
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 35
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 40
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $h in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 49
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostUser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostPassw in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 74
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 35
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 35
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 40
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 40
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $h in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 49
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 35
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $h in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 49
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostUser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostPassw in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 35
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 40
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $h in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 49
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 35
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 40
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 40
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 74
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $h in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 49
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostUser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 35
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostUser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $h in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 49
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 40
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostPassw in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostPassw in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostUser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $h in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 49
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostPassw in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostUser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostUser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 74
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostPassw in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostPassw in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 74
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 35
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 74
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 40
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $h in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 49
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 74
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostUser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 74
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostPassw in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 74
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 35
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 40
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $h in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 49
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostUser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $hostPassw in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 54
+[16-Jul-2022 11:00:06 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 74
+[16-Jul-2022 11:42:08 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:42:08 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, null given in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php:77
+Stack trace:
+#0 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php(77): array_push(NULL, NULL)
+#1 {main}
+  thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:43:59 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:43:59 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, int given in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php:77
+Stack trace:
+#0 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php(77): array_push(1, NULL)
+#1 {main}
+  thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:50:56 Europe/Berlin] PHP Warning:  Undefined array key "field" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:50:56 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, int given in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php:77
+Stack trace:
+#0 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php(77): array_push(1, NULL)
+#1 {main}
+  thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:52:12 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, int given in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php:77
+Stack trace:
+#0 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php(77): array_push(1, 'date_in')
+#1 {main}
+  thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:52:44 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, int given in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php:77
+Stack trace:
+#0 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php(77): array_push(1, Array)
+#1 {main}
+  thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:53:24 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:54:29 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:54:29 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:54:29 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:54:29 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:54:29 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:54:29 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:54:29 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:54:29 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:54:29 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:54:29 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:54:29 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:54:29 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:54:29 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:54:29 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:54:29 Europe/Berlin] PHP Warning:  Undefined array key 0 in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:54:29 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:55:07 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:55:07 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:55:07 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:55:07 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:55:07 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:55:07 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:55:07 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:55:07 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:55:07 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:55:07 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:55:07 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:55:07 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:55:07 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:55:07 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:55:07 Europe/Berlin] PHP Warning:  Undefined array key 1 in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:55:07 Europe/Berlin] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 77
+[16-Jul-2022 11:57:02 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 78
+[16-Jul-2022 11:57:43 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 78
+[16-Jul-2022 11:58:28 Europe/Berlin] PHP Warning:  Array to string conversion in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 78
+[16-Jul-2022 12:01:01 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, int given in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php:79
+Stack trace:
+#0 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php(79): array_push(1, 'nombre_archivo')
+#1 {main}
+  thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 79
+[16-Jul-2022 12:02:23 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, int given in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php:79
+Stack trace:
+#0 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php(79): array_push(1, 'date_in')
+#1 {main}
+  thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 79
+[16-Jul-2022 12:03:15 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, int given in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php:79
+Stack trace:
+#0 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php(79): array_push(1, 'date_in')
+#1 {main}
+  thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 79
+[16-Jul-2022 12:04:50 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, int given in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php:79
+Stack trace:
+#0 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php(79): array_push(1, 'dept_no')
+#1 {main}
+  thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 79
+[16-Jul-2022 12:05:40 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, int given in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php:79
+Stack trace:
+#0 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php(79): array_push(1, 'date_in')
+#1 {main}
+  thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 79
+[16-Jul-2022 12:07:07 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: array_push(): Argument #1 ($array) must be of type array, int given in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php:79
+Stack trace:
+#0 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php(79): array_push(1, 'ROLE_NAME')
+#1 {main}
+  thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectTbl.php on line 79
+[16-Jul-2022 12:09:09 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_general_funct\my_PHP_functions.php on line 247
+[16-Jul-2022 12:09:09 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_general_funct\my_PHP_functions.php on line 260
+[16-Jul-2022 12:09:54 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_general_funct\my_PHP_functions.php on line 247
+[16-Jul-2022 12:09:54 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_general_funct\my_PHP_functions.php on line 260
+[16-Jul-2022 12:10:51 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_general_funct\my_PHP_functions.php on line 247
+[16-Jul-2022 12:10:51 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_general_funct\my_PHP_functions.php on line 260
+[16-Jul-2022 12:11:20 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_general_funct\my_PHP_functions.php on line 247
+[16-Jul-2022 12:11:20 Europe/Berlin] PHP Warning:  foreach() argument must be of type array|object, string given in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_general_funct\my_PHP_functions.php on line 260
