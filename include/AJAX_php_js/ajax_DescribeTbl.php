@@ -1,6 +1,6 @@
 <?php
 
-include_once "./my_PHP_functions.php";
+include_once "../php_general_funct/my_PHP_functions.php";
 include_once "../sql_funct/my_SQL_functions_servers.php";
 
 $log_comments_path = "../../assets/log-files/log_comments.log";
@@ -40,8 +40,9 @@ if ( $dbhost == 'POAPMYSQL119.dns-servicio.com:3306' ) {
     // upssssss msg
 }
 
-# connection to DB using $db_parameters
 
+
+# connection to DB using $db_parameters
 $conex_db = try_catch_connect_host_db($dbhost,$dbname,$dbuser,$dbpass,$dbcharset,$log_queries_path);
 
 $route = "";

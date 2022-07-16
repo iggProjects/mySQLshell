@@ -69,19 +69,19 @@ function openTree(host_arr) {
             var dbName = this.getAttribute('db');
             var tblName = this.getAttribute('table-name'); 
             
-            // var _tag='display_sql_result';
-            var _titleTag = 'display-result-nav-title';
-            var _tag= 'display_left_aside';
+            // tag for display columns of table selected
+            var _tag= 'display_left_aside';            
 
-            // title for second nav 
-            document.getElementById(_titleTag).innerHTML = 'Table ' + tblName;
+            // tag for display host, DB, table in second NAV
+            var _titleTag = 'display-result-nav-title';
+            document.getElementById(_titleTag).innerHTML = 'Host: \"' + host_arr[hostNumb] + '\"' + ', DB: \"' + dbName + '\"' +  '<br><span style=\'color:blue;font-size:20px;\'>Table: \"' + tblName + '\" ';
             document.getElementById(_titleTag).setAttribute('host',host_arr[hostNumb]);
             document.getElementById(_titleTag).setAttribute('db',dbName);
             document.getElementById(_titleTag).setAttribute('table',tblName);
 
             // call ajax table function
             ShowTblCols_Left_Aside_js(_tag,'./include/AJAX_php_js/ajax_SelectTbl.php?hostName='+host_arr[hostNumb]+'&dbName='+dbName+'&tblName='+tblName);                    
-            // DescribeTbl_js(_tag,'./include/php_funct/ajax_SelectTbl.php?hostName='+host_arr[hostNumb]+'&dbName='+dbName+'&tblName='+tblName);                    
+            //DescribeTbl_js(_tag,'./include/AJAX_php_js/ajax_DescribeTbl.php?hostName='+host_arr[hostNumb]+'&dbName='+dbName+'&tblName='+tblName);                    
             
         });      
     
@@ -94,7 +94,7 @@ function openTree(host_arr) {
  *  JS functions for db sql queries
 */
 
-/*   For describe table structure */ 
+/*   For List Table Columns  */ 
 function ShowTblCols_Left_Aside_js(tag,php_sql_url){   
     console.log('tag=> ' + tag) 
     console.log('php_sql_url=> ' + php_sql_url)     
@@ -123,7 +123,7 @@ function ShowTblCols_Left_Aside_js(tag,php_sql_url){
 /*   For describe table structure */ 
 function DescribeTbl_js(tag,php_sql_url){   
     console.log('tag=> ' + tag) 
-    console.log('php_sql_url=> ' + php_sql_url) 
+    console.log('php_sql_url====> ' + php_sql_url) 
     
     fetch(php_sql_url)
 

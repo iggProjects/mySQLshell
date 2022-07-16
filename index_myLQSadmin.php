@@ -66,14 +66,14 @@ echo "
             echo "<div class='div-der disp-row-center'>";
 
                     echo "<div class='nav-btns disp-col-center'>";
-                        echo "<button>Desc<br>Table</button>";
-                        echo "<button>View<br>Table</button>";
-                        echo "<button>Make<br>Query</button>";
-                        echo "<button>Export</button>";
-                        echo "<button>Import</button>";
-                        echo "<button>Privileges</button>";
-                        echo "<button>Backup</button>";
-                        echo "<button>Restore</button>";
+                        echo "<button id='btn-desc' class='nav-btn'>Desc<br>Table</button>";
+                        echo "<button id='btn-view' class='nav-btn'>View<br>Table</button>";
+                        echo "<button id='btn-sql' class='nav-btn'>Make<br>Query</button>";
+                        echo "<button id='btn-export' class='nav-btn'>Export</button>";
+                        echo "<button id='btn-import' class='nav-btn'>Import</button>";
+                        echo "<button id='btn-privil' class='nav-btn'>Privileges</button>";
+                        echo "<button id='btn-bakcup' class='nav-btn'>Backup</button>";
+                        echo "<button id='btn-restore' class='nav-btn'>Restore</button>";
                     echo "</div>";
 
                     echo "<div class='der-console disp-row-center' >";
@@ -102,7 +102,7 @@ echo "
      *  Listeners  
     */
     
-    // Select HOST and Display TREE of DB and Tbl's
+    // Listener to select HOST and Display TREE of DB and Tbl's
     var hostSelected = document.getElementById("serverList");
     hostSelected.addEventListener("click", () => {
         hostSelected.addEventListener("change", () => {            
@@ -113,7 +113,42 @@ echo "
             var host_array = <?php echo json_encode($host_serv); ?>;
             Display_div_nav_izq('html_div_nav_izq',host_array,php_sql_url);
         })
-    })  
+    });
+
+    // Listeners for buttons of class "nav-btn"
+    var buttonSelected = document.getElementsByClassName('nav-btn');
+    function doButton(){
+
+        switch (this.id) {
+
+            case 'btn-desc':
+                console.log('button selected: ' + this.id);
+                var table_param = document.getElementById('display-result-nav-title');
+                var hostName= table_param.getAttribute('host');
+                var dbName = table_param.getAttribute('db');
+                var tableName = table_param.getAttribute('table');
+                var _tag = 'display_sql_result';
+                // ShowTblCols_Left_Aside_js(_tag,'./include/AJAX_php_js/ajax_SelectTbl.php?hostName='+hostName+'&dbName='+dbName+'&tblName='+tableName);                    
+                DescribeTbl_js(_tag,'./include/AJAX_php_js/ajax_DescribeTbl.php?hostName='+hostName+'&dbName='+dbName+'&tblName='+tableName);                    
+                //DescribeTbl_js(_tag,'./include/AJAX_php_js/ajax_DescribeTbl.php?hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table'));                    
+
+                break;
+
+            default:    
+                console.log('button selected: ' + this.id);
+
+        }
+       
+    } 
+
+    for (var i = 0; i < buttonSelected.length; i++) {
+        buttonSelected[i].addEventListener('click', doButton, false);
+
+    }
+
+
+    
+    
 
 </script>
 
