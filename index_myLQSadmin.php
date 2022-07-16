@@ -79,10 +79,13 @@ echo "
                     echo "<div class='der-console disp-row-center' >";
 
                         echo "<div id='display_result'>
-                            <div class='display-result-nav'><p>second nav for sql console</p></div>
+                            <div class='display-result-nav'><p id='display-result-nav-title'></p></div>
                             <div id='display_sql_result'></div>
                         </div>";
-                        echo "<div id='display_left_aside'></div>";
+                        echo "<div id='left_aside'>
+                            <div class='display_left_aside-comment'><p>TABLE INFO</p></div>
+                            <div id='display_left_aside'></div>
+                        </div>";
 
                     echo "</div>";
                     

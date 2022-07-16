@@ -227,14 +227,14 @@
 
     function displayTable($table_title,$table_width,$thead_titles_array,$data_array){
 
-        echo "<br><br><h4>$table_title</h4>";
 
+        // echo "<p style = 'margin-top:80px;'>$table_title</p>";
         $i=1;
-        echo "<table style='width: $table_width%; border: 1px blue solid; margin-top:30px; margin-bottom:20px;'>";
+        echo "<table style='width: $table_width%; overflow:scroll;'>";          
 
             $tr_thead = "<tr>";
             for ($j=0; $j<count($thead_titles_array); $j++) {
-                $th = "<th style='padding-left:4px;padding-right:4px;'>" . $thead_titles_array[$j]  . "</th>";
+                $th = "<th style='padding:1px;'>" . $thead_titles_array[$j]  . "</th>";
                 $tr_thead .= $th; 
             }
             $tr_thead .="</tr>";  
@@ -242,9 +242,10 @@
             echo $tr_thead;          
             
             foreach ( $data_array as $row ) {
-                echo "<tr><td style='text-align:center;'>$i</td>";
+                echo "<tr>
+                <td style='text-align:center;'>$i</td>";      
                 foreach ( $row as $col ) {
-                    echo "<td style='text-align:center; padding:5px; border: 1px gray solid;'>" .$col . "</td>";
+                    echo "<td style='text-align:center; padding-top:3px;'>" .$col . "</td>";
                 }
                 echo "</tr>";
                 $i++;
@@ -252,6 +253,7 @@
 
         echo "</table>";
 
+/*
         echo "<br><p style='color:blue;font-size:14px;'>Key's in \$data_array</p><br>";
 
         $keys_val_data_array = "";
@@ -260,24 +262,8 @@
                 $keys_val_data_array .= $key . " | ";
             }
             echo "<p style='color:blue;font-size:10px;'>$keys_val_data_array</p><br>";
-        /*    
-            echo "********************************************<br>";
-            foreach ( $data_array as $row ) {
-                foreach ( $row as $key => $value ) {
-                    echo "key: " . $key . " | value: " . $value . "<br>";
-                }
-                echo "----------------<br>";
-            }  
-        */     
         }
-
-    /*    
-        echo "<pre style='font-size:11px;'>";
-            var_dump($thead_titles_array);            
-            var_dump($data_array);
-        echo "</pre>";
-    */    
-
+*/
     }
 
 

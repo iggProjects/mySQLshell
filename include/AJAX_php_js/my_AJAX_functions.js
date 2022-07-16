@@ -66,10 +66,19 @@ function openTree(host_arr) {
             // Parameters for calling ajax junction
             var point = this.getAttribute('point');
             var hostNumb = this.getAttribute('host');
-            var tblName = this.getAttribute('table-name'); 
             var dbName = this.getAttribute('db');
-            var _tag='display_sql_result';
+            var tblName = this.getAttribute('table-name'); 
             
+            // var _tag='display_sql_result';
+            var _titleTag = 'display-result-nav-title';
+            var _tag= 'display_left_aside';
+
+            // title for second nav 
+            document.getElementById(_titleTag).innerHTML = 'Table ' + tblName;
+            document.getElementById(_titleTag).setAttribute('host',host_arr[hostNumb]);
+            document.getElementById(_titleTag).setAttribute('db',dbName);
+            document.getElementById(_titleTag).setAttribute('table',tblName);
+
             // call ajax table function
             ShowTblCols_Left_Aside_js(_tag,'./include/AJAX_php_js/ajax_SelectTbl.php?hostName='+host_arr[hostNumb]+'&dbName='+dbName+'&tblName='+tblName);                    
             // DescribeTbl_js(_tag,'./include/php_funct/ajax_SelectTbl.php?hostName='+host_arr[hostNumb]+'&dbName='+dbName+'&tblName='+tblName);                    
@@ -88,7 +97,7 @@ function openTree(host_arr) {
 /*   For describe table structure */ 
 function ShowTblCols_Left_Aside_js(tag,php_sql_url){   
     console.log('tag=> ' + tag) 
-    console.log('php_sql_url=> ' + php_sql_url) 
+    console.log('php_sql_url=> ' + php_sql_url)     
     
     fetch(php_sql_url)
 
