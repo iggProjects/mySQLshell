@@ -116,22 +116,19 @@ echo "
     });
 
     // Listeners for buttons of class "nav-btn"
-    var buttonSelected = document.getElementsByClassName('nav-btn');
-    function doButton(){
+
+    // considerar un listener para display-result-nav-title de manera de tener los parámetros
+    //      cada vez que cambie la tabla 
+
+    function doButtonAction(){
 
         switch (this.id) {
 
             case 'btn-desc':
                 console.log('button selected: ' + this.id);
                 var table_param = document.getElementById('display-result-nav-title');
-                var hostName= table_param.getAttribute('host');
-                var dbName = table_param.getAttribute('db');
-                var tableName = table_param.getAttribute('table');
                 var _tag = 'display_sql_result';
-                // ShowTblCols_Left_Aside_js(_tag,'./include/AJAX_php_js/ajax_SelectTbl.php?hostName='+hostName+'&dbName='+dbName+'&tblName='+tableName);                    
-                DescribeTbl_js(_tag,'./include/AJAX_php_js/ajax_DescribeTbl.php?hostName='+hostName+'&dbName='+dbName+'&tblName='+tableName);                    
-                //DescribeTbl_js(_tag,'./include/AJAX_php_js/ajax_DescribeTbl.php?hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table'));                    
-
+                DescribeTbl_js(_tag,'./include/AJAX_php_js/ajax_DescribeTbl.php?hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table'));                    
                 break;
 
             default:    
@@ -141,9 +138,10 @@ echo "
        
     } 
 
-    for (var i = 0; i < buttonSelected.length; i++) {
-        buttonSelected[i].addEventListener('click', doButton, false);
+    var buttonSelected = document.getElementsByClassName('nav-btn');
 
+    for (var i = 0; i < buttonSelected.length; i++) {
+        buttonSelected[i].addEventListener('click', doButtonAction, false);
     }
 
 
