@@ -6175,3 +6175,36 @@
 [16-Jul-2022 20:18:40] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-16 20:18:40 | inaki2022 connect succesfully to '8661316_laninaki22']
 [16-Jul-2022 20:18:40] [Date: 2022-07-16 20:18:40 | inaki2022 execute succesfully show tables query
  'desc tbl_users;']
+[16-Jul-2022 20:27:15] [Connection to 'information_schema' DB OK | Date: 2022-07-16 20:27:15 | inaki2022 connect succesfully to 'information_schema']
+[16-Jul-2022 20:27:15] [Date: 2022-07-16 20:27:15 | inaki2022 execute succesfully show tables query
+ 'desc GLOBAL_VARIABLES;']
+[16-Jul-2022 20:29:10] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-16 20:29:10 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[16-Jul-2022 20:29:10] [Date: 2022-07-16 20:29:10 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[16-Jul-2022 20:29:13] [Connection to 'information_schema' DB OK | Date: 2022-07-16 20:29:13 | inaki2022 connect succesfully to 'information_schema']
+[16-Jul-2022 20:29:13] [Date: 2022-07-16 20:29:13 | inaki2022 execute succesfully show tables query
+ 'desc COLLATIONS;']
+[16-Jul-2022 20:29:14] [Connection to 'information_schema' DB OK | Date: 2022-07-16 20:29:14 | inaki2022 connect succesfully to 'information_schema']
+[16-Jul-2022 20:29:14] [Date: 2022-07-16 20:29:14 | inaki2022 execute succesfully show tables query
+ 'desc COLLATIONS;']
+[16-Jul-2022 20:29:17] [Connection to 'information_schema' DB OK | Date: 2022-07-16 20:29:17 | inaki2022 connect succesfully to 'information_schema']
+[16-Jul-2022 20:29:17] [Date: 2022-07-16 20:29:17 | inaki2022 execute succesfully show tables query
+ 'desc ENGINES;']
+[16-Jul-2022 20:29:26] [Connection to 'information_schema' DB OK | Date: 2022-07-16 20:29:26 | inaki2022 connect succesfully to 'information_schema']
+[16-Jul-2022 20:29:26] [Date: 2022-07-16 20:29:26 | inaki2022 execute succesfully show tables query
+ 'desc ENGINES;']
+[16-Jul-2022 20:29:54] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-16 20:29:54 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[16-Jul-2022 20:29:54] [Date: 2022-07-16 20:29:54 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[16-Jul-2022 20:29:57] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-16 20:29:57 | inaki2022 connect succesfully to '8661316_laninaki22']
+[16-Jul-2022 20:29:57] [Date: 2022-07-16 20:29:57 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[16-Jul-2022 20:29:58] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-16 20:29:58 | inaki2022 connect succesfully to '8661316_laninaki22']
+[16-Jul-2022 20:29:59] [Date: 2022-07-16 20:29:59 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[16-Jul-2022 20:30:02] [Connection to 'information_schema' DB OK | Date: 2022-07-16 20:30:02 | inaki2022 connect succesfully to 'information_schema']
+[16-Jul-2022 20:30:02] [Date: 2022-07-16 20:30:02 | inaki2022 execute succesfully show tables query
+ 'desc COLLATIONS;']
+[16-Jul-2022 20:30:06] [Connection to 'information_schema' DB OK | Date: 2022-07-16 20:30:06 | inaki2022 connect succesfully to 'information_schema']
+[16-Jul-2022 20:30:06] [Date: 2022-07-16 20:30:06 | inaki2022 execute succesfully show tables query
+ 'desc COLLATIONS;']

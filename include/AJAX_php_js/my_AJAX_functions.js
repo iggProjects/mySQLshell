@@ -63,6 +63,10 @@ function openTree(host_arr) {
         
         tableDisplay[j].addEventListener("click", function() {    
             
+            // Clear infor of #display_sql_result
+            document.getElementById('display_sql_result').innerHTML = "";
+
+
             // Parameters for calling ajax junction
             var point = this.getAttribute('point');
             var hostNumb = this.getAttribute('host');
