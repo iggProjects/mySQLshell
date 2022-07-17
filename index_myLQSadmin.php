@@ -81,9 +81,11 @@ echo "
                         echo "<div id='display_result'>
                             <div class='display-result-nav'><p id='display-result-nav-title'></p></div>                            
                             <div id='display_sql_result'></div>
+                            <div id='display-sql-console-Up' class='hideDiv'><textarea id='sql-query-area' placeholder='write your sql query....'></textarea></div>
+                            <div id='display-sql-console-Down' class='hideDiv' placeholder='query result area' style='color:blue;'>____ query result area ____</div>
                         </div>";
                         echo "<div id='left_aside'>
-                            <div class='display_left_aside-comment'><p>TABLE INFO</p></div>
+                            <div class='display_left_aside-comment'><p id='p-comment'>TABLE INFO</p></div>
                             <div id='display_left_aside'></div>
                         </div>";
 
@@ -140,6 +142,24 @@ echo "
 
             case 'btn-view':                
                 Fetch_js(_tag,'./include/AJAX_php_js/ajax_ViewTbl.php?hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table'));
+                break;    
+
+            case 'btn-sql':   
+
+                btns = document.querySelectorAll(".nav-btn");
+
+                for ( var i=0; i<btns.length; i++ ) { if ( btns[i].id != 'btn-sql' ) {  btns[i].classList.toggle("hideBtn"); }  } 
+                
+                // document.getElementById('display-result-nav-title').innerHTML="";
+                document.getElementById('p-comment').innerHTML='DB TABLES';        
+                
+                document.getElementById('display_sql_result').classList.toggle("hideDiv");  
+                document.getElementById('display-sql-console-Up').classList.toggle("hideDiv");        
+                document.getElementById('display-sql-console-Down').classList.toggle("hideDiv");  
+                
+                // tag for display columns of table selected
+                var _tag= 'display_left_aside';   
+                // Fetch_js(_tag,'./include/AJAX_php_js/ajax_ListTables.php?hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db'));
                 break;    
 
             default:    

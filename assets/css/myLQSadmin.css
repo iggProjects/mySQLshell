@@ -40,13 +40,19 @@
 
   .div-DB-view .DB-info .div-der .der-console #display_result #display_sql_result table {  margin-right: auto; margin-left:auto; margin-top:10px; border:1px solid gray;} 
 
+  .div-DB-view .DB-info .div-der .der-console #display_result #display-sql-console-Up { width:100%; height: 30%; overflow:scroll; margin:auto;  text-align: center; border:2px solid #c3c3c3; background-color: white;}
+
+  .div-DB-view .DB-info .div-der .der-console #display_result #display-sql-console-Up #sql-query-area { width:98%; height:90%; margin:3px; border:2px solid #e2e2e2;}
+
+  .div-DB-view .DB-info .div-der .der-console #display_result #display-sql-console-Down { width:100%; height: 58%; overflow:scroll; margin:auto; padding-top:10px; text-align: center; border:2px solid #d4d4d4; background-color: #b4b4b4;}
+  
   .div-DB-view .DB-info .div-der .der-console #left_aside { width:18%; height:100%;margin-top:0px; padding-top:0px; overflow:scroll; font-size:11px; color:blue; border:5px solid white; background-color: #e2e2e2;}
 
-  .div-DB-view .DB-info .div-der .der-console #left_aside .display_left_aside-comment { height:10%; border-bottom: 2px solid white ;}
+  .div-DB-view .DB-info .div-der .der-console #left_aside .display_left_aside-comment { height:10%; border-bottom: 2px solid white ; }
 
-  .div-DB-view .DB-info .div-der .der-console #left_aside .display_left_aside-comment p { margin:0px; padding-top:20px; color:#003300; font-size: 20px; text-align:center; }
+  .div-DB-view .DB-info .div-der .der-console #left_aside .display_left_aside-comment #p-comment { margin:0px; padding-top:20px; color:#003300; font-size: 20px; text-align:center; }
 
-  .div-DB-view .DB-info .div-der .der-console #left_aside #display_left_aside { width:auto; margin-top:15px; }
+  .div-DB-view .DB-info .div-der .der-console #left_aside #display_left_aside { width:auto; margin-top:5px; }
 
   .div-DB-view .DB-info .div-der .der-console #left_aside #display_left_aside table {  font-size:12px; margin-right: auto; margin-left:auto; margin-top:0px; border:1px solid gray;} 
 
@@ -60,6 +66,10 @@
     color:white;
     /*color:#003300;*/
   }
+
+  .hideDiv { display:none; }
+
+  .hideBtn { display:none; }
   
   .disp-row-center {
     display: flex;
