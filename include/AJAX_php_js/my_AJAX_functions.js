@@ -42,7 +42,7 @@ function openTree(host_arr) {
 
     var toggler = document.getElementsByClassName("caret");
     var i;
-    console.log('caret length ' + toggler.length);
+    // console.log('caret length ' + toggler.length);
 
     // Define listeners for "caret" class 
     for (i = 0; i < toggler.length; i++) {
@@ -51,6 +51,10 @@ function openTree(host_arr) {
             console.log('parent El: ' + this.parentElement.tagName  + ', class: '+ this.parentElement.classList);
             this.parentElement.querySelector(".nested").classList.toggle("active");
             this.classList.toggle("caret-down");
+
+
+
+
         });
     }
 
@@ -66,15 +70,11 @@ function openTree(host_arr) {
             // Clear infor of #display_sql_result
             document.getElementById('display_sql_result').innerHTML = "";
 
-
             // Parameters for calling ajax junction
             var point = this.getAttribute('point');
             var hostNumb = this.getAttribute('host');
             var dbName = this.getAttribute('db');
-            var tblName = this.getAttribute('table-name'); 
-            
-            // tag for display columns of table selected
-            var _tag= 'display_left_aside';            
+            var tblName = this.getAttribute('table-name');   
 
             // tag for display host, DB, table in second NAV
             var _titleTag = 'display-result-nav-title';

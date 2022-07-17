@@ -7555,3 +7555,180 @@
 [17-Jul-2022 14:39:36] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
 [17-Jul-2022 14:39:38] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
 [17-Jul-2022 14:39:46] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 18:59:52] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 18:59:52 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 18:59:53] [Date: 2022-07-17 18:59:53 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 19:00:00] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 19:00:20] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 19:00:23] [Connection to 'employees' DB OK | Date: 2022-07-17 19:00:23 | root connect succesfully to 'employees']
+[17-Jul-2022 19:00:23] [Date: 2022-07-17 19:00:23 | root execute succesfully show tables query
+ 'desc current_dept_emp;']
+[17-Jul-2022 19:00:30] [Connection to 'employees' DB OK | Date: 2022-07-17 19:00:30 | root connect succesfully to 'employees']
+[17-Jul-2022 19:06:08] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 19:06:08 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 19:06:08] [Date: 2022-07-17 19:06:08 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 19:06:12] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 19:06:12 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 19:06:12] [Date: 2022-07-17 19:06:12 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[17-Jul-2022 19:06:15] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 19:06:15 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 19:12:05] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 19:12:05 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 19:12:05] [Date: 2022-07-17 19:12:05 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 19:12:08] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 19:12:08 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 19:12:08] [Date: 2022-07-17 19:12:08 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[17-Jul-2022 19:12:51] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 19:12:51 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 19:15:32] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 19:15:32 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 19:15:32] [Date: 2022-07-17 19:15:32 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 19:15:35] [Connection to 'information_schema' DB OK | Date: 2022-07-17 19:15:35 | inaki2022 connect succesfully to 'information_schema']
+[17-Jul-2022 19:15:35] [Date: 2022-07-17 19:15:35 | inaki2022 execute succesfully show tables query
+ 'desc CHARACTER_SETS;']
+[17-Jul-2022 19:15:37] [Connection to 'information_schema' DB OK | Date: 2022-07-17 19:15:37 | inaki2022 connect succesfully to 'information_schema']
+[17-Jul-2022 19:15:37] [Date: 2022-07-17 19:15:37 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Jul-2022 19:17:42] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 19:18:03] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 19:18:03 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 19:18:04] [Date: 2022-07-17 19:18:04 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 19:18:10] [Connection to 'information_schema' DB OK | Date: 2022-07-17 19:18:10 | inaki2022 connect succesfully to 'information_schema']
+[17-Jul-2022 19:18:10] [Date: 2022-07-17 19:18:10 | inaki2022 execute succesfully show tables query
+ 'desc CHARACTER_SETS;']
+[17-Jul-2022 19:18:18] [Connection to 'information_schema' DB OK | Date: 2022-07-17 19:18:18 | inaki2022 connect succesfully to 'information_schema']
+[17-Jul-2022 19:18:18] [Date: 2022-07-17 19:18:18 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Jul-2022 19:22:59] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 19:23:04] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 19:23:04 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 19:23:04] [Date: 2022-07-17 19:23:04 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 19:24:10] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 19:24:10 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 19:24:10] [Date: 2022-07-17 19:24:10 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 19:24:13] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 19:27:04] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 19:27:04 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 19:27:04] [Date: 2022-07-17 19:27:04 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 19:27:11] [Connection to 'information_schema' DB OK | Date: 2022-07-17 19:27:11 | inaki2022 connect succesfully to 'information_schema']
+[17-Jul-2022 19:27:11] [Date: 2022-07-17 19:27:11 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Jul-2022 19:38:50] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 19:38:50 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 19:38:50] [Date: 2022-07-17 19:38:50 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 19:38:54] [Connection to 'information_schema' DB OK | Date: 2022-07-17 19:38:54 | inaki2022 connect succesfully to 'information_schema']
+[17-Jul-2022 19:38:54] [Date: 2022-07-17 19:38:54 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Jul-2022 19:39:21] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 19:39:21 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 19:39:21] [Date: 2022-07-17 19:39:21 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 19:39:25] [Connection to 'information_schema' DB OK | Date: 2022-07-17 19:39:25 | inaki2022 connect succesfully to 'information_schema']
+[17-Jul-2022 19:39:25] [Date: 2022-07-17 19:39:25 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Jul-2022 19:39:44] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 19:39:44 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 19:39:45] [Date: 2022-07-17 19:39:45 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 19:39:48] [Connection to 'information_schema' DB OK | Date: 2022-07-17 19:39:48 | inaki2022 connect succesfully to 'information_schema']
+[17-Jul-2022 19:39:48] [Date: 2022-07-17 19:39:48 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Jul-2022 19:42:26] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 19:42:29] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 19:42:29 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 19:42:29] [Date: 2022-07-17 19:42:29 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 19:42:34] [Connection to 'information_schema' DB OK | Date: 2022-07-17 19:42:34 | inaki2022 connect succesfully to 'information_schema']
+[17-Jul-2022 19:42:34] [Date: 2022-07-17 19:42:34 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Jul-2022 19:43:02] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 19:43:02 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 19:43:02] [Date: 2022-07-17 19:43:02 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 19:43:06] [Connection to 'information_schema' DB OK | Date: 2022-07-17 19:43:06 | inaki2022 connect succesfully to 'information_schema']
+[17-Jul-2022 19:43:06] [Date: 2022-07-17 19:43:06 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Jul-2022 19:43:31] [Connection to 'information_schema' DB OK | Date: 2022-07-17 19:43:31 | inaki2022 connect succesfully to 'information_schema']
+[17-Jul-2022 19:43:31] [Date: 2022-07-17 19:43:31 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Jul-2022 19:43:38] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 19:43:38 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 19:43:38] [Date: 2022-07-17 19:43:38 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Jul-2022 19:44:03] [Connection to 'information_schema' DB OK | Date: 2022-07-17 19:44:03 | inaki2022 connect succesfully to 'information_schema']
+[17-Jul-2022 19:44:03] [Date: 2022-07-17 19:44:03 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Jul-2022 19:45:17] [Connection to 'information_schema' DB OK | Date: 2022-07-17 19:45:17 | inaki2022 connect succesfully to 'information_schema']
+[17-Jul-2022 19:45:17] [Date: 2022-07-17 19:45:17 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Jul-2022 19:45:52] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 19:45:52 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 19:45:52] [Date: 2022-07-17 19:45:52 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Jul-2022 19:46:00] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 19:46:00 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 19:46:00] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 19:46:00 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 19:46:00] [Connection to host '127.0.0.1' OK | Date: 2022-07-17 19:46:00 | root connect succesfully to '127.0.0.1']
+[17-Jul-2022 19:46:01] [Date: 2022-07-17 19:46:01 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 19:46:01] [Date: 2022-07-17 19:46:01 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 19:46:01] [Date: 2022-07-17 19:46:01 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 19:46:06] [Connection to 'mvc_example' DB OK | Date: 2022-07-17 19:46:06 | root connect succesfully to 'mvc_example']
+[17-Jul-2022 19:46:06] [Date: 2022-07-17 19:46:06 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Jul-2022 19:50:09] [Connection to 'mvc_example' DB OK | Date: 2022-07-17 19:50:09 | root connect succesfully to 'mvc_example']
+[17-Jul-2022 19:50:09] [Date: 2022-07-17 19:50:09 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Jul-2022 19:50:12] [Connection to 'mvc_example' DB OK | Date: 2022-07-17 19:50:12 | root connect succesfully to 'mvc_example']
+[17-Jul-2022 19:50:12] [Date: 2022-07-17 19:50:12 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Jul-2022 20:11:27] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:13:23] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 20:13:23 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 20:13:23] [Date: 2022-07-17 20:13:23 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 20:13:27] [Connection to 'information_schema' DB OK | Date: 2022-07-17 20:13:27 | inaki2022 connect succesfully to 'information_schema']
+[17-Jul-2022 20:13:27] [Date: 2022-07-17 20:13:27 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Jul-2022 20:14:32] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:15:19] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:15:37] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:16:17] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:21:20] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:22:13] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:23:24] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:24:36] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:27:39] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:28:13] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:29:53] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:29:58] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:30:14] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:30:40] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:32:01] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:32:08] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:32:10] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:32:11] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:32:12] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:33:34] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:35:30] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:36:48] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:38:25] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:40:33] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:43:18] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:43:20] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:43:46] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:45:27] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:45:56] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:46:25] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 20:46:25 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 20:46:25] [Date: 2022-07-17 20:46:25 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 20:46:27] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:46:32] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 20:46:32 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 20:46:32] [Date: 2022-07-17 20:46:32 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Jul-2022 20:48:55] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:49:12] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:49:13] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:50:42] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:51:30] [CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[17-Jul-2022 20:51:48] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-17 20:51:48 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[17-Jul-2022 20:51:48] [Date: 2022-07-17 20:51:48 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Jul-2022 20:51:53] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 20:51:53 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 20:51:53] [Date: 2022-07-17 20:51:53 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Jul-2022 20:51:56] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-17 20:51:56 | inaki2022 connect succesfully to '8661316_laninaki22']
+[17-Jul-2022 20:51:56] [Date: 2022-07-17 20:51:56 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']

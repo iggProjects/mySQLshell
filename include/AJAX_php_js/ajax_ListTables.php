@@ -47,7 +47,7 @@ if ( gettype($conex_db) === 'object' ) {
 
     $showtables_query = "SHOW TABLES;";
     //$resultado = SELECT_try_catch($conex_db,$dbname,$dbuser,$dbtable,$select_query,$log_queries_path);      
-    $resultado = ShowTables_try_catch($conn_db,$dbname,$dbuser,$showtables_query,$log_comments);
+    $resultado = ShowTables_try_catch($conex_db,$dbname,$dbuser,$showtables_query,$log_queries_path);
     if ( gettype($resultado) === 'object' || gettype($resultado) === 'array' ) {  
         $route = "display_data";        
     } else {
@@ -66,10 +66,8 @@ if ($route == 'display_data') { # display html data
     //$divHtml  = "<p>\$conex_db is: " . gettype($conex_db) . " | var_dump(\$conex_db)</p>";
     //$divHtml .= "<pre>" . var_dump($conex_db) . "</pre>";   
             
-    //$thead_titles = [];        
-    // $thead_titles = ['#','Field','type','Null','Key','Default','Extra'];     
-    $query = "<span style='color:black;'>query:</span> \"" . $select_query . "\"";   
-    $divHtml .= displayTable($query,90,$thead_titles,$resultado);
+    $query = "<span style='color:black;'>query:</span> \"" . $showtables_query . "\"";   
+    $divHtml .= displayTable($query,90,'',$resultado);
 
 } else { # display error msq
 

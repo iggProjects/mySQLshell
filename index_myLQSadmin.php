@@ -24,7 +24,7 @@ ini_set("log_errors",TRUE);
 ini_set('error_log',$php_errors_log);
 // ini_set('display_errors', 1);
 
-$conex = ""; # variable global de conexión a la servidor seleccionado
+// $conex = ""; # variable global de conexión a la servidor seleccionado
 
 ?>
 
@@ -81,7 +81,10 @@ echo "
                         echo "<div id='display_result'>
                             <div class='display-result-nav'><p id='display-result-nav-title'></p></div>                            
                             <div id='display_sql_result'></div>
-                            <div id='display-sql-console-Up' class='hideDiv'><textarea id='sql-query-area' placeholder='write your sql query....'></textarea></div>
+                            <div id='display-sql-console-Up' class='hideDiv'>
+                                <textarea id='sql-query-area' placeholder='write your sql query....'></textarea>
+                                <button id='query-btn' onclick='execute_query()'>Process Query</button>
+                            </div>
                             <div id='display-sql-console-Down' class='hideDiv' placeholder='query result area' style='color:blue;'>____ query result area ____</div>
                         </div>";
                         echo "<div id='left_aside'>
@@ -133,6 +136,7 @@ echo "
         var table_param = document.getElementById('display-result-nav-title');
         var _tag = 'display_sql_result';
         document.getElementById(_tag).innerHTML = "";
+        document.getElementById("sql-query-area").value = "";        
 
         switch (this.id) {
 
@@ -146,20 +150,39 @@ echo "
 
             case 'btn-sql':   
 
-                btns = document.querySelectorAll(".nav-btn");
+                // Update tag display-result-nav-title with only Host and DB
+                table_param.removeAttribute('table-name');   
+                table_param.innerHTML = 'Host: \"' + table_param.getAttribute('host') + '\"' + '<br><span style=\"font-size:20px;color:blue;\">DB: \"' + table_param.getAttribute('db') + '</span>';
 
-                for ( var i=0; i<btns.length; i++ ) { if ( btns[i].id != 'btn-sql' ) {  btns[i].classList.toggle("hideBtn"); }  } 
+                // tag for display host, DB, table in second NAV
+
+
+                btns = document.querySelectorAll(".nav-btn");               
+
+                for ( var i=0; i<btns.length; i++ ) { 
+                    if ( btns[i].id != 'btn-sql' && btns[i].id != 'btn-export' ) {  btns[i].classList.toggle("hideBtn"); }  
+                } 
                 
                 // document.getElementById('display-result-nav-title').innerHTML="";
-                document.getElementById('p-comment').innerHTML='DB TABLES';        
+                document.getElementById('p-comment').innerHTML='TABLES';        
                 
                 document.getElementById('display_sql_result').classList.toggle("hideDiv");  
                 document.getElementById('display-sql-console-Up').classList.toggle("hideDiv");        
                 document.getElementById('display-sql-console-Down').classList.toggle("hideDiv");  
                 
-                // tag for display columns of table selected
-                var _tag= 'display_left_aside';   
-                // Fetch_js(_tag,'./include/AJAX_php_js/ajax_ListTables.php?hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db'));
+                // tag for show tables of DB selected
+                _tag= 'display_left_aside';   
+                Fetch_js(_tag,'./include/AJAX_php_js/ajax_ListTables.php?hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db'));
+
+                /*
+                    const query_btn = document.getElementById("query-btn");
+                    query_btn.addEventListener("click", alert('query-btn was called'));
+                
+                    document.querySelector('textarea').addEventListener('input', function (event) {
+                        console.log('textarea value: ' + event.target.value);
+                    });
+                */
+
                 break;    
 
             default:    
@@ -175,8 +198,10 @@ echo "
         buttonSelected[i].addEventListener('click', doButtonAction, false);
     }
 
-
-    
+  
+    function execute_query(){
+        alert('query btn call ' + document.getElementById("sql-query-area").value);
+    }    
     
 
 </script>

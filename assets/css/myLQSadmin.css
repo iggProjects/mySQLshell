@@ -42,7 +42,9 @@
 
   .div-DB-view .DB-info .div-der .der-console #display_result #display-sql-console-Up { width:100%; height: 30%; overflow:scroll; margin:auto;  text-align: center; border:2px solid #c3c3c3; background-color: white;}
 
-  .div-DB-view .DB-info .div-der .der-console #display_result #display-sql-console-Up #sql-query-area { width:98%; height:90%; margin:3px; border:2px solid #e2e2e2;}
+  .div-DB-view .DB-info .div-der .der-console #display_result #display-sql-console-Up #sql-query-area { width:98%; height:73%; margin:3px; border:2px solid #e2e2e2;}
+
+  .div-DB-view .DB-info .div-der .der-console #display_result #display-sql-console-Up #sql-query-area #sql-btn { margin-bottom:2px; font-size: 13px; padding: 2px;}
 
   .div-DB-view .DB-info .div-der .der-console #display_result #display-sql-console-Down { width:100%; height: 58%; overflow:scroll; margin:auto; padding-top:10px; text-align: center; border:2px solid #d4d4d4; background-color: #b4b4b4;}
   
@@ -58,7 +60,7 @@
 
   .nav-btns button {min-width: 80px; height: 30px; font-size:11px; border:1px solid orange; background-color:#ffcc00; border-radius: 5px;}
 
-  button:hover{ 
+  .nav-btn:hover{ 
     background-color: #80bfff; 
     border:1px solid #80bfff;
     height: 50px;
