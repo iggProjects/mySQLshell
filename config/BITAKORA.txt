@@ -1,15 +1,29 @@
 PENDIENTE
 
 LOGIN 
-    - login como root
+    - login como root:
+        - que te pida clave como root, y la guarde en mysql.users
+        - por tanto, habría que redefinir la carga inicial buscando las claves en musql.users
+          y no el file config.servers... ver pro's y contra's
     - creación de usuarios
-    - login usuario - privilegios
+    - login email para el usuario, y opción se te olvidó....
 
 display_sql_result -> colocar al inicio <p id='sql-query'></p> , letra pequeña, color vinotinto    
 
-SQL BUTTON
-    - subdividir 'der-console' en 3:
+SQL BUTTON -> cónsola "sql"
+
+    - actualizar "#left_aside" con info DB y despligue lista tablas:
+        - con efecto hover que presente campos de columnas de cada tabla 
+        - posible check box para elegir algunas tablas para armar query con joins.... 
+
+    - subdividir 'der-console' en :
       - área para escribir sql y ejecutar       
       - area resultado: caso positivo tabla, caso error: mensaje y help
+
+    - Limipiar area al salir de la consola "sql"
+    
+      
+
+
 
 
