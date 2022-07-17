@@ -50,7 +50,7 @@ $error_msg = "MySql error was found";
 
 if ( gettype($conex_db) === 'object' ) {
 
-    $describetables_query = "desc $dbtable;";
+    $describetables_query = "describe $dbtable;";
     $resultado = DescribeTables_try_catch($conex_db,$dbname,$dbuser,$describetables_query,$log_queries_path);
 
     if ( gettype($resultado) === 'object' || gettype($resultado) === 'array' ) {  
@@ -71,8 +71,9 @@ if ($route == 'display_data') { # display html data
     //$divHtml  = "<p>\$conex_db is: " . gettype($conex_db) . " | var_dump(\$conex_db)</p>";
     //$divHtml .= "<pre>" . var_dump($conex_db) . "</pre>";   
             
-    // $thead_titles = ['#','Field','type','Null','Key','Default','Extra'];        
-    $divHtml .= displayTable("Fields in table $dbtable",90,$thead_titles,$resultado);
+    // $thead_titles = ['#','Field','type','Null','Key','Default','Extra'];  
+    $query = "<span style='color:black;'>query:</span> \"" . $describetables_query . "\"";         
+    $divHtml .= displayTable($query,90,$thead_titles,$resultado);
 
 } else { # display error msq
 

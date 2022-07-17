@@ -79,7 +79,7 @@ echo "
                     echo "<div class='der-console disp-row-center' >";
 
                         echo "<div id='display_result'>
-                            <div class='display-result-nav'><p id='display-result-nav-title'></p></div>
+                            <div class='display-result-nav'><p id='display-result-nav-title'></p></div>                            
                             <div id='display_sql_result'></div>
                         </div>";
                         echo "<div id='left_aside'>

@@ -45,6 +45,7 @@ $conex_db = try_catch_connect_host_db($dbhost,$dbname,$dbuser,$dbpass,$dbcharset
 
 $route = "";
 $error_msg = "MySql error was found";
+$divHtml = "";
 
 if ( gettype($conex_db) === 'object' ) {
 
@@ -70,8 +71,9 @@ if ($route == 'display_data') { # display html data
     //$divHtml .= "<pre>" . var_dump($conex_db) . "</pre>";   
             
     //$thead_titles = [];        
-    // $thead_titles = ['#','Field','type','Null','Key','Default','Extra'];        
-    $divHtml .= displayTable("Elements in table $dbtable",90,$thead_titles,$resultado);
+    // $thead_titles = ['#','Field','type','Null','Key','Default','Extra'];     
+    $query = "<span style='color:black;'>query:</span> \"" . $select_query . "\"";   
+    $divHtml .= displayTable($query,90,$thead_titles,$resultado);
 
 } else { # display error msq
 

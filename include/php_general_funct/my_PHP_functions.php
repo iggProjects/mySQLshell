@@ -225,9 +225,9 @@
 
     }
 
-    function displayTable($table_title,$table_width,$thead_titles_array,$data_array){
+    function displayTable($_query,$table_width,$thead_titles_array,$data_array){
 
-        // echo "<p style = 'margin-top:80px;'>$table_title</p>";
+        echo "<p style = 'margin-top:80px; font_size:12px; color:#990000'>$_query</p>";
         $i=1;
         echo "<table style='max-width: $table_width%; overflow:scroll;'>";          
         
