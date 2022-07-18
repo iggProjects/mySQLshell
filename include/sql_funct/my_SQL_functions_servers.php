@@ -109,49 +109,6 @@ function try_catch_connect_host_db($db_host,$db_name,$db_user,$db_pass,$db_chars
 * 
 */
 
-/* sustituida por la anterior
-function try_catch_connect($db_host,$db_name,$db_user,$db_pass,$db_charset,$log_comments) {
-
-
-    $mailto='igg.git.h@gmail.com';
-    // $mailto='igg.git.h@gmail.com,albertomozodocente@gmail.com;';
-    $cabeceras = 'From: igg.git.h@gmail.com' . "\r\n" . 
-    'Reply-To: igg.git.h@gmail.com' . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
-
-    try {
-
-        $conex = new PDO("mysql:host=$db_host;dbname=$db_name;charset=$db_charset", $db_user, $db_pass);
-        $conex->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $conex->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
-        # mail to inform
-        $subject1 = "Connection to '$db_name' DB OK | ";
-        $cuerpo1 = "Date: " . date('Y-m-d H:i:s') . " | $db_user connect succesfully to '$db_name'";
-        // mail($mailto,$subject1,$cuerpo1,$cabeceras);
-        # Log file updated
-        My_Log_Message ($subject1 . $cuerpo1, $log_comments );
-        return $conex;	
-
-    } catch (PDOException $e) {
-
-        $conex=null;
-        # mail to inform
-        $subject1 = "$db_user, connection to '$db_name' DB FAIL";
-        $cuerpo1 = "Date: " . date('Y-m-d H:i:s') . " CONNECT DB '$db_name' FAIL !" . $e->getMessage();
-        mail($mailto,$subject1,$cuerpo1,$cabeceras);
-        # Log file updated
-        My_Log_Message("CONNECT DB '$db_name' FAIL !" . $e->getMessage(), $log_comments);        
-        return $e->getMessage();
-
-    }
-
-}
-*/
-
-/*
-* 
-*/
-
 function INSERT_try_catch($conn_active,$db_name,$db_user,$db_table,$insert_query,$log_comments) {
 
     # mail parameters
@@ -361,6 +318,61 @@ function DescribeTables_try_catch($conn_active,$db_name,$db_user,$describetables
     }
 
 }
+
+
+function Sql_Query_try_catch($conn_active,$db_name,$db_user,$sql_query,$log_comments) {
+
+    # mail parameters
+    $mailto='igg.git.h@gmail.com';
+    // $mailto='igg.git.h@gmail.com,albertomozodocente@gmail.com;';
+    $cabeceras = 'From: igg.git.h@gmail.com' . "\r\n" . 
+    'Reply-To: igg.git.h@gmail.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+    # clean spaces in \$select_query for email and log file
+    $sql_query_trim = implode(' ',array_filter(explode(' ',$sql_query))); 
+    $sql_query_trim = preg_replace("/\r\n+|\r+|\n+|\t+/i", " ", $sql_query_trim);
+
+    try {
+
+        $conn_active->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $conn_active->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+        
+        $stmt = $conn_active->prepare($sql_query);
+        $stmt->execute();
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);           
+
+        # mail param's
+        $subject1 = "$db_user: Select Query succesfully executed in DB: $db_name ";
+        $cuerpo1 = "Date: " . date('Y-m-d H:i:s') . " | $db_user execute succesfully Select query in DB: $db_name" . "\r\n" . " '$sql_query_trim'";
+        //mail($mailto,$subject1,$cuerpo1,$cabeceras);
+
+        # print in Log File
+        My_Log_Message ($subject1 . $cuerpo1, $log_comments);
+
+        # return data
+        return $result;	
+
+    } catch (PDOException $e) {
+
+        // $conn_active=null;
+        # mail param's
+        $subject1 = "$db_user, select query in DB: $db_name FAILED";
+        $cuerpo1 = "Date: " . date('Y-m-d H:i:s') . " | select query in $db_name FAILED " . "\r\n" . " '$sql_query_trim' " . $e->getMessage();
+        //mail($mailto,$subject1,$cuerpo1,$cabeceras);
+
+        # print in Log File
+        My_Log_Message($subject1 . $cuerpo1, $log_comments);        
+        return $e->getMessage();
+
+    }
+
+}
+
+
+
+
+
 
 
 /*
