@@ -10,7 +10,11 @@ LOGIN
 
 display_sql_result -> colocar al inicio <p id='sql-query'></p> , letra pequeña, color vinotinto    
 
-SQL BUTTON -> cónsola "sql"
+BUTTONS "nav-btns"
+    - definir cuáles van de acuerdo a la ruta elegida pr el usuario   
+      - 
+
+CASO SQL-BTN -> cónsola "sql"
 
     - actualizar "#left_aside" con info DB y despligue lista tablas:
         - con efecto hover que presente campos de columnas de cada tabla 
@@ -20,7 +24,10 @@ SQL BUTTON -> cónsola "sql"
       - área para escribir sql y ejecutar       
       - area resultado: caso positivo tabla, caso error: mensaje y help
 
-    - Limipiar area al salir de la consola "sql"
+    - Limpiar area al salir de la consola "sql" ✔
+
+
+
     
       
 

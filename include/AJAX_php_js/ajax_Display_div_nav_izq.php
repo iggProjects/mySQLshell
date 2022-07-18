@@ -82,7 +82,7 @@ if ($route == 'display_data') { # display html data
 
     $divHtml .= "<ul id='myUL'>";
         $db_bf = $result[0]['TABLE_SCHEMA'];                        
-        $divHtml .= "<li><span class='caret'>" . $result[0]['TABLE_SCHEMA'] . "</span>";
+        $divHtml .= "<li db = " . $result[0]['TABLE_SCHEMA'] . "><span class='caret'>" . $result[0]['TABLE_SCHEMA'] . "</span>";
         $divHtml .= "<ul class='nested'>";
         foreach ( $result as $row ) {     
 
@@ -98,7 +98,7 @@ if ($route == 'display_data') { # display html data
                 $db_bf = $row['TABLE_SCHEMA'];                            
                 $db_pointer++;
                 $divHtml .= "</ul>";
-                $divHtml .= "<li><span class='caret'>" . $row['TABLE_SCHEMA'] . "</span>";
+                $divHtml .= "<li db=" . $row['TABLE_SCHEMA'] . "><span class='caret'>" . $row['TABLE_SCHEMA'] . "</span>";
                 $divHtml .= "<ul class='nested'>";
                 if( $row['TABLE_ROWS']==null ) { $num_rows = 0; } else { $num_rows = $row['TABLE_ROWS']; }
                 $divHtml .= "<li class='li-mysql-table dispTbl' point='". $array_pointer ."' host='" . $host_pointer . "' db='" . $row['TABLE_SCHEMA']  . "'  table-name='" . $row['TABLE_NAME'] . "'><span>" . $row['TABLE_NAME'] . " | " . $num_rows . " rows</span><span class='spanPlus'>+</span>";  

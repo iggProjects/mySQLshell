@@ -3,6 +3,7 @@
 include_once "./include/php_general_funct/navegacion_servers.php";
 include_once "./include/php_general_funct/my_PHP_functions.php";
 include_once "./include/sql_funct/my_SQL_functions_servers.php";
+// include_once "./include/my_AJAX_functions.js";
 include_once "./config/config.servers.php";
 // include_once "../../config.servers.php";
 
@@ -110,19 +111,31 @@ echo "
     // Listener to select HOST and Display TREE of DB and Tbl's
     var hostSelected = document.getElementById("serverList");
     hostSelected.addEventListener("click", () => {
-        hostSelected.addEventListener("change", () => {            
+        hostSelected.addEventListener("change", () => {  
+
+            // Clear der-console areas
+            clearDerConsoleAreas();
+                        
             document.getElementById('hostNavIzq').innerHTML = hostSelected.value; 
+            
             if (hostSelected.value != 0 ) {
                 // call ajax function to display DB-info area in div_nav_izq
                 php_sql_url = './include/AJAX_php_js/ajax_Display_div_nav_izq.php?hostName='+hostSelected.value;
                 console.log('ajax php=> ' + php_sql_url); 
-                var host_array = <?php echo json_encode($host_serv); ?>;            
-                Display_div_nav_izq('html_div_nav_izq',host_array,php_sql_url);
+                var host_array = <?php echo json_encode($host_serv); ?>;
+
+                // ser display-result-nav-title values
+                var table_param = document.getElementById('display-result-nav-title');
+                table_param.setAttribute('host',hostSelected.value);
+                table_param.innerHTML = "host: " + hostSelected.value;
+
+                Display_div_nav_izq('html_div_nav_izq',host_array,php_sql_url);                
             } else {
                 document.getElementById('html_div_nav_izq').innerHTML = ""; 
                 document.getElementById('display-result-nav-title').innerHTML = ""; 
                 document.getElementById('display_left_aside').innerHTML = ""; 
             }
+
         })
     });
 
@@ -149,6 +162,9 @@ echo "
                 break;    
 
             case 'btn-sql':   
+
+                
+                document.getElementById('display_left_aside').innerHTML = "";
 
                 // Update tag display-result-nav-title with only Host and DB
                 table_param.removeAttribute('table-name');   
@@ -200,8 +216,36 @@ echo "
 
   
     function execute_query(){
-        alert('query btn call ' + document.getElementById("sql-query-area").value);
+        
+        var _query = document.getElementById("sql-query-area").value;
+        alert('query btn call -> ' + _query);
+
+        // read host name and db name
+        var sql_host_db = document.getElementById('display-result-nav-title');
+        var hostName = sql_host_db.getAttribute('host');
+        var dbName = sql_host_db.getAttribute('db');
+
+        alert('hostName: ' + hostName + ', dnName: ' + dbName);
+
+        // call AJAX for execute query
+        var _tag = 'display-sql-console-Down';
+        Fetch_js(_tag,'./include/AJAX_php_js/ajax_Sql_Query.php?hostName='+sql_host_db.getAttribute('host')+'&dbName='+sql_host_db.getAttribute('db')+'&sql_query='+_query);
+
     }    
+
+
+    /*
+    * Clear html of 'der-console associated tag's'  
+    */
+    function clearDerConsoleAreas() {
+        document.getElementById('display-result-nav-title').innerHTML = "";
+        document.getElementById('display_sql_result').innerHTML = "";
+        document.getElementById('sql-query-area').innerHTML = "";
+        document.getElementById('display-sql-console-Down').innerHTML = "";
+        // document.getElementById('p-comment').innerHTML = "";
+        document.getElementById('display_left_aside').innerHTML = "";
+    }
+
     
 
 </script>

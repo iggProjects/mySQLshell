@@ -54,9 +54,9 @@
 
   .div-DB-view .DB-info .div-der .der-console #left_aside .display_left_aside-comment #p-comment { margin:0px; padding-top:20px; color:#003300; font-size: 20px; text-align:center; }
 
-  .div-DB-view .DB-info .div-der .der-console #left_aside #display_left_aside { width:auto; margin-top:5px; }
+  .div-DB-view .DB-info .div-der .der-console #left_aside #display_left_aside { width:100%; margin-top:5px; font-size:10px; }
 
-  .div-DB-view .DB-info .div-der .der-console #left_aside #display_left_aside table {  font-size:12px; margin-right: auto; margin-left:auto; margin-top:0px; border:1px solid gray;} 
+  .div-DB-view .DB-info .div-der .der-console #left_aside #display_left_aside table {  font-size:12px; margin-right: auto; margin-left:auto; margin-top:0px; border:1px solid gray;}   
 
   .nav-btns button {min-width: 80px; height: 30px; font-size:11px; border:1px solid orange; background-color:#ffcc00; border-radius: 5px;}
 
