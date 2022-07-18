@@ -47,6 +47,8 @@
   .div-DB-view .DB-info .div-der .der-console #display_result #display-sql-console-Up #sql-query-area #sql-btn { margin-bottom:2px; font-size: 13px; padding: 2px;}
 
   .div-DB-view .DB-info .div-der .der-console #display_result #display-sql-console-Down { width:100%; height: 58%; overflow:scroll; margin:auto; padding-top:10px; text-align: center; border:2px solid #d4d4d4; background-color: #b4b4b4;}
+
+  .div-DB-view .DB-info .div-der .der-console #display_result #display-sql-console-Down table { font-size:12px; margin-right: auto; margin-left:auto; margin-top:0px; border:1px solid gray; }
   
   .div-DB-view .DB-info .div-der .der-console #left_aside { width:18%; height:100%;margin-top:0px; padding-top:0px; overflow:scroll; font-size:11px; color:blue; border:5px solid white; background-color: #e2e2e2;}
 

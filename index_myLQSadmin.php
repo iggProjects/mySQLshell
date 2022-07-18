@@ -218,14 +218,14 @@ echo "
     function execute_query(){
         
         var _query = document.getElementById("sql-query-area").value;
-        alert('query btn call -> ' + _query);
+        // alert('query btn call -> ' + _query);
 
         // read host name and db name
         var sql_host_db = document.getElementById('display-result-nav-title');
         var hostName = sql_host_db.getAttribute('host');
         var dbName = sql_host_db.getAttribute('db');
 
-        alert('hostName: ' + hostName + ', dnName: ' + dbName);
+        // alert('hostName: ' + hostName + ', dnName: ' + dbName);
 
         // call AJAX for execute query
         var _tag = 'display-sql-console-Down';

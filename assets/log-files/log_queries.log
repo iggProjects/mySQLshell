@@ -8220,3 +8220,222 @@
 [18-Jul-2022 14:17:36] [Date: 2022-07-18 14:17:36 | root execute succesfully show tables query
  'SHOW TABLES;']
 [18-Jul-2022 14:18:06] [Connection to 'employees' DB OK | Date: 2022-07-18 14:18:06 | root connect succesfully to 'employees']
+[18-Jul-2022 19:06:37] [Connection to host 'POAPMYSQL119.dns-servicio.com:3306' OK | Date: 2022-07-18 19:06:37 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[18-Jul-2022 19:06:37] [Date: 2022-07-18 19:06:37 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[18-Jul-2022 19:06:41] [Connection to 'information_schema' DB OK | Date: 2022-07-18 19:06:41 | inaki2022 connect succesfully to 'information_schema']
+[18-Jul-2022 19:06:41] [Date: 2022-07-18 19:06:41 | inaki2022 execute succesfully show tables query
+ 'desc COLLATIONS;']
+[18-Jul-2022 19:06:43] [Connection to 'information_schema' DB OK | Date: 2022-07-18 19:06:43 | inaki2022 connect succesfully to 'information_schema']
+[18-Jul-2022 19:06:43] [Date: 2022-07-18 19:06:43 | inaki2022 execute succesfully show tables query
+ 'describe COLLATIONS;']
+[18-Jul-2022 19:06:46] [Connection to 'information_schema' DB OK | Date: 2022-07-18 19:06:46 | inaki2022 connect succesfully to 'information_schema']
+[18-Jul-2022 19:06:46] [Date: 2022-07-18 19:06:46 | inaki2022 execute succesfully Select query in information_schema
+ 'SELECT * FROM COLLATIONS LIMIT 10;']
+[18-Jul-2022 19:06:50] [Connection to 'information_schema' DB OK | Date: 2022-07-18 19:06:50 | inaki2022 connect succesfully to 'information_schema']
+[18-Jul-2022 19:06:50] [Date: 2022-07-18 19:06:50 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[18-Jul-2022 19:07:00] [Connection to 'information_schema' DB OK | Date: 2022-07-18 19:07:00 | inaki2022 connect succesfully to 'information_schema']
+[18-Jul-2022 19:07:00] [Date: 2022-07-18 19:07:00 | inaki2022 execute succesfully show tables query
+ 'desc FILES;']
+[18-Jul-2022 19:07:06] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-18 19:07:06 | inaki2022 connect succesfully to '8661316_laninaki22']
+[18-Jul-2022 19:07:06] [Date: 2022-07-18 19:07:06 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[18-Jul-2022 19:07:52] [Connection to '8661316_laninaki22' DB OK | Date: 2022-07-18 19:07:52 | inaki2022 connect succesfully to '8661316_laninaki22']
+[18-Jul-2022 19:07:53] [inaki2022: Select Query succesfully executed in DB: 8661316_laninaki22 Date: 2022-07-18 19:07:53 | inaki2022 execute succesfully Select query in DB: 8661316_laninaki22
+ 'Select * from tbl_users;']
+[18-Jul-2022 19:10:36] [Connection to host '127.0.0.1' OK | Date: 2022-07-18 19:10:36 | root connect succesfully to '127.0.0.1']
+[18-Jul-2022 19:10:36] [Date: 2022-07-18 19:10:36 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[18-Jul-2022 19:10:57] [Connection to 'penjub' DB OK | Date: 2022-07-18 19:10:57 | root connect succesfully to 'penjub']
+[18-Jul-2022 19:10:57] [Date: 2022-07-18 19:10:57 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[18-Jul-2022 19:11:05] [Connection to 'penjub' DB OK | Date: 2022-07-18 19:11:05 | root connect succesfully to 'penjub']
+[18-Jul-2022 19:11:05] [Date: 2022-07-18 19:11:05 | root execute succesfully show tables query
+ 'describe tbl_persona;']
+[18-Jul-2022 19:11:11] [Connection to 'penjub' DB OK | Date: 2022-07-18 19:11:11 | root connect succesfully to 'penjub']
+[18-Jul-2022 19:11:11] [Date: 2022-07-18 19:11:11 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona LIMIT 10;']
+[18-Jul-2022 19:11:31] [Connection to 'penjub' DB OK | Date: 2022-07-18 19:11:31 | root connect succesfully to 'penjub']
+[18-Jul-2022 19:11:31] [Date: 2022-07-18 19:11:31 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[18-Jul-2022 19:12:22] [Connection to 'penjub' DB OK | Date: 2022-07-18 19:12:22 | root connect succesfully to 'penjub']
+[18-Jul-2022 19:12:22] [root: Select Query succesfully executed in DB: penjub Date: 2022-07-18 19:12:22 | root execute succesfully Select query in DB: penjub
+ 'select * from tbl_persona where id>5;']
+[18-Jul-2022 19:12:43] [Connection to 'penjub' DB OK | Date: 2022-07-18 19:12:43 | root connect succesfully to 'penjub']
+[18-Jul-2022 19:12:43] [root, select query in DB: penjub FAILEDDate: 2022-07-18 19:12:43 | select query in penjub FAILED 
+ 'select * from tbl_persona wher id>5;' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id>5' at line 1]
+[18-Jul-2022 19:15:40] [Connection to 'penjub' DB OK | Date: 2022-07-18 19:15:40 | root connect succesfully to 'penjub']
+[18-Jul-2022 19:15:40] [root, select query in DB: penjub FAILEDDate: 2022-07-18 19:15:40 | select query in penjub FAILED 
+ 'select * from tbl_persona wher id>5;' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id>5' at line 1]
+[18-Jul-2022 19:17:26] [Connection to 'penjub' DB OK | Date: 2022-07-18 19:17:26 | root connect succesfully to 'penjub']
+[18-Jul-2022 19:17:26] [root, select query in DB: penjub FAILEDDate: 2022-07-18 19:17:26 | select query in penjub FAILED 
+ 'select * from tbl_persona wher id>5;' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id>5' at line 1]
+[18-Jul-2022 19:21:30] [Connection to 'penjub' DB OK | Date: 2022-07-18 19:21:30 | root connect succesfully to 'penjub']
+[18-Jul-2022 19:21:30] [root, select query in DB: penjub FAILEDDate: 2022-07-18 19:21:30 | select query in penjub FAILED 
+ 'select * from tbl_persona wher id>5;' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id>5' at line 1]
+[18-Jul-2022 19:21:53] [Connection to 'penjub' DB OK | Date: 2022-07-18 19:21:53 | root connect succesfully to 'penjub']
+[18-Jul-2022 19:21:53] [Date: 2022-07-18 19:21:53 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[18-Jul-2022 19:21:55] [Connection to 'penjub' DB OK | Date: 2022-07-18 19:21:55 | root connect succesfully to 'penjub']
+[18-Jul-2022 19:21:55] [Date: 2022-07-18 19:21:55 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[18-Jul-2022 19:22:18] [Connection to 'penjub' DB OK | Date: 2022-07-18 19:22:18 | root connect succesfully to 'penjub']
+[18-Jul-2022 19:22:18] [root: Select Query succesfully executed in DB: penjub Date: 2022-07-18 19:22:18 | root execute succesfully Select query in DB: penjub
+ 'select * from tbl_usuario;']
+[18-Jul-2022 19:36:10] [Connection to 'penjub' DB OK | Date: 2022-07-18 19:36:10 | root connect succesfully to 'penjub']
+[18-Jul-2022 19:36:10] [root: Select Query succesfully executed in DB: penjub Date: 2022-07-18 19:36:10 | root execute succesfully Select query in DB: penjub
+ 'select * from tbl_usuario where rol like 'a%';']
+[18-Jul-2022 19:42:49] [Connection to host '127.0.0.1' OK | Date: 2022-07-18 19:42:49 | root connect succesfully to '127.0.0.1']
+[18-Jul-2022 19:42:50] [Date: 2022-07-18 19:42:50 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[18-Jul-2022 19:42:54] [Connection to 'employees' DB OK | Date: 2022-07-18 19:42:54 | root connect succesfully to 'employees']
+[18-Jul-2022 19:42:54] [Date: 2022-07-18 19:42:54 | root execute succesfully show tables query
+ 'desc dept_emp;']
+[18-Jul-2022 19:42:57] [Connection to 'employees' DB OK | Date: 2022-07-18 19:42:57 | root connect succesfully to 'employees']
+[18-Jul-2022 19:42:57] [Date: 2022-07-18 19:42:57 | root execute succesfully show tables query
+ 'describe dept_emp;']
+[18-Jul-2022 19:43:06] [Connection to 'employees' DB OK | Date: 2022-07-18 19:43:06 | root connect succesfully to 'employees']
+[18-Jul-2022 19:43:06] [Date: 2022-07-18 19:43:06 | root execute succesfully Select query in employees
+ 'SELECT * FROM dept_emp LIMIT 10;']
+[18-Jul-2022 19:43:14] [Connection to 'employees' DB OK | Date: 2022-07-18 19:43:14 | root connect succesfully to 'employees']
+[18-Jul-2022 19:43:14] [Date: 2022-07-18 19:43:14 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[18-Jul-2022 19:43:55] [Connection to 'employees' DB OK | Date: 2022-07-18 19:43:55 | root connect succesfully to 'employees']
+[18-Jul-2022 19:43:55] [Date: 2022-07-18 19:43:55 | root execute succesfully Sql Query in DB: employees
+ 'select * from dept_emp where emp_no>1000 and emp_no < 1020;']
+[18-Jul-2022 19:44:17] [Connection to 'employees' DB OK | Date: 2022-07-18 19:44:17 | root connect succesfully to 'employees']
+[18-Jul-2022 19:44:19] [Date: 2022-07-18 19:44:19 | root execute succesfully Sql Query in DB: employees
+ 'select * from dept_emp;']
+[18-Jul-2022 19:45:26] [Connection to host '127.0.0.1' OK | Date: 2022-07-18 19:45:26 | root connect succesfully to '127.0.0.1']
+[18-Jul-2022 19:45:27] [Date: 2022-07-18 19:45:27 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[18-Jul-2022 19:45:31] [Connection to 'employees' DB OK | Date: 2022-07-18 19:45:31 | root connect succesfully to 'employees']
+[18-Jul-2022 19:45:31] [Date: 2022-07-18 19:45:31 | root execute succesfully show tables query
+ 'desc dept_emp;']
+[18-Jul-2022 19:45:33] [Connection to 'employees' DB OK | Date: 2022-07-18 19:45:33 | root connect succesfully to 'employees']
+[18-Jul-2022 19:45:33] [Date: 2022-07-18 19:45:33 | root execute succesfully show tables query
+ 'describe dept_emp;']
+[18-Jul-2022 19:45:53] [Connection to 'employees' DB OK | Date: 2022-07-18 19:45:53 | root connect succesfully to 'employees']
+[18-Jul-2022 19:45:53] [Date: 2022-07-18 19:45:53 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[18-Jul-2022 19:46:09] [Connection to 'employees' DB OK | Date: 2022-07-18 19:46:09 | root connect succesfully to 'employees']
+[18-Jul-2022 19:46:11] [Date: 2022-07-18 19:46:11 | root execute succesfully Sql Query in DB: employees
+ 'select * from dept_emp;']
+[18-Jul-2022 19:47:00] [Connection to host '127.0.0.1' OK | Date: 2022-07-18 19:47:00 | root connect succesfully to '127.0.0.1']
+[18-Jul-2022 19:47:00] [Date: 2022-07-18 19:47:00 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[18-Jul-2022 19:47:11] [Connection to 'employees' DB OK | Date: 2022-07-18 19:47:11 | root connect succesfully to 'employees']
+[18-Jul-2022 19:47:11] [Date: 2022-07-18 19:47:11 | root execute succesfully show tables query
+ 'desc departments;']
+[18-Jul-2022 19:47:13] [Connection to 'employees' DB OK | Date: 2022-07-18 19:47:13 | root connect succesfully to 'employees']
+[18-Jul-2022 19:47:13] [Date: 2022-07-18 19:47:13 | root execute succesfully show tables query
+ 'describe departments;']
+[18-Jul-2022 19:47:15] [Connection to 'employees' DB OK | Date: 2022-07-18 19:47:15 | root connect succesfully to 'employees']
+[18-Jul-2022 19:47:15] [Date: 2022-07-18 19:47:15 | root execute succesfully Select query in employees
+ 'SELECT * FROM departments LIMIT 10;']
+[18-Jul-2022 19:47:39] [Connection to 'employees' DB OK | Date: 2022-07-18 19:47:39 | root connect succesfully to 'employees']
+[18-Jul-2022 19:47:39] [Date: 2022-07-18 19:47:39 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[18-Jul-2022 19:47:56] [Connection to 'employees' DB OK | Date: 2022-07-18 19:47:56 | root connect succesfully to 'employees']
+[18-Jul-2022 19:47:56] [Date: 2022-07-18 19:47:56 | root execute succesfully Sql Query in DB: employees
+ 'select * from departments;']
+[18-Jul-2022 19:48:46] [Connection to 'employees' DB OK | Date: 2022-07-18 19:48:46 | root connect succesfully to 'employees']
+[18-Jul-2022 19:48:46] [Date: 2022-07-18 19:48:46 | root execute succesfully Sql Query in DB: employees
+ 'select * from departments where dept_name like '%m%';']
+[18-Jul-2022 19:59:54] [Date: 2022-07-18 19:59:54 | root connect succesfully to '127.0.0.1']
+[18-Jul-2022 19:59:54] [Date: 2022-07-18 19:59:54 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[18-Jul-2022 19:59:58] [Date: 2022-07-18 19:59:58 | root connect succesfully to 'penjub']
+[18-Jul-2022 19:59:58] [Date: 2022-07-18 19:59:58 | root execute succesfully show tables query
+ 'desc tbl_ciudad;']
+[18-Jul-2022 20:00:02] [Date: 2022-07-18 20:00:02 | root connect succesfully to 'penjub']
+[18-Jul-2022 20:00:02] [Date: 2022-07-18 20:00:02 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad LIMIT 10;']
+[18-Jul-2022 20:00:04] [Date: 2022-07-18 20:00:04 | root connect succesfully to 'penjub']
+[18-Jul-2022 20:00:04] [Date: 2022-07-18 20:00:04 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[18-Jul-2022 20:00:05] [Date: 2022-07-18 20:00:05 | root connect succesfully to 'penjub']
+[18-Jul-2022 20:00:05] [Date: 2022-07-18 20:00:05 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[18-Jul-2022 20:00:43] [Date: 2022-07-18 20:00:43 | root connect succesfully to 'penjub']
+[18-Jul-2022 20:00:43] [Date: 2022-07-18 20:00:43 | root execute succesfully Sql Query in DB: penjub
+ 'select * from tbl_ciudad where id_provincia = 1;']
+[18-Jul-2022 20:00:54] [Date: 2022-07-18 20:00:54 | root connect succesfully to 'penjub']
+[18-Jul-2022 20:00:54] [Date: 2022-07-18 20:00:54 | sql query in penjub FAILED !
+ 'select * from tbl_ciudad wher id_provincia = 1;' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'id_provincia = 1' at line 1]
+[18-Jul-2022 20:08:30] [Date: 2022-07-18 20:08:30 | root connect succesfully to 'penjub']
+[18-Jul-2022 20:08:30] [Date: 2022-07-18 20:08:30 | root execute succesfully Sql Query in DB: penjub
+ 'select * from tbl_ciudad where id_provincia = 1;']
+[18-Jul-2022 20:08:50] [Date: 2022-07-18 20:08:50 | root connect succesfully to '127.0.0.1']
+[18-Jul-2022 20:08:50] [Date: 2022-07-18 20:08:50 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[18-Jul-2022 20:08:54] [Date: 2022-07-18 20:08:54 | root connect succesfully to 'penjub']
+[18-Jul-2022 20:08:54] [Date: 2022-07-18 20:08:54 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[18-Jul-2022 20:08:56] [Date: 2022-07-18 20:08:56 | root connect succesfully to 'penjub']
+[18-Jul-2022 20:08:56] [Date: 2022-07-18 20:08:56 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[18-Jul-2022 20:09:08] [Date: 2022-07-18 20:09:08 | root connect succesfully to 'penjub']
+[18-Jul-2022 20:09:08] [Date: 2022-07-18 20:09:08 | root execute succesfully Sql Query in DB: penjub
+ 'select * from tbl_persona;']
+[18-Jul-2022 20:09:19] [Date: 2022-07-18 20:09:19 | root connect succesfully to 'penjub']
+[18-Jul-2022 20:09:19] [Date: 2022-07-18 20:09:19 | root execute succesfully show tables query
+ 'desc tbl_ciudad;']
+[18-Jul-2022 20:09:25] [Date: 2022-07-18 20:09:25 | root connect succesfully to 'penjub']
+[18-Jul-2022 20:09:25] [Date: 2022-07-18 20:09:25 | root execute succesfully Sql Query in DB: penjub
+ 'select * from tbl_ciudad;']
+[18-Jul-2022 20:09:41] [Date: 2022-07-18 20:09:41 | root connect succesfully to 'penjub']
+[18-Jul-2022 20:09:41] [Date: 2022-07-18 20:09:41 | root execute succesfully Sql Query in DB: penjub
+ 'select * from tbl_ciudad limit 10;']
+[18-Jul-2022 20:10:03] [Date: 2022-07-18 20:10:03 | root connect succesfully to 'penjub']
+[18-Jul-2022 20:10:03] [Date: 2022-07-18 20:10:03 | sql query in penjub FAILED !
+ 'select * from tbl_ciudad limi 10;' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '10' at line 1]
+[18-Jul-2022 20:11:40] [Date: 2022-07-18 20:11:40 | root connect succesfully to '127.0.0.1']
+[18-Jul-2022 20:11:40] [Date: 2022-07-18 20:11:40 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[18-Jul-2022 20:11:43] [Date: 2022-07-18 20:11:43 | root connect succesfully to 'penjub']
+[18-Jul-2022 20:11:43] [Date: 2022-07-18 20:11:43 | root execute succesfully show tables query
+ 'desc tbl_ciudad;']
+[18-Jul-2022 20:11:45] [Date: 2022-07-18 20:11:45 | root connect succesfully to 'penjub']
+[18-Jul-2022 20:11:45] [Date: 2022-07-18 20:11:45 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[18-Jul-2022 20:12:01] [Date: 2022-07-18 20:12:01 | root connect succesfully to 'penjub']
+[18-Jul-2022 20:12:01] [Date: 2022-07-18 20:12:01 | root execute succesfully Sql Query in DB: penjub
+ 'select * from tbl_ciudad limit 10']
+[18-Jul-2022 20:12:06] [Date: 2022-07-18 20:12:06 | root connect succesfully to 'penjub']
+[18-Jul-2022 20:12:06] [Date: 2022-07-18 20:12:06 | sql query in penjub FAILED !
+ 'select * from tbl_ciudad limi 10' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '10' at line 1]
+[18-Jul-2022 20:12:40] [Date: 2022-07-18 20:12:40 | root connect succesfully to '127.0.0.1']
+[18-Jul-2022 20:12:41] [Date: 2022-07-18 20:12:41 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[18-Jul-2022 20:12:44] [Date: 2022-07-18 20:12:44 | root connect succesfully to 'penjub']
+[18-Jul-2022 20:12:44] [Date: 2022-07-18 20:12:44 | root execute succesfully show tables query
+ 'desc tbl_ciudad;']
+[18-Jul-2022 20:12:46] [Date: 2022-07-18 20:12:46 | root connect succesfully to 'penjub']
+[18-Jul-2022 20:12:46] [Date: 2022-07-18 20:12:46 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[18-Jul-2022 20:13:03] [Date: 2022-07-18 20:13:03 | root connect succesfully to 'penjub']
+[18-Jul-2022 20:13:03] [Date: 2022-07-18 20:13:03 | root execute succesfully Sql Query in DB: penjub
+ 'select * from tbl_ciudad limit 10']
+[18-Jul-2022 20:13:06] [Date: 2022-07-18 20:13:06 | root connect succesfully to 'penjub']
+[18-Jul-2022 20:13:06] [Date: 2022-07-18 20:13:06 | sql query in penjub FAILED !
+ 'select * from tbl_ciudad limi 10' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '10' at line 1]
+[18-Jul-2022 20:13:50] [Date: 2022-07-18 20:13:50 | root connect succesfully to '127.0.0.1']
+[18-Jul-2022 20:13:50] [Date: 2022-07-18 20:13:50 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[18-Jul-2022 20:13:55] [Date: 2022-07-18 20:13:55 | root connect succesfully to 'penjub']
+[18-Jul-2022 20:13:55] [Date: 2022-07-18 20:13:55 | root execute succesfully show tables query
+ 'desc tbl_ciudad;']
+[18-Jul-2022 20:13:56] [Date: 2022-07-18 20:13:56 | root connect succesfully to 'penjub']
+[18-Jul-2022 20:13:56] [Date: 2022-07-18 20:13:56 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[18-Jul-2022 20:14:08] [Date: 2022-07-18 20:14:08 | root connect succesfully to 'penjub']
+[18-Jul-2022 20:14:08] [Date: 2022-07-18 20:14:08 | root execute succesfully Sql Query in DB: penjub
+ 'select * from tbl_ciudad;']
+[18-Jul-2022 20:14:15] [Date: 2022-07-18 20:14:15 | root connect succesfully to 'penjub']
+[18-Jul-2022 20:14:15] [Date: 2022-07-18 20:14:15 | root execute succesfully Sql Query in DB: penjub
+ 'select * from tbl_ciudad limit 10;']
+[18-Jul-2022 20:14:19] [Date: 2022-07-18 20:14:19 | root connect succesfully to 'penjub']
+[18-Jul-2022 20:14:19] [Date: 2022-07-18 20:14:19 | sql query in penjub FAILED !
+ 'select * fro tbl_ciudad limit 10;' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'fro tbl_ciudad limit 10' at line 1]

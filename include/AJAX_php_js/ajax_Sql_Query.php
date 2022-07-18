@@ -75,7 +75,8 @@ if ($route == 'display_data') { # display html data
 
 } else { # display error msq
 
-    $divHtml = $error_msg;    
+    // $divHtml .= displayTable($query,90,'',$resultado);
+    $divHtml .= "error sql " . $error_msg;    
 
 }
 
