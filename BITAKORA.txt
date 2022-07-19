@@ -1,4 +1,4 @@
-PENDIENTE
+77PENDIENTE
 
 LOGIN 
     - login como root:
@@ -14,7 +14,7 @@ BUTTONS "nav-btns"
     - definir cuáles van de acuerdo a la ruta elegida pr el usuario   
       - 
 
-CASO SQL-BTN -> cónsola "sql"
+CASO SQL-BTN -> cónsola "query-btn"
 
     - actualizar "#left_aside" con info DB y despligue lista tablas:
         - con efecto hover que presente campos de columnas de cada tabla 
@@ -27,12 +27,85 @@ CASO SQL-BTN -> cónsola "sql"
 
     - read host and db and check last query char of textarea value. if is ; , delete  
 
-    - 
+    - add select pagination
 
     - Limpiar area al salir de la consola "sql" ✔
 
-  ADD to display_left_aside tables in case sql-btn active
+ADD listener to display DB of selected host (like it is done with DB listener with tables associated)
+
+ADD to display_left_aside tables in case sql-btn active
     - data of table: columns with their attributes    
+
+
+DOWNLOAD & INSTALATION procedure with readme.md
+
+
+
+DIAGRAM OF DB RELATIONS
+
+  - https://stackoverflow.com/questions/20855065/how-to-find-all-the-relations-between-all-mysql-tables
+  - https://tableplus.com/blog/2018/08/mysql-how-to-see-foreign-key-relationship-of-a-table.html
+  - https://help.tableau.com/current/pro/desktop/en-us/relate_tables.htm
+  - https://dataedo.com/kb/query/mysql/list-tables-with-most-relationships
+
+queries:
+
+SELECT 
+  `TABLE_SCHEMA`,
+  `TABLE_NAME`,
+  `COLUMN_NAME`,
+  `REFERENCED_TABLE_SCHEMA`,
+  `REFERENCED_TABLE_NAME`,
+  `REFERENCED_COLUMN_NAME`
+FROM
+  `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE`
+WHERE
+  `TABLE_SCHEMA` = SCHEMA()
+  AND `REFERENCED_TABLE_NAME` IS NOT NULL;
+
+------------------------------
+// 
+SELECT 
+    count(1) totalrelationships ,
+    c.table_name tablename,
+    CONCAT(' ',GROUP_CONCAT(c.column_name ORDER BY ordinal_position SEPARATOR ', ')) columnname,
+    CONCAT(' ',GROUP_CONCAT(c.column_type ORDER BY ordinal_position SEPARATOR ', ')) columntype    
+FROM
+    information_schema.columns c RIGHT JOIN
+    (SELECT column_name , column_type FROM information_schema.columns WHERE column_key in ('PRI','MUL') AND table_schema = DATABASE() AND table_name = 'employees') AS p USING (column_name,column_type)
+WHERE c.table_schema = DATABASE() AND c.table_name != 'employees' 
+GROUP BY tablename 
+HAVING (locate('emp_no',columnname) > 0)
+ORDER BY totalrelationships desc, columnname
+------------------------------
+// comment: relaciones de una tabla con las demás
+SELECT 
+    count(1) totalrelationships ,
+    c.table_name tablename,
+    CONCAT(' ',GROUP_CONCAT(c.column_name ORDER BY ordinal_position SEPARATOR ', ')) columnname,
+    CONCAT(' ',GROUP_CONCAT(c.column_type ORDER BY ordinal_position SEPARATOR ', ')) columntype    
+FROM
+    information_schema.columns c RIGHT JOIN
+    (SELECT column_name , column_type FROM information_schema.columns WHERE table_schema = DATABASE() AND table_name = 'employees') AS p USING (column_name,column_type)
+WHERE
+    c.table_schema = DATABASE()    
+    GROUP BY tablename
+    ORDER BY totalrelationships desc, columnname
+-------------------------------------
+
+What I want in most cases is to know all FKs that point to a specific table. In this case I run:
+SELECT 
+  `TABLE_SCHEMA`,                          -- Foreign key schema
+  `TABLE_NAME`,                            -- Foreign key table
+  `COLUMN_NAME`,                           -- Foreign key column
+  `REFERENCED_TABLE_SCHEMA`,               -- Origin key schema
+  `REFERENCED_TABLE_NAME`,                 -- Origin key table
+  `REFERENCED_COLUMN_NAME`                 -- Origin key column
+FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE`
+WHERE `TABLE_SCHEMA` = SCHEMA()
+AND   `REFERENCED_TABLE_NAME` IS NOT NULL  -- Only tables with foreign keys
+
+--------------------------------
 
 
 
