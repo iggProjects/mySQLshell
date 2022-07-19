@@ -332,7 +332,7 @@ function Sql_Query_try_catch($conn_active,$db_name,$db_user,$sql_query,$log_comm
 
     # clean spaces in \$select_query for email and log file
     $sql_query_trim = implode(' ',array_filter(explode(' ',$sql_query))); 
-    $sql_query_trim = preg_replace("/\r\n+|\r+|\n+|\t+/i", " ", $sql_query_trim);
+    $sql_query_trim = preg_replace("/\r\n+|\r+|\n+|\t+/i", " ", $sql_query_trim);    
 
     try {
 
@@ -359,22 +359,20 @@ function Sql_Query_try_catch($conn_active,$db_name,$db_user,$sql_query,$log_comm
         // $conn_active=null;
         # mail param's
         $subject1 = "$db_user, Sql query in DB: $db_name FAILED";
-        $cuerpo1 = "Date: " . date('Y-m-d H:i:s') . " | sql query in $db_name FAILED !" . "\r\n" . " '$sql_query_trim' " . $e->getMessage();
+        $cuerpo1 = "Date: " . date('Y-m-d H:i:s') . " | Sql_Query_try_catch: query in $db_name FAILED !" . "\r\n" . " '$sql_query_trim' " . $e->getMessage();
         //mail($mailto,$subject1,$cuerpo1,$cabeceras);
 
         # print in Log File
         My_Log_Message($cuerpo1, $log_comments);    
-        $result = $e->getMessage();    
-        return $result;
+       //  $result = $e->getMessage();  
+        $error_msg = "<br>MySql error 😌😌😌<br><br>[Date: " . date('Y-m-d H:i:s') . "]<br><br>";
+        $error_msg .= "Function <span style='color:blue;'>\"Sql_Query_try_catch\" in \"DB $db_name\"</span> FAILED !<br><br>";
+        $error_msg .= "<span style='color:green;'>$sql_query_trim:</span><br><span style='color:#990000;'>" . $e->getMessage() . "</span>";  
+        echo $error_msg;
 
     }
 
 }
-
-
-
-
-
 
 
 /*

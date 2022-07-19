@@ -83,8 +83,8 @@ echo "
                             <div class='display-result-nav'><p id='display-result-nav-title'></p></div>                            
                             <div id='display_sql_result'></div>
                             <div id='display-sql-console-Up' class='hideDiv'>
-                                <textarea id='sql-query-area' placeholder='write your sql query....'></textarea>
                                 <button id='query-btn' onclick='execute_query()'>Process Query</button>
+                                <textarea id='sql-query-area' placeholder='write your sql query....'></textarea>                                
                             </div>
                             <div id='display-sql-console-Down' class='hideDiv' placeholder='query result area' style='color:blue;'>____ query result area ____</div>
                         </div>";
@@ -163,6 +163,11 @@ echo "
 
             case 'btn-sql':   
 
+                // definir altura 'display-sql-console-Up'
+                document.getElementById('display-sql-console-Up').style.height='30%';
+
+                // definir altura 'display-sql-console-Down'
+                document.getElementById('display-sql-console-Down').style.height='58%';
                 
                 document.getElementById('display_left_aside').innerHTML = "";
 
@@ -216,20 +221,33 @@ echo "
 
   
     function execute_query(){
+
+        // read query
+        var _query = document.getElementById("sql-query-area").value;      
         
-        var _query = document.getElementById("sql-query-area").value;
-        // alert('query btn call -> ' + _query);
 
-        // read host name and db name
-        var sql_host_db = document.getElementById('display-result-nav-title');
-        var hostName = sql_host_db.getAttribute('host');
-        var dbName = sql_host_db.getAttribute('db');
+        // IF to check: host and DB exists & query is not empty
+        // capture host and db from tag -> #display-result-nav-title
+        if ( _query == "" ) { alert('write an sql query ! 😎') } else {
 
-        // alert('hostName: ' + hostName + ', dnName: ' + dbName);
+            // verificar si último char es ;. Caso positivo, eliminar el char
 
-        // call AJAX for execute query
-        var _tag = 'display-sql-console-Down';
-        Fetch_js(_tag,'./include/AJAX_php_js/ajax_Sql_Query.php?hostName='+sql_host_db.getAttribute('host')+'&dbName='+sql_host_db.getAttribute('db')+'&sql_query='+_query);
+
+            // add 'LIMIT 20'
+            _query += ' LIMIT 20';       
+            
+            // read host name and db name
+            var sql_host_db = document.getElementById('display-result-nav-title');
+            var hostName = sql_host_db.getAttribute('host');
+            var dbName = sql_host_db.getAttribute('db');
+
+            // alert('hostName: ' + hostName + ', dnName: ' + dbName);
+
+            // call AJAX for execute query
+            var _tag = 'display-sql-console-Down';
+            Fetch_js(_tag,'./include/AJAX_php_js/ajax_Sql_Query.php?hostName='+sql_host_db.getAttribute('host')+'&dbName='+sql_host_db.getAttribute('db')+'&sql_query='+_query);
+
+        }
 
     }    
 

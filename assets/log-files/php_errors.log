@@ -9958,3 +9958,121 @@ Stack trace:
 #0 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php(78): displayTable(NULL, 90, '', 'SQLSTATE[42000]...')
 #1 {main}
   thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\php_general_funct\my_PHP_functions.php on line 237
+[18-Jul-2022 20:20:21 Europe/Berlin] PHP Warning:  Undefined variable $thead_titles in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 76
+[18-Jul-2022 20:20:32 Europe/Berlin] PHP Warning:  Undefined variable $thead_titles in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 76
+[18-Jul-2022 20:20:32 Europe/Berlin] PHP Warning:  Undefined variable $divHtml in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 76
+[18-Jul-2022 20:20:38 Europe/Berlin] PHP Warning:  Undefined variable $thead_titles in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 76
+[18-Jul-2022 20:20:38 Europe/Berlin] PHP Warning:  Undefined variable $divHtml in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 76
+[18-Jul-2022 20:20:38 Europe/Berlin] PHP Warning:  Undefined variable $thead_titles in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 76
+[19-Jul-2022 11:09:23 Europe/Berlin] PHP Warning:  Undefined variable $sql_query in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 54
+[19-Jul-2022 11:09:23 Europe/Berlin] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions_servers.php on line 334
+[19-Jul-2022 11:09:23 Europe/Berlin] PHP Deprecated:  PDO::prepare(): Passing null to parameter #1 ($query) of type string is deprecated in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions_servers.php on line 342
+[19-Jul-2022 11:09:23 Europe/Berlin] PHP Fatal error:  Uncaught ValueError: PDO::prepare(): Argument #1 ($query) cannot be empty in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions_servers.php:342
+Stack trace:
+#0 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions_servers.php(342): PDO->prepare('')
+#1 C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php(54): Sql_Query_try_catch(Object(PDO), 'penjub', 'root', NULL, '../../assets/lo...')
+#2 {main}
+  thrown in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions_servers.php on line 342
+[19-Jul-2022 11:30:10 Europe/Berlin] PHP Warning:  Undefined property: PDOException::$getMessage in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\sql_funct\my_SQL_functions_servers.php on line 368
+[19-Jul-2022 11:55:11 Europe/Berlin] PHP Warning:  Undefined variable $thead_titles in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 76
+[19-Jul-2022 11:55:11 Europe/Berlin] PHP Warning:  Undefined variable $divHtml in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 76
+[19-Jul-2022 11:55:13 Europe/Berlin] PHP Warning:  Undefined variable $thead_titles in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 76
+[19-Jul-2022 12:13:49 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:13:49 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:13:49 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:15:26 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:15:26 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:15:26 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:18:49 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:18:49 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:18:49 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:19:01 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:19:01 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:19:01 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:19:04 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:19:04 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:19:04 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:19:07 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:19:07 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:19:07 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:19:23 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:19:23 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:19:23 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:23:34 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:23:34 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:23:34 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:23:35 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:23:35 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:23:35 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:23:38 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:23:38 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:23:38 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:23:40 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:23:40 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:23:40 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:23:45 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:23:45 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:23:45 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:23:47 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:23:47 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:23:47 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:23:57 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:23:57 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:23:57 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:23:58 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:23:58 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:23:58 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:23:59 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:23:59 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:23:59 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:24:00 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:24:00 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:24:00 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:28:06 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:28:06 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:28:06 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:28:07 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:28:07 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:28:07 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:30:35 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:30:35 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:30:35 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:30:37 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:30:37 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:30:37 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:31:03 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:31:03 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:31:03 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:31:07 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:31:07 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:31:07 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:31:21 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:31:21 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:31:21 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:31:56 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:31:56 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:31:56 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:32:02 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:32:02 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:32:02 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:32:15 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:32:15 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:32:15 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:32:18 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:32:18 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:32:18 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:33:04 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:33:04 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:33:04 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:33:07 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:33:07 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:33:07 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:33:25 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:33:25 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:33:25 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:33:26 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:33:26 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:33:26 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 45
+[19-Jul-2022 12:33:56 Europe/Berlin] PHP Warning:  Undefined variable $dbuser in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:33:56 Europe/Berlin] PHP Warning:  Undefined variable $dbpass in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40
+[19-Jul-2022 12:33:56 Europe/Berlin] PHP Warning:  Undefined variable $dbcharset in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 40

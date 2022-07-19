@@ -24,7 +24,15 @@ CASO SQL-BTN -> cónsola "sql"
       - área para escribir sql y ejecutar       
       - area resultado: caso positivo tabla, caso error: mensaje y help
 
+
+    - read host and db and check last query char of textarea value. if is ; , delete  
+
+    - 
+
     - Limpiar area al salir de la consola "sql" ✔
+
+  ADD to display_left_aside tables in case sql-btn active
+    - data of table: columns with their attributes    
 
 
 

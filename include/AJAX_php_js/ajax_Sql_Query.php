@@ -56,6 +56,7 @@ if ( gettype($conex_db) === 'object' ) {
         $route = "display_data";        
     } else {
         $route = "display_error";
+        echo "<script>alert('display error')</script>";
         $error_msg = "MySql error: sql query " . $sql_query . "FAILED !<br>Contact Admin.";
     }    
 
