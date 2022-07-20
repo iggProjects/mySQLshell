@@ -50,6 +50,22 @@ ADD listener to display_left_aside tables in case sql-btn active
 REVISAR la lógica del '#left_aside' respecto a buttons invoacados
   - hacer navegación y verificar cuando debe hacerse clear del área
 
+SHOW CREATE TABLE 'myTable'
+
+FOREIGN KEYS
+
+  SELECT 
+      TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL 
+    FROM
+      INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+    WHERE
+      REFERENCED_TABLE_SCHEMA = SCHEMA()    
+      -- optional put AND REFERENCED_TABLE_NAME = 'my table'
+
+SHOW FULL COLUMNS FROM TABLES OF A DB 
+  - SELECT table_name, column_name FROM  information_schema.columns WHERE table_schema = SCHEMA() ORDER BY table_name asc
+  - SELECT table_name, column_name, column_type, column_key FROM information_schema.columns WHERE table_schema = SCHEMA() ORDER BY table_name asc
+
 
 -------------------------------------------------------------------------------------------
 

@@ -83,7 +83,11 @@ echo "
                             <div class='display-result-nav'><p id='display-result-nav-title'></p></div>                            
                             <div id='display_sql_result'></div>
                             <div id='display-sql-console-Up' class='hideDiv'>
-                                <button id='query-btn' onclick='execute_query()'>Process Query</button>
+                                <div class='display-sql-console-Up-btns disp-row-center'>
+                                    <button id='extend-console-up-btn' onclick='height_up()''><img src='./assets/img-igg/icons8-expand-48.png' alt='up' width='15' height='15'></button>
+                                    <button id='query-btn' onclick='execute_query()'>Process Query</button>
+                                    <button id='compress-console-up-btn' onclick='height_compress()'><img src='./assets/img-igg/compress-48.png' alt='up' width='15' height='15'></button>
+                                </div>
                                 <textarea id='sql-query-area' placeholder='write your sql query....'></textarea>                                
                             </div>
                             <div id='display-sql-console-Down' class='hideDiv' placeholder='query result area' style='color:blue;'>____ query result area ____</div>
@@ -173,6 +177,10 @@ echo "
                 document.getElementById('display_left_aside').innerHTML = "";
                 document.getElementById('display-sql-console-Down').innerHTML = "";
                 document.getElementById('display-sql-console-Down').innerHTML = "";
+                // display button 'up'
+                document.getElementById('extend-console-up-btn').style.display='none';
+                // display button 'up'
+                document.getElementById('compress-console-up-btn').style.display='none';
 
                 // Update tag display-result-nav-title with only Host and DB
                 table_param.removeAttribute('table-name');   
@@ -226,8 +234,7 @@ echo "
     function execute_query(){
 
         // read query
-        var _query = document.getElementById("sql-query-area").value;          
-        
+        var _query = document.getElementById("sql-query-area").value;   
 
         // IF to check: host and DB exists & query is not empty
         // capture host and db from tag -> #display-result-nav-title
@@ -236,6 +243,12 @@ echo "
         if ( _query == "" || table_param.getAttribute('host') == null || table_param.getAttribute('db') == null ) { 
             alert('check if you select HOST, DB and you write an sql query ! 😎') } 
         else {
+
+            // display button 'up'
+            document.getElementById('extend-console-up-btn').style.display='block';
+            // display button 'up'
+            document.getElementById('compress-console-up-btn').style.display='block';
+
 
             // reducir altura 'display-sql-console-Up'
             document.getElementById('display-sql-console-Up').style.height='15%';
@@ -247,8 +260,8 @@ echo "
             // verificar si último char es ;. Caso positivo, eliminar el char
 
 
-            // add 'LIMIT 20'
-            _query += ' LIMIT 20';       
+            // add 'LIMIT 20' if is a SELECT query (buscar palabra SELECT in string)
+            if ( _query.includes("select")  ) { _query += ' LIMIT 20'; }     
             
             // read host name and db name
             var sql_host_db = document.getElementById('display-result-nav-title');
@@ -278,6 +291,22 @@ echo "
         document.getElementById('display_left_aside').innerHTML = "";
     }
 
+
+    function height_up() {
+        // reducir altura 'display-sql-console-Up'
+        document.getElementById('display-sql-console-Up').style.height='60%';
+
+        // aumentar altura 'display-sql-console-Down'
+        document.getElementById('display-sql-console-Down').style.height='18%'; 
+    }
+
+    function height_compress() {
+        // reducir altura 'display-sql-console-Up'
+        document.getElementById('display-sql-console-Up').style.height='30%';
+
+        // aumentar altura 'display-sql-console-Down'
+        document.getElementById('display-sql-console-Down').style.height='58%'; 
+    }
     
 
 </script>

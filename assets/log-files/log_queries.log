@@ -8871,3 +8871,356 @@
 [19-Jul-2022 12:35:02] [Date: 2022-07-19 12:35:02 | root connect succesfully to 'mysql']
 [19-Jul-2022 12:35:02] [Date: 2022-07-19 12:35:02 | Sql_Query_try_catch: query in mysql FAILED !
  'select * from dept_emp LIMIT 20' SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mysql.dept_emp' doesn't exist]
+[20-Jul-2022 09:53:37] [Date: 2022-07-20 09:53:37 | inaki2022 connect succesfully to '8661316_laninaki22']
+[20-Jul-2022 09:53:37] [Date: 2022-07-20 09:53:37 | Sql_Query_try_catch: query in 8661316_laninaki22 FAILED !
+ 'show columns from 8661316_laninaki2 LIMIT 20' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 20' at line 1]
+[20-Jul-2022 09:53:48] [Date: 2022-07-20 09:53:48 | inaki2022 connect succesfully to '8661316_laninaki22']
+[20-Jul-2022 09:53:48] [Date: 2022-07-20 09:53:48 | Sql_Query_try_catch: query in 8661316_laninaki22 FAILED !
+ 'show columns from tbl_users in 8661316_laninaki2 LIMIT 20' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 20' at line 1]
+[20-Jul-2022 09:54:07] [Date: 2022-07-20 09:54:07 | inaki2022 connect succesfully to '8661316_laninaki22']
+[20-Jul-2022 09:54:07] [Date: 2022-07-20 09:54:07 | Sql_Query_try_catch: query in 8661316_laninaki22 FAILED !
+ 'show columns from tbl_users from 8661316_laninaki2 LIMIT 20' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 20' at line 1]
+[20-Jul-2022 09:54:15] [Date: 2022-07-20 09:54:15 | inaki2022 connect succesfully to '8661316_laninaki22']
+[20-Jul-2022 09:54:15] [Date: 2022-07-20 09:54:15 | Sql_Query_try_catch: query in 8661316_laninaki22 FAILED !
+ 'show columns from tbl_users from 8661316_laninaki2 LIMIT 20' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 20' at line 1]
+[20-Jul-2022 09:54:41] [Date: 2022-07-20 09:54:41 | inaki2022 connect succesfully to '8661316_laninaki22']
+[20-Jul-2022 09:54:41] [Date: 2022-07-20 09:54:41 | Sql_Query_try_catch: query in 8661316_laninaki22 FAILED !
+ 'show columns from tbl_users LIMIT 20' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 20' at line 1]
+[20-Jul-2022 09:54:50] [Date: 2022-07-20 09:54:50 | inaki2022 connect succesfully to '8661316_laninaki22']
+[20-Jul-2022 09:54:50] [Date: 2022-07-20 09:54:50 | Sql_Query_try_catch: query in 8661316_laninaki22 FAILED !
+ 'show columns from tbl_users LIMIT 20' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 20' at line 1]
+[20-Jul-2022 09:56:30] [Date: 2022-07-20 09:56:30 | inaki2022 connect succesfully to '8661316_laninaki22']
+[20-Jul-2022 09:56:30] [Date: 2022-07-20 09:56:30 | Sql_Query_try_catch: query in 8661316_laninaki22 FAILED !
+ 'SHOW COLUMNS FROM tbl_users LIMIT 20' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 20' at line 1]
+[20-Jul-2022 09:57:16] [Date: 2022-07-20 09:57:16 | inaki2022 connect succesfully to '8661316_laninaki22']
+[20-Jul-2022 09:57:16] [Date: 2022-07-20 09:57:16 | Sql_Query_try_catch: query in 8661316_laninaki22 FAILED !
+ 'DESC tbl_users LIMIT 20' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 20' at line 1]
+[20-Jul-2022 09:57:26] [Date: 2022-07-20 09:57:26 | inaki2022 connect succesfully to '8661316_laninaki22']
+[20-Jul-2022 09:57:26] [Date: 2022-07-20 09:57:26 | inaki2022 execute succesfully show tables query
+ 'desc tbl_users;']
+[20-Jul-2022 09:57:27] [Date: 2022-07-20 09:57:27 | inaki2022 connect succesfully to '8661316_laninaki22']
+[20-Jul-2022 09:57:27] [Date: 2022-07-20 09:57:27 | inaki2022 execute succesfully show tables query
+ 'describe tbl_users;']
+[20-Jul-2022 09:57:36] [Date: 2022-07-20 09:57:36 | inaki2022 connect succesfully to '8661316_laninaki22']
+[20-Jul-2022 09:57:36] [Date: 2022-07-20 09:57:36 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users LIMIT 10;']
+[20-Jul-2022 09:57:39] [Date: 2022-07-20 09:57:39 | inaki2022 connect succesfully to '8661316_laninaki22']
+[20-Jul-2022 09:57:39] [Date: 2022-07-20 09:57:39 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[20-Jul-2022 09:57:41] [Date: 2022-07-20 09:57:41 | inaki2022 connect succesfully to '8661316_laninaki22']
+[20-Jul-2022 09:57:41] [Date: 2022-07-20 09:57:41 | inaki2022 execute succesfully show tables query
+ 'describe tbl_users;']
+[20-Jul-2022 09:57:43] [Date: 2022-07-20 09:57:43 | inaki2022 connect succesfully to '8661316_laninaki22']
+[20-Jul-2022 09:57:43] [Date: 2022-07-20 09:57:43 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users LIMIT 10;']
+[20-Jul-2022 09:57:45] [Date: 2022-07-20 09:57:45 | inaki2022 connect succesfully to '8661316_laninaki22']
+[20-Jul-2022 09:57:45] [Date: 2022-07-20 09:57:45 | inaki2022 execute succesfully show tables query
+ 'describe tbl_users;']
+[20-Jul-2022 09:57:49] [Date: 2022-07-20 09:57:49 | inaki2022 connect succesfully to '8661316_laninaki22']
+[20-Jul-2022 09:57:49] [Date: 2022-07-20 09:57:49 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[20-Jul-2022 09:58:02] [Date: 2022-07-20 09:58:02 | inaki2022 connect succesfully to '8661316_laninaki22']
+[20-Jul-2022 09:58:02] [Date: 2022-07-20 09:58:02 | Sql_Query_try_catch: query in 8661316_laninaki22 FAILED !
+ 'desc tbl_users LIMIT 20' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 20' at line 1]
+[20-Jul-2022 09:58:47] [Date: 2022-07-20 09:58:47 | inaki2022 connect succesfully to '8661316_laninaki22']
+[20-Jul-2022 09:58:47] [Date: 2022-07-20 09:58:47 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users LIMIT 10;']
+[20-Jul-2022 09:59:01] [Date: 2022-07-20 09:59:01 | inaki2022 connect succesfully to '8661316_laninaki22']
+[20-Jul-2022 09:59:01] [Date: 2022-07-20 09:59:01 | inaki2022 execute succesfully Sql Query in DB: 8661316_laninaki22
+ 'select * from tbl_users LIMIT 20']
+[20-Jul-2022 10:03:43] [Date: 2022-07-20 10:03:43 | inaki2022 connect succesfully to '8661316_laninaki22']
+[20-Jul-2022 10:03:43] [Date: 2022-07-20 10:03:43 | inaki2022 execute succesfully Sql Query in DB: 8661316_laninaki22
+ 'select * from tbl_users LIMIT 20']
+[20-Jul-2022 10:04:02] [Date: 2022-07-20 10:04:02 | inaki2022 connect succesfully to '8661316_laninaki22']
+[20-Jul-2022 10:04:02] [Date: 2022-07-20 10:04:02 | Sql_Query_try_catch: query in 8661316_laninaki22 FAILED !
+ 'show columns from tbl_users LIMIT 20' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 20' at line 1]
+[20-Jul-2022 10:04:29] [Date: 2022-07-20 10:04:29 | inaki2022 connect succesfully to '8661316_laninaki22']
+[20-Jul-2022 10:04:29] [Date: 2022-07-20 10:04:29 | Sql_Query_try_catch: query in 8661316_laninaki22 FAILED !
+ 'show columns from tbl_users LIMIT 20' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIMIT 20' at line 1]
+[20-Jul-2022 10:04:34] [Date: 2022-07-20 10:04:34 |  CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[20-Jul-2022 10:04:36] [Date: 2022-07-20 10:04:36 | root connect succesfully to '127.0.0.1']
+[20-Jul-2022 10:04:36] [Date: 2022-07-20 10:04:36 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[20-Jul-2022 10:04:52] [Date: 2022-07-20 10:04:52 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:04:52] [Date: 2022-07-20 10:04:52 | Sql_Query_try_catch: query in penjub FAILED !
+ 'show columns tbl_provincia' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'tbl_provincia' at line 1]
+[20-Jul-2022 10:05:03] [Date: 2022-07-20 10:05:03 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:05:03] [Date: 2022-07-20 10:05:03 | root execute succesfully Sql Query in DB: penjub
+ 'show columns from tbl_provincia']
+[20-Jul-2022 10:05:31] [Date: 2022-07-20 10:05:31 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:05:31] [Date: 2022-07-20 10:05:31 | Sql_Query_try_catch: query in penjub FAILED !
+ 'show columns from penjub' SQLSTATE[42S02]: Base table or view not found: 1146 Table 'penjub.penjub' doesn't exist]
+[20-Jul-2022 10:05:37] [Date: 2022-07-20 10:05:37 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:05:37] [Date: 2022-07-20 10:05:37 | Sql_Query_try_catch: query in penjub FAILED !
+ 'show columns from penjub.tbl' SQLSTATE[42S02]: Base table or view not found: 1146 Table 'penjub.tbl' doesn't exist]
+[20-Jul-2022 10:05:45] [Date: 2022-07-20 10:05:45 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:05:45] [Date: 2022-07-20 10:05:45 | Sql_Query_try_catch: query in penjub FAILED !
+ 'show columns from penjub.tbl_users' SQLSTATE[42S02]: Base table or view not found: 1146 Table 'penjub.tbl_users' doesn't exist]
+[20-Jul-2022 10:05:56] [Date: 2022-07-20 10:05:56 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:05:56] [Date: 2022-07-20 10:05:56 | root execute succesfully Sql Query in DB: penjub
+ 'show columns from penjub.tbl_usuario']
+[20-Jul-2022 10:06:04] [Date: 2022-07-20 10:06:04 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:06:04] [Date: 2022-07-20 10:06:04 | Sql_Query_try_catch: query in penjub FAILED !
+ 'show columns from penjub.*' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '*' at line 1]
+[20-Jul-2022 10:06:39] [Date: 2022-07-20 10:06:39 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:06:39] [Date: 2022-07-20 10:06:39 | root execute succesfully Sql Query in DB: penjub
+ 'show full columns from penjub.tbl_provincia']
+[20-Jul-2022 10:10:09] [Date: 2022-07-20 10:10:09 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:10:09] [Date: 2022-07-20 10:10:09 | select query in penjub FAILED 
+ 'SELECT * FROM null LIMIT 10;' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'null LIMIT 10' at line 1]
+[20-Jul-2022 10:10:10] [Date: 2022-07-20 10:10:10 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:10:10] [Date: 2022-07-20 10:10:10 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[20-Jul-2022 10:10:12] [Date: 2022-07-20 10:10:12 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:10:12] [Date: 2022-07-20 10:10:12 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[20-Jul-2022 10:10:41] [Date: 2022-07-20 10:10:41 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:10:41] [Date: 2022-07-20 10:10:41 | Sql_Query_try_catch: query in penjub FAILED !
+ 'SELECT DISTINCT TABLE_NAME, COLUMN_NAMEFROM NFORMATION_SCHEMA.COLUMNS' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.COLUMNS' at line 1]
+[20-Jul-2022 10:10:55] [Date: 2022-07-20 10:10:55 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:10:55] [Date: 2022-07-20 10:10:55 | Sql_Query_try_catch: query in penjub FAILED !
+ 'SELECT TABLE_NAME, COLUMN_NAMEFROM NFORMATION_SCHEMA.COLUMNS' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.COLUMNS' at line 1]
+[20-Jul-2022 10:11:59] [Date: 2022-07-20 10:11:59 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:11:59] [Date: 2022-07-20 10:11:59 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables']
+[20-Jul-2022 10:12:42] [Date: 2022-07-20 10:12:42 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:12:42] [Date: 2022-07-20 10:12:42 | root execute succesfully Sql Query in DB: penjub
+ 'desc information_schema.tables']
+[20-Jul-2022 10:12:52] [Date: 2022-07-20 10:12:52 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:12:52] [Date: 2022-07-20 10:12:52 | root execute succesfully Sql Query in DB: penjub
+ 'desc information_schema.columns']
+[20-Jul-2022 10:13:20] [Date: 2022-07-20 10:13:20 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:13:20] [Date: 2022-07-20 10:13:20 | root execute succesfully Sql Query in DB: penjub
+ 'select table_name, column_name from information_schema.columns LIMIT 20']
+[20-Jul-2022 10:14:51] [Date: 2022-07-20 10:14:51 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:14:51] [Date: 2022-07-20 10:14:51 | root execute succesfully Sql Query in DB: penjub
+ 'select table_name, column_name from information_schema.columns where table_schema='penjub' LIMIT 20']
+[20-Jul-2022 10:15:41] [Date: 2022-07-20 10:15:41 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:15:41] [Date: 2022-07-20 10:15:41 | root execute succesfully Sql Query in DB: penjub
+ 'select table_name, column_name from information_schema.columns where table_schema='penjub' order by table_name asc LIMIT 20']
+[20-Jul-2022 10:18:01] [Date: 2022-07-20 10:18:01 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:18:01] [Date: 2022-07-20 10:18:01 | root execute succesfully Sql Query in DB: penjub
+ 'desc information_schema.columns']
+[20-Jul-2022 10:18:39] [Date: 2022-07-20 10:18:39 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:18:39] [Date: 2022-07-20 10:18:39 | Sql_Query_try_catch: query in penjub FAILED !
+ 'select table_name, column_name, column_typ, column_key from information_schema.columns where table_schema='penjub' order by table_name asc LIMIT 20' SQLSTATE[42S22]: Column not found: 1054 Unknown column 'column_typ' in 'field list']
+[20-Jul-2022 10:18:45] [Date: 2022-07-20 10:18:45 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:18:45] [Date: 2022-07-20 10:18:45 | root execute succesfully Sql Query in DB: penjub
+ 'select table_name, column_name, column_type, column_key from information_schema.columns where table_schema='penjub' order by table_name asc LIMIT 20']
+[20-Jul-2022 10:19:46] [Date: 2022-07-20 10:19:46 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:19:46] [Date: 2022-07-20 10:19:46 | root execute succesfully Sql Query in DB: penjub
+ 'desc information_schema.columns']
+[20-Jul-2022 10:22:37] [Date: 2022-07-20 10:22:37 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:22:37] [Date: 2022-07-20 10:22:37 | root execute succesfully Sql Query in DB: penjub
+ 'select table_name, column_name, column_type, column_key,column_comment from information_schema.columns where table_schema='penjub' order by table_name asc LIMIT 20']
+[20-Jul-2022 10:23:15] [Date: 2022-07-20 10:23:15 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:23:15] [Date: 2022-07-20 10:23:15 | root execute succesfully Sql Query in DB: penjub
+ 'select table_name, column_name, column_type, column_key from information_schema.columns where table_schema='penjub' order by table_name asc LIMIT 20']
+[20-Jul-2022 10:23:59] [Date: 2022-07-20 10:23:59 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:23:59] [Date: 2022-07-20 10:23:59 | root execute succesfully Sql Query in DB: penjub
+ 'desc tbl_persona']
+[20-Jul-2022 10:24:29] [Date: 2022-07-20 10:24:29 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:24:29] [Date: 2022-07-20 10:24:29 | root execute succesfully Sql Query in DB: penjub
+ 'desc tbl_ciudad']
+[20-Jul-2022 10:24:39] [Date: 2022-07-20 10:24:39 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:24:39] [Date: 2022-07-20 10:24:39 | Sql_Query_try_catch: query in penjub FAILED !
+ 'desc full tbl_ciudad' SQLSTATE[42S02]: Base table or view not found: 1146 Table 'penjub.full' doesn't exist]
+[20-Jul-2022 10:25:07] [Date: 2022-07-20 10:25:07 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:25:07] [Date: 2022-07-20 10:25:07 | root execute succesfully Sql Query in DB: penjub
+ 'show full columns from tbl_ciudad']
+[20-Jul-2022 10:25:22] [Date: 2022-07-20 10:25:22 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:25:22] [Date: 2022-07-20 10:25:22 | Sql_Query_try_catch: query in penjub FAILED !
+ 'show create tbl_ciudad' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'tbl_ciudad' at line 1]
+[20-Jul-2022 10:25:31] [Date: 2022-07-20 10:25:31 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:25:31] [Date: 2022-07-20 10:25:31 | Sql_Query_try_catch: query in penjub FAILED !
+ 'desc create tbl_ciudad' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'create tbl_ciudad' at line 1]
+[20-Jul-2022 10:26:52] [Date: 2022-07-20 10:26:52 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:26:52] [Date: 2022-07-20 10:26:52 | root execute succesfully Sql Query in DB: penjub
+ 'SHOW CREATE TABLE tbl_ciudad']
+[20-Jul-2022 10:29:48] [Date: 2022-07-20 10:29:48 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:29:48] [Date: 2022-07-20 10:29:48 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[20-Jul-2022 10:29:50] [Date: 2022-07-20 10:29:50 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:29:50] [Date: 2022-07-20 10:29:50 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[20-Jul-2022 10:30:07] [Date: 2022-07-20 10:30:07 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:30:07] [Date: 2022-07-20 10:30:07 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME,COLUMN_NAME,CONSTRAINT_NAME, REFERENCED_TABLE_NAME,REFERENCED_COLUMN_NAME FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[20-Jul-2022 10:32:29] [Date: 2022-07-20 10:32:29 | root connect succesfully to 'penjub']
+[20-Jul-2022 10:32:29] [Date: 2022-07-20 10:32:29 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[20-Jul-2022 11:13:23] [Date: 2022-07-20 11:13:23 |  CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[20-Jul-2022 11:13:51] [Date: 2022-07-20 11:13:51 |  CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[20-Jul-2022 11:16:48] [Date: 2022-07-20 11:16:48 |  CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[20-Jul-2022 11:17:39] [Date: 2022-07-20 11:17:39 |  CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[20-Jul-2022 11:18:17] [Date: 2022-07-20 11:18:17 |  CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[20-Jul-2022 11:18:42] [Date: 2022-07-20 11:18:42 |  CONNECT DB 'null' FAIL !SQLSTATE[HY000] [2019] Unknown character set]
+[20-Jul-2022 11:23:13] [Date: 2022-07-20 11:23:13 | root connect succesfully to '127.0.0.1']
+[20-Jul-2022 11:23:13] [Date: 2022-07-20 11:23:13 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[20-Jul-2022 11:23:18] [Date: 2022-07-20 11:23:18 | root connect succesfully to 'employees']
+[20-Jul-2022 11:23:18] [Date: 2022-07-20 11:23:18 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[20-Jul-2022 11:23:54] [Date: 2022-07-20 11:23:54 | root connect succesfully to 'employees']
+[20-Jul-2022 11:23:54] [Date: 2022-07-20 11:23:54 | root execute succesfully Sql Query in DB: employees
+ 'select table_name, column_name, column_type, column_key from information_schema.columns where table_schema=SCHEMA() order by table_name asc LIMIT 20']
+[20-Jul-2022 11:24:06] [Date: 2022-07-20 11:24:06 | root connect succesfully to 'employees']
+[20-Jul-2022 11:24:06] [Date: 2022-07-20 11:24:06 | root execute succesfully Sql Query in DB: employees
+ 'select table_name, column_name, column_type, column_key from information_schema.columns where table_schema=SCHEMA() order by table_name asc LIMIT 20']
+[20-Jul-2022 11:24:52] [Date: 2022-07-20 11:24:52 | root connect succesfully to '127.0.0.1']
+[20-Jul-2022 11:24:52] [Date: 2022-07-20 11:24:52 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[20-Jul-2022 11:24:59] [Date: 2022-07-20 11:24:59 | root connect succesfully to 'employees']
+[20-Jul-2022 11:24:59] [Date: 2022-07-20 11:24:59 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[20-Jul-2022 11:25:58] [Date: 2022-07-20 11:25:58 | root connect succesfully to 'employees']
+[20-Jul-2022 11:25:58] [Date: 2022-07-20 11:25:58 | root execute succesfully Sql Query in DB: employees
+ 'select table_name, column_name, column_type, column_key from information_schema.columns where table_schema = SCHEMA() order by table_name asc LIMIT 20']
+[20-Jul-2022 11:26:43] [Date: 2022-07-20 11:26:43 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[20-Jul-2022 11:26:43] [Date: 2022-07-20 11:26:43 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[20-Jul-2022 11:29:04] [Date: 2022-07-20 11:29:04 | root connect succesfully to '127.0.0.1']
+[20-Jul-2022 11:29:04] [Date: 2022-07-20 11:29:04 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[20-Jul-2022 11:31:09] [Date: 2022-07-20 11:31:09 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[20-Jul-2022 11:31:09] [Date: 2022-07-20 11:31:09 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[20-Jul-2022 11:32:13] [Date: 2022-07-20 11:32:13 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[20-Jul-2022 11:32:13] [Date: 2022-07-20 11:32:13 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[20-Jul-2022 11:33:02] [Date: 2022-07-20 11:33:02 | root connect succesfully to '127.0.0.1']
+[20-Jul-2022 11:33:02] [Date: 2022-07-20 11:33:02 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[20-Jul-2022 11:33:06] [Date: 2022-07-20 11:33:06 | root connect succesfully to 'mvc_example']
+[20-Jul-2022 11:33:06] [Date: 2022-07-20 11:33:06 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[20-Jul-2022 11:33:34] [Date: 2022-07-20 11:33:34 | root connect succesfully to 'mvc_example']
+[20-Jul-2022 11:33:34] [Date: 2022-07-20 11:33:34 | Sql_Query_try_catch: query in mvc_example FAILED !
+ 'sselect table_name, column_name, column_type, column_key from information_schema.columns where table_schema = SCHEMA() order by table_name asc LIMIT 20' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'sselect table_name, column_name, column_type, column_key from information_sch...' at line 1]
+[20-Jul-2022 11:37:00] [Date: 2022-07-20 11:37:00 | root connect succesfully to 'mvc_example']
+[20-Jul-2022 11:37:00] [Date: 2022-07-20 11:37:00 | root execute succesfully Sql Query in DB: mvc_example
+ 'select table_name, column_name, column_type, column_key from information_schema.columns where table_schema = SCHEMA() order by table_name asc LIMIT 20']
+[20-Jul-2022 11:37:09] [Date: 2022-07-20 11:37:09 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[20-Jul-2022 11:37:09] [Date: 2022-07-20 11:37:09 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[20-Jul-2022 11:37:14] [Date: 2022-07-20 11:37:14 | inaki2022 connect succesfully to 'information_schema']
+[20-Jul-2022 11:37:14] [Date: 2022-07-20 11:37:14 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[20-Jul-2022 11:37:47] [Date: 2022-07-20 11:37:47 | inaki2022 connect succesfully to 'information_schema']
+[20-Jul-2022 11:37:47] [Date: 2022-07-20 11:37:47 | inaki2022 execute succesfully Sql Query in DB: information_schema
+ 'select table_name, column_name, column_type, column_key from information_schema.columns where table_schema = SCHEMA() order by table_name asc LIMIT 20']
+[20-Jul-2022 11:38:16] [Date: 2022-07-20 11:38:16 | inaki2022 connect succesfully to 'information_schema']
+[20-Jul-2022 11:38:16] [Date: 2022-07-20 11:38:16 | inaki2022 execute succesfully Sql Query in DB: information_schema
+ 'select table_name, column_name, column_type, column_key from information_schema.columns where table_schema = SCHEMA() order by table_name asc LIMIT 20']
+[20-Jul-2022 11:49:43] [Date: 2022-07-20 11:49:43 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[20-Jul-2022 11:49:43] [Date: 2022-07-20 11:49:43 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[20-Jul-2022 11:49:45] [Date: 2022-07-20 11:49:45 | inaki2022 connect succesfully to 'information_schema']
+[20-Jul-2022 11:49:45] [Date: 2022-07-20 11:49:45 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[20-Jul-2022 11:51:06] [Date: 2022-07-20 11:51:06 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[20-Jul-2022 11:51:06] [Date: 2022-07-20 11:51:06 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[20-Jul-2022 11:51:10] [Date: 2022-07-20 11:51:10 | inaki2022 connect succesfully to '8661316_laninaki22']
+[20-Jul-2022 11:51:10] [Date: 2022-07-20 11:51:10 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[20-Jul-2022 11:53:49] [Date: 2022-07-20 11:53:49 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[20-Jul-2022 11:53:49] [Date: 2022-07-20 11:53:49 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[20-Jul-2022 11:53:52] [Date: 2022-07-20 11:53:52 | inaki2022 connect succesfully to 'information_schema']
+[20-Jul-2022 11:53:52] [Date: 2022-07-20 11:53:52 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[20-Jul-2022 11:54:16] [Date: 2022-07-20 11:54:16 | inaki2022 connect succesfully to 'information_schema']
+[20-Jul-2022 11:54:16] [Date: 2022-07-20 11:54:16 | inaki2022 execute succesfully Sql Query in DB: information_schema
+ 'select table_name, column_name, column_type, column_key from information_schema.columns where table_schema = SCHEMA() order by table_name asc LIMIT 20']
+[20-Jul-2022 11:55:48] [Date: 2022-07-20 11:55:48 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[20-Jul-2022 11:55:48] [Date: 2022-07-20 11:55:48 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[20-Jul-2022 11:55:53] [Date: 2022-07-20 11:55:53 | inaki2022 connect succesfully to 'information_schema']
+[20-Jul-2022 11:55:53] [Date: 2022-07-20 11:55:53 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[20-Jul-2022 11:55:56] [Date: 2022-07-20 11:55:56 | inaki2022 connect succesfully to 'information_schema']
+[20-Jul-2022 11:55:56] [Date: 2022-07-20 11:55:56 | inaki2022 execute succesfully Sql Query in DB: information_schema
+ 'select table_name, column_name, column_type, column_key from information_schema.columns where table_schema = SCHEMA() order by table_name asc LIMIT 20']
+[20-Jul-2022 11:56:19] [Date: 2022-07-20 11:56:19 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[20-Jul-2022 11:56:19] [Date: 2022-07-20 11:56:19 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[20-Jul-2022 11:56:22] [Date: 2022-07-20 11:56:22 | inaki2022 connect succesfully to 'information_schema']
+[20-Jul-2022 11:56:22] [Date: 2022-07-20 11:56:22 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[20-Jul-2022 11:56:25] [Date: 2022-07-20 11:56:25 | inaki2022 connect succesfully to 'information_schema']
+[20-Jul-2022 11:56:25] [Date: 2022-07-20 11:56:25 | inaki2022 execute succesfully Sql Query in DB: information_schema
+ 'select table_name, column_name, column_type, column_key from information_schema.columns where table_schema = SCHEMA() order by table_name asc LIMIT 20']
+[20-Jul-2022 11:56:39] [Date: 2022-07-20 11:56:39 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[20-Jul-2022 11:56:39] [Date: 2022-07-20 11:56:39 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[20-Jul-2022 11:56:43] [Date: 2022-07-20 11:56:43 | inaki2022 connect succesfully to 'information_schema']
+[20-Jul-2022 11:56:43] [Date: 2022-07-20 11:56:43 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[20-Jul-2022 11:56:46] [Date: 2022-07-20 11:56:46 | inaki2022 connect succesfully to 'information_schema']
+[20-Jul-2022 11:56:46] [Date: 2022-07-20 11:56:46 | inaki2022 execute succesfully Sql Query in DB: information_schema
+ 'select table_name, column_name, column_type, column_key from information_schema.columns where table_schema = SCHEMA() order by table_name asc LIMIT 20']
+[20-Jul-2022 11:57:19] [Date: 2022-07-20 11:57:19 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[20-Jul-2022 11:57:20] [Date: 2022-07-20 11:57:20 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[20-Jul-2022 11:57:21] [Date: 2022-07-20 11:57:21 | inaki2022 CONNECT DB 'null' FAIL !SQLSTATE[HY000] [1044] Access denied for user 'inaki2022'@'%' to database 'null']
+[20-Jul-2022 11:58:09] [Date: 2022-07-20 11:58:09 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[20-Jul-2022 11:58:09] [Date: 2022-07-20 11:58:09 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[20-Jul-2022 11:58:12] [Date: 2022-07-20 11:58:12 | inaki2022 connect succesfully to 'information_schema']
+[20-Jul-2022 11:58:12] [Date: 2022-07-20 11:58:12 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[20-Jul-2022 11:58:23] [Date: 2022-07-20 11:58:23 | inaki2022 connect succesfully to 'information_schema']
+[20-Jul-2022 11:58:23] [Date: 2022-07-20 11:58:23 | inaki2022 execute succesfully Sql Query in DB: information_schema
+ 'SELECT table_name, column_name FROM information_schema.columns WHERE table_schema = SCHEMA() ORDER BY table_name asc']
+[20-Jul-2022 11:59:14] [Date: 2022-07-20 11:59:14 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[20-Jul-2022 11:59:14] [Date: 2022-07-20 11:59:14 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[20-Jul-2022 11:59:17] [Date: 2022-07-20 11:59:17 | inaki2022 connect succesfully to 'information_schema']
+[20-Jul-2022 11:59:17] [Date: 2022-07-20 11:59:17 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[20-Jul-2022 11:59:43] [Date: 2022-07-20 11:59:43 | inaki2022 connect succesfully to 'information_schema']
+[20-Jul-2022 11:59:43] [Date: 2022-07-20 11:59:43 | inaki2022 execute succesfully Sql Query in DB: information_schema
+ 'SELECT table_name, column_name, column_type, column_key FROM information_schema.columns WHERE table_schema = SCHEMA() ORDER BY table_name asc;']
+[20-Jul-2022 12:00:08] [Date: 2022-07-20 12:00:08 | inaki2022 connect succesfully to 'information_schema']
+[20-Jul-2022 12:00:08] [Date: 2022-07-20 12:00:08 | inaki2022 execute succesfully Sql Query in DB: information_schema
+ 'SELECT table_name, column_name, column_type, column_key FROM information_schema.columns WHERE table_schema = SCHEMA() ORDER BY table_name asc;']
+[20-Jul-2022 12:01:00] [Date: 2022-07-20 12:01:00 | inaki2022 connect succesfully to 'information_schema']
+[20-Jul-2022 12:01:00] [Date: 2022-07-20 12:01:00 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[20-Jul-2022 12:01:02] [Date: 2022-07-20 12:01:02 | inaki2022 connect succesfully to 'information_schema']
+[20-Jul-2022 12:01:02] [Date: 2022-07-20 12:01:02 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[20-Jul-2022 12:01:06] [Date: 2022-07-20 12:01:06 | inaki2022 connect succesfully to 'information_schema']
+[20-Jul-2022 12:01:06] [Date: 2022-07-20 12:01:06 | inaki2022 execute succesfully Sql Query in DB: information_schema
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[20-Jul-2022 12:01:22] [Date: 2022-07-20 12:01:22 | inaki2022 connect succesfully to '8661316_laninaki22']
+[20-Jul-2022 12:01:22] [Date: 2022-07-20 12:01:22 | inaki2022 execute succesfully Sql Query in DB: 8661316_laninaki22
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[20-Jul-2022 12:01:46] [Date: 2022-07-20 12:01:46 | root connect succesfully to '127.0.0.1'][20-Jul-2022 12:01:46] [Date: 2022-07-20 12:01:46 | root connect succesfully to '127.0.0.1'][20-Jul-2022 12:01:46] [Date: 2022-07-20 12:01:46 | root connect succesfully to '127.0.0.1']
+
+
+[20-Jul-2022 12:01:47] [Date: 2022-07-20 12:01:47 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;'][20-Jul-2022 12:01:47] [Date: 2022-07-20 12:01:47 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+20-Jul-2022 12:01:47] [Date: 2022-07-20 12:01:47 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+
+[20-Jul-2022 12:01:53] [Date: 2022-07-20 12:01:53 | root connect succesfully to 'penjub']
+[20-Jul-2022 12:01:53] [Date: 2022-07-20 12:01:53 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[20-Jul-2022 12:02:58] [Date: 2022-07-20 12:02:58 | root connect succesfully to 'penjub']
+[20-Jul-2022 12:02:58] [Date: 2022-07-20 12:02:58 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[20-Jul-2022 12:03:03] [Date: 2022-07-20 12:03:03 | root connect succesfully to 'penjub']
+[20-Jul-2022 12:03:04] [Date: 2022-07-20 12:03:04 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[20-Jul-2022 12:03:05] [Date: 2022-07-20 12:03:05 | root connect succesfully to 'penjub']
+[20-Jul-2022 12:03:05] [Date: 2022-07-20 12:03:05 | select query in penjub FAILED 
+ 'SELECT * FROM null LIMIT 10;' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'null LIMIT 10' at line 1]
+[20-Jul-2022 12:03:06] [Date: 2022-07-20 12:03:06 | root connect succesfully to 'penjub']
+[20-Jul-2022 12:03:06] [Date: 2022-07-20 12:03:06 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[20-Jul-2022 12:03:09] [Date: 2022-07-20 12:03:09 | root connect succesfully to 'penjub']
+[20-Jul-2022 12:03:09] [Date: 2022-07-20 12:03:09 | root execute succesfully show tables query
+ 'SHOW TABLES;']
