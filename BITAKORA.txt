@@ -1,47 +1,86 @@
 77PENDIENTE
 
 LOGIN 
-    - login como root:
-        - que te pida clave como root, y la guarde en mysql.users
-        - por tanto, habría que redefinir la carga inicial buscando las claves en musql.users
-          y no el file config.servers... ver pro's y contra's
-    - creación de usuarios
-    - login email para el usuario, y opción se te olvidó....
+  - login como root:
+      - que te pida clave como root, y la guarde en mysql.users
+      - por tanto, habría que redefinir la carga inicial buscando las claves en musql.users
+        y no el file config.servers... ver pro's y contra's
+  - creación de usuarios
+  - login email para el usuario, y opción se te olvidó....
 
 display_sql_result -> colocar al inicio <p id='sql-query'></p> , letra pequeña, color vinotinto    
 
 BUTTONS "nav-btns"
-    - definir cuáles van de acuerdo a la ruta elegida pr el usuario   
-      - 
+  - definir cuáles van de acuerdo a la ruta elegida pr el usuario   
+  - 
+
+PAGINATION 
+  - https://stackoverflow.com/questions/20364349/pagination-using-mysql-limit-offset
+
 
 CASO SQL-BTN -> cónsola "query-btn"
 
-    - actualizar "#left_aside" con info DB y despligue lista tablas:
-        - con efecto hover que presente campos de columnas de cada tabla 
-        - posible check box para elegir algunas tablas para armar query con joins.... 
+  - Tbl queries_fav in 
 
-    - subdividir 'der-console' en :
-      - área para escribir sql y ejecutar       
-      - area resultado: caso positivo tabla, caso error: mensaje y help
+  - btns: 
+    - Check syntaxis
+    - help iframe using google ???
+
+  - actualizar "#left_aside" con info DB y despligue lista tablas:
+      - con efecto hover que presente campos de columnas de cada tabla 
+      - posible check box para elegir algunas tablas para armar query con joins.... 
+
+  - subdividir 'der-console' en :
+    - área para escribir sql y ejecutar       
+    - area resultado: caso positivo tabla, caso error: mensaje y help
 
 
-    - read host and db and check last query char of textarea value. if is ; , delete  
+  - read host and db and check last query char of textarea value. if is ; , delete  
 
-    - add select pagination
+  - add select pagination
 
-    - Limpiar area al salir de la consola "sql" ✔
+  - Limpiar area al salir de la consola "sql" ✔
 
 ADD listener to display DB of selected host (like it is done with DB listener with tables associated)
 
-ADD to display_left_aside tables in case sql-btn active
-    - data of table: columns with their attributes    
+ADD listener to display_left_aside tables in case sql-btn active
+  - desc of table columns
 
+
+REVISAR la lógica del '#left_aside' respecto a buttons invoacados
+  - hacer navegación y verificar cuando debe hacerse clear del área
+
+
+-------------------------------------------------------------------------------------------
 
 DOWNLOAD & INSTALATION procedure with readme.md
 
 
+*******************************************************************************************
 
-DIAGRAM OF DB RELATIONS
+INFORMATION_SCHEMA system tables
+
+  You can extract metadata about schema objects managed by InnoDB using InnoDB INFORMATION_SCHEMA system tables. 
+  This information comes from the InnoDB internal system tables (also referred to as the InnoDB data dictionary), 
+  which cannot be queried directly like regular InnoDB tables. Traditionally, you would get this type of 
+  information using the techniques from Section 14.18, “InnoDB Monitors”, setting up InnoDB monitors and 
+  parsing the output from the SHOW ENGINE INNODB STATUS statement. The InnoDB INFORMATION_SCHEMA table 
+  interface allows you to query this data using SQL....
+  https://dev.mysql.com/doc/refman/5.7/en/innodb-information-schema-system-tables.html
+
+  MySQL supports foreign keys, which permit cross-referencing related data across tables, and foreign key constraints, 
+  which help keep the related data consistent.
+  A foreign key relationship involves a parent table that holds the initial column values, and a child table with 
+  column values that reference the parent column values. A foreign key constraint is defined on the child table.
+  https://dev.mysql.com/doc/refman/5.6/en/create-table-foreign-keys.html
+
+FOREIGN KEYS 
+  https://www.techrepublic.com/article/an-introduction-to-foreign-keys-and-referential-integrity-in-mysql/
+
+
+*********************************************************************************************
+
+DIAGRAM OF DB RELATIONS FROM SCRACHT
 
   - https://stackoverflow.com/questions/20855065/how-to-find-all-the-relations-between-all-mysql-tables
   - https://tableplus.com/blog/2018/08/mysql-how-to-see-foreign-key-relationship-of-a-table.html

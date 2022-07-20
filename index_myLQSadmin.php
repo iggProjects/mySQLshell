@@ -163,25 +163,28 @@ echo "
 
             case 'btn-sql':   
 
-                // definir altura 'display-sql-console-Up'
+                // height for 'display-sql-console-Up'
                 document.getElementById('display-sql-console-Up').style.height='30%';
 
-                // definir altura 'display-sql-console-Down'
+                // height 'display-sql-console-Down'
                 document.getElementById('display-sql-console-Down').style.height='58%';
                 
+                // clear areas
                 document.getElementById('display_left_aside').innerHTML = "";
+                document.getElementById('display-sql-console-Down').innerHTML = "";
+                document.getElementById('display-sql-console-Down').innerHTML = "";
 
                 // Update tag display-result-nav-title with only Host and DB
                 table_param.removeAttribute('table-name');   
                 table_param.innerHTML = 'Host: \"' + table_param.getAttribute('host') + '\"' + '<br><span style=\"font-size:20px;color:blue;\">DB: \"' + table_param.getAttribute('db') + '</span>';
 
-                // tag for display host, DB, table in second NAV
-
-
+                // tag for display BUTTONS table in second NAV 
                 btns = document.querySelectorAll(".nav-btn");               
 
                 for ( var i=0; i<btns.length; i++ ) { 
-                    if ( btns[i].id != 'btn-sql' && btns[i].id != 'btn-export' ) {  btns[i].classList.toggle("hideBtn"); }  
+                    if ( btns[i].id != 'btn-desc' && btns[i].id != 'btn-view' && btns[i].id != 'btn-sql' && btns[i].id != 'btn-export' && btns[i].id != 'btn-import' ) {  
+                        btns[i].classList.toggle("hideBtn"); 
+                    }  
                 } 
                 
                 // document.getElementById('display-result-nav-title').innerHTML="";
@@ -223,12 +226,23 @@ echo "
     function execute_query(){
 
         // read query
-        var _query = document.getElementById("sql-query-area").value;      
+        var _query = document.getElementById("sql-query-area").value;          
         
 
         // IF to check: host and DB exists & query is not empty
         // capture host and db from tag -> #display-result-nav-title
-        if ( _query == "" ) { alert('write an sql query ! 😎') } else {
+        var table_param = document.getElementById('display-result-nav-title');
+
+        if ( _query == "" || table_param.getAttribute('host') == null || table_param.getAttribute('db') == null ) { 
+            alert('check if you select HOST, DB and you write an sql query ! 😎') } 
+        else {
+
+            // reducir altura 'display-sql-console-Up'
+            document.getElementById('display-sql-console-Up').style.height='15%';
+
+            // aumentar altura 'display-sql-console-Down'
+            document.getElementById('display-sql-console-Down').style.height='73%';  
+
 
             // verificar si último char es ;. Caso positivo, eliminar el char
 
