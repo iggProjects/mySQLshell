@@ -18,13 +18,19 @@ PAGINATION
   - https://stackoverflow.com/questions/20364349/pagination-using-mysql-limit-offset
 
 
+BUTTONS 
+  - check for type cols, cases 'BLOB' (example: mediumblob in 'tbl_arch_imagen_persona' in penjub)
+
+  - Check syntaxis, and change especial words to uppercase and color blue.... 
+      (SELECT, FROM, WHERE, INNER JOIN, ORDER BY, ....)
+  - help iframe using google ???
+
+
+
 CASO SQL-BTN -> cónsola "query-btn"
 
   - Tbl queries_fav in 
 
-  - btns: 
-    - Check syntaxis
-    - help iframe using google ???
 
   - actualizar "#left_aside" con info DB y despligue lista tablas:
       - con efecto hover que presente campos de columnas de cada tabla 
