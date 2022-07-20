@@ -71,8 +71,10 @@
     /*color:#003300;*/
   }
 
+  .showDiv { display:block; }
   .hideDiv { display:none; }
 
+  .showBtn { display:block; }
   .hideBtn { display:none; }
   
   .disp-row-center {

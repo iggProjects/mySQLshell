@@ -67,31 +67,40 @@ echo "
             echo "<div class='div-der disp-row-center'>";
 
                     echo "<div class='nav-btns disp-col-center'>";
-                        echo "<button id='btn-desc' class='nav-btn'>Desc<br>Table</button>";
-                        echo "<button id='btn-view' class='nav-btn'>View<br>Table</button>";
-                        echo "<button id='btn-sql' class='nav-btn'>Make<br>Query</button>";
-                        echo "<button id='btn-export' class='nav-btn'>Export</button>";
-                        echo "<button id='btn-import' class='nav-btn'>Import</button>";
-                        echo "<button id='btn-privil' class='nav-btn'>Privileges</button>";
-                        echo "<button id='btn-bakcup' class='nav-btn'>Backup</button>";
-                        echo "<button id='btn-restore' class='nav-btn'>Restore</button>";
+                        echo "<button id='btn-desc' class='nav-btn showBtn'>Desc<br>Table</button>";
+                        echo "<button id='btn-view' class='nav-btn showBtn'>View<br>Table</button>";
+                        echo "<button id='btn-sql' class='nav-btn showBtn'>Make<br>Query</button>";
+                        echo "<button id='btn-export' class='nav-btn showBtn'>Export</button>";
+                        echo "<button id='btn-import' class='nav-btn showBtn'>Import</button>";
+                        echo "<button id='btn-privil' class='nav-btn showBtn'>Privileges</button>";
+                        echo "<button id='btn-bakcup' class='nav-btn showBtn'>Backup</button>";
+                        echo "<button id='btn-restore' class='nav-btn showBtn'>Restore</button>";
                     echo "</div>";
 
                     echo "<div class='der-console disp-row-center' >";
 
                         echo "<div id='display_result'>
-                            <div class='display-result-nav'><p id='display-result-nav-title'></p></div>                            
-                            <div id='display_sql_result'></div>
+                            <div class='display-result-nav'><p id='display-result-nav-title'></p></div> 
+
+                            <div id='display_sql_result' class='showDiv'></div>
+
                             <div id='display-sql-console-Up' class='hideDiv'>
+
                                 <div class='display-sql-console-Up-btns disp-row-center'>
-                                    <button id='extend-console-up-btn' onclick='height_up()''><img src='./assets/img-igg/icons8-expand-48.png' alt='up' width='15' height='15'></button>
+                                    <button id='extend-console-up-btn' onclick='height_up()'><img src='./assets/img-igg/icons8-expand-48.png' alt='up' width='15' height='15'></button>
                                     <button id='query-btn' onclick='execute_query()'>Process Query</button>
+                                    <button id='go-back-btn' onclick='go_back()'>Go back</button>                                    
                                     <button id='compress-console-up-btn' onclick='height_compress()'><img src='./assets/img-igg/compress-48.png' alt='up' width='15' height='15'></button>
                                 </div>
-                                <textarea id='sql-query-area' placeholder='write your sql query....'></textarea>                                
+
+                                <textarea id='sql-query-area' placeholder='write your sql query....'></textarea>       
+
                             </div>
+
                             <div id='display-sql-console-Down' class='hideDiv' placeholder='query result area' style='color:blue;'>____ query result area ____</div>
+                        
                         </div>";
+
                         echo "<div id='left_aside'>
                             <div class='display_left_aside-comment'><p id='p-comment'>TABLE INFO</p></div>
                             <div id='display_left_aside'></div>
@@ -123,6 +132,7 @@ echo "
             document.getElementById('hostNavIzq').innerHTML = hostSelected.value; 
             
             if (hostSelected.value != 0 ) {
+
                 // call ajax function to display DB-info area in div_nav_izq
                 php_sql_url = './include/AJAX_php_js/ajax_Display_div_nav_izq.php?hostName='+hostSelected.value;
                 console.log('ajax php=> ' + php_sql_url); 
@@ -133,7 +143,8 @@ echo "
                 table_param.setAttribute('host',hostSelected.value);
                 table_param.innerHTML = "host: " + hostSelected.value;
 
-                Display_div_nav_izq('html_div_nav_izq',host_array,php_sql_url);                
+                Display_div_nav_izq('html_div_nav_izq',host_array,php_sql_url);   
+
             } else {
                 document.getElementById('html_div_nav_izq').innerHTML = ""; 
                 document.getElementById('display-result-nav-title').innerHTML = ""; 
@@ -152,56 +163,69 @@ echo "
 
         var table_param = document.getElementById('display-result-nav-title');
         var _tag = 'display_sql_result';
-        document.getElementById(_tag).innerHTML = "";
-        document.getElementById("sql-query-area").value = "";        
+        document.getElementById(_tag).innerHTML = "";        
 
         switch (this.id) {
 
-            case 'btn-desc':                
+            case 'btn-desc':    
+                if ( document.getElementById('display-sql-console-Down').className == 'showDiv' ) { _tag = 'display-sql-console-Down'; }            
                 Fetch_js(_tag,'./include/AJAX_php_js/ajax_DescribeTbl.php?hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table'));                                    
                 break;
 
-            case 'btn-view':                
+            case 'btn-view':   
+                if ( document.getElementById('display-sql-console-Down').className == 'showDiv' ) { _tag = 'display-sql-console-Down'; }                         
                 Fetch_js(_tag,'./include/AJAX_php_js/ajax_ViewTbl.php?hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table'));
                 break;    
 
             case 'btn-sql':   
 
+            /*    
+                // clear areas
+                document.getElementById('display_left_aside').innerHTML = "";
+                document.getElementById('display-sql-console-Up').innerHTML = "";
+                document.getElementById('display-sql-console-Down').innerHTML = "";
+            */        
+                // textarea 'sql-query-area' 
+                //document.getElementById("sql-query-area").value = "";  
+
+                // Hide 'display_sql_result'
+                document.getElementById('display_sql_result').classList.remove("showDiv");
+                document.getElementById('display_sql_result').classList.add("hideDiv");                
+                // show 'display-sql-console-Up'
+                document.getElementById('display-sql-console-Up').classList.remove("hideDiv");
+                document.getElementById('display-sql-console-Up').classList.add("showDiv");
+                // show 'display-sql-console-Down'
+                document.getElementById('display-sql-console-Down').classList.remove("hideDiv");
+                document.getElementById('display-sql-console-Down').classList.add("showDiv");
+
+                // hide button 'up'
+                document.getElementById('extend-console-up-btn').style.display='none';
+                // hide button 'up'
+                document.getElementById('compress-console-up-btn').style.display='none';
+
                 // height for 'display-sql-console-Up'
                 document.getElementById('display-sql-console-Up').style.height='30%';
-
                 // height 'display-sql-console-Down'
                 document.getElementById('display-sql-console-Down').style.height='58%';
                 
-                // clear areas
-                document.getElementById('display_left_aside').innerHTML = "";
-                document.getElementById('display-sql-console-Down').innerHTML = "";
-                document.getElementById('display-sql-console-Down').innerHTML = "";
-                // display button 'up'
-                document.getElementById('extend-console-up-btn').style.display='none';
-                // display button 'up'
-                document.getElementById('compress-console-up-btn').style.display='none';
 
                 // Update tag display-result-nav-title with only Host and DB
                 table_param.removeAttribute('table-name');   
                 table_param.innerHTML = 'Host: \"' + table_param.getAttribute('host') + '\"' + '<br><span style=\"font-size:20px;color:blue;\">DB: \"' + table_param.getAttribute('db') + '</span>';
 
                 // tag for display BUTTONS table in second NAV 
-                btns = document.querySelectorAll(".nav-btn");               
-
+                btns = document.querySelectorAll(".nav-btn");   
                 for ( var i=0; i<btns.length; i++ ) { 
-                    if ( btns[i].id != 'btn-desc' && btns[i].id != 'btn-view' && btns[i].id != 'btn-sql' && btns[i].id != 'btn-export' && btns[i].id != 'btn-import' ) {  
-                        btns[i].classList.toggle("hideBtn"); 
+                    if ( btns[i].id != 'btn-desc' && btns[i].id != 'btn-view' && btns[i].id != 'btn-export' && btns[i].id != 'btn-import' ) {  
+                    // if ( btns[i].id != 'btn-desc' && btns[i].id != 'btn-view' && btns[i].id != 'btn-sql' && btns[i].id != 'btn-export' && btns[i].id != 'btn-import' ) {      
+                        // btns[i].classList.toggle("hideBtn"); 
+                        btns[i].classList.remove("showBtn");
+                        btns[i].classList.add("hideBtn");
                     }  
-                } 
-                
+                }                
+
                 // document.getElementById('display-result-nav-title').innerHTML="";
                 document.getElementById('p-comment').innerHTML='TABLES';        
-                
-                document.getElementById('display_sql_result').classList.toggle("hideDiv");  
-                document.getElementById('display-sql-console-Up').classList.toggle("hideDiv");        
-                document.getElementById('display-sql-console-Down').classList.toggle("hideDiv");  
-                
                 // tag for show tables of DB selected
                 _tag= 'display_left_aside';   
                 Fetch_js(_tag,'./include/AJAX_php_js/ajax_ListTables.php?hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db'));
@@ -229,8 +253,34 @@ echo "
     for (var i = 0; i < buttonSelected.length; i++) {
         buttonSelected[i].addEventListener('click', doButtonAction, false);
     }
-
   
+    
+    function go_back() {
+
+        
+        // show 'display_sql_result'
+        document.getElementById('display_sql_result').classList.remove("hideDiv");
+        document.getElementById('display_sql_result').classList.add("showDiv");       
+        
+        // change classof #display-sql-console-Down to hideDiv
+        document.getElementById('display-sql-console-Down').classList.remove("showDiv");
+        document.getElementById('display-sql-console-Down').classList.add("hideDiv");
+
+
+        // tag for display BUTTONS table in second NAV 
+        btns = document.querySelectorAll(".nav-btn");   
+        for ( var i=0; i<btns.length; i++ ) { 
+            if ( btns[i].id != 'btn-desc' && btns[i].id != 'btn-view' && btns[i].id != 'btn-export' && btns[i].id != 'btn-import' ) {  
+            //if ( btns[i].id != 'btn-desc' && btns[i].id != 'btn-view' && btns[i].id != 'btn-sql' && btns[i].id != 'btn-export' && btns[i].id != 'btn-import' ) {      
+                btns[i].classList.remove("hideBtn");
+                btns[i].classList.add("showBtn");
+           }  
+        } 
+
+    }    
+
+
+
     function execute_query(){
 
         // read query
@@ -249,16 +299,12 @@ echo "
             // display button 'up'
             document.getElementById('compress-console-up-btn').style.display='block';
 
-
             // reducir altura 'display-sql-console-Up'
             document.getElementById('display-sql-console-Up').style.height='15%';
-
             // aumentar altura 'display-sql-console-Down'
             document.getElementById('display-sql-console-Down').style.height='73%';  
 
-
             // verificar si último char es ;. Caso positivo, eliminar el char
-
 
             // add 'LIMIT 20' if is a SELECT query (buscar palabra SELECT in string)
             if ( _query.includes("select")  ) { _query += ' LIMIT 20'; }     
@@ -290,6 +336,7 @@ echo "
         // document.getElementById('p-comment').innerHTML = "";
         document.getElementById('display_left_aside').innerHTML = "";
     }
+
 
 
     function height_up() {
