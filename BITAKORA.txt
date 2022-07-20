@@ -17,6 +17,10 @@ BUTTONS "nav-btns"
 PAGINATION 
   - https://stackoverflow.com/questions/20364349/pagination-using-mysql-limit-offset
 
+HOST BASIC INFO WHEN SELECTED
+  tag #left-aside
+
+
 
 BUTTONS 
   - check for type cols, cases 'BLOB' (example: mediumblob in 'tbl_arch_imagen_persona' in penjub)
@@ -25,11 +29,23 @@ BUTTONS
       (SELECT, FROM, WHERE, INNER JOIN, ORDER BY, ....)
   - help iframe using google ???
 
+  - check that basic info exist
 
-
+  
 CASO SQL-BTN -> cónsola "query-btn"
 
+  - go-back : clear tags.innerHTML
+
   - Tbl queries_fav in 
+
+  - btns for database information like relations between tables, ......
+    - example: 
+      SELECT table_name, column_name, column_type, column_key 
+        FROM information_schema.columns WHERE table_schema = SCHEMA() ORDER BY table_name asc
+
+      SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL 
+        FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+        WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()    
 
 
   - actualizar "#left_aside" con info DB y despligue lista tablas:

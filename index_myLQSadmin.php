@@ -258,13 +258,20 @@ echo "
     function go_back() {
 
         
-        // show 'display_sql_result'
+        // show 'display_sql_result' and clear html
         document.getElementById('display_sql_result').classList.remove("hideDiv");
-        document.getElementById('display_sql_result').classList.add("showDiv");       
+        document.getElementById('display_sql_result').classList.add("showDiv");     
+        document.getElementById('display_sql_result').innerHTML = "";
+
+        // change class of #display-sql-console-Down to hideDiv and clear html
+        document.getElementById('display-sql-console-Up').classList.remove("showDiv");
+        document.getElementById('display-sql-console-Up').classList.add("hideDiv");  
+        document.getElementById('display-sql-console-Up').innerHTML = "";      
         
-        // change classof #display-sql-console-Down to hideDiv
+        // change class of #display-sql-console-Down to hideDiv and clear html
         document.getElementById('display-sql-console-Down').classList.remove("showDiv");
         document.getElementById('display-sql-console-Down').classList.add("hideDiv");
+        document.getElementById('display-sql-console-Down').innerHTML = "";      
 
 
         // tag for display BUTTONS table in second NAV 
