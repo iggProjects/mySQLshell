@@ -10211,3 +10211,90 @@
 [21-Jul-2022 12:44:02] [Date: 2022-07-21 12:44:02 | root connect succesfully to 'penjub']
 [21-Jul-2022 12:44:02] [Date: 2022-07-21 12:44:02 | root execute succesfully Select query in penjub
  'SELECT * FROM tbl_archivos LIMIT 10;']
+[21-Jul-2022 12:50:40] [Date: 2022-07-21 12:50:40 | root connect succesfully to '127.0.0.1']
+[21-Jul-2022 12:50:40] [Date: 2022-07-21 12:50:40 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[21-Jul-2022 12:50:44] [Date: 2022-07-21 12:50:44 | root connect succesfully to 'employees']
+[21-Jul-2022 12:50:44] [Date: 2022-07-21 12:50:44 | root execute succesfully show tables query
+ 'desc departments;']
+[21-Jul-2022 12:50:45] [Date: 2022-07-21 12:50:45 | root connect succesfully to 'employees']
+[21-Jul-2022 12:50:45] [Date: 2022-07-21 12:50:45 | root execute succesfully show tables query
+ 'describe departments;']
+[21-Jul-2022 12:50:46] [Date: 2022-07-21 12:50:46 | root connect succesfully to 'employees']
+[21-Jul-2022 12:50:46] [Date: 2022-07-21 12:50:46 | root execute succesfully Select query in employees
+ 'SELECT * FROM departments LIMIT 10;']
+[21-Jul-2022 12:50:51] [Date: 2022-07-21 12:50:51 | root connect succesfully to 'employees']
+[21-Jul-2022 12:50:51] [Date: 2022-07-21 12:50:51 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[21-Jul-2022 12:50:55] [Date: 2022-07-21 12:50:55 | root connect succesfully to 'employees']
+[21-Jul-2022 12:50:55] [Date: 2022-07-21 12:50:55 | root execute succesfully show tables query
+ 'describe dept_manager;']
+[21-Jul-2022 12:50:56] [Date: 2022-07-21 12:50:56 | root connect succesfully to 'employees']
+[21-Jul-2022 12:50:56] [Date: 2022-07-21 12:50:56 | root execute succesfully Select query in employees
+ 'SELECT * FROM dept_manager LIMIT 10;']
+[21-Jul-2022 12:51:22] [Date: 2022-07-21 12:51:22 | root connect succesfully to '127.0.0.1']
+[21-Jul-2022 12:51:22] [Date: 2022-07-21 12:51:22 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[21-Jul-2022 12:51:29] [Date: 2022-07-21 12:51:29 | root connect succesfully to 'information_schema']
+[21-Jul-2022 12:51:29] [Date: 2022-07-21 12:51:29 | root execute succesfully show tables query
+ 'desc ALL_PLUGINS;']
+[21-Jul-2022 12:51:42] [Date: 2022-07-21 12:51:42 | root connect succesfully to 'penjub']
+[21-Jul-2022 12:51:42] [Date: 2022-07-21 12:51:42 | root execute succesfully show tables query
+ 'desc tbl_archivos;']
+[21-Jul-2022 12:51:46] [Date: 2022-07-21 12:51:46 | root connect succesfully to 'penjub']
+[21-Jul-2022 12:51:46] [Date: 2022-07-21 12:51:46 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[21-Jul-2022 12:52:07] [Date: 2022-07-21 12:52:07 | root connect succesfully to 'penjub']
+[21-Jul-2022 12:52:07] [Date: 2022-07-21 12:52:07 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad LIMIT 10;']
+[21-Jul-2022 12:52:09] [Date: 2022-07-21 12:52:09 | root connect succesfully to 'penjub']
+[21-Jul-2022 12:52:09] [Date: 2022-07-21 12:52:09 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[21-Jul-2022 12:52:17] [Date: 2022-07-21 12:52:17 | root connect succesfully to 'penjub']
+[21-Jul-2022 12:52:17] [Date: 2022-07-21 12:52:17 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona LIMIT 10;']
+[21-Jul-2022 12:52:19] [Date: 2022-07-21 12:52:19 | root connect succesfully to 'penjub']
+[21-Jul-2022 12:52:19] [Date: 2022-07-21 12:52:19 | root execute succesfully show tables query
+ 'describe tbl_persona;']
+[21-Jul-2022 12:52:43] [Date: 2022-07-21 12:52:43 | root connect succesfully to '127.0.0.1']
+[21-Jul-2022 12:52:43] [Date: 2022-07-21 12:52:43 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[21-Jul-2022 12:52:48] [Date: 2022-07-21 12:52:48 | root connect succesfully to 'penjub']
+[21-Jul-2022 12:52:48] [Date: 2022-07-21 12:52:48 | root execute succesfully show tables query
+ 'desc tbl_arch_imagen_persona;']
+[21-Jul-2022 12:52:50] [Date: 2022-07-21 12:52:50 | root connect succesfully to 'penjub']
+[21-Jul-2022 12:52:50] [Date: 2022-07-21 12:52:50 | root execute succesfully show tables query
+ 'describe tbl_arch_imagen_persona;']
+[21-Jul-2022 12:52:51] [Date: 2022-07-21 12:52:51 | root connect succesfully to 'penjub']
+[21-Jul-2022 12:52:51] [Date: 2022-07-21 12:52:51 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_arch_imagen_persona LIMIT 10;']
+[21-Jul-2022 12:53:02] [Date: 2022-07-21 12:53:02 | root connect succesfully to 'mvc_example']
+[21-Jul-2022 12:53:02] [Date: 2022-07-21 12:53:02 | root execute succesfully show tables query
+ 'desc products;']
+[21-Jul-2022 12:53:03] [Date: 2022-07-21 12:53:03 | root connect succesfully to 'mvc_example']
+[21-Jul-2022 12:53:03] [Date: 2022-07-21 12:53:03 | root execute succesfully show tables query
+ 'describe products;']
+[21-Jul-2022 12:53:04] [Date: 2022-07-21 12:53:04 | root connect succesfully to 'mvc_example']
+[21-Jul-2022 12:53:04] [Date: 2022-07-21 12:53:04 | root execute succesfully Select query in mvc_example
+ 'SELECT * FROM products LIMIT 10;']
+[21-Jul-2022 12:53:09] [Date: 2022-07-21 12:53:09 | root connect succesfully to 'employees']
+[21-Jul-2022 12:53:09] [Date: 2022-07-21 12:53:09 | root execute succesfully show tables query
+ 'desc departments;']
+[21-Jul-2022 12:53:10] [Date: 2022-07-21 12:53:10 | root connect succesfully to 'employees']
+[21-Jul-2022 12:53:10] [Date: 2022-07-21 12:53:10 | root execute succesfully show tables query
+ 'describe departments;']
+[21-Jul-2022 12:53:11] [Date: 2022-07-21 12:53:11 | root connect succesfully to 'employees']
+[21-Jul-2022 12:53:11] [Date: 2022-07-21 12:53:11 | root execute succesfully Select query in employees
+ 'SELECT * FROM departments LIMIT 10;']
+[21-Jul-2022 12:53:16] [Date: 2022-07-21 12:53:16 | root connect succesfully to 'information_schema']
+[21-Jul-2022 12:53:16] [Date: 2022-07-21 12:53:16 | root execute succesfully show tables query
+ 'desc COLUMNS;']
+[21-Jul-2022 12:53:19] [Date: 2022-07-21 12:53:19 | root connect succesfully to 'information_schema']
+[21-Jul-2022 12:53:19] [Date: 2022-07-21 12:53:19 | root execute succesfully show tables query
+ 'describe COLUMNS;']
+[21-Jul-2022 12:53:19] [Date: 2022-07-21 12:53:19 | root connect succesfully to 'information_schema']
+[21-Jul-2022 12:53:20] [Date: 2022-07-21 12:53:20 | root execute succesfully Select query in information_schema
+ 'SELECT * FROM COLUMNS LIMIT 10;']
+[21-Jul-2022 12:53:37] [Date: 2022-07-21 12:53:37 | root connect succesfully to 'employees']
+[21-Jul-2022 12:53:37] [Date: 2022-07-21 12:53:37 | root execute succesfully show tables query
+ 'SHOW TABLES;']
