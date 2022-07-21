@@ -33,7 +33,10 @@ BUTTONS
 
   
 NAVEGACIÓN 
-  - chequear por qué se queda en blanco cuando regresas usando "go back"  
+  - chequear por qué se queda en blanco cuando regresas usando "go back"
+  - crear function update_nav -> #display-result-nav-title
+    Objetivo, mantener siempre actualizado el tag con los atributos: host, db, table
+    De esa manera, se manejan 
 
 
 CASO SQL-BTN -> cónsola "query-btn"
