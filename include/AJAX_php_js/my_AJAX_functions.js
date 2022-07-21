@@ -127,7 +127,16 @@ function Fetch_js(tag,php_sql_url){
     })
 
     .then(data => {        
-        document.getElementById(tag).innerHTML = data;         
+        
+        document.getElementById(tag).innerHTML = data;    
+
+        if ( tag == 'display_left_aside') {
+            var leftAside_Btn_Selected = document.getElementsByClassName('left-aside-btn');    
+            for (var i = 0; i < leftAside_Btn_Selected.length; i++) {
+                leftAside_Btn_Selected[i].addEventListener('click', doLeftAsideButtonAction, false);
+            }   
+        }
+
     })
 
     .catch(err => {

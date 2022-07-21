@@ -230,15 +230,6 @@ echo "
                 _tag= 'display_left_aside';   
                 Fetch_js(_tag,'./include/AJAX_php_js/ajax_ListTables.php?hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db'));
 
-                /*
-                    const query_btn = document.getElementById("query-btn");
-                    query_btn.addEventListener("click", alert('query-btn was called'));
-                
-                    document.querySelector('textarea').addEventListener('input', function (event) {
-                        console.log('textarea value: ' + event.target.value);
-                    });
-                */
-
                 break;    
 
             default:    
@@ -248,15 +239,29 @@ echo "
        
     } 
 
-    var buttonSelected = document.getElementsByClassName('nav-btn');
 
+    var buttonSelected = document.getElementsByClassName('nav-btn');
     for (var i = 0; i < buttonSelected.length; i++) {
         buttonSelected[i].addEventListener('click', doButtonAction, false);
     }
   
-    
-    function go_back() {
+/*    
+    var leftAside_Btn_Selected = document.getElementsByClassName('left-aside-btn');    
+    for (var i = 0; i < leftAside_Btn_Selected.length; i++) {
+        leftAside_Btn_Selected[i].addEventListener('click', doLeftAsideButtonAction, false);
+    }   
+*/
+    function doLeftAsideButtonAction(){
+        var table_Name = this.getAttribute('table-name');
+        // alert('table name' + table_Name );
+        var table_param = document.getElementById('display-result-nav-title');
+        table_param.setAttribute('table',table_Name);      
+        table_param.innerHTML = 'Host: \"' + table_param.getAttribute('host') + '\"';
+        table_param.innerHTML += ', DB: \"' + table_param.getAttribute('db') + '<br>';
+        table_param.innerHTML +='<span style=\"font-size:20px;color:blue;\">Table: ' + table_Name  + '</span>';
+    }    
 
+    function go_back() {
         
         // show 'display_sql_result' and clear html
         document.getElementById('display_sql_result').classList.remove("hideDiv");
@@ -273,7 +278,6 @@ echo "
         document.getElementById('display-sql-console-Down').classList.add("hideDiv");
         document.getElementById('display-sql-console-Down').innerHTML = "";      
 
-
         // tag for display BUTTONS table in second NAV 
         btns = document.querySelectorAll(".nav-btn");   
         for ( var i=0; i<btns.length; i++ ) { 
@@ -285,7 +289,6 @@ echo "
         } 
 
     }    
-
 
 
     function execute_query(){
@@ -331,7 +334,6 @@ echo "
 
     }    
 
-
     /*
     * Clear html of 'der-console associated tag's'  
     */
@@ -343,7 +345,6 @@ echo "
         // document.getElementById('p-comment').innerHTML = "";
         document.getElementById('display_left_aside').innerHTML = "";
     }
-
 
 
     function height_up() {
