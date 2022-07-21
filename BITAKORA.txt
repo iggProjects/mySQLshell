@@ -32,9 +32,14 @@ BUTTONS
   - check that basic info exist
 
   
+NAVEGACIÓN 
+  - chequear por qué se queda en blanco cuando regresas usando "go back"  
+
+
 CASO SQL-BTN -> cónsola "query-btn"
 
   - go-back : clear tags.innerHTML
+    CHEQUEAR table-param (dejá el nav en blanco) (ver si tiene que ver con clar areas)
 
   - Tbl queries_fav in 
 
