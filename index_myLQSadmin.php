@@ -102,7 +102,7 @@ echo "
                         </div>";
 
                         echo "<div id='left_aside'>
-                            <div class='display_left_aside-comment'><p id='p-comment'>TABLE INFO</p></div>
+                            <div class='display_left_aside-comment'><p id='p-comment'>INFO</p></div>
                             <div id='display_left_aside'></div>
                         </div>";
 
