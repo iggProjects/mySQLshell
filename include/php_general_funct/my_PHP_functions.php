@@ -246,7 +246,11 @@
                 echo "<tr>
                 <td style='text-align:center; padding-right:10px; font-size:12px; color:green; '>$i → </td>";      
                 foreach ( $row as $col ) {
-                    echo "<td style='text-align:center; font-size:13px; color:#1a1aff; padding-left:3px; padding-right:3px; '>" .$col . "</td>";
+                    if ( str_contains($_query, 'TABLES') ) {    
+                        echo "<td table-name= " . $col . " class='left-aside-btn' style='text-align:center; font-size:13px; color:#1a1aff; padding-left:3px; padding-right:3px;'>" .$col . "</td>";
+                    } else {
+                        echo "<td style='text-align:center; font-size:13px; color:#1a1aff; padding-left:3px; padding-right:3px; '>" .$col . "</td>";
+                    }    
                 }
                 echo "</tr>";
                 $i++;
