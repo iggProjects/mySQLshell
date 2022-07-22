@@ -1,12 +1,1 @@
-al aplicar go back, 
-    - si cambias de DB, pierdas el host y no agarras el nuevo DB
-    - si vuelvo a usar make query, no aparecen los botones dentro del textarea #sql-query-area
-    - 
-
- Qué debería pasar al hacer "go back"
-    - mantener host y db, borrar table
-    - listar tables de la DB in left-aside 
-
-
-revisar clearDerConsoleAreas
-
+- revisar #left-aside-nav en el caso de cambio de DB trabajando en la cónsole

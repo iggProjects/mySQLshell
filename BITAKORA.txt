@@ -1,4 +1,24 @@
-77PENDIENTE
+IÑAKI - DARREN 
+
+  1.- LOGIN
+  2.- HELP ERRORES
+  3.- DOWNLOAD
+  4.- DIAGRAM
+      - https://codepen.io/Nelms/pen/wvMMJg
+
+
+
+
+
+
+********************************************************************
+
+PENDIENTE IÑAKI
+
+CREDENCIALES CONEXIÓN A SERVERS (ajax_describeTbl.PHP, .................. )
+  - deben leer el array de config.servers.php (ahora está comentado...)
+  - el array está por índice, y no por nombre del host... verificar si vale la pena cambiar a 
+    un array asociativo y listo
 
 LOGIN 
   - login como root:
@@ -16,6 +36,8 @@ BUTTONS "nav-btns"
 
 PAGINATION 
   - https://stackoverflow.com/questions/20364349/pagination-using-mysql-limit-offset
+
+
 
 HOST BASIC INFO WHEN SELECTED
   tag #left-aside
@@ -44,7 +66,6 @@ NAVEGACIÓN
 
 
 CASO SQL-BTN -> cónsola "query-btn"
-
 
   - Tbl queries_fav in 
 

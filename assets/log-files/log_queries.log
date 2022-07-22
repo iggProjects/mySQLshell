@@ -10454,3 +10454,612 @@
 [21-Jul-2022 15:41:07] [Date: 2022-07-21 15:41:07 | inaki2022 connect succesfully to '8661316_laninaki22']
 [21-Jul-2022 15:41:08] [Date: 2022-07-21 15:41:08 | inaki2022 execute succesfully show tables query
  'SHOW TABLES;']
+[22-Jul-2022 15:05:28] [Date: 2022-07-22 15:05:28 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 15:05:29] [Date: 2022-07-22 15:05:29 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 15:05:34] [Date: 2022-07-22 15:05:34 | root connect succesfully to 'employees']
+[22-Jul-2022 15:05:34] [Date: 2022-07-22 15:05:34 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[22-Jul-2022 15:06:57] [Date: 2022-07-22 15:06:57 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 15:06:58] [Date: 2022-07-22 15:06:58 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 15:07:01] [Date: 2022-07-22 15:07:01 | root connect succesfully to 'employees']
+[22-Jul-2022 15:07:01] [Date: 2022-07-22 15:07:01 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[22-Jul-2022 15:25:01] [Date: 2022-07-22 15:25:01 | root connect succesfully to 'employees']
+[22-Jul-2022 15:25:01] [Date: 2022-07-22 15:25:01 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[22-Jul-2022 15:26:54] [Date: 2022-07-22 15:26:54 | root connect succesfully to 'employees']
+[22-Jul-2022 15:26:54] [Date: 2022-07-22 15:26:54 | root execute succesfully Sql Query in DB: employees
+ 'SELECT table_name TBL, round( (data_length / 1024 / 1024) , 2) SIZE_MB FROM information_schema.TABLES WHERE table_schema = SCHEMA()']
+[22-Jul-2022 15:28:12] [Date: 2022-07-22 15:28:12 | root connect succesfully to 'employees']
+[22-Jul-2022 15:28:12] [Date: 2022-07-22 15:28:12 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[22-Jul-2022 16:03:26] [Date: 2022-07-22 16:03:26 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 16:03:26] [Date: 2022-07-22 16:03:26 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 16:03:27] [Date: 2022-07-22 16:03:27 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 16:03:27] [Date: 2022-07-22 16:03:27 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 16:03:27] [Date: 2022-07-22 16:03:27 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 16:03:27] [Date: 2022-07-22 16:03:27 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:30:24] [Date: 2022-07-22 17:30:24 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:30:25] [Date: 2022-07-22 17:30:25 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:30:56] [Date: 2022-07-22 17:30:56 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 17:30:57] [Date: 2022-07-22 17:30:57 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:30:57] [Date: 2022-07-22 17:30:57 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 17:30:57] [Date: 2022-07-22 17:30:57 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:30:57] [Date: 2022-07-22 17:30:57 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 17:30:57] [Date: 2022-07-22 17:30:57 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:31:03] [Date: 2022-07-22 17:31:03 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:31:03] [Date: 2022-07-22 17:31:03 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:31:03] [Date: 2022-07-22 17:31:03 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:31:03] [Date: 2022-07-22 17:31:03 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:31:03] [Date: 2022-07-22 17:31:03 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:31:03] [Date: 2022-07-22 17:31:03 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:31:03] [Date: 2022-07-22 17:31:03 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:31:03] [Date: 2022-07-22 17:31:03 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:31:03] [Date: 2022-07-22 17:31:03 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:31:03] [Date: 2022-07-22 17:31:03 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:31:13] [Date: 2022-07-22 17:31:13 | root connect succesfully to 'igg-wordpress']
+[22-Jul-2022 17:31:13] [Date: 2022-07-22 17:31:13 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[22-Jul-2022 17:31:16] [Date: 2022-07-22 17:31:16 | root connect succesfully to 'igg-wordpress']
+[22-Jul-2022 17:31:16] [Date: 2022-07-22 17:31:16 | root execute succesfully Sql Query in DB: igg-wordpress
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[22-Jul-2022 17:31:23] [Date: 2022-07-22 17:31:23 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 17:31:23] [Date: 2022-07-22 17:31:23 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:31:23] [Date: 2022-07-22 17:31:23 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 17:31:23] [Date: 2022-07-22 17:31:23 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:31:23] [Date: 2022-07-22 17:31:23 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 17:31:24] [Date: 2022-07-22 17:31:24 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:31:24] [Date: 2022-07-22 17:31:24 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 17:31:24] [Date: 2022-07-22 17:31:24 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:31:24] [Date: 2022-07-22 17:31:24 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 17:31:24] [Date: 2022-07-22 17:31:24 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:31:24] [Date: 2022-07-22 17:31:24 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 17:31:24] [Date: 2022-07-22 17:31:24 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:31:24] [Date: 2022-07-22 17:31:24 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 17:31:24] [Date: 2022-07-22 17:31:24 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:31:30] [Date: 2022-07-22 17:31:30 | inaki2022 connect succesfully to '8661316_laninaki22']
+[22-Jul-2022 17:31:30] [Date: 2022-07-22 17:31:30 | inaki2022 execute succesfully Sql Query in DB: 8661316_laninaki22
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[22-Jul-2022 17:31:50] [Date: 2022-07-22 17:31:50 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:31:50] [Date: 2022-07-22 17:31:50 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:31:50] [Date: 2022-07-22 17:31:50 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:31:50] [Date: 2022-07-22 17:31:50 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:31:50] [Date: 2022-07-22 17:31:50 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:31:50] [Date: 2022-07-22 17:31:50 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:31:50] [Date: 2022-07-22 17:31:50 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:31:50] [Date: 2022-07-22 17:31:50 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:31:50] [Date: 2022-07-22 17:31:50 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:31:50] [Date: 2022-07-22 17:31:50 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:31:50] [Date: 2022-07-22 17:31:50 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:31:50] [Date: 2022-07-22 17:31:50 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:31:51] [Date: 2022-07-22 17:31:51 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:31:51] [Date: 2022-07-22 17:31:51 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:31:51] [Date: 2022-07-22 17:31:51 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:31:51] [Date: 2022-07-22 17:31:51 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:31:51] [Date: 2022-07-22 17:31:51 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:31:51] [Date: 2022-07-22 17:31:51 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:32:02] [Date: 2022-07-22 17:32:02 | root connect succesfully to 'employees']
+[22-Jul-2022 17:32:03] [Date: 2022-07-22 17:32:03 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[22-Jul-2022 17:32:10] [Date: 2022-07-22 17:32:10 | root connect succesfully to 'employees']
+[22-Jul-2022 17:32:10] [Date: 2022-07-22 17:32:10 | root execute succesfully Sql Query in DB: employees
+ 'SELECT table_name TBL, round( (data_length / 1024 / 1024) , 2) SIZE_MB FROM information_schema.TABLES WHERE table_schema = SCHEMA()']
+[22-Jul-2022 17:33:04] [Date: 2022-07-22 17:33:04 | root connect succesfully to 'employees']
+[22-Jul-2022 17:33:04] [Date: 2022-07-22 17:33:04 | root execute succesfully show tables query
+ 'desc salaries;']
+[22-Jul-2022 17:33:21] [Date: 2022-07-22 17:33:21 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 17:33:21] [Date: 2022-07-22 17:33:21 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:33:22] [Date: 2022-07-22 17:33:22 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 17:33:22] [Date: 2022-07-22 17:33:22 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:33:22] [Date: 2022-07-22 17:33:22 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 17:33:22] [Date: 2022-07-22 17:33:22 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:33:22] [Date: 2022-07-22 17:33:22 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 17:33:22] [Date: 2022-07-22 17:33:22 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:33:22] [Date: 2022-07-22 17:33:22 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 17:33:22] [Date: 2022-07-22 17:33:22 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:33:22] [Date: 2022-07-22 17:33:22 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 17:33:22] [Date: 2022-07-22 17:33:22 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:33:22] [Date: 2022-07-22 17:33:22 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 17:33:22] [Date: 2022-07-22 17:33:22 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:33:22] [Date: 2022-07-22 17:33:22 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 17:33:22] [Date: 2022-07-22 17:33:22 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:33:22] [Date: 2022-07-22 17:33:22 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 17:33:23] [Date: 2022-07-22 17:33:23 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:33:23] [Date: 2022-07-22 17:33:23 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 17:33:23] [Date: 2022-07-22 17:33:23 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:33:23] [Date: 2022-07-22 17:33:23 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 17:33:23] [Date: 2022-07-22 17:33:23 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:34:50] [Date: 2022-07-22 17:34:50 | inaki2022 connect succesfully to '8661316_laninaki22']
+[22-Jul-2022 17:34:50] [Date: 2022-07-22 17:34:50 | Sql_Query_try_catch: query in 8661316_laninaki22 FAILED !
+ 'SELEC TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELEC TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME' at line 1]
+[22-Jul-2022 17:56:46] [Date: 2022-07-22 17:56:46 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 17:56:47] [Date: 2022-07-22 17:56:47 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 17:57:30] [Date: 2022-07-22 17:57:30 | root connect succesfully to 'information_schema']
+[22-Jul-2022 17:57:30] [Date: 2022-07-22 17:57:30 | root execute succesfully show tables query
+ 'desc COLLATION_CHARACTER_SET_APPLICABILITY;']
+[22-Jul-2022 17:57:32] [Date: 2022-07-22 17:57:32 | root connect succesfully to 'information_schema']
+[22-Jul-2022 17:57:32] [Date: 2022-07-22 17:57:32 | root execute succesfully show tables query
+ 'describe COLLATION_CHARACTER_SET_APPLICABILITY;']
+[22-Jul-2022 17:57:34] [Date: 2022-07-22 17:57:34 | root connect succesfully to 'information_schema']
+[22-Jul-2022 17:57:34] [Date: 2022-07-22 17:57:34 | root execute succesfully Select query in information_schema
+ 'SELECT * FROM COLLATION_CHARACTER_SET_APPLICABILITY LIMIT 10;']
+[22-Jul-2022 17:57:51] [Date: 2022-07-22 17:57:51 | root connect succesfully to 'information_schema']
+[22-Jul-2022 17:57:51] [Date: 2022-07-22 17:57:51 | root execute succesfully show tables query
+ 'desc KEY_COLUMN_USAGE;']
+[22-Jul-2022 17:58:12] [Date: 2022-07-22 17:58:12 | root connect succesfully to 'information_schema']
+[22-Jul-2022 17:58:12] [Date: 2022-07-22 17:58:12 | Sql_Query_try_catch: query in information_schema FAILED !
+ 'SELEC TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELEC TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_N...' at line 1]
+[22-Jul-2022 17:58:24] [Date: 2022-07-22 17:58:24 | root connect succesfully to 'information_schema']
+[22-Jul-2022 17:58:24] [Date: 2022-07-22 17:58:24 | root execute succesfully Sql Query in DB: information_schema
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[22-Jul-2022 17:58:46] [Date: 2022-07-22 17:58:46 | root connect succesfully to 'igg-wordpress']
+[22-Jul-2022 17:58:46] [Date: 2022-07-22 17:58:46 | root execute succesfully Sql Query in DB: igg-wordpress
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[22-Jul-2022 17:58:55] [Date: 2022-07-22 17:58:55 | root connect succesfully to 'igg-wordpress']
+[22-Jul-2022 17:58:55] [Date: 2022-07-22 17:58:55 | root execute succesfully show tables query
+ 'desc igg_posts;']
+[22-Jul-2022 17:59:07] [Date: 2022-07-22 17:59:07 | root connect succesfully to 'igg-wordpress']
+[22-Jul-2022 17:59:07] [Date: 2022-07-22 17:59:07 | root execute succesfully Sql Query in DB: igg-wordpress
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[22-Jul-2022 18:07:43] [Date: 2022-07-22 18:07:43 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:07:43] [Date: 2022-07-22 18:07:43 | root execute succesfully Sql Query in DB: phpmyadmin
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[22-Jul-2022 18:07:46] [Date: 2022-07-22 18:07:46 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:07:46] [Date: 2022-07-22 18:07:46 | root execute succesfully Sql Query in DB: phpmyadmin
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[22-Jul-2022 18:07:48] [Date: 2022-07-22 18:07:48 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:07:48] [Date: 2022-07-22 18:07:48 | root execute succesfully show tables query
+ 'desc pma__bookmark;']
+[22-Jul-2022 18:07:51] [Date: 2022-07-22 18:07:51 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:07:51] [Date: 2022-07-22 18:07:51 | root execute succesfully show tables query
+ 'describe pma__bookmark;']
+[22-Jul-2022 18:07:53] [Date: 2022-07-22 18:07:53 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:07:53] [Date: 2022-07-22 18:07:53 | root execute succesfully Select query in phpmyadmin
+ 'SELECT * FROM pma__bookmark LIMIT 10;']
+[22-Jul-2022 18:08:32] [Date: 2022-07-22 18:08:32 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:08:32] [Date: 2022-07-22 18:08:32 | root execute succesfully show tables query
+ 'desc pma__central_columns;']
+[22-Jul-2022 18:08:35] [Date: 2022-07-22 18:08:35 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:08:35] [Date: 2022-07-22 18:08:35 | root execute succesfully Select query in phpmyadmin
+ 'SELECT * FROM pma__central_columns LIMIT 10;']
+[22-Jul-2022 18:08:37] [Date: 2022-07-22 18:08:37 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:08:37] [Date: 2022-07-22 18:08:37 | root execute succesfully show tables query
+ 'desc pma__column_info;']
+[22-Jul-2022 18:08:38] [Date: 2022-07-22 18:08:38 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:08:38] [Date: 2022-07-22 18:08:38 | root execute succesfully Select query in phpmyadmin
+ 'SELECT * FROM pma__column_info LIMIT 10;']
+[22-Jul-2022 18:08:41] [Date: 2022-07-22 18:08:41 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:08:41] [Date: 2022-07-22 18:08:41 | root execute succesfully show tables query
+ 'desc pma__designer_settings;']
+[22-Jul-2022 18:08:42] [Date: 2022-07-22 18:08:42 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:08:42] [Date: 2022-07-22 18:08:42 | root execute succesfully Select query in phpmyadmin
+ 'SELECT * FROM pma__designer_settings LIMIT 10;']
+[22-Jul-2022 18:09:27] [Date: 2022-07-22 18:09:27 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:09:27] [Date: 2022-07-22 18:09:27 | root execute succesfully show tables query
+ 'desc pma__export_templates;']
+[22-Jul-2022 18:09:32] [Date: 2022-07-22 18:09:32 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:09:32] [Date: 2022-07-22 18:09:32 | root execute succesfully Select query in phpmyadmin
+ 'SELECT * FROM pma__export_templates LIMIT 10;']
+[22-Jul-2022 18:10:07] [Date: 2022-07-22 18:10:07 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:10:07] [Date: 2022-07-22 18:10:07 | root execute succesfully show tables query
+ 'desc pma__favorite;']
+[22-Jul-2022 18:10:10] [Date: 2022-07-22 18:10:10 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:10:10] [Date: 2022-07-22 18:10:10 | root execute succesfully Select query in phpmyadmin
+ 'SELECT * FROM pma__favorite LIMIT 10;']
+[22-Jul-2022 18:10:12] [Date: 2022-07-22 18:10:12 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:10:12] [Date: 2022-07-22 18:10:12 | root execute succesfully show tables query
+ 'describe pma__favorite;']
+[22-Jul-2022 18:10:29] [Date: 2022-07-22 18:10:29 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:10:29] [Date: 2022-07-22 18:10:29 | root execute succesfully show tables query
+ 'desc pma__history;']
+[22-Jul-2022 18:10:31] [Date: 2022-07-22 18:10:31 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:10:31] [Date: 2022-07-22 18:10:31 | root execute succesfully Select query in phpmyadmin
+ 'SELECT * FROM pma__history LIMIT 10;']
+[22-Jul-2022 18:10:33] [Date: 2022-07-22 18:10:33 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:10:33] [Date: 2022-07-22 18:10:33 | root execute succesfully show tables query
+ 'desc pma__navigationhiding;']
+[22-Jul-2022 18:10:35] [Date: 2022-07-22 18:10:35 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:10:35] [Date: 2022-07-22 18:10:35 | root execute succesfully Select query in phpmyadmin
+ 'SELECT * FROM pma__navigationhiding LIMIT 10;']
+[22-Jul-2022 18:10:40] [Date: 2022-07-22 18:10:40 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:10:40] [Date: 2022-07-22 18:10:40 | root execute succesfully show tables query
+ 'desc pma__pdf_pages;']
+[22-Jul-2022 18:10:42] [Date: 2022-07-22 18:10:42 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:10:42] [Date: 2022-07-22 18:10:42 | root execute succesfully Select query in phpmyadmin
+ 'SELECT * FROM pma__pdf_pages LIMIT 10;']
+[22-Jul-2022 18:10:49] [Date: 2022-07-22 18:10:49 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:10:49] [Date: 2022-07-22 18:10:49 | root execute succesfully show tables query
+ 'desc pma__recent;']
+[22-Jul-2022 18:10:51] [Date: 2022-07-22 18:10:51 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:10:51] [Date: 2022-07-22 18:10:51 | root execute succesfully Select query in phpmyadmin
+ 'SELECT * FROM pma__recent LIMIT 10;']
+[22-Jul-2022 18:12:05] [Date: 2022-07-22 18:12:05 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:12:05] [Date: 2022-07-22 18:12:05 | root execute succesfully show tables query
+ 'desc pma__relation;']
+[22-Jul-2022 18:12:08] [Date: 2022-07-22 18:12:08 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:12:08] [Date: 2022-07-22 18:12:08 | root execute succesfully Select query in phpmyadmin
+ 'SELECT * FROM pma__relation LIMIT 10;']
+[22-Jul-2022 18:12:13] [Date: 2022-07-22 18:12:13 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:12:13] [Date: 2022-07-22 18:12:13 | root execute succesfully show tables query
+ 'desc pma__savedsearches;']
+[22-Jul-2022 18:12:14] [Date: 2022-07-22 18:12:14 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:12:14] [Date: 2022-07-22 18:12:14 | root execute succesfully Select query in phpmyadmin
+ 'SELECT * FROM pma__savedsearches LIMIT 10;']
+[22-Jul-2022 18:12:17] [Date: 2022-07-22 18:12:17 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:12:17] [Date: 2022-07-22 18:12:17 | root execute succesfully show tables query
+ 'desc pma__table_coords;']
+[22-Jul-2022 18:12:18] [Date: 2022-07-22 18:12:18 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:12:18] [Date: 2022-07-22 18:12:18 | root execute succesfully Select query in phpmyadmin
+ 'SELECT * FROM pma__table_coords LIMIT 10;']
+[22-Jul-2022 18:12:52] [Date: 2022-07-22 18:12:52 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:12:52] [Date: 2022-07-22 18:12:52 | root execute succesfully show tables query
+ 'desc pma__table_info;']
+[22-Jul-2022 18:12:54] [Date: 2022-07-22 18:12:54 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:12:54] [Date: 2022-07-22 18:12:54 | root execute succesfully show tables query
+ 'desc pma__pdf_pages;']
+[22-Jul-2022 18:12:56] [Date: 2022-07-22 18:12:56 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:12:56] [Date: 2022-07-22 18:12:56 | root execute succesfully Select query in phpmyadmin
+ 'SELECT * FROM pma__pdf_pages LIMIT 10;']
+[22-Jul-2022 18:13:02] [Date: 2022-07-22 18:13:02 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:13:02] [Date: 2022-07-22 18:13:02 | root execute succesfully show tables query
+ 'desc pma__table_info;']
+[22-Jul-2022 18:13:04] [Date: 2022-07-22 18:13:04 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:13:04] [Date: 2022-07-22 18:13:04 | root execute succesfully Select query in phpmyadmin
+ 'SELECT * FROM pma__table_info LIMIT 10;']
+[22-Jul-2022 18:13:07] [Date: 2022-07-22 18:13:07 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:13:07] [Date: 2022-07-22 18:13:07 | root execute succesfully show tables query
+ 'desc pma__table_uiprefs;']
+[22-Jul-2022 18:13:08] [Date: 2022-07-22 18:13:08 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:13:08] [Date: 2022-07-22 18:13:08 | root execute succesfully Select query in phpmyadmin
+ 'SELECT * FROM pma__table_uiprefs LIMIT 10;']
+[22-Jul-2022 18:13:11] [Date: 2022-07-22 18:13:11 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:13:11] [Date: 2022-07-22 18:13:11 | root execute succesfully show tables query
+ 'desc pma__tracking;']
+[22-Jul-2022 18:13:13] [Date: 2022-07-22 18:13:13 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:13:13] [Date: 2022-07-22 18:13:13 | root execute succesfully Select query in phpmyadmin
+ 'SELECT * FROM pma__tracking LIMIT 10;']
+[22-Jul-2022 18:14:16] [Date: 2022-07-22 18:14:16 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:14:16] [Date: 2022-07-22 18:14:16 | root execute succesfully show tables query
+ 'desc pma__userconfig;']
+[22-Jul-2022 18:14:18] [Date: 2022-07-22 18:14:18 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:14:18] [Date: 2022-07-22 18:14:18 | root execute succesfully Select query in phpmyadmin
+ 'SELECT * FROM pma__userconfig LIMIT 10;']
+[22-Jul-2022 18:14:38] [Date: 2022-07-22 18:14:38 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:14:38] [Date: 2022-07-22 18:14:38 | root execute succesfully show tables query
+ 'desc pma__usergroups;']
+[22-Jul-2022 18:14:40] [Date: 2022-07-22 18:14:40 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:14:40] [Date: 2022-07-22 18:14:40 | root execute succesfully Select query in phpmyadmin
+ 'SELECT * FROM pma__usergroups LIMIT 10;']
+[22-Jul-2022 18:14:48] [Date: 2022-07-22 18:14:48 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:14:48] [Date: 2022-07-22 18:14:48 | root execute succesfully show tables query
+ 'desc pma__users;']
+[22-Jul-2022 18:14:50] [Date: 2022-07-22 18:14:50 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:14:50] [Date: 2022-07-22 18:14:50 | root execute succesfully Select query in phpmyadmin
+ 'SELECT * FROM pma__users LIMIT 10;']
+[22-Jul-2022 18:14:53] [Date: 2022-07-22 18:14:53 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:14:53] [Date: 2022-07-22 18:14:53 | root execute succesfully Select query in phpmyadmin
+ 'SELECT * FROM pma__users LIMIT 10;']
+[22-Jul-2022 18:14:55] [Date: 2022-07-22 18:14:55 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:14:55] [Date: 2022-07-22 18:14:55 | root execute succesfully show tables query
+ 'desc pma__users;']
+[22-Jul-2022 18:14:56] [Date: 2022-07-22 18:14:56 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:14:56] [Date: 2022-07-22 18:14:56 | root execute succesfully show tables query
+ 'desc pma__users;']
+[22-Jul-2022 18:15:03] [Date: 2022-07-22 18:15:03 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:15:03] [Date: 2022-07-22 18:15:03 | root execute succesfully show tables query
+ 'desc pma__usergroups;']
+[22-Jul-2022 18:15:05] [Date: 2022-07-22 18:15:05 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:15:05] [Date: 2022-07-22 18:15:05 | root execute succesfully Select query in phpmyadmin
+ 'SELECT * FROM pma__usergroups LIMIT 10;']
+[22-Jul-2022 18:15:08] [Date: 2022-07-22 18:15:08 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:15:08] [Date: 2022-07-22 18:15:08 | root execute succesfully show tables query
+ 'desc pma__userconfig;']
+[22-Jul-2022 18:15:10] [Date: 2022-07-22 18:15:10 | root connect succesfully to 'phpmyadmin']
+[22-Jul-2022 18:15:10] [Date: 2022-07-22 18:15:10 | root execute succesfully Select query in phpmyadmin
+ 'SELECT * FROM pma__userconfig LIMIT 10;']
+[22-Jul-2022 18:15:36] [Date: 2022-07-22 18:15:36 | root connect succesfully to 'igg-wordpress']
+[22-Jul-2022 18:15:36] [Date: 2022-07-22 18:15:36 | root execute succesfully show tables query
+ 'desc igg_actionscheduler_actions;']
+[22-Jul-2022 18:15:37] [Date: 2022-07-22 18:15:37 | root connect succesfully to 'igg-wordpress']
+[22-Jul-2022 18:15:37] [Date: 2022-07-22 18:15:37 | root execute succesfully Select query in igg-wordpress
+ 'SELECT * FROM igg_actionscheduler_actions LIMIT 10;']
+[22-Jul-2022 18:16:13] [Date: 2022-07-22 18:16:13 | root connect succesfully to 'igg-wordpress']
+[22-Jul-2022 18:16:13] [Date: 2022-07-22 18:16:13 | root execute succesfully show tables query
+ 'desc igg_actionscheduler_claims;']
+[22-Jul-2022 18:16:14] [Date: 2022-07-22 18:16:14 | root connect succesfully to 'igg-wordpress']
+[22-Jul-2022 18:16:14] [Date: 2022-07-22 18:16:14 | root execute succesfully Select query in igg-wordpress
+ 'SELECT * FROM igg_actionscheduler_claims LIMIT 10;']
+[22-Jul-2022 18:16:16] [Date: 2022-07-22 18:16:16 | root connect succesfully to 'igg-wordpress']
+[22-Jul-2022 18:16:16] [Date: 2022-07-22 18:16:16 | root execute succesfully show tables query
+ 'desc igg_actionscheduler_groups;']
+[22-Jul-2022 18:16:18] [Date: 2022-07-22 18:16:18 | root connect succesfully to 'igg-wordpress']
+[22-Jul-2022 18:16:18] [Date: 2022-07-22 18:16:18 | root execute succesfully Select query in igg-wordpress
+ 'SELECT * FROM igg_actionscheduler_groups LIMIT 10;']
+[22-Jul-2022 18:16:44] [Date: 2022-07-22 18:16:44 | root connect succesfully to 'employees']
+[22-Jul-2022 18:16:44] [Date: 2022-07-22 18:16:44 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[22-Jul-2022 18:16:53] [Date: 2022-07-22 18:16:53 | root connect succesfully to 'employees']
+[22-Jul-2022 18:16:53] [Date: 2022-07-22 18:16:53 | root execute succesfully show tables query
+ 'describe dept_emp_latest_date;']
+[22-Jul-2022 18:16:54] [Date: 2022-07-22 18:16:54 | root connect succesfully to 'employees']
+[22-Jul-2022 18:16:55] [Date: 2022-07-22 18:16:55 | root execute succesfully Select query in employees
+ 'SELECT * FROM dept_emp_latest_date LIMIT 10;']
+[22-Jul-2022 18:16:55] [Date: 2022-07-22 18:16:55 | root connect succesfully to 'employees']
+[22-Jul-2022 18:16:55] [Date: 2022-07-22 18:16:55 | root execute succesfully Select query in employees
+ 'SELECT * FROM dept_emp_latest_date LIMIT 10;']
+[22-Jul-2022 18:16:56] [Date: 2022-07-22 18:16:56 | root connect succesfully to 'employees']
+[22-Jul-2022 18:16:56] [Date: 2022-07-22 18:16:56 | root execute succesfully show tables query
+ 'describe dept_emp_latest_date;']
+[22-Jul-2022 18:16:57] [Date: 2022-07-22 18:16:57 | root connect succesfully to 'employees']
+[22-Jul-2022 18:16:58] [Date: 2022-07-22 18:16:58 | root execute succesfully Select query in employees
+ 'SELECT * FROM dept_emp_latest_date LIMIT 10;']
+[22-Jul-2022 18:17:03] [Date: 2022-07-22 18:17:03 | root connect succesfully to 'employees']
+[22-Jul-2022 18:17:03] [Date: 2022-07-22 18:17:03 | root execute succesfully show tables query
+ 'describe employees;']
+[22-Jul-2022 18:17:06] [Date: 2022-07-22 18:17:06 | root connect succesfully to 'employees']
+[22-Jul-2022 18:17:06] [Date: 2022-07-22 18:17:06 | root execute succesfully Select query in employees
+ 'SELECT * FROM employees LIMIT 10;']
+[22-Jul-2022 18:20:35] [Date: 2022-07-22 18:20:35 | root connect succesfully to 'employees']
+[22-Jul-2022 18:20:35] [Date: 2022-07-22 18:20:35 | root execute succesfully Sql Query in DB: employees
+ 'SELECT `TABLE_SCHEMA`, `TABLE_NAME`, `COLUMN_NAME`, `REFERENCED_TABLE_SCHEMA`, `REFERENCED_TABLE_NAME`, `REFERENCED_COLUMN_NAME`FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE`WHERE `TABLE_SCHEMA` = SCHEMA() AND `REFERENCED_TABLE_NAME` IS NOT NULL']
+[22-Jul-2022 18:25:18] [Date: 2022-07-22 18:25:18 | root connect succesfully to 'employees']
+[22-Jul-2022 18:25:18] [Date: 2022-07-22 18:25:18 | Sql_Query_try_catch: query in employees FAILED !
+ 'SELECT `TABLE_SCHEMA`, `TABLE_NAME`, `COLUMN_NAME`, `REFERENCED_TABLESCHEMA`, `REFERENCED_TABLE_NAME`, `REFERENCED_COLUMN_NAME`FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE`WHERE `TABLE_SCHEMA` = SCHEMA() AND `REFERENCED_TABLE_NAME` IS NOT NULL' SQLSTATE[42S22]: Column not found: 1054 Unknown column 'REFERENCED_TABLESCHEMA' in 'field list']
+[22-Jul-2022 18:33:00] [Date: 2022-07-22 18:33:00 | root connect succesfully to 'employees']
+[22-Jul-2022 18:33:01] [Date: 2022-07-22 18:33:01 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[22-Jul-2022 18:34:40] [Date: 2022-07-22 18:34:40 | root connect succesfully to 'employees']
+[22-Jul-2022 18:34:40] [Date: 2022-07-22 18:34:40 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[22-Jul-2022 18:34:51] [Date: 2022-07-22 18:34:51 | root connect succesfully to 'employees']
+[22-Jul-2022 18:34:51] [Date: 2022-07-22 18:34:51 | root execute succesfully show tables query
+ 'describe departments;']
+[22-Jul-2022 18:35:09] [Date: 2022-07-22 18:35:09 | root connect succesfully to 'employees']
+[22-Jul-2022 18:35:09] [Date: 2022-07-22 18:35:09 | root execute succesfully show tables query
+ 'describe dept_emp;']
+[22-Jul-2022 18:35:48] [Date: 2022-07-22 18:35:48 | root connect succesfully to 'employees']
+[22-Jul-2022 18:35:48] [Date: 2022-07-22 18:35:48 | Sql_Query_try_catch: query in employees FAILED !
+ 'SHOW CREATE DEPT_EMP' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DEPT_EMP' at line 1]
+[22-Jul-2022 18:35:58] [Date: 2022-07-22 18:35:58 | root connect succesfully to 'employees']
+[22-Jul-2022 18:35:58] [Date: 2022-07-22 18:35:58 | Sql_Query_try_catch: query in employees FAILED !
+ 'SHOW CREATE dept_emp' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'dept_emp' at line 1]
+[22-Jul-2022 18:36:38] [Date: 2022-07-22 18:36:38 | root connect succesfully to 'employees']
+[22-Jul-2022 18:36:38] [Date: 2022-07-22 18:36:38 | root execute succesfully Sql Query in DB: employees
+ 'SHOW CREATE TABLE dept_emp']
+[22-Jul-2022 18:38:19] [Date: 2022-07-22 18:38:19 | root connect succesfully to 'employees']
+[22-Jul-2022 18:38:19] [Date: 2022-07-22 18:38:19 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[22-Jul-2022 18:40:24] [Date: 2022-07-22 18:40:24 | root connect succesfully to 'employees']
+[22-Jul-2022 18:40:24] [Date: 2022-07-22 18:40:24 | root execute succesfully Sql Query in DB: employees
+ 'SELECT count(1) totalrelationships , c.table_name tablename, CONCAT(' ',GROUP_CONCAT(c.column_name ORDER BY ordinal_position SEPARATOR ', ')) columnname, CONCAT(' ',GROUP_CONCAT(c.column_type ORDER BY ordinal_position SEPARATOR ', ')) columntype FROM information_schema.columns c RIGHT JOIN (SELECT column_name , column_type FROM information_schema.columns WHERE column_key in ('PRI','MUL') AND table_schema = DATABASE() AND table_name = 'employees') AS p USING (column_name,column_type)WHERE c.table_schema = DATABASE() AND c.table_name != 'employees' GROUP BY tablename HAVING (locate('emp_no',columnname) > 0)ORDER BY totalrelationships desc, columnname']
+[22-Jul-2022 18:40:41] [Date: 2022-07-22 18:40:41 | root connect succesfully to 'employees']
+[22-Jul-2022 18:40:41] [Date: 2022-07-22 18:40:41 | root execute succesfully Sql Query in DB: employees
+ 'SELECT count(1) totalrelationships , c.table_name tablename, CONCAT(' ',GROUP_CONCAT(c.column_name ORDER BY ordinal_position SEPARATOR ', ')) columnname, CONCAT(' ',GROUP_CONCAT(c.column_type ORDER BY ordinal_position SEPARATOR ', ')) columntype FROM information_schema.columns c RIGHT JOIN (SELECT column_name , column_type FROM information_schema.columns WHERE column_key in ('PRI','MUL') AND table_schema = DATABASE() AND table_name = 'employees') AS p USING (column_name,column_type)WHERE c.table_schema = DATABASE() GROUP BY tablename HAVING (locate('emp_no',columnname) > 0)ORDER BY totalrelationships desc, columnname']
+[22-Jul-2022 18:41:12] [Date: 2022-07-22 18:41:12 | root connect succesfully to 'employees']
+[22-Jul-2022 18:41:12] [Date: 2022-07-22 18:41:12 | root execute succesfully Sql Query in DB: employees
+ 'SELECT count(1) totalrelationships , c.table_name tablename, CONCAT(' ',GROUP_CONCAT(c.column_name ORDER BY ordinal_position SEPARATOR ', ')) columnname, CONCAT(' ',GROUP_CONCAT(c.column_type ORDER BY ordinal_position SEPARATOR ', ')) columntype FROM information_schema.columns c RIGHT JOIN (SELECT column_name , column_type FROM information_schema.columns WHERE table_schema = DATABASE() AND table_name = 'employees') AS p USING (column_name,column_type)WHERE c.table_schema = DATABASE() GROUP BY tablename ORDER BY totalrelationships desc, columnname']
+[22-Jul-2022 18:41:37] [Date: 2022-07-22 18:41:37 | root connect succesfully to 'employees']
+[22-Jul-2022 18:41:37] [Date: 2022-07-22 18:41:37 | root execute succesfully show tables query
+ 'describe employees;']
+[22-Jul-2022 18:42:09] [Date: 2022-07-22 18:42:09 | root connect succesfully to 'information_schema']
+[22-Jul-2022 18:42:09] [Date: 2022-07-22 18:42:09 | root execute succesfully show tables query
+ 'desc KEY_COLUMN_USAGE;']
+[22-Jul-2022 18:42:17] [Date: 2022-07-22 18:42:17 | root connect succesfully to 'information_schema']
+[22-Jul-2022 18:42:17] [Date: 2022-07-22 18:42:17 | root execute succesfully show tables query
+ 'describe KEY_COLUMN_USAGE;']
+[22-Jul-2022 18:46:02] [Date: 2022-07-22 18:46:02 | root connect succesfully to 'information_schema']
+[22-Jul-2022 18:46:02] [Date: 2022-07-22 18:46:02 | root execute succesfully Sql Query in DB: information_schema
+ 'SELECT count(1) totalrelationships , c.table_name tablename, CONCAT(' ',GROUP_CONCAT(c.column_name ORDER BY ordinal_position SEPARATOR ', ')) columnname, CONCAT(' ',GROUP_CONCAT(c.column_type ORDER BY ordinal_position SEPARATOR ', ')) columntype FROM information_schema.columns c RIGHT JOIN (SELECT column_name , column_type FROM information_schema.columns WHERE table_schema = DATABASE() AND table_name = 'employees') AS p USING (column_name,column_type)WHERE c.table_schema = DATABASE() GROUP BY tablename ORDER BY totalrelationships desc, columnname']
+[22-Jul-2022 18:46:19] [Date: 2022-07-22 18:46:19 | root connect succesfully to 'employees']
+[22-Jul-2022 18:46:19] [Date: 2022-07-22 18:46:19 | root execute succesfully Sql Query in DB: employees
+ 'SELECT count(1) totalrelationships , c.table_name tablename, CONCAT(' ',GROUP_CONCAT(c.column_name ORDER BY ordinal_position SEPARATOR ', ')) columnname, CONCAT(' ',GROUP_CONCAT(c.column_type ORDER BY ordinal_position SEPARATOR ', ')) columntype FROM information_schema.columns c RIGHT JOIN (SELECT column_name , column_type FROM information_schema.columns WHERE table_schema = DATABASE() AND table_name = 'employees') AS p USING (column_name,column_type)WHERE c.table_schema = DATABASE() GROUP BY tablename ORDER BY totalrelationships desc, columnname']
+[22-Jul-2022 18:49:00] [Date: 2022-07-22 18:49:00 | root connect succesfully to 'mvc_example']
+[22-Jul-2022 18:49:00] [Date: 2022-07-22 18:49:00 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[22-Jul-2022 18:49:58] [Date: 2022-07-22 18:49:58 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 18:49:58] [Date: 2022-07-22 18:49:58 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:49:58] [Date: 2022-07-22 18:49:58 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 18:49:58] [Date: 2022-07-22 18:49:58 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:49:58] [Date: 2022-07-22 18:49:58 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 18:49:59] [Date: 2022-07-22 18:49:59 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:49:59] [Date: 2022-07-22 18:49:59 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 18:49:59] [Date: 2022-07-22 18:49:59 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:49:59] [Date: 2022-07-22 18:49:59 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 18:49:59] [Date: 2022-07-22 18:49:59 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:49:59] [Date: 2022-07-22 18:49:59 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 18:49:59] [Date: 2022-07-22 18:49:59 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:49:59] [Date: 2022-07-22 18:49:59 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 18:49:59] [Date: 2022-07-22 18:49:59 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:49:59] [Date: 2022-07-22 18:49:59 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 18:49:59] [Date: 2022-07-22 18:49:59 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:49:59] [Date: 2022-07-22 18:49:59 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 18:49:59] [Date: 2022-07-22 18:49:59 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:49:59] [Date: 2022-07-22 18:49:59 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 18:49:59] [Date: 2022-07-22 18:49:59 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:00] [Date: 2022-07-22 18:50:00 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 18:50:00] [Date: 2022-07-22 18:50:00 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:00] [Date: 2022-07-22 18:50:00 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 18:50:00] [Date: 2022-07-22 18:50:00 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:00] [Date: 2022-07-22 18:50:00 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 18:50:00] [Date: 2022-07-22 18:50:00 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:00] [Date: 2022-07-22 18:50:00 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 18:50:00] [Date: 2022-07-22 18:50:00 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:00] [Date: 2022-07-22 18:50:00 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 18:50:00] [Date: 2022-07-22 18:50:00 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:00] [Date: 2022-07-22 18:50:00 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 18:50:00] [Date: 2022-07-22 18:50:00 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:00] [Date: 2022-07-22 18:50:00 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 18:50:00] [Date: 2022-07-22 18:50:00 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:00] [Date: 2022-07-22 18:50:00 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 18:50:01] [Date: 2022-07-22 18:50:01 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:01] [Date: 2022-07-22 18:50:01 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Jul-2022 18:50:01] [Date: 2022-07-22 18:50:01 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:57] [Date: 2022-07-22 18:50:57 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 18:50:57] [Date: 2022-07-22 18:50:57 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:57] [Date: 2022-07-22 18:50:57 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 18:50:57] [Date: 2022-07-22 18:50:57 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:57] [Date: 2022-07-22 18:50:57 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 18:50:57] [Date: 2022-07-22 18:50:57 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:57] [Date: 2022-07-22 18:50:57 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 18:50:57] [Date: 2022-07-22 18:50:57 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:57] [Date: 2022-07-22 18:50:57 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 18:50:57] [Date: 2022-07-22 18:50:57 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:57] [Date: 2022-07-22 18:50:57 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 18:50:57] [Date: 2022-07-22 18:50:57 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:57] [Date: 2022-07-22 18:50:57 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 18:50:57] [Date: 2022-07-22 18:50:57 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:57] [Date: 2022-07-22 18:50:57 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root connect succesfully to '127.0.0.1']
+[22-Jul-2022 18:50:58] [Date: 2022-07-22 18:50:58 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Jul-2022 18:51:24] [Date: 2022-07-22 18:51:24 | root connect succesfully to 'employees']
+[22-Jul-2022 18:51:24] [Date: 2022-07-22 18:51:24 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
