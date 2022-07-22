@@ -38,11 +38,13 @@ NAVEGACIÓN
     Objetivo, mantener siempre actualizado el tag con los atributos: host, db, table
     De esa manera, se manejan 
 
+  - go-back : clear tags.innerHTML
+    CHEQUEAR table-param (dejá el nav en blanco) (ver si tiene que ver con clear areas)
+  
+
 
 CASO SQL-BTN -> cónsola "query-btn"
 
-  - go-back : clear tags.innerHTML
-    CHEQUEAR table-param (dejá el nav en blanco) (ver si tiene que ver con clar areas)
 
   - Tbl queries_fav in 
 
