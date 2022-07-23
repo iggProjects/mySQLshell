@@ -1,0 +1,108 @@
+<!-- //https://stackoverflow.com/questions/24565458/centering-text-inside-a-canvas-rectangle-button -->
+
+
+
+<html>
+<head>
+
+</head>
+<body style=" background: lightblue;">
+
+    <canvas id="canvas" width="500px" height="500px" style="background: #fff; magrin:20px;"></canvas>
+
+    <script>
+    </script>
+
+    <script type="text/javascript" language="javascript">
+
+        function row_rectangle(_ctxx,_text,_xx,_yy,_w,_hh) {
+            _ctxx.strokeRect(_xx, _yy, _w, _hh);
+            _ctxx.textAlign="center"; 
+            _ctxx.textBaseline = "middle";
+            _ctxx.fillStyle = "#000000";
+            _ctxx.fillText(_text,_xx+(_w/2),_yy+(_hh/2));
+        }
+
+        function draw_table(_ctx,_table,_x,_y,_h){
+            
+            _ctx.lineWidth = 1;
+            _ctx.strokeStyle = "#000000";
+            _ctx.fillStyle = "#abc";
+            
+            // max length text of elements in table
+            var max_large_text = '';
+            for ( var i=0; i < _table.length; i++ ){  
+                if ( max_large_text.length < _table[i].length ) { max_large_text = _table[i]; } 
+            }
+
+            var w = _ctx.measureText(max_large_text).width * 2;              
+
+            for ( var i=0; i < _table.length; i++) {  
+                row_rectangle(_ctx,_table[i]+i,_x,_y,w,_h);
+                _y += _h;
+            }
+
+        }
+
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+
+        var table1 = ['field ','field ','field ','field ','field field field ','field ','field ','field '];
+
+        // determine initial x and y knowing how many tables are
+        var x = 10;
+        var y = 10; 
+        //var numb_tables = 5;
+        //var total_rows = 25;
+
+        var fontsize = 15;
+        var fontface = 'arial';
+        var h = fontsize * 1.5;
+
+        draw_table(ctx,table1,x,y,h);
+
+        var table2 = ['field field field ','field ','field field field field ','field '];
+
+        x = 10;
+        y += (table1.length) * h + h; 
+
+        draw_table(ctx,table2,x,y,h);
+
+        var table3 = ['field field ','field ','field ','field '];
+
+        x = 10;
+        y += (table2.length) * h + h; 
+
+        draw_table(ctx,table3,x,y,h);
+
+
+
+
+
+
+    </script>
+
+<script>
+    /*    
+    var fontsize = 12;
+    var fontface = 'verdana';
+    var lineHeight = fontsize * 3;
+    var text = 'Draw a rectangle around me.';
+
+    ctx.font = fontsize + 'px ' + fontface;
+    var textWidth = ctx.measureText(text).width*1.2;            
+
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'top';
+
+    ctx.strokeRect(10, 40, textWidth, lineHeight);
+    ctx.fillText(text, 30, 50);    
+    */    
+</script>
+
+
+
+
+
+</body>
+</html>

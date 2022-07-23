@@ -104,7 +104,7 @@ echo "
 
                                 </div>
 
-                                <textarea id='sql-query-area' placeholder='write your sql query....'></textarea>       
+                                <textarea id='sql-query-area' spellcheck='false' placeholder='write your sql query....'></textarea>       
 
                             </div>
 

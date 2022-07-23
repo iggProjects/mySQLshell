@@ -8,8 +8,10 @@ IÑAKI - DARREN
 
 
 
-
-
+********************************************************************
+CANVAS
+  - https://github.com/raphamorim/canvas-experiments
+  - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D#paths
 
 ********************************************************************
 
@@ -159,12 +161,12 @@ DIAGRAM OF DB RELATIONS FROM SCRACHT
 queries:
 
 SELECT 
-  `TABLE_SCHEMA`,
-  `TABLE_NAME`,
-  `COLUMN_NAME`,
-  `REFERENCED_TABLE_SCHEMA`,
-  `REFERENCED_TABLE_NAME`,
-  `REFERENCED_COLUMN_NAME`
+  `TABLE_SCHEMA` DB,
+  `TABLE_NAME` TBL,
+  `COLUMN_NAME` FIELD,
+  `REFERENCED_TABLE_SCHEMA` REF_DB,
+  `REFERENCED_TABLE_NAME` REF_TBL,
+  `REFERENCED_COLUMN_NAME` REF_FIELD 
 FROM
   `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE`
 WHERE

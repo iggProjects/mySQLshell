@@ -1,0 +1,68 @@
+<html>
+<head>
+
+</head>
+<body style=" background: lightblue;">
+
+    <canvas id="canvas" width="500px" height="420px" style="background: #fff; magrin:20px;"></canvas>
+
+    <script type="text/javascript" language="javascript">
+
+        const canvas = document.querySelector( "canvas" );
+        const ctx = canvas.getContext( "2d" );
+
+        ctx.font = "50px Arial";
+        // the text position
+        const x = 50, y = 50;
+        // the text to draw
+        const str = "Hello yyyqqqppp";
+        // the characters to find
+        const chars_to_find = [ "o", "y", "p" ];
+
+        ctx.strokeStyle = "red";
+
+        // get the index of every characters we're interested in
+        const chars_indice = [];
+        for ( let i = 0; i < str.length; i++ ) {
+            if ( chars_to_find.includes( str[ i ] ) ) {
+                chars_indice.push( i );
+            }
+        }
+        // alert('chars_indice: ' + chars_indice);
+
+        //iterate through the characters list
+        for ( let i = 0; i < chars_indice.length; i++ ) {
+            const previous_text = str.substring( 0, chars_indice[ i ] );
+            alert('previous_text: ' + previous_text);
+            const previous_text_width = ctx.measureText( previous_text ).width;
+            const char = str.substring( chars_indice[ i ], chars_indice[ i ] + 1 );
+            
+            const char_bbox = getTextBBox( ctx, char );
+            
+            const left = previous_text_width + char_bbox.left;
+            const { top, width, height } = char_bbox;
+            const half_line = ctx.lineWidth / 2;
+            // draw the rect
+            ctx.strokeRect( left + x - half_line, top + y - half_line, width + ctx.lineWidth, height + ctx.lineWidth);
+        }
+        // draw our text
+        
+        ctx.fillText( str, x, y );
+
+        function getTextBBox( ctx, text ) {
+            const metrics = ctx.measureText( text );
+            const left = metrics.actualBoundingBoxLeft * -1;
+            const top = metrics.actualBoundingBoxAscent * -1;
+            const right = metrics.actualBoundingBoxRight;
+            const bottom = metrics.actualBoundingBoxDescent;
+            // actualBoundinBox... excludes white spaces
+            const width = text.trim() === text ? right - left : metrics.width;
+            const height = bottom - top;
+            return { left, top, right, bottom, width, height };
+        }
+
+
+    </script>
+
+</body>
+</html>

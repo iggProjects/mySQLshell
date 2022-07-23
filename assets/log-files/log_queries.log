@@ -11063,3 +11063,105 @@
 [22-Jul-2022 18:51:24] [Date: 2022-07-22 18:51:24 | root connect succesfully to 'employees']
 [22-Jul-2022 18:51:24] [Date: 2022-07-22 18:51:24 | root execute succesfully Sql Query in DB: employees
  'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[23-Jul-2022 01:44:37] [Date: 2022-07-23 01:44:37 | root connect succesfully to '127.0.0.1']
+[23-Jul-2022 01:44:37] [Date: 2022-07-23 01:44:37 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[23-Jul-2022 01:44:43] [Date: 2022-07-23 01:44:43 | root connect succesfully to 'employees']
+[23-Jul-2022 01:44:43] [Date: 2022-07-23 01:44:43 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[23-Jul-2022 01:44:47] [Date: 2022-07-23 01:44:47 | root connect succesfully to 'employees']
+[23-Jul-2022 01:44:47] [Date: 2022-07-23 01:44:47 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[23-Jul-2022 01:45:11] [Date: 2022-07-23 01:45:11 | root connect succesfully to 'employees']
+[23-Jul-2022 01:45:11] [Date: 2022-07-23 01:45:11 | root execute succesfully show tables query
+ 'describe employees;']
+[23-Jul-2022 01:45:34] [Date: 2022-07-23 01:45:34 | root connect succesfully to 'employees']
+[23-Jul-2022 01:45:34] [Date: 2022-07-23 01:45:34 | root execute succesfully show tables query
+ 'describe dept_emp;']
+[23-Jul-2022 01:45:56] [Date: 2022-07-23 01:45:56 | root connect succesfully to 'employees']
+[23-Jul-2022 01:45:56] [Date: 2022-07-23 01:45:56 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[23-Jul-2022 01:46:30] [Date: 2022-07-23 01:46:30 | root connect succesfully to 'information_schema']
+[23-Jul-2022 01:46:30] [Date: 2022-07-23 01:46:30 | root execute succesfully Sql Query in DB: information_schema
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[23-Jul-2022 01:46:43] [Date: 2022-07-23 01:46:43 | root connect succesfully to 'penjub']
+[23-Jul-2022 01:46:43] [Date: 2022-07-23 01:46:43 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[23-Jul-2022 01:46:53] [Date: 2022-07-23 01:46:53 | root connect succesfully to 'penjub']
+[23-Jul-2022 01:46:53] [Date: 2022-07-23 01:46:53 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[23-Jul-2022 01:48:18] [Date: 2022-07-23 01:48:18 | root connect succesfully to 'penjub']
+[23-Jul-2022 01:48:18] [Date: 2022-07-23 01:48:18 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT count(1) totalrelationships , c.table_name tablename, CONCAT(' ',GROUP_CONCAT(c.column_name ORDER BY ordinal_position SEPARATOR ', ')) columnname, CONCAT(' ',GROUP_CONCAT(c.column_type ORDER BY ordinal_position SEPARATOR ', ')) columntype FROM information_schema.columns c RIGHT JOIN (SELECT column_name , column_type FROM information_schema.columns WHERE table_schema = DATABASE() AND table_name = 'employees') AS p USING (column_name,column_type)WHERE c.table_schema = DATABASE() GROUP BY tablename ORDER BY totalrelationships desc, columnname']
+[23-Jul-2022 01:49:16] [Date: 2022-07-23 01:49:16 | root connect succesfully to 'penjub']
+[23-Jul-2022 01:49:16] [Date: 2022-07-23 01:49:16 | Sql_Query_try_catch: query in penjub FAILED !
+ 'SELECT count(1) totalrelationships , c.table_name tablename, CONCAT(' ',GROUP_CONCAT(c.column_name ORDER BY ordinal_position SEPARATOR ', ')) columnname, CONCAT(' ',GROUP_CONCAT(c.column_type ORDER BY ordinal_position SEPARATOR ', ')) columntype FROM information_schema.columns c RIGHT JOIN (SELECT column_name , column_type FROM information_schema.columns WHERE table_schema = DATABASE() WHERE c.table_schema = DATABASE() GROUP BY tablename ORDER BY totalrelationships desc, columnname' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE    c.table_schema = DATABASE()        GROUP BY tablename    ORDER BY to...' at line 1]
+[23-Jul-2022 01:49:36] [Date: 2022-07-23 01:49:36 | root connect succesfully to 'penjub']
+[23-Jul-2022 01:49:36] [Date: 2022-07-23 01:49:36 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT count(1) totalrelationships , c.table_name tablename, CONCAT(' ',GROUP_CONCAT(c.column_name ORDER BY ordinal_position SEPARATOR ', ')) columnname, CONCAT(' ',GROUP_CONCAT(c.column_type ORDER BY ordinal_position SEPARATOR ', ')) columntype FROM information_schema.columns c RIGHT JOIN (SELECT column_name , column_type FROM information_schema.columns WHERE table_schema = DATABASE() AND table_name = 'tbl_persona') AS p USING (column_name,column_type)WHERE c.table_schema = DATABASE() GROUP BY tablename ORDER BY totalrelationships desc, columnname']
+[23-Jul-2022 01:50:21] [Date: 2022-07-23 01:50:21 | root connect succesfully to 'penjub']
+[23-Jul-2022 01:50:21] [Date: 2022-07-23 01:50:21 | root execute succesfully show tables query
+ 'desc tbl_persona;']
+[23-Jul-2022 01:50:28] [Date: 2022-07-23 01:50:28 | root connect succesfully to 'penjub']
+[23-Jul-2022 01:50:28] [Date: 2022-07-23 01:50:28 | root execute succesfully show tables query
+ 'describe tbl_persona;']
+[23-Jul-2022 01:51:01] [Date: 2022-07-23 01:51:01 | root connect succesfully to 'penjub']
+[23-Jul-2022 01:51:01] [Date: 2022-07-23 01:51:01 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[23-Jul-2022 01:51:28] [Date: 2022-07-23 01:51:28 | root connect succesfully to 'employees']
+[23-Jul-2022 01:51:28] [Date: 2022-07-23 01:51:28 | root execute succesfully Sql Query in DB: employees
+ 'SELECT count(1) totalrelationships , c.table_name tablename, CONCAT(' ',GROUP_CONCAT(c.column_name ORDER BY ordinal_position SEPARATOR ', ')) columnname, CONCAT(' ',GROUP_CONCAT(c.column_type ORDER BY ordinal_position SEPARATOR ', ')) columntype FROM information_schema.columns c RIGHT JOIN (SELECT column_name , column_type FROM information_schema.columns WHERE table_schema = DATABASE() AND table_name = 'employees') AS p USING (column_name,column_type)WHERE c.table_schema = DATABASE() GROUP BY tablename ORDER BY totalrelationships desc, columnname']
+[23-Jul-2022 01:52:15] [Date: 2022-07-23 01:52:15 | root connect succesfully to 'employees']
+[23-Jul-2022 01:52:16] [Date: 2022-07-23 01:52:16 | root execute succesfully Sql Query in DB: employees
+ 'SELECT count(1) totalrelationships , c.table_name tablename, CONCAT(' ',GROUP_CONCAT(c.column_name ORDER BY ordinal_position SEPARATOR ', ')) columnname, CONCAT(' ',GROUP_CONCAT(c.column_type ORDER BY ordinal_position SEPARATOR ', ')) columntype FROM information_schema.columns c RIGHT JOIN (SELECT column_name , column_type FROM information_schema.columns WHERE table_schema = DATABASE() AND table_name = 'dept_emp') AS p USING (column_name,column_type)WHERE c.table_schema = DATABASE() GROUP BY tablename ORDER BY totalrelationships desc, columnname']
+[23-Jul-2022 01:53:31] [Date: 2022-07-23 01:53:31 | root connect succesfully to 'employees']
+[23-Jul-2022 01:53:31] [Date: 2022-07-23 01:53:31 | Sql_Query_try_catch: query in employees FAILED !
+ 'SELECT count(1) totalrelationships , c.table_name table, CONCAT(' ',GROUP_CONCAT(c.column_name ORDER BY ordinal_position SEPARATOR ', ')) field, CONCAT(' ',GROUP_CONCAT(c.column_type ORDER BY ordinal_position SEPARATOR ', ')) type FROM information_schema.columns c RIGHT JOIN (SELECT column_name , column_type FROM information_schema.columns WHERE table_schema = DATABASE() AND table_name = 'dept_emp') AS p USING (column_name,column_type)WHERE c.table_schema = DATABASE() GROUP BY tablenameORDER BY totalrelationships desc, columnname' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'table,    CONCAT(' ',GROUP_CONCAT(c.column_name ORDER BY ordinal_position SEP...' at line 1]
+[23-Jul-2022 01:54:02] [Date: 2022-07-23 01:54:02 | root connect succesfully to 'employees']
+[23-Jul-2022 01:54:02] [Date: 2022-07-23 01:54:02 | Sql_Query_try_catch: query in employees FAILED !
+ 'SELECT count(1) totalrelationships , c.table_name table, CONCAT(' ',GROUP_CONCAT(c.column_name ORDER BY ordinal_position SEPARATOR ', ')) field, CONCAT(' ',GROUP_CONCAT(c.column_type ORDER BY ordinal_position SEPARATOR ', ')) type FROM information_schema.columns c RIGHT JOIN (SELECT column_name , column_type FROM information_schema.columns WHERE table_schema = DATABASE() AND table_name = 'dept_emp') AS p USING (column_name,column_type) WHERE c.table_schema = DATABASE() GROUP BY tablenameORDER BY totalrelationships desc, columnname' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'table,    CONCAT(' ',GROUP_CONCAT(c.column_name ORDER BY ordinal_position SEP...' at line 1]
+[23-Jul-2022 01:54:16] [Date: 2022-07-23 01:54:16 | root connect succesfully to 'employees']
+[23-Jul-2022 01:54:16] [Date: 2022-07-23 01:54:16 | root execute succesfully Sql Query in DB: employees
+ 'SELECT count(1) totalrelationships , c.table_name tablename, CONCAT(' ',GROUP_CONCAT(c.column_name ORDER BY ordinal_position SEPARATOR ', ')) columnname, CONCAT(' ',GROUP_CONCAT(c.column_type ORDER BY ordinal_position SEPARATOR ', ')) columntype FROM information_schema.columns c RIGHT JOIN (SELECT column_name , column_type FROM information_schema.columns WHERE table_schema = DATABASE() AND table_name = 'employees') AS p USING (column_name,column_type)WHERE c.table_schema = DATABASE() GROUP BY tablename ORDER BY totalrelationships desc, columnname']
+[23-Jul-2022 01:54:48] [Date: 2022-07-23 01:54:48 | root connect succesfully to 'employees']
+[23-Jul-2022 01:54:48] [Date: 2022-07-23 01:54:48 | Sql_Query_try_catch: query in employees FAILED !
+ 'SELECT count(1) totalrelationships , c.table_name tbl, CONCAT(' ',GROUP_CONCAT(c.column_name ORDER BY ordinal_position SEPARATOR ', ')) col, CONCAT(' ',GROUP_CONCAT(c.column_type ORDER BY ordinal_position SEPARATOR ', ')) col_type FROM information_schema.columns c RIGHT JOIN (SELECT column_name , column_type FROM information_schema.columns WHERE table_schema = DATABASE() AND table_name = 'employees') AS p USING (column_name,column_type)WHERE c.table_schema = DATABASE() GROUP BY tablename ORDER BY totalrelationships desc, columnname' SQLSTATE[42S22]: Column not found: 1054 Unknown column 'columnname' in 'order clause']
+[23-Jul-2022 01:55:12] [Date: 2022-07-23 01:55:12 | root connect succesfully to 'employees']
+[23-Jul-2022 01:55:12] [Date: 2022-07-23 01:55:12 | Sql_Query_try_catch: query in employees FAILED !
+ 'SELECT count(1) totalrelationships , c.table_name tbl, CONCAT(' ',GROUP_CONCAT(c.column_name ORDER BY ordinal_position SEPARATOR ', ')) columnname, CONCAT(' ',GROUP_CONCAT(c.column_type ORDER BY ordinal_position SEPARATOR ', ')) columntype FROM information_schema.columns c RIGHT JOIN (SELECT column_name , column_type FROM information_schema.columns WHERE table_schema = DATABASE() AND table_name = 'employees') AS p USING (column_name,column_type)WHERE c.table_schema = DATABASE() GROUP BY tablename ORDER BY totalrelationships desc, columnname' SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tablename' in 'group statement']
+[23-Jul-2022 01:55:21] [Date: 2022-07-23 01:55:21 | root connect succesfully to 'employees']
+[23-Jul-2022 01:55:22] [Date: 2022-07-23 01:55:22 | root execute succesfully Sql Query in DB: employees
+ 'SELECT count(1) totalrelationships , c.table_name tablename, CONCAT(' ',GROUP_CONCAT(c.column_name ORDER BY ordinal_position SEPARATOR ', ')) columnname, CONCAT(' ',GROUP_CONCAT(c.column_type ORDER BY ordinal_position SEPARATOR ', ')) columntype FROM information_schema.columns c RIGHT JOIN (SELECT column_name , column_type FROM information_schema.columns WHERE table_schema = DATABASE() AND table_name = 'employees') AS p USING (column_name,column_type)WHERE c.table_schema = DATABASE() GROUP BY tablename ORDER BY totalrelationships desc, columnname']
+[23-Jul-2022 01:57:17] [Date: 2022-07-23 01:57:17 | root connect succesfully to '127.0.0.1']
+[23-Jul-2022 01:57:17] [Date: 2022-07-23 01:57:17 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[23-Jul-2022 01:57:20] [Date: 2022-07-23 01:57:20 | root connect succesfully to 'employees']
+[23-Jul-2022 01:57:20] [Date: 2022-07-23 01:57:20 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[23-Jul-2022 01:57:24] [Date: 2022-07-23 01:57:24 | root connect succesfully to 'employees']
+[23-Jul-2022 01:57:24] [Date: 2022-07-23 01:57:24 | root execute succesfully Sql Query in DB: employees
+ 'SELECT count(1) totalrelationships , c.table_name tablename, CONCAT(' ',GROUP_CONCAT(c.column_name ORDER BY ordinal_position SEPARATOR ', ')) columnname, CONCAT(' ',GROUP_CONCAT(c.column_type ORDER BY ordinal_position SEPARATOR ', ')) columntype FROM information_schema.columns c RIGHT JOIN (SELECT column_name , column_type FROM information_schema.columns WHERE table_schema = DATABASE() AND table_name = 'employees') AS p USING (column_name,column_type)WHERE c.table_schema = DATABASE() GROUP BY tablename ORDER BY totalrelationships desc, columnname']
+[23-Jul-2022 02:03:06] [Date: 2022-07-23 02:03:06 | root connect succesfully to '127.0.0.1']
+[23-Jul-2022 02:03:06] [Date: 2022-07-23 02:03:06 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[23-Jul-2022 02:03:09] [Date: 2022-07-23 02:03:09 | root connect succesfully to 'employees']
+[23-Jul-2022 02:03:09] [Date: 2022-07-23 02:03:09 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[23-Jul-2022 02:03:34] [Date: 2022-07-23 02:03:34 | root connect succesfully to 'employees']
+[23-Jul-2022 02:03:34] [Date: 2022-07-23 02:03:34 | root execute succesfully Sql Query in DB: employees
+ 'SELECT count(1) totalrelationships , c.table_name tablename, CONCAT(' ',GROUP_CONCAT(c.column_name ORDER BY ordinal_position SEPARATOR ', ')) columnname, CONCAT(' ',GROUP_CONCAT(c.column_type ORDER BY ordinal_position SEPARATOR ', ')) columntype FROM information_schema.columns c RIGHT JOIN (SELECT column_name , column_type FROM information_schema.columns WHERE table_schema = DATABASE() AND table_name = 'employees') AS p USING (column_name,column_type)WHERE c.table_schema = DATABASE() GROUP BY tablename ORDER BY totalrelationships desc, columnname']
+[23-Jul-2022 02:04:24] [Date: 2022-07-23 02:04:24 | root connect succesfully to 'employees']
+[23-Jul-2022 02:04:24] [Date: 2022-07-23 02:04:24 | root execute succesfully Sql Query in DB: employees
+ 'SELECT `TABLE_SCHEMA`, `TABLE_NAME`, `COLUMN_NAME`, `REFERENCED_TABLE_SCHEMA`, `REFERENCED_TABLE_NAME`, `REFERENCED_COLUMN_NAME`FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE`WHERE `TABLE_SCHEMA` = SCHEMA() AND `REFERENCED_TABLE_NAME` IS NOT NULL;']
+[23-Jul-2022 02:05:20] [Date: 2022-07-23 02:05:20 | root connect succesfully to 'employees']
+[23-Jul-2022 02:05:20] [Date: 2022-07-23 02:05:20 | root execute succesfully Sql Query in DB: employees
+ 'SELECT `TABLE_SCHEMA` DB, `TABLE_NAME` TBL, `COLUMN_NAME` FIELD, `REFERENCED_TABLE_SCHEMA` REF_DB, `REFERENCED_TABLE_NAME` REF_TBL, `REFERENCED_COLUMN_NAME` REF_FIELD FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE`WHERE `TABLE_SCHEMA` = SCHEMA() AND `REFERENCED_TABLE_NAME` IS NOT NULL;']
+[23-Jul-2022 02:06:42] [Date: 2022-07-23 02:06:42 | root connect succesfully to 'employees']
+[23-Jul-2022 02:06:42] [Date: 2022-07-23 02:06:42 | root execute succesfully Sql Query in DB: employees
+ 'SELECT `TABLE_SCHEMA` DB, `TABLE_NAME` TBL, `COLUMN_NAME` FIELD, `REFERENCED_TABLE_SCHEMA` REF_DB, `REFERENCED_TABLE_NAME` REF_TBL, `REFERENCED_COLUMN_NAME` REF_FIELD FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE`WHERE `TABLE_SCHEMA` = SCHEMA() AND `REFERENCED_TABLE_NAME` IS NOT NULL;']
+[23-Jul-2022 02:07:08] [Date: 2022-07-23 02:07:08 | root connect succesfully to 'employees']
+[23-Jul-2022 02:07:08] [Date: 2022-07-23 02:07:08 | root execute succesfully Sql Query in DB: employees
+ 'SELECT `TABLE_SCHEMA` DB, `TABLE_NAME` TBL, `COLUMN_NAME` FIELD, `REFERENCED_TABLE_SCHEMA` REF_DB, `REFERENCED_TABLE_NAME` REF_TBL, `REFERENCED_COLUMN_NAME` REF_FIELD FROM `INFORMATION_SCHEMA`.`KEY_COLUMN_USAGE`WHERE `TABLE_SCHEMA` = SCHEMA();']
+[23-Jul-2022 02:08:10] [Date: 2022-07-23 02:08:10 | root connect succesfully to 'information_schema']
+[23-Jul-2022 02:08:10] [Date: 2022-07-23 02:08:10 | root execute succesfully show tables query
+ 'SHOW TABLES;']
