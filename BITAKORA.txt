@@ -9,13 +9,8 @@ IÑAKI - DARREN
 
 
 ********************************************************************
-META DÍA 23-07-2022
-
-  CANVAS
-    - https://github.com/raphamorim/canvas-experiments
-    - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D#paths
-
-  NAVEGACION
+IÑAKI - META DÍA 23-07-2022  
+  
     - colocar host number and host name in <li> de DB left side ✔✔
 
     - botón "clear" textarea para queries #sql-query-area ✔✔
@@ -23,11 +18,32 @@ META DÍA 23-07-2022
     - actualizar los ajax*.php para que use el request contra el array que viene de config.servers
       - el config es para los usuarios 'root' de cada servidor
       - cómo se manejaría los usuarios nuevos creados por el root
+      - estudiar creación de usuarios y privilegios. Definir qué botones puede ver un usuario de acuerdo a privilegios
 
-    - cambiar el despliegue de tablas al left-aside y verficar la navegación #display-result-nav-title
+    - cambiar el despliegue de tablas al left-aside y verficar la navegación #display-result-nav-title ✔✔
       (crear function para update de coordenadas )
 
-    - ver si conviene ocultar left side cuando estamos en modo consola para probar queries
+    - ver si conviene ocultar left side cuando estamos en modo consola para probar queries (NO CONVIENE)
+
+    - Crear las primeras tablas de la DB myLQSadmin
+      - usuarios, standard_queries, favorite_queries, ....
+      - standard queries aplican a cualquier DB
+      - favorite queries están direccionadas por usuario - DB
+
+    - Evaluar botones para facilitar queries tipo INSERT, UPDATE, DELETE
+    
+    - PAGINACIÓN REPORTES con SELECT
+      
+
+    - CANVAS
+      - https://github.com/raphamorim/canvas-experiments
+      - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D#paths
+
+      - buscar las queries para tablas por la derecha y tablas por la izquierda
+      - pensar en diseño dinámico que centre la tabla objetivo y defina criterios para ubicar
+        las tablas que apuntan a la tabla objetivo (lado izq) y las tablas a las que apunta la tabla objetivo (lado der)
+  
+       
 
 
   REVISAR EL USO DE LAS CREDENCIALES, Y LA CONVENIENCIA DE QUE EL LOGIN TRABAJE CON
