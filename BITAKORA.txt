@@ -9,9 +9,18 @@ IÑAKI - DARREN
 
 
 ********************************************************************
-CANVAS
-  - https://github.com/raphamorim/canvas-experiments
-  - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D#paths
+META DÍA 23-07-2022
+
+  CANVAS
+    - https://github.com/raphamorim/canvas-experiments
+    - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D#paths
+
+  NAVEGACION
+    - colocar host number and host name in <li> de DB left side
+    - ver si conviene ocultar left side cuando estamos en modo consola para probar queries
+
+  REVISAR EL USO DE LAS CREDENCIALES, Y LA CONVENIENCIA DE QUE EL LOGIN TRABAJE CON
+     UNA TABLA DE LA DB NUESTRA myLQSadmin, QUE CONTIENE LOS USUARIOS Y CLAVES  
 
 ********************************************************************
 
