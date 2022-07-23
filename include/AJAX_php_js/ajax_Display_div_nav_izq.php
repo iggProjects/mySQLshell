@@ -14,6 +14,12 @@ ini_set('display_errors', FALSE);
 ini_set("log_errors",TRUE);
 ini_set('error_log',$php_errors_log);
 
+
+if ( $_REQUEST['host_numb'] ) {
+    $host_numb = $_REQUEST['host_number']; 
+} else {}
+
+
 if ( $_REQUEST['hostName'] ) {
     $hostName = $_REQUEST['hostName']; 
 } else {}
@@ -49,7 +55,7 @@ if ( $hostName == 'POAPMYSQL119.dns-servicio.com:3306' ) {
 $host_pointer = $h;   
 $db_pointer = 1;
 $array_pointer= 0;        
-$host_db_array = [ 1 => [] ];          
+// $host_db_array = [ 1 => [] ];          
 
 $conex_host = try_catch_connect_host($hostName,$hostUser,$hostPassw,$dbcharset,$log_queries_path);
 
@@ -82,13 +88,13 @@ if ($route == 'display_data') { # display html data
 
     $divHtml .= "<ul id='myUL'>";
         $db_bf = $result[0]['TABLE_SCHEMA'];                        
-        $divHtml .= "<li db = " . $result[0]['TABLE_SCHEMA'] . "><span class='caret'>" . $result[0]['TABLE_SCHEMA'] . "</span>";
+        $divHtml .= "<li host_numb=" . $host_pointer . "  host=" . $hostName . " db = " . $result[0]['TABLE_SCHEMA'] . "><span class='caret'>" . $result[0]['TABLE_SCHEMA'] . "</span>";
         $divHtml .= "<ul class='nested'>";
         foreach ( $result as $row ) {     
 
             if ( $row['TABLE_SCHEMA'] == $db_bf ) {           
                 if( $row['TABLE_ROWS']==null ) { $num_rows = 0; } else { $num_rows = $row['TABLE_ROWS']; }
-                $divHtml .= "<li class='li-mysql-table dispTbl' point='". $array_pointer ."' host='" . $host_pointer . "' db='" . $row['TABLE_SCHEMA']  . "'  table-name='" . $row['TABLE_NAME'] . "'><span>" . $row['TABLE_NAME'] . " | " . $num_rows . " rows</span><span class='spanPlus'>+</span></li>";  
+                $divHtml .= "<li class='li-mysql-table dispTbl' point='". $array_pointer ."' host_numb='" . $host_pointer . "' db='" . $row['TABLE_SCHEMA']  . "'  table-name='" . $row['TABLE_NAME'] . "'><span>" . $row['TABLE_NAME'] . " | " . $num_rows . " rows</span><span class='spanPlus'>+</span></li>";  
                 // $divHtml .= "<li class='li-mysql-table dispTbl' point='". $array_pointer ."' host='" . $host_pointer . "' db='" . $db_pointer  . "'  table-name='" . $row['TABLE_NAME'] . "'><span>" . $row['TABLE_NAME'] . " | " . $num_rows . " rows</span><span class='spanPlus'>+</span></li>";  
                 // array_push($host_db_array[$host_pointer],[$host_serv[1],$db_bf,$row['TABLE_NAME']]);
                 // TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION
@@ -98,10 +104,10 @@ if ($route == 'display_data') { # display html data
                 $db_bf = $row['TABLE_SCHEMA'];                            
                 $db_pointer++;
                 $divHtml .= "</ul>";
-                $divHtml .= "<li db=" . $row['TABLE_SCHEMA'] . "><span class='caret'>" . $row['TABLE_SCHEMA'] . "</span>";
+                $divHtml .= "<li host_numb=" . $host_pointer . " host=" . $hostName . " db=" . $row['TABLE_SCHEMA'] . "><span class='caret'>" . $row['TABLE_SCHEMA'] . "</span>";
                 $divHtml .= "<ul class='nested'>";
                 if( $row['TABLE_ROWS']==null ) { $num_rows = 0; } else { $num_rows = $row['TABLE_ROWS']; }
-                $divHtml .= "<li class='li-mysql-table dispTbl' point='". $array_pointer ."' host='" . $host_pointer . "' db='" . $row['TABLE_SCHEMA']  . "'  table-name='" . $row['TABLE_NAME'] . "'><span>" . $row['TABLE_NAME'] . " | " . $num_rows . " rows</span><span class='spanPlus'>+</span>";  
+                $divHtml .= "<li class='li-mysql-table dispTbl' point='". $array_pointer ."' host_numb='" . $host_pointer . "' db='" . $row['TABLE_SCHEMA']  . "'  table-name='" . $row['TABLE_NAME'] . "'><span>" . $row['TABLE_NAME'] . " | " . $num_rows . " rows</span><span class='spanPlus'>+</span>";  
                 // $divHtml .= "<li class='li-mysql-table dispTbl' point='". $array_pointer ."' host='" . $host_pointer . "' db='" . $db_pointer  . "'  table-name='" . $row['TABLE_NAME'] . "'><span>" . $row['TABLE_NAME'] . " | " . $num_rows . " rows</span><span class='spanPlus'>+</span>";  
                 // array_push($host_db_array[$host_pointer],[$host_serv[1],$db_bf,$row['TABLE_NAME']]);
 

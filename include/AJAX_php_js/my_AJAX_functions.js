@@ -26,7 +26,8 @@ function Display_div_nav_izq(tag,host_array,php_sql_url){
         document.getElementById(tag).innerHTML = data;  
 
         /* call function for display tree structure of tables by each DB in HOST*/
-        openTree(host_array);          
+        openTree(host_array);       
+
     })
 
     .catch(err => {
@@ -61,12 +62,21 @@ function openTree(host_arr) {
             // tag for display host and DB
            
             document.getElementById('display-result-nav-title').innerHTML = 'Host: \"' + hostName + '\"' + ', DB: \"' + dbName + '\"';
-            document.getElementById('display-result-nav-title').setAttribute('host',hostName);
-            document.getElementById('display-result-nav-title').setAttribute('db',dbName);  
-                      
 
-            this.parentElement.querySelector(".nested").classList.toggle("active");
-            this.classList.toggle("caret-down");
+            // document.getElementById('display-result-nav-title').setAttribute('host',hostName);
+            document.getElementById('display-result-nav-title').setAttribute('db',dbName);                        
+
+
+        /*  NOTE: This 2 statements open tree in DB in the left aside   */    
+            //this.parentElement.querySelector(".nested").classList.toggle("active");
+            //this.classList.toggle("caret-down");
+            
+            document.getElementById('p-comment').innerHTML='TABLES';        
+            // tag for show tables of DB selected
+            var table_param = document.getElementById('display-result-nav-title');
+            var _tag= 'display_right_aside';   
+
+            Fetch_js(_tag,'./include/AJAX_php_js/ajax_ListTables.php?hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db'));
             
         });
     }
@@ -85,25 +95,29 @@ function openTree(host_arr) {
 
             // Parameters for calling ajax junction
             var point = this.getAttribute('point');
-            var hostNumb = this.getAttribute('host');
+
+            var hostNumb = this.getAttribute('host_numb');
+            //var hostNumb = this.getAttribute('host');
+
             var dbName = this.getAttribute('db');
             var tblName = this.getAttribute('table-name');   
 
             // tag for display host, DB, table in second NAV
             var _titleTag = 'display-result-nav-title';
             document.getElementById(_titleTag).innerHTML = 'Host: \"' + host_arr[hostNumb] + '\"' + ', DB: \"' + dbName + '\"' +  '<br><span style=\'color:blue;font-size:20px;\'>Table: \"' + tblName + '\" ';
+            document.getElementById(_titleTag).setAttribute('host_numb',hostNumb);
             document.getElementById(_titleTag).setAttribute('host',host_arr[hostNumb]);
             document.getElementById(_titleTag).setAttribute('db',dbName);
             document.getElementById(_titleTag).setAttribute('table',tblName);
 
             // call ajax table function
-            Fetch_js('display_left_aside','./include/AJAX_php_js/ajax_SelectTbl.php?hostName='+host_arr[hostNumb]+'&dbName='+dbName+'&tblName='+tblName);                    
-            //ShowTblCols_Left_Aside_js(_tag,'./include/AJAX_php_js/ajax_SelectTbl.php?hostName='+host_arr[hostNumb]+'&dbName='+dbName+'&tblName='+tblName);                    
+            Fetch_js('display_right_aside','./include/AJAX_php_js/ajax_SelectTbl.php?hostName='+host_arr[hostNumb]+'&dbName='+dbName+'&tblName='+tblName);                    
+            //ShowTblCols_right_aside_js(_tag,'./include/AJAX_php_js/ajax_SelectTbl.php?hostName='+host_arr[hostNumb]+'&dbName='+dbName+'&tblName='+tblName);                    
             //DescribeTbl_js(_tag,'./include/AJAX_php_js/ajax_DescribeTbl.php?hostName='+host_arr[hostNumb]+'&dbName='+dbName+'&tblName='+tblName);                    
             
         });      
     
-    }
+    }    
 
 }
 
@@ -130,7 +144,7 @@ function Fetch_js(tag,php_sql_url){
         
         document.getElementById(tag).innerHTML = data;    
 
-        if ( tag == 'display_left_aside') {
+        if ( tag == 'display_right_aside') {
             var leftAside_Btn_Selected = document.getElementsByClassName('left-aside-btn');    
             for (var i = 0; i < leftAside_Btn_Selected.length; i++) {
                 leftAside_Btn_Selected[i].addEventListener('click', doLeftAsideButtonAction, false);

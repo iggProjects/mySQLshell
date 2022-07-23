@@ -52,9 +52,9 @@ echo "
                 echo "<p><span style='color:#990000;'>USER: </span></p>"; 
                 
                 echo "<select class='servers_List' name='servers_List' id='serverList'>";                
-                    echo "<option class='serverOpt' value='' selected>Select Server</option>"; 
+                    echo "<option class='serverOpt' host_numb='' value='' selected>Select Server</option>"; 
                     for ( $k=0; $k < $i_serv; $k++ ) {                         
-                        echo "<option class='serverOpt'  value='" . $host_serv[$k+1] . "' >" . $host_serv_ShortName[$k+1] . "</option>"; 
+                        echo "<option class='serverOpt'  host_numb='" . ($k+1) . "'  value='" . $host_serv[$k+1] . "' >" . $host_serv_ShortName[$k+1] . "</option>"; 
                     }
                 echo "</select>"; 
 
@@ -95,6 +95,7 @@ echo "
                                     </div>
 
                                     <button id='query-btn' onclick='execute_query()'><b>Process Query</b></button> 
+                                    <button id='clear-query-btn' onclick='document.getElementById(\"sql-query-area\").value=\"\"'><b>Clear Query</b></button> 
 
                                     <div>
                                         <button id='tbls-rel' onclick='tables_relations()'>Tbls Rel</button>
@@ -112,9 +113,9 @@ echo "
                         
                         </div>";
 
-                        echo "<div id='left_aside'>
-                            <div class='display_left_aside-comment'><p id='p-comment'>INFO</p></div>
-                            <div id='display_left_aside'></div>
+                        echo "<div id='right_aside'>
+                            <div class='display_right_aside-comment'><p id='p-comment'>INFO</p></div>
+                            <div id='display_right_aside'></div>
                         </div>";
 
                     echo "</div>";
@@ -136,30 +137,31 @@ echo "
     var hostSelected = document.getElementById("serverList");
     hostSelected.addEventListener("click", () => {
         hostSelected.addEventListener("change", () => {  
-
-            // Clear der-console areas
-            // clearDerConsoleAreas();
                         
-            document.getElementById('hostNavIzq').innerHTML = hostSelected.value; 
+            document.getElementById('hostNavIzq').innerHTML = hostSelected.value;            
+
+            let host_n = event.target.selectedOptions[0].getAttribute("host_numb");    
+            //alert('host selected attributes ' + host_n); 
             
             if (hostSelected.value != 0 ) {
 
                 // call ajax function to display DB-info area in div_nav_izq
-                php_sql_url = './include/AJAX_php_js/ajax_Display_div_nav_izq.php?hostName='+hostSelected.value;
+                php_sql_url = './include/AJAX_php_js/ajax_Display_div_nav_izq.php?host_numb=' + host_n + '&hostName='+hostSelected.value;
                 console.log('ajax php=> ' + php_sql_url); 
                 var host_array = <?php echo json_encode($host_serv); ?>;
 
                 // ser display-result-nav-title values
                 var table_param = document.getElementById('display-result-nav-title');
+                table_param.setAttribute('host_numb',host_n);
                 table_param.setAttribute('host',hostSelected.value);
-                table_param.innerHTML = "host: " + hostSelected.value;
+                table_param.innerHTML = "host_numb: " + host_n + " | host: " + hostSelected.value;
 
                 Display_div_nav_izq('html_div_nav_izq',host_array,php_sql_url);   
 
             } else {
                 document.getElementById('html_div_nav_izq').innerHTML = ""; 
                 document.getElementById('display-result-nav-title').innerHTML = ""; 
-                document.getElementById('display_left_aside').innerHTML = ""; 
+                document.getElementById('display_right_aside').innerHTML = ""; 
             }
 
         })
@@ -207,7 +209,7 @@ echo "
                 } 
                 else {
                     // clear areas
-                    // document.getElementById('display_left_aside').innerHTML = "";
+                    // document.getElementById('display_right_aside').innerHTML = "";
                     //document.getElementById('display-sql-console-Up').innerHTML = "";
                     //document.getElementById('display-sql-console-Down').innerHTML = "";                        
 
@@ -254,7 +256,7 @@ echo "
                     // document.getElementById('display-result-nav-title').innerHTML="";
                     document.getElementById('p-comment').innerHTML='TABLES';        
                     // tag for show tables of DB selected
-                    _tag= 'display_left_aside';   
+                    _tag= 'display_right_aside';   
                     Fetch_js(_tag,'./include/AJAX_php_js/ajax_ListTables.php?hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db'));
                 }
 
@@ -403,7 +405,7 @@ echo "
         // document.getElementById('display-sql-console-Down').innerHTML = "";
         // document.getElementById('display-sql-console-Down').innerHTML = "";
         // document.getElementById('p-comment').innerHTML = "";
-        document.getElementById('display_left_aside').innerHTML = "";
+        document.getElementById('display_right_aside').innerHTML = "";
     }
 
 
