@@ -44,8 +44,6 @@ IÑAKI - META DÍA 23-07-2022
         las tablas que apuntan a la tabla objetivo (lado izq) y las tablas a las que apunta la tabla objetivo (lado der)
   
        
-
-
   REVISAR EL USO DE LAS CREDENCIALES, Y LA CONVENIENCIA DE QUE EL LOGIN TRABAJE CON
      UNA TABLA DE LA DB NUESTRA myLQSadmin, QUE CONTIENE LOS USUARIOS Y CLAVES  
 

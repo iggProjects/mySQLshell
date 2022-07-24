@@ -11213,3 +11213,12 @@
 [23-Jul-2022 18:48:26] [Date: 2022-07-23 18:48:26 | inaki2022 connect succesfully to '8661316_laninaki22']
 [23-Jul-2022 18:48:26] [Date: 2022-07-23 18:48:26 | inaki2022 execute succesfully show tables query
  'SHOW TABLES;']
+[24-Jul-2022 15:18:59] [Date: 2022-07-24 15:18:59 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[24-Jul-2022 15:18:59] [Date: 2022-07-24 15:18:59 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[24-Jul-2022 15:19:07] [Date: 2022-07-24 15:19:07 | inaki2022 connect succesfully to 'information_schema']
+[24-Jul-2022 15:19:07] [Date: 2022-07-24 15:19:07 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[24-Jul-2022 15:19:08] [Date: 2022-07-24 15:19:08 | inaki2022 connect succesfully to 'information_schema']
+[24-Jul-2022 15:19:08] [Date: 2022-07-24 15:19:08 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
