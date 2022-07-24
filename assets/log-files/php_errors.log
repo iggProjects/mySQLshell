@@ -10488,3 +10488,41 @@ Stack trace:
 [24-Jul-2022 16:52:56 Europe/Berlin] PHP Warning:  Undefined variable $thead_titles in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 76
 [24-Jul-2022 16:52:56 Europe/Berlin] PHP Warning:  Undefined variable $divHtml in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 76
 [24-Jul-2022 16:52:57 Europe/Berlin] PHP Warning:  Undefined variable $thead_titles in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 76
+[24-Jul-2022 17:09:28 Europe/Berlin] PHP Warning:  Undefined array key "host_number" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 19
+[24-Jul-2022 17:09:28 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 80
+[24-Jul-2022 17:09:31 Europe/Berlin] PHP Warning:  Undefined array key "host_number" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 19
+[24-Jul-2022 17:09:31 Europe/Berlin] PHP Warning:  Undefined array key "host_number" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 19
+[24-Jul-2022 17:09:31 Europe/Berlin] PHP Warning:  Undefined array key "host_number" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 19
+[24-Jul-2022 17:09:33 Europe/Berlin] PHP Warning:  Undefined array key "host_number" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 19
+[24-Jul-2022 17:09:33 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 80
+[24-Jul-2022 17:09:33 Europe/Berlin] PHP Warning:  Undefined array key "host_number" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 19
+[24-Jul-2022 17:09:33 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 80
+[24-Jul-2022 17:09:33 Europe/Berlin] PHP Warning:  Undefined array key "host_number" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 19
+[24-Jul-2022 17:09:33 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 80
+[24-Jul-2022 17:09:33 Europe/Berlin] PHP Warning:  Undefined array key "host_number" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 19
+[24-Jul-2022 17:09:33 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 80
+[24-Jul-2022 17:09:33 Europe/Berlin] PHP Warning:  Undefined array key "host_number" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 19
+[24-Jul-2022 17:09:33 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 80
+[24-Jul-2022 17:17:43 Europe/Berlin] PHP Warning:  Undefined array key "host_number" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 19
+[24-Jul-2022 17:17:43 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 80
+[24-Jul-2022 17:19:41 Europe/Berlin] PHP Warning:  Undefined array key "host_number" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 19
+[24-Jul-2022 17:19:41 Europe/Berlin] PHP Warning:  Undefined array key "host_number" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 19
+[24-Jul-2022 17:19:42 Europe/Berlin] PHP Warning:  Undefined array key "host_number" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 19
+[24-Jul-2022 17:19:44 Europe/Berlin] PHP Warning:  Undefined array key "host_number" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 19
+[24-Jul-2022 17:19:44 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 80
+[24-Jul-2022 17:19:44 Europe/Berlin] PHP Warning:  Undefined array key "host_number" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 19
+[24-Jul-2022 17:19:44 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 80
+[24-Jul-2022 17:19:44 Europe/Berlin] PHP Warning:  Undefined array key "host_number" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 19
+[24-Jul-2022 17:19:44 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 80
+[24-Jul-2022 17:19:44 Europe/Berlin] PHP Warning:  Undefined array key "host_number" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 19
+[24-Jul-2022 17:19:44 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 80
+[24-Jul-2022 17:19:44 Europe/Berlin] PHP Warning:  Undefined array key "host_number" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 19
+[24-Jul-2022 17:19:44 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 80
+[24-Jul-2022 17:26:24 Europe/Berlin] PHP Warning:  Undefined array key "host_number" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 19
+[24-Jul-2022 17:26:24 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 80
+[24-Jul-2022 17:26:49 Europe/Berlin] PHP Warning:  Undefined array key "host_number" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 19
+[24-Jul-2022 17:26:49 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 80
+[24-Jul-2022 17:28:30 Europe/Berlin] PHP Warning:  Undefined array key "host_number" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 19
+[24-Jul-2022 17:28:30 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 80
+[24-Jul-2022 17:29:49 Europe/Berlin] PHP Warning:  Undefined array key "host_number" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 19
+[24-Jul-2022 17:29:49 Europe/Berlin] PHP Warning:  Undefined variable $dbname in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 80

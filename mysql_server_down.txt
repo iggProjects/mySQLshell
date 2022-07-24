@@ -1,0 +1,40 @@
+[mysql] 	Status change detected: running
+[mysql] 	Status change detected: stopped
+[mysql] 	Error: MySQL shutdown unexpectedly.
+[mysql] 	This may be due to a blocked port, missing dependencies, 
+[mysql] 	improper privileges, a crash, or a shutdown by another method.
+[mysql] 	Press the Logs button to view error logs and check
+[mysql] 	the Windows Event Viewer for more clues
+[mysql] 	If you need more help, copy and post this
+[mysql] 	entire log window on the forums
+
+https://stackoverflow.com/questions/18022809/how-to-solve-error-mysql-shutdown-unexpectedly
+
+  IMPORTANT: do NOT delete ibdata1 file. You could destroy all your databases.
+
+  Instead, first try using the MySQL backup folder which is included with XAMPP. So do next steps:
+
+  Rename folder mysql/data to mysql/data_old
+  Make a copy of mysql/backup folder and name it as mysql/data
+  Copy all your database folders from mysql/data_old into mysql/data (except mysql, performance_schema, and phpmyadmin folders)
+  Copy mysql/data_old/ibdata1 file into mysql/data folder
+  Start MySQL from XAMPP control panel
+
+
+https://gist.github.com/josemmo/24e35f2b4984a4370ce2c164f5956437
+
+# Based on this answer: https://stackoverflow.com/a/61859561/1956278
+
+# Backup old data
+Rename-Item -Path "./data" -NewName "./data_old"
+
+# Create new data directory
+Copy-Item -Path "./backup" -Destination "./data" -Recurse
+Remove-Item "./data/test" -Recurse
+$dbPaths = Get-ChildItem -Path "./data_old" -Exclude ('mysql', 'performance_schema', 'phpmyadmin') -Recurse -Directory
+Copy-Item -Path $dbPaths.FullName -Destination "./data" -Recurse
+Copy-Item -Path "./data_old/ibdata1" -Destination "./data/ibdata1"
+
+# Notify user
+Write-Host "Finished repairing MySQL data"
+Write-Host "Previous data is located at ./data_old"
