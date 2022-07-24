@@ -75,12 +75,12 @@
   
   
   .my-scroll-bar::-webkit-scrollbar {
-    width: 4px;
-    height:4px;
+    width: 5px;
+    height:5px;
   }
   .my-scroll-bar::-webkit-scrollbar-thumb {
     background: rgb(62, 159, 251);
-    border-radius: 8px;
+    /* border-radius: 10px; */
   }
 
   
@@ -117,7 +117,7 @@
   
   .div-DB-view .DB-info .div-der .der-console #display_result .display-result-nav #display-result-nav-title { margin:0px; color:#003300; font-size: 15px;}
 
-  .div-DB-view .DB-info .div-der .der-console #display_result #display_sql_result { width:100%; height: 86%; margin:auto; padding-top:10px; text-align: center; border:2px solid white; background-color: #bfbfbf;}
+  .div-DB-view .DB-info .div-der .der-console #display_result #display_sql_result { width:100%; height: 90%; margin:auto; padding-top:10px; text-align: center; border:2px solid white; background-color: #bfbfbf;}
 
   .div-DB-view .DB-info .div-der .der-console #display_result #display_sql_result table {  margin-right: auto; margin-left:auto; margin-top:10px; border:1px solid gray;} 
 
