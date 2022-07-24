@@ -44,7 +44,7 @@ if ( $hostName == 'POAPMYSQL119.dns-servicio.com:3306' ) {
     $dbcharset = 'utf8mb4';
     $h=1;
 } elseif ( $hostName == '127.0.0.1' ) {
-    $hostUser = "root";
+    $hostUser = "root";    
     $hostPassw = "@mysql@";
     $dbcharset = 'utf8mb4';
     $h=2;

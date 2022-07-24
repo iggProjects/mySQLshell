@@ -9,7 +9,80 @@
     padding: 0;
     outline: 0;
     box-sizing: border-box;
+
+    /*  https://ed.team/blog/personaliza-el-scroll-de-tu-web-solo-con-css */
+    /* Works on Firefox 
+    scrollbar-width: thin;
+    scrollbar-color: blue rgb(145, 145, 145);
+    */  
   }
+  
+  /* Works on Chrome, Edge, and Safari 
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: rgb(145, 145, 145);
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 20px;
+    border: 2px solid rgb(145, 145, 145);
+  }
+
+  */
+
+    
+
+    /* 
+    
+    https://codepen.io/Jopzik/pen/xaWzMB/
+
+    // Tamaño del scroll 
+    .div-DB-view::-webkit-scrollbar {
+      width: 4px;
+    }
+  
+    /* Estilos barra (thumb) de scroll 
+    .div-DB-view::-webkit-scrollbar-thumb {
+      background: red;
+      border-radius: 8px;
+    }
+  
+    .div-DB-view::-webkit-scrollbar-thumb:active {
+      background-color: #999999;
+    }
+  
+    .div-DB-view::-webkit-scrollbar-thumb:hover {
+      background: #b3b3b3;
+      box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+    }
+  
+    // Estilos track de scroll 
+    .div-DB-view::-webkit-scrollbar-track {
+      background: #e1e1e1;
+      border-radius: 4px;
+    }
+  
+    .div-DB-view::-webkit-scrollbar-track:hover, 
+    .div-DB-view::-webkit-scrollbar-track:active {
+      background: #d4d4d4;
+    }
+    */
+  
+  
+  
+  .my-scroll-bar::-webkit-scrollbar {
+    width: 4px;
+    height:4px;
+  }
+  .my-scroll-bar::-webkit-scrollbar-thumb {
+    background: rgb(62, 159, 251);
+    border-radius: 8px;
+  }
+
   
 
   .div-DB-view { width:98%; height:95vh; overflow-y: scroll; margin:auto; margin-top:0px; padding:5px; /*border:5px solid #e2e2e2;*/ } 

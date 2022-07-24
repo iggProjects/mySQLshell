@@ -42,13 +42,13 @@ ini_set('error_log',$php_errors_log);
 <?php
 
 echo "    
-    <div class='div-DB-view disp-row-center'>
+    <div class='div-DB-view disp-row-center my-scroll-bar'>
         <div class='div-header-text'>
             <h2>my LQS admin</h2>  
         </div>";
 
         echo "<div id='div-DB-info' class='DB-info' style='display:flex;'>";
-            echo "<div id='div_nav_izq' class='nav-izq'>";  
+            echo "<div id='div_nav_izq' class='nav-izq my-scroll-bar'>";  
                 echo "<p><span style='color:#990000;'>USER: </span></p>"; 
                 
                 echo "<select class='servers_List' name='servers_List' id='serverList'>";                
@@ -79,12 +79,12 @@ echo "
 
                     echo "<div class='der-console disp-row-center' >";
 
-                        echo "<div id='display_result'>
+                        echo "<div id='display_result' class='my-scroll-bar'>
                             <div class='display-result-nav'><p id='display-result-nav-title'></p></div> 
 
                             <div id='display_sql_result' class='showDiv'></div>
 
-                            <div id='display-sql-console-Up' class='hideDiv'>
+                            <div id='display-sql-console-Up' class='hideDiv my-scroll-bar'>
 
                                 <div class='display-sql-console-Up-btns disp-row-center'>
 
@@ -109,11 +109,11 @@ echo "
 
                             </div>
 
-                            <div id='display-sql-console-Down' class='hideDiv' placeholder='query result area' style='color:blue;'>____ query result area ____</div>
+                            <div id='display-sql-console-Down' class='my-scroll-bar hideDiv' placeholder='query result area' style='color:blue;'>____ query result area ____</div>
                         
                         </div>";
 
-                        echo "<div id='right_aside'>
+                        echo "<div id='right_aside' class='my-scroll-bar'>
                             <div class='display_right_aside-comment'><p id='p-comment'>INFO</p></div>
                             <div id='display_right_aside'></div>
                         </div>";
