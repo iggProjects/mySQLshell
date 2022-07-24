@@ -15,95 +15,149 @@ APPROACH:
 </head>
 <body style=" background: white;">
 
-    <canvas id="canvas" width="500px" height="500px" style=" background: rgb(206, 205, 205); "></canvas>
+    <div style="margin-top:50px; padding:auto; text-align: center;">    
+        <canvas id="canvas" width="600px" height="600px" style="border:5px solid gray; /* background: rgb(206, 205, 205); */"></canvas>
+    </div>
 
     <script>
     </script>
 
     <script type="text/javascript" language="javascript">
 
+        // diagonal lines 
+        //  https://www.cs.helsinki.fi/group/goa/mallinnus/lines/bresenh.html    
+
         function row_rectangle(_ctxx,_text,_xx,_yy,_w,_hh) {
             _ctxx.strokeRect(_xx, _yy, _w, _hh);
             _ctxx.fillText(_text,_xx+(_w/2),_yy+(_hh/2));
         }
 
-        function draw_table(_ctx,_table,_x,_y,_h){
+        function draw_table(_ctx,_table,_x,_y,_w,_h){
             
-            _ctx.lineWidth = 1;
-            _ctx.strokeStyle = "gray"; // border color
-            _ctx.fillStyle = "blue";   // chars color            
-            _ctx.textAlign="center"; 
-            _ctx.textBaseline = "middle";     
-            
-            // max length text of elements in table
-            var max_large_text = '';
-            for ( var i=0; i < _table.length; i++ ){  
-                if ( max_large_text.length < _table[i].length ) { max_large_text = _table[i]; } 
-            }
-
-            var w = _ctx.measureText(max_large_text).width * 2;              
-
+            _x = _x - _w/2;
             for ( var i=0; i < _table.length; i++) {  
-                row_rectangle(_ctx,_table[i]+i,_x,_y,w,_h);
+                row_rectangle(_ctx,_table[i],_x,_y,_w,_h);
                 _y += _h;
             }
 
         }
 
 
-        // MAIN 
+        function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
+
+            // testing
+            left_lines_x_y_array[0] = [{'x1':1,'y1':1},{'x2':2,'y2':2}];
+
+            var tot_lines_height = Math.max(ppal_table_array.length,left_tables_array.length,right_tables_array.length);                       
+            
+            // canvas parameters
+            var canvas = document.getElementById("canvas");
+            var ctx = canvas.getContext("2d");
+            var fontsize = 20;
+            var fontface = 'arial';
+            var h = fontsize * 1.4;
+            ctx.lineWidth = 1;
+            ctx.strokeStyle = "black"; // border color
+            ctx.fillStyle = "blue";   // chars color            
+            ctx.textAlign="center"; 
+            ctx.textBaseline = "middle";                
+
+            // parameters to draw ppal_table_array
+            var x = w/2;
+            var y = 10; 
+            
+            // max length text of elements in table
+            var max_large_text = '';
+            for ( var i=0; i < ppal_table_array.length; i++ ){  
+                if ( max_large_text.length < ppal_table_array[i].length ) { max_large_text = ppal_table_array[i]; } 
+            }
+            var text_w = ctx.measureText(max_large_text).width * 1.5;              
+            
+            draw_table(ctx,ppal_table_array,x,y,text_w,h);
+
+            // parameters to draw left_table_array
+            x = 10;
+            max_large_text = '';
+            for ( var i=0; i < left_tables_array.length; i++ ){  
+                if ( max_large_text.length < left_tables_array[i].length ) { max_large_text = left_tables_array[i]; } 
+            }
+            text_w = ctx.measureText(max_large_text).width * 1.5;  
+            x = 10 + text_w/2;             
+            y =  10;            
+            draw_table(ctx,left_tables_array,x,y,text_w,h);
+
+            // parameters to draw right_table_array
+            x = w-10;
+            max_large_text = '';
+            for ( var i=0; i < right_tables_array.length; i++ ){  
+                if ( max_large_text.length < right_tables_array[i].length ) { max_large_text = right_tables_array[i]; } 
+            }
+            text_w = ctx.measureText(max_large_text).width * 1.5;  
+            x = x - text_w/2;             
+            y = 10;
+            draw_table(ctx,right_tables_array,x,y,text_w,h);
+
+        }
+
+        function draw_table_relations(left_array,right_array) {
+            alert(left_array[0][0]['x1']);
+            alert(left_array[0][0]['y1']);
+            alert(JSON.stringify(left_array));     
+        }      
+
+        // MAIN        
+
+        var table_ppal = ['id ','field ','field ','field ','field field field ','field ','field ','field '];
+
+        var left_table = ['id ','field ','field field field field ','field '];        
+
+        var right_table = ['id ','field ','field ','field field '];
+
+        var cv_w = document.getElementById("canvas").width;
+        var cv_h = document.getElementById("canvas").height;
         
-        var canvas = document.getElementById("canvas");
-        var ctx = canvas.getContext("2d");
+        // arrays for append de (x,y) coordinates of source and destiny points to make respective "relation lines"
+        var left_lines_x_y_array = [];
+        var right_lines_x_y_array = [];        
 
-        var table1 = ['field ','field ','field ','field ','field field field ','field ','field ','field '];
+        draw_db(cv_w,cv_h,table_ppal,left_table,right_table);
 
-        // determine initial x and y knowing how many tables are
-        var x = 10;
-        var y = 10; 
+        draw_table_relations(left_lines_x_y_array,right_lines_x_y_array);
 
-        var fontsize = 18;
-        var fontface = 'arial';
-        var h = fontsize * 1.5;
+        function draw_diagonal_line_of_circles(){
+            var ctx = document.getElementById("canvas").getContext("2d");
+            var counter = 0;
+            for (var i=0;i<50;i++) {
+                for (var j=0;j<50;j++) {
+                    //Start from white and goes to black 42.5
+                    //ctx.fillStyle = "rgb(" + Math.floor(255-22.5*i) + "," + Math.floor(255-22.5*i) + "," + Math.floor(255-22.5*j) + ")";
+                    ctx.fillStyle = "black";
+                    ctx.beginPath();
+                    if (i === counter && j === counter) {
+                        // creates the circles
+                        // define slope 
+                        ctx.arc(0+j*3,300-i*1,0.3,0,Math.PI*2,true);
+                        ctx.fill();
+                        //creates a border around the circles so white one will be vissible
+                        ctx.stroke();
+                    } 
+                }
+                counter++;
+            }
+        }
 
-        draw_table(ctx,table1,x,y,h);
+        draw_diagonal_line_of_circles();
 
-        var table2 = ['field field field ','field ','field field field field ','field '];
-
-        x = 10;
-        y +=  h * (table1.length +1); 
-
-        draw_table(ctx,table2,x,y,h);
-
-        var table3 = ['field field ','field ','field ','field '];
-
-        x = 10;
-        y += h * ( table2.length +1 ); 
-
-        draw_table(ctx,table3,x,y,h);
-
-    </script>
-
-<script>
-    /*    
-    var fontsize = 12;
-    var fontface = 'verdana';
-    var lineHeight = fontsize * 3;
-    var text = 'Draw a rectangle around me.';
-
-    ctx.font = fontsize + 'px ' + fontface;
-    var textWidth = ctx.measureText(text).width*1.2;            
-
-    ctx.textAlign = 'left';
-    ctx.textBaseline = 'top';
-
-    ctx.strokeRect(10, 40, textWidth, lineHeight);
-    ctx.fillText(text, 30, 50);    
-    */    
+        var ctx = document.getElementById("canvas").getContext("2d");
+        ctx.beginPath();
+        ctx.moveTo(0, 600);
+        ctx.lineTo(300, 300);
+        ctx.stroke();
 </script>
 
+        
 
-
+    </script>
 
 
 </body>
