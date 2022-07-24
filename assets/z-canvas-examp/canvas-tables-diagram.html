@@ -99,7 +99,7 @@ APPROACH:
 
         }
 
-        function draw_table_relations(left_array,right_array) {
+        function draw_table_relations_lines(left_array,right_array) {
             alert(left_array[0][0]['x1']);
             alert(left_array[0][0]['y1']);
             alert(JSON.stringify(left_array));     
@@ -122,7 +122,7 @@ APPROACH:
 
         draw_db(cv_w,cv_h,table_ppal,left_table,right_table);
 
-        draw_table_relations(left_lines_x_y_array,right_lines_x_y_array);
+        draw_table_relations_lines(left_lines_x_y_array,right_lines_x_y_array);
 
         function draw_diagonal_line_of_circles(){
             var ctx = document.getElementById("canvas").getContext("2d");
