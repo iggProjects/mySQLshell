@@ -22,8 +22,8 @@ APPROACH:
 <style>
     .canvas-area {
         position:relative;
-        width:300px;
-        height:300px;
+        width:700px;
+        height:600px;
         overflow:auto;
     }
 </style>    
@@ -31,8 +31,8 @@ APPROACH:
 </head>
 <body style="background: white;">
 
-    <div class="canvas-area" style="margin-top:50px; margin:auto; text-align: center;">    
-        <canvas class="canvas-area" id="canvas" width="600px" height="600px" style="border:5px solid gray;"></canvas>
+    <div class="canvas-area" style="margin:auto; margin-top:50px;  text-align: center;">    
+        <canvas class="canvas-area" id="canvas" width="900px" height="700px" style="border:5px solid gray;"></canvas>
     </div>
 
     <script>
@@ -43,7 +43,30 @@ APPROACH:
         //  diagonal lines 
         //  https://www.cs.helsinki.fi/group/goa/mallinnus/lines/bresenh.html    
 
-        function row_rectangle(_ctxx,_text,_xx,_yy,_w,_hh) {
+        // pair_points[i] = [{'x1':0,'y1':600},{'x2':300,'y2':300}];
+        function draw_pair_points_x_y(pair_points) {
+            alert(pair_points[0][0]['x1'] + ' (x1,y1) ' + pair_points[0][0]['y1']);
+            alert(pair_points[0][1]['x2'] + ' (x2,y2) ' + pair_points[0][1]['y2']);
+            var ctx = document.getElementById("canvas").getContext("2d");
+            ctx.beginPath();
+
+            /* testing */
+            ctx.moveTo(pair_points[0][0]['x1'],pair_points[0][0]['y1']);
+            ctx.lineTo(pair_points[0][1]['x2'],pair_points[0][1]['y2']);  
+            ctx.moveTo(pair_points[1][0]['x1'],pair_points[1][0]['y1']);          
+            ctx.lineTo(pair_points[1][1]['x2'],pair_points[1][1]['y2']);            
+            ctx.stroke();
+        }
+
+        /*  USED FOR "LEFT" AND "RIGHT" POINTS ARRAYS  */
+        function draw_table_relations_lines(points_array) {
+            alert(JSON.stringify(points_array));  
+            draw_pair_points_x_y(points_array);   
+            /* HERE: loop through array elements  */  
+
+        }      
+
+        function draw_table_row(_ctxx,_text,_xx,_yy,_w,_hh) {
             _ctxx.strokeRect(_xx, _yy, _w, _hh);
             _ctxx.fillText(_text,_xx+(_w/2),_yy+(_hh/2));
         }
@@ -52,7 +75,7 @@ APPROACH:
             
             _x = _x - _w/2;
             for ( var i=0; i < _table.length; i++) {  
-                row_rectangle(_ctx,_table[i],_x,_y,_w,_h);
+                draw_table_row(_ctx,_table[i],_x,_y,_w,_h);
                 _y += _h;
             }
 
@@ -60,8 +83,6 @@ APPROACH:
 
         function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
 
-            // testing
-            left_lines_x_y_array[0] = [{'x1':1,'y1':1},{'x2':2,'y2':2}];
 
             var tot_lines_height = Math.max(ppal_table_array.length,left_tables_array.length,right_tables_array.length);                       
             
@@ -114,13 +135,20 @@ APPROACH:
             y = 10;
             draw_table(ctx,right_tables_array,x,y,text_w,row_h);
 
-        }
+            /*  Testing */
+            draw_table_relations_lines(left_lines_x_y_array);
 
-        function draw_table_relations_lines(left_array,right_array) {
-            //alert(left_array[0][0]['x1']);
-            // alert(left_array[0][0]['y1']);
-            alert(JSON.stringify(left_array));     
-        }      
+        }
+/*
+        function draw_pair_points_x_y(x1,y1,x2,y2) {
+            var ctx = document.getElementById("canvas").getContext("2d");
+            ctx.beginPath();
+            ctx.moveTo(x1,y1);
+            ctx.lineTo(x2,y2);
+            ctx.stroke();
+        }
+*/
+
 
         // MAIN        
 
@@ -135,11 +163,16 @@ APPROACH:
         
         // arrays for append de (x,y) coordinates of source and destiny points to make respective "relation lines"
         var left_lines_x_y_array = [];
-        var right_lines_x_y_array = [];        
+        var right_lines_x_y_array = [];     
+        
+        // for testing
+        left_lines_x_y_array[0] = [{'x1':0,'y1':400},{'x2':300,'y2':400}];
+        left_lines_x_y_array[1] = [{'x1':0,'y1':450},{'x2':300,'y2':450}];
 
-        draw_db(cv_w,cv_h,table_ppal,left_table,right_table);
+        right_lines_x_y_array[0] = [{'x1':600,'y1':300},{'x2':300,'y2':300}];
+        right_lines_x_y_array[1] = [{'x1':600,'y1':500},{'x2':300,'y2':500}];   
 
-        draw_table_relations_lines(left_lines_x_y_array,right_lines_x_y_array);
+        draw_db(cv_w,cv_h,table_ppal,left_table,right_table);        
 
         /*
          * testing circles
@@ -168,18 +201,18 @@ APPROACH:
 
         draw_diagonal_line_of_circles();
 
-        /*
-         * testing lines
-        */ 
+        /* testing lines
+         
         var ctx = document.getElementById("canvas").getContext("2d");
         ctx.beginPath();
         ctx.moveTo(0, 600);
         ctx.lineTo(300, 300);
-
         //ctx.moveTo(300, 300);
         ctx.lineTo(600, 600);
 
         ctx.stroke();
+        */
+
 </script>
 
         

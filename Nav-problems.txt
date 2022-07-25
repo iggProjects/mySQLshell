@@ -1,1 +1,3 @@
-- revisar #left-aside-nav en el caso de cambio de DB trabajando en la cónsole
+DETALLITOS POR revisar
+- revisar #left-aside-nav en el caso de cambio de DB trabajando en la cónsole ✔✔
+-

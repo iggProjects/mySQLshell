@@ -9,129 +9,105 @@ IÑAKI - DARREN
 
 
 ********************************************************************
-IÑAKI - META DÍA 23-07-2022  
+IÑAKI - METAS DÍA 
+
+23-07-2022  
   
-    - colocar host number and host name in <li> de DB left side ✔✔
-
-    - botón "clear" textarea para queries #sql-query-area ✔✔
-
-    - actualizar los ajax*.php para que use el request contra el array que viene de config.servers
-      - el config es para los usuarios 'root' de cada servidor
-      - cómo se manejaría los usuarios nuevos creados por el root
-      - estudiar creación de usuarios y privilegios. Definir qué botones puede ver un usuario de acuerdo a privilegios
-
-    - cambiar el despliegue de tablas al left-aside y verficar la navegación #display-result-nav-title ✔✔
-      (crear function para update de coordenadas )
-
-    - ver si conviene ocultar left side cuando estamos en modo consola para probar queries (NO CONVIENE)
-
-    - Crear las primeras tablas de la DB myLQSadmin
-      - usuarios, standard_queries, favorite_queries, ....
-      - standard queries aplican a cualquier DB
-      - favorite queries están direccionadas por usuario - DB
-
-    - Evaluar botones para facilitar queries tipo INSERT, UPDATE, DELETE
-    
-    - PAGINACIÓN REPORTES con SELECT
+  - colocar host number and host name in <li> de DB left side ✔✔
+  - botón "clear" textarea para queries #sql-query-area ✔✔
+  - cambiar el despliegue de tablas al left-aside y verficar la navegación #display-result-nav-title ✔✔
+    (crear function para update de coordenadas )
+  - ver si conviene ocultar left side cuando estamos en modo consola para probar queries (NO CONVIENE)
       
 24-07-2022
 
-    - CANVAS
-      - https://github.com/raphamorim/canvas-experiments
-      - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D#paths
+  - CANVAS
+    - https://github.com/raphamorim/canvas-experiments
+    - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D#paths
 
-      - buscar las queries para tablas por la derecha y tablas por la izquierda
-      - pensar en diseño dinámico que centre la tabla objetivo y defina criterios para ubicar
-        las tablas que apuntan a la tabla objetivo (lado izq) y las tablas a las que apunta la tabla objetivo (lado der)
-  
-       
-  REVISAR EL USO DE LAS CREDENCIALES, Y LA CONVENIENCIA DE QUE EL LOGIN TRABAJE CON
-     UNA TABLA DE LA DB NUESTRA myLQSadmin, QUE CONTIENE LOS USUARIOS Y CLAVES  
+    - buscar las queries para tablas por la derecha y tablas por la izquierda
+    - pensar en diseño dinámico que centre la tabla objetivo y defina criterios para ubicar
+      las tablas que apuntan a la tabla objetivo (lado izq) y las tablas a las que apunta la tabla objetivo (lado der)  
 
 25-07-2022  
 
-  - checking phpmyadmin tables:
-    - php__users
-        #	Field	Type	Null	Key	Default	Extra
-        1 →	username	varchar(64)	NO	PRI		
-        2 →	usergroup	varchar(64)	NO	PRI
+- phpmyadmin tables review  
+- draw_line_pair_points_X_Y in canvas ✔✔
+- first version for "help url" for troubles in mysql... 
+  - https://www.googleguide.com/linking.html
 
-    - php__usersgroups
-        #	Field	Type	Null	Key	Default	Extra
-        1 →	usergroup	varchar(64)	NO	PRI		
-        2 →	tab	varchar(64)	NO	PRI		
-        3 →	allowed	enum('Y','N')	NO	PRI	N
-    
-    - php__bookmark: 
-        #	Field	Type	Null	Key	Default	Extra
-        id	int(10) unsigned	NO	PRI		auto_increment
-        dbase	varchar(255)	NO			
-        user	varchar(255)	NO			
-        label	varchar(255)	NO			
-        query	text	NO	
-    
-    - php__favorite
-        Field	Type	Null	Key	Default	Extra
-        1 →	username	varchar(64)	NO	PRI		
-        2 →	tables	text	NO		
-    
-    - php__navigationhiding
-        #	Field	Type	Null	Key	Default	Extra
-        1 →	username	varchar(64)	NO	PRI		
-        2 →	item_name	varchar(64)	NO	PRI		
-        3 →	item_type	varchar(64)	NO	PRI		
-        4 →	db_name	varchar(64)	NO	PRI		
-        5 →	table_name	varchar(64)	NO	PRI	  
-    
-    - php__relation
-        #	Field	Type	Null	Key	Default	Extra
-        1 →	master_db	varchar(64)	NO	PRI		
-        2 →	master_table	varchar(64)	NO	PRI		
-        3 →	master_field	varchar(64)	NO	PRI		
-        4 →	foreign_db	varchar(64)	NO	MUL		
-        5 →	foreign_table	varchar(64)	NO			
-        6 →	foreign_field	varchar(64)	NO	
-    
-    - php__table_info  
-        #	Field	Type	Null	Key	Default	Extra
-        1 →	db_name	varchar(64)	NO	PRI		
-        2 →	table_name	varchar(64)	NO	PRI		
-        3 →	display_field	varchar(64)	NO        	              
-    
-    - pma__tracking
-        VERLO con calma
-        #	Field	Type	Null	Key	Default	Extra
-        1 →	db_name	varchar(64)	NO	PRI		
-        2 →	table_name	varchar(64)	NO	PRI		
-        3 →	version	int(10) unsigned	NO	PRI		
-        4 →	date_created	datetime	NO			
-        5 →	date_updated	datetime	NO			
-        6 →	schema_snapshot	text	NO			
-        7 →	schema_sql	text	YES			
-        8 →	data_sql	longtext	YES			
-        9 →	tracking	set('UPDATE','REPLACE','INSERT','DELETE','TRUNCATE','CREATE DATABASE','ALTER DATABASE','DROP DATABASE','CREATE TABLE','ALTER TABLE','RENAME TABLE','DROP TABLE','CREATE INDEX','DROP INDEX','CREATE VIEW','ALTER VIEW','DROP VIEW')	YES			
-        10 →	tracking_active	int(1) unsigned	NO		1
-    
-    - php__column_info
-        #	Field	Type	Null	Key	Default	Extra
-        1 →	id	int(5) unsigned	NO	PRI		auto_increment
-        2 →	db_name	varchar(64)	NO	MUL		
-        3 →	table_name	varchar(64)	NO			
-        4 →	column_name	varchar(64)	NO			
-        5 →	comment	varchar(255)	NO			
-        6 →	mimetype	varchar(255)	NO			
-        7 →	transformation	varchar(255)	NO			
-        8 →	transformation_options	varchar(255)	NO			
-        9 →	input_transformation	varchar(255)	NO			
-        10 →	input_transformation_options	varchar(255)	NO		  
-    
-    - pma__export_templates
-        #	Field	Type	Null	Key	Default	Extra
-        1 →	id	int(5) unsigned	NO	PRI		auto_increment
-        2 →	username	varchar(64)	NO	MUL		
-        3 →	export_type	varchar(10)	NO			
-        4 →	template_name	varchar(64)	NO			
-        5 →	template_data	text	NO	      
+- update ajax*.php para que use el request contra el array que viene de config.servers
+  - el config es para los usuarios 'root' de cada servidor
+  - cómo se manejaría los usuarios nuevos creados por el root
+  - estudiar creación de usuarios y privilegios. Definir qué botones puede ver un usuario de acuerdo a privilegios
+
+    review AJAX_php_js functions. User "root" data for each server:
+      NOTE: this procedure is temporal, until next "DB users schema"
+      substitute actual IF with array info of config.serves.... 
+        index: "['Servers'][$i_serv]['user']"
+                                    ['host'],
+                                    ['shortName']
+      (
+        $cfg_s['Servers'][$i_serv]['user'] = 'inaki2022'; $cfg_s['Servers'][$i_serv]['password'] = '......';
+        $cfg_s['Servers'][$i_serv]['user'] = 'root'; $cfg_s['Servers'][$i_serv]['password'] = '.....';
+      ) 
+
+
+        if ( $dbhost == 'POAPMYSQL119.dns-servicio.com:3306' ) {
+            $dbuser = "inaki2022";
+            $dbpass = "Inaki@2022";
+            $dbcharset = 'utf8mb4';
+            $h=1;
+        } elseif ( $dbhost == '127.0.0.1' ) {
+            $dbuser = "root";
+            $dbpass = "@mysql@";
+            $dbcharset = 'utf8mb4';
+            $h=2;
+        } else {
+            // upssssss msg
+        }
+
+26-07-2022
+
+- LOGIN y DOWNLOAD con DARREN
+
+- Crear DB "myLQSadmin"
+  - crear las primeras tablas usuarios, standard_queries, favorite_queries, ....
+  - hacer botón para insert en la tabla standard_queries
+    - que el botón INSERT para activar un formato de query
+        --> INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...);  
+          - y rellenamos a mano los datos de cada campo
+        
+  - standard queries aplican a cualquier DB
+  - favorite queries están direccionadas por usuario - DB
+  - store queries button (insert-update-delete)
+    - Fields: id, user, db, comment, query
+    - empezar solo con INSERT query optional
+    - luego vemos si vale la pena el update, o solo la opc delete query
+
+- Terminar CANVAS
+  - define "queries" to obtain LEFT and RIGHT RELATIONS ARRAYS
+  - define "drawing schema" to include:
+    - drawing of tables 
+    - identification of points of "pairs points arrays" when calling draw_db function
+
+27-07-2022
+
+  - Evaluar botones para facilitar queries tipo INSERT, UPDATE, DELETE  
+  - PAGINATION FOR "SELECT REPORTS"
+  - DROP DOWN SELECTORS FOR:
+    - standard queries
+    - favorite queries
+
+  - Test LOGIN y DOWNLOAD  
+
+  - CASO DB SERVER
+    Si seleccionamos un server, deberíamos acceder a la sql console. Por ejemplo, para crear una nueva DB en Localhost, y crear sus algunas tablas. Esto traería como consecuencia que debemos sustituir el query en ajax_Display_div_nav_izq (línea 68) $select_query = "SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;"; 
+
+28-07-2022 - 28-07-2022
+  - write first version for "readme"
+  - import export buttons
+  - rename database button
 
 
 ********************************************************************
@@ -230,13 +206,33 @@ SHOW CREATE TABLE 'myTable'
 
 FOREIGN KEYS
 
-  SELECT 
-      TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL 
-    FROM
-      INFORMATION_SCHEMA.KEY_COLUMN_USAGE
-    WHERE
-      REFERENCED_TABLE_SCHEMA = SCHEMA()    
+  "GENERAL":
+    SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL 
+    FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+    WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()    
       -- optional put AND REFERENCED_TABLE_NAME = 'my table'
+      -- optional put AND ( TABLE_NAME = 'my table' OR REFERENCED_TABLE_NAME = 'my table' )
+  
+  EJ "PENJUB TABLE tbl_persona": 
+        
+    penjub, tablas adonde apunta "tbl_persona"   
+    SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL 
+    FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+    WHERE REFERENCED_TABLE_SCHEMA = SCHEMA() AND TABLE_NAME = 'tbl_persona'
+    
+    penjub, tablas que apuntan a "tbl_persona"   
+    SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL 
+    FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+    WHERE REFERENCED_TABLE_SCHEMA = SCHEMA() AND REFERENCED_TABLE_NAME = 'tbl_persona'
+
+    todas las relacionadas con tbl_persona
+    SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL 
+    FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE 
+    WHERE REFERENCED_TABLE_SCHEMA = SCHEMA() AND ( TABLE_NAME='tbl_persona' OR REFERENCED_TABLE_NAME='tbl_persona' )  
+ 
+
+
+
 
 SHOW FULL COLUMNS FROM TABLES OF A DB 
   - SELECT table_name, column_name FROM  information_schema.columns WHERE table_schema = SCHEMA() ORDER BY table_name asc

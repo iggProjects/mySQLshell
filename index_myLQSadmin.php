@@ -48,8 +48,9 @@ echo "
         </div>";
 
         echo "<div id='div-DB-info' class='DB-info' style='display:flex;'>";
+        
             echo "<div id='div_nav_izq' class='nav-izq my-scroll-bar'>";  
-                echo "<p><span style='color:#990000;'>USER: </span></p>"; 
+                echo "<p style='margin-top:5px; margin-bottom:10px;color:#990000;'>USER:</p>"; 
                 
                 echo "<select class='servers_List' name='servers_List' id='serverList'>";                
                     echo "<option class='serverOpt' host_numb='' value='' selected>Select Server</option>"; 
@@ -58,7 +59,7 @@ echo "
                     }
                 echo "</select>"; 
 
-                echo "<p id='hostNavIzq' style='margin-top:0px; color:gray; font-size:12px;'><b></b></p>";     
+                echo "<p id='hostNavIzq' style='margin-top:5px; margin-bottom:10px; color:gray; font-size:12px;'><b></b></p>";     
                 
                 echo "<div id='html_div_nav_izq' style='width:98%;'></div>";
 
@@ -91,11 +92,17 @@ echo "
                                     <div class='disp-row-center' style='width:150px;'>
                                         <button id='extend-console-up-btn' onclick='height_up()'><img src='./assets/img-igg/icons8-expand-48.png' alt='up' width='20' height='15'></button>
                                         <button id='compress-console-up-btn' onclick='height_compress()'><img src='./assets/img-igg/compress-48.png' alt='up' width='20' height='15'></button>
-                                        <button id='go-back-btn' onclick='go_back()'>Go back</button>                                                                        
+                                        <button id='go-back-btn' onclick='go_back()'>Exit</button>                                                                        
                                     </div>
 
                                     <button id='query-btn' onclick='execute_query()'><b>Process Query</b></button> 
-                                    <button id='clear-query-btn' onclick='document.getElementById(\"sql-query-area\").value=\"\"; document.getElementById(\"display-sql-console-Down\").innerHTML=\"\"'><b>Clear Query</b></button> 
+                                    <button id='clear-query-btn' onclick='
+                                        document.getElementById(\"sql-query-area\").value=\"\"; 
+                                        document.getElementById(\"display-sql-console-Down\").innerHTML=\"\";                                        
+                                        document.getElementById(\"display-sql-console-Up\").style.height=\"30%\";  
+                                        document.getElementById(\"display-sql-console-Down\").style.height=\"58%\"'> 
+                                        <b>Clear Query</b>
+                                    </button> 
 
                                     <div>
                                         <button id='tbls-rel' onclick='tables_relations()'>Tbls Rel</button>

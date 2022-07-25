@@ -1,0 +1,84 @@
+PHPMYADMIN TABLES
+
+  - checking phpmyadmin tables:
+    - php__users
+        #	Field	Type	Null	Key	Default	Extra
+        1 →	username	varchar(64)	NO	PRI		
+        2 →	usergroup	varchar(64)	NO	PRI
+
+    - php__usersgroups
+        #	Field	Type	Null	Key	Default	Extra
+        1 →	usergroup	varchar(64)	NO	PRI		
+        2 →	tab	varchar(64)	NO	PRI		
+        3 →	allowed	enum('Y','N')	NO	PRI	N
+    
+    - php__bookmark: 
+        #	Field	Type	Null	Key	Default	Extra
+        id	int(10) unsigned	NO	PRI		auto_increment
+        dbase	varchar(255)	NO			
+        user	varchar(255)	NO			
+        label	varchar(255)	NO			
+        query	text	NO	
+    
+    - php__favorite
+        Field	Type	Null	Key	Default	Extra
+        1 →	username	varchar(64)	NO	PRI		
+        2 →	tables	text	NO		
+    
+    - php__navigationhiding
+        #	Field	Type	Null	Key	Default	Extra
+        1 →	username	varchar(64)	NO	PRI		
+        2 →	item_name	varchar(64)	NO	PRI		
+        3 →	item_type	varchar(64)	NO	PRI		
+        4 →	db_name	varchar(64)	NO	PRI		
+        5 →	table_name	varchar(64)	NO	PRI	  
+    
+    - php__relation
+        #	Field	Type	Null	Key	Default	Extra
+        1 →	master_db	varchar(64)	NO	PRI		
+        2 →	master_table	varchar(64)	NO	PRI		
+        3 →	master_field	varchar(64)	NO	PRI		
+        4 →	foreign_db	varchar(64)	NO	MUL		
+        5 →	foreign_table	varchar(64)	NO			
+        6 →	foreign_field	varchar(64)	NO	
+    
+    - php__table_info  
+        #	Field	Type	Null	Key	Default	Extra
+        1 →	db_name	varchar(64)	NO	PRI		
+        2 →	table_name	varchar(64)	NO	PRI		
+        3 →	display_field	varchar(64)	NO        	              
+    
+    - pma__tracking
+        VERLO con calma
+        #	Field	Type	Null	Key	Default	Extra
+        1 →	db_name	varchar(64)	NO	PRI		
+        2 →	table_name	varchar(64)	NO	PRI		
+        3 →	version	int(10) unsigned	NO	PRI		
+        4 →	date_created	datetime	NO			
+        5 →	date_updated	datetime	NO			
+        6 →	schema_snapshot	text	NO			
+        7 →	schema_sql	text	YES			
+        8 →	data_sql	longtext	YES			
+        9 →	tracking	set('UPDATE','REPLACE','INSERT','DELETE','TRUNCATE','CREATE DATABASE','ALTER DATABASE','DROP DATABASE','CREATE TABLE','ALTER TABLE','RENAME TABLE','DROP TABLE','CREATE INDEX','DROP INDEX','CREATE VIEW','ALTER VIEW','DROP VIEW')	YES			
+        10 →	tracking_active	int(1) unsigned	NO		1
+    
+    - php__column_info
+        #	Field	Type	Null	Key	Default	Extra
+        1 →	id	int(5) unsigned	NO	PRI		auto_increment
+        2 →	db_name	varchar(64)	NO	MUL		
+        3 →	table_name	varchar(64)	NO			
+        4 →	column_name	varchar(64)	NO			
+        5 →	comment	varchar(255)	NO			
+        6 →	mimetype	varchar(255)	NO			
+        7 →	transformation	varchar(255)	NO			
+        8 →	transformation_options	varchar(255)	NO			
+        9 →	input_transformation	varchar(255)	NO			
+        10 →	input_transformation_options	varchar(255)	NO		  
+    
+    - pma__export_templates
+        #	Field	Type	Null	Key	Default	Extra
+        1 →	id	int(5) unsigned	NO	PRI		auto_increment
+        2 →	username	varchar(64)	NO	MUL		
+        3 →	export_type	varchar(10)	NO			
+        4 →	template_name	varchar(64)	NO			
+        5 →	template_data	text	NO	      

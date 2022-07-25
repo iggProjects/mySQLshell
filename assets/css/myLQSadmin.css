@@ -85,7 +85,7 @@
 
   
 
-  .div-DB-view { width:98%; height:95vh; overflow-y: scroll; margin:auto; margin-top:0px; padding:5px; /*border:5px solid #e2e2e2;*/ } 
+  .div-DB-view { width:98%; height:100vh; overflow-y: scroll; margin:auto; margin-top:0px; padding:5px; /*border:5px solid #e2e2e2;*/ } 
 
   .div-DB-view p { color:blue; margin-left:5px;}
 
@@ -115,7 +115,7 @@
 
   .div-DB-view .DB-info .div-der .der-console #display_result #display-sql-query { font-size: 10px; color: #990000}
   
-  .div-DB-view .DB-info .div-der .der-console #display_result .display-result-nav #display-result-nav-title { margin:0px; color:#003300; font-size: 15px;}
+  .div-DB-view .DB-info .div-der .der-console #display_result .display-result-nav #display-result-nav-title { margin:0px; margin-top:5px; color:#003300; font-size: 15px;}
 
   .div-DB-view .DB-info .div-der .der-console #display_result #display_sql_result { width:100%; height: 90%; margin:auto; padding-top:10px; text-align: center; border:2px solid white; background-color: #bfbfbf;}
 
