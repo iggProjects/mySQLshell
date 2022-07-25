@@ -67,7 +67,9 @@ function openTree(host_arr) {
             document.getElementById('display-result-nav-title').setAttribute('db',dbName);                        
 
 
-        /*  NOTE: This 2 statements open tree in DB in the left aside   */    
+        /*  
+         *   NOTE: This 2 statements open tree in DB in the left aside   
+        */    
             //this.parentElement.querySelector(".nested").classList.toggle("active");
             //this.classList.toggle("caret-down");
             
