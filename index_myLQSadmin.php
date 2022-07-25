@@ -95,7 +95,7 @@ echo "
                                     </div>
 
                                     <button id='query-btn' onclick='execute_query()'><b>Process Query</b></button> 
-                                    <button id='clear-query-btn' onclick='document.getElementById(\"sql-query-area\").value=\"\"'><b>Clear Query</b></button> 
+                                    <button id='clear-query-btn' onclick='document.getElementById(\"sql-query-area\").value=\"\"; document.getElementById(\"display-sql-console-Down\").innerHTML=\"\"'><b>Clear Query</b></button> 
 
                                     <div>
                                         <button id='tbls-rel' onclick='tables_relations()'>Tbls Rel</button>
@@ -184,7 +184,7 @@ echo "
                 if ( table_param.getAttribute('table') == null ) 
                     { alert( 'please, select a table' ); } 
                 else {   
-                    if ( document.getElementById('display-sql-console-Down').className == 'showDiv' ) { _tag = 'display-sql-console-Down'; }            
+                    if ( document.getElementById('display-sql-console-Down').classList.contains('showDiv') ) { _tag = 'display-sql-console-Down'; }            
                     Fetch_js(_tag,'./include/AJAX_php_js/ajax_DescribeTbl.php?hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table'));                                    
                 }
                 break;
@@ -193,7 +193,7 @@ echo "
                 if ( table_param.getAttribute('table') == null ) 
                     { alert( 'please, select a table' ); } 
                 else {    
-                    if ( document.getElementById('display-sql-console-Down').className == 'showDiv' ) { _tag = 'display-sql-console-Down'; }                         
+                    if ( document.getElementById('display-sql-console-Down').classList.contains('showDiv') ) { _tag = 'display-sql-console-Down'; }                         
                     Fetch_js(_tag,'./include/AJAX_php_js/ajax_ViewTbl.php?hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table'));
                 }
                 break;    
@@ -283,8 +283,9 @@ echo "
 */
     function doLeftAsideButtonAction(){
 
-        // clear #sql-query-area
+        // clear #sql-query-area & #display_sql_result
         document.getElementById('sql-query-area').value = '';
+        document.getElementById('display_sql_result').innerHTML='';
 
         // clear #display-sql-console-Down
         document.getElementById('display-sql-console-Down').innerText = '____ query result area ____';
@@ -297,6 +298,7 @@ echo "
         table_param.innerHTML = 'Host: \"' + table_param.getAttribute('host') + '\"';
         table_param.innerHTML += ', DB: \"' + table_param.getAttribute('db') + '<br>';
         table_param.innerHTML +='<span style=\"font-size:20px;color:blue;\">Table: ' + table_Name  + '</span>';
+
     }    
 
     function go_back() {

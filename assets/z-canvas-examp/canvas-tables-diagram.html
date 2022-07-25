@@ -4,7 +4,14 @@ APPROACH:
 
     Diagram based on the relationships of a single table. Left side, the tables that point to the target table. Right side, the tables pointed to by the target table.
 
-    Problem: queries to prepare left and right tables arrays, and the trick to generate de (x,y) values for draw each table and each line between tables.
+    What we need: 
+
+    1.- queries to prepare left and right tables arrays, and the trick to generate associative array of (x,y) values for draw each table and each line between tables.
+
+    2.- check if overflow works for canvas tag
+        - https://jsfiddle.net/diode/sHbKD/22/
+        - https://codepen.io/justincavery/pen/ARZNRY 
+        - https://stackoverflow.com/questions/8579923/scrollfunction-for-canvas-if-canvas-too-big
 
 -->
 
@@ -12,11 +19,20 @@ APPROACH:
 <html>
 <head>
 
-</head>
-<body style=" background: white;">
+<style>
+    .canvas-area {
+        position:relative;
+        width:300px;
+        height:300px;
+        overflow:auto;
+    }
+</style>    
 
-    <div style="margin-top:50px; padding:auto; text-align: center;">    
-        <canvas id="canvas" width="600px" height="600px" style="border:5px solid gray; /* background: rgb(206, 205, 205); */"></canvas>
+</head>
+<body style="background: white;">
+
+    <div class="canvas-area" style="margin-top:50px; margin:auto; text-align: center;">    
+        <canvas class="canvas-area" id="canvas" width="600px" height="600px" style="border:5px solid gray;"></canvas>
     </div>
 
     <script>
@@ -24,7 +40,7 @@ APPROACH:
 
     <script type="text/javascript" language="javascript">
 
-        // diagonal lines 
+        //  diagonal lines 
         //  https://www.cs.helsinki.fi/group/goa/mallinnus/lines/bresenh.html    
 
         function row_rectangle(_ctxx,_text,_xx,_yy,_w,_hh) {
@@ -42,7 +58,6 @@ APPROACH:
 
         }
 
-
         function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
 
             // testing
@@ -55,8 +70,8 @@ APPROACH:
             var ctx = canvas.getContext("2d");
             var fontsize = 20;
             var fontface = 'arial';
-            var h = fontsize * 1.4;
-            ctx.lineWidth = 1;
+            var row_h = fontsize * 1.1;
+            ctx.lineWidth = 1.5;
             ctx.strokeStyle = "black"; // border color
             ctx.fillStyle = "blue";   // chars color            
             ctx.textAlign="center"; 
@@ -69,49 +84,51 @@ APPROACH:
             // max length text of elements in table
             var max_large_text = '';
             for ( var i=0; i < ppal_table_array.length; i++ ){  
-                if ( max_large_text.length < ppal_table_array[i].length ) { max_large_text = ppal_table_array[i]; } 
+                if ( max_large_text < ppal_table_array[i].length ) { max_large_text = ppal_table_array[i]; } 
             }
-            var text_w = ctx.measureText(max_large_text).width * 1.5;              
+            var text_w = ctx.measureText(max_large_text).width * 1.1;              
             
-            draw_table(ctx,ppal_table_array,x,y,text_w,h);
+            draw_table(ctx,ppal_table_array,x,y,text_w,row_h);
 
             // parameters to draw left_table_array
             x = 10;
             max_large_text = '';
+            text_w = 0;
             for ( var i=0; i < left_tables_array.length; i++ ){  
-                if ( max_large_text.length < left_tables_array[i].length ) { max_large_text = left_tables_array[i]; } 
+                if ( max_large_text < left_tables_array[i].length ) { max_large_text = left_tables_array[i]; } 
             }
-            text_w = ctx.measureText(max_large_text).width * 1.5;  
+            text_w = ctx.measureText(max_large_text).width * 1.1;  
             x = 10 + text_w/2;             
             y =  10;            
-            draw_table(ctx,left_tables_array,x,y,text_w,h);
+            draw_table(ctx,left_tables_array,x,y,text_w,row_h);
 
             // parameters to draw right_table_array
             x = w-10;
             max_large_text = '';
+            text_w = 0;
             for ( var i=0; i < right_tables_array.length; i++ ){  
-                if ( max_large_text.length < right_tables_array[i].length ) { max_large_text = right_tables_array[i]; } 
+                if ( max_large_text < right_tables_array[i].length ) { max_large_text = right_tables_array[i]; } 
             }
-            text_w = ctx.measureText(max_large_text).width * 1.5;  
+            text_w = ctx.measureText(max_large_text).width * 1.1;  
             x = x - text_w/2;             
             y = 10;
-            draw_table(ctx,right_tables_array,x,y,text_w,h);
+            draw_table(ctx,right_tables_array,x,y,text_w,row_h);
 
         }
 
         function draw_table_relations_lines(left_array,right_array) {
-            alert(left_array[0][0]['x1']);
-            alert(left_array[0][0]['y1']);
+            //alert(left_array[0][0]['x1']);
+            // alert(left_array[0][0]['y1']);
             alert(JSON.stringify(left_array));     
         }      
 
         // MAIN        
 
-        var table_ppal = ['id ','field ','field ','field ','field field field ','field ','field ','field '];
+        var table_ppal = ['NAME TABLE PPAL','id ','field ','field ','field ','field field field ','field ','field ','field '];
 
-        var left_table = ['id ','field ','field field field field ','field '];        
+        var left_table = ['NAME LEFT TABLES ARRAY','id ','field ','field field field field ','field '];        
 
-        var right_table = ['id ','field ','field ','field field '];
+        var right_table = ['NAME RIGHT TABLES ARRAY','id ','field ','field ','field field '];
 
         var cv_w = document.getElementById("canvas").width;
         var cv_h = document.getElementById("canvas").height;
@@ -124,6 +141,9 @@ APPROACH:
 
         draw_table_relations_lines(left_lines_x_y_array,right_lines_x_y_array);
 
+        /*
+         * testing circles
+        */ 
         function draw_diagonal_line_of_circles(){
             var ctx = document.getElementById("canvas").getContext("2d");
             var counter = 0;
@@ -148,6 +168,9 @@ APPROACH:
 
         draw_diagonal_line_of_circles();
 
+        /*
+         * testing lines
+        */ 
         var ctx = document.getElementById("canvas").getContext("2d");
         ctx.beginPath();
         ctx.moveTo(0, 600);

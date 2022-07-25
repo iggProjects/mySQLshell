@@ -71,7 +71,7 @@ if ($route == 'display_data') { # display html data
     //$divHtml  = "<p>\$conex_db is: " . gettype($conex_db) . " | var_dump(\$conex_db)</p>";
     //$divHtml .= "<pre>" . var_dump($conex_db) . "</pre>";   
             
-    $query = "<span style='color:black;'>query:</span> \"" . $sql_query . "\"";   
+    $query = "<span style='color:black;'>QUERY<br></span> \"" . $sql_query . "\"";   
     $divHtml .= displayTable($query,90,'',$resultado);
 
 } else { # display error msq
