@@ -225,6 +225,10 @@
 
     }
 
+    function displaySelect(){}
+
+
+
     function displayTable($_query,$table_width,$thead_titles_array,$data_array){
 
         echo "<p style='margin-top:10px;  margin-bottom:10px; text-align:center; font-size:12px; color:#990000'>$_query</p>";

@@ -146,12 +146,42 @@ function Fetch_js(tag,php_sql_url){
         
         document.getElementById(tag).innerHTML = data;    
 
+        // case '#display_right_aside'  
         if ( tag == 'display_right_aside') {
             var leftAside_Btn_Selected = document.getElementsByClassName('left-aside-btn');    
             for (var i = 0; i < leftAside_Btn_Selected.length; i++) {
                 leftAside_Btn_Selected[i].addEventListener('click', doLeftAsideButtonAction, false);
             }   
         }
+
+        // LISTENERS for case select options in '#std-queriesList'
+        if ( tag == 'std-queriesList') {
+/*
+            // Listener to select QUERY from "standard_queries" in "my_lqs_queries" DB
+            var querySelected = document.getElementById("std-queriesList");
+            querySelected.addEventListener("click", () => {
+                querySelected.addEventListener("change", () => {                                  
+
+                    if (querySelected.value != 0 ) {
+                        
+                        const relations_query = querySelected.value;
+                        document.getElementById('sql-query-area').value = relations_query;
+
+                    } else {
+                        document.getElementById('html_div_nav_izq').innerHTML = ""; 
+                        document.getElementById('display-result-nav-title').innerHTML = ""; 
+                        document.getElementById('display_right_aside').innerHTML = ""; 
+                    }
+
+                })
+            });
+
+*/            
+        }
+
+
+
+
 
     })
 

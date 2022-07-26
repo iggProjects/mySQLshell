@@ -71,25 +71,34 @@ IÑAKI - METAS DÍA
 
 - LOGIN y DOWNLOAD con DARREN
 
+- Permitir abrir make query cuando se activa btn btn-sql, y solo tenga que pedir select DB SERVER
+  - esto permitiría al root, o al administrador actuar sobre el servidor, sea para crear nuevas DB 
+    o para modificar DB, respaldar, eliminar, restore backups........
+  - OJO: esto solo debe ser una opción para usuarios root o administrador con todos los privilegios  
+
 - Crear DB "myLQSadmin"
-  - crear las primeras tablas usuarios, standard_queries, favorite_queries, ....
-  - hacer botón para insert en la tabla standard_queries
-    - que el botón INSERT para activar un formato de query
-        --> INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...);  
-          - y rellenamos a mano los datos de cada campo
-        
-  - standard queries aplican a cualquier DB
+  - crear las primeras tablas usuarios, standard_queries, favorite_queries, .... ✔✔
+  - crear tag SELECT OPTIONS para colocar el select en lugar del actual btn 'tbls-rel'... igual con el de size
+  - standard queries aplican a cualquier DB (campos: id, user, comment, btn_name, query, creation_date)
   - favorite queries están direccionadas por usuario - DB
   - store queries button (insert-update-delete)
     - Fields: id, user, db, comment, query
     - empezar solo con INSERT query optional
     - luego vemos si vale la pena el update, o solo la opc delete query
 
-- Terminar CANVAS
-  - define "queries" to obtain LEFT and RIGHT RELATIONS ARRAYS
-  - define "drawing schema" to include:
-    - drawing of tables 
-    - identification of points of "pairs points arrays" when calling draw_db function
+
+
+  - hacer botón para insert en la tabla standard_queries
+    - que el botón INSERT para activar un formato de query
+        --> INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...);  
+          - y rellenamos a mano los datos de cada campo
+        
+
+  - Terminar CANVAS
+    - define "queries" to obtain LEFT and RIGHT RELATIONS ARRAYS
+    - define "drawing schema" to include:
+      - drawing of tables 
+      - identification of points of "pairs points arrays" when calling draw_db function
 
 27-07-2022
 

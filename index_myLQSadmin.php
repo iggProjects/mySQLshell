@@ -44,7 +44,7 @@ ini_set('error_log',$php_errors_log);
 echo "    
     <div class='div-DB-view disp-row-center my-scroll-bar'>
         <div class='div-header-text'>
-            <h2>my LQS admin</h2>  
+            <h2>myLQS@admin 1.0</h2>  
         </div>";
 
         echo "<div id='div-DB-info' class='DB-info' style='display:flex;'>";
@@ -81,6 +81,7 @@ echo "
                     echo "<div class='der-console disp-row-center' >";
 
                         echo "<div id='display_result' class='my-scroll-bar'>
+
                             <div class='display-result-nav'><p id='display-result-nav-title'></p></div> 
 
                             <div id='display_sql_result' class='showDiv'></div>
@@ -105,8 +106,16 @@ echo "
                                     </button> 
 
                                     <div>
+                                        <select class='queries-List' name='std-queries-List' id='std-queriesList'>
+                                            <option class='queryOpt'  value='' selected>Std Query\"</option>                
+                                        </select> 
+                                        <select class='queries-List' name='fav-queries-List' id='fav-queriesList'>  
+                                            <option class='fav-queryOpt'  value='' selected>Fav Query</option>              
+                                        </select> 
+                                    <!--
                                         <button id='tbls-rel' onclick='tables_relations()'>Tbls Rel</button>
                                         <button id='tbls-size' onclick='tables_size()'>Tbls Size</button>
+                                    -->    
                                         <button id='tbls-View' onclick=''>Diagram</button>
                                     </div>
 
@@ -259,6 +268,20 @@ echo "
                             btns[i].classList.add("hideBtn");
                         }  
                     }                
+
+/*
+                    // tag for show options in "Std Queries" SELECT
+                    _tag= 'std-queriesList';
+                    _query = 'SELECT btn_name, query FROM standard_queries'; 
+                    Fetch_js(_tag,'./include/AJAX_php_js/vs.php?hostName=127.0.0.1&dbName=my_lqs_admin&&sql_query='+_query);                      
+
+                    // tag for show options in "Fav Queries" SELECT
+                    _tag= 'fav-queriesList';
+                    // OJO en este caso, la query tiene que ver con el usuario y la DB específica
+                    // PENSAR BIEN como implementar                    
+                    _query = 'SELECT btn_name, query FROM favorite_queries WHERE user='' AND DB='''; 
+                    Fetch_js(_tag,'./include/AJAX_php_js/ajax_SelectOptions_Query.php?hostName=127.0.0.1&dbName=my_lqs_admin&tbl=favorite_queries&sql_query='+_query);                      
+*/
 
                     // document.getElementById('display-result-nav-title').innerHTML="";
                     document.getElementById('p-comment').innerHTML='TABLES';        
