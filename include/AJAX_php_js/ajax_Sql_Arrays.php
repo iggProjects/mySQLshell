@@ -6,6 +6,7 @@ include_once "../sql_funct/my_SQL_functions_servers.php";
 $log_comments_path = "../../assets/log-files/log_comments.log";
 $log_queries_path = "../../assets/log-files/log_queries.log";
 
+
 # my configuration for redirect errors.log 
 $php_errors_log =  "../../assets/log-files/php_errors.log";
 error_reporting(E_ALL);
@@ -48,9 +49,8 @@ $route = "";
 $error_msg = "MySql error was found";
 $divHtml = "";
 
-if ( gettype($conex_db) === 'object' ) {
+if ( gettype($conex_db) === 'object' ) {    
     
-    //$resultado = SELECT_try_catch($conex_db,$dbname,$dbuser,$dbtable,$select_query,$log_queries_path);      
     $resultado = Sql_Query_try_catch($conex_db,$dbname,$dbuser,$sql_query,$log_queries_path);
     if ( gettype($resultado) === 'object' || gettype($resultado) === 'array' ) {  
         $route = "display_data";        
@@ -65,24 +65,17 @@ if ( gettype($conex_db) === 'object' ) {
     $error_msg = "MySql error: Connection to $dbhost and $dbname FAILED !<br>Contact Admin.";
 }
 
-# HTML DATA FOR DIV
-if ($route == 'display_data') { # display html data   
+# DATA ARRAY OR ERROR ARRAY
+if ($route == 'display_data') {  
 
-    //$divHtml  = "<p>\$conex_db is: " . gettype($conex_db) . " | var_dump(\$conex_db)</p>";
-    //$divHtml .= "<pre>" . var_dump($conex_db) . "</pre>";   
-            
-    $query = "<span style='color:black;'>QUERY<br></span> \"" . $sql_query . "\"";   
-    //$divHtml .= displayTable($query,90,'',$resultado);
-    $divHtml .= displaySelect($resultado);
+    My_Log_Message (json_encode($resultado),$log_comments_path);
+    echo json_encode($resultado);
 
-} else { # display error msq
+} else {
 
-    // $divHtml .= displayTable($query,90,'',$resultado);
-    $divHtml .= "error sql " . $error_msg;    
+    echo json_encode(["error sql ",$error_msg]);    
 
 }
-
-return $divHtml;
 
 ?>
 

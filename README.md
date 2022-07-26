@@ -1,1 +1,1 @@
-# myLQSadmin
+# my_lqs_admin

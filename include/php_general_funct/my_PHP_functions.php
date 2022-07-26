@@ -225,9 +225,18 @@
 
     }
 
-    function displaySelect(){}
+    function displaySelect($data_array){
+    
+        // CREATE SELECT OPTIONS FOR 'standard_queries'
+        echo "<select class='servers_List' name='servers_List' id='serverList'>    
+            <option class='queryOpt'  value='' selected>Sel Std Query</option>";
+            for ( $k=0; $k < count($data_array); $k++ ) {                         
+                echo "<option class='queryOpt'  host_numb=''  value='" . $data_array[$k]['query'] . "' >" . $data_array[$k]['btn_name'] . "</option>"; 
+            }
+        echo "</select>";   
 
 
+    }
 
     function displayTable($_query,$table_width,$thead_titles_array,$data_array){
 

@@ -25,14 +25,16 @@ IÑAKI - METAS DÍA
     - https://github.com/raphamorim/canvas-experiments
     - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D#paths
 
-    - buscar las queries para tablas por la derecha y tablas por la izquierda
+    - buscar las queries para tablas por la derecha y tablas por la izquierda ✔✔
     - pensar en diseño dinámico que centre la tabla objetivo y defina criterios para ubicar
       las tablas que apuntan a la tabla objetivo (lado izq) y las tablas a las que apunta la tabla objetivo (lado der)  
 
 25-07-2022  
 
 - phpmyadmin tables review  
+
 - draw_line_pair_points_X_Y in canvas ✔✔
+
 - first version for "help url" for troubles in mysql... 
   - https://www.googleguide.com/linking.html
 
@@ -71,15 +73,17 @@ IÑAKI - METAS DÍA
 
 - LOGIN y DOWNLOAD con DARREN
 
-- Permitir abrir make query cuando se activa btn btn-sql, y solo tenga que pedir select DB SERVER
+- Permitir abrir make query apenas se selecciones el host 
   - esto permitiría al root, o al administrador actuar sobre el servidor, sea para crear nuevas DB 
     o para modificar DB, respaldar, eliminar, restore backups........
   - OJO: esto solo debe ser una opción para usuarios root o administrador con todos los privilegios  
 
-- Crear DB "myLQSadmin"
+- Crear DB "my_lqs_admin"
   - crear las primeras tablas usuarios, standard_queries, favorite_queries, .... ✔✔
   - crear tag SELECT OPTIONS para colocar el select en lugar del actual btn 'tbls-rel'... igual con el de size
   - standard queries aplican a cualquier DB (campos: id, user, comment, btn_name, query, creation_date)
+    - LISTENERS for case select options in '#std-queriesList'... OJO: completar leyendo la tabla que está activa
+
   - favorite queries están direccionadas por usuario - DB
   - store queries button (insert-update-delete)
     - Fields: id, user, db, comment, query
@@ -87,12 +91,19 @@ IÑAKI - METAS DÍA
     - luego vemos si vale la pena el update, o solo la opc delete query
 
   - hacer botón para insert en la tabla standard_queries
-    - que el botón INSERT para activar un formato de query
+    - que el botones INSERT - UPDATE para activar un formato de query
         --> INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...);  
           - y rellenamos a mano los datos de cada campo
 
   - Terminar CANVAS
     - define "queries" to obtain LEFT and RIGHT RELATIONS ARRAYS
+      
+      RIGHT CASE: 
+      SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA() AND TABLE_NAME = 'table selected'
+
+      LEFT CASE: 
+      SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA() AND REFERENCED_TABLE_NAME = 'table selected'
+
     - define "drawing schema" to include:
       - drawing of tables 
       - identification of points of "pairs points arrays" when calling draw_db function
@@ -133,42 +144,20 @@ LOGIN
   - creación de usuarios
   - login email para el usuario, y opción se te olvidó....
 
-display_sql_result -> colocar al inicio <p id='sql-query'></p> , letra pequeña, color vinotinto    
-
-BUTTONS "nav-btns"
-  - definir cuáles van de acuerdo a la ruta elegida pr el usuario   
-  - 
-
 PAGINATION 
   - https://stackoverflow.com/questions/20364349/pagination-using-mysql-limit-offset
-
-
 
 HOST BASIC INFO WHEN SELECTED
   tag #left-aside
 
-
-
 BUTTONS 
-  - check for type cols, cases 'BLOB' (example: mediumblob in 'tbl_arch_imagen_persona' in penjub)
+  - FILTROS: check for type cols, cases 'BLOB' (example: mediumblob in 'tbl_arch_imagen_persona' in penjub)
 
   - Check syntaxis, and change especial words to uppercase and color blue.... 
-      (SELECT, FROM, WHERE, INNER JOIN, ORDER BY, ....)
-  - help iframe using google ???
+      (SELECT, FROM, WHERE, INNER JOIN, ORDER BY, ....)  
 
   - check that basic info exist
-
   
-NAVEGACIÓN 
-  - chequear por qué se queda en blanco cuando regresas usando "go back"
-  - crear function update_nav -> #display-result-nav-title
-    Objetivo, mantener siempre actualizado el tag con los atributos: host, db, table
-    De esa manera, se manejan 
-
-  - go-back : clear tags.innerHTML
-    CHEQUEAR table-param (dejá el nav en blanco) (ver si tiene que ver con clear areas)
-  
-
 
 CASO SQL-BTN -> cónsola "query-btn"
 
@@ -192,21 +181,9 @@ CASO SQL-BTN -> cónsola "query-btn"
     - área para escribir sql y ejecutar       
     - area resultado: caso positivo tabla, caso error: mensaje y help
 
-
   - read host and db and check last query char of textarea value. if is ; , delete  
 
   - add select pagination
-
-  - Limpiar area al salir de la consola "sql" ✔
-
-ADD listener to display DB of selected host (like it is done with DB listener with tables associated)
-
-ADD listener to display_left_aside tables in case sql-btn active
-  - desc of table columns
-
-
-REVISAR la lógica del '#left_aside' respecto a buttons invoacados
-  - hacer navegación y verificar cuando debe hacerse clear del área
 
 SHOW CREATE TABLE 'myTable'
 

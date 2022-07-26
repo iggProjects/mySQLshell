@@ -2,7 +2,7 @@ model
 insert into standard_queries (user,comment,query) VALUES ('root','','');
 
 query:
-SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA() AND REFERENCED_TABLE_NAME = `my file`
+SELECT table_name TBL, round( (data_length / 1024 / 1024) , 2) SIZE_MB FROM information_schema.TABLES WHERE table_schema = SCHEMA()
 
 statement
-insert into standar_queries (user,comment,query) VALUES ('root','list tables that point to the selected table','SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA() AND REFERENCED_TABLE_NAME = `my file`');
+insert into standard_queries (user,comment,query) VALUES ('root','Tables list of a DB, with their size','SELECT table_name TBL, round( (data_length / 1024 / 1024) , 2) SIZE_MB FROM information_schema.TABLES WHERE table_schema = SCHEMA()');
