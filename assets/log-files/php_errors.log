@@ -10783,3 +10783,6 @@ Stack trace:
 [26-Jul-2022 13:20:22 Europe/Berlin] PHP Warning:  Undefined variable $thead_titles in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 76
 [26-Jul-2022 13:20:22 Europe/Berlin] PHP Warning:  Undefined variable $divHtml in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 76
 [26-Jul-2022 13:20:23 Europe/Berlin] PHP Warning:  Undefined variable $thead_titles in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 76
+[26-Jul-2022 13:21:56 Europe/Berlin] PHP Warning:  Undefined array key "host_number" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Display_div_nav_izq.php on line 19
+[26-Jul-2022 13:22:01 Europe/Berlin] PHP Warning:  Undefined variable $thead_titles in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 76
+[26-Jul-2022 13:22:01 Europe/Berlin] PHP Warning:  Undefined variable $divHtml in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 76

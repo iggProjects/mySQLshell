@@ -86,13 +86,10 @@ IÑAKI - METAS DÍA
     - empezar solo con INSERT query optional
     - luego vemos si vale la pena el update, o solo la opc delete query
 
-
-
   - hacer botón para insert en la tabla standard_queries
     - que el botón INSERT para activar un formato de query
         --> INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...);  
           - y rellenamos a mano los datos de cada campo
-        
 
   - Terminar CANVAS
     - define "queries" to obtain LEFT and RIGHT RELATIONS ARRAYS
