@@ -146,7 +146,7 @@ function Fetch_js(tag,php_sql_url){
         
         document.getElementById(tag).innerHTML = data;    
 
-        // case '#display_right_aside'  
+        // LISTENERS for case '#display_right_aside'  
         if ( tag == 'display_right_aside') {
             var leftAside_Btn_Selected = document.getElementsByClassName('left-aside-btn');    
             for (var i = 0; i < leftAside_Btn_Selected.length; i++) {
@@ -155,33 +155,19 @@ function Fetch_js(tag,php_sql_url){
         }
 
         // LISTENERS for case select options in '#std-queriesList'
+        // OJO: completar leyendo la tabla que está activa
         if ( tag == 'std-queriesList') {
-/*
             // Listener to select QUERY from "standard_queries" in "my_lqs_queries" DB
             var querySelected = document.getElementById("std-queriesList");
             querySelected.addEventListener("click", () => {
-                querySelected.addEventListener("change", () => {                                  
-
-                    if (querySelected.value != 0 ) {
-                        
+                querySelected.addEventListener("change", () => {                                 
+                    if (querySelected.value != '' ) {                        
                         const relations_query = querySelected.value;
                         document.getElementById('sql-query-area').value = relations_query;
-
-                    } else {
-                        document.getElementById('html_div_nav_izq').innerHTML = ""; 
-                        document.getElementById('display-result-nav-title').innerHTML = ""; 
-                        document.getElementById('display_right_aside').innerHTML = ""; 
-                    }
-
+                    } else {   }  // upssssssss
                 })
-            });
-
-*/            
+            });          
         }
-
-
-
-
 
     })
 
@@ -193,3 +179,30 @@ function Fetch_js(tag,php_sql_url){
 
 }
 
+function Fetch_data_array(php_sql_url) {
+
+    console.log('php_sql_url====> ' + php_sql_url) 
+    
+    fetch(php_sql_url)
+
+    .then(response => {
+        if (response.ok)
+            return response.text()
+
+        else
+            throw new Error(response.status)
+    })
+    
+    .then(data => {
+        alert('data ' + data);
+        
+
+    })    
+
+    .catch(err => {
+        console.error("ERROR: ", err.message);
+        alert("ERROR Fetch_data_array: " + err.message); 
+
+    });
+   
+}

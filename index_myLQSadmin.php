@@ -70,6 +70,8 @@ echo "
                     echo "<div class='nav-btns disp-col-center'>";
                         echo "<button id='btn-desc' class='nav-btn showBtn'>Desc<br>Table</button>";
                         echo "<button id='btn-view' class='nav-btn showBtn'>View<br>Table</button>";
+                        echo "<button id='btn-insert' class='nav-btn showBtn'>Insert<br>Record</button>";
+                        echo "<button id='btn-update' class='nav-btn showBtn'>Update<br>Record</button>";
                         echo "<button id='btn-sql' class='nav-btn showBtn'>Make<br>Query</button>";
                         echo "<button id='btn-export' class='nav-btn showBtn'>Export</button>";
                         echo "<button id='btn-import' class='nav-btn showBtn'>Import</button>";
@@ -91,8 +93,8 @@ echo "
                                 <div class='display-sql-console-Up-btns disp-row-center'>
 
                                     <div class='disp-row-center' style='width:150px;'>
-                                        <button id='extend-console-up-btn' onclick='height_up()'><img src='./assets/img-igg/icons8-expand-48.png' alt='up' width='20' height='15'></button>
-                                        <button id='compress-console-up-btn' onclick='height_compress()'><img src='./assets/img-igg/compress-48.png' alt='up' width='20' height='15'></button>
+                                        <button id='extend-console-up-btn' onclick='height_up()'><img src='./assets/img-igg/icons8-expand-48.png' alt='up' width='17' ></button>
+                                        <button id='compress-console-up-btn' onclick='height_compress()'><img src='./assets/img-igg/compress-48.png' alt='up' width='17' ></button>
                                         <button id='go-back-btn' onclick='go_back()'>Exit</button>                                                                        
                                     </div>
 
@@ -107,16 +109,16 @@ echo "
 
                                     <div>
                                         <select class='queries-List' name='std-queries-List' id='std-queriesList'>
-                                            <option class='queryOpt'  value='' selected>Std Query\"</option>                
+                                            <option class='queryOpt'  value='' selected>Sel Std Query\"</option>                
                                         </select> 
                                         <select class='queries-List' name='fav-queries-List' id='fav-queriesList'>  
-                                            <option class='fav-queryOpt'  value='' selected>Fav Query</option>              
+                                            <option class='fav-queryOpt'  value='' selected>Sel Fav Query</option>              
                                         </select> 
                                     <!--
                                         <button id='tbls-rel' onclick='tables_relations()'>Tbls Rel</button>
                                         <button id='tbls-size' onclick='tables_size()'>Tbls Size</button>
                                     -->    
-                                        <button id='tbls-View' onclick=''>Diagram</button>
+                                        <button id='tbls-View' onclick='table_diagram()'>Diagram</button>
                                     </div>
 
                                 </div>
@@ -261,7 +263,7 @@ echo "
                     // tag for display BUTTONS table in second NAV 
                     btns = document.querySelectorAll(".nav-btn");   
                     for ( var i=0; i<btns.length; i++ ) { 
-                        if ( btns[i].id != 'btn-desc' && btns[i].id != 'btn-view' && btns[i].id != 'btn-export' && btns[i].id != 'btn-import' ) {  
+                        if ( btns[i].id != 'btn-desc' && btns[i].id != 'btn-view' && btns[i].id != 'btn-insert' && btns[i].id != 'btn-update' && btns[i].id != 'btn-export' && btns[i].id != 'btn-import' ) {  
                         // if ( btns[i].id != 'btn-desc' && btns[i].id != 'btn-view' && btns[i].id != 'btn-sql' && btns[i].id != 'btn-export' && btns[i].id != 'btn-import' ) {      
                             // btns[i].classList.toggle("hideBtn"); 
                             btns[i].classList.remove("showBtn");
@@ -269,17 +271,17 @@ echo "
                         }  
                     }                
 
-/*
+
                     // tag for show options in "Std Queries" SELECT
                     _tag= 'std-queriesList';
                     _query = 'SELECT btn_name, query FROM standard_queries'; 
-                    Fetch_js(_tag,'./include/AJAX_php_js/vs.php?hostName=127.0.0.1&dbName=my_lqs_admin&&sql_query='+_query);                      
-
+                    Fetch_js(_tag,'./include/AJAX_php_js/ajax_SelectOptions_Query.php?hostName=127.0.0.1&dbName=my_lqs_admin&&sql_query='+_query);                      
+/*
                     // tag for show options in "Fav Queries" SELECT
                     _tag= 'fav-queriesList';
                     // OJO en este caso, la query tiene que ver con el usuario y la DB específica
                     // PENSAR BIEN como implementar                    
-                    _query = 'SELECT btn_name, query FROM favorite_queries WHERE user='' AND DB='''; 
+                    _query = 'SELECT btn_name, query FROM favorite_queries '; 
                     Fetch_js(_tag,'./include/AJAX_php_js/ajax_SelectOptions_Query.php?hostName=127.0.0.1&dbName=my_lqs_admin&tbl=favorite_queries&sql_query='+_query);                      
 */
 
@@ -423,6 +425,27 @@ echo "
     function tables_size() {
         const size_query = `SELECT table_name TBL, round( (data_length / 1024 / 1024) , 2) SIZE_MB  \nFROM information_schema.TABLES \nWHERE table_schema = SCHEMA()`;
         document.getElementById('sql-query-area').value = size_query;
+    }
+
+    // DIAGRAM FOR TABLE SELECTED
+    function table_diagram() {
+        let table_param = document.getElementById('display-result-nav-title');
+        let host_sel = table_param.getAttribute('host');
+        let db_sel = table_param.getAttribute('db');
+        let table_selected = table_param.getAttribute('table');      
+        
+        if ( table_selected === null ) { alert('Please, select a table !'); } 
+        else {
+
+            let left_query = "SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = '" + db_sel + "' AND TABLE_NAME = '" + table_selected + "'";
+
+            let right_query = "SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = '" + db_sel + "' AND REFERENCED_TABLE_NAME = '" + table_selected + "'";     
+            
+            let left_right_query = left_query + ' UNION ' + right_query;
+
+            Fetch_data_array('./include/AJAX_php_js/ajax_Sql_Arrays.php?hostName='+host_sel+'&dbName='+db_sel+'&sql_query='+left_right_query);  
+            
+        }           
     }
 
 
