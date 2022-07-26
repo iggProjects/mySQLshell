@@ -47,7 +47,12 @@ echo "
             <h2>myLQS@admin 1.0</h2>  
         </div>";
 
-        echo "<div id='div-DB-info' class='DB-info' style='display:flex;'>";
+        echo "<div id='canvas-diagram' class='canvas-area' style='margin:auto; text-align: center;'>  
+            <div><button style='margin-left:50px;margin-right:50px;margin-bottom:10px;' onclick='document.getElementById(\"div-DB-info\").style.display=\"flex\";document.getElementById(\"canvas-diagram\").style.display=\"none\";'>EXIT<button></div>  
+            <canvas class='canvas-area' id='canvas' width='900px' height='600px' style='border:5px solid gray;'></canvas>
+        </div>";
+        
+        echo "<div id='div-DB-info' class='DB-info'>";
         
             echo "<div id='div_nav_izq' class='nav-izq my-scroll-bar'>";  
                 echo "<p style='margin-top:5px; margin-bottom:10px;color:#990000;'>USER:</p>"; 
@@ -429,6 +434,8 @@ echo "
 
     // DIAGRAM FOR TABLE SELECTED
     function table_diagram() {
+
+
         let table_param = document.getElementById('display-result-nav-title');
         let host_sel = table_param.getAttribute('host');
         let db_sel = table_param.getAttribute('db');
@@ -443,7 +450,8 @@ echo "
             
             let left_right_query = left_query + ' UNION ' + right_query;
 
-            Fetch_data_array('./include/AJAX_php_js/ajax_Sql_Arrays.php?hostName='+host_sel+'&dbName='+db_sel+'&sql_query='+left_right_query);  
+            let query_string = '?hostName='+host_sel+'&dbName='+db_sel;
+            Fetch_data_array(query_string,'./include/AJAX_php_js/ajax_Sql_Arrays.php?hostName='+host_sel+'&dbName='+db_sel+'&sql_query='+left_right_query);  
             
         }           
     }
