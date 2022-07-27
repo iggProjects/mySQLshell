@@ -73,11 +73,12 @@ echo "
             echo "<div class='div-der disp-row-center'>";
 
                     echo "<div class='nav-btns disp-col-center'>";
+                        echo "<button id='btn-sql' class='nav-btn showBtn' style='color:blue;'><b>TEST<br>QUERIES</b></button>";
                         echo "<button id='btn-desc' class='nav-btn showBtn'>Desc<br>Table</button>";
                         echo "<button id='btn-view' class='nav-btn showBtn'>View<br>Table</button>";
+                        echo "<button id='btn-diagram' class='nav-btn showBtn' onclick='table_diagram()'>Diagram</button>";
                         echo "<button id='btn-insert' class='nav-btn showBtn'>Insert<br>Record</button>";
-                        echo "<button id='btn-update' class='nav-btn showBtn'>Update<br>Record</button>";
-                        echo "<button id='btn-sql' class='nav-btn showBtn'>Make<br>Query</button>";
+                        echo "<button id='btn-update' class='nav-btn showBtn'>Update<br>Record</button>";                        
                         echo "<button id='btn-export' class='nav-btn showBtn'>Export</button>";
                         echo "<button id='btn-import' class='nav-btn showBtn'>Import</button>";
                         echo "<button id='btn-privil' class='nav-btn showBtn'>Privileges</button>";
@@ -119,11 +120,8 @@ echo "
                                         <select class='queries-List' name='fav-queries-List' id='fav-queriesList'>  
                                             <option class='fav-queryOpt'  value='' selected>Sel Fav Query</option>              
                                         </select> 
-                                    <!--
-                                        <button id='tbls-rel' onclick='tables_relations()'>Tbls Rel</button>
-                                        <button id='tbls-size' onclick='tables_size()'>Tbls Size</button>
-                                    -->    
-                                        <button id='tbls-View' onclick='table_diagram()'>Diagram</button>
+        
+                                        <!-- <button id='tbls-View' onclick='table_diagram()'>Diagram</button>  -->
                                     </div>
 
                                 </div>
@@ -221,14 +219,17 @@ echo "
                 }
                 break;    
 
+            case 'btn-diagram':   
+                break;
+
             case 'btn-sql':   
 
                 // IF to check: host and DB exists & query is not empty
                 // capture host and db from tag -> #display-result-nav-title
-                var table_param = document.getElementById('display-result-nav-title');
+                var table_param = document.getElementById('display-result-nav-title');                
 
                 if ( table_param.getAttribute('host') == null || table_param.getAttribute('db') == null ) { 
-                    alert('check if you select HOST and DB  ! 😎') 
+                    alert('check if you select HOST and DB  ! 😎');                    
                 } 
                 else {
                     // clear areas
@@ -261,14 +262,16 @@ echo "
                     // height 'display-sql-console-Down'
                     document.getElementById('display-sql-console-Down').style.height='58%';
 
-                    // Update tag display-result-nav-title with only Host and DB
-                    table_param.removeAttribute('table-name');   
-                    table_param.innerHTML = 'Host: \"' + table_param.getAttribute('host') + '\"' + '<br><span style=\"font-size:20px;color:blue;\">DB: \"' + table_param.getAttribute('db') + '</span>';
+                    // Update tag display-result-nav-title with only Host and DB                    
+                    let active_table = '';        
+                    if ( table_param.getAttribute('table') != '' ) { active_table = table_param.getAttribute('table') } 
+                    
+                    table_param.innerHTML = 'Host: \"' + table_param.getAttribute('host') + '\"' + ' DB: \"' + table_param.getAttribute('db') + '<br><span style=\"font-size:20px;color:blue;\">' + active_table + '</span>';
 
                     // tag for display BUTTONS table in second NAV 
                     btns = document.querySelectorAll(".nav-btn");   
                     for ( var i=0; i<btns.length; i++ ) { 
-                        if ( btns[i].id != 'btn-desc' && btns[i].id != 'btn-view' && btns[i].id != 'btn-insert' && btns[i].id != 'btn-update' && btns[i].id != 'btn-export' && btns[i].id != 'btn-import' ) {  
+                        if ( btns[i].id != 'btn-desc' && btns[i].id != 'btn-view' && btns[i].id != 'btn-diagram' && btns[i].id != 'btn-insert' && btns[i].id != 'btn-update' && btns[i].id != 'btn-export' && btns[i].id != 'btn-import' ) {  
                         // if ( btns[i].id != 'btn-desc' && btns[i].id != 'btn-view' && btns[i].id != 'btn-sql' && btns[i].id != 'btn-export' && btns[i].id != 'btn-import' ) {      
                             // btns[i].classList.toggle("hideBtn"); 
                             btns[i].classList.remove("showBtn");
@@ -434,6 +437,8 @@ echo "
 
     // DIAGRAM FOR TABLE SELECTED
     function table_diagram() {
+
+        // IF to check table exits 
 
 
         let table_param = document.getElementById('display-result-nav-title');

@@ -2,6 +2,7 @@
 
 include_once "../php_general_funct/my_PHP_functions.php";
 include_once "../sql_funct/my_SQL_functions_servers.php";
+include_once "../../config/config.servers.php";
 
 $log_comments_path = "../../assets/log-files/log_comments.log";
 $log_queries_path = "../../assets/log-files/log_queries.log";
@@ -16,28 +17,15 @@ ini_set('error_log',$php_errors_log);
 
 
 if ( $_REQUEST['host_numb'] ) {
-    $host_numb = $_REQUEST['host_number']; 
-} else {}
-
-
-if ( $_REQUEST['hostName'] ) {
-    $hostName = $_REQUEST['hostName']; 
+    $host_numb = $_REQUEST['host_numb']; 
 } else {}
 
 /*
-if ( $_REQUEST['hostUser'] ) {
-    $hostUser = $_REQUEST['hostUser']; 
-} else {}
-
-if ( $_REQUEST['hostPassw'] ) {
-    $hostPassw = $_REQUEST['hostPassw']; 
-} else {}
-
-if ( $_REQUEST['dbCharset'] ) {
-    $dbcharset = $_REQUEST['dbCharset']; 
+if ( $_REQUEST['hostName'] ) {
+    $hostName = $_REQUEST['hostName']; 
 } else {}
 */
-
+/*
 if ( $hostName == 'POAPMYSQL119.dns-servicio.com:3306' ) {
     $hostUser = "inaki2022";
     $hostPassw = "Inaki@2022";
@@ -51,8 +39,19 @@ if ( $hostName == 'POAPMYSQL119.dns-servicio.com:3306' ) {
 } else {
     // upssssss msg
 }
+*/
+$hostName  = $cfg_s['Servers'][$host_numb]['host'];
+$hostUser  = $cfg_s['Servers'][$host_numb]['user'];
+$hostPassw = $cfg_s['Servers'][$host_numb]['password'];
+$dbcharset = 'utf8mb4';
 
-$host_pointer = $h;   
+/*
+$msg = 'HOST param: ' . $_REQUEST['host_numb'] . '-'. $hostName . '-' . $hostUser . '-' . $hostPassw;
+My_Log_Message ($msg,$log_comments_path);
+*/
+
+$host_pointer = $host_numb;   
+// $host_pointer = $h;   
 $db_pointer = 1;
 $array_pointer= 0;        
 // $host_db_array = [ 1 => [] ];          

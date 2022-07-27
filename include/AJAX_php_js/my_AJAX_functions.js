@@ -51,6 +51,8 @@ function openTree(host_arr) {
             console.log('this class: ' + this.classList + ', tag: '+ this.tagName);
             console.log('parent El: ' + this.parentElement.tagName  + ', class: '+ this.parentElement.classList);
 
+            // get host_numb
+            let host_n = document.getElementById('display-result-nav-title').getAttribute('host_numb');
             // get host name
             var hostName = document.getElementById('display-result-nav-title').getAttribute('host');
             // get DB name
@@ -78,7 +80,7 @@ function openTree(host_arr) {
             var table_param = document.getElementById('display-result-nav-title');
             var _tag= 'display_right_aside';   
 
-            Fetch_js(_tag,'./include/AJAX_php_js/ajax_ListTables.php?hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db'));
+            Fetch_js(_tag,'./include/AJAX_php_js/ajax_ListTables.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db'));
             
         });
     }
@@ -113,7 +115,7 @@ function openTree(host_arr) {
             document.getElementById(_titleTag).setAttribute('table',tblName);
 
             // call ajax table function
-            Fetch_js('display_right_aside','./include/AJAX_php_js/ajax_SelectTbl.php?hostName='+host_arr[hostNumb]+'&dbName='+dbName+'&tblName='+tblName);                    
+            Fetch_js('display_right_aside','./include/AJAX_php_js/ajax_SelectTbl.php?host_numb=' + table_param.getAttribute('host_numb') + '&hostName='+host_arr[hostNumb]+'&dbName='+dbName+'&tblName='+tblName);                    
             //ShowTblCols_right_aside_js(_tag,'./include/AJAX_php_js/ajax_SelectTbl.php?hostName='+host_arr[hostNumb]+'&dbName='+dbName+'&tblName='+tblName);                    
             //DescribeTbl_js(_tag,'./include/AJAX_php_js/ajax_DescribeTbl.php?hostName='+host_arr[hostNumb]+'&dbName='+dbName+'&tblName='+tblName);                    
             

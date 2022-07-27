@@ -162,7 +162,7 @@ echo "
             document.getElementById('hostNavIzq').innerHTML = hostSelected.value;            
 
             let host_n = event.target.selectedOptions[0].getAttribute("host_numb");    
-            //alert('host selected attributes ' + host_n); 
+            // alert('host bumber ' + host_n); 
             
             if (hostSelected.value != 0 ) {
 
@@ -196,6 +196,7 @@ echo "
     function doButtonAction(){
 
         var table_param = document.getElementById('display-result-nav-title');
+        let host_n = table_param.getAttribute('host_numb')
         var _tag = 'display_sql_result';
         document.getElementById(_tag).innerHTML = "";        
 
@@ -206,7 +207,7 @@ echo "
                     { alert( 'please, select a table' ); } 
                 else {   
                     if ( document.getElementById('display-sql-console-Down').classList.contains('showDiv') ) { _tag = 'display-sql-console-Down'; }            
-                    Fetch_js(_tag,'./include/AJAX_php_js/ajax_DescribeTbl.php?hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table'));                                    
+                    Fetch_js(_tag,'./include/AJAX_php_js/ajax_DescribeTbl.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table'));                                    
                 }
                 break;
 
@@ -215,7 +216,7 @@ echo "
                     { alert( 'please, select a table' ); } 
                 else {    
                     if ( document.getElementById('display-sql-console-Down').classList.contains('showDiv') ) { _tag = 'display-sql-console-Down'; }                         
-                    Fetch_js(_tag,'./include/AJAX_php_js/ajax_ViewTbl.php?hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table'));
+                    Fetch_js(_tag,'./include/AJAX_php_js/ajax_ViewTbl.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table'));
                 }
                 break;    
 
@@ -282,8 +283,9 @@ echo "
 
                     // tag for show options in "Std Queries" SELECT
                     _tag= 'std-queriesList';
+
                     _query = 'SELECT btn_name, query FROM standard_queries'; 
-                    Fetch_js(_tag,'./include/AJAX_php_js/ajax_SelectOptions_Query.php?hostName=127.0.0.1&dbName=my_lqs_admin&&sql_query='+_query);                      
+                    Fetch_js(_tag,'./include/AJAX_php_js/ajax_SelectOptions_Query.php?hostName=127.0.0.1&dbName=my_lqs_admin&sql_query='+_query);                      
 /*
                     // tag for show options in "Fav Queries" SELECT
                     _tag= 'fav-queriesList';
@@ -297,7 +299,7 @@ echo "
                     document.getElementById('p-comment').innerHTML='TABLES';        
                     // tag for show tables of DB selected
                     _tag= 'display_right_aside';   
-                    Fetch_js(_tag,'./include/AJAX_php_js/ajax_ListTables.php?hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db'));
+                    Fetch_js(_tag,'./include/AJAX_php_js/ajax_ListTables.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db'));
                 }
 
                 break;    
@@ -379,6 +381,7 @@ echo "
         // IF to check: host and DB exists & query is not empty
         // capture host and db from tag -> #display-result-nav-title
         var table_param = document.getElementById('display-result-nav-title');
+        let host_n = table_param.getAttribute('host_numb');
 
         if ( _query == "" || table_param.getAttribute('host') == null || table_param.getAttribute('db') == null ) { 
             alert('check if you select HOST and DB and you write an sql query ! 😎') 
@@ -408,7 +411,7 @@ echo "
 
             // call AJAX for execute query
             var _tag = 'display-sql-console-Down';
-            Fetch_js(_tag,'./include/AJAX_php_js/ajax_Sql_Query.php?hostName='+sql_host_db.getAttribute('host')+'&dbName='+sql_host_db.getAttribute('db')+'&sql_query='+_query);
+            Fetch_js(_tag,'./include/AJAX_php_js/ajax_Sql_Query.php?host_numb=' + host_n + '&hostName='+sql_host_db.getAttribute('host')+'&dbName='+sql_host_db.getAttribute('db')+'&sql_query='+_query);
 
         }
 
@@ -442,6 +445,7 @@ echo "
 
 
         let table_param = document.getElementById('display-result-nav-title');
+        let host_n = table_param.getAttribute('host_numb');
         let host_sel = table_param.getAttribute('host');
         let db_sel = table_param.getAttribute('db');
         let table_selected = table_param.getAttribute('table');      
@@ -456,7 +460,7 @@ echo "
             let left_right_query = left_query + ' UNION ' + right_query;
 
             let query_string = '?hostName='+host_sel+'&dbName='+db_sel;
-            Fetch_data_array(query_string,'./include/AJAX_php_js/ajax_Sql_Arrays.php?hostName='+host_sel+'&dbName='+db_sel+'&sql_query='+left_right_query);  
+            Fetch_data_array(query_string,'./include/AJAX_php_js/ajax_Sql_Arrays.php?host_numb=' + host_n + '&hostName='+host_sel+'&dbName='+db_sel+'&sql_query='+left_right_query);  
             
         }           
     }

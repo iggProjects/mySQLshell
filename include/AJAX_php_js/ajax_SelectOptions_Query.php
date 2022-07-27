@@ -2,6 +2,7 @@
 
 include_once "../php_general_funct/my_PHP_functions.php";
 include_once "../sql_funct/my_SQL_functions_servers.php";
+include_once "../../config/config.servers.php";
 
 $log_comments_path = "../../assets/log-files/log_comments.log";
 $log_queries_path = "../../assets/log-files/log_queries.log";
@@ -13,6 +14,10 @@ ini_set('ignore_repeated_errors',TRUE);
 ini_set('display_errors', FALSE);
 ini_set("log_errors",TRUE);
 ini_set('error_log',$php_errors_log);
+
+if ( $_REQUEST['host_numb'] ) {
+    $host_numb = $_REQUEST['host_numb']; 
+} else {}
 
 if ( $_REQUEST['hostName'] ) {
     $dbhost = $_REQUEST['hostName']; 
@@ -27,19 +32,18 @@ if ( $_REQUEST['sql_query'] ) {
 }
 
 
-if ( $dbhost == 'POAPMYSQL119.dns-servicio.com:3306' ) {
-    $dbuser = "inaki2022";
-    $dbpass = "Inaki@2022";
-    $dbcharset = 'utf8mb4';
-    $h=1;
-} elseif ( $dbhost == '127.0.0.1' ) {
-    $dbuser = "root";
-    $dbpass = "@mysql@";
-    $dbcharset = 'utf8mb4';
-    $h=2;
-} else {
-    // upssssss msg
-}
+/* ONLY WORKING IN LOCALHOST IN 'my_lqs_admin' DB */
+$dbuser  = $cfg_s['Servers'][2]['user'];
+$dbpass = $cfg_s['Servers'][2]['password'];
+$dbcharset = 'utf8mb4';
+
+//$msg = 'HOST param: ' . $_REQUEST['host_numb'] . '-'. $hostName . '-' . $dbuser . '-' . $dbpass;
+//My_Log_Message ($msg,$log_comments_path);
+
+$dbuser = "root";
+$dbpass = "@mysql@";
+$dbcharset = 'utf8mb4';
+$h=2;
 
 # connection to DB using $db_parameters
 $conex_db = try_catch_connect_host_db($dbhost,$dbname,$dbuser,$dbpass,$dbcharset,$log_queries_path);

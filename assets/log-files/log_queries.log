@@ -14838,3 +14838,389 @@
 [27-Jul-2022 09:53:34] [Date: 2022-07-27 09:53:34 | root connect succesfully to 'my_lqs_admin']
 [27-Jul-2022 09:53:34] [Date: 2022-07-27 09:53:34 | root execute succesfully Sql Query in DB: my_lqs_admin
  'SELECT btn_name, query FROM standard_queries']
+[27-Jul-2022 10:00:21] [Date: 2022-07-27 10:00:21 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 10:00:21] [Date: 2022-07-27 10:00:21 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:01:12] [Date: 2022-07-27 10:01:12 | root connect succesfully to 'penjub']
+[27-Jul-2022 10:01:12] [Date: 2022-07-27 10:01:12 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 10:07:58] [Date: 2022-07-27 10:07:58 |  CONNECT host '' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[27-Jul-2022 10:08:36] [Date: 2022-07-27 10:08:36 |  CONNECT host '' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[27-Jul-2022 10:10:37] [Date: 2022-07-27 10:10:37 |  CONNECT host '' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[27-Jul-2022 10:11:16] [Date: 2022-07-27 10:11:16 |  CONNECT host '' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[27-Jul-2022 10:12:24] [Date: 2022-07-27 10:12:24 |  CONNECT host '' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[27-Jul-2022 10:13:24] [Date: 2022-07-27 10:13:24 |  CONNECT host '' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[27-Jul-2022 10:18:54] [Date: 2022-07-27 10:18:54 |  CONNECT host '' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[27-Jul-2022 10:19:50] [Date: 2022-07-27 10:19:50 |  CONNECT host '' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[27-Jul-2022 10:20:45] [Date: 2022-07-27 10:20:45 |  CONNECT host '' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[27-Jul-2022 10:22:55] [Date: 2022-07-27 10:22:55 |  CONNECT host '' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[27-Jul-2022 10:25:38] [Date: 2022-07-27 10:25:38 |  CONNECT host '' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[27-Jul-2022 10:26:09] [Date: 2022-07-27 10:26:09 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 10:26:10] [Date: 2022-07-27 10:26:10 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:26:43] [Date: 2022-07-27 10:26:43 | root connect succesfully to 'penjub']
+[27-Jul-2022 10:26:43] [Date: 2022-07-27 10:26:43 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 10:26:46] [Date: 2022-07-27 10:26:46 | root connect succesfully to 'my_lqs_admin'][27-Jul-2022 10:26:46] [Date: 2022-07-27 10:26:46 | root connect succesfully to 'penjub']
+
+[27-Jul-2022 10:26:46] [Date: 2022-07-27 10:26:46 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, query FROM standard_queries']
+[27-Jul-2022 10:26:46] [Date: 2022-07-27 10:26:46 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 10:26:54] [Date: 2022-07-27 10:26:54 | root connect succesfully to 'penjub']
+[27-Jul-2022 10:26:54] [Date: 2022-07-27 10:26:54 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona'']
+[27-Jul-2022 10:31:21] [Date: 2022-07-27 10:31:21 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 10:31:22] [Date: 2022-07-27 10:31:22 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:31:25] [Date: 2022-07-27 10:31:25 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[27-Jul-2022 10:31:25] [Date: 2022-07-27 10:31:25 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:31:26] [Date: 2022-07-27 10:31:26 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[27-Jul-2022 10:31:26] [Date: 2022-07-27 10:31:26 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:31:27] [Date: 2022-07-27 10:31:27 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[27-Jul-2022 10:31:27] [Date: 2022-07-27 10:31:27 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:31:32] [Date: 2022-07-27 10:31:32 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 10:31:32] [Date: 2022-07-27 10:31:32 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:31:34] [Date: 2022-07-27 10:31:34 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 10:31:34] [Date: 2022-07-27 10:31:34 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:31:35] [Date: 2022-07-27 10:31:35 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 10:31:36] [Date: 2022-07-27 10:31:36 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:31:38] [Date: 2022-07-27 10:31:38 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 10:31:38] [Date: 2022-07-27 10:31:38 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:31:38] [Date: 2022-07-27 10:31:38 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 10:31:38] [Date: 2022-07-27 10:31:38 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:31:47] [Date: 2022-07-27 10:31:47 | root connect succesfully to 'penjub']
+[27-Jul-2022 10:31:47] [Date: 2022-07-27 10:31:47 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 10:31:56] [Date: 2022-07-27 10:31:56 |  CONNECT DB 'penjub' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[27-Jul-2022 10:32:46] [Date: 2022-07-27 10:32:46 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[27-Jul-2022 10:32:46] [Date: 2022-07-27 10:32:46 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:32:49] [Date: 2022-07-27 10:32:49 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 10:32:49] [Date: 2022-07-27 10:32:49 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 10:32:49] [Date: 2022-07-27 10:32:49 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 10:32:49] [Date: 2022-07-27 10:32:49 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:32:49] [Date: 2022-07-27 10:32:49 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:32:49] [Date: 2022-07-27 10:32:49 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:32:53] [Date: 2022-07-27 10:32:53 | root connect succesfully to 'penjub']
+[27-Jul-2022 10:32:53] [Date: 2022-07-27 10:32:53 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 10:32:58] [Date: 2022-07-27 10:32:58 |  CONNECT DB 'penjub' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[27-Jul-2022 10:36:29] [Date: 2022-07-27 10:36:29 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[27-Jul-2022 10:36:29] [Date: 2022-07-27 10:36:29 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:36:31] [Date: 2022-07-27 10:36:31 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 10:36:31] [Date: 2022-07-27 10:36:31 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 10:36:31] [Date: 2022-07-27 10:36:31 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:36:31] [Date: 2022-07-27 10:36:31 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:36:33] [Date: 2022-07-27 10:36:33 | root connect succesfully to 'penjub']
+[27-Jul-2022 10:36:33] [Date: 2022-07-27 10:36:33 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 10:36:39] [Date: 2022-07-27 10:36:39 | root connect succesfully to 'penjub']
+[27-Jul-2022 10:36:39] [Date: 2022-07-27 10:36:39 | root execute succesfully show tables query
+ 'describe tbl_persona;']
+[27-Jul-2022 10:39:45] [Date: 2022-07-27 10:39:45 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 10:39:45] [Date: 2022-07-27 10:39:45 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:39:47] [Date: 2022-07-27 10:39:47 |  CONNECT DB 'penjub' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[27-Jul-2022 10:39:56] [Date: 2022-07-27 10:39:56 |  CONNECT DB 'penjub' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[27-Jul-2022 10:43:03] [Date: 2022-07-27 10:43:03 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 10:43:03] [Date: 2022-07-27 10:43:03 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:43:05] [Date: 2022-07-27 10:43:05 |  CONNECT DB 'penjub' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[27-Jul-2022 10:44:44] [Date: 2022-07-27 10:44:44 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 10:44:44] [Date: 2022-07-27 10:44:44 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:44:46] [Date: 2022-07-27 10:44:46 |  CONNECT DB 'penjub' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[27-Jul-2022 10:48:13] [Date: 2022-07-27 10:48:13 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 10:48:13] [Date: 2022-07-27 10:48:13 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:48:15] [Date: 2022-07-27 10:48:15 |  CONNECT DB 'penjub' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[27-Jul-2022 10:49:01] [Date: 2022-07-27 10:49:01 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 10:49:01] [Date: 2022-07-27 10:49:01 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:49:02] [Date: 2022-07-27 10:49:02 |  CONNECT DB 'penjub' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[27-Jul-2022 10:51:22] [Date: 2022-07-27 10:51:22 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 10:51:22] [Date: 2022-07-27 10:51:22 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:51:25] [Date: 2022-07-27 10:51:25 |  CONNECT DB 'penjub' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[27-Jul-2022 10:55:14] [Date: 2022-07-27 10:55:14 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 10:55:14] [Date: 2022-07-27 10:55:14 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:55:16] [Date: 2022-07-27 10:55:16 | root connect succesfully to 'penjub']
+[27-Jul-2022 10:55:16] [Date: 2022-07-27 10:55:16 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 10:55:23] [Date: 2022-07-27 10:55:23 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[27-Jul-2022 10:55:23] [Date: 2022-07-27 10:55:23 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[27-Jul-2022 10:55:23] [Date: 2022-07-27 10:55:23 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[27-Jul-2022 10:55:23] [Date: 2022-07-27 10:55:23 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:55:23] [Date: 2022-07-27 10:55:23 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:55:23] [Date: 2022-07-27 10:55:23 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:55:24] [Date: 2022-07-27 10:55:24 | inaki2022 connect succesfully to '8661316_laninaki22']
+[27-Jul-2022 10:55:24] [Date: 2022-07-27 10:55:24 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 10:55:28] [Date: 2022-07-27 10:55:28 | inaki2022 connect succesfully to '8661316_laninaki22']
+[27-Jul-2022 10:55:28] [Date: 2022-07-27 10:55:28 | inaki2022 execute succesfully show tables query
+ 'describe tbl_users;']
+[27-Jul-2022 10:59:26] [Date: 2022-07-27 10:59:26 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 10:59:27] [Date: 2022-07-27 10:59:27 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 10:59:29] [Date: 2022-07-27 10:59:29 | root connect succesfully to 'penjub']
+[27-Jul-2022 10:59:29] [Date: 2022-07-27 10:59:29 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 10:59:30] [Date: 2022-07-27 10:59:30 | root connect succesfully to 'my_lqs_admin']
+[27-Jul-2022 10:59:30] [Date: 2022-07-27 10:59:30 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, query FROM standard_queries']
+[27-Jul-2022 10:59:30] [Date: 2022-07-27 10:59:30 | root connect succesfully to 'penjub']
+[27-Jul-2022 10:59:30] [Date: 2022-07-27 10:59:30 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 11:03:50] [Date: 2022-07-27 11:03:50 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 11:03:50] [Date: 2022-07-27 11:03:50 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:03:52] [Date: 2022-07-27 11:03:52 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:03:52] [Date: 2022-07-27 11:03:52 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 11:03:57] [Date: 2022-07-27 11:03:57 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:03:57] [Date: 2022-07-27 11:03:57 | root execute succesfully show tables query
+ 'describe tbl_persona;']
+[27-Jul-2022 11:04:38] [Date: 2022-07-27 11:04:38 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:04:38] [Date: 2022-07-27 11:04:38 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_cobro' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_cobro'']
+[27-Jul-2022 11:08:46] [Date: 2022-07-27 11:08:46 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 11:08:46] [Date: 2022-07-27 11:08:46 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:08:48] [Date: 2022-07-27 11:08:48 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:08:48] [Date: 2022-07-27 11:08:48 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 11:10:28] [Date: 2022-07-27 11:10:28 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 11:10:28] [Date: 2022-07-27 11:10:28 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:10:30] [Date: 2022-07-27 11:10:30 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:10:30] [Date: 2022-07-27 11:10:30 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 11:10:33] [Date: 2022-07-27 11:10:33 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:10:34] [Date: 2022-07-27 11:10:34 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona'']
+[27-Jul-2022 11:13:14] [Date: 2022-07-27 11:13:14 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 11:13:14] [Date: 2022-07-27 11:13:14 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:13:16] [Date: 2022-07-27 11:13:16 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:13:16] [Date: 2022-07-27 11:13:16 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 11:13:21] [Date: 2022-07-27 11:13:21 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:13:21] [Date: 2022-07-27 11:13:21 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 11:13:21] [Date: 2022-07-27 11:13:21 | root connect succesfully to 'my_lqs_admin']
+[27-Jul-2022 11:13:21] [Date: 2022-07-27 11:13:21 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, query FROM standard_queries']
+[27-Jul-2022 11:13:27] [Date: 2022-07-27 11:13:27 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:13:27] [Date: 2022-07-27 11:13:27 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[27-Jul-2022 11:13:38] [Date: 2022-07-27 11:13:38 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:13:38] [Date: 2022-07-27 11:13:38 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona LIMIT 10;']
+[27-Jul-2022 11:15:09] [Date: 2022-07-27 11:15:09 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 11:15:09] [Date: 2022-07-27 11:15:09 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:15:11] [Date: 2022-07-27 11:15:11 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:15:11] [Date: 2022-07-27 11:15:11 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 11:15:20] [Date: 2022-07-27 11:15:20 |  CONNECT DB 'penjub' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[27-Jul-2022 11:16:24] [Date: 2022-07-27 11:16:24 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 11:16:24] [Date: 2022-07-27 11:16:24 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:16:26] [Date: 2022-07-27 11:16:26 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:16:26] [Date: 2022-07-27 11:16:26 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 11:16:32] [Date: 2022-07-27 11:16:32 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:16:32] [Date: 2022-07-27 11:16:32 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona LIMIT 10;']
+[27-Jul-2022 11:16:36] [Date: 2022-07-27 11:16:36 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:16:36] [Date: 2022-07-27 11:16:36 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_cobro LIMIT 10;']
+[27-Jul-2022 11:16:39] [Date: 2022-07-27 11:16:39 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[27-Jul-2022 11:16:39] [Date: 2022-07-27 11:16:39 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[27-Jul-2022 11:16:39] [Date: 2022-07-27 11:16:39 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[27-Jul-2022 11:16:40] [Date: 2022-07-27 11:16:40 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:16:40] [Date: 2022-07-27 11:16:40 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:16:40] [Date: 2022-07-27 11:16:40 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:16:41] [Date: 2022-07-27 11:16:41 | inaki2022 connect succesfully to '8661316_laninaki22']
+[27-Jul-2022 11:16:41] [Date: 2022-07-27 11:16:41 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 11:16:46] [Date: 2022-07-27 11:16:46 | inaki2022 connect succesfully to '8661316_laninaki22']
+[27-Jul-2022 11:16:46] [Date: 2022-07-27 11:16:46 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users LIMIT 10;']
+[27-Jul-2022 11:16:48] [Date: 2022-07-27 11:16:48 | inaki2022 connect succesfully to '8661316_laninaki22']
+[27-Jul-2022 11:16:48] [Date: 2022-07-27 11:16:48 | inaki2022 execute succesfully show tables query
+ 'describe tbl_users;']
+[27-Jul-2022 11:16:49] [Date: 2022-07-27 11:16:49 | inaki2022 connect succesfully to '8661316_laninaki22']
+[27-Jul-2022 11:16:49] [Date: 2022-07-27 11:16:49 | inaki2022 execute succesfully Sql Query in DB: 8661316_laninaki22
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = '8661316_laninaki22' AND TABLE_NAME = 'tbl_users' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = '8661316_laninaki22' AND REFERENCED_TABLE_NAME = 'tbl_users'']
+[27-Jul-2022 11:16:52] [Date: 2022-07-27 11:16:52 | inaki2022 CONNECT DB 'my_lqs_admin' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'inaki2022'@'localhost' (using password: YES)]
+[27-Jul-2022 11:16:52] [Date: 2022-07-27 11:16:52 | inaki2022 connect succesfully to '8661316_laninaki22']
+[27-Jul-2022 11:16:52] [Date: 2022-07-27 11:16:52 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 11:17:28] [Date: 2022-07-27 11:17:28 | inaki2022 connect succesfully to '8661316_laninaki22']
+[27-Jul-2022 11:17:28] [Date: 2022-07-27 11:17:28 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 11:17:38] [Date: 2022-07-27 11:17:38 | inaki2022 CONNECT DB 'my_lqs_admin' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'inaki2022'@'localhost' (using password: YES)]
+[27-Jul-2022 11:17:38] [Date: 2022-07-27 11:17:38 | inaki2022 connect succesfully to '8661316_laninaki22']
+[27-Jul-2022 11:17:38] [Date: 2022-07-27 11:17:38 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 11:18:01] [Date: 2022-07-27 11:18:01 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 11:18:01] [Date: 2022-07-27 11:18:01 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 11:18:01] [Date: 2022-07-27 11:18:01 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 11:18:01] [Date: 2022-07-27 11:18:01 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 11:18:01] [Date: 2022-07-27 11:18:01 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 11:18:01] [Date: 2022-07-27 11:18:01 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:18:01] [Date: 2022-07-27 11:18:01 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:18:01] [Date: 2022-07-27 11:18:01 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:18:01] [Date: 2022-07-27 11:18:01 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:18:01] [Date: 2022-07-27 11:18:01 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:18:13] [Date: 2022-07-27 11:18:13 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[27-Jul-2022 11:18:13] [Date: 2022-07-27 11:18:13 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[27-Jul-2022 11:18:13] [Date: 2022-07-27 11:18:13 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[27-Jul-2022 11:18:13] [Date: 2022-07-27 11:18:13 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[27-Jul-2022 11:18:13] [Date: 2022-07-27 11:18:13 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[27-Jul-2022 11:18:13] [Date: 2022-07-27 11:18:13 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[27-Jul-2022 11:18:13] [Date: 2022-07-27 11:18:13 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:18:13] [Date: 2022-07-27 11:18:13 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:18:13] [Date: 2022-07-27 11:18:13 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:18:13] [Date: 2022-07-27 11:18:13 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:18:13] [Date: 2022-07-27 11:18:13 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:18:13] [Date: 2022-07-27 11:18:13 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[27-Jul-2022 11:18:13] [Date: 2022-07-27 11:18:13 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[27-Jul-2022 11:18:13] [Date: 2022-07-27 11:18:13 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[27-Jul-2022 11:18:13] [Date: 2022-07-27 11:18:13 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:18:13] [Date: 2022-07-27 11:18:13 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+
+[27-Jul-2022 11:18:15] [Date: 2022-07-27 11:18:15 | root connect succesfully to '127.0.0.1'][27-Jul-2022 11:18:15] [Date: 2022-07-27 11:18:15 | root connect succesfully to '127.0.0.1']
+
+[27-Jul-2022 11:18:15] [Date: 2022-07-27 11:18:15 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 11:18:15] [Date: 2022-07-27 11:18:15 | root connect succesfully to '127.0.0.1']
+
+[27-Jul-2022 11:18:16] [Date: 2022-07-27 11:18:16 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:18:16] [Date: 2022-07-27 11:18:16 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:18:16] [Date: 2022-07-27 11:18:16 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:18:16] [Date: 2022-07-27 11:18:16 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:18:16] [Date: 2022-07-27 11:18:16 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:18:16] [Date: 2022-07-27 11:18:16 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:18:16] [Date: 2022-07-27 11:18:16 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 11:18:16] [Date: 2022-07-27 11:18:16 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 11:18:16] [Date: 2022-07-27 11:18:16 | root connect succesfully to '127.0.0.1'][27-Jul-2022 11:18:16] [Date: 2022-07-27 11:18:16 | root connect succesfully to '127.0.0.1']
+
+[27-Jul-2022 11:18:16] [Date: 2022-07-27 11:18:16 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 11:18:16] [Date: 2022-07-27 11:18:16 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:18:16] [Date: 2022-07-27 11:18:16 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:18:16] [Date: 2022-07-27 11:18:16 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:18:16] [Date: 2022-07-27 11:18:16 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:18:16] [Date: 2022-07-27 11:18:16 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:18:17] [Date: 2022-07-27 11:18:17 | root connect succesfully to 'my_lqs_admin']
+[27-Jul-2022 11:18:17] [Date: 2022-07-27 11:18:17 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, query FROM standard_queries'][27-Jul-2022 11:18:17] [Date: 2022-07-27 11:18:17 | root CONNECT DB '8661316_laninaki22' FAIL !SQLSTATE[HY000] [1049] Unknown database '8661316_laninaki22']
+
+[27-Jul-2022 11:20:16] [Date: 2022-07-27 11:20:16 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[27-Jul-2022 11:20:16] [Date: 2022-07-27 11:20:16 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:20:17] [Date: 2022-07-27 11:20:17 | inaki2022 connect succesfully to '8661316_laninaki22']
+[27-Jul-2022 11:20:17] [Date: 2022-07-27 11:20:17 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 11:20:18] [Date: 2022-07-27 11:20:18 | root connect succesfully to 'my_lqs_admin']
+[27-Jul-2022 11:20:18] [Date: 2022-07-27 11:20:18 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, query FROM standard_queries']
+[27-Jul-2022 11:20:19] [Date: 2022-07-27 11:20:19 | inaki2022 connect succesfully to '8661316_laninaki22']
+[27-Jul-2022 11:20:19] [Date: 2022-07-27 11:20:19 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 11:20:23] [Date: 2022-07-27 11:20:23 | inaki2022 connect succesfully to '8661316_laninaki22']
+[27-Jul-2022 11:20:23] [Date: 2022-07-27 11:20:23 | inaki2022 execute succesfully Sql Query in DB: 8661316_laninaki22
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[27-Jul-2022 11:26:28] [Date: 2022-07-27 11:26:28 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[27-Jul-2022 11:26:28] [Date: 2022-07-27 11:26:28 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:26:29] [Date: 2022-07-27 11:26:29 | inaki2022 connect succesfully to '8661316_laninaki22']
+[27-Jul-2022 11:26:29] [Date: 2022-07-27 11:26:29 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 11:26:31] [Date: 2022-07-27 11:26:31 | root connect succesfully to 'my_lqs_admin']
+[27-Jul-2022 11:26:31] [Date: 2022-07-27 11:26:31 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, query FROM standard_queries']
+[27-Jul-2022 11:26:31] [Date: 2022-07-27 11:26:31 | inaki2022 connect succesfully to '8661316_laninaki22']
+[27-Jul-2022 11:26:31] [Date: 2022-07-27 11:26:31 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 11:26:36] [Date: 2022-07-27 11:26:36 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 11:26:36] [Date: 2022-07-27 11:26:36 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 11:26:36] [Date: 2022-07-27 11:26:36 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:26:36] [Date: 2022-07-27 11:26:36 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:26:38] [Date: 2022-07-27 11:26:38 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:26:38] [Date: 2022-07-27 11:26:38 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 11:26:46] [Date: 2022-07-27 11:26:46 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:26:46] [Date: 2022-07-27 11:26:46 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[27-Jul-2022 11:26:55] [Date: 2022-07-27 11:26:55 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:26:55] [Date: 2022-07-27 11:26:55 | root execute succesfully show tables query
+ 'describe tbl_persona;']
+[27-Jul-2022 11:26:56] [Date: 2022-07-27 11:26:56 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:26:56] [Date: 2022-07-27 11:26:56 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona LIMIT 10;']
+[27-Jul-2022 11:26:57] [Date: 2022-07-27 11:26:57 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:26:58] [Date: 2022-07-27 11:26:58 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona'']
+[27-Jul-2022 11:27:14] [Date: 2022-07-27 11:27:14 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 11:27:15] [Date: 2022-07-27 11:27:15 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:27:17] [Date: 2022-07-27 11:27:17 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:27:17] [Date: 2022-07-27 11:27:17 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 11:27:22] [Date: 2022-07-27 11:27:22 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:27:22] [Date: 2022-07-27 11:27:22 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona LIMIT 10;']
+[27-Jul-2022 11:27:23] [Date: 2022-07-27 11:27:23 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:27:23] [Date: 2022-07-27 11:27:23 | root execute succesfully show tables query
+ 'describe tbl_persona;']
+[27-Jul-2022 11:27:24] [Date: 2022-07-27 11:27:24 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:27:24] [Date: 2022-07-27 11:27:24 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona'']
