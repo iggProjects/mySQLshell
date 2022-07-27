@@ -73,7 +73,7 @@ echo "
             echo "<div class='div-der disp-row-center'>";
 
                     echo "<div class='nav-btns disp-col-center'>";
-                        echo "<button id='btn-sql' class='nav-btn showBtn' style='color:blue;'><b>Test<br>Query</b></button>";
+                        echo "<button id='btn-sql' class='nav-btn showBtn' style='color:blue;'><b>TEST<br>QUERIES</b></button>";
                         echo "<button id='btn-desc' class='nav-btn showBtn'>Desc<br>Table</button>";
                         echo "<button id='btn-view' class='nav-btn showBtn'>View<br>Table</button>";
                         echo "<button id='btn-diagram' class='nav-btn showBtn' onclick='table_diagram()'>Diagram</button>";
