@@ -110,6 +110,9 @@ IÑAKI - METAS DÍA
 
 27-07-2022
 
+  - actualizar div-console cuando se cambia de host
+  - mover CANVAS a #der-console ???
+
   - Evaluar botones para facilitar queries tipo INSERT, UPDATE, DELETE  
   - PAGINATION FOR "SELECT REPORTS"
   - DROP DOWN SELECTORS FOR:
