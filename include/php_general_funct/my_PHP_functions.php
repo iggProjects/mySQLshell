@@ -1,12 +1,6 @@
-<!-- 
-    my basic functions 
-
--->
 <?php
 
-    // patrón normal del file "error.log" en apache log
-    // [Wed May 11 11:56:14.070703 2022] [php:notice] [pid 11116:tid 736] [client ::1:60891] 
-    // 'mensaje', referer: valor varible $_SERVER 'referer'
+    /* BASIC FUNCTIONS */
 
     // function to write in log file
     function My_Log_Message ($mens,$log_file_path) {  
@@ -231,7 +225,7 @@
         echo "<select class='servers_List' name='servers_List' id='serverList'>    
             <option class='queryOpt'  value='' selected>Sel Std Query</option>";
             for ( $k=0; $k < count($data_array); $k++ ) {                         
-                echo "<option class='queryOpt'  host_numb=''  value='" . $data_array[$k]['query'] . "' >" . $data_array[$k]['btn_name'] . "</option>"; 
+                echo "<option class='queryOpt'  title='" . $data_array[$k]['comment'] . "' host_numb=''  value='" . $data_array[$k]['query'] . "' >" . $data_array[$k]['btn_name'] . "</option>"; 
             }
         echo "</select>";   
 

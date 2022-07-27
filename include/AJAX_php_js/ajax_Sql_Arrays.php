@@ -82,8 +82,9 @@ if ( gettype($conex_db) === 'object' ) {
 # DATA ARRAY OR ERROR ARRAY
 if ($route == 'display_data') {  
 
-    My_Log_Message (json_encode($resultado),$log_comments_path);
+    My_Log_Message (json_encode($resultado),$log_comments_path);    
     echo json_encode($resultado);
+    // echo $resultado;
 
 } else {
 

@@ -181,22 +181,29 @@ function Fetch_js(tag,php_sql_url){
 
 }
 
-function Fetch_data_array(query_str,php_sql_url) {
+function Fetch_data_array(php_sql_url) {
+//function Fetch_data_array(query_str,php_sql_url) {
 
     console.log('php_sql_url====> ' + php_sql_url) 
     
     fetch(php_sql_url)
 
     .then(response => {
-        if (response.ok)
-            return response.text()
-
+        if (response.ok)        
+            return response.text()  
         else
             throw new Error(response.status)
     })
     
     .then(data => {
-        // alert('data ' + data);
+        alert('type data ' + typeof(data));
+        alert('data ' + data);  
+        
+        // https://www.geeksforgeeks.org/how-to-convert-json-string-to-array-of-json-objects-using-javascript/#:~:text=Approach%201%3A%20First%20convert%20the,array%20using%20push()%20method.
+        let data_array = JSON.parse(data);
+
+        alert('data array: ' + data_array[0]['TBL']);
+        
 
         // using window.open
         //let query_string = query_str;
