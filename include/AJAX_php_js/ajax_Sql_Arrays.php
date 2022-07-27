@@ -2,6 +2,7 @@
 
 include_once "../php_general_funct/my_PHP_functions.php";
 include_once "../sql_funct/my_SQL_functions_servers.php";
+include_once "../../config/config.servers.php";
 
 $log_comments_path = "../../assets/log-files/log_comments.log";
 $log_queries_path = "../../assets/log-files/log_queries.log";
@@ -15,6 +16,10 @@ ini_set('display_errors', FALSE);
 ini_set("log_errors",TRUE);
 ini_set('error_log',$php_errors_log);
 
+if ( $_REQUEST['host_numb'] ) {
+    $host_numb = $_REQUEST['host_numb']; 
+} else {}
+
 if ( $_REQUEST['hostName'] ) {
     $dbhost = $_REQUEST['hostName']; 
 }
@@ -27,7 +32,7 @@ if ( $_REQUEST['sql_query'] ) {
     $sql_query = $_REQUEST['sql_query']; 
 }
 
-
+/*
 if ( $dbhost == 'POAPMYSQL119.dns-servicio.com:3306' ) {
     $dbuser = "inaki2022";
     $dbpass = "Inaki@2022";
@@ -41,6 +46,15 @@ if ( $dbhost == 'POAPMYSQL119.dns-servicio.com:3306' ) {
 } else {
     // upssssss msg
 }
+*/
+
+$dbuser  = $cfg_s['Servers'][$host_numb]['user'];
+$dbpass = $cfg_s['Servers'][$host_numb]['password'];
+$dbcharset = 'utf8mb4';
+
+//$msg = 'HOST param: ' . $_REQUEST['host_numb'] . '-'. $hostName . '-' . $dbuser . '-' . $dbpass;
+//My_Log_Message ($msg,$log_comments_path);
+
 
 # connection to DB using $db_parameters
 $conex_db = try_catch_connect_host_db($dbhost,$dbname,$dbuser,$dbpass,$dbcharset,$log_queries_path);
