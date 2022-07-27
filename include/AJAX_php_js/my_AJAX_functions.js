@@ -196,18 +196,20 @@ function Fetch_data_array(php_sql_url) {
     })
     
     .then(data => {
+
+        // using window.open and do the work in another url
+        // let query_string = query_str;
+        // window.open('http://localhost/curso-backend-areafor-server/myLQSadmin/assets/z-canvas-examp/canvas-tables-diagram.php'+query_string, '_blank');
+
         alert('type data ' + typeof(data));
-        alert('data ' + data);  
+        // alert('data ' + data);  
         
         // https://www.geeksforgeeks.org/how-to-convert-json-string-to-array-of-json-objects-using-javascript/#:~:text=Approach%201%3A%20First%20convert%20the,array%20using%20push()%20method.
         let data_array = JSON.parse(data);
 
-        alert('data array: ' + data_array[0]['TBL']);
-        
-
-        // using window.open
-        //let query_string = query_str;
-        //window.open('http://localhost/curso-backend-areafor-server/myLQSadmin/assets/z-canvas-examp/canvas-tables-diagram.php'+query_string, '_blank');
+        alert('data_array length: ' + data_array.length);      
+        alert('data_array[0][TBL]: ' + data_array[0]['TBL']);      
+        // FIELDS TBL, COL, REF_COL, REF_TBL
 
         // using canvas tag
         document.getElementById('div-DB-info').style.display='none';
