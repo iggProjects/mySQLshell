@@ -11,6 +11,8 @@ IÑAKI - DARREN
 ********************************************************************
 IÑAKI - METAS DÍA 
 
+( mysqldump -uroot -p  my_lqs_admin > my_lqs_admin.sql )
+
 23-07-2022  
   
   - colocar host number and host name in <li> de DB left side ✔✔
@@ -38,36 +40,10 @@ IÑAKI - METAS DÍA
 - first version for "help url" for troubles in mysql... 
   - https://www.googleguide.com/linking.html
 
-- update ajax*.php para que use el request contra el array que viene de config.servers
+- update ajax*.php para que use el request contra el array que viene de config.servers ✔✔
   - el config es para los usuarios 'root' de cada servidor
   - cómo se manejaría los usuarios nuevos creados por el root
   - estudiar creación de usuarios y privilegios. Definir qué botones puede ver un usuario de acuerdo a privilegios
-
-    review AJAX_php_js functions. User "root" data for each server:
-      NOTE: this procedure is temporal, until next "DB users schema"
-      substitute actual IF with array info of config.serves.... 
-        index: "['Servers'][$i_serv]['user']"
-                                    ['host'],
-                                    ['shortName']
-      (
-        $cfg_s['Servers'][$i_serv]['user'] = 'inaki2022'; $cfg_s['Servers'][$i_serv]['password'] = '......';
-        $cfg_s['Servers'][$i_serv]['user'] = 'root'; $cfg_s['Servers'][$i_serv]['password'] = '.....';
-      ) 
-
-
-        if ( $dbhost == 'POAPMYSQL119.dns-servicio.com:3306' ) {
-            $dbuser = "inaki2022";
-            $dbpass = "Inaki@2022";
-            $dbcharset = 'utf8mb4';
-            $h=1;
-        } elseif ( $dbhost == '127.0.0.1' ) {
-            $dbuser = "root";
-            $dbpass = "@mysql@";
-            $dbcharset = 'utf8mb4';
-            $h=2;
-        } else {
-            // upssssss msg
-        }
 
 26-07-2022
 
@@ -78,7 +54,7 @@ IÑAKI - METAS DÍA
     o para modificar DB, respaldar, eliminar, restore backups........
   - OJO: esto solo debe ser una opción para usuarios root o administrador con todos los privilegios  
 
-- Crear DB "my_lqs_admin"
+- Crear DB "my_lqs_admin" 
   - crear las primeras tablas usuarios, standard_queries, favorite_queries, .... ✔✔
   - crear tag SELECT OPTIONS para colocar el select en lugar del actual btn 'tbls-rel'... igual con el de size
   - standard queries aplican a cualquier DB (campos: id, user, comment, btn_name, query, creation_date)
@@ -110,15 +86,18 @@ IÑAKI - METAS DÍA
 
 27-07-2022
 
-  - actualizar div-console cuando se cambia de host
-  - mover CANVAS a #der-console ???
-
-  - Evaluar botones para facilitar queries tipo INSERT, UPDATE, DELETE  
-  - PAGINATION FOR "SELECT REPORTS"
-  - DROP DOWN SELECTORS FOR:
+  - DROP DOWN SELECTORS FOR: ✔✔
     - standard queries
     - favorite queries
 
+  - navegación usando config.servers.php ✔✔
+  - actualizar div-console cuando se cambia de host
+  - TERMINAR CANVAS (mover CANVAS a #der-console ???)
+
+  - Evaluar botones para facilitar queries tipo INSERT, UPDATE, DELETE  
+
+  - PAGINATION FOR "SELECT REPORTS"
+  
   - Test LOGIN y DOWNLOAD  
 
   - CASO DB SERVER
@@ -126,9 +105,9 @@ IÑAKI - METAS DÍA
 
 28-07-2022 - 28-07-2022
   - write first version for "readme"
-  - import export buttons
+  - hacer pruebas
+  - import - export buttons
   - rename database button
-
 
 ********************************************************************
 

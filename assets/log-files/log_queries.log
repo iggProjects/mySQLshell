@@ -15224,3 +15224,33 @@
 [27-Jul-2022 11:27:24] [Date: 2022-07-27 11:27:24 | root connect succesfully to 'penjub']
 [27-Jul-2022 11:27:24] [Date: 2022-07-27 11:27:24 | root execute succesfully Sql Query in DB: penjub
  'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona'']
+[27-Jul-2022 11:30:50] [Date: 2022-07-27 11:30:50 | root connect succesfully to '127.0.0.1']
+[27-Jul-2022 11:30:50] [Date: 2022-07-27 11:30:50 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[27-Jul-2022 11:30:53] [Date: 2022-07-27 11:30:53 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:30:53] [Date: 2022-07-27 11:30:53 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 11:30:59] [Date: 2022-07-27 11:30:59 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:30:59] [Date: 2022-07-27 11:30:59 | root execute succesfully show tables query
+ 'describe tbl_consulado;']
+[27-Jul-2022 11:31:00] [Date: 2022-07-27 11:31:00 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:31:00] [Date: 2022-07-27 11:31:00 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_consulado LIMIT 10;']
+[27-Jul-2022 11:31:02] [Date: 2022-07-27 11:31:02 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:31:02] [Date: 2022-07-27 11:31:02 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_consulado' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_consulado'']
+[27-Jul-2022 11:31:04] [Date: 2022-07-27 11:31:04 | root connect succesfully to 'my_lqs_admin']
+[27-Jul-2022 11:31:04] [Date: 2022-07-27 11:31:04 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, query FROM standard_queries']
+[27-Jul-2022 11:31:04] [Date: 2022-07-27 11:31:04 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:31:04] [Date: 2022-07-27 11:31:04 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[27-Jul-2022 11:31:10] [Date: 2022-07-27 11:31:10 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:31:10] [Date: 2022-07-27 11:31:10 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[27-Jul-2022 11:31:24] [Date: 2022-07-27 11:31:24 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:31:24] [Date: 2022-07-27 11:31:24 | Sql_Query_try_catch: query in penjub FAILED !
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA() AND TABLE_NAME =' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1]
+[27-Jul-2022 11:31:40] [Date: 2022-07-27 11:31:40 | root connect succesfully to 'penjub']
+[27-Jul-2022 11:31:40] [Date: 2022-07-27 11:31:40 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA() AND TABLE_NAME = 'tbl_ciudad'']
