@@ -448,6 +448,7 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
         }    
 
     }
+    // CHEQUEAR CONDIC DE BORDE
     temp_array.push(right_tables_array[i]); 
     console.log('temp_array');
     console.log(temp_array);
