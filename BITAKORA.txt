@@ -26,7 +26,6 @@ IÑAKI - METAS DÍA
   - CANVAS
     - https://github.com/raphamorim/canvas-experiments
     - https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D#paths
-
     - buscar las queries para tablas por la derecha y tablas por la izquierda ✔✔
     - pensar en diseño dinámico que centre la tabla objetivo y defina criterios para ubicar
       las tablas que apuntan a la tabla objetivo (lado izq) y las tablas a las que apunta la tabla objetivo (lado der)  
@@ -94,7 +93,11 @@ IÑAKI - METAS DÍA
   - actualizar div-console cuando se cambia de host
   - TERMINAR CANVAS (mover CANVAS a #der-console ???)
 
-  - Evaluar botones para facilitar queries tipo INSERT, UPDATE, DELETE  
+  - Evaluar botones para ofrecer "máscaras" para queries tipo:
+    SELECT, INSERT, UPDATE, DELETE, DROP, IMPORT, EXPORT, BACKUP, RESTORE  
+    - Check syntaxis, and change especial words to uppercase and color blue.... 
+      (SELECT, FROM, WHERE, INNER JOIN, ORDER BY, ....)  
+
 
   - PAGINATION FOR "SELECT REPORTS"
   
@@ -104,6 +107,11 @@ IÑAKI - METAS DÍA
     Si seleccionamos un server, deberíamos acceder a la sql console. Por ejemplo, para crear una nueva DB en Localhost, y crear sus algunas tablas. Esto traería como consecuencia que debemos sustituir el query en ajax_Display_div_nav_izq (línea 68) $select_query = "SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;"; 
 
 28-07-2022 - 28-07-2022
+
+  - agregar title a los li de las tablas de la DB activa, para leer los "fields-type" de cada tabla
+  - si la sql-area está activa y se cambiar de servidor, ésta debe desaparecer, y la infor interna tamb
+  - HTLP para errores mysql
+
   - Chequear que lee table_param cuando click btn process query, y que coloque los selectores en opc '0' 
 
   - write first version for "readme"
@@ -115,7 +123,7 @@ IÑAKI - METAS DÍA
 
 PENDIENTE IÑAKI
 
-CREDENCIALES CONEXIÓN A SERVERS (ajax_describeTbl.PHP, .................. )
+CREDENCIALES CONEXIÓN A SERVERS (ajax_describeTbl.PHP, .................. ) ✔✔
   - deben leer el array de config.servers.php (ahora está comentado...)
   - el array está por índice, y no por nombre del host... verificar si vale la pena cambiar a 
     un array asociativo y listo
@@ -131,17 +139,12 @@ LOGIN
 PAGINATION 
   - https://stackoverflow.com/questions/20364349/pagination-using-mysql-limit-offset
 
-HOST BASIC INFO WHEN SELECTED
+HOST BASIC INFO WHEN SELECTED ✔✔
   tag #left-aside
 
 BUTTONS 
   - FILTROS: check for type cols, cases 'BLOB' (example: mediumblob in 'tbl_arch_imagen_persona' in penjub)
-
-  - Check syntaxis, and change especial words to uppercase and color blue.... 
-      (SELECT, FROM, WHERE, INNER JOIN, ORDER BY, ....)  
-
-  - check that basic info exist
-  
+  - check that basic info exist  
 
 CASO SQL-BTN -> cónsola "query-btn"
 
