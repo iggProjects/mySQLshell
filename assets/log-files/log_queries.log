@@ -15847,3 +15847,543 @@
 [28-Jul-2022 08:56:16] [Date: 2022-07-28 08:56:16 | root connect succesfully to 'penjub']
 [28-Jul-2022 08:56:16] [Date: 2022-07-28 08:56:16 | root execute succesfully Sql Query in DB: penjub
  'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 09:05:18] [Date: 2022-07-28 09:05:18 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 09:05:18] [Date: 2022-07-28 09:05:18 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 09:05:20] [Date: 2022-07-28 09:05:20 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:05:20] [Date: 2022-07-28 09:05:20 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 09:05:23] [Date: 2022-07-28 09:05:23 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:05:24] [Date: 2022-07-28 09:05:24 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 09:09:52] [Date: 2022-07-28 09:09:52 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 09:09:52] [Date: 2022-07-28 09:09:52 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 09:09:54] [Date: 2022-07-28 09:09:54 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:09:54] [Date: 2022-07-28 09:09:54 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 09:09:58] [Date: 2022-07-28 09:09:58 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:09:58] [Date: 2022-07-28 09:09:58 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 09:10:58] [Date: 2022-07-28 09:10:58 | root connect succesfully to '127.0.0.1'][28-Jul-2022 09:10:58] [Date: 2022-07-28 09:10:58 | root connect succesfully to '127.0.0.1']
+
+[28-Jul-2022 09:10:58] [Date: 2022-07-28 09:10:58 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 09:10:58] [Date: 2022-07-28 09:10:58 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 09:10:58] [Date: 2022-07-28 09:10:58 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 09:10:58] [Date: 2022-07-28 09:10:58 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 09:11:02] [Date: 2022-07-28 09:11:02 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:11:02] [Date: 2022-07-28 09:11:02 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 09:11:06] [Date: 2022-07-28 09:11:06 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:11:06] [Date: 2022-07-28 09:11:06 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 09:23:35] [Date: 2022-07-28 09:23:35 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 09:23:35] [Date: 2022-07-28 09:23:35 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 09:23:38] [Date: 2022-07-28 09:23:38 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:23:38] [Date: 2022-07-28 09:23:38 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 09:23:41] [Date: 2022-07-28 09:23:41 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:23:41] [Date: 2022-07-28 09:23:41 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 09:25:46] [Date: 2022-07-28 09:25:46 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 09:25:46] [Date: 2022-07-28 09:25:46 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 09:25:49] [Date: 2022-07-28 09:25:49 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:25:49] [Date: 2022-07-28 09:25:49 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 09:26:23] [Date: 2022-07-28 09:26:23 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 09:26:23] [Date: 2022-07-28 09:26:23 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 09:26:25] [Date: 2022-07-28 09:26:25 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:26:25] [Date: 2022-07-28 09:26:25 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 09:26:28] [Date: 2022-07-28 09:26:28 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:26:28] [Date: 2022-07-28 09:26:28 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 09:31:24] [Date: 2022-07-28 09:31:24 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 09:31:24] [Date: 2022-07-28 09:31:24 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 09:31:26] [Date: 2022-07-28 09:31:26 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:31:26] [Date: 2022-07-28 09:31:26 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 09:31:31] [Date: 2022-07-28 09:31:31 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:31:31] [Date: 2022-07-28 09:31:31 | Sql_Query_try_catch: query in penjub FAILED !
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'' SQLSTATE[42S22]: Column not found: 1054 Unknown column 'TABLE_NAME' in 'field list']
+[28-Jul-2022 09:32:13] [Date: 2022-07-28 09:32:13 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 09:32:13] [Date: 2022-07-28 09:32:13 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 09:32:15] [Date: 2022-07-28 09:32:15 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:32:15] [Date: 2022-07-28 09:32:15 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 09:32:19] [Date: 2022-07-28 09:32:19 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:32:19] [Date: 2022-07-28 09:32:19 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 09:33:12] [Date: 2022-07-28 09:33:12 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 09:33:12] [Date: 2022-07-28 09:33:12 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 09:33:15] [Date: 2022-07-28 09:33:15 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:33:15] [Date: 2022-07-28 09:33:15 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 09:33:18] [Date: 2022-07-28 09:33:18 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:33:18] [Date: 2022-07-28 09:33:18 | Sql_Query_try_catch: query in penjub FAILED !
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'' SQLSTATE[21000]: Cardinality violation: 1222 The used SELECT statements have a different number of columns]
+[28-Jul-2022 09:34:31] [Date: 2022-07-28 09:34:31 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 09:34:31] [Date: 2022-07-28 09:34:31 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 09:34:33] [Date: 2022-07-28 09:34:33 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:34:33] [Date: 2022-07-28 09:34:33 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 09:34:36] [Date: 2022-07-28 09:34:36 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:34:36] [Date: 2022-07-28 09:34:36 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 09:35:03] [Date: 2022-07-28 09:35:03 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 09:35:03] [Date: 2022-07-28 09:35:03 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 09:35:05] [Date: 2022-07-28 09:35:05 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:35:05] [Date: 2022-07-28 09:35:05 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 09:35:08] [Date: 2022-07-28 09:35:08 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:35:08] [Date: 2022-07-28 09:35:08 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 09:35:54] [Date: 2022-07-28 09:35:54 | root connect succesfully to 'information_schema']
+[28-Jul-2022 09:35:54] [Date: 2022-07-28 09:35:54 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 09:36:27] [Date: 2022-07-28 09:36:27 | root connect succesfully to 'information_schema']
+[28-Jul-2022 09:36:27] [Date: 2022-07-28 09:36:27 | root execute succesfully show tables query
+ 'describe TABLES;']
+[28-Jul-2022 09:36:46] [Date: 2022-07-28 09:36:46 | root connect succesfully to 'my_lqs_admin']
+[28-Jul-2022 09:36:46] [Date: 2022-07-28 09:36:46 | root connect succesfully to 'information_schema'][28-Jul-2022 09:36:46] [Date: 2022-07-28 09:36:46 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+
+[28-Jul-2022 09:36:46] [Date: 2022-07-28 09:36:46 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 09:37:02] [Date: 2022-07-28 09:37:02 | root connect succesfully to 'information_schema']
+[28-Jul-2022 09:37:02] [Date: 2022-07-28 09:37:02 | root execute succesfully show tables query
+ 'describe TABLES;']
+[28-Jul-2022 09:37:43] [Date: 2022-07-28 09:37:43 | root connect succesfully to 'information_schema']
+[28-Jul-2022 09:37:43] [Date: 2022-07-28 09:37:43 | root execute succesfully Sql Query in DB: information_schema
+ 'Select table_name, table_rows from TABLES where table_name = 'tbl_persona';']
+[28-Jul-2022 09:37:53] [Date: 2022-07-28 09:37:53 | root connect succesfully to 'information_schema']
+[28-Jul-2022 09:37:53] [Date: 2022-07-28 09:37:53 | root execute succesfully show tables query
+ 'describe TABLES;']
+[28-Jul-2022 09:38:24] [Date: 2022-07-28 09:38:24 | root connect succesfully to 'information_schema']
+[28-Jul-2022 09:38:24] [Date: 2022-07-28 09:38:24 | root execute succesfully show tables query
+ 'describe COLUMNS;']
+[28-Jul-2022 09:39:02] [Date: 2022-07-28 09:39:02 | root connect succesfully to 'information_schema']
+[28-Jul-2022 09:39:02] [Date: 2022-07-28 09:39:02 | Sql_Query_try_catch: query in information_schema FAILED !
+ 'select table_name, column_name from columns where table_name='tbl_persona'; LIMIT 20' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIMIT 20' at line 1]
+[28-Jul-2022 09:39:28] [Date: 2022-07-28 09:39:28 | root connect succesfully to 'information_schema']
+[28-Jul-2022 09:39:28] [Date: 2022-07-28 09:39:28 | root execute succesfully show tables query
+ 'describe COLUMNS;']
+[28-Jul-2022 09:39:59] [Date: 2022-07-28 09:39:59 | root connect succesfully to 'information_schema']
+[28-Jul-2022 09:39:59] [Date: 2022-07-28 09:39:59 | Sql_Query_try_catch: query in information_schema FAILED !
+ 'select TABLE_NAME, COLUMN_NAME from COLUMNS where TABLE_NAME='tbl_persona'; LIMIT 20' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIMIT 20' at line 1]
+[28-Jul-2022 09:40:22] [Date: 2022-07-28 09:40:22 | root connect succesfully to 'information_schema']
+[28-Jul-2022 09:40:22] [Date: 2022-07-28 09:40:22 | Sql_Query_try_catch: query in information_schema FAILED !
+ 'select * from COLUMNS where TABLE_NAME='tbl_persona'; LIMIT 20' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIMIT 20' at line 1]
+[28-Jul-2022 09:40:31] [Date: 2022-07-28 09:40:31 | root connect succesfully to 'information_schema']
+[28-Jul-2022 09:40:31] [Date: 2022-07-28 09:40:31 | Sql_Query_try_catch: query in information_schema FAILED !
+ 'select * from COLUMNS; LIMIT 20' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'LIMIT 20' at line 1]
+[28-Jul-2022 09:40:41] [Date: 2022-07-28 09:40:41 | root connect succesfully to 'information_schema']
+[28-Jul-2022 09:40:41] [Date: 2022-07-28 09:40:41 | root execute succesfully Sql Query in DB: information_schema
+ 'select * from COLUMNS LIMIT 20']
+[28-Jul-2022 09:40:50] [Date: 2022-07-28 09:40:50 | root connect succesfully to 'information_schema']
+[28-Jul-2022 09:40:50] [Date: 2022-07-28 09:40:50 | root execute succesfully Sql Query in DB: information_schema
+ 'select TABLE_NAME, COLUMN_NAME from COLUMNS where TABLE_NAME='tbl_persona' LIMIT 20']
+[28-Jul-2022 09:41:11] [Date: 2022-07-28 09:41:11 | root connect succesfully to 'information_schema']
+[28-Jul-2022 09:41:11] [Date: 2022-07-28 09:41:11 | root execute succesfully show tables query
+ 'describe COLUMNS;']
+[28-Jul-2022 09:41:52] [Date: 2022-07-28 09:41:52 | root connect succesfully to 'information_schema']
+[28-Jul-2022 09:41:52] [Date: 2022-07-28 09:41:52 | root execute succesfully Sql Query in DB: information_schema
+ 'select TABLE_NAME, COLUMN_NAME, ORDINAL_POSITION, DATA_TYPE from COLUMNS where TABLE_NAME='tbl_persona' LIMIT 20']
+[28-Jul-2022 09:43:51] [Date: 2022-07-28 09:43:51 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 09:43:52] [Date: 2022-07-28 09:43:52 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 09:43:54] [Date: 2022-07-28 09:43:54 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:43:54] [Date: 2022-07-28 09:43:54 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 09:43:57] [Date: 2022-07-28 09:43:57 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:43:57] [Date: 2022-07-28 09:43:57 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION ORD, DATA_TYPE TP FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 09:47:28] [Date: 2022-07-28 09:47:28 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 09:47:28] [Date: 2022-07-28 09:47:28 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 09:47:30] [Date: 2022-07-28 09:47:30 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:47:30] [Date: 2022-07-28 09:47:30 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 09:47:34] [Date: 2022-07-28 09:47:34 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:47:34] [Date: 2022-07-28 09:47:34 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION ORD, DATA_TYPE TP FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 09:49:06] [Date: 2022-07-28 09:49:06 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 09:49:06] [Date: 2022-07-28 09:49:06 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 09:49:08] [Date: 2022-07-28 09:49:08 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:49:08] [Date: 2022-07-28 09:49:08 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 09:49:11] [Date: 2022-07-28 09:49:11 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:49:11] [Date: 2022-07-28 09:49:11 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION ORD, DATA_TYPE TP FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 09:57:59] [Date: 2022-07-28 09:57:59 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 09:57:59] [Date: 2022-07-28 09:57:59 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 09:58:02] [Date: 2022-07-28 09:58:02 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:58:02] [Date: 2022-07-28 09:58:02 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 09:58:05] [Date: 2022-07-28 09:58:05 | root connect succesfully to 'penjub']
+[28-Jul-2022 09:58:05] [Date: 2022-07-28 09:58:05 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION ORD, DATA_TYPE TP FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 10:03:34] [Date: 2022-07-28 10:03:34 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 10:03:34] [Date: 2022-07-28 10:03:34 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 10:03:35] [Date: 2022-07-28 10:03:35 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:03:35] [Date: 2022-07-28 10:03:35 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 10:03:40] [Date: 2022-07-28 10:03:40 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:03:41] [Date: 2022-07-28 10:03:41 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION ORD, DATA_TYPE TP FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 10:05:47] [Date: 2022-07-28 10:05:47 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 10:05:48] [Date: 2022-07-28 10:05:48 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 10:05:49] [Date: 2022-07-28 10:05:49 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:05:49] [Date: 2022-07-28 10:05:49 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 10:05:52] [Date: 2022-07-28 10:05:52 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:05:52] [Date: 2022-07-28 10:05:52 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION ORD, DATA_TYPE TP FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 10:08:45] [Date: 2022-07-28 10:08:45 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 10:08:45] [Date: 2022-07-28 10:08:45 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 10:08:47] [Date: 2022-07-28 10:08:47 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:08:47] [Date: 2022-07-28 10:08:47 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 10:08:51] [Date: 2022-07-28 10:08:51 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:08:51] [Date: 2022-07-28 10:08:51 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 10:13:12] [Date: 2022-07-28 10:13:12 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 10:13:12] [Date: 2022-07-28 10:13:12 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 10:13:14] [Date: 2022-07-28 10:13:14 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:13:14] [Date: 2022-07-28 10:13:14 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 10:13:18] [Date: 2022-07-28 10:13:18 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:13:18] [Date: 2022-07-28 10:13:18 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 10:20:18] [Date: 2022-07-28 10:20:18 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 10:20:18] [Date: 2022-07-28 10:20:18 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 10:20:20] [Date: 2022-07-28 10:20:20 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:20:20] [Date: 2022-07-28 10:20:20 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 10:20:24] [Date: 2022-07-28 10:20:24 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:20:24] [Date: 2022-07-28 10:20:24 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 10:20:57] [Date: 2022-07-28 10:20:57 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 10:20:57] [Date: 2022-07-28 10:20:57 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 10:20:59] [Date: 2022-07-28 10:20:59 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:20:59] [Date: 2022-07-28 10:20:59 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 10:21:03] [Date: 2022-07-28 10:21:03 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:21:03] [Date: 2022-07-28 10:21:03 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 10:21:37] [Date: 2022-07-28 10:21:37 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 10:21:37] [Date: 2022-07-28 10:21:37 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 10:21:39] [Date: 2022-07-28 10:21:39 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:21:39] [Date: 2022-07-28 10:21:39 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 10:22:10] [Date: 2022-07-28 10:22:10 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 10:22:10] [Date: 2022-07-28 10:22:10 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 10:22:12] [Date: 2022-07-28 10:22:12 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:22:12] [Date: 2022-07-28 10:22:12 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 10:22:15] [Date: 2022-07-28 10:22:15 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:22:15] [Date: 2022-07-28 10:22:15 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 10:27:49] [Date: 2022-07-28 10:27:49 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 10:27:49] [Date: 2022-07-28 10:27:49 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 10:27:52] [Date: 2022-07-28 10:27:52 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:27:52] [Date: 2022-07-28 10:27:52 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 10:27:56] [Date: 2022-07-28 10:27:56 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:27:56] [Date: 2022-07-28 10:27:56 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 10:29:44] [Date: 2022-07-28 10:29:44 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 10:29:44] [Date: 2022-07-28 10:29:44 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 10:29:50] [Date: 2022-07-28 10:29:50 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:29:50] [Date: 2022-07-28 10:29:50 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 10:29:55] [Date: 2022-07-28 10:29:55 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:29:55] [Date: 2022-07-28 10:29:55 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 10:33:15] [Date: 2022-07-28 10:33:15 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 10:33:15] [Date: 2022-07-28 10:33:15 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 10:33:17] [Date: 2022-07-28 10:33:17 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:33:17] [Date: 2022-07-28 10:33:17 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 10:33:20] [Date: 2022-07-28 10:33:20 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:33:20] [Date: 2022-07-28 10:33:20 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 10:33:52] [Date: 2022-07-28 10:33:52 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 10:33:53] [Date: 2022-07-28 10:33:53 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 10:33:56] [Date: 2022-07-28 10:33:56 | root connect succesfully to 'my_queries']
+[28-Jul-2022 10:33:56] [Date: 2022-07-28 10:33:56 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 10:33:59] [Date: 2022-07-28 10:33:59 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:33:59] [Date: 2022-07-28 10:33:59 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 10:34:02] [Date: 2022-07-28 10:34:02 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:34:02] [Date: 2022-07-28 10:34:02 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 10:35:14] [Date: 2022-07-28 10:35:14 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 10:35:14] [Date: 2022-07-28 10:35:14 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 10:35:16] [Date: 2022-07-28 10:35:16 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:35:16] [Date: 2022-07-28 10:35:16 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 10:35:20] [Date: 2022-07-28 10:35:20 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:35:20] [Date: 2022-07-28 10:35:20 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 10:36:51] [Date: 2022-07-28 10:36:51 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 10:36:51] [Date: 2022-07-28 10:36:51 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 10:36:53] [Date: 2022-07-28 10:36:53 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:36:53] [Date: 2022-07-28 10:36:53 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 10:36:56] [Date: 2022-07-28 10:36:56 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:36:56] [Date: 2022-07-28 10:36:56 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 10:38:33] [Date: 2022-07-28 10:38:33 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 10:38:33] [Date: 2022-07-28 10:38:33 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 10:38:35] [Date: 2022-07-28 10:38:35 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:38:35] [Date: 2022-07-28 10:38:35 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 10:38:39] [Date: 2022-07-28 10:38:39 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:38:39] [Date: 2022-07-28 10:38:39 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 10:39:35] [Date: 2022-07-28 10:39:35 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 10:39:35] [Date: 2022-07-28 10:39:35 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 10:39:37] [Date: 2022-07-28 10:39:37 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:39:37] [Date: 2022-07-28 10:39:37 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 10:39:41] [Date: 2022-07-28 10:39:41 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:39:41] [Date: 2022-07-28 10:39:41 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 10:44:41] [Date: 2022-07-28 10:44:41 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 10:44:41] [Date: 2022-07-28 10:44:41 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 10:44:51] [Date: 2022-07-28 10:44:51 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:44:51] [Date: 2022-07-28 10:44:51 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 10:44:54] [Date: 2022-07-28 10:44:54 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:44:54] [Date: 2022-07-28 10:44:54 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 10:49:22] [Date: 2022-07-28 10:49:22 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 10:49:22] [Date: 2022-07-28 10:49:22 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 10:49:23] [Date: 2022-07-28 10:49:23 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:49:23] [Date: 2022-07-28 10:49:23 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 10:49:28] [Date: 2022-07-28 10:49:28 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:49:28] [Date: 2022-07-28 10:49:28 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 10:52:17] [Date: 2022-07-28 10:52:17 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 10:52:17] [Date: 2022-07-28 10:52:17 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 10:52:19] [Date: 2022-07-28 10:52:19 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:52:19] [Date: 2022-07-28 10:52:19 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 10:52:22] [Date: 2022-07-28 10:52:22 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:52:22] [Date: 2022-07-28 10:52:22 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 10:53:50] [Date: 2022-07-28 10:53:50 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 10:53:50] [Date: 2022-07-28 10:53:50 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 10:53:53] [Date: 2022-07-28 10:53:53 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:53:53] [Date: 2022-07-28 10:53:53 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 10:53:56] [Date: 2022-07-28 10:53:56 | root connect succesfully to 'penjub']
+[28-Jul-2022 10:53:56] [Date: 2022-07-28 10:53:56 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 11:02:09] [Date: 2022-07-28 11:02:09 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 11:02:09] [Date: 2022-07-28 11:02:09 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 11:02:11] [Date: 2022-07-28 11:02:11 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:02:11] [Date: 2022-07-28 11:02:11 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 11:02:16] [Date: 2022-07-28 11:02:16 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:02:16] [Date: 2022-07-28 11:02:16 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 11:04:52] [Date: 2022-07-28 11:04:52 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 11:04:52] [Date: 2022-07-28 11:04:52 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 11:04:56] [Date: 2022-07-28 11:04:56 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:04:56] [Date: 2022-07-28 11:04:56 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 11:04:59] [Date: 2022-07-28 11:04:59 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:04:59] [Date: 2022-07-28 11:04:59 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 11:05:29] [Date: 2022-07-28 11:05:29 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 11:05:29] [Date: 2022-07-28 11:05:29 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 11:05:31] [Date: 2022-07-28 11:05:31 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:05:31] [Date: 2022-07-28 11:05:31 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 11:05:35] [Date: 2022-07-28 11:05:35 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:05:35] [Date: 2022-07-28 11:05:35 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 11:06:19] [Date: 2022-07-28 11:06:19 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 11:06:20] [Date: 2022-07-28 11:06:20 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 11:06:22] [Date: 2022-07-28 11:06:22 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:06:22] [Date: 2022-07-28 11:06:22 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 11:06:25] [Date: 2022-07-28 11:06:25 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:06:25] [Date: 2022-07-28 11:06:25 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 11:07:50] [Date: 2022-07-28 11:07:50 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 11:07:50] [Date: 2022-07-28 11:07:50 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 11:08:00] [Date: 2022-07-28 11:08:00 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:08:00] [Date: 2022-07-28 11:08:00 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 11:08:08] [Date: 2022-07-28 11:08:08 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:08:08] [Date: 2022-07-28 11:08:08 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 11:08:44] [Date: 2022-07-28 11:08:44 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 11:08:44] [Date: 2022-07-28 11:08:44 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 11:08:46] [Date: 2022-07-28 11:08:46 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:08:46] [Date: 2022-07-28 11:08:46 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 11:08:51] [Date: 2022-07-28 11:08:51 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:08:51] [Date: 2022-07-28 11:08:51 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_relacion' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_relacion' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_relacion'']
+[28-Jul-2022 11:09:47] [Date: 2022-07-28 11:09:47 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 11:09:47] [Date: 2022-07-28 11:09:47 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 11:09:48] [Date: 2022-07-28 11:09:48 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:09:48] [Date: 2022-07-28 11:09:48 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 11:09:51] [Date: 2022-07-28 11:09:51 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:09:51] [Date: 2022-07-28 11:09:51 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 11:11:55] [Date: 2022-07-28 11:11:55 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 11:11:55] [Date: 2022-07-28 11:11:55 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 11:11:57] [Date: 2022-07-28 11:11:57 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:11:57] [Date: 2022-07-28 11:11:57 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 11:12:00] [Date: 2022-07-28 11:12:00 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:12:00] [Date: 2022-07-28 11:12:00 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 11:14:36] [Date: 2022-07-28 11:14:36 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 11:14:36] [Date: 2022-07-28 11:14:36 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 11:14:38] [Date: 2022-07-28 11:14:38 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:14:38] [Date: 2022-07-28 11:14:38 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 11:14:42] [Date: 2022-07-28 11:14:42 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:14:42] [Date: 2022-07-28 11:14:42 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 11:16:39] [Date: 2022-07-28 11:16:39 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 11:16:39] [Date: 2022-07-28 11:16:39 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 11:16:44] [Date: 2022-07-28 11:16:44 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:16:44] [Date: 2022-07-28 11:16:44 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 11:16:47] [Date: 2022-07-28 11:16:47 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:16:47] [Date: 2022-07-28 11:16:47 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 11:17:52] [Date: 2022-07-28 11:17:52 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 11:17:53] [Date: 2022-07-28 11:17:53 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 11:17:56] [Date: 2022-07-28 11:17:56 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:17:56] [Date: 2022-07-28 11:17:56 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 11:17:59] [Date: 2022-07-28 11:17:59 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:18:00] [Date: 2022-07-28 11:18:00 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 11:19:23] [Date: 2022-07-28 11:19:23 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 11:19:23] [Date: 2022-07-28 11:19:23 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 11:19:25] [Date: 2022-07-28 11:19:25 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:19:25] [Date: 2022-07-28 11:19:25 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 11:19:29] [Date: 2022-07-28 11:19:29 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:19:30] [Date: 2022-07-28 11:19:30 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 11:20:53] [Date: 2022-07-28 11:20:53 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 11:20:53] [Date: 2022-07-28 11:20:53 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 11:20:56] [Date: 2022-07-28 11:20:56 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:20:56] [Date: 2022-07-28 11:20:56 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 11:20:59] [Date: 2022-07-28 11:20:59 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:20:59] [Date: 2022-07-28 11:20:59 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 11:22:58] [Date: 2022-07-28 11:22:58 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 11:22:58] [Date: 2022-07-28 11:22:58 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 11:23:00] [Date: 2022-07-28 11:23:00 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:23:00] [Date: 2022-07-28 11:23:00 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 11:23:03] [Date: 2022-07-28 11:23:03 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:23:03] [Date: 2022-07-28 11:23:03 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 11:26:43] [Date: 2022-07-28 11:26:43 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 11:26:44] [Date: 2022-07-28 11:26:44 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 11:26:45] [Date: 2022-07-28 11:26:45 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:26:45] [Date: 2022-07-28 11:26:45 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 11:26:50] [Date: 2022-07-28 11:26:50 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:26:50] [Date: 2022-07-28 11:26:50 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 11:27:52] [Date: 2022-07-28 11:27:52 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 11:27:52] [Date: 2022-07-28 11:27:52 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 11:27:53] [Date: 2022-07-28 11:27:53 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:27:53] [Date: 2022-07-28 11:27:53 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 11:27:58] [Date: 2022-07-28 11:27:58 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:27:58] [Date: 2022-07-28 11:27:58 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 11:28:24] [Date: 2022-07-28 11:28:24 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 11:28:24] [Date: 2022-07-28 11:28:24 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 11:28:31] [Date: 2022-07-28 11:28:31 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:28:31] [Date: 2022-07-28 11:28:31 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 11:28:35] [Date: 2022-07-28 11:28:35 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:28:35] [Date: 2022-07-28 11:28:35 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 11:33:28] [Date: 2022-07-28 11:33:28 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 11:33:28] [Date: 2022-07-28 11:33:28 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 11:33:30] [Date: 2022-07-28 11:33:30 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:33:30] [Date: 2022-07-28 11:33:30 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 11:33:33] [Date: 2022-07-28 11:33:33 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:33:33] [Date: 2022-07-28 11:33:33 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[28-Jul-2022 11:34:25] [Date: 2022-07-28 11:34:25 | root connect succesfully to '127.0.0.1']
+[28-Jul-2022 11:34:25] [Date: 2022-07-28 11:34:25 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[28-Jul-2022 11:34:27] [Date: 2022-07-28 11:34:27 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:34:27] [Date: 2022-07-28 11:34:27 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[28-Jul-2022 11:34:35] [Date: 2022-07-28 11:34:35 | root connect succesfully to 'penjub']
+[28-Jul-2022 11:34:35] [Date: 2022-07-28 11:34:35 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']

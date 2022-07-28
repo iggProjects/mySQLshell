@@ -453,16 +453,14 @@ echo "
         if ( table_selected === null ) { alert('Please, select a table !'); } 
         else {
 
+            Fetch_data_array('./include/AJAX_php_js/ajax_Sql_Arrays.php?host_numb=' + host_n + '&hostName='+host_sel+'&dbName='+db_sel+'&tblName='+table_selected); 
+        /*    
             let left_query = "SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = '" + db_sel + "' AND TABLE_NAME = '" + table_selected + "'";
-
-            let right_query = "SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = '" + db_sel + "' AND REFERENCED_TABLE_NAME = '" + table_selected + "'";     
-            
-            let left_right_query = left_query + ' UNION ' + right_query;
-
-            // let query_string = '?hostName='+host_sel+'&dbName='+db_sel;
-            Fetch_data_array('./include/AJAX_php_js/ajax_Sql_Arrays.php?host_numb=' + host_n + '&hostName='+host_sel+'&dbName='+db_sel+'&sql_query='+left_right_query); 
-            // Fetch_data_array(query_string,'./include/AJAX_php_js/ajax_Sql_Arrays.php?host_numb=' + host_n + '&hostName='+host_sel+'&dbName='+db_sel+'&sql_query='+left_right_query); 
-            
+            let right_query = "SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = '" + db_sel + "' AND REFERENCED_TABLE_NAME = '" + table_selected + "'";                 
+            let left_right_query = left_query + ' UNION ' + right_query;            
+            let query_string = '?hostName='+host_sel+'&dbName='+db_sel;            
+            Fetch_data_array(query_string,'./include/AJAX_php_js/ajax_Sql_Arrays.php?host_numb=' + host_n + '&hostName='+host_sel+'&dbName='+db_sel+'&sql_query='+left_right_query); 
+        */    
             
         }           
     }

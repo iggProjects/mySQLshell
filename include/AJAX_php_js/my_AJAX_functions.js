@@ -201,28 +201,63 @@ function Fetch_data_array(php_sql_url) {
         // let query_string = query_str;
         // window.open('http://localhost/curso-backend-areafor-server/myLQSadmin/assets/z-canvas-examp/canvas-tables-diagram.php'+query_string, '_blank');
 
-        alert('type data ' + typeof(data));
-        // alert('data ' + data);  
-        
-        // https://www.geeksforgeeks.org/how-to-convert-json-string-to-array-of-json-objects-using-javascript/#:~:text=Approach%201%3A%20First%20convert%20the,array%20using%20push()%20method.
+        alert('type data ' + typeof(data));    
         let data_array = JSON.parse(data);
-
         alert('data_array length: ' + data_array.length);      
-        alert('data_array[0][TBL]: ' + data_array[0]['TBL']);      
+        // alert('data_array[0][TBL]: ' + data_array[0]['TBL']);   
+        console.log('array tables rel ↓↓');
+        console.log(data_array);   
         // FIELDS TBL, COL, REF_COL, REF_TBL
+
+        // all fields of table selected
+        var table_ppal = [];
+        // only table name and 'left' field related
+        var left_table = [];   
+        // only table name and 'right' field related
+        var right_table = [];
+
+        var tbl_name = '';
+        tbl_name = 'tbl_persona';
+        var index = 0;
+
+        // FILLING TABLE_PPAL
+        for ( var i=0; i<data_array.length; i++ ) {
+            console.log('data_array row: ' + i + ' -> ' + data_array[i]['TBL'] + ' - ' + data_array[i]['COL'] + ' - ' + data_array[i]['REF_COL'] + ' - ' + data_array[i]['REF_TBL']); 
+            if ( tbl_name == data_array[i]['TBL'] ) { table_ppal.push( data_array[i]['COL']) } else { index = i; i = data_array.length;  }
+            // if ( tbl_name == data_array[i]['TBL'] ) { table_ppal.push( data_array[i]['COL']) } else { tbl_name = data_array[i]['TBL']; index = i; i = data_array.length;  }
+        }        
+        console.log('table_ppal');
+        console.log(table_ppal);
+        console.log('index: ' + index);
+
+        // FILLING LEFT_TABLE    
+        for ( i=index; i<data_array.length; i++ ) {
+            console.log('data_array row: ' + i + ' -> ' + data_array[i]['TBL'] + ' - ' + data_array[i]['COL'] + ' - ' + data_array[i]['REF_COL'] + ' - ' + data_array[i]['REF_TBL']); 
+            if ( tbl_name != data_array[i]['TBL'] ) { left_table.push( data_array[i]['TBL'] + ' - ' + data_array[i]['COL']) } 
+            else { index = i; i = data_array.length; }
+        }
+        console.log('index: ' + index);
+        console.log('left_table');
+        console.log(left_table);
+
+        // FILLING RIGHT_TABLE        
+        for ( i=index; i<data_array.length; i++ ) {
+            console.log('data_array row: ' + i + ' -> ' + data_array[i]['TBL'] + ' - ' + data_array[i]['COL'] + ' - ' + data_array[i]['REF_COL'] + ' - ' + data_array[i]['REF_TBL']); 
+            if ( tbl_name == data_array[i]['TBL'] ) { right_table.push( data_array[i]['COL'] + ' - ' + data_array[i]['REF_TBL']) } 
+            else { index = i; }
+        }
+        console.log('index: ' + index);
+        console.log('right_table');
+        console.log(right_table);
 
         // using canvas tag
         document.getElementById('div-DB-info').style.display='none';
         document.getElementById('canvas-diagram').style.display='block';
 
-        var table_ppal = ['NAME TABLE PPAL','id ','field ','field ','field ','field field field ','field ','field ','field '];
-
-        var left_table = ['NAME LEFT TABLES ARRAY','id ','field ','field field field field ','field '];        
-
-        var right_table = ['NAME RIGHT TABLES ARRAY','id ','field ','field ','field field '];
-
         var cv_w = document.getElementById("canvas").width;
         var cv_h = document.getElementById("canvas").height;
+
+        // console.log('canvas width: ' + cv_w + ' - height - ' + cv_h);
         
         // arrays for append de (x,y) coordinates of source and destiny points to make respective "relation lines"
         var left_lines_x_y_array = [];
@@ -290,7 +325,9 @@ function draw_table(_ctx,_table,_x,_y,_w,_h){
 
 function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
 
-    var tot_lines_height = Math.max(ppal_table_array.length,left_tables_array.length,right_tables_array.length);                       
+    // var tot_lines_height = Math.max(ppal_table_array.length,left_tables_array.length,right_tables_array.length);        
+    
+    console.log('draw_db, cv_w: ' + w + ', h: ' + h);
     
     // canvas parameters
     var canvas = document.getElementById("canvas");
@@ -309,34 +346,38 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
     var y = 10; 
     
     // max length text of elements in table
-    var max_large_text = '';
-    for ( var i=0; i < ppal_table_array.length; i++ ){  
-        if ( max_large_text < ppal_table_array[i].length ) { max_large_text = ppal_table_array[i]; } 
-    }
-    var text_w = ctx.measureText(max_large_text).width * 1.1;              
+    var max_large_text = 200;
+//    for ( var i=0; i < ppal_table_array.length; i++ ){  
+//        if ( max_large_text < ppal_table_array[i].length ) { max_large_text = ppal_table_array[i]; } 
+//    }
+    //var text_w = ctx.measureText(max_large_text).width * 1.4;
+    text_w = max_large_text;
+    console.log('draw_db, ppal text_w: ' + text_w + ' | array length: ' + ppal_table_array.length);              
     
     draw_table(ctx,ppal_table_array,x,y,text_w,row_h);
 
     // parameters to draw left_table_array
     x = 10;
-    max_large_text = '';
+    max_large_text = 0;
     text_w = 0;
     for ( var i=0; i < left_tables_array.length; i++ ){  
         if ( max_large_text < left_tables_array[i].length ) { max_large_text = left_tables_array[i]; } 
     }
-    text_w = ctx.measureText(max_large_text).width * 1.1;  
+    text_w = ctx.measureText(max_large_text).width * 1.4;  
+    console.log('draw_db, left text_w: ' + text_w);              
     x = 10 + text_w/2;             
     y =  10;            
     draw_table(ctx,left_tables_array,x,y,text_w,row_h);
 
     // parameters to draw right_table_array
     x = w-10;
-    max_large_text = '';
+    max_large_text = 0;
     text_w = 0;
     for ( var i=0; i < right_tables_array.length; i++ ){  
         if ( max_large_text < right_tables_array[i].length ) { max_large_text = right_tables_array[i]; } 
     }
-    text_w = ctx.measureText(max_large_text).width * 1.1;  
+    text_w = ctx.measureText(max_large_text).width * 1.4;  
+    console.log('draw_db, right text_w: ' + text_w);              
     x = x - text_w/2;             
     y = 10;
     draw_table(ctx,right_tables_array,x,y,text_w,row_h);

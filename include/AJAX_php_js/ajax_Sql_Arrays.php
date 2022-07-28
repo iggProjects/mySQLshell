@@ -28,25 +28,16 @@ if ( $_REQUEST['dbName'] ) {
     $dbname = $_REQUEST['dbName']; 
 }
 
-if ( $_REQUEST['sql_query'] ) {
-    $sql_query = $_REQUEST['sql_query']; 
+if ( $_REQUEST['tblName'] ) {
+    $tblname = $_REQUEST['tblName']; 
 }
 
 /*
-if ( $dbhost == 'POAPMYSQL119.dns-servicio.com:3306' ) {
-    $dbuser = "inaki2022";
-    $dbpass = "Inaki@2022";
-    $dbcharset = 'utf8mb4';
-    $h=1;
-} elseif ( $dbhost == '127.0.0.1' ) {
-    $dbuser = "root";
-    $dbpass = "@mysql@";
-    $dbcharset = 'utf8mb4';
-    $h=2;
-} else {
-    // upssssss msg
+if ( $_REQUEST['sql_query'] ) {
+    $sql_query = $_REQUEST['sql_query']; 
 }
 */
+
 
 $dbuser  = $cfg_s['Servers'][$host_numb]['user'];
 $dbpass = $cfg_s['Servers'][$host_numb]['password'];
@@ -64,6 +55,13 @@ $error_msg = "MySql error was found";
 $divHtml = "";
 
 if ( gettype($conex_db) === 'object' ) {    
+
+    $right_query = "SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = '" . $dbname . "' AND TABLE_NAME = '" . $tblname . "'";
+    $left_query = "SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = '" . $dbname . "' AND REFERENCED_TABLE_NAME = '" . $tblname . "'";         
+    $table_fields = "SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '" . $tblname . "'";
+    //select TABLE_NAME, COLUMN_NAME, ORDINAL_POSITION, DATA_TYPE  from COLUMNS where TABLE_NAME='tbl_persona'
+    $sql_query = $table_fields . ' UNION ' . $left_query . ' UNION '. $right_query;
+    // $sql_query = $left_query . ' UNION ' . $right_query;
     
     $resultado = Sql_Query_try_catch($conex_db,$dbname,$dbuser,$sql_query,$log_queries_path);
     if ( gettype($resultado) === 'object' || gettype($resultado) === 'array' ) {  
