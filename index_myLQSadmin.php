@@ -48,7 +48,7 @@ echo "
         </div>";
 
         echo "<div id='canvas-diagram' class='canvas-area' style='margin:auto; text-align: center;'>  
-            <div><button style='width:100px;margin-left:50px;margin-right:50px;margin-bottom:10px;padding:3px;color:blue;font-size:20px;' onclick='document.getElementById(\"div-DB-info\").style.display=\"flex\";document.getElementById(\"canvas-diagram\").style.display=\"none\";'><b>EXIT</b><button></div>  
+            <div><button style='width:100px;margin-left:50px;margin-right:50px;margin-bottom:10px;padding:3px;color:white;font-size:16px;background-color:gray; border-radius:10px;' onclick='document.getElementById(\"div-DB-info\").style.display=\"flex\";document.getElementById(\"canvas-diagram\").style.display=\"none\";'><b>EXIT</b><button></div>  
             <canvas class='canvas-area' id='canvas' width='900px' height='600px' style='border:5px solid gray;'></canvas>
         </div>";
         
