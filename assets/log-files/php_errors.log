@@ -11458,3 +11458,53 @@ Stack trace:
 [28-Jul-2022 15:04:19 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
 [28-Jul-2022 15:04:47 Europe/Berlin] PHP Warning:  Undefined array key "host_numb" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectOptions_Query.php on line 18
 [28-Jul-2022 15:04:47 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:02:22 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:03:35 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:03:39 Europe/Berlin] PHP Warning:  Undefined array key "host_numb" in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_SelectOptions_Query.php on line 18
+[28-Jul-2022 17:03:39 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:04:34 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:07:09 Europe/Berlin] PHP Warning:  Undefined variable $thead_titles in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 89
+[28-Jul-2022 17:07:09 Europe/Berlin] PHP Warning:  Undefined variable $divHtml in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 89
+[28-Jul-2022 17:07:10 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 54
+[28-Jul-2022 17:07:10 Europe/Berlin] PHP Warning:  Undefined variable $thead_titles in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 90
+[28-Jul-2022 17:08:24 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:08:29 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:08:35 Europe/Berlin] PHP Warning:  Undefined variable $thead_titles in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 89
+[28-Jul-2022 17:08:35 Europe/Berlin] PHP Warning:  Undefined variable $divHtml in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 89
+[28-Jul-2022 17:08:37 Europe/Berlin] PHP Warning:  Undefined array key "host_numb" in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_SelectOptions_Query.php on line 18
+[28-Jul-2022 17:08:37 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:13:07 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:13:09 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:13:13 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:13:29 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:13:37 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:14:42 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:15:00 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:15:24 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:16:06 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:16:21 Europe/Berlin] PHP Warning:  Undefined array key "host_numb" in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_SelectOptions_Query.php on line 18
+[28-Jul-2022 17:16:21 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:18:40 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:18:53 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 54
+[28-Jul-2022 17:18:53 Europe/Berlin] PHP Warning:  Undefined variable $thead_titles in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 90
+[28-Jul-2022 17:19:24 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:20:32 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:21:07 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:21:26 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:21:38 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:22:05 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 54
+[28-Jul-2022 17:22:05 Europe/Berlin] PHP Warning:  Undefined variable $thead_titles in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 90
+[28-Jul-2022 17:23:42 Europe/Berlin] PHP Warning:  Undefined variable $thead_titles in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 89
+[28-Jul-2022 17:23:42 Europe/Berlin] PHP Warning:  Undefined variable $divHtml in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 89
+[28-Jul-2022 17:25:19 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:25:21 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:25:22 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:26:53 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:26:54 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:26:56 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:26:57 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:26:58 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:26:59 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:34:38 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[28-Jul-2022 17:34:44 Europe/Berlin] PHP Warning:  Undefined array key "host_numb" in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_SelectOptions_Query.php on line 18
+[28-Jul-2022 17:34:44 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50

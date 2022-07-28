@@ -1,5 +1,6 @@
 <?php
 
+    
     /* BASIC FUNCTIONS */
 
     // function to write in log file

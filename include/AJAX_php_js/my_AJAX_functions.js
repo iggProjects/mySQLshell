@@ -72,8 +72,8 @@ function openTree(host_arr) {
         /*  
          *   NOTE: This 2 statements open tree in DB in the left aside   
         */    
-            //this.parentElement.querySelector(".nested").classList.toggle("active");
-            //this.classList.toggle("caret-down");
+            this.parentElement.querySelector(".nested").classList.toggle("active");
+            this.classList.toggle("caret-down");
             
             document.getElementById('p-comment').innerHTML='TABLES';        
             // tag for show tables of DB selected
