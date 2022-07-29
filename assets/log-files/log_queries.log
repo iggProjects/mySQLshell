@@ -18827,3 +18827,261 @@
 [29-Jul-2022 13:13:30] [Date: 2022-07-29 13:13:30 | root connect succesfully to 'employees']
 [29-Jul-2022 13:13:30] [Date: 2022-07-29 13:13:30 | root execute succesfully show tables query
  'SHOW TABLES;']
+[29-Jul-2022 15:39:29] [Date: 2022-07-29 15:39:29 | root connect succesfully to '127.0.0.1']
+[29-Jul-2022 15:39:30] [Date: 2022-07-29 15:39:30 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 15:39:35] [Date: 2022-07-29 15:39:35 | root connect succesfully to 'employees']
+[29-Jul-2022 15:39:35] [Date: 2022-07-29 15:39:35 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 15:39:41] [Date: 2022-07-29 15:39:41 | root connect succesfully to 'my_lqs_admin']
+[29-Jul-2022 15:39:41] [Date: 2022-07-29 15:39:41 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[29-Jul-2022 15:39:41] [Date: 2022-07-29 15:39:41 | root connect succesfully to 'employees']
+[29-Jul-2022 15:39:41] [Date: 2022-07-29 15:39:41 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 15:39:45] [Date: 2022-07-29 15:39:45 | root connect succesfully to 'employees']
+[29-Jul-2022 15:39:45] [Date: 2022-07-29 15:39:45 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[29-Jul-2022 15:40:20] [Date: 2022-07-29 15:40:20 | root connect succesfully to 'employees']
+[29-Jul-2022 15:40:21] [Date: 2022-07-29 15:40:21 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA() AND REFERENCED_TABLE_NAME = 'employees'']
+[29-Jul-2022 15:40:37] [Date: 2022-07-29 15:40:37 | root connect succesfully to 'employees']
+[29-Jul-2022 15:40:37] [Date: 2022-07-29 15:40:37 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'employees' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND REFERENCED_TABLE_NAME = 'employees' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND TABLE_NAME = 'employees'']
+[29-Jul-2022 15:40:37] [Date: 2022-07-29 15:40:37 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'employees'']
+[29-Jul-2022 15:40:37] [Date: 2022-07-29 15:40:37 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND TABLE_NAME = 'employees'']
+[29-Jul-2022 15:40:37] [Date: 2022-07-29 15:40:37 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND REFERENCED_TABLE_NAME = 'employees'']
+[29-Jul-2022 15:41:03] [Date: 2022-07-29 15:41:03 | root connect succesfully to 'employees']
+[29-Jul-2022 15:41:03] [Date: 2022-07-29 15:41:03 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA() AND TABLE_NAME = 'employees'']
+[29-Jul-2022 15:41:11] [Date: 2022-07-29 15:41:11 | root connect succesfully to 'my_lqs_admin']
+[29-Jul-2022 15:41:11] [Date: 2022-07-29 15:41:11 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 15:41:19] [Date: 2022-07-29 15:41:19 | root connect succesfully to 'employees']
+[29-Jul-2022 15:41:19] [Date: 2022-07-29 15:41:19 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 15:41:21] [Date: 2022-07-29 15:41:21 | root connect succesfully to 'information_schema']
+[29-Jul-2022 15:41:21] [Date: 2022-07-29 15:41:21 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 15:41:23] [Date: 2022-07-29 15:41:23 | root connect succesfully to 'information_schema']
+[29-Jul-2022 15:41:23] [Date: 2022-07-29 15:41:23 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 15:41:29] [Date: 2022-07-29 15:41:29 | root connect succesfully to 'employees']
+[29-Jul-2022 15:41:29] [Date: 2022-07-29 15:41:29 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 15:41:40] [Date: 2022-07-29 15:41:40 | root connect succesfully to 'employees']
+[29-Jul-2022 15:41:41] [Date: 2022-07-29 15:41:41 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[29-Jul-2022 15:41:51] [Date: 2022-07-29 15:41:51 | root connect succesfully to 'employees']
+[29-Jul-2022 15:41:51] [Date: 2022-07-29 15:41:51 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[29-Jul-2022 15:42:02] [Date: 2022-07-29 15:42:02 | root connect succesfully to 'employees']
+[29-Jul-2022 15:42:02] [Date: 2022-07-29 15:42:02 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[29-Jul-2022 16:06:02] [Date: 2022-07-29 16:06:02 | root connect succesfully to 'employees']
+[29-Jul-2022 16:06:02] [Date: 2022-07-29 16:06:02 | root execute succesfully Select query in employees
+ 'SELECT * FROM dept_manager LIMIT 10;']
+[29-Jul-2022 16:06:31] [Date: 2022-07-29 16:06:31 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[29-Jul-2022 16:06:31] [Date: 2022-07-29 16:06:31 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 16:06:31] [Date: 2022-07-29 16:06:31 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[29-Jul-2022 16:06:31] [Date: 2022-07-29 16:06:31 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 16:06:31] [Date: 2022-07-29 16:06:31 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[29-Jul-2022 16:06:32] [Date: 2022-07-29 16:06:32 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 16:06:35] [Date: 2022-07-29 16:06:35 | root connect succesfully to '127.0.0.1']
+[29-Jul-2022 16:06:35] [Date: 2022-07-29 16:06:35 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 16:06:35] [Date: 2022-07-29 16:06:35 | root connect succesfully to '127.0.0.1']
+[29-Jul-2022 16:06:35] [Date: 2022-07-29 16:06:35 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 16:06:35] [Date: 2022-07-29 16:06:35 | root connect succesfully to '127.0.0.1']
+[29-Jul-2022 16:06:35] [Date: 2022-07-29 16:06:35 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 16:06:35] [Date: 2022-07-29 16:06:35 | root connect succesfully to '127.0.0.1']
+[29-Jul-2022 16:06:36] [Date: 2022-07-29 16:06:36 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 16:06:36] [Date: 2022-07-29 16:06:36 | root connect succesfully to '127.0.0.1']
+[29-Jul-2022 16:06:36] [Date: 2022-07-29 16:06:36 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 16:06:37] [Date: 2022-07-29 16:06:37 | root connect succesfully to 'igg-wordpress']
+[29-Jul-2022 16:06:37] [Date: 2022-07-29 16:06:37 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 16:22:37] [Date: 2022-07-29 16:22:37 | root connect succesfully to 'igg-wordpress']
+[29-Jul-2022 16:22:37] [Date: 2022-07-29 16:22:37 | root execute succesfully show tables query
+ 'describe igg_commentmeta;']
+[29-Jul-2022 16:47:33] [Date: 2022-07-29 16:47:33 | root connect succesfully to 'igg-wordpress']
+[29-Jul-2022 16:47:33] [Date: 2022-07-29 16:47:33 | root connect succesfully to 'my_lqs_admin']
+[29-Jul-2022 16:47:33] [Date: 2022-07-29 16:47:33 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 16:47:33] [Date: 2022-07-29 16:47:33 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[29-Jul-2022 17:02:21] [Date: 2022-07-29 17:02:21 | root connect succesfully to '127.0.0.1']
+[29-Jul-2022 17:02:21] [Date: 2022-07-29 17:02:21 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 17:02:23] [Date: 2022-07-29 17:02:23 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[29-Jul-2022 17:02:23] [Date: 2022-07-29 17:02:23 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 17:02:23] [Date: 2022-07-29 17:02:23 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[29-Jul-2022 17:02:23] [Date: 2022-07-29 17:02:23 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[29-Jul-2022 17:02:23] [Date: 2022-07-29 17:02:23 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 17:02:23] [Date: 2022-07-29 17:02:23 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 17:04:08] [Date: 2022-07-29 17:04:08 | inaki2022 connect succesfully to '8661316_laninaki22']
+[29-Jul-2022 17:04:08] [Date: 2022-07-29 17:04:08 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 17:04:11] [Date: 2022-07-29 17:04:11 | root connect succesfully to 'my_lqs_admin']
+[29-Jul-2022 17:04:11] [Date: 2022-07-29 17:04:11 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[29-Jul-2022 17:04:11] [Date: 2022-07-29 17:04:11 | inaki2022 connect succesfully to '8661316_laninaki22']
+[29-Jul-2022 17:04:11] [Date: 2022-07-29 17:04:11 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 17:29:15] [Date: 2022-07-29 17:29:15 | root connect succesfully to '127.0.0.1']
+[29-Jul-2022 17:29:15] [Date: 2022-07-29 17:29:15 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 17:29:16] [Date: 2022-07-29 17:29:16 | root connect succesfully to 'my_lqs_admin']
+[29-Jul-2022 17:29:16] [Date: 2022-07-29 17:29:16 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 17:29:18] [Date: 2022-07-29 17:29:18 | root connect succesfully to 'my_lqs_admin']
+[29-Jul-2022 17:29:18] [Date: 2022-07-29 17:29:18 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[29-Jul-2022 17:29:18] [Date: 2022-07-29 17:29:18 | root connect succesfully to 'my_lqs_admin']
+[29-Jul-2022 17:29:18] [Date: 2022-07-29 17:29:18 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 17:33:03] [Date: 2022-07-29 17:33:03 | root connect succesfully to 'employees']
+[29-Jul-2022 17:33:03] [Date: 2022-07-29 17:33:03 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 17:33:12] [Date: 2022-07-29 17:33:12 | root connect succesfully to 'employees']
+[29-Jul-2022 17:33:12] [Date: 2022-07-29 17:33:12 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[29-Jul-2022 17:33:21] [Date: 2022-07-29 17:33:21 | root connect succesfully to 'employees']
+[29-Jul-2022 17:33:21] [Date: 2022-07-29 17:33:21 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'dept_emp' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND REFERENCED_TABLE_NAME = 'dept_emp' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND TABLE_NAME = 'dept_emp'']
+[29-Jul-2022 17:33:21] [Date: 2022-07-29 17:33:21 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'dept_emp'']
+[29-Jul-2022 17:33:21] [Date: 2022-07-29 17:33:21 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND TABLE_NAME = 'dept_emp'']
+[29-Jul-2022 17:33:21] [Date: 2022-07-29 17:33:21 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND REFERENCED_TABLE_NAME = 'dept_emp'']
+[29-Jul-2022 17:33:57] [Date: 2022-07-29 17:33:57 | root connect succesfully to 'employees']
+[29-Jul-2022 17:33:57] [Date: 2022-07-29 17:33:57 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'dept_emp' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND REFERENCED_TABLE_NAME = 'dept_emp' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND TABLE_NAME = 'dept_emp'']
+[29-Jul-2022 17:33:57] [Date: 2022-07-29 17:33:57 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'dept_emp'']
+[29-Jul-2022 17:33:57] [Date: 2022-07-29 17:33:57 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND TABLE_NAME = 'dept_emp'']
+[29-Jul-2022 17:33:57] [Date: 2022-07-29 17:33:57 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND REFERENCED_TABLE_NAME = 'dept_emp'']
+[29-Jul-2022 17:44:27] [Date: 2022-07-29 17:44:27 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[29-Jul-2022 17:44:27] [Date: 2022-07-29 17:44:27 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 17:44:43] [Date: 2022-07-29 17:44:43 | inaki2022 connect succesfully to '8661316_laninaki22']
+[29-Jul-2022 17:44:43] [Date: 2022-07-29 17:44:43 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 17:44:48] [Date: 2022-07-29 17:44:48 | inaki2022 connect succesfully to '8661316_laninaki22']
+[29-Jul-2022 17:44:48] [Date: 2022-07-29 17:44:48 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 17:45:01] [Date: 2022-07-29 17:45:01 | inaki2022 connect succesfully to '8661316_laninaki22']
+[29-Jul-2022 17:45:01] [Date: 2022-07-29 17:45:01 | inaki2022 execute succesfully show tables query
+ 'describe tbl_users;']
+[29-Jul-2022 17:45:03] [Date: 2022-07-29 17:45:03 | inaki2022 connect succesfully to '8661316_laninaki22']
+[29-Jul-2022 17:45:03] [Date: 2022-07-29 17:45:03 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users LIMIT 10;']
+[29-Jul-2022 17:45:19] [Date: 2022-07-29 17:45:19 | root connect succesfully to 'my_lqs_admin']
+[29-Jul-2022 17:45:19] [Date: 2022-07-29 17:45:19 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[29-Jul-2022 17:45:19] [Date: 2022-07-29 17:45:19 | inaki2022 connect succesfully to '8661316_laninaki22']
+[29-Jul-2022 17:45:19] [Date: 2022-07-29 17:45:19 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 17:46:40] [Date: 2022-07-29 17:46:40 | root connect succesfully to '127.0.0.1']
+[29-Jul-2022 17:46:40] [Date: 2022-07-29 17:46:40 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 17:46:40] [Date: 2022-07-29 17:46:40 | root connect succesfully to '127.0.0.1']
+[29-Jul-2022 17:46:40] [Date: 2022-07-29 17:46:40 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 17:46:40] [Date: 2022-07-29 17:46:40 | root connect succesfully to '127.0.0.1']
+[29-Jul-2022 17:46:40] [Date: 2022-07-29 17:46:40 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 17:46:44] [Date: 2022-07-29 17:46:44 | root connect succesfully to 'employees']
+[29-Jul-2022 17:46:44] [Date: 2022-07-29 17:46:44 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 17:47:56] [Date: 2022-07-29 17:47:56 | root connect succesfully to 'employees']
+[29-Jul-2022 17:47:56] [Date: 2022-07-29 17:47:56 | Sql_Query_try_catch: query in employees FAILED !
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA() AND TABLE_NAME =' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1]
+[29-Jul-2022 17:48:45] [Date: 2022-07-29 17:48:45 | root connect succesfully to 'employees']
+[29-Jul-2022 17:48:45] [Date: 2022-07-29 17:48:45 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[29-Jul-2022 17:49:02] [Date: 2022-07-29 17:49:02 | root connect succesfully to 'employees']
+[29-Jul-2022 17:49:02] [Date: 2022-07-29 17:49:02 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[29-Jul-2022 17:49:09] [Date: 2022-07-29 17:49:09 | root connect succesfully to 'employees']
+[29-Jul-2022 17:49:10] [Date: 2022-07-29 17:49:10 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'dept_emp' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND REFERENCED_TABLE_NAME = 'dept_emp' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND TABLE_NAME = 'dept_emp'']
+[29-Jul-2022 17:49:10] [Date: 2022-07-29 17:49:10 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'dept_emp'']
+[29-Jul-2022 17:49:10] [Date: 2022-07-29 17:49:10 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND TABLE_NAME = 'dept_emp'']
+[29-Jul-2022 17:49:10] [Date: 2022-07-29 17:49:10 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND REFERENCED_TABLE_NAME = 'dept_emp'']
+[29-Jul-2022 17:50:42] [Date: 2022-07-29 17:50:42 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[29-Jul-2022 17:50:42] [Date: 2022-07-29 17:50:42 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 17:50:42] [Date: 2022-07-29 17:50:42 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[29-Jul-2022 17:50:42] [Date: 2022-07-29 17:50:42 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 17:50:42] [Date: 2022-07-29 17:50:42 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[29-Jul-2022 17:50:42] [Date: 2022-07-29 17:50:42 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 17:50:42] [Date: 2022-07-29 17:50:42 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[29-Jul-2022 17:50:43] [Date: 2022-07-29 17:50:43 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 17:50:43] [Date: 2022-07-29 17:50:43 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[29-Jul-2022 17:50:43] [Date: 2022-07-29 17:50:43 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 17:50:59] [Date: 2022-07-29 17:50:59 | root connect succesfully to '127.0.0.1']
+[29-Jul-2022 17:50:59] [Date: 2022-07-29 17:50:59 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 17:50:59] [Date: 2022-07-29 17:50:59 | root connect succesfully to '127.0.0.1']
+[29-Jul-2022 17:50:59] [Date: 2022-07-29 17:50:59 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 17:50:59] [Date: 2022-07-29 17:50:59 | root connect succesfully to '127.0.0.1']
+[29-Jul-2022 17:50:59] [Date: 2022-07-29 17:50:59 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 17:50:59] [Date: 2022-07-29 17:50:59 | root connect succesfully to '127.0.0.1']
+[29-Jul-2022 17:50:59] [Date: 2022-07-29 17:50:59 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 17:50:59] [Date: 2022-07-29 17:50:59 | root connect succesfully to '127.0.0.1']
+[29-Jul-2022 17:50:59] [Date: 2022-07-29 17:50:59 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 17:50:59] [Date: 2022-07-29 17:50:59 | root connect succesfully to '127.0.0.1']
+[29-Jul-2022 17:50:59] [Date: 2022-07-29 17:50:59 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 17:50:59] [Date: 2022-07-29 17:50:59 | root connect succesfully to '127.0.0.1']
+[29-Jul-2022 17:50:59] [Date: 2022-07-29 17:50:59 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 18:01:51] [Date: 2022-07-29 18:01:51 | root connect succesfully to '127.0.0.1']
+[29-Jul-2022 18:01:51] [Date: 2022-07-29 18:01:51 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 18:01:52] [Date: 2022-07-29 18:01:52 | root connect succesfully to 'employees']
+[29-Jul-2022 18:01:52] [Date: 2022-07-29 18:01:52 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 18:01:54] [Date: 2022-07-29 18:01:54 | root connect succesfully to 'employees']
+[29-Jul-2022 18:01:54] [Date: 2022-07-29 18:01:54 | root execute succesfully Select query in employees
+ 'SELECT * FROM departments LIMIT 10;']
+[29-Jul-2022 18:01:56] [Date: 2022-07-29 18:01:56 | root connect succesfully to 'my_lqs_admin']
+[29-Jul-2022 18:01:56] [Date: 2022-07-29 18:01:56 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[29-Jul-2022 18:01:56] [Date: 2022-07-29 18:01:56 | root connect succesfully to 'employees']
+[29-Jul-2022 18:01:56] [Date: 2022-07-29 18:01:56 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 18:03:04] [Date: 2022-07-29 18:03:04 | root connect succesfully to 'employees']
+[29-Jul-2022 18:03:04] [Date: 2022-07-29 18:03:04 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[29-Jul-2022 18:03:11] [Date: 2022-07-29 18:03:11 | root connect succesfully to 'employees']
+[29-Jul-2022 18:03:11] [Date: 2022-07-29 18:03:11 | Sql_Query_try_catch: query in employees FAILED !
+ 'SELEC TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELEC TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_N...' at line 1]

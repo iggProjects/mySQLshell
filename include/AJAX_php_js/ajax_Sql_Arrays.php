@@ -97,8 +97,6 @@ if ( gettype($conex_db) === 'object' ) {
     My_Log_Message ('RIGHT--> ' . json_encode($arrays_union['right']),$log_comments_path);          
     My_Log_Message ('-------',$log_comments_path); 
     
-
-
 } else {    
     $route = "display_error";
     $error_msg = "MySql error: Connection to $dbhost and $dbname FAILED !<br>Contact Admin.";
