@@ -18782,3 +18782,48 @@
 [29-Jul-2022 13:11:15] [Date: 2022-07-29 13:11:15 | root connect succesfully to 'mvc_example']
 [29-Jul-2022 13:11:15] [Date: 2022-07-29 13:11:15 | root execute succesfully show tables query
  'SHOW TABLES;']
+[29-Jul-2022 13:12:27] [Date: 2022-07-29 13:12:27 | root connect succesfully to '127.0.0.1']
+[29-Jul-2022 13:12:27] [Date: 2022-07-29 13:12:27 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 13:12:29] [Date: 2022-07-29 13:12:29 | root connect succesfully to 'my_queries']
+[29-Jul-2022 13:12:29] [Date: 2022-07-29 13:12:29 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 13:12:31] [Date: 2022-07-29 13:12:31 | root connect succesfully to 'penjub']
+[29-Jul-2022 13:12:31] [Date: 2022-07-29 13:12:31 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 13:12:50] [Date: 2022-07-29 13:12:50 | root connect succesfully to 'my_lqs_admin']
+[29-Jul-2022 13:12:50] [Date: 2022-07-29 13:12:50 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 13:13:00] [Date: 2022-07-29 13:13:00 | root connect succesfully to 'penjub']
+[29-Jul-2022 13:13:00] [Date: 2022-07-29 13:13:00 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 13:13:08] [Date: 2022-07-29 13:13:08 | root connect succesfully to 'penjub']
+[29-Jul-2022 13:13:08] [Date: 2022-07-29 13:13:08 | root execute succesfully show tables query
+ 'describe tbl_persona;']
+[29-Jul-2022 13:13:09] [Date: 2022-07-29 13:13:09 | root connect succesfully to 'penjub']
+[29-Jul-2022 13:13:09] [Date: 2022-07-29 13:13:09 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona LIMIT 10;']
+[29-Jul-2022 13:13:10] [Date: 2022-07-29 13:13:10 | root connect succesfully to 'penjub']
+[29-Jul-2022 13:13:10] [Date: 2022-07-29 13:13:10 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[29-Jul-2022 13:13:10] [Date: 2022-07-29 13:13:10 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona'']
+[29-Jul-2022 13:13:10] [Date: 2022-07-29 13:13:10 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[29-Jul-2022 13:13:10] [Date: 2022-07-29 13:13:10 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona'']
+[29-Jul-2022 13:13:14] [Date: 2022-07-29 13:13:14 | root connect succesfully to 'my_lqs_admin']
+[29-Jul-2022 13:13:14] [Date: 2022-07-29 13:13:14 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[29-Jul-2022 13:13:14] [Date: 2022-07-29 13:13:14 | root connect succesfully to 'penjub']
+[29-Jul-2022 13:13:14] [Date: 2022-07-29 13:13:14 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 13:13:18] [Date: 2022-07-29 13:13:18 | root connect succesfully to 'penjub']
+[29-Jul-2022 13:13:18] [Date: 2022-07-29 13:13:18 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[29-Jul-2022 13:13:26] [Date: 2022-07-29 13:13:26 | root connect succesfully to 'penjub']
+[29-Jul-2022 13:13:26] [Date: 2022-07-29 13:13:26 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[29-Jul-2022 13:13:30] [Date: 2022-07-29 13:13:30 | root connect succesfully to 'employees']
+[29-Jul-2022 13:13:30] [Date: 2022-07-29 13:13:30 | root execute succesfully show tables query
+ 'SHOW TABLES;']
