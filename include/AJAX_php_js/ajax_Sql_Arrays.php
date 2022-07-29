@@ -72,6 +72,33 @@ if ( gettype($conex_db) === 'object' ) {
         $error_msg = "MySql error: sql query " . $sql_query . "FAILED !<br>Contact Admin.";
     }    
 
+    
+    // TESTING MERGE ARRAY OPTION   
+    $right_query  = "SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = '" . $dbname . "' AND TABLE_NAME = '" . $tblname . "'";
+    $left_query   = "SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = '" . $dbname . "' AND REFERENCED_TABLE_NAME = '" . $tblname . "'";         
+    $table_query = "SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = '" . $tblname . "'";
+
+    $table_result = Sql_Query_try_catch($conex_db,$dbname,$dbuser,$table_query,$log_queries_path);
+
+    if( gettype($table_result) === 'object' || gettype($table_result) === 'array' ) { 
+        $rigth_result = Sql_Query_try_catch($conex_db,$dbname,$dbuser,$right_query,$log_queries_path);
+        if( gettype($rigth_result) === 'object' || gettype($rigth_result) === 'array' ) {
+            $left_result  = Sql_Query_try_catch($conex_db,$dbname,$dbuser,$left_query,$log_queries_path);
+        }
+    }
+
+    $arrays_union = ['table' => $table_result, 'left' => $left_result, 'right' => $rigth_result];
+
+    My_Log_Message ('--------',$log_comments_path);      
+    My_Log_Message ('TABLE--> ' . json_encode($arrays_union['table']),$log_comments_path); 
+    My_Log_Message ('-------',$log_comments_path);      
+    My_Log_Message ('LEFT--> ' . json_encode($arrays_union['left']),$log_comments_path); 
+    My_Log_Message ('-------',$log_comments_path); 
+    My_Log_Message ('RIGHT--> ' . json_encode($arrays_union['right']),$log_comments_path);          
+    My_Log_Message ('-------',$log_comments_path); 
+    
+
+
 } else {    
     $route = "display_error";
     $error_msg = "MySql error: Connection to $dbhost and $dbname FAILED !<br>Contact Admin.";
@@ -80,7 +107,8 @@ if ( gettype($conex_db) === 'object' ) {
 # DATA ARRAY OR ERROR ARRAY
 if ($route == 'display_data') {  
 
-    My_Log_Message (json_encode($resultado),$log_comments_path);    
+    My_Log_Message ('$resultado',$log_comments_path);    
+    My_Log_Message ('----------> ' . json_encode($resultado),$log_comments_path);    
     echo json_encode($resultado);
     // echo $resultado;
 

@@ -126,7 +126,7 @@ echo "
 
                                 </div>
 
-                                <textarea id='sql-query-area' spellcheck='false' placeholder='write your sql query....'></textarea>       
+                                <textarea id='sql-query-area' spellcheck='false' placeholder='CHECK whether or not your QUERY requires the table name....'></textarea>       
 
                             </div>
 
@@ -246,7 +246,7 @@ echo "
                     document.getElementById('display-sql-console-Up').classList.remove("hideDiv");
                     document.getElementById('display-sql-console-Up').classList.add("showDiv");
                     // clear textarea 'sql-query-area' 
-                    document.getElementById("sql-query-area").value = "";  
+                    document.getElementById("sql-query-area").value = '';  
 
                     // show 'display-sql-console-Down'
                     document.getElementById('display-sql-console-Down').classList.remove("hideDiv");
@@ -326,7 +326,7 @@ echo "
     function doLeftAsideButtonAction(){
 
         // clear #sql-query-area & #display_sql_result
-        document.getElementById('sql-query-area').value = '';
+        // document.getElementById('sql-query-area').value = '';
         document.getElementById('display_sql_result').innerHTML='';
 
         // clear #display-sql-console-Down
@@ -454,13 +454,6 @@ echo "
         else {
 
             Fetch_data_array('./include/AJAX_php_js/ajax_Sql_Arrays.php?host_numb=' + host_n + '&hostName='+host_sel+'&dbName='+db_sel+'&tblName='+table_selected); 
-        /*    
-            let left_query = "SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = '" + db_sel + "' AND TABLE_NAME = '" + table_selected + "'";
-            let right_query = "SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = '" + db_sel + "' AND REFERENCED_TABLE_NAME = '" + table_selected + "'";                 
-            let left_right_query = left_query + ' UNION ' + right_query;            
-            let query_string = '?hostName='+host_sel+'&dbName='+db_sel;            
-            Fetch_data_array(query_string,'./include/AJAX_php_js/ajax_Sql_Arrays.php?host_numb=' + host_n + '&hostName='+host_sel+'&dbName='+db_sel+'&sql_query='+left_right_query); 
-        */    
             
         }           
     }
@@ -472,12 +465,30 @@ echo "
     function clearDerConsoleAreas() {
         document.getElementById('display-result-nav-title').innerHTML = "";
         document.getElementById('display_sql_result').innerHTML = "";
-        document.getElementById('sql-query-area').innerHTML = "";
 
-        // document.getElementById('display-sql-console-Down').innerHTML = "";
-        // document.getElementById('display-sql-console-Down').innerHTML = "";
+        document.getElementById('display-result-nav-title').removeAttribute('table');
+
+        //alert(document.getElementById('sql-query-area').value);
+        if ( document.getElementById('sql-query-area').value != null ){
+            document.getElementById('sql-query-area').value = '';
+        };
+        
+        document.getElementById('display-sql-console-Down').textContent = "";
+
         // document.getElementById('p-comment').innerHTML = "";
+    /*    
+        // hide 'display-sql-console-Up' and clear html
+        document.getElementById('display-sql-console-Up').classList.remove("showDiv");
+        document.getElementById('display-sql-console-Up').classList.add("hideDiv");     
+        //document.getElementById('display-sql-console-Up').innerHTML = "";
+        // hide 'display-sql-console-Down' and clear html
+        document.getElementById('display-sql-console-Down').classList.remove("showDiv");
+        document.getElementById('display-sql-console-Down').classList.add("hideDiv");     
+        // document.getElementById('display-sql-console-Down').innerHTML = "";
+    */    
         document.getElementById('display_right_aside').innerHTML = "";
+
+
     }
 
 

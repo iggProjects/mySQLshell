@@ -161,11 +161,14 @@ function Fetch_js(tag,php_sql_url){
         if ( tag == 'std-queriesList') {
             // Listener to select QUERY from "standard_queries" in "my_lqs_queries" DB
             var querySelected = document.getElementById("std-queriesList");
+            // var tbl = document.getElementById("display-result-nav-title").getAttribute('table');
             querySelected.addEventListener("click", () => {
-                querySelected.addEventListener("change", () => {                                 
-                    if (querySelected.value != '' ) {                        
+                querySelected.addEventListener("change", () => {  
+                    
+                    if (querySelected.value != '' ) {    
                         const relations_query = querySelected.value;
                         document.getElementById('sql-query-area').value = relations_query;
+                        //document.getElementById('sql-query-area').value = relations_query + "'" + tbl + "'";
                     } else {   }  // upssssssss
                 })
             });          
@@ -201,9 +204,9 @@ function Fetch_data_array(php_sql_url) {
         // let query_string = query_str;
         // window.open('http://localhost/curso-backend-areafor-server/myLQSadmin/assets/z-canvas-examp/canvas-tables-diagram.php'+query_string, '_blank');
 
-        alert('type data ' + typeof(data));    
+        // alert('type data ' + typeof(data));    
         let data_array = JSON.parse(data);
-        alert('data_array length: ' + data_array.length);      
+        // alert('data_array length: ' + data_array.length);      
         // alert('data_array[0][TBL]: ' + data_array[0]['TBL']);   
         console.log('array tables rel ↓↓');
         console.log(data_array);   
@@ -327,19 +330,25 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
     var ctx = canvas.getContext("2d");
     var fontsize = 20;
     var fontface = 'arial';
-    var row_h = fontsize * 1.1;
+    var row_h = fontsize * 1.2;
     ctx.lineWidth = 1.5;
     ctx.strokeStyle = "black"; // border color
     ctx.fillStyle = "blue";   // chars color            
     ctx.textAlign="center"; 
-    ctx.textBaseline = "middle";                
+    ctx.textBaseline = "middle";
+    
+    ctx.font = '15px arial';
+    
+    ctx.strokeText('Tabla xxx',(w/2-10),25);
+
+    ctx.font = '13px arial';
 
     // parameters to draw ppal_table_array
     var x = w/2;
     var y = 50; 
     
     // max length text of elements in table
-    var max_large_text = 200;
+    var max_large_text = 250;
 
 /*    
     for ( var i=0; i < ppal_table_array.length; i++ ){  
@@ -355,7 +364,7 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
 
     // parameters to draw left_table_array
     x = 20;
-    max_large_text = 200;
+    max_large_text = 230;
 
 /*    
     text_w = 0;
@@ -405,7 +414,7 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
 
     // parameters to draw right_table_array
     x = w-20;
-    max_large_text = 200;
+    max_large_text = 230;
 
 /*    
     text_w = 0;
