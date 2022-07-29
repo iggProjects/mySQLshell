@@ -18717,3 +18717,68 @@
 [29-Jul-2022 13:03:13] [Date: 2022-07-29 13:03:13 | root connect succesfully to 'my_queries']
 [29-Jul-2022 13:03:13] [Date: 2022-07-29 13:03:13 | root execute succesfully show tables query
  'describe queries;']
+[29-Jul-2022 13:09:52] [Date: 2022-07-29 13:09:52 | root connect succesfully to '127.0.0.1']
+[29-Jul-2022 13:09:52] [Date: 2022-07-29 13:09:52 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[29-Jul-2022 13:09:54] [Date: 2022-07-29 13:09:54 | root connect succesfully to 'mysql']
+[29-Jul-2022 13:09:54] [Date: 2022-07-29 13:09:54 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 13:09:57] [Date: 2022-07-29 13:09:57 | root connect succesfully to 'mysql']
+[29-Jul-2022 13:09:57] [Date: 2022-07-29 13:09:57 | root execute succesfully show tables query
+ 'describe general_log;']
+[29-Jul-2022 13:09:58] [Date: 2022-07-29 13:09:58 | root connect succesfully to 'mysql']
+[29-Jul-2022 13:09:58] [Date: 2022-07-29 13:09:58 | root execute succesfully Select query in mysql
+ 'SELECT * FROM general_log LIMIT 10;']
+[29-Jul-2022 13:10:00] [Date: 2022-07-29 13:10:00 | root connect succesfully to 'information_schema']
+[29-Jul-2022 13:10:00] [Date: 2022-07-29 13:10:00 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 13:10:03] [Date: 2022-07-29 13:10:03 | root connect succesfully to 'information_schema']
+[29-Jul-2022 13:10:03] [Date: 2022-07-29 13:10:03 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 13:10:06] [Date: 2022-07-29 13:10:06 | root connect succesfully to 'mvc_example']
+[29-Jul-2022 13:10:06] [Date: 2022-07-29 13:10:06 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 13:10:08] [Date: 2022-07-29 13:10:08 | root connect succesfully to 'mvc_example']
+[29-Jul-2022 13:10:08] [Date: 2022-07-29 13:10:08 | root execute succesfully show tables query
+ 'describe products;']
+[29-Jul-2022 13:10:09] [Date: 2022-07-29 13:10:09 | root connect succesfully to 'mvc_example']
+[29-Jul-2022 13:10:09] [Date: 2022-07-29 13:10:09 | root execute succesfully Select query in mvc_example
+ 'SELECT * FROM products LIMIT 10;']
+[29-Jul-2022 13:10:13] [Date: 2022-07-29 13:10:13 | root connect succesfully to 'mvc_example']]
+
+[29-Jul-2022 13:10:13] [Date: 2022-07-29 13:10:13 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries'][29-Jul-2022 13:10:13] [Date: 2022-07-29 13:10:13 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 13:10:28] [Date: 2022-07-29 13:10:28 | root connect succesfully to 'mvc_example']
+[29-Jul-2022 13:10:28] [Date: 2022-07-29 13:10:28 | Sql_Query_try_catch: query in mvc_example FAILED !
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA() AND TABLE_NAME =' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1]
+[29-Jul-2022 13:10:32] [Date: 2022-07-29 13:10:32 | root connect succesfully to 'mvc_example']
+[29-Jul-2022 13:10:32] [Date: 2022-07-29 13:10:32 | root execute succesfully Sql Query in DB: mvc_example
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[29-Jul-2022 13:10:38] [Date: 2022-07-29 13:10:38 | root connect succesfully to 'mvc_example']
+[29-Jul-2022 13:10:38] [Date: 2022-07-29 13:10:38 | Sql_Query_try_catch: query in mvc_example FAILED !
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA() AND REFERENCED_TABLE_NAME =' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1]
+[29-Jul-2022 13:10:44] [Date: 2022-07-29 13:10:44 | root connect succesfully to 'mvc_example']
+[29-Jul-2022 13:10:44] [Date: 2022-07-29 13:10:44 | Sql_Query_try_catch: query in mvc_example FAILED !
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA() AND REFERENCED_TABLE_NAME =' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1]
+[29-Jul-2022 13:10:51] [Date: 2022-07-29 13:10:51 | root connect succesfully to 'mvc_example']
+[29-Jul-2022 13:10:51] [Date: 2022-07-29 13:10:51 | root execute succesfully Sql Query in DB: mvc_example
+ 'SELECT table_name TBL, round( (data_length / 1024 / 1024) , 2) SIZE_MB FROM information_schema.TABLES WHERE table_schema = SCHEMA()']
+[29-Jul-2022 13:10:57] [Date: 2022-07-29 13:10:57 | root connect succesfully to 'mvc_example']
+[29-Jul-2022 13:10:57] [Date: 2022-07-29 13:10:57 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 13:10:59] [Date: 2022-07-29 13:10:59 | root connect succesfully to 'my_lqs_admin']
+[29-Jul-2022 13:10:59] [Date: 2022-07-29 13:10:59 | root connect succesfully to 'mvc_example']
+[29-Jul-2022 13:10:59] [Date: 2022-07-29 13:10:59 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[29-Jul-2022 13:10:59] [Date: 2022-07-29 13:10:59 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[29-Jul-2022 13:11:07] [Date: 2022-07-29 13:11:07 | root connect succesfully to 'mvc_example']
+[29-Jul-2022 13:11:07] [Date: 2022-07-29 13:11:07 | Sql_Query_try_catch: query in mvc_example FAILED !
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA() AND TABLE_NAME =' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1]
+[29-Jul-2022 13:11:12] [Date: 2022-07-29 13:11:12 | root connect succesfully to 'mvc_example']
+[29-Jul-2022 13:11:12] [Date: 2022-07-29 13:11:12 | root execute succesfully Sql Query in DB: mvc_example
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
+[29-Jul-2022 13:11:15] [Date: 2022-07-29 13:11:15 | root connect succesfully to 'mvc_example']
+[29-Jul-2022 13:11:15] [Date: 2022-07-29 13:11:15 | root execute succesfully show tables query
+ 'SHOW TABLES;']

@@ -1,8 +1,0 @@
-model
-insert into standard_queries (user,comment,query) VALUES ('root','','');
-
-query:
-SELECT table_name TBL, round( (data_length / 1024 / 1024) , 2) SIZE_MB FROM information_schema.TABLES WHERE table_schema = SCHEMA()
-
-statement
-insert into standard_queries (user,comment,query) VALUES ('root','Tables list of a DB, with their size','SELECT table_name TBL, round( (data_length / 1024 / 1024) , 2) SIZE_MB FROM information_schema.TABLES WHERE table_schema = SCHEMA()');
