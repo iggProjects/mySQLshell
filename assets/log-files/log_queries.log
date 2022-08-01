@@ -19085,3 +19085,114 @@
 [29-Jul-2022 18:03:11] [Date: 2022-07-29 18:03:11 | root connect succesfully to 'employees']
 [29-Jul-2022 18:03:11] [Date: 2022-07-29 18:03:11 | Sql_Query_try_catch: query in employees FAILED !
  'SELEC TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'SELEC TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_N...' at line 1]
+[1-Aug-2022 11:24:17] [Date: 2022-08-01 11:24:17 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[1-Aug-2022 11:24:17] [Date: 2022-08-01 11:24:17 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[1-Aug-2022 11:24:19] [Date: 2022-08-01 11:24:19 | inaki2022 connect succesfully to '8661316_laninaki22']
+[1-Aug-2022 11:24:19] [Date: 2022-08-01 11:24:19 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[1-Aug-2022 11:24:25] [Date: 2022-08-01 11:24:25 | inaki2022 connect succesfully to '8661316_laninaki22']
+[1-Aug-2022 11:24:25] [Date: 2022-08-01 11:24:25 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users LIMIT 10;']
+[1-Aug-2022 11:24:30] [Date: 2022-08-01 11:24:30 | root connect succesfully to 'my_lqs_admin']
+[1-Aug-2022 11:24:30] [Date: 2022-08-01 11:24:30 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[1-Aug-2022 11:24:30] [Date: 2022-08-01 11:24:30 | inaki2022 connect succesfully to '8661316_laninaki22']
+[1-Aug-2022 11:24:30] [Date: 2022-08-01 11:24:30 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[1-Aug-2022 11:24:33] [Date: 2022-08-01 11:24:33 | inaki2022 connect succesfully to '8661316_laninaki22']
+[1-Aug-2022 11:24:33] [Date: 2022-08-01 11:24:33 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users LIMIT 10;']
+[1-Aug-2022 11:25:09] [Date: 2022-08-01 11:25:09 | inaki2022 connect succesfully to '8661316_laninaki22']
+[1-Aug-2022 11:25:09] [Date: 2022-08-01 11:25:09 | inaki2022 execute succesfully Sql Query in DB: 8661316_laninaki22
+ 'delete from tbl_users where id >1']
+[1-Aug-2022 11:25:10] [Date: 2022-08-01 11:25:10 | inaki2022 connect succesfully to '8661316_laninaki22']
+[1-Aug-2022 11:25:10] [Date: 2022-08-01 11:25:10 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users LIMIT 10;']
+[1-Aug-2022 11:27:09] [Date: 2022-08-01 11:27:09 | inaki2022 connect succesfully to '8661316_laninaki22']
+[1-Aug-2022 11:27:10] [Date: 2022-08-01 11:27:10 | inaki2022 execute succesfully Sql Query in DB: 8661316_laninaki22
+ 'insert into tbl_users (usuario,clave,rol,blocked) values ('invitado','invitado','invitado',0)']
+[1-Aug-2022 11:27:12] [Date: 2022-08-01 11:27:12 | inaki2022 connect succesfully to '8661316_laninaki22']
+[1-Aug-2022 11:27:12] [Date: 2022-08-01 11:27:12 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users LIMIT 10;']
+[1-Aug-2022 11:42:49] [Date: 2022-08-01 11:42:49 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[1-Aug-2022 11:42:49] [Date: 2022-08-01 11:42:49 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[1-Aug-2022 11:53:26] [Date: 2022-08-01 11:53:26 | root connect succesfully to '127.0.0.1']
+[1-Aug-2022 11:53:27] [Date: 2022-08-01 11:53:27 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[1-Aug-2022 11:53:27] [Date: 2022-08-01 11:53:27 | root connect succesfully to '127.0.0.1']
+[1-Aug-2022 11:53:27] [Date: 2022-08-01 11:53:27 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[1-Aug-2022 11:53:27] [Date: 2022-08-01 11:53:27 | root connect succesfully to '127.0.0.1']
+[1-Aug-2022 11:53:27] [Date: 2022-08-01 11:53:27 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[1-Aug-2022 11:53:27] [Date: 2022-08-01 11:53:27 | root connect succesfully to '127.0.0.1']
+[1-Aug-2022 11:53:27] [Date: 2022-08-01 11:53:27 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[1-Aug-2022 11:53:27] [Date: 2022-08-01 11:53:27 | root connect succesfully to '127.0.0.1']
+[1-Aug-2022 11:53:27] [Date: 2022-08-01 11:53:27 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[1-Aug-2022 11:53:29] [Date: 2022-08-01 11:53:29 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[1-Aug-2022 11:53:30] [Date: 2022-08-01 11:53:30 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[1-Aug-2022 11:53:30] [Date: 2022-08-01 11:53:30 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[1-Aug-2022 11:53:30] [Date: 2022-08-01 11:53:30 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[1-Aug-2022 11:53:30] [Date: 2022-08-01 11:53:30 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[1-Aug-2022 11:53:30] [Date: 2022-08-01 11:53:30 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[1-Aug-2022 11:53:30] [Date: 2022-08-01 11:53:30 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[1-Aug-2022 11:53:30] [Date: 2022-08-01 11:53:30 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[1-Aug-2022 11:53:30] [Date: 2022-08-01 11:53:30 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[1-Aug-2022 11:53:30] [Date: 2022-08-01 11:53:30 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[1-Aug-2022 11:53:31] [Date: 2022-08-01 11:53:31 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[1-Aug-2022 11:53:31] [Date: 2022-08-01 11:53:31 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[1-Aug-2022 11:53:31] [Date: 2022-08-01 11:53:31 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[1-Aug-2022 11:53:31] [Date: 2022-08-01 11:53:31 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[1-Aug-2022 11:53:31] [Date: 2022-08-01 11:53:31 | inaki2022 connect succesfully to '8661316_laninaki22']
+[1-Aug-2022 11:53:32] [Date: 2022-08-01 11:53:32 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[1-Aug-2022 11:53:36] [Date: 2022-08-01 11:53:36 | inaki2022 connect succesfully to '8661316_laninaki22']
+[1-Aug-2022 11:53:36] [Date: 2022-08-01 11:53:36 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users LIMIT 10;']
+[1-Aug-2022 11:53:38] [Date: 2022-08-01 11:53:38 | root connect succesfully to 'my_lqs_admin']
+[1-Aug-2022 11:53:38] [Date: 2022-08-01 11:53:38 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[1-Aug-2022 11:53:38] [Date: 2022-08-01 11:53:38 | inaki2022 connect succesfully to '8661316_laninaki22']
+[1-Aug-2022 11:53:38] [Date: 2022-08-01 11:53:38 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[1-Aug-2022 11:53:54] [Date: 2022-08-01 11:53:54 | inaki2022 connect succesfully to '8661316_laninaki22']
+[1-Aug-2022 11:53:54] [Date: 2022-08-01 11:53:54 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users LIMIT 10;']
+[1-Aug-2022 11:54:02] [Date: 2022-08-01 11:54:02 | inaki2022 connect succesfully to '8661316_laninaki22']
+[1-Aug-2022 11:54:02] [Date: 2022-08-01 11:54:02 | inaki2022 execute succesfully Sql Query in DB: 8661316_laninaki22
+ 'delete from tbl_users where id > 1']
+[1-Aug-2022 11:54:03] [Date: 2022-08-01 11:54:03 | inaki2022 connect succesfully to '8661316_laninaki22']
+[1-Aug-2022 11:54:03] [Date: 2022-08-01 11:54:03 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users LIMIT 10;']
+[1-Aug-2022 11:55:32] [Date: 2022-08-01 11:55:32 | inaki2022 connect succesfully to '8661316_laninaki22']
+[1-Aug-2022 11:55:32] [Date: 2022-08-01 11:55:32 | Sql_Query_try_catch: query in 8661316_laninaki22 FAILED !
+ 'inser into tbl_users (usuario,clave,email,rol,blocked) values ('invitado','invitado','igg.git.h@gmail.com','invitado',0)' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'inser into tbl_users (usuario,clave,email,rol,blocked) values ('invitado','invit' at line 1]
+[1-Aug-2022 11:55:52] [Date: 2022-08-01 11:55:52 | inaki2022 connect succesfully to '8661316_laninaki22']
+[1-Aug-2022 11:55:52] [Date: 2022-08-01 11:55:52 | inaki2022 execute succesfully Sql Query in DB: 8661316_laninaki22
+ 'insert into tbl_users (usuario,clave,email,rol,blocked) values ('invitado','invitado','igg.git.h@gmail.com','invitado',0)']
+[1-Aug-2022 11:55:53] [Date: 2022-08-01 11:55:53 | inaki2022 connect succesfully to '8661316_laninaki22']
+[1-Aug-2022 11:55:53] [Date: 2022-08-01 11:55:53 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users LIMIT 10;']
+[1-Aug-2022 11:57:29] [Date: 2022-08-01 11:57:29 | inaki2022 connect succesfully to '8661316_laninaki22']
+[1-Aug-2022 11:57:29] [Date: 2022-08-01 11:57:29 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users LIMIT 10;']
+[1-Aug-2022 11:57:50] [Date: 2022-08-01 11:57:50 | inaki2022 connect succesfully to '8661316_laninaki22']
+[1-Aug-2022 11:57:50] [Date: 2022-08-01 11:57:50 | inaki2022 execute succesfully Sql Query in DB: 8661316_laninaki22
+ 'delete from tbl_users where id > 1']
+[1-Aug-2022 11:58:12] [Date: 2022-08-01 11:58:12 | inaki2022 connect succesfully to '8661316_laninaki22']
+[1-Aug-2022 11:58:12] [Date: 2022-08-01 11:58:12 | inaki2022 execute succesfully Sql Query in DB: 8661316_laninaki22
+ 'insert into tbl_users (usuario,clave,email,rol,blocked) values ('invitado','invitado','igg.git.h@gmail.com','invitado',0)']
+[1-Aug-2022 11:58:16] [Date: 2022-08-01 11:58:16 | inaki2022 connect succesfully to '8661316_laninaki22']
+[1-Aug-2022 11:58:16] [Date: 2022-08-01 11:58:16 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users LIMIT 10;']
