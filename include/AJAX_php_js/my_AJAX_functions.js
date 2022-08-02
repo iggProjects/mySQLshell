@@ -112,9 +112,6 @@ function openTree(host_arr) {
             var table_param = document.getElementById('display-result-nav-title');
 
             // call ajax List Table's function
-            // Fetch_js('display_right_aside','./include/AJAX_php_js/ajax_SelectTbl.php?host_numb=' + table_param.getAttribute('host_numb') + '&hostName='+host_arr[hostNumb]+'&dbName='+dbName+'&tblName='+tblName);                    
-
-            // call ajax List Table's function
             let host_n = table_param.getAttribute('host_numb')
             var _tag = 'display_sql_result';
             document.getElementById(_tag).innerHTML = "";    

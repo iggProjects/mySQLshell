@@ -19538,3 +19538,33 @@
 [2-Aug-2022 14:26:55] [Date: 2022-08-02 14:26:55 | root connect succesfully to 'mvc_example']
 [2-Aug-2022 14:26:55] [Date: 2022-08-02 14:26:55 | root execute succesfully show tables query
  'describe products;']
+[2-Aug-2022 14:27:40] [Date: 2022-08-02 14:27:40 | root connect succesfully to '127.0.0.1']
+[2-Aug-2022 14:27:40] [Date: 2022-08-02 14:27:40 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[2-Aug-2022 14:27:41] [Date: 2022-08-02 14:27:41 | root connect succesfully to 'penjub']
+[2-Aug-2022 14:27:41] [Date: 2022-08-02 14:27:41 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[2-Aug-2022 14:27:43] [Date: 2022-08-02 14:27:43 | root connect succesfully to 'penjub']
+[2-Aug-2022 14:27:43] [Date: 2022-08-02 14:27:43 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[2-Aug-2022 14:27:47] [Date: 2022-08-02 14:27:47 | root connect succesfully to 'penjub']
+[2-Aug-2022 14:27:47] [Date: 2022-08-02 14:27:47 | root execute succesfully show tables query
+ 'describe tbl_relacion;']
+[2-Aug-2022 14:27:52] [Date: 2022-08-02 14:27:52 | root connect succesfully to 'penjub']
+[2-Aug-2022 14:27:52] [Date: 2022-08-02 14:27:52 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[2-Aug-2022 14:27:56] [Date: 2022-08-02 14:27:56 | root connect succesfully to 'my_queries']
+[2-Aug-2022 14:27:56] [Date: 2022-08-02 14:27:56 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[2-Aug-2022 14:27:58] [Date: 2022-08-02 14:27:58 | root connect succesfully to 'employees']
+[2-Aug-2022 14:27:58] [Date: 2022-08-02 14:27:58 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[2-Aug-2022 14:28:01] [Date: 2022-08-02 14:28:01 | root connect succesfully to 'employees']
+[2-Aug-2022 14:28:01] [Date: 2022-08-02 14:28:01 | root execute succesfully show tables query
+ 'describe employees;']
+[2-Aug-2022 14:28:04] [Date: 2022-08-02 14:28:04 | root connect succesfully to 'employees']
+[2-Aug-2022 14:28:04] [Date: 2022-08-02 14:28:04 | root execute succesfully Select query in employees
+ 'SELECT * FROM employees LIMIT 10;']
+[2-Aug-2022 14:28:05] [Date: 2022-08-02 14:28:05 | root connect succesfully to 'employees']
+[2-Aug-2022 14:28:05] [Date: 2022-08-02 14:28:05 | root execute succesfully show tables query
+ 'describe employees;']
