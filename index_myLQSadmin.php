@@ -49,7 +49,7 @@ echo "
         </div>";
 
         echo "<div id='canvas-diagram' class='canvas-area' style='margin:auto; text-align: center;'>  
-            <div><button style='width:100px;margin-left:50px;margin-right:50px;margin-bottom:10px;padding:3px;color:white;font-size:16px;background-color:gray; border-radius:10px;' onclick='document.getElementById(\"div-DB-info\").style.display=\"flex\";document.getElementById(\"canvas-diagram\").style.display=\"none\";'><b>EXIT</b><button></div>  
+            <div><button style='width:100px;margin-left:50px;margin-right:50px;margin-bottom:10px;padding:3px;color:white;font-size:16px;background-color:gray; border-radius:10px;' onclick='clear_canvas()'><b>EXIT</b><button></div>  
             <canvas class='canvas-area' id='canvas' width='900px' height='600px' style='border:5px solid gray;'></canvas>
         </div>";
         
@@ -450,7 +450,6 @@ echo "
 
         // IF to check table exits 
 
-
         let table_param = document.getElementById('display-result-nav-title');
         let host_n = table_param.getAttribute('host_numb');
         let host_sel = table_param.getAttribute('host');
@@ -460,7 +459,7 @@ echo "
         if ( table_selected === null ) { alert('Please, select a table !'); } 
         else {
 
-            Fetch_data_array('./include/AJAX_php_js/ajax_Sql_Arrays.php?host_numb=' + host_n + '&hostName='+host_sel+'&dbName='+db_sel+'&tblName='+table_selected); 
+            Fetch_canvas_data_array('./include/AJAX_php_js/ajax_Sql_Arrays.php?host_numb=' + host_n + '&hostName='+host_sel+'&dbName='+db_sel+'&tblName='+table_selected); 
             
         }           
     }
@@ -514,7 +513,12 @@ echo "
         // aumentar altura 'display-sql-console-Down'
         document.getElementById('display-sql-console-Down').style.height='58%'; 
     }
-    
+
+    function clear_canvas() {
+        document.getElementById("div-DB-info").style.display="flex";
+        document.getElementById("canvas-diagram").style.display="none";
+        document.getElementById("canvas").innerHTML = "";
+    }
 
 </script>
 

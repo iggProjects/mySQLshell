@@ -2,10 +2,20 @@
  *  JS functions for CANVAS and other requirements
 */
 
-function Fetch_data_array(php_sql_url) {
+function Fetch_canvas_data_array(php_sql_url) {
 //function Fetch_data_array(query_str,php_sql_url) {
 
-    console.log('php_sql_url====> ' + php_sql_url) 
+    console.log('php_sql_url====> ' + php_sql_url); 
+
+    // all fields of table selected
+    var table_ppal = [];
+    table_ppal.length=0;
+    // only table name and 'left' field related
+    var left_table = []; 
+    left_table.length=0;  
+    // only table name and 'right' field related
+    var right_table = [];
+    right_table.length=0;            
     
     fetch(php_sql_url)
 
@@ -18,27 +28,36 @@ function Fetch_data_array(php_sql_url) {
     
     .then(data => {
 
+        draw_table_canvas(data,table_ppal,left_table,right_table);
+
+    })    
+
+    .catch(err => {
+        console.error("ERROR: ", err.message);
+        alert("ERROR Fetch_data_array: " + err.message); 
+
+    });
+   
+}
+
+function draw_table_canvas(tables_data_array,table_ppal,left_table,right_table) {
+
         // using window.open and do the work in another url
         // let query_string = query_str;
         // window.open('http://localhost/curso-backend-areafor-server/myLQSadmin/assets/z-canvas-examp/canvas-tables-diagram.php'+query_string, '_blank');
 
         // alert('type data ' + typeof(data));    
-        let data_array = JSON.parse(data);
+        let data_array = JSON.parse(tables_data_array);
         // alert('data_array length: ' + data_array.length);      
         // alert('data_array[0][TBL]: ' + data_array[0]['TBL']);   
         console.log('array tables rel ↓↓');
         console.log(data_array);   
         // FIELDS TBL, COL, REF_COL, REF_TBL
 
-        // all fields of table selected
-        var table_ppal = [];
-        // only table name and 'left' field related
-        var left_table = [];   
-        // only table name and 'right' field related
-        var right_table = [];
-
         var tbl_name = '';
-        tbl_name = 'tbl_persona';
+        // tbl_name = 'tbl_persona'; // ???????
+        tbl_name = data_array[0]['TBL'];
+        console.log('table_name----> ' + tbl_name);
         var index = 0;
 
         // FILLING TABLE_PPAL
@@ -86,20 +105,13 @@ function Fetch_data_array(php_sql_url) {
         var left_lines_x_y_array = [];
         var right_lines_x_y_array = [];     
          
-        /*  Testing */
+        //  Testing 
         //left_lines_x_y_array[0] = [{'x1':0,'y1':400},{'x2':300,'y2':400}];
         //left_lines_x_y_array[1] = [{'x1':0,'y1':450},{'x2':300,'y2':450}];
 
         // draw_table_relations_lines(left_lines_x_y_array);
 
-    })    
 
-    .catch(err => {
-        console.error("ERROR: ", err.message);
-        alert("ERROR Fetch_data_array: " + err.message); 
-
-    });
-   
 }
 
 function draw_pair_points_x_y(pair_points) {
@@ -119,7 +131,6 @@ function draw_table_relations_lines(points_array) {
     //alert(JSON.stringify(points_array));  
     draw_pair_points_x_y(points_array);   
     /* HERE: loop through array elements  */  
-
 
 
 }      
@@ -145,6 +156,7 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
     
     // canvas parameters
     var canvas = document.getElementById("canvas");
+    canvas.innerHTML = "";
     var ctx = canvas.getContext("2d");
     var fontsize = 20;
     var fontface = 'arial';
@@ -161,6 +173,9 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
 
     ctx.font = '13px arial';
 
+    // 
+    var temp_array = [];
+    temp_array.length=0;
     // parameters to draw ppal_table_array
     var x = w/2;
     var y = 50; 
@@ -195,9 +210,11 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
     text_w = max_large_text;
     console.log('draw_db, left text_w: ' + text_w);              
     x = 20 + text_w/2;             
-    y = 50;     
+    y = 50;  
+
     // Loop for differentiate distinct tables inside 'left_tables_array'
-    var temp_array = [];
+    
+    temp_array.length=0;
     var temp_tbl_name = left_tables_array[0].substr(0,left_tables_array[0].indexOf(" -"));
     // console.log('table name init -> ' +  temp_tbl_name);
     for ( var i=0; i<left_tables_array.length; i++ ) {
@@ -280,6 +297,8 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
     console.log('temp_array');
     console.log(temp_array);
     draw_table(ctx,temp_array,x,y,text_w,row_h);
+
+    temp_array.length=0;
 
     // draw_table(ctx,right_tables_array,x,y,text_w,row_h);
 
