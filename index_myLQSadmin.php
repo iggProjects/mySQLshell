@@ -520,6 +520,18 @@ echo "
         document.getElementById("canvas").innerHTML = "";
     }
 
+
+
+    function console_Log (msG,bckgCol,col,lines){
+        var linesJump=''; 
+        for (i=1;i<parseInt(lines);i++){
+            linesJump+='\n';
+        }
+        var msg='%c ' + msG + ' ' + linesJump;
+        var colEffects='line-height:20px; background:'+bckgCol+'; color:'+col; 
+        console.log(msg,colEffects);                
+    }
+
 </script>
 
 </body>

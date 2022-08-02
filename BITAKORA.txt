@@ -127,11 +127,11 @@ IÑAKI - METAS DÍA
 
   - my_Ajax_functions
 
-    - document.getElementsByClassName('dispTbl');
+    - document.getElementsByClassName('dispTbl');  ✔
 
-    - revisar tag que se usan en los Fetc_js usados para display_right_aside
+    - revisar tag que se usan en los Fetc_js usados para display_right_aside  ✔✔
 
-    class: list-mysql-table, display-fields
+    class: list-mysql-table, display-fields  ✔
     REVISAR
       - function display_table in my_PHP_funcions
 
@@ -139,7 +139,11 @@ IÑAKI - METAS DÍA
       - ajax_DescribeTbl
       - ajax_SelectTbl
 
+  - corregir 'display_right_aside' cuando cambias de una tabla de una DB a tabla de otra DB
 
+03-08-2022 
+
+  - terminar CANVAS
 
 
 ********************************************************************

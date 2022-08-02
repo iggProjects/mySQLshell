@@ -88,7 +88,7 @@ if ( gettype($conex_db) === 'object' ) {
     }
 
     $arrays_union = ['table' => $table_result, 'left' => $left_result, 'right' => $rigth_result];
-
+/*
     My_Log_Message ('--------',$log_comments_path);      
     My_Log_Message ('TABLE--> ' . json_encode($arrays_union['table']),$log_comments_path); 
     My_Log_Message ('-------',$log_comments_path);      
@@ -96,7 +96,7 @@ if ( gettype($conex_db) === 'object' ) {
     My_Log_Message ('-------',$log_comments_path); 
     My_Log_Message ('RIGHT--> ' . json_encode($arrays_union['right']),$log_comments_path);          
     My_Log_Message ('-------',$log_comments_path); 
-    
+*/    
 } else {    
     $route = "display_error";
     $error_msg = "MySql error: Connection to $dbhost and $dbname FAILED !<br>Contact Admin.";
@@ -105,9 +105,14 @@ if ( gettype($conex_db) === 'object' ) {
 # DATA ARRAY OR ERROR ARRAY
 if ($route == 'display_data') {  
 
-    My_Log_Message ('$resultado',$log_comments_path);    
-    My_Log_Message ('----------> ' . json_encode($resultado),$log_comments_path);    
-    echo json_encode($resultado);
+    My_Log_Message ('$arrays_union: ',$log_comments_path);    
+    My_Log_Message ('----------> ' . json_encode($arrays_union),$log_comments_path);    
+    echo json_encode($arrays_union);
+
+    //My_Log_Message ('$resultado',$log_comments_path);    
+    //My_Log_Message ('----------> ' . json_encode($resultado),$log_comments_path);    
+    //echo json_encode($resultado);
+    //       versus
     // echo $resultado;
 
 } else {
