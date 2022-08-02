@@ -35,6 +35,7 @@ ini_set('error_log',$php_errors_log);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/css/myLQSadmin.css">
     <script type='text/javascript' src='./include/AJAX_php_js/my_AJAX_functions.js'></script>
+    <script type='text/javascript' src='./include/AJAX_php_js/my_CANVAS_functions.js'></script>
   <style></style>
 </head>
 <body>
@@ -339,7 +340,13 @@ echo "
         table_param.setAttribute('table',table_Name);      
         table_param.innerHTML = 'Host: \"' + table_param.getAttribute('host') + '\"';
         table_param.innerHTML += ', DB: \"' + table_param.getAttribute('db') + '<br>';
-        table_param.innerHTML +='<span style=\"font-size:20px;color:blue;\">Table: ' + table_Name  + '</span>';
+        table_param.innerHTML +='<span style=\"font-size:20px;color:blue;\">Table: ' + table_Name  + '</span>';           
+
+
+        // update tag 'display_sql_result' with tbl fields
+        let _tag = 'display_sql_result';
+        Fetch_js(_tag,'./include/AJAX_php_js/ajax_DescribeTbl.php?host_numb=' + table_param.getAttribute('host_numb') + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table'));                                    
+
 
     }    
 

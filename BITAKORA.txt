@@ -123,6 +123,25 @@ IÑAKI - METAS DÍA
   - ZIP para Alberto
 
 
+02-08-2022  
+
+  - my_Ajax_functions
+
+    - document.getElementsByClassName('dispTbl');
+
+    - revisar tag que se usan en los Fetc_js usados para display_right_aside
+
+    class: list-mysql-table, display-fields
+    REVISAR
+      - function display_table in my_PHP_funcions
+
+      - TAG: display_right_aside
+      - ajax_DescribeTbl
+      - ajax_SelectTbl
+
+
+
+
 ********************************************************************
 
 PENDIENTE IÑAKI

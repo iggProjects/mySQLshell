@@ -93,7 +93,7 @@ if ($route == 'display_data') { # display html data
 
             if ( $row['TABLE_SCHEMA'] == $db_bf ) {           
                 if( $row['TABLE_ROWS']==null ) { $num_rows = 0; } else { $num_rows = $row['TABLE_ROWS']; }
-                $divHtml .= "<li class='li-mysql-table dispTbl' point='". $array_pointer ."' host_numb='" . $host_pointer . "' db='" . $row['TABLE_SCHEMA']  . "'  table-name='" . $row['TABLE_NAME'] . "'><span>" . $row['TABLE_NAME'] . " | " . $num_rows . " rows</span><span class='spanPlus'>+</span></li>";  
+                $divHtml .= "<li class='li-mysql-table dispTbl display-fields' point='". $array_pointer ."' host_numb='" . $host_pointer . "' db='" . $row['TABLE_SCHEMA']  . "'  table-name='" . $row['TABLE_NAME'] . "'><span>" . $row['TABLE_NAME'] . " | " . $num_rows . " rows</span><span class='spanPlus'>+</span></li>";  
                 // $divHtml .= "<li class='li-mysql-table dispTbl' point='". $array_pointer ."' host='" . $host_pointer . "' db='" . $db_pointer  . "'  table-name='" . $row['TABLE_NAME'] . "'><span>" . $row['TABLE_NAME'] . " | " . $num_rows . " rows</span><span class='spanPlus'>+</span></li>";  
                 // array_push($host_db_array[$host_pointer],[$host_serv[1],$db_bf,$row['TABLE_NAME']]);
                 // TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION
@@ -106,7 +106,7 @@ if ($route == 'display_data') { # display html data
                 $divHtml .= "<li host_numb=" . $host_pointer . " host=" . $hostName . " db=" . $row['TABLE_SCHEMA'] . "><span class='caret'>" . $row['TABLE_SCHEMA'] . "</span>";
                 $divHtml .= "<ul class='nested'>";
                 if( $row['TABLE_ROWS']==null ) { $num_rows = 0; } else { $num_rows = $row['TABLE_ROWS']; }
-                $divHtml .= "<li class='li-mysql-table dispTbl' point='". $array_pointer ."' host_numb='" . $host_pointer . "' db='" . $row['TABLE_SCHEMA']  . "'  table-name='" . $row['TABLE_NAME'] . "'><span>" . $row['TABLE_NAME'] . " | " . $num_rows . " rows</span><span class='spanPlus'>+</span>";  
+                $divHtml .= "<li class='li-mysql-table dispTbl display-fields' point='". $array_pointer ."' host_numb='" . $host_pointer . "' db='" . $row['TABLE_SCHEMA']  . "'  table-name='" . $row['TABLE_NAME'] . "'><span>" . $row['TABLE_NAME'] . " | " . $num_rows . " rows</span><span class='spanPlus'>+</span>";  
                 // $divHtml .= "<li class='li-mysql-table dispTbl' point='". $array_pointer ."' host='" . $host_pointer . "' db='" . $db_pointer  . "'  table-name='" . $row['TABLE_NAME'] . "'><span>" . $row['TABLE_NAME'] . " | " . $num_rows . " rows</span><span class='spanPlus'>+</span>";  
                 // array_push($host_db_array[$host_pointer],[$host_serv[1],$db_bf,$row['TABLE_NAME']]);
 
