@@ -27,8 +27,9 @@ function Fetch_canvas_data_array(php_sql_url) {
         console_Log ('data array["left"]: ','black','white',2);
         console.log(data_array['left']);
         console_Log ('data array["right"]: ','black','white',2);
-        console.log(data_array['right']);
+        console.log(data_array['right']);        
 */
+
         draw_table_canvas(data_array,data_array['table'],data_array['left'],data_array['right']);
 
     })    
@@ -64,13 +65,9 @@ function draw_table_canvas(tables_data_array,table_ppal,left_table,right_table) 
         // MAIN CALL 
         draw_db(cv_w,cv_h,table_ppal,left_table,right_table);
 
-        console_Log('-----------------Left Points Array-------------------','ble','white',2);
-        console.log(left_points_x_y_array);
-
-
 }
 
-function draw_pair_points_x_y(pair_points) {
+function draw_pair_points_array(pair_points) {
     var ctx = document.getElementById("canvas").getContext("2d");
     ctx.beginPath();
     /* testing */
@@ -80,6 +77,16 @@ function draw_pair_points_x_y(pair_points) {
     ctx.lineTo(pair_points[1][1]['x2'],pair_points[1][1]['y2']);            
     ctx.stroke();
 }
+
+function draw_pair_points_x_y(_ctx,x1,y1,x2,y2) {
+    _ctx.beginPath();
+    /* testing */
+    _ctx.moveTo(x1,y1);
+    _ctx.lineTo(x2,y2);  
+    _ctx.stroke();
+}
+
+
 
 /*  USED FOR "LEFT" AND "RIGHT" POINTS ARRAYS  */
 function draw_table_relations_lines(points_array) {
@@ -106,7 +113,7 @@ function draw_table_row(_ctxx,_text,_xx,_yy,_ww,_hh) {
     _ctxx.fillText(_text,_xx+(_ww/2),_yy+(_hh/2));
 }
 
-function draw_ppal_table(_ctx,_table,_x,_y,_w,_h){  
+function draw_ppal_table(_ctx,_table,_x,_y,_w,_h,cent_points_array){  
     console_Log('draw_table--> ','gray','white',2);      
     console.log(_table[0]);
     _x = _x - _w/2;    
@@ -117,7 +124,7 @@ function draw_ppal_table(_ctx,_table,_x,_y,_w,_h){
         txt = _table[i]['COL'];     
         draw_table_row(_ctx,txt,_x,_y,_w,_h);
         // fill ppal table points array   
-
+        cent_points_array.push({'tbl': _table[0]['TBL'],'col': _table[i]['COL'],'x1_Left':_x,'y1_Left':(_y+_h/2),'x2_Right':_x+_w/2 ,'y2_right':(_y-_h/2)});
         _y += _h;
     }
     txt = '';
@@ -135,13 +142,13 @@ function draw_left_table(_ctx,_table,_x,_y,_w,_h,lf_points_array){
         txt = _table[i]['COL'];    
         draw_table_row(_ctx,txt,_x,_y,_w,_h);
         //fill left points array
-        lf_points_array.push({'table': _table[0]['TBL'],'From': _table[i]['COL'],'x1':_x,'y1':(_y-_h/2),'To': _table[i]['REF_COL']});
+        lf_points_array.push({'tbl_From': _table[0]['TBL'],'col_From': _table[i]['COL'],'x1_From':_x+_w,'y1_From':(_y+_h/2),'col_To': _table[i]['REF_COL'],'tbl_To':_table[i]['REF_TBL']});
         _y += _h;
     }
     txt = '';
 }
 
-function draw_right_table(_ctx,_table,_x,_y,_w,_h){    
+function draw_right_table(_ctx,_table,_x,_y,_w,_h,rg_points_array){    
     console_Log('draw_right_table--> ','blue','white',2);          
     console.log(_table[0]);
     _x = _x - _w/2;    
@@ -149,10 +156,10 @@ function draw_right_table(_ctx,_table,_x,_y,_w,_h){
     draw_table_row_title(_ctx,_table[0]['REF_TBL'],_x,_y,_w,_h);
     _y += _h;
     for ( var i=0; i < _table.length; i++) {  
-        txt = _table[i]['REF_COL'];        
-        // let txt = _table[i]['TBL'] + ' - ' +_table[i]['COL'];        
+        txt = _table[i]['REF_COL'];
         draw_table_row(_ctx,txt,_x,_y,_w,_h);
-        // draw_table_row(_ctx,_table[i]['COL'],_x,_y,_w,_h);
+        //fill right points array
+        rg_points_array.push({'tbl_From': _table[0]['TBL'],'col_From': _table[i]['COL'],'x1_From':_x,'y1_From':(_y-_h/2),'col_To': _table[i]['REF_COL'],'tbl_To':_table[i]['REF_TBL']});
         _y += _h;
     }
     txt = '';
@@ -190,8 +197,8 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
     // testing
     // left_points_x_y_array.push({'table': 'table1','field': 'field1','x1':0,'y1':400});
 
-    //var center_points_x_y_array = [];
-    //var right_points_x_y_array = []; 
+    var center_points_x_y_array = [];
+    var right_points_x_y_array = []; 
 
     // array used to store data of different tables in left and right tables
     var temp_array = [];
@@ -207,7 +214,7 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
     
     // drawing main table in center position
     console_Log('---------------init ppal_table---------------','green','white',2);
-    draw_ppal_table(ctx,ppal_table_array,x,y,text_w,row_h);
+    draw_ppal_table(ctx,ppal_table_array,x,y,text_w,row_h,center_points_x_y_array);
 
     console_Log('--------------end of ppal table-----------------','red','white',2);
 
@@ -251,8 +258,8 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
         
         // falta un if de condición de borde en i
         draw_left_table(ctx,temp_array,x,y,text_w,row_h,left_points_x_y_array);
-        console.log('valor i: ' + i);
-        console.log('table_name i-2: ' + left_tables_array[i-2]['REF_TBL'] +  ' --- table_name i-1: ' +  left_tables_array[i-1]['REF_TBL']);
+//        console.log('valor i: ' + i);
+//        console.log('table_name i-2: ' + left_tables_array[i-2]['REF_TBL'] +  ' --- table_name i-1: ' +  left_tables_array[i-1]['REF_TBL']);
 
     }
 
@@ -289,7 +296,7 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
             }  
             else { 
                 
-                draw_right_table(ctx,temp_array,x,y,text_w,row_h);
+                draw_right_table(ctx,temp_array,x,y,text_w,row_h,right_points_x_y_array);
                 y += 100;                        
                 temp_array.length = 0;
                 temp_array.push(right_tables_array[i]); 
@@ -300,14 +307,46 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
         }
 
         // Chequear si falta un if de condición de borde en i
-        draw_right_table(ctx,temp_array,x,y,text_w,row_h);
-        console.log('valor i: ' + i);
-        console.log('table_name i-2: ' + right_tables_array[i-2]['REF_TBL'] +  ' --- table_name i-1: ' +  right_tables_array[i-1]['REF_TBL']);
+        draw_right_table(ctx,temp_array,x,y,text_w,row_h,right_points_x_y_array);
+//        console.log('valor i: ' + i);
+//        console.log('table_name i-2: ' + right_tables_array[i-2]['REF_TBL'] +  ' --- table_name i-1: ' +  right_tables_array[i-1]['REF_TBL']);
 
         console_Log('-----------------end of right tables-------------------','red','white',2);
     }
 
-    // draw_table_relations_lines(tables_pair_points);
+    console_Log('-----------------Left Points Array-------------------','blue','white',2);
+    console.log(left_points_x_y_array);
+    console_Log('-----------------Center Points Array-------------------','blue','white',2);
+    console.log(center_points_x_y_array);
+    console_Log('-----------------Right Points Array-------------------','blue','white',2);
+    console.log(right_points_x_y_array);
+
+    // draw table relations lines
+
+    // Left Side
+    var x_1=0;
+    var y_1=0;
+    var x_2=0;
+    var y_2=0;
+    var i=0;
+    var j=0;
+
+    for (i=0; i<left_points_x_y_array.length; i++ ) {
+        console.log('Table From: ' + left_points_x_y_array[i]['tbl_From'] + ' | x1: ' + left_points_x_y_array[i]['x1_From'] + ', y1: ' + left_points_x_y_array[i]['y1_From']);
+        x_1= left_points_x_y_array[i]['x1_From'];
+        y_1= left_points_x_y_array[i]['y1_From'];
+
+        // looking for point x_2,y_2 in central table
+        for (j=0; j<center_points_x_y_array.length; j++) {
+            if( center_points_x_y_array[j]['col'] == left_points_x_y_array[i]['col_To'] ) {
+                x_2= center_points_x_y_array[j]['x1_Left'];
+                y_2= center_points_x_y_array[j]['y1_Left'];;
+            }
+        }        
+
+        console.log('pair points---> x1:' + x_1+ ', y1: ' + y_1 + ',x2: ' + x_2 + ',y2: '+ y_2 )
+        draw_pair_points_x_y(ctx,x_1,y_1,x_2,y_2);
+    }  
 
 }
 
