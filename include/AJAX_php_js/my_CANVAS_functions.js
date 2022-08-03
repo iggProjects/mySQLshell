@@ -169,9 +169,9 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
     console.log('draw_db, cv_w: ' + w + ', h: ' + h);
     
     // canvas parameters
-    var canvas = document.getElementById("canvas");
-    
+    var canvas = document.getElementById("canvas");    
     var ctx = canvas.getContext("2d");
+    // clear canvas
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
     var fontsize = 20;
@@ -181,32 +181,26 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
     ctx.strokeStyle = "black"; // border color
     ctx.fillStyle = "blue";   // chars color            
     ctx.textAlign="center"; 
-    ctx.textBaseline = "middle";
-    
-    ctx.font = '15px arial';
-    
+    ctx.textBaseline = "middle";    
+    ctx.font = '15px arial';    
     ctx.strokeText('T A B L E',(w/2-10),25);
-
     ctx.font = '13px arial';
 
-    // 
+    // array used to store data of different tables in left and right tables
     var temp_array = [];
-    // temp_array.length=0;
+    
     // parameters to draw ppal_table_array
     var x = w/2;
     var y = 50; 
     
     // max length text of elements in table
     var max_large_text = 250;
-
     text_w = max_large_text;
     
+    // drawing main table in center position
     draw_table(ctx,ppal_table_array,x,y,text_w,row_h);
 
-   
-
-
-    // parameters to draw left_table_array
+    // Drawing left side of ppal table
     if ( left_tables_array.length > 0 ) {
 
         x = 20;
@@ -278,15 +272,13 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
             }    
 
         }
-        // CHEQUEAR CONDIC DE BORDE
-        //temp_array.push(right_tables_array[i]); 
+
         console.log('right temp_array ↓↓↓');
         console.log(temp_array);
         draw_right_table(ctx,temp_array,x,y,text_w,row_h);
 
         temp_array.length=0;
 
-        // draw_table(ctx,right_tables_array,x,y,text_w,row_h);
     }
 
 }
