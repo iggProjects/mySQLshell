@@ -72,7 +72,9 @@ function draw_table_canvas(tables_data_array,table_ppal,left_table,right_table) 
 
         console_Log('canvas width and height','','blue',1)
         console.log(cv_w + ' | ' + cv_h);
-        draw_db(cv_w,cv_h,table_ppal,left_table,right_table);          
+        draw_db(cv_w,cv_h,table_ppal,left_table,right_table);
+        
+        
            
         // Drawing lines area
         // arrays for append de (x,y) coordinates of source and destiny points to make respective "relation lines"                     
@@ -109,30 +111,55 @@ function draw_table_relations_lines(points_array) {
 
 }      
 
-function draw_table_row(_ctxx,_text,_xx,_yy,_ww,_hh) {
-    console.log('draw_table_row');
-    console.log('text: ' + _text)
-
-    _ctxx.strokeRect(_xx, _yy, _ww, _hh);
+function draw_table_row_title(_ctxx,_text,_xx,_yy,_ww,_hh) {
+    console.log('draw_table_row, text---> ' + _text);
+    _ctxx.fillStyle = "#99ffcc";
+    _ctxx.fillRect(_xx, _yy, _ww, _hh);  
+    _ctxx.strokeRect(_xx, _yy, _ww, _hh);  
+    _ctxx.fillStyle = "blue";
     _ctxx.fillText(_text,_xx+(_ww/2),_yy+(_hh/2));
 }
 
-function draw_table(_ctx,_table,_x,_y,_w,_h){
-    console.log('draw_table');
-    console.log(_table);  
-    console.log('_x: ' + _x);
-    console.log('_y: ' + _y);  
-    console.log('_w: ' + _w);
-    console.log('_h: ' + _h);
+function draw_table_row(_ctxx,_text,_xx,_yy,_ww,_hh) {
+    console.log('draw_table_row, text---> ' + _text);
+    _ctxx.strokeRect(_xx, _yy, _ww, _hh);
+    _ctxx.fillStyle = "black";
+    _ctxx.fillText(_text,_xx+(_ww/2),_yy+(_hh/2));
+}
 
-    _x = _x - _w/2;
+function draw_table(_ctx,_table,_x,_y,_w,_h){    
+    console_Log('draw_table data ↓↓','green','white',2);
+    console.log(_table);
+    _x = _x - _w/2;    
+    draw_table_row_title(_ctx,_table[0]['TBL'],_x,_y,_w,_h);
+    _y += _h;
     for ( var i=0; i < _table.length; i++) {  
-        draw_table_row(_ctx,_table[i]['COL'],_x,_y,_w,_h);
+        let txt = _table[i]['COL'];        
+        // let txt = _table[i]['TBL'] + ' - ' +_table[i]['COL'];        
+        draw_table_row(_ctx,txt,_x,_y,_w,_h);
+        // draw_table_row(_ctx,_table[i]['COL'],_x,_y,_w,_h);
+        _y += _h;
+    }
+}
+
+function draw_right_table(_ctx,_table,_x,_y,_w,_h){    
+    console_Log('draw_table data ↓↓','green','white',2);
+    console.log(_table);
+    _x = _x - _w/2;    
+    draw_table_row_title(_ctx,_table[0]['REF_TBL'],_x,_y,_w,_h);
+    _y += _h;
+    for ( var i=0; i < _table.length; i++) {  
+        let txt = _table[i]['REF_COL'];        
+        // let txt = _table[i]['TBL'] + ' - ' +_table[i]['COL'];        
+        draw_table_row(_ctx,txt,_x,_y,_w,_h);
+        // draw_table_row(_ctx,_table[i]['COL'],_x,_y,_w,_h);
         _y += _h;
     }
 }
 
 function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){    
+
+    // clear canvas for redrawing: https://stackoverflow.com/questions/2142535/how-to-clear-the-canvas-for-redrawing 
 
     console.log('array tables rel ↓↓');
     console_Log('array tables rel ↓↓','green','white',2);
@@ -143,8 +170,10 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
     
     // canvas parameters
     var canvas = document.getElementById("canvas");
-    canvas.innerHTML = "";
+    
     var ctx = canvas.getContext("2d");
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
     var fontsize = 20;
     var fontface = 'arial';
     var row_h = fontsize * 1.2;
@@ -171,12 +200,10 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
     var max_large_text = 250;
 
     text_w = max_large_text;
-    console.log('draw_db, ppal text_w: ' + text_w + ' | array length: ' + ppal_table_array.length);              
-    console.log('draw_db, text_w,row_h: ' + text_w + ', '+ row_h);              
     
     draw_table(ctx,ppal_table_array,x,y,text_w,row_h);
 
-/*    
+   
     // parameters to draw left_table_array
     x = 20;
     max_large_text = 230;
@@ -189,7 +216,7 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
     // Loop for differentiate distinct tables inside 'left_tables_array'
     
     temp_array.length=0;
-    var temp_tbl_name = left_tables_array[0].substr(0,left_tables_array[0].indexOf(" -"));
+    var temp_tbl_name = left_tables_array[0]['TBL'];
     // console.log('table name init -> ' +  temp_tbl_name);
     for ( var i=0; i<left_tables_array.length; i++ ) {
 
@@ -197,25 +224,19 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
         //console.log('table name -> ' + left_tables_array[i].substr(0,left_tables_array[i].indexOf(" -")));
         //console.log('table name -> ' + temp_tbl_name);
         
-        if ( temp_tbl_name == left_tables_array[i].substr(0,left_tables_array[i].indexOf(" -")) ) { 
+        if ( temp_tbl_name == left_tables_array[i]['TBL'] ) { 
             temp_array.push(left_tables_array[i]);            
         }  
-        else { 
-            
-            //console.log('temp_array');
-            //console.log(temp_array);            
+        else {             
             draw_table(ctx,temp_array,x,y,text_w,row_h);
             y += 100;            
             temp_array.length = 0;
             temp_array.push(left_tables_array[i]); 
-            temp_tbl_name = left_tables_array[i].substr(0,left_tables_array[i].indexOf(" -"));   
+            temp_tbl_name = left_tables_array[i]['TBL'];   
 
         }    
 
     }
-    // temp_array.push(left_tables_array[i]); 
-    //console.log('temp_array');
-    //console.log(temp_array);
     draw_table(ctx,temp_array,x,y,text_w,row_h);
 
 
@@ -223,52 +244,49 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
 
     // parameters to draw right_table_array
     x = w-20;
-    max_large_text = 230;
-
-     
+    max_large_text = 230;     
 
     text_w = max_large_text;
-    console.log('draw_db, right text_w: ' + text_w);              
+    // console.log('draw_db, right text_w: ' + text_w);              
     x = x - text_w/2;             
     y = 50;
 
+    //
     // Loop for differentiate distinct tables inside 'right_tables_array'
-    temp_array.length=0;
-    console.log('str: ' + right_tables_array[0] + ', substr posit: ' + right_tables_array[0].substr(right_tables_array[0].indexOf("- ")));
-    var temp_tbl_name = right_tables_array[0].substr(right_tables_array[0].indexOf("- ")+2,right_tables_array[0].length);
-    console.log('table name init ->' +  temp_tbl_name);
+    //
+    temp_array.length=0;        
+    temp_tbl_name = right_tables_array[0]['REF_TBL'];
+    console.log('rigth table name init --->' +  temp_tbl_name);
     
     for ( var i=0; i<right_tables_array.length; i++ ) {
-
-        console.log('step: ' + i);
-        console.log('table name -> ' + right_tables_array[i].substr(right_tables_array[i].indexOf("- ")+2,right_tables_array[0].length));
-        console.log('table name -> ' + temp_tbl_name);
-        
-        if ( temp_tbl_name == right_tables_array[i].substr(right_tables_array[i].indexOf("- ")+2,right_tables_array[0].length) ) { 
+       
+        if ( temp_tbl_name == right_tables_array[i]['REF_TBL'] ) { 
             temp_array.push(right_tables_array[i]);            
         }  
         else { 
             
-            console.log('temp_array');
-            console.log(temp_array);            
-            draw_table(ctx,temp_array,x,y,text_w,row_h);
-            y += 100;            
+            draw_right_table(ctx,temp_array,x,y,text_w,row_h);
+            y += 100;
+
+            console.log('right temp_array ↓↓↓');
+            console.log(temp_array);
+                    
             temp_array.length = 0;
             temp_array.push(right_tables_array[i]); 
-            temp_tbl_name = right_tables_array[i].substr(right_tables_array[i].indexOf("- ")+2,right_tables_array[0].length);
+            temp_tbl_name = right_tables_array[i]['REF_TBL'];
 
         }    
 
     }
     // CHEQUEAR CONDIC DE BORDE
-    temp_array.push(right_tables_array[i]); 
-    console.log('temp_array');
+    //temp_array.push(right_tables_array[i]); 
+    console.log('right temp_array ↓↓↓');
     console.log(temp_array);
-    draw_table(ctx,temp_array,x,y,text_w,row_h);
+    draw_right_table(ctx,temp_array,x,y,text_w,row_h);
 
     temp_array.length=0;
 
-    draw_table(ctx,right_tables_array,x,y,text_w,row_h);
-*/
+    // draw_table(ctx,right_tables_array,x,y,text_w,row_h);
+
 
 }
