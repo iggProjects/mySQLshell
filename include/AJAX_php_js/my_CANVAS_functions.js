@@ -204,89 +204,89 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
     draw_table(ctx,ppal_table_array,x,y,text_w,row_h);
 
    
+
+
     // parameters to draw left_table_array
-    x = 20;
-    max_large_text = 230;
+    if ( left_tables_array.length > 0 ) {
 
-    text_w = max_large_text;
-    console.log('draw_db, left text_w: ' + text_w);              
-    x = 20 + text_w/2;             
-    y = 50;  
+        x = 20;
+        max_large_text = 230;
 
-    // Loop for differentiate distinct tables inside 'left_tables_array'
-    
-    temp_array.length=0;
-    var temp_tbl_name = left_tables_array[0]['TBL'];
-    // console.log('table name init -> ' +  temp_tbl_name);
-    for ( var i=0; i<left_tables_array.length; i++ ) {
+        text_w = max_large_text;
+        console.log('draw_db, left text_w: ' + text_w);              
+        x = 20 + text_w/2;             
+        y = 50;  
 
-        //console.log('step: ' + i);
-        //console.log('table name -> ' + left_tables_array[i].substr(0,left_tables_array[i].indexOf(" -")));
-        //console.log('table name -> ' + temp_tbl_name);
+        // Loop for differentiate distinct tables inside 'left_tables_array'
         
-        if ( temp_tbl_name == left_tables_array[i]['TBL'] ) { 
-            temp_array.push(left_tables_array[i]);            
-        }  
-        else {             
-            draw_table(ctx,temp_array,x,y,text_w,row_h);
-            y += 100;            
-            temp_array.length = 0;
-            temp_array.push(left_tables_array[i]); 
-            temp_tbl_name = left_tables_array[i]['TBL'];   
-
-        }    
-
-    }
-    draw_table(ctx,temp_array,x,y,text_w,row_h);
-
-
-    // draw_table(ctx,left_tables_array,x,y,text_w,row_h);
-
-    // parameters to draw right_table_array
-    x = w-20;
-    max_large_text = 230;     
-
-    text_w = max_large_text;
-    // console.log('draw_db, right text_w: ' + text_w);              
-    x = x - text_w/2;             
-    y = 50;
-
-    //
-    // Loop for differentiate distinct tables inside 'right_tables_array'
-    //
-    temp_array.length=0;        
-    temp_tbl_name = right_tables_array[0]['REF_TBL'];
-    console.log('rigth table name init --->' +  temp_tbl_name);
-    
-    for ( var i=0; i<right_tables_array.length; i++ ) {
-       
-        if ( temp_tbl_name == right_tables_array[i]['REF_TBL'] ) { 
-            temp_array.push(right_tables_array[i]);            
-        }  
-        else { 
+        temp_array.length=0;
+        
+        var temp_tbl_name = left_tables_array[0]['TBL'];
+        // console.log('table name init -> ' +  temp_tbl_name);
+        for ( var i=0; i<left_tables_array.length; i++ ) {
             
-            draw_right_table(ctx,temp_array,x,y,text_w,row_h);
-            y += 100;
+            if ( temp_tbl_name == left_tables_array[i]['TBL'] ) { 
+                temp_array.push(left_tables_array[i]);            
+            }  
+            else {             
+                draw_table(ctx,temp_array,x,y,text_w,row_h);
+                y += 100;            
+                temp_array.length = 0;
+                temp_array.push(left_tables_array[i]); 
+                temp_tbl_name = left_tables_array[i]['TBL'];  
+            }    
 
-            console.log('right temp_array ↓↓↓');
-            console.log(temp_array);
-                    
-            temp_array.length = 0;
-            temp_array.push(right_tables_array[i]); 
-            temp_tbl_name = right_tables_array[i]['REF_TBL'];
-
-        }    
-
+        }
+        draw_table(ctx,temp_array,x,y,text_w,row_h);
     }
-    // CHEQUEAR CONDIC DE BORDE
-    //temp_array.push(right_tables_array[i]); 
-    console.log('right temp_array ↓↓↓');
-    console.log(temp_array);
-    draw_right_table(ctx,temp_array,x,y,text_w,row_h);
 
-    temp_array.length=0;
+    // Drawing right side of ppal table
+    if ( right_tables_array.length > 0 ) {
+        // parameters to draw right_table_array
+        x = w-20;
+        max_large_text = 230;     
 
-    // draw_table(ctx,right_tables_array,x,y,text_w,row_h);
+        text_w = max_large_text;
+        // console.log('draw_db, right text_w: ' + text_w);              
+        x = x - text_w/2;             
+        y = 50;
 
+        //
+        // Loop for differentiate distinct tables inside 'right_tables_array'
+        //
+        temp_array.length=0;        
+        temp_tbl_name = right_tables_array[0]['REF_TBL'];
+        console.log('rigth table name init --->' +  temp_tbl_name);
+        
+        for ( var i=0; i<right_tables_array.length; i++ ) {
+        
+            if ( temp_tbl_name == right_tables_array[i]['REF_TBL'] ) { 
+                temp_array.push(right_tables_array[i]);            
+            }  
+            else { 
+                
+                draw_right_table(ctx,temp_array,x,y,text_w,row_h);
+                y += 100;
+
+                console.log('right temp_array ↓↓↓');
+                console.log(temp_array);
+                        
+                temp_array.length = 0;
+                temp_array.push(right_tables_array[i]); 
+                temp_tbl_name = right_tables_array[i]['REF_TBL'];
+
+            }    
+
+        }
+        // CHEQUEAR CONDIC DE BORDE
+        //temp_array.push(right_tables_array[i]); 
+        console.log('right temp_array ↓↓↓');
+        console.log(temp_array);
+        draw_right_table(ctx,temp_array,x,y,text_w,row_h);
+
+        temp_array.length=0;
+
+        // draw_table(ctx,right_tables_array,x,y,text_w,row_h);
+    }
 
 }
