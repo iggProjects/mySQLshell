@@ -124,7 +124,7 @@ function draw_ppal_table(_ctx,_table,_x,_y,_w,_h,cent_points_array){
         txt = _table[i]['COL'];     
         draw_table_row(_ctx,txt,_x,_y,_w,_h);
         // fill ppal table points array   
-        cent_points_array.push({'tbl': _table[0]['TBL'],'col': _table[i]['COL'],'x1_Left':_x,'y1_Left':(_y+_h/2),'x2_Right':_x+_w/2 ,'y2_right':(_y-_h/2)});
+        cent_points_array.push({'tbl': _table[0]['TBL'],'col': _table[i]['COL'],'x1_Left':_x,'y1_Left':(_y+_h/2),'x2_Right':_x+_w ,'y2_Right':(_y+_h/2)});
         _y += _h;
     }
     txt = '';
@@ -159,7 +159,7 @@ function draw_right_table(_ctx,_table,_x,_y,_w,_h,rg_points_array){
         txt = _table[i]['REF_COL'];
         draw_table_row(_ctx,txt,_x,_y,_w,_h);
         //fill right points array
-        rg_points_array.push({'tbl_From': _table[0]['TBL'],'col_From': _table[i]['COL'],'x1_From':_x,'y1_From':(_y-_h/2),'col_To': _table[i]['REF_COL'],'tbl_To':_table[i]['REF_TBL']});
+        rg_points_array.push({'tbl_From': _table[0]['TBL'],'col_From': _table[i]['COL'],'x1_From':_x,'y1_From':(_y+_h/2),'col_To': _table[i]['REF_COL'],'tbl_To':_table[i]['REF_TBL']});
         _y += _h;
     }
     txt = '';
@@ -347,6 +347,42 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
         console.log('pair points---> x1:' + x_1+ ', y1: ' + y_1 + ',x2: ' + x_2 + ',y2: '+ y_2 )
         draw_pair_points_x_y(ctx,x_1,y_1,x_2,y_2);
     }  
+
+    // Right Side
+    x_1=0;
+    y_1=0;
+    x_2=0;
+    y_2=0;
+    i=0;
+    j=0;
+
+    for (i=0; i<center_points_x_y_array.length; i++ ) {
+        console_Log('center points array','black','white',2);
+        console.log(center_points_x_y_array[i]);        
+
+        // looking for point x_1,y_1 in central table, and x_2,y_2 in right table
+        for (j=0; j<right_points_x_y_array.length; j++) {
+
+            if( center_points_x_y_array[i]['col'] == right_points_x_y_array[j]['col_From'] ) {
+                console.log('entré con i,j: ' + i + ', '  + j);
+                x_1= center_points_x_y_array[i]['x2_Right'];
+                y_1= center_points_x_y_array[i]['y2_Right'];
+        
+                x_2= right_points_x_y_array[j]['x1_From'];
+                y_2= right_points_x_y_array[j]['y1_From'];;
+
+                console.log('pair points---> x1:' + x_1+ ', y1: ' + y_1 + ',x2: ' + x_2 + ',y2: '+ y_2 )
+                draw_pair_points_x_y(ctx,x_1,y_1,x_2,y_2);
+        
+            }
+
+        }        
+
+
+    }  
+
+
+
 
 }
 
