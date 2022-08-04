@@ -69,11 +69,11 @@ function openTree(host_arr) {
 
             // initialize the "ul-li" classes to  ul->"caret" & li->"nested"
             var listCaretCaretDown = document.getElementsByClassName("caret caret-down");
-            alert('lista caret caret-down: ' + listCaretCaretDown.length);  
+            //alert('lista caret caret-down: ' + listCaretCaretDown.length);  
             for (var i=0; i<listCaretCaretDown.length; i++ ) { listCaretCaretDown[i].classList.remove("caret-down") }
             
             var listNestedActive = document.getElementsByClassName("nested active");
-            alert('lista nested active: ' + listCaretCaretDown.length); 
+            //alert('lista nested active: ' + listCaretCaretDown.length); 
             for (var i=0; i<listNestedActive.length; i++ ) { listNestedActive[i].classList.remove("active") }   
 
             // update ul - li for DB selected
