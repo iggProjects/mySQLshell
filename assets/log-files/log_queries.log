@@ -24348,3 +24348,33 @@
  'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
 [4-Aug-2022 20:38:35] [Date: 2022-08-04 20:38:35 | root execute succesfully Sql Query in DB: penjub
  'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona'']
+[4-Aug-2022 20:40:59] [Date: 2022-08-04 20:40:59 | root connect succesfully to 'mysql']
+[4-Aug-2022 20:40:59] [Date: 2022-08-04 20:40:59 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[4-Aug-2022 20:41:05] [Date: 2022-08-04 20:41:05 | root connect succesfully to '127.0.0.1']
+[4-Aug-2022 20:41:05] [Date: 2022-08-04 20:41:05 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[4-Aug-2022 20:41:06] [Date: 2022-08-04 20:41:06 | root connect succesfully to 'mysql']
+[4-Aug-2022 20:41:06] [Date: 2022-08-04 20:41:06 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[4-Aug-2022 20:41:08] [Date: 2022-08-04 20:41:08 | root connect succesfully to 'mvc_example']
+[4-Aug-2022 20:41:08] [Date: 2022-08-04 20:41:08 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[4-Aug-2022 20:41:10] [Date: 2022-08-04 20:41:10 | root connect succesfully to 'penjub']
+[4-Aug-2022 20:41:10] [Date: 2022-08-04 20:41:10 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[4-Aug-2022 20:41:12] [Date: 2022-08-04 20:41:12 | root connect succesfully to 'employees']
+[4-Aug-2022 20:41:12] [Date: 2022-08-04 20:41:12 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[4-Aug-2022 20:41:18] [Date: 2022-08-04 20:41:18 | root connect succesfully to 'employees']
+[4-Aug-2022 20:41:18] [Date: 2022-08-04 20:41:18 | root execute succesfully show tables query
+ 'describe users;']
+[4-Aug-2022 20:41:21] [Date: 2022-08-04 20:41:21 | root connect succesfully to 'employees']
+[4-Aug-2022 20:41:21] [Date: 2022-08-04 20:41:21 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'users' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND REFERENCED_TABLE_NAME = 'users' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND TABLE_NAME = 'users'']
+[4-Aug-2022 20:41:21] [Date: 2022-08-04 20:41:21 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'users'']
+[4-Aug-2022 20:41:21] [Date: 2022-08-04 20:41:21 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND TABLE_NAME = 'users'']
+[4-Aug-2022 20:41:21] [Date: 2022-08-04 20:41:21 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND REFERENCED_TABLE_NAME = 'users'']
