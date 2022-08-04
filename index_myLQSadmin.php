@@ -384,6 +384,9 @@ echo "
 
         // read query
         var _query = document.getElementById("sql-query-area").value;   
+        
+        // delete char ';' at the end of query string 
+        if ( _query[_query.length-1] == ';' ) { _query = _query.slice(0, -1); }
 
         // IF to check: host and DB exists & query is not empty
         // capture host and db from tag -> #display-result-nav-title

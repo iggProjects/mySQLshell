@@ -51,13 +51,12 @@ function openTree(host_arr) {
             // get host name
             var hostName = document.getElementById('display-result-nav-title').getAttribute('host');
             // get DB name
-            var dbName = this.parentElement.getAttribute('db');
+            var dbName = this.parentElement.getAttribute('db');   // needed?????
 
             // clear html of 'der-console associated tag's'
             clearDerConsoleAreas();            
         
-            // tag for display host and DB
-           
+            // tag for display host and DB           
             document.getElementById('display-result-nav-title').innerHTML = 'Host: \"' + hostName + '\"' + ', DB: \"' + dbName + '\"';
 
             // document.getElementById('display-result-nav-title').setAttribute('host',hostName);
@@ -66,15 +65,25 @@ function openTree(host_arr) {
 
         /*  
          *   NOTE: This 2 statements open tree in DB in the left aside   
-        */    
-            this.parentElement.querySelector(".nested").classList.toggle("active");
-            this.classList.toggle("caret-down");
+        */           
+
+            // initialize the "ul-li" classes to  ul->"caret" & li->"nested"
+            var listCaretCaretDown = document.getElementsByClassName("caret caret-down");
+            alert('lista caret caret-down: ' + listCaretCaretDown.length);  
+            for (var i=0; i<listCaretCaretDown.length; i++ ) { listCaretCaretDown[i].classList.remove("caret-down") }
             
-            document.getElementById('p-comment').innerHTML='TABLES';        
+            var listNestedActive = document.getElementsByClassName("nested active");
+            alert('lista nested active: ' + listCaretCaretDown.length); 
+            for (var i=0; i<listNestedActive.length; i++ ) { listNestedActive[i].classList.remove("active") }   
+
+            // update ul - li for DB selected
+            this.parentElement.querySelector(".nested").classList.toggle("active");
+            this.classList.toggle("caret-down"); 
+            
             // tag for show tables of DB selected
             var table_param = document.getElementById('display-result-nav-title');
             var _tag= 'display_right_aside';   
-
+            document.getElementById('p-comment').innerHTML='TABLES';        
             Fetch_js(_tag,'./include/AJAX_php_js/ajax_ListTables.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db'));
             
         });
