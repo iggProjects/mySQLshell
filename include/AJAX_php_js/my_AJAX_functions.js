@@ -67,8 +67,12 @@ function openTree(host_arr) {
         */           
 
             if ( this.classList.contains("caret-down") ) {
+
                 this.parentElement.querySelector(".nested").classList.toggle("active");
                 this.classList.toggle("caret-down"); 
+                // clear display_right_aside 
+                document.getElementById('display_right_aside').innerHTML = '';
+
             } else {  // initialize the "ul-li" classes to  ul->"caret" & li->"nested" 
                 var listCaretCaretDown = document.getElementsByClassName("caret caret-down");            
                 for (var i=0; i<listCaretCaretDown.length; i++ ) { 
@@ -80,13 +84,15 @@ function openTree(host_arr) {
                 }         
                 this.parentElement.querySelector(".nested").classList.toggle("active");
                 this.classList.toggle("caret-down"); 
+
+                // tag for call ajax function to show tables of DB selected
+                var table_param = document.getElementById('display-result-nav-title');
+                var _tag= 'display_right_aside';   
+                document.getElementById('p-comment').innerHTML='TABLES';        
+                Fetch_js(_tag,'./include/AJAX_php_js/ajax_ListTables.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db'));
+
             }    
 
-            // tag for call ajax function to show tables of DB selected
-            var table_param = document.getElementById('display-result-nav-title');
-            var _tag= 'display_right_aside';   
-            document.getElementById('p-comment').innerHTML='TABLES';        
-            Fetch_js(_tag,'./include/AJAX_php_js/ajax_ListTables.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db'));
             
         });
     }

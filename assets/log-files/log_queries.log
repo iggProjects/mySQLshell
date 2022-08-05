@@ -25564,3 +25564,87 @@
 [5-Aug-2022 18:12:49] [Date: 2022-08-05 18:12:49 | root connect succesfully to 'probandocreardb']
 [5-Aug-2022 18:12:49] [Date: 2022-08-05 18:12:49 | root execute succesfully show tables query
  'SHOW TABLES;']
+[5-Aug-2022 18:17:17] [Date: 2022-08-05 18:17:17 | root connect succesfully to 'probandocreardb']
+[5-Aug-2022 18:17:17] [Date: 2022-08-05 18:17:17 | root execute succesfully show tables query
+ 'describe persons;']
+[5-Aug-2022 18:17:18] [Date: 2022-08-05 18:17:18 | root connect succesfully to 'probandocreardb']
+[5-Aug-2022 18:17:18] [Date: 2022-08-05 18:17:18 | root execute succesfully show tables query
+ 'describe persons;']
+[5-Aug-2022 18:17:20] [Date: 2022-08-05 18:17:20 | root connect succesfully to 'probandocreardb']
+[5-Aug-2022 18:17:20] [Date: 2022-08-05 18:17:20 | root execute succesfully show tables query
+ 'describe persons2;']
+[5-Aug-2022 18:17:24] [Date: 2022-08-05 18:17:24 | root connect succesfully to 'probandocreardb']
+[5-Aug-2022 18:17:24] [Date: 2022-08-05 18:17:24 | root execute succesfully Sql Query in DB: probandocreardb
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'persons2' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'probandocreardb' AND REFERENCED_TABLE_NAME = 'persons2' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'probandocreardb' AND TABLE_NAME = 'persons2'']
+[5-Aug-2022 18:17:24] [Date: 2022-08-05 18:17:24 | root execute succesfully Sql Query in DB: probandocreardb
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'persons2'']
+[5-Aug-2022 18:17:24] [Date: 2022-08-05 18:17:24 | root execute succesfully Sql Query in DB: probandocreardb
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'probandocreardb' AND TABLE_NAME = 'persons2'']
+[5-Aug-2022 18:17:24] [Date: 2022-08-05 18:17:24 | root execute succesfully Sql Query in DB: probandocreardb
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'probandocreardb' AND REFERENCED_TABLE_NAME = 'persons2'']
+[5-Aug-2022 18:17:31] [Date: 2022-08-05 18:17:31 | root connect succesfully to 'mylqsadmin_db']
+[5-Aug-2022 18:17:31] [Date: 2022-08-05 18:17:31 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[5-Aug-2022 18:17:33] [Date: 2022-08-05 18:17:33 | root connect succesfully to 'mylqsadmin_db']
+[5-Aug-2022 18:17:33] [Date: 2022-08-05 18:17:33 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[5-Aug-2022 18:17:34] [Date: 2022-08-05 18:17:34 | root connect succesfully to 'information_schema']
+[5-Aug-2022 18:17:34] [Date: 2022-08-05 18:17:34 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[5-Aug-2022 18:17:36] [Date: 2022-08-05 18:17:36 | root connect succesfully to 'information_schema']
+[5-Aug-2022 18:17:36] [Date: 2022-08-05 18:17:36 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[5-Aug-2022 18:17:38] [Date: 2022-08-05 18:17:38 | root connect succesfully to 'phpmyadmin']
+[5-Aug-2022 18:17:38] [Date: 2022-08-05 18:17:38 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[5-Aug-2022 18:17:39] [Date: 2022-08-05 18:17:39 | root connect succesfully to 'phpmyadmin']
+[5-Aug-2022 18:17:39] [Date: 2022-08-05 18:17:39 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[5-Aug-2022 18:17:47] [Date: 2022-08-05 18:17:47 | root connect succesfully to 'mylqsadmin_db']
+[5-Aug-2022 18:17:47] [Date: 2022-08-05 18:17:47 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[5-Aug-2022 18:17:48] [Date: 2022-08-05 18:17:48 | root connect succesfully to 'mylqsadmin_db']
+[5-Aug-2022 18:17:48] [Date: 2022-08-05 18:17:48 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[5-Aug-2022 18:19:35] [Date: 2022-08-05 18:19:35 | root connect succesfully to '127.0.0.1']
+[5-Aug-2022 18:19:35] [Date: 2022-08-05 18:19:35 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[5-Aug-2022 18:19:36] [Date: 2022-08-05 18:19:36 | root connect succesfully to 'mylqsadmin_db']
+[5-Aug-2022 18:19:36] [Date: 2022-08-05 18:19:36 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[5-Aug-2022 18:19:38] [Date: 2022-08-05 18:19:38 | root connect succesfully to 'mylqsadmin_db']
+[5-Aug-2022 18:19:38] [Date: 2022-08-05 18:19:38 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[5-Aug-2022 18:19:39] [Date: 2022-08-05 18:19:39 | root connect succesfully to 'mylqsadmin_db']
+[5-Aug-2022 18:19:39] [Date: 2022-08-05 18:19:39 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[5-Aug-2022 18:19:42] [Date: 2022-08-05 18:19:42 | root connect succesfully to 'mylqsadmin_db']
+[5-Aug-2022 18:19:42] [Date: 2022-08-05 18:19:42 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[5-Aug-2022 18:19:44] [Date: 2022-08-05 18:19:44 | root connect succesfully to 'mvc_example']
+[5-Aug-2022 18:19:44] [Date: 2022-08-05 18:19:44 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[5-Aug-2022 18:19:45] [Date: 2022-08-05 18:19:45 | root connect succesfully to 'mvc_example']
+[5-Aug-2022 18:19:45] [Date: 2022-08-05 18:19:45 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[5-Aug-2022 18:20:30] [Date: 2022-08-05 18:20:30 | root connect succesfully to '127.0.0.1']
+[5-Aug-2022 18:20:30] [Date: 2022-08-05 18:20:30 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[5-Aug-2022 18:20:31] [Date: 2022-08-05 18:20:31 | root connect succesfully to 'mvc_example']
+[5-Aug-2022 18:20:31] [Date: 2022-08-05 18:20:31 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[5-Aug-2022 18:20:33] [Date: 2022-08-05 18:20:33 | root connect succesfully to 'mvc_example']
+[5-Aug-2022 18:20:33] [Date: 2022-08-05 18:20:33 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[5-Aug-2022 18:22:22] [Date: 2022-08-05 18:22:22 | root connect succesfully to '127.0.0.1']
+[5-Aug-2022 18:22:22] [Date: 2022-08-05 18:22:22 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[5-Aug-2022 18:22:23] [Date: 2022-08-05 18:22:23 | root connect succesfully to 'mvc_example']
+[5-Aug-2022 18:22:23] [Date: 2022-08-05 18:22:23 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[5-Aug-2022 18:22:28] [Date: 2022-08-05 18:22:28 | root connect succesfully to 'mvc_example']
+[5-Aug-2022 18:22:28] [Date: 2022-08-05 18:22:28 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[5-Aug-2022 18:22:29] [Date: 2022-08-05 18:22:29 | root connect succesfully to 'mysql']
+[5-Aug-2022 18:22:29] [Date: 2022-08-05 18:22:29 | root execute succesfully show tables query
+ 'SHOW TABLES;']
