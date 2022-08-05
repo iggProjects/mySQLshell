@@ -12,18 +12,12 @@ IÑAKI - PENDIENTE AL 05-08-2022
 - backup desde consola MySql
   ( mysqldump -uroot -p  my_lqs_admin > my_lqs_admin.sql ) OJO CON CON ENCODE
 
-- Check toogle effect in DB-tables in left side tag "html_div_nav_izq" 
+- How to refresh DB Server? 
+  - when it is created a new DB
+  - when it is created a new user   
+
+- Check toogle effect in DB-tables in left side tag "html_div_nav_izq" ✔✔✔
   see function "openTree" (my_AJAX_functions.js lines 79 to 89)
-
-- Evaluar botones para ofrecer "máscaras" para queries tipo:
-    - SHOW CREATE TABLE 'myTable' versus Describe Table
-    SELECT, INSERT, UPDATE, DELETE, DROP, IMPORT, EXPORT, BACKUP, RESTORE  
-    - Check syntaxis, and change especial words to uppercase and color blue.... 
-        (SELECT, FROM, WHERE, INNER JOIN, ORDER BY, ....)  
-        Ej --> INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...);  
-        - y rellenamos a mano los datos de cada campo
-
-- backup y restore buttons         
 
 - PAGINATION FOR "SELECT REPORTS"
     https://stackoverflow.com/questions/20364349/pagination-using-mysql-limit-offset
@@ -31,7 +25,20 @@ IÑAKI - PENDIENTE AL 05-08-2022
 - first version for "help url" for troubles in mysql...  URL google para errores mysql
   - https://www.googleguide.com/linking.html
 
-- Chequear que lee table_param cuando haces click en btn "process query"
+- Creating a DB on localhost 
+  -   
+
+- Evaluar botones para ofrecer "máscaras" para queries tipo:
+  - SHOW CREATE TABLE 'myTable' versus Describe Table
+    SELECT, INSERT, UPDATE, DELETE, DROP, IMPORT, EXPORT, BACKUP, RESTORE  
+  - Check syntaxis, and change especial words to uppercase and color blue.... 
+        (SELECT, FROM, WHERE, INNER JOIN, ORDER BY, ....)  
+        Ej --> INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...);  
+        - y rellenamos a mano los datos de cada campo
+  - backup y restore buttons        
+
+- Chequear que lea table_param cuando haces click en btn "process query"
+
 - Al ejecutar "Clear Query" chequear que coloque los selectores en opc '0'  
 
 - HOST BASIC INFO WHEN IT IS SELECTED 
