@@ -10,23 +10,20 @@ IÑAKI - DARREN ( pendiente para version 1.0 )
 IÑAKI - PENDIENTE AL 05-08-2022
 
 - backup desde consola MySql
-  ( mysqldump -uroot -p  my_lqs_admin > my_lqs_admin.sql ) OJO CON CON ENCODE
+  ( mysqldump -uroot -p  my_lqs_admin > my_lqs_admin.sql ) OJO CON CHARSET
+
+- Check toogle effect in DB-tables in left side tag "html_div_nav_izq" ✔✔✔
+  see function "openTree" (my_AJAX_functions.js lines 79 to 89)
 
 - How to refresh DB Server? 
   - when it is created a new DB
   - when it is created a new user   
-
-- Check toogle effect in DB-tables in left side tag "html_div_nav_izq" ✔✔✔
-  see function "openTree" (my_AJAX_functions.js lines 79 to 89)
 
 - PAGINATION FOR "SELECT REPORTS"
     https://stackoverflow.com/questions/20364349/pagination-using-mysql-limit-offset
 
 - first version for "help url" for troubles in mysql...  URL google para errores mysql
   - https://www.googleguide.com/linking.html
-
-- Creating a DB on localhost 
-  -   
 
 - Evaluar botones para ofrecer "máscaras" para queries tipo:
   - SHOW CREATE TABLE 'myTable' versus Describe Table
