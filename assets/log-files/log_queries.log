@@ -24794,3 +24794,42 @@
 [5-Aug-2022 10:42:21] [Date: 2022-08-05 10:42:21 | inaki2022 connect succesfully to '8661316_laninaki22']
 [5-Aug-2022 10:42:21] [Date: 2022-08-05 10:42:21 | inaki2022 execute succesfully show tables query
  'SHOW TABLES;']
+[5-Aug-2022 10:45:12] [Date: 2022-08-05 10:45:12 | root connect succesfully to '127.0.0.1']
+[5-Aug-2022 10:45:12] [Date: 2022-08-05 10:45:12 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[5-Aug-2022 10:45:14] [Date: 2022-08-05 10:45:14 | root connect succesfully to 'mvc_example']
+[5-Aug-2022 10:45:14] [Date: 2022-08-05 10:45:14 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[5-Aug-2022 10:45:16] [Date: 2022-08-05 10:45:16 | root connect succesfully to 'mylqsadmin_db']
+[5-Aug-2022 10:45:16] [Date: 2022-08-05 10:45:16 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[5-Aug-2022 10:45:18] [Date: 2022-08-05 10:45:18 | root connect succesfully to 'mylqsadmin_db']
+[5-Aug-2022 10:45:18] [Date: 2022-08-05 10:45:18 | root execute succesfully show tables query
+ 'describe estado_usuarios;']
+[5-Aug-2022 10:45:21] [Date: 2022-08-05 10:45:21 | root connect succesfully to 'mylqsadmin_db']
+[5-Aug-2022 10:45:21] [Date: 2022-08-05 10:45:21 | root execute succesfully show tables query
+ 'describe usuarios;']
+[5-Aug-2022 10:45:23] [Date: 2022-08-05 10:45:23 | root connect succesfully to 'mylqsadmin_db']
+[5-Aug-2022 10:45:23] [Date: 2022-08-05 10:45:23 | root execute succesfully Select query in mylqsadmin_db
+ 'SELECT * FROM usuarios LIMIT 10;']
+[5-Aug-2022 10:45:24] [Date: 2022-08-05 10:45:24 | root connect succesfully to 'mylqsadmin_db']
+[5-Aug-2022 10:45:24] [Date: 2022-08-05 10:45:24 | root execute succesfully show tables query
+ 'describe usuarios;']
+[5-Aug-2022 10:45:37] [Date: 2022-08-05 10:45:37 | root connect succesfully to 'employees']
+[5-Aug-2022 10:45:37] [Date: 2022-08-05 10:45:37 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[5-Aug-2022 10:45:50] [Date: 2022-08-05 10:45:50 | root connect succesfully to 'mylqsadmin_db']
+[5-Aug-2022 10:45:50] [Date: 2022-08-05 10:45:50 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[5-Aug-2022 10:46:08] [Date: 2022-08-05 10:46:08 | root connect succesfully to 'my_lqs_admin']
+[5-Aug-2022 10:46:08] [Date: 2022-08-05 10:46:08 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[5-Aug-2022 10:46:27] [Date: 2022-08-05 10:46:27 | root connect succesfully to 'penjub']
+[5-Aug-2022 10:46:27] [Date: 2022-08-05 10:46:27 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[5-Aug-2022 10:46:39] [Date: 2022-08-05 10:46:39 | root connect succesfully to 'my_lqs_admin']
+[5-Aug-2022 10:46:39] [Date: 2022-08-05 10:46:39 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[5-Aug-2022 10:46:39] [Date: 2022-08-05 10:46:39 | root connect succesfully to 'penjub']
+[5-Aug-2022 10:46:39] [Date: 2022-08-05 10:46:39 | root execute succesfully show tables query
+ 'SHOW TABLES;']
