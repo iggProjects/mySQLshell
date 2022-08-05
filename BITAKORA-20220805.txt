@@ -18,6 +18,8 @@ IÑAKI - PENDIENTE AL 05-08-2022
 - How to refresh DB Server? 
   - when it is created a new DB
   - when it is created a new user   
+  - https://www.rkimball.com/how-to-refresh-database-in-mysql/
+  - https://stackoverflow.com/questions/3677376/update-local-server-mysql-database-from-the-server-mysql-database
 
 - PAGINATION FOR "SELECT REPORTS"
     https://stackoverflow.com/questions/20364349/pagination-using-mysql-limit-offset
