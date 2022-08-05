@@ -85,10 +85,9 @@ if ($route == 'display_data') { # display html data
     //$divHtml  = "<p>\$conex_db is: " . gettype($conex_db) . " | var_dump(\$conex_db)</p>";
     //$divHtml .= "<pre>" . var_dump($conex_db) . "</pre>";   
             
-    $thead_titles = ['#','Field'];   
+//    $thead_titles = ['#','Field'];   
     $cols = array();
     $i = 0;
-
     foreach ( $resultado as $key => $value) {        
         //echo $key . " - " . $value['Field'] . "<br>";
         $cols[$i]['Field'] = $value['Field']; 

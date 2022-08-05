@@ -31,21 +31,11 @@ if ( $_REQUEST['tblName'] ) {
     $dbtable = $_REQUEST['tblName']; 
 }
 
-/*
-if ( $dbhost == 'POAPMYSQL119.dns-servicio.com:3306' ) {
-    $dbuser = "inaki2022";
-    $dbpass = "Inaki@2022";
-    $dbcharset = 'utf8mb4';
-    $h=1;
-} elseif ( $dbhost == '127.0.0.1' ) {
-    $dbuser = "root";
-    $dbpass = "@mysql@";
-    $dbcharset = 'utf8mb4';
-    $h=2;
-} else {
-    // upssssss msg
+if ( $_REQUEST['page'] ) {
+    $page = $_REQUEST['page']; 
 }
-*/
+
+
 
 $dbuser  = $cfg_s['Servers'][$host_numb]['user'];
 $dbpass = $cfg_s['Servers'][$host_numb]['password'];
@@ -63,6 +53,7 @@ $divHtml = "";
 
 if ( gettype($conex_db) === 'object' ) {
 
+    // $page
     $select_query = "SELECT * FROM $dbtable LIMIT 10;";
     $resultado = SELECT_try_catch($conex_db,$dbname,$dbuser,$dbtable,$select_query,$log_queries_path);      
 
@@ -81,12 +72,8 @@ if ( gettype($conex_db) === 'object' ) {
 # HTML DATA FOR DIV
 if ($route == 'display_data') { # display html data   
 
-    //$divHtml  = "<p>\$conex_db is: " . gettype($conex_db) . " | var_dump(\$conex_db)</p>";
-    //$divHtml .= "<pre>" . var_dump($conex_db) . "</pre>";   
-            
-    //$thead_titles = [];        
-    // $thead_titles = ['#','Field','type','Null','Key','Default','Extra'];     
-    $query = "<span style='color:black;'>query:</span> \"" . $select_query . "\"";   
+    $query = "<span style='color:black;'>query: </span>" . $select_query . "";   
+    $thead_titles = $page;
     $divHtml .= displayTable($query,90,$thead_titles,$resultado);
 
 } else { # display error msq

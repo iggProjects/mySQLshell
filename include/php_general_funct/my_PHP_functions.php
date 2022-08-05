@@ -235,8 +235,20 @@
 
     function displayTable($_query,$table_width,$thead_titles_array,$data_array){
 
-        echo "<p style='margin-top:10px;  margin-bottom:10px; text-align:center; font-size:12px; color:#990000'>$_query</p>";
-        $i=1;
+        // put IF here (ex: if _query contains 'SELECT')
+        if ( str_contains($_query, 'SELECT') || str_contains($_query, 'select') ) {    
+            echo "<div class='pagination'>
+                <button class='select-btns' page='1'>First</button>
+                <button class='select-btns' page='-1'>Previous</button>
+                <button class='select-btns' page='+1'>Next</button>
+                <button class='select-btns' page='L'>Last</button>
+            </div>";        
+            echo "<p id='actualPage' page='" . $thead_titles_array . "' style='margin-top:5px;  margin-bottom:10px; text-align:center; font-size:12px; color:#990000'><span style='color:black;'>page: </span>" . $thead_titles_array . "</p>";
+        }    
+
+        echo "<p style='margin-top:5px;  margin-bottom:10px; text-align:center; font-size:12px; color:#990000'>$_query</p>";
+
+        $i=1;        
         echo "<table style='max-width: $table_width%;'>";          
         // echo "<table style='max-width: $table_width%; overflow:scroll;'>";          
         
@@ -266,17 +278,6 @@
 
         echo "</table>";
 
-/*
-        echo "<br><p style='color:blue;font-size:14px;'>Key's in \$data_array</p><br>";
-
-        $keys_val_data_array = "";
-        if ( count($data_array) > 0 ) {
-            foreach ( $data_array[0] as $key => $value ) {    
-                $keys_val_data_array .= $key . " | ";
-            }
-            echo "<p style='color:blue;font-size:10px;'>$keys_val_data_array</p><br>";
-        }
-*/
     }
 
 
