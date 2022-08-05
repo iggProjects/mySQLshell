@@ -230,8 +230,8 @@ echo "
                 // capture host and db from tag -> #display-result-nav-title
                 var table_param = document.getElementById('display-result-nav-title');                
 
-                if ( table_param.getAttribute('host') == null || table_param.getAttribute('db') == null ) { 
-                    alert('check if you select HOST and DB  ! 😎');                    
+                if ( table_param.getAttribute('host') == null ) { 
+                    alert('Please select a DB Server ! 😎');                    
                 } 
                 else {
                     // clear areas
