@@ -1,0 +1,58 @@
+IÑAKI - DARREN ( pendiente para version 1.0 )
+
+  1.- LOGIN
+  2.- HELP ERRORES
+  3.- DOWNLOAD
+  4.- README
+
+********************************************************************
+
+IÑAKI - PENDIENTE AL 05-08-2022
+
+- backup desde consola MySql
+  ( mysqldump -uroot -p  my_lqs_admin > my_lqs_admin.sql ) OJO CON CON ENCODE
+
+- Check toogle effect in DB-tables in left side tag "html_div_nav_izq" 
+  see function "openTree" (my_AJAX_functions.js lines 79 to 89)
+
+- Evaluar botones para ofrecer "máscaras" para queries tipo:
+    - SHOW CREATE TABLE 'myTable' versus Describe Table
+    SELECT, INSERT, UPDATE, DELETE, DROP, IMPORT, EXPORT, BACKUP, RESTORE  
+    - Check syntaxis, and change especial words to uppercase and color blue.... 
+        (SELECT, FROM, WHERE, INNER JOIN, ORDER BY, ....)  
+        Ej --> INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...);  
+        - y rellenamos a mano los datos de cada campo
+
+- backup y restore buttons         
+
+- PAGINATION FOR "SELECT REPORTS"
+    https://stackoverflow.com/questions/20364349/pagination-using-mysql-limit-offset
+
+- first version for "help url" for troubles in mysql...  URL google para errores mysql
+  - https://www.googleguide.com/linking.html
+
+- Chequear que lee table_param cuando haces click en btn "process query"
+- Al ejecutar "Clear Query" chequear que coloque los selectores en opc '0'  
+
+- HOST BASIC INFO WHEN IT IS SELECTED 
+  tag #left-aside
+
+BUTTONS FILTERS 
+  - FILTROS: check for type cols, cases 'BLOB' (example: mediumblob in 'tbl_arch_imagen_persona' in penjub)
+  - CASE sql query: filter scripts, some chars.....  
+
+- Permitir abrir make query apenas se selecciones el host 
+  - esto permitiría al root, o al administrador actuar sobre el servidor, sea para crear nuevas DB 
+    o para modificar DB, respaldar, eliminar, restore backups........
+  - OJO: esto solo debe ser una opción para usuarios root o administrador con todos los privilegios  
+  - Si seleccionamos un server, deberíamos acceder a la sql console. Por ejemplo, para crear una nueva DB en Localhost, 
+    y crear sus algunas tablas. Esto traería como consecuencia que debemos sustituir el query en ajax_Display_div_nav_izq 
+    (línea 68) $select_query = "SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;"; 
+
+- DB nativa de myLQSadmin: "my_sql_admin" 
+  - crear las primeras tablas usuarios, standard_queries, favorite_queries, .... ✔✔  - 
+  - standard queries aplican a cualquier DB (campos: id, user, comment, btn_name, query, creation_date)   
+  - "favorite" queries: insert-update-delete-drop
+    - Fields: id, user, db, comment, query
+
+- Pass CSS to SCSS, including in SCSS the "style's inside tag's; and then remove it.  

@@ -70,16 +70,45 @@ function openTree(host_arr) {
             // initialize the "ul-li" classes to  ul->"caret" & li->"nested"
             var listCaretCaretDown = document.getElementsByClassName("caret caret-down");
             //alert('lista caret caret-down: ' + listCaretCaretDown.length);  
-            for (var i=0; i<listCaretCaretDown.length; i++ ) { listCaretCaretDown[i].classList.remove("caret-down") }
+            console_Log('checking tags','black','white',2);
+            for (var i=0; i<listCaretCaretDown.length; i++ ) { 
+                console.log('id: ' + listCaretCaretDown[i].id);
+                listCaretCaretDown[i].classList.remove("caret-down"); 
+            }
             
             var listNestedActive = document.getElementsByClassName("nested active");
-            //alert('lista nested active: ' + listCaretCaretDown.length); 
-            for (var i=0; i<listNestedActive.length; i++ ) { listNestedActive[i].classList.remove("active") }   
+            //alert('lista nested active: ' + listCaretCaretDown.length);
+            console_Log('checking tags','black','white',2); 
+            for (var i=0; i<listNestedActive.length; i++ ) { 
+                console.log('id: ' + listNestedActive[i].id);
+                listNestedActive[i].classList.remove("active") 
+            }   
 
             // update ul - li for DB selected
+            // evaluate use if condition here when tables are visible (active and caret-down are in classList)
+            // using attribute 'display fields'???
+
+            // this.parentElement.classList.remove("caret-down")
+            // this.classList.remove("active")
+
+            //alert('caret-down is: ' + this.parentElement.classList.contains("caret caret-down"));
+            //alert('active is: ' + this.classList.contains("nested active"));
+/*
+            if( this.parentElement.classList.contains("caret-down") && this.classList.contains("active") ) {
+                alert('caret-down is: ' + this.parentElement.classList.contains("caret-down"));
+                alert('active is: ' + this.classList.contains("active"));
+            }
+            else {
+                this.parentElement.querySelector(".nested").classList.toggle("active");
+                this.classList.toggle("caret-down"); 
+            }
+*/
             this.parentElement.querySelector(".nested").classList.toggle("active");
             this.classList.toggle("caret-down"); 
-            
+
+
+
+
             // tag for show tables of DB selected
             var table_param = document.getElementById('display-result-nav-title');
             var _tag= 'display_right_aside';   

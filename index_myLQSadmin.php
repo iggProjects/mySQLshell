@@ -306,7 +306,7 @@ echo "
                 break;    
 
             default:    
-                alert('button selected has not method associated !');
+                alert('This function will be available' + '\n' + 'in version 1.1 !');
 
         }
        
