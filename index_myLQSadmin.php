@@ -404,12 +404,10 @@ echo "
             // reducir altura 'display-sql-console-Up'
             document.getElementById('display-sql-console-Up').style.height='15%';
             // aumentar altura 'display-sql-console-Down'
-            document.getElementById('display-sql-console-Down').style.height='73%';  
+            document.getElementById('display-sql-console-Down').style.height='73%';              
 
-            // verificar si último char es ;. Caso positivo, eliminar el char
-
-            // add 'LIMIT 20' if is a SELECT query (buscar palabra SELECT in string)
-            if ( _query.includes("select") || _query.includes("SELECT") ) { _query += ' LIMIT 20'; }     
+            // add 'LIMIT parameters' if is a SELECT query
+            if ( _query.includes("select") || _query.includes("SELECT") ) { _query += ' limit 0,15'; }     
             
             // read host name and db name
             var sql_host_db = document.getElementById('display-result-nav-title');
@@ -420,8 +418,8 @@ echo "
 
             // call AJAX for execute query            
             var _tag = 'display-sql-console-Down';
-            Fetch_js(_tag,'./include/AJAX_php_js/ajax_Sql_Query.php?host_numb=' + host_n + '&hostName='+sql_host_db.getAttribute('host')+'&dbName='+sql_host_db.getAttribute('db')+'&sql_query='+_query);
-            // Fetch_js(_tag,'./include/AJAX_php_js/ajax_Sql_Query.php?host_numb=' + host_n + '&hostName='+sql_host_db.getAttribute('host')+'&dbName='+sql_host_db.getAttribute('db')+'&sql_query='+_query+'&page=1');
+            //Fetch_js(_tag,'./include/AJAX_php_js/ajax_Sql_Query.php?host_numb=' + host_n + '&hostName='+sql_host_db.getAttribute('host')+'&dbName='+sql_host_db.getAttribute('db')+'&sql_query='+_query);
+            Fetch_js(_tag,'./include/AJAX_php_js/ajax_Sql_Query.php?host_numb=' + host_n + '&hostName='+sql_host_db.getAttribute('host')+'&dbName='+sql_host_db.getAttribute('db')+'&sql_query='+_query+'&page=1');
 
             // IF _query.includes("select")
             // class 'select-btns' -> put addEventListener("click"... 
@@ -434,22 +432,24 @@ echo "
 
 
     function displayPage(char) {
-        // var action = document.getElementById('actualPage').getAttribute('page');
+        var page = document.getElementById('actualPage').getAttribute('page');
         switch (char) {
 
             case '1':
-                alert(char); 
+                
+                alert('page: ' + page + ', action: ' + char); 
+
                 break;
 
             case '-1':
-                alert(char); 
+                alert('page: ' + page + ', action: ' + char);  
                 break; 
 
             case '+1':
-                alert(char); 
+                alert('page: ' + page + ', action: ' + char);  
                 break;   
             case 'L':
-                alert(char); 
+                alert('page: ' + page + ', action: ' + char);  
                 break;
 
             default:

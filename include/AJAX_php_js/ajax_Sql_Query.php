@@ -52,7 +52,10 @@ if ( gettype($conex_db) === 'object' ) {
     if ( str_contains($sql_query, 'SELECT') || str_contains($sql_query, 'select') ) {   
         $sql_query = $sql_query;
     }
-*/        
+*/    
+
+    $count_query = substr($sql_query, 0, strpos($sql_query, 'limit'));
+    $num_records = count(Sql_Query_try_catch($conex_db,$dbname,$dbuser,$count_query,$log_queries_path));
     $resultado = Sql_Query_try_catch($conex_db,$dbname,$dbuser,$sql_query,$log_queries_path);
     if ( gettype($resultado) === 'object' || gettype($resultado) === 'array' ) {  
         $route = "display_data";        
@@ -71,8 +74,8 @@ if ( gettype($conex_db) === 'object' ) {
 if ($route == 'display_data') { # display html data   
 
     if ( str_contains($sql_query, 'SELECT') || str_contains($sql_query, 'select') ) {   
-        $thead_titles['page'] = $page;
-        $thead_titles['totRecords'] = count($resultado);
+        $thead_titles['page'] = $page;        
+        $thead_titles['totRecords'] = $num_records;
     } 
 
     $query = "<span style='color:black;'>QUERY<br></span> \"" . $sql_query . "\"";   
