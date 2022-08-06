@@ -13472,3 +13472,7 @@ Stack trace:
 [06-Aug-2022 12:46:11 Europe/Berlin] PHP Warning:  Undefined variable $thead_titles in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 89
 [06-Aug-2022 12:46:11 Europe/Berlin] PHP Warning:  Undefined variable $divHtml in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 89
 [06-Aug-2022 12:46:12 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 44
+[06-Aug-2022 12:48:13 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[06-Aug-2022 12:48:15 Europe/Berlin] PHP Warning:  Undefined variable $thead_titles in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 89
+[06-Aug-2022 12:48:15 Europe/Berlin] PHP Warning:  Undefined variable $divHtml in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 89
+[06-Aug-2022 12:48:16 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 44

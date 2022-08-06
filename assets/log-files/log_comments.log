@@ -4267,3 +4267,5 @@ probando1 - file log_comments.log [ Wed May 11 2022-05-11 12:15:25 ]  [hello my 
 [6-Aug-2022 12:42:04] [HOST param: 2--root-@mysql@]
 [6-Aug-2022 12:46:09] [HOST param: 2--root-@mysql@]
 [6-Aug-2022 12:46:12] [HOST param: 2--root-@mysql@]
+[6-Aug-2022 12:48:13] [HOST param: 2--root-@mysql@]
+[6-Aug-2022 12:48:16] [HOST param: 2--root-@mysql@]

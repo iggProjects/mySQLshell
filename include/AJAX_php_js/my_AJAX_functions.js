@@ -197,7 +197,7 @@ function Fetch_js(tag,php_sql_url){
             //alert('buttons: ' + btnPaginationSelected.length);
             for (var i = 0; i < btnPaginationSelected.length; i++) {
                 btnPaginationSelected[i].addEventListener("click", ()=> {
-                    alert('btn pagination selected: ' + this.classList);
+                    alert('btn pagination selected: ' + this);
                     // alert('btn pagination selected: ' + btnPaginationSelected[i].innerHTML );
                 });
             }     

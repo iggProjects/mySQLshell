@@ -26369,3 +26369,15 @@
 [6-Aug-2022 12:46:12] [Date: 2022-08-06 12:46:12 | root connect succesfully to 'employees']
 [6-Aug-2022 12:46:12] [Date: 2022-08-06 12:46:12 | root execute succesfully Select query in employees
  'SELECT * FROM departments LIMIT 10;']
+[6-Aug-2022 12:48:12] [Date: 2022-08-06 12:48:12 | root connect succesfully to '127.0.0.1']
+[6-Aug-2022 12:48:13] [Date: 2022-08-06 12:48:13 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[6-Aug-2022 12:48:13] [Date: 2022-08-06 12:48:13 | root connect succesfully to 'employees']
+[6-Aug-2022 12:48:13] [Date: 2022-08-06 12:48:13 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[6-Aug-2022 12:48:15] [Date: 2022-08-06 12:48:15 | root connect succesfully to 'employees']
+[6-Aug-2022 12:48:15] [Date: 2022-08-06 12:48:15 | root execute succesfully show tables query
+ 'describe departments;']
+[6-Aug-2022 12:48:16] [Date: 2022-08-06 12:48:16 | root connect succesfully to 'employees']
+[6-Aug-2022 12:48:16] [Date: 2022-08-06 12:48:16 | root execute succesfully Select query in employees
+ 'SELECT * FROM departments LIMIT 10;']
