@@ -241,12 +241,12 @@
                 <button class='select-btns' onclick='displayPage(\"1\")'>First</button>
                 <button class='select-btns' onclick='displayPage(\"-1\")'>Previous</button>
                 <button class='select-btns' onclick='displayPage(\"+1\")'>Next</button>
-                <button class='select-btns' onclick='displayPage(\"L\")'>Last</button>
+                <button class='select-btns' onclick='displayPage(\"2\")'>Last</button>
             </div>";        
-            echo "<p id='actualPage' page='" . $thead_titles_array['page'] . "' totRecords='" . $thead_titles_array['totRecords'] . "' style='margin-top:5px;  margin-bottom:10px; text-align:center; font-size:12px; color:#990000'><span style='color:black;'>Total Records: " . $thead_titles_array['totRecords'] . "<br>page: " . $thead_titles_array['page'] . "</span></p>";      }    
+            echo "<p id='actualPage' page='" . $thead_titles_array['page'] . "' totRecords='" . $thead_titles_array['totRecords'] . "' style='margin-top:5px;  margin-bottom:10px; text-align:center; font-size:12px; color:#990000'><span style='color:black;'>Total Records: " . $thead_titles_array['totRecords'] . "<br>page: " . $thead_titles_array['page'] . "<br>QUERY</span></p>";      }    
 
-        echo "<p style='margin-top:5px;  margin-bottom:10px; text-align:center; font-size:12px; color:#990000'>$_query</p>";
-
+        echo "<p id='actualQuery' style='margin-top:0px;  margin-bottom:10px; text-align:center; font-size:12px; color:#990000'>$_query</p>";
+        
         $i=1;        
         echo "<table id='sql-table-result' style='max-width: $table_width%;'>";          
         // echo "<table style='max-width: $table_width%; overflow:scroll;'>";          

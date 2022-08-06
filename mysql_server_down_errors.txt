@@ -8,20 +8,27 @@
 [mysql] 	If you need more help, copy and post this
 [mysql] 	entire log window on the forums
 
+[ERROR] InnoDB: Your database may be corrupt or you may have copied the InnoDB tablespace but not the InnoDB log files. 
+Please refer to https://mariadb.com/kb/en/library/innodb-recovery-modes/ for information about forcing recovery.
+
+2022-08-06 21:46:16 0 [ERROR] InnoDB: Operating system error number 2 in a file operation.
+2022-08-06 21:46:16 0 [Note] InnoDB: Some operating system error numbers are described at https://mariadb.com/kb/en/library/operating-system-error-codes/
+
+
 https://stackoverflow.com/questions/18022809/how-to-solve-error-mysql-shutdown-unexpectedly
 
   IMPORTANT: do NOT delete ibdata1 file. You could destroy all your databases.
 
   Instead, first try using the MySQL backup folder which is included with XAMPP. So do next steps:
 
+  0.- EN PHMYADMIN/CONFIG.INC.PHP, CAMBIAR CLAVE POR '' PARA USUARIO ROOT EN LOCALHOST
   1.- Rename folder mysql/data to mysql/data_old
   2.- Make a copy of mysql/backup folder and name it as mysql/data
   3.- Copy all your database folders from mysql/data_old into mysql/data (except mysql, performance_schema, and phpmyadmin folders)
   4.- Copy mysql/data_old/ibdata1 file into mysql/data folder
   5.- Start MySQL from XAMPP control panel
 
-  LUEGO DE REALIZAR LOS PASOS ANTERIORES, HACER:
-  0.- EN PHMYADMIN/CONFIG.INC.PHP, CAMBIAR CLAVE POR '' PARA USUARIO ROOT EN LOCALHOST  
+  LUEGO DE REALIZAR LOS PASOS ANTERIORES, HACER:  
   1.- INGRESAR EN "phpmyadmin";
   2.- REPARAR EN MYSQL LA TABLE "DB";
   3.- VOLVER A COLOCAR LA CLAVE DE ROOT EN LOCALHOST Y 127.0.0.1

@@ -22,6 +22,9 @@ IÑAKI - PENDIENTE AL 05-08-2022
   - https://stackoverflow.com/questions/3677376/update-local-server-mysql-database-from-the-server-mysql-database
 
 - PAGINATION FOR "SELECT REPORTS"
+    Sustituir ajax_ViewTbl por ajax_Sql_Query y así eliminamos duplicidad ???? 
+      SI, porque estamos en botones, y la tabla ya está en el query, pero ojo hay que mandar el tag como post value  !!!
+
     https://stackoverflow.com/questions/20364349/pagination-using-mysql-limit-offset
 
 - first version for "help url" for troubles in mysql...  URL google para errores mysql

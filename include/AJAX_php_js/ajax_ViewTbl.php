@@ -49,13 +49,20 @@ $route = "";
 $error_msg = "MySql error was found";
 $divHtml = "";
 $thead_titles = [];
+$rec_numb = 0;
 
 if ( gettype($conex_db) === 'object' ) {
 
-    // $page
-    $select_query = "SELECT * FROM $dbtable limit 0,10;";
-    $count_query = substr($select_query, 0, strpos($select_query, 'limit'));
-    $num_records = count(Sql_Query_try_catch($conex_db,$dbname,$dbuser,$count_query,$log_queries_path));
+    // calculate record number from page selected
+
+    //$count_query = substr($select_query, 0, strpos($select_query, 'limit'));
+    $count_query = "select count(*) as numb from $dbtable";  
+    $records = Sql_Query_try_catch($conex_db,$dbname,$dbuser,$count_query,$log_queries_path);
+    $num_records = $records[0]['numb'];
+
+    // $num_records = count(Sql_Query_try_catch($conex_db,$dbname,$dbuser,$count_query,$log_queries_path));
+
+    $select_query = "SELECT * FROM $dbtable limit $rec_numb,10;";
 
     $resultado = SELECT_try_catch($conex_db,$dbname,$dbuser,$dbtable,$select_query,$log_queries_path);      
 
@@ -77,8 +84,8 @@ if ($route == 'display_data') { # display html data
     $thead_titles['page'] = $page;        
     $thead_titles['totRecords'] = $num_records;
 
-    $query = "<span style='color:black;'>query: </span>" . $select_query . "";   
-    $divHtml .= displayTable($query,90,$thead_titles,$resultado);
+    // $query = "<span style='color:black;'>query: </span>" . $select_query . "";   
+    $divHtml .= displayTable($select_query,90,$thead_titles,$resultado);
 
 } else { # display error msq
 

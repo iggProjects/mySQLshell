@@ -211,6 +211,7 @@ echo "
                 if ( table_param.getAttribute('table') == null ) 
                     { alert( 'please, select a table' ); } 
                 else {    
+                    // Check if actualPage is active
                     if ( document.getElementById('display-sql-console-Down').classList.contains('showDiv') ) { _tag = 'display-sql-console-Down'; }                         
                     Fetch_js(_tag,'./include/AJAX_php_js/ajax_ViewTbl.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table')+'&page=1');
                 }
@@ -389,10 +390,12 @@ echo "
 
         // IF to check: host and DB exists & query is not empty
         // capture host and db from tag -> #display-result-nav-title
-        var table_param = document.getElementById('display-result-nav-title');
-        let host_n = table_param.getAttribute('host_numb');
+        // var table_param = document.getElementById('display-result-nav-title');
+        var sql_host_db = document.getElementById('display-result-nav-title');
+        let host_n = sql_host_db.getAttribute('host_numb');
 
-        if ( _query == "" || table_param.getAttribute('host') == null || table_param.getAttribute('db') == null ) { 
+        if ( _query == "" || sql_host_db.getAttribute('host') == null || sql_host_db.getAttribute('db') == null ) { 
+        //if ( _query == "" || table_param.getAttribute('host') == null || table_param.getAttribute('db') == null ) { 
             alert('check if you select HOST and DB and you write an sql query ! 😎') 
         } else {
 
@@ -410,7 +413,7 @@ echo "
             if ( _query.includes("select") || _query.includes("SELECT") ) { _query += ' limit 0,15'; }     
             
             // read host name and db name
-            var sql_host_db = document.getElementById('display-result-nav-title');
+            // var sql_host_db = document.getElementById('display-result-nav-title');
             var hostName = sql_host_db.getAttribute('host');
             var dbName = sql_host_db.getAttribute('db');
 
@@ -425,7 +428,6 @@ echo "
             // class 'select-btns' -> put addEventListener("click"... 
             // Fetch....
 
-
         }
 
     }    
@@ -433,29 +435,58 @@ echo "
 
     function displayPage(char) {
         var page = document.getElementById('actualPage').getAttribute('page');
+        var table_param = document.getElementById('display-result-nav-title');
+        var query = document.getElementById("actualQuery").textContent;  
+        var totRecords = document.getElementById('actualPage').getAttribute('totRecords');
+        var rec_numb = 0;
+        var newPage = 1;
+
+        //alert("display_sql_result: " + document.getElementById("display_sql_result").classList);
+        //alert("display-sql-console-Down: " + document.getElementById("display-sql-console-Down").classList);
+
         switch (char) {
 
             case '1':
-                
-                alert('page: ' + page + ', action: ' + char); 
-
+                page = 1;
+                alert('Query: ' + query + ', page: ' + page + ', rec_numb: ' + rec_numb + ', action: ' + char); 
                 break;
 
-            case '-1':
-                alert('page: ' + page + ', action: ' + char);  
+            case '-1':                
+                if ( parseInt(page) > 1 ) { 
+                    page = parseInt(page) -1 ;
+                    rec_numb = (page-1) * 15;
+                }
+                alert('Query: ' + query + ', page: ' + page + ', rec_numb: ' + rec_numb + ', action: ' + char); 
                 break; 
 
             case '+1':
-                alert('page: ' + page + ', action: ' + char);  
+                page = parseInt(page);
+                rec_numb = page * 15;
+                alert('Query: ' + query + ', page: ' + (page+1) + ', rec_numb: ' + rec_numb + ', action: ' + char); 
                 break;   
-            case 'L':
-                alert('page: ' + page + ', action: ' + char);  
+
+            case '2':
+                page = Math.floor(totRecords / 15);
+                rec_numb = page * 15;
+                alert('Query: ' + query + ', page: ' + (page +1) + ', rec_numb: ' + rec_numb + ', action: ' + char); 
                 break;
 
             default:
                 break;  
 
         }    
+
+        
+        // tag's:  display_sql_result and display-sql-console-Down   
+        if ( document.getElementById('display_sql_result').classList.contains('showDiv') ) {
+            var tag = 'display_sql_result';
+            //Fetch_js(tag,'./include/AJAX_php_js/ajax_ViewTbl.php?host_numb=' + table_param.getAttribute('host_numb') + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&sql_query='+query+'&rec_numb='+rec_numb);
+        } else if ( document.getElementById('display-sql-console-Down').classList.contains('showDiv') )  {
+            var tag = 'display-sql-console-Down'; 
+            //Fetch_js(tag,'./include/AJAX_php_js/ajax_Sql_Query.php?host_numb=' + table_param.getAttribute('host_numb') + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&sql_query='+query+'&rec_numb='+rec_numb);
+        } else { 
+            // upssssss
+        } 
 
     }
 
