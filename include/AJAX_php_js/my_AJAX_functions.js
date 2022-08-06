@@ -178,8 +178,7 @@ function Fetch_js(tag,php_sql_url){
             var querySelected = document.getElementById("std-queriesList");
             // var tbl = document.getElementById("display-result-nav-title").getAttribute('table');
             querySelected.addEventListener("click", () => {
-                querySelected.addEventListener("change", () => {  
-                    
+                querySelected.addEventListener("change", () => {                      
                     if (querySelected.value != '' ) {    
                         const relations_query = querySelected.value;
                         document.getElementById('sql-query-area').value = relations_query;
@@ -193,15 +192,17 @@ function Fetch_js(tag,php_sql_url){
         
         // listeners for select-btns
         if ( php_sql_url.includes("page=") ) {
-            var btnPaginationSelected = document.getElementsByClassName("select-btns");
+            var paginationBtnSelected = document.querySelectorAll(".select-btns");   
+            // var btnPaginationSelected = document.getElementsByClassName("select-btns");
             //alert('buttons: ' + btnPaginationSelected.length);
-            for (var i = 0; i < btnPaginationSelected.length; i++) {
-                btnPaginationSelected[i].addEventListener("click", ()=> {
-                    alert('btn pagination selected: ' + this);
+            for (var i = 0; i < paginationBtnSelected.length; i++) {
+                paginationBtnSelected[i].addEventListener("click", ()=> {
+                    var btnSelected = this.classList;
+                    alert('btn pagination selected: ' + btnSelected);
                     // alert('btn pagination selected: ' + btnPaginationSelected[i].innerHTML );
                 });
             }     
-            //alert('buttons: ' + btnPaginationSelected.length);
+            alert('buttons: ' + paginationBtnSelected.length);
         }
 
     })

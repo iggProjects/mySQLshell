@@ -236,7 +236,9 @@
     function displayTable($_query,$table_width,$thead_titles_array,$data_array){
 
         // put IF here (ex: if _query contains 'SELECT')
-        if ( str_contains($_query, 'SELECT') || str_contains($_query, 'select') ) {    
+        if ( str_contains($_query, 'SELECT') || str_contains($_query, 'select') ) {   
+
+    /*        
             echo "<div class='pagination'>
                 <button class='select-btns' page='1'>First</button>
                 <button class='select-btns' page='-1'>Previous</button>
@@ -244,6 +246,7 @@
                 <button class='select-btns' page='L'>Last</button>
             </div>";        
             echo "<p id='actualPage' page='" . $thead_titles_array . "' style='margin-top:5px;  margin-bottom:10px; text-align:center; font-size:12px; color:#990000'><span style='color:black;'>page: </span>" . $thead_titles_array . "</p>";
+    */
         }    
 
         echo "<p style='margin-top:5px;  margin-bottom:10px; text-align:center; font-size:12px; color:#990000'>$_query</p>";

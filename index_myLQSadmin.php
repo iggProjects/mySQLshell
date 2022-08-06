@@ -93,7 +93,14 @@ echo "
 
                             <div class='display-result-nav'><p id='display-result-nav-title'></p></div> 
 
-                            <div id='display_sql_result' class='showDiv'></div>
+                            <div id='display_sql_result' class='showDiv'>
+                                <div class='pagination'>
+                                    <button class='select-btns' page='1'>First</button>
+                                    <button class='select-btns' page='-1'>Previous</button>
+                                    <button class='select-btns' page='+1'>Next</button>
+                                    <button class='select-btns' page='L'>Last</button>
+                                </div>  
+                            </div>
 
                             <div id='display-sql-console-Up' class='hideDiv my-scroll-bar'>
 
@@ -131,7 +138,16 @@ echo "
 
                             </div>
 
-                            <div id='display-sql-console-Down' class='my-scroll-bar hideDiv' placeholder='query result area' style='color:blue;'>____ query result area ____</div>
+                            <div id='display-sql-console-Down' class='my-scroll-bar hideDiv' placeholder='query result area' style='color:blue;'>____ query result area ____
+                                <div class='pagination'>
+                                    <button class='select-btns' page='1'>First</button>
+                                    <button class='select-btns' page='-1'>Previous</button>
+                                    <button class='select-btns' page='+1'>Next</button>
+                                    <button class='select-btns' page='L'>Last</button>
+                                </div>";
+                                echo "<p id='actualPage' page='" . $thead_titles_array . "' style='margin-top:5px;  margin-bottom:10px; text-align:center; font-size:12px; color:#990000'><span style='color:black;'>page: </span>" . $thead_titles_array . "</p>";
+                                echo "<div id='display-sql-console-Down-result'></div>
+                            </div>
                         
                         </div>";
 
@@ -421,7 +437,8 @@ echo "
             // alert('hostName: ' + hostName + ', dnName: ' + dbName);
 
             // call AJAX for execute query
-            var _tag = 'display-sql-console-Down';
+            var _tag = 'display-sql-console-Down-result';
+            // var _tag = 'display-sql-console-Down';
             Fetch_js(_tag,'./include/AJAX_php_js/ajax_Sql_Query.php?host_numb=' + host_n + '&hostName='+sql_host_db.getAttribute('host')+'&dbName='+sql_host_db.getAttribute('db')+'&sql_query='+_query);
 
             // IF _query.includes("select")
