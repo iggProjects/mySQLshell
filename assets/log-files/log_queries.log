@@ -28153,3 +28153,49 @@
 [7-Aug-2022 00:18:58] [Date: 2022-08-07 00:18:58 | root connect succesfully to 'information_schema']
 [7-Aug-2022 00:18:58] [Date: 2022-08-07 00:18:58 | root execute succesfully show tables query
  'SHOW TABLES;']
+[7-Aug-2022 00:20:46] [Date: 2022-08-07 00:20:46 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 00:20:46] [Date: 2022-08-07 00:20:46 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 00:20:47] [Date: 2022-08-07 00:20:47 | root connect succesfully to 'employees']
+[7-Aug-2022 00:20:47] [Date: 2022-08-07 00:20:47 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 00:20:50] [Date: 2022-08-07 00:20:50 | root connect succesfully to 'employees']
+[7-Aug-2022 00:20:50] [Date: 2022-08-07 00:20:50 | root execute succesfully show tables query
+ 'describe dept_manager;']
+[7-Aug-2022 00:20:51] [Date: 2022-08-07 00:20:51 | root connect succesfully to 'employees']
+[7-Aug-2022 00:20:51] [Date: 2022-08-07 00:20:51 | root execute succesfully Sql Query in DB: employees
+ 'select count(*) as numb from dept_manager']
+[7-Aug-2022 00:20:51] [Date: 2022-08-07 00:20:51 | root execute succesfully Select query in employees
+ 'SELECT * FROM dept_manager limit 0,10;']
+[7-Aug-2022 00:20:53] [Date: 2022-08-07 00:20:53 | root connect succesfully to 'my_lqs_admin']
+[7-Aug-2022 00:20:53] [Date: 2022-08-07 00:20:53 | root connect succesfully to 'employees']
+7-Aug-2022 00:20:53] [Date: 2022-08-07 00:20:53 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[7-Aug-2022 00:20:53] [Date: 2022-08-07 00:20:53 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 00:21:05] [Date: 2022-08-07 00:21:05 | root connect succesfully to 'employees']
+[7-Aug-2022 00:21:05] [Date: 2022-08-07 00:21:05 | root execute succesfully Sql Query in DB: employees
+ 'select * from posts']
+[7-Aug-2022 00:21:05] [Date: 2022-08-07 00:21:05 | root execute succesfully Sql Query in DB: employees
+ 'select * from posts limit 0,15']
+[7-Aug-2022 00:21:12] [Date: 2022-08-07 00:21:12 | root connect succesfully to 'employees']
+[7-Aug-2022 00:21:12] [Date: 2022-08-07 00:21:12 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'dept_manager' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND REFERENCED_TABLE_NAME = 'dept_manager' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND TABLE_NAME = 'dept_manager'']
+[7-Aug-2022 00:21:12] [Date: 2022-08-07 00:21:12 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'dept_manager'']
+[7-Aug-2022 00:21:12] [Date: 2022-08-07 00:21:12 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND TABLE_NAME = 'dept_manager'']
+[7-Aug-2022 00:21:12] [Date: 2022-08-07 00:21:12 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND REFERENCED_TABLE_NAME = 'dept_manager'']
+[7-Aug-2022 00:21:32] [Date: 2022-08-07 00:21:32 | root connect succesfully to 'employees']
+[7-Aug-2022 00:21:32] [Date: 2022-08-07 00:21:32 | root execute succesfully show tables query
+ 'describe posts;']
+[7-Aug-2022 00:21:34] [Date: 2022-08-07 00:21:34 | root connect succesfully to 'employees']
+[7-Aug-2022 00:21:34] [Date: 2022-08-07 00:21:34 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'posts' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND REFERENCED_TABLE_NAME = 'posts' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND TABLE_NAME = 'posts'']
+[7-Aug-2022 00:21:34] [Date: 2022-08-07 00:21:34 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'posts'']
+[7-Aug-2022 00:21:34] [Date: 2022-08-07 00:21:34 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND TABLE_NAME = 'posts'']
+[7-Aug-2022 00:21:34] [Date: 2022-08-07 00:21:34 | root execute succesfully Sql Query in DB: employees
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND REFERENCED_TABLE_NAME = 'posts'']
