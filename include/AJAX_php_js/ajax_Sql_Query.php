@@ -31,29 +31,13 @@ if ( $_REQUEST['sql_query'] ) {
     $sql_query = $_REQUEST['sql_query']; 
 }
 
-/*
-if ( $dbhost == 'POAPMYSQL119.dns-servicio.com:3306' ) {
-    $dbuser = "inaki2022";
-    $dbpass = "Inaki@2022";
-    $dbcharset = 'utf8mb4';
-    $h=1;
-} elseif ( $dbhost == '127.0.0.1' ) {
-    $dbuser = "root";
-    $dbpass = "@mysql@";
-    $dbcharset = 'utf8mb4';
-    $h=2;
-} else {
-    // upssssss msg
+if ( $_REQUEST['page'] ) {
+    $page = $_REQUEST['page']; 
 }
-*/
 
 $dbuser  = $cfg_s['Servers'][$host_numb]['user'];
 $dbpass = $cfg_s['Servers'][$host_numb]['password'];
 $dbcharset = 'utf8mb4';
-
-// $msg = 'HOST param: ' . $_REQUEST['host_numb'] . '-'. $hostName . '-' . $dbuser . '-' . $dbpass;
-// My_Log_Message ($msg,$log_comments_path);
-
 
 # connection to DB using $db_parameters
 $conex_db = try_catch_connect_host_db($dbhost,$dbname,$dbuser,$dbpass,$dbcharset,$log_queries_path);
@@ -61,10 +45,14 @@ $conex_db = try_catch_connect_host_db($dbhost,$dbname,$dbuser,$dbpass,$dbcharset
 $route = "";
 $error_msg = "MySql error was found";
 $divHtml = "";
+$thead_titles = [];
 
 if ( gettype($conex_db) === 'object' ) {
-    
-    //$resultado = SELECT_try_catch($conex_db,$dbname,$dbuser,$dbtable,$select_query,$log_queries_path);      
+/*
+    if ( str_contains($sql_query, 'SELECT') || str_contains($sql_query, 'select') ) {   
+        $sql_query = $sql_query;
+    }
+*/        
     $resultado = Sql_Query_try_catch($conex_db,$dbname,$dbuser,$sql_query,$log_queries_path);
     if ( gettype($resultado) === 'object' || gettype($resultado) === 'array' ) {  
         $route = "display_data";        
@@ -82,11 +70,13 @@ if ( gettype($conex_db) === 'object' ) {
 # HTML DATA FOR DIV
 if ($route == 'display_data') { # display html data   
 
-    //$divHtml  = "<p>\$conex_db is: " . gettype($conex_db) . " | var_dump(\$conex_db)</p>";
-    //$divHtml .= "<pre>" . var_dump($conex_db) . "</pre>";   
-            
+    if ( str_contains($sql_query, 'SELECT') || str_contains($sql_query, 'select') ) {   
+        $thead_titles['page'] = $page;
+        $thead_titles['totRecords'] = count($resultado);
+    } 
+
     $query = "<span style='color:black;'>QUERY<br></span> \"" . $sql_query . "\"";   
-    $divHtml .= displayTable($query,90,'',$resultado);
+    $divHtml .= displayTable($query,90,$thead_titles,$resultado);
 
 } else { # display error msq
 

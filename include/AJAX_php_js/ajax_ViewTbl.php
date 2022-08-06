@@ -35,8 +35,6 @@ if ( $_REQUEST['page'] ) {
     $page = $_REQUEST['page']; 
 }
 
-
-
 $dbuser  = $cfg_s['Servers'][$host_numb]['user'];
 $dbpass = $cfg_s['Servers'][$host_numb]['password'];
 $dbcharset = 'utf8mb4';
@@ -50,11 +48,13 @@ $conex_db = try_catch_connect_host_db($dbhost,$dbname,$dbuser,$dbpass,$dbcharset
 $route = "";
 $error_msg = "MySql error was found";
 $divHtml = "";
+$thead_titles = [];
 
 if ( gettype($conex_db) === 'object' ) {
 
     // $page
     $select_query = "SELECT * FROM $dbtable LIMIT 10;";
+    
     $resultado = SELECT_try_catch($conex_db,$dbname,$dbuser,$dbtable,$select_query,$log_queries_path);      
 
     if ( gettype($resultado) === 'object' || gettype($resultado) === 'array' ) {  
@@ -73,7 +73,8 @@ if ( gettype($conex_db) === 'object' ) {
 if ($route == 'display_data') { # display html data   
 
     $query = "<span style='color:black;'>query: </span>" . $select_query . "";   
-    $thead_titles = $page;
+    $thead_titles['page'] = $page;
+    $thead_titles['totRecords'] = count($resultado);
     $divHtml .= displayTable($query,90,$thead_titles,$resultado);
 
 } else { # display error msq

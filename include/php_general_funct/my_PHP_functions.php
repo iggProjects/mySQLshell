@@ -237,22 +237,18 @@
 
         // put IF here (ex: if _query contains 'SELECT')
         if ( str_contains($_query, 'SELECT') || str_contains($_query, 'select') ) {   
-
-    /*        
             echo "<div class='pagination'>
-                <button class='select-btns' page='1'>First</button>
-                <button class='select-btns' page='-1'>Previous</button>
-                <button class='select-btns' page='+1'>Next</button>
-                <button class='select-btns' page='L'>Last</button>
+                <button class='select-btns' onclick='displayPage(\"1\")'>First</button>
+                <button class='select-btns' onclick='displayPage(\"-1\")'>Previous</button>
+                <button class='select-btns' onclick='displayPage(\"+1\")'>Next</button>
+                <button class='select-btns' onclick='displayPage(\"L\")'>Last</button>
             </div>";        
-            echo "<p id='actualPage' page='" . $thead_titles_array . "' style='margin-top:5px;  margin-bottom:10px; text-align:center; font-size:12px; color:#990000'><span style='color:black;'>page: </span>" . $thead_titles_array . "</p>";
-    */
-        }    
+            echo "<p id='actualPage' page='" . $thead_titles_array['page'] . "' totRecords='" . $thead_titles_array['totRecords'] . "' style='margin-top:5px;  margin-bottom:10px; text-align:center; font-size:12px; color:#990000'><span style='color:black;'>page: " . $thead_titles_array['page'] . " | Total Records: " . $thead_titles_array['totRecords'] . "</span></p>";      }    
 
         echo "<p style='margin-top:5px;  margin-bottom:10px; text-align:center; font-size:12px; color:#990000'>$_query</p>";
 
         $i=1;        
-        echo "<table style='max-width: $table_width%;'>";          
+        echo "<table id='sql-table-result' style='max-width: $table_width%;'>";          
         // echo "<table style='max-width: $table_width%; overflow:scroll;'>";          
         
             $tr_thead = "<tr>";

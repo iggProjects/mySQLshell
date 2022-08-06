@@ -77,8 +77,7 @@ echo "
                         echo "<button id='btn-sql' class='nav-btn showBtn' style='color:blue;'><b>TEST<br>QUERIES</b></button>";
                         echo "<button id='btn-desc' class='nav-btn showBtn'>Desc<br>Table</button>";
                         echo "<button id='btn-view' class='nav-btn showBtn'>View<br>Table</button>";
-                        echo "<button id='btn-diagram' class='nav-btn showBtn'>Diagram</button>";
-                        // echo "<button id='btn-diagram' class='nav-btn showBtn' onclick='table_diagram()'>Diagram</button>";
+                        echo "<button id='btn-diagram' class='nav-btn showBtn' onclick='table_diagram()'>Diagram</button>";
                         echo "<button id='btn-insert' class='nav-btn showBtn'>Insert<br>Record</button>";
                         echo "<button id='btn-update' class='nav-btn showBtn'>Update<br>Record</button>";                        
                         echo "<button id='btn-export' class='nav-btn showBtn'>Export</button>";
@@ -94,7 +93,14 @@ echo "
 
                             <div class='display-result-nav'><p id='display-result-nav-title'></p></div> 
 
-                            <div id='display_sql_result' class='showDiv'></div>
+                            <div id='display_sql_result' class='showDiv'>
+                                <div class='pagination'>
+                                    <button class='select-btns' page='1'>First</button>
+                                    <button class='select-btns' page='-1'>Previous</button>
+                                    <button class='select-btns' page='+1'>Next</button>
+                                    <button class='select-btns' page='L'>Last</button>
+                                </div>  
+                            </div>
 
                             <div id='display-sql-console-Up' class='hideDiv my-scroll-bar'>
 
@@ -126,7 +132,17 @@ echo "
 
                             </div>
 
-                            <div id='display-sql-console-Down' class='my-scroll-bar hideDiv' placeholder='query result area' style='color:blue;'>____ query result area ____</div>
+                            <div id='display-sql-console-Down' class='my-scroll-bar hideDiv' placeholder='query result area' style='color:blue;'>____ query result area ____
+                                <div id='paginationBtns' class='pagination hideDiv'>
+                                    <button class='select-btns' onclick='alert(\"First selected\")' page='1'>First</button>
+                                    <button class='select-btns' onclick='alert(\"Previous selected\")' page='-1'>Previous</button>
+                                    <button class='select-btns' onclick='alert(\"Next selected\")' page='+1'>Next</button>
+                                    <button class='select-btns' onclick='alert(\"Last selected\")' page='L'>Last</button>
+                                </div>";
+                                echo "<p id='actualPage' page='1' style='display:none; margin-top:5px; margin-bottom:10px; text-align:center; font-size:12px; color:#990000'><span style='color:black;'>page: 1</span></p>";
+                                // echo "<p id='actualPage' page='1' style='display:none; margin-top:5px; margin-bottom:10px; text-align:center; font-size:12px; color:#990000'><span style='color:black;'>page: " . $thead_titles_array . "</span></p>";
+                                echo "<div id='display-sql-console-Down-result'></div>
+                            </div>
                         
                         </div>";
 
@@ -218,7 +234,6 @@ echo "
                 break;    
 
             case 'btn-diagram':   
-                table_diagram();
                 break;
 
             case 'btn-sql':   
@@ -253,9 +268,12 @@ echo "
                     document.getElementById('display-sql-console-Down').classList.remove("hideDiv");
                     document.getElementById('display-sql-console-Down').classList.add("showDiv");
                     
+                    document.getElementById('display-sql-console-Down-result').textContent = '';
+                    // document.getElementById('display-sql-console-Down').textContent = '';
+
                     // hide button 'up'
                     document.getElementById('extend-console-up-btn').style.display='block';
-                    // hide button 'compress'
+                    // hide button 'up'
                     document.getElementById('compress-console-up-btn').style.display='block';
 
                     // height for 'display-sql-console-Up'
@@ -330,7 +348,8 @@ echo "
         document.getElementById('display_sql_result').innerHTML='';
 
         // clear #display-sql-console-Down
-        document.getElementById('display-sql-console-Down').innerText = '____ query result area ____';
+        document.getElementById('display-sql-console-Down-result').innerText = '____ query result area ____';
+        // document.getElementById('display-sql-console-Down').innerText = '____ query result area ____';
 
         var table_Name = this.getAttribute('table-name');
         // alert('table name' + table_Name );
@@ -364,7 +383,7 @@ echo "
         // change class of #display-sql-console-Down to hideDiv and clear html
         document.getElementById('display-sql-console-Down').classList.remove("showDiv");
         document.getElementById('display-sql-console-Down').classList.add("hideDiv");
-        document.getElementById('display-sql-console-Down').innerHTML = "";      
+        // document.getElementById('display-sql-console-Down').innerHTML = "";      
 
         // tag for display BUTTONS table in first NAV (up)
         btns = document.querySelectorAll(".nav-btn");   
@@ -406,6 +425,14 @@ echo "
             // aumentar altura 'display-sql-console-Down'
             document.getElementById('display-sql-console-Down').style.height='73%';  
 
+            // paginationBtns
+            document.getElementById('paginationBtns').classList.remove('hideDiv'); 
+            document.getElementById('paginationBtns').classList.add('showDiv'); 
+
+
+            // actualPage tag
+            document.getElementById('actualPage').style.display='block';  
+
             // verificar si último char es ;. Caso positivo, eliminar el char
 
             // add 'LIMIT 20' if is a SELECT query (buscar palabra SELECT in string)
@@ -418,10 +445,10 @@ echo "
 
             // alert('hostName: ' + hostName + ', dnName: ' + dbName);
 
-            // call AJAX for execute query            
-            var _tag = 'display-sql-console-Down';
-            Fetch_js(_tag,'./include/AJAX_php_js/ajax_Sql_Query.php?host_numb=' + host_n + '&hostName='+sql_host_db.getAttribute('host')+'&dbName='+sql_host_db.getAttribute('db')+'&sql_query='+_query);
-            // Fetch_js(_tag,'./include/AJAX_php_js/ajax_Sql_Query.php?host_numb=' + host_n + '&hostName='+sql_host_db.getAttribute('host')+'&dbName='+sql_host_db.getAttribute('db')+'&sql_query='+_query+'&page=1');
+            // call AJAX for execute query
+            var _tag = 'display-sql-console-Down-result';
+            // var _tag = 'display-sql-console-Down';
+            Fetch_js(_tag,'./include/AJAX_php_js/ajax_Sql_Query.php?host_numb=' + host_n + '&hostName='+sql_host_db.getAttribute('host')+'&dbName='+sql_host_db.getAttribute('db')+'&sql_query='+_query+'&page=1');
 
             // IF _query.includes("select")
             // class 'select-btns' -> put addEventListener("click"... 
@@ -432,39 +459,16 @@ echo "
 
     }    
 
-
-    function displayPage(char) {
-        // var action = document.getElementById('actualPage').getAttribute('page');
-        switch (char) {
-
-            case '1':
-                alert(char); 
-                break;
-
-            case '-1':
-                alert(char); 
-                break; 
-
-            case '+1':
-                alert(char); 
-                break;   
-            case 'L':
-                alert(char); 
-                break;
-
-            default:
-                break;  
-
-        }    
-
-    }
-
-
     function ClearSqlQueryAreas(){    
-        document.getElementById('sql-query-area').value="";   
+        document.getElementById('sql-query-area').value="";         
+        //document.getElementById('display-sql-console-Down').innerHTML=""; 
         document.getElementById('display-sql-console-Up').style.height="30%";  
-        document.getElementById('display-sql-console-Down').innerHTML=""; 
         document.getElementById('display-sql-console-Down').style.height="58%"; 
+        document.getElementById('display-sql-console-Down-result').innerHTML=""; 
+        document.getElementById('paginationBtns').classList.remove('showDiv'); 
+        document.getElementById('paginationBtns').classList.add('hideDiv'); 
+        // document.getElementById('paginationBtns').innerHTML=""; 
+        document.getElementById('actualPage').style.display="none"; 
     }                                    
 
 

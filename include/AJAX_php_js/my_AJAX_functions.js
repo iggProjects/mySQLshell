@@ -189,22 +189,24 @@ function Fetch_js(tag,php_sql_url){
         }
 
         // Put here describe table for tag  'display_sql_result'
-        
+/*        
         // listeners for select-btns
         if ( php_sql_url.includes("page=") ) {
-            var paginationBtnSelected = document.querySelectorAll(".select-btns");   
-            // var btnPaginationSelected = document.getElementsByClassName("select-btns");
+            // var paginationBtnSelected = document.querySelectorAll(".select-btns");   
+            var paginationBtnSelected = document.getElementsByClassName("select-btns");
             //alert('buttons: ' + btnPaginationSelected.length);
             for (var i = 0; i < paginationBtnSelected.length; i++) {
+                console.log('btn : ' + i + paginationBtnSelected[i].getAttribute('page'));
                 paginationBtnSelected[i].addEventListener("click", ()=> {
-                    var btnSelected = this.classList;
-                    alert('btn pagination selected: ' + btnSelected);
+                    // var pageAct = this.getAttribute('page');
+                    console.log('btn pagination selected: ' + this);
                     // alert('btn pagination selected: ' + btnPaginationSelected[i].innerHTML );
                 });
+
             }     
             alert('buttons: ' + paginationBtnSelected.length);
         }
-
+*/
     })
 
     .catch(err => {
