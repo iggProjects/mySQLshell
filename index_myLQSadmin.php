@@ -219,9 +219,6 @@ echo "
                     if ( document.getElementById('display-sql-console-Down').classList.contains('showDiv') ) { _tag = 'display-sql-console-Down'; }                         
                     Fetch_js(_tag,'./include/AJAX_php_js/ajax_ViewTbl.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table')+'&page=1');
                 }
-                // class 'select-btns' -> put addEventListener("click"... 
-                // Fetch....
-
 
                 break;    
 
