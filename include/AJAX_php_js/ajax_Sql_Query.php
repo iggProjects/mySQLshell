@@ -46,16 +46,19 @@ $route = "";
 $error_msg = "MySql error was found";
 $divHtml = "";
 $thead_titles = [];
+$rec_numb = 0;
 
 if ( gettype($conex_db) === 'object' ) {
+
+    // calculate record number from page selected
 /*
     if ( str_contains($sql_query, 'SELECT') || str_contains($sql_query, 'select') ) {   
         $sql_query = $sql_query;
     }
 */    
-
     $count_query = substr($sql_query, 0, strpos($sql_query, 'limit'));
-    $num_records = count(Sql_Query_try_catch($conex_db,$dbname,$dbuser,$count_query,$log_queries_path));
+    $num_records = count(Sql_Query_try_catch($conex_db,$dbname,$dbuser,$count_query,$log_queries_path));   
+
     $resultado = Sql_Query_try_catch($conex_db,$dbname,$dbuser,$sql_query,$log_queries_path);
     if ( gettype($resultado) === 'object' || gettype($resultado) === 'array' ) {  
         $route = "display_data";        
@@ -77,9 +80,8 @@ if ($route == 'display_data') { # display html data
         $thead_titles['page'] = $page;        
         $thead_titles['totRecords'] = $num_records;
     } 
-
-    $query = "<span style='color:black;'>QUERY<br></span> \"" . $sql_query . "\"";   
-    $divHtml .= displayTable($query,90,$thead_titles,$resultado);
+     
+    $divHtml .= displayTable($sql_query,90,$thead_titles,$resultado);
 
 } else { # display error msq
 
