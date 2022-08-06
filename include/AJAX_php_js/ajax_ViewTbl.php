@@ -53,7 +53,7 @@ $thead_titles = [];
 if ( gettype($conex_db) === 'object' ) {
 
     // $page
-    $select_query = "SELECT * FROM $dbtable limit 10;";
+    $select_query = "SELECT * FROM $dbtable limit 0,10;";
     $count_query = substr($select_query, 0, strpos($select_query, 'limit'));
     $num_records = count(Sql_Query_try_catch($conex_db,$dbname,$dbuser,$count_query,$log_queries_path));
 
