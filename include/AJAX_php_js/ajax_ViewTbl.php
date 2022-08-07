@@ -68,40 +68,30 @@ if ( gettype($conex_db) === 'object' ) {
 
     // calculate record number from page selected    
     if( $totRecords == 0 ) {
-
         $count_query = "select count(*) as numb from $dbtable";  
         $records = Sql_Query_try_catch($conex_db,$dbname,$dbuser,$count_query,$log_queries_path);    
 
         if (  gettype($records) === 'object' || gettype($records) === 'array') {
-
             $totRecords = $records[0]['numb'];   
             $route = "display_data";    
-
         } else {
             $route = "display_error";
             $error_msg = "???????? MySql error: select in '$dbtable' query FAILED !<br>Contact Admin.";
         }
-
     } 
-
     if ( $totRecords > 0 && $route = "display_data" ) {
-
         $select_query = "SELECT * FROM $dbtable limit $num_rec_init,$jump";
-
-        $resultado = SELECT_try_catch($conex_db,$dbname,$dbuser,$dbtable,$select_query,$log_queries_path);      
-
+        $resultado = SELECT_try_catch($conex_db,$dbname,$dbuser,$dbtable,$select_query,$log_queries_path); 
         if ( gettype($resultado) === 'object' || gettype($resultado) === 'array' ) {  
             $route = "display_data";        
         } else {
             $route = "display_error";
             $error_msg = "MySql error: select in '$dbtable' query FAILED !<br>Contact Admin.";
         }    
-
     } else {
         $route = "display_error";
         $error_msg = "new msg here .... MySql error: select in '$dbtable' query FAILED !<br>Contact Admin.";
     }
-
 
 } else {    
     $route = "display_error";
@@ -119,7 +109,7 @@ if ( $route == 'display_data' ) { # display html data
     $thead_titles['totRecords'] = $totRecords;
 
     // $query = "<span style='color:black;'>query: </span>" . $select_query . "";   
-    $divHtml .= displayTable($select_query,90,$thead_titles,$resultado);
+    $divHtml = displayTable($select_query,90,$thead_titles,$resultado);
     return $divHtml;
 
 } else { # display error msq

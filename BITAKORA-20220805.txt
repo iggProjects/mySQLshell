@@ -7,25 +7,27 @@ IÑAKI - DARREN ( pendiente para version 1.0 )
 
 ********************************************************************
 
-IÑAKI - PENDIENTE AL 05-08-2022
+IÑAKI - PENDIENTE AL 07-08-2022
 
-- backup desde consola MySql
-  ( mysqldump -uroot -p  my_lqs_admin > my_lqs_admin.sql ) OJO CON CHARSET
+- README 
 
-- Check toogle effect in DB-tables in left side tag "html_div_nav_izq" ✔✔✔
-  see function "openTree" (my_AJAX_functions.js lines 79 to 89)
+- PAGINATION FOR "SELECT REPORTS"  ✔✔😎😎
+    - en caso ajax_Sql_Query, buscar equivalente en js a:
+       $sql_query = substr($sql_query, 0, strpos($sql_query, 'limit'));   
 
-- How to refresh DB Server? 
-  - when it is created a new DB
-  - when it is created a new user   
-  - https://www.rkimball.com/how-to-refresh-database-in-mysql/
-  - https://stackoverflow.com/questions/3677376/update-local-server-mysql-database-from-the-server-mysql-database
+- Check toogle effect in DB-tables in left side tag "html_div_nav_izq" ✔✔😎😎
+  see function "openTree" (my_AJAX_functions.js lines 79 to 89) 
 
-- PAGINATION FOR "SELECT REPORTS"
-    Sustituir ajax_ViewTbl por ajax_Sql_Query y así eliminamos duplicidad ???? 
-      SI, porque estamos en botones, y la tabla ya está en el query, pero ojo hay que mandar el tag como post value  !!!
+- show databases in tag 'display_right_aside' when host is selected
+  (left aside only show DB's with tables)
 
-    https://stackoverflow.com/questions/20364349/pagination-using-mysql-limit-offset
+- Permitir abrir make query apenas se selecciones el host 
+  - esto permitiría al root, o al administrador actuar sobre el servidor, sea para crear nuevas DB 
+    o para modificar DB, respaldar, eliminar, restore backups........
+  - OJO: esto solo debe ser una opción para usuarios root o administrador con todos los privilegios  
+  - Si seleccionamos un server, deberíamos acceder a la sql console. Por ejemplo, para crear una nueva DB en Localhost, 
+    y crear sus algunas tablas. Esto traería como consecuencia que debemos sustituir el query en ajax_Display_div_nav_izq 
+    (línea 68) $select_query = "SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;"; 
 
 - first version for "help url" for troubles in mysql...  URL google para errores mysql
   - https://www.googleguide.com/linking.html
@@ -39,29 +41,23 @@ IÑAKI - PENDIENTE AL 05-08-2022
         - y rellenamos a mano los datos de cada campo
   - backup y restore buttons        
 
-- Chequear que lea table_param cuando haces click en btn "process query"
+- backup from MySql console
+  ( mysqldump -uroot -p  my_lqs_admin > my_lqs_admin.sql ) take care with CHARSET
 
 - Al ejecutar "Clear Query" chequear que coloque los selectores en opc '0'  
-
-- HOST BASIC INFO WHEN IT IS SELECTED 
-  tag #left-aside
 
 BUTTONS FILTERS 
   - FILTROS: check for type cols, cases 'BLOB' (example: mediumblob in 'tbl_arch_imagen_persona' in penjub)
   - CASE sql query: filter scripts, some chars.....  
-
-- Permitir abrir make query apenas se selecciones el host 
-  - esto permitiría al root, o al administrador actuar sobre el servidor, sea para crear nuevas DB 
-    o para modificar DB, respaldar, eliminar, restore backups........
-  - OJO: esto solo debe ser una opción para usuarios root o administrador con todos los privilegios  
-  - Si seleccionamos un server, deberíamos acceder a la sql console. Por ejemplo, para crear una nueva DB en Localhost, 
-    y crear sus algunas tablas. Esto traería como consecuencia que debemos sustituir el query en ajax_Display_div_nav_izq 
-    (línea 68) $select_query = "SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;"; 
 
 - DB nativa de myLQSadmin: "my_sql_admin" 
   - crear las primeras tablas usuarios, standard_queries, favorite_queries, .... ✔✔  - 
   - standard queries aplican a cualquier DB (campos: id, user, comment, btn_name, query, creation_date)   
   - "favorite" queries: insert-update-delete-drop
     - Fields: id, user, db, comment, query
+
+- COLOCAR DB KONT
+  - Tables width data???   
+  - probar queries en sql query area 
 
 - Pass CSS to SCSS, including in SCSS the "style's inside tag's; and then remove it.  
