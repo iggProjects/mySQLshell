@@ -51,7 +51,7 @@ $dbuser  = $cfg_s['Servers'][$host_numb]['user'];
 $dbpass = $cfg_s['Servers'][$host_numb]['password'];
 $dbcharset = 'utf8mb4';
 
-$msg = 'sql_query: ' . $_REQUEST['sql_query'] . '<br>' . ' HOST number: ' . $_REQUEST['host_numb'];
+$msg = 'First sql_query: ' . $_REQUEST['sql_query'] . ' | ' . ' HOST number: ' . $_REQUEST['host_numb'];
 $msg .= ' - hostName: ' . $_REQUEST['hostName'] .  ' - user: ' . $dbuser . ' - pass: ' . $dbpass . ' - page: ' . $page  . '-' . $num_rec_init . '-' . $totRecords;
 
 
@@ -69,7 +69,7 @@ if ( gettype($conex_db) === 'object' ) {
     // calculate record number from page selected    
     if( $totRecords == 0 ) {    
         $sql_query = substr($sql_query, 0, strpos($sql_query, 'limit'));
-        $msg .= " | first sql query: " . $sql_query;
+        $msg .= " | second sql query: " . $sql_query;
         $count_query = substr($sql_query, 0, strpos($sql_query, 'limit'));
         $records = Sql_Query_try_catch($conex_db,$dbname,$dbuser,$sql_query,$log_queries_path); 
 
