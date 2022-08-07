@@ -448,6 +448,7 @@ echo "
 
             case '1':
                 page = 1;
+                num_rec_init = 0;
                 alert('Query: ' + query + '\n' + ', page: ' + page + ', num_rec_init: ' + num_rec_init + ', totRecords: ' + totRecords + '\n' + ', action: ' + char); 
                 break;
 

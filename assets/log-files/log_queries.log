@@ -28667,3 +28667,23 @@
 [7-Aug-2022 13:08:30] [Date: 2022-08-07 13:08:30 | root connect succesfully to 'penjub']
 [7-Aug-2022 13:08:30] [Date: 2022-08-07 13:08:30 | root execute succesfully Select query in penjub
  'SELECT * FROM tbl_ciudad limit 15,15']
+[7-Aug-2022 13:24:34] [Date: 2022-08-07 13:24:34 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 13:24:35] [Date: 2022-08-07 13:24:35 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 13:24:36] [Date: 2022-08-07 13:24:36 | root connect succesfully to 'penjub']
+[7-Aug-2022 13:24:36] [Date: 2022-08-07 13:24:36 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 13:24:38] [Date: 2022-08-07 13:24:38 | root connect succesfully to 'penjub']
+[7-Aug-2022 13:24:38] [Date: 2022-08-07 13:24:38 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[7-Aug-2022 13:24:40] [Date: 2022-08-07 13:24:40 | root connect succesfully to 'penjub']
+[7-Aug-2022 13:24:40] [Date: 2022-08-07 13:24:40 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_ciudad']
+[7-Aug-2022 13:24:40] [Date: 2022-08-07 13:24:40 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 0,15']
+[7-Aug-2022 13:24:44] [Date: 2022-08-07 13:24:44 | root connect succesfully to 'penjub']
+[7-Aug-2022 13:24:44] [Date: 2022-08-07 13:24:44 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 15,15']
+[7-Aug-2022 13:24:51] [Date: 2022-08-07 13:24:51 | root connect succesfully to 'penjub']
+[7-Aug-2022 13:24:51] [Date: 2022-08-07 13:24:51 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 0,15']

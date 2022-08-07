@@ -4587,3 +4587,7 @@ probando1 - file log_comments.log [ Wed May 11 2022-05-11 12:15:25 ]  [hello my 
 [7-Aug-2022 13:08:20] [HOST param: 2--root-@mysql@]
 [7-Aug-2022 13:08:25] [HOST number: 2 - hostName: 127.0.0.1 - table: tbl_ciudad - user: root - pass: @mysql@ - page: 1-0-0]
 [7-Aug-2022 13:08:30] [HOST number: 2 - hostName: 127.0.0.1 - table: tbl_ciudad - user: root - pass: @mysql@ - page: 2-15-27]
+[7-Aug-2022 13:24:36] [HOST param: 2--root-@mysql@]
+[7-Aug-2022 13:24:40] [HOST number: 2 - hostName: 127.0.0.1 - table: tbl_ciudad - user: root - pass: @mysql@ - page: 1-0-0]
+[7-Aug-2022 13:24:44] [HOST number: 2 - hostName: 127.0.0.1 - table: tbl_ciudad - user: root - pass: @mysql@ - page: 2-15-27]
+[7-Aug-2022 13:24:51] [HOST number: 2 - hostName: 127.0.0.1 - table: tbl_ciudad - user: root - pass: @mysql@ - page: 1-0-27]
