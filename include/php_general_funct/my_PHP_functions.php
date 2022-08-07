@@ -235,17 +235,17 @@
 
     function displayTable($_query,$table_width,$thead_titles_array,$data_array){
 
-        // put IF here (ex: if _query contains 'SELECT')
-        if ( str_contains($_query, 'SELECT') || str_contains($_query, 'select') ) {   
-            echo "<div class='pagination'>
-                <button class='select-btns' onclick='displayPage(\"1\")'>First</button>
-                <button class='select-btns' onclick='displayPage(\"-1\")'>Previous</button>
-                <button class='select-btns' onclick='displayPage(\"+1\")'>Next</button>
-                <button class='select-btns' onclick='displayPage(\"2\")'>Last</button>
-            </div>";        
-            echo "<p id='actualPage' page='" . $thead_titles_array['page'] . "' totRecords='" . $thead_titles_array['totRecords'] . "' style='margin-top:5px;  margin-bottom:10px; text-align:center; font-size:12px; color:#990000'><span style='color:black;'>Total Records: " . $thead_titles_array['totRecords'] . "<br>page: " . $thead_titles_array['page'] . "<br>QUERY</span></p>";      }    
+        // CASE totRecords vs num_rec_init+15 or num_rec_init-15
 
-        echo "<p id='actualQuery' style='margin-top:0px;  margin-bottom:10px; text-align:center; font-size:12px; color:#990000'>$_query</p>";
+        if ( str_contains($_query, 'SELECT') || str_contains($_query, 'select') ) {   
+            echo "<div class='pagination'>";
+                echo "<button class='select-btns' onclick='displayPage(\"1\")'>First</button>";                
+                echo "<button class='select-btns' onclick='displayPage(\"-1\")'>Previous</button>";
+                echo "<button class='select-btns' onclick='displayPage(\"+1\")'>Next</button>";                
+                echo "<button class='select-btns' onclick='displayPage(\"2\")'>Last</button>";
+            echo "</div>";        
+            echo "<p id='actualPage' page='" . $thead_titles_array['page'] . "' num_rec_init='" . $thead_titles_array['num_rec_init'] . "' totRecords='" . $thead_titles_array['totRecords'] . "' style='margin-top:5px;  margin-bottom:10px; text-align:center; font-size:12px; color:#990000'><span style='color:black;'>Total Records: " . $thead_titles_array['totRecords'] . "<br>page: " . $thead_titles_array['page'] . "<br>QUERY</span></p>";      }           
+            echo "<p id='actualQuery' style='margin-top:0px;  margin-bottom:10px; text-align:center; font-size:12px; color:#990000'>$_query</p>";
         
         $i=1;        
         echo "<table id='sql-table-result' style='max-width: $table_width%;'>";          

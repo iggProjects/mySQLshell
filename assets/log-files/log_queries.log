@@ -28199,3 +28199,471 @@
  'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND TABLE_NAME = 'posts'']
 [7-Aug-2022 00:21:34] [Date: 2022-08-07 00:21:34 | root execute succesfully Sql Query in DB: employees
  'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND REFERENCED_TABLE_NAME = 'posts'']
+[7-Aug-2022 10:51:55] [Date: 2022-08-07 10:51:55 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 10:51:55] [Date: 2022-08-07 10:51:55 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 10:51:57] [Date: 2022-08-07 10:51:57 | root connect succesfully to 'employees']
+[7-Aug-2022 10:51:57] [Date: 2022-08-07 10:51:57 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 10:52:00] [Date: 2022-08-07 10:52:00 | root connect succesfully to 'employees']
+[7-Aug-2022 10:52:00] [Date: 2022-08-07 10:52:00 | root execute succesfully show tables query
+ 'describe dept_manager;']
+[7-Aug-2022 10:52:02] [Date: 2022-08-07 10:52:02 | root connect succesfully to 'employees']
+[7-Aug-2022 10:52:02] [Date: 2022-08-07 10:52:02 | root execute succesfully Sql Query in DB: employees
+ 'select count(*) as numb from dept_manager']
+[7-Aug-2022 10:52:02] [Date: 2022-08-07 10:52:02 | root execute succesfully Select query in employees
+ 'SELECT * FROM dept_manager limit 0,10;']
+[7-Aug-2022 11:09:04] [Date: 2022-08-07 11:09:04 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 11:09:04] [Date: 2022-08-07 11:09:04 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 11:09:06] [Date: 2022-08-07 11:09:06 | root connect succesfully to 'employees']
+[7-Aug-2022 11:09:06] [Date: 2022-08-07 11:09:06 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 11:09:09] [Date: 2022-08-07 11:09:09 | root connect succesfully to 'employees']
+[7-Aug-2022 11:09:09] [Date: 2022-08-07 11:09:09 | root execute succesfully show tables query
+ 'describe dept_manager;']
+[7-Aug-2022 11:09:10] [Date: 2022-08-07 11:09:10 | root connect succesfully to 'employees']
+[7-Aug-2022 11:09:10] [Date: 2022-08-07 11:09:10 | root execute succesfully Sql Query in DB: employees
+ 'select count(*) as numb from dept_manager']
+[7-Aug-2022 11:09:10] [Date: 2022-08-07 11:09:10 | root execute succesfully Select query in employees
+ 'SELECT * FROM dept_manager limit 0,15;']
+[7-Aug-2022 11:28:10] [Date: 2022-08-07 11:28:10 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 11:28:10] [Date: 2022-08-07 11:28:10 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 11:28:12] [Date: 2022-08-07 11:28:12 | root connect succesfully to 'employees']
+[7-Aug-2022 11:28:12] [Date: 2022-08-07 11:28:12 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 11:28:14] [Date: 2022-08-07 11:28:14 | root connect succesfully to 'employees']
+[7-Aug-2022 11:28:14] [Date: 2022-08-07 11:28:14 | root execute succesfully show tables query
+ 'describe dept_manager;']
+[7-Aug-2022 11:28:16] [Date: 2022-08-07 11:28:16 | root connect succesfully to 'employees']
+[7-Aug-2022 11:28:16] [Date: 2022-08-07 11:28:16 | root execute succesfully Sql Query in DB: employees
+ 'select count(*) as numb from dept_manager']
+[7-Aug-2022 11:28:16] [Date: 2022-08-07 11:28:16 | root execute succesfully Select query in employees
+ 'SELECT * FROM dept_manager limit 0,15;']
+[7-Aug-2022 11:30:30] [Date: 2022-08-07 11:30:30 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 11:30:30] [Date: 2022-08-07 11:30:30 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 11:30:33] [Date: 2022-08-07 11:30:33 | root connect succesfully to 'employees']
+[7-Aug-2022 11:30:33] [Date: 2022-08-07 11:30:33 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 11:30:34] [Date: 2022-08-07 11:30:34 | root connect succesfully to 'employees']
+[7-Aug-2022 11:30:34] [Date: 2022-08-07 11:30:34 | root execute succesfully show tables query
+ 'describe dept_manager;']
+[7-Aug-2022 11:30:37] [Date: 2022-08-07 11:30:37 | root connect succesfully to 'employees']
+[7-Aug-2022 11:30:37] [Date: 2022-08-07 11:30:37 | root execute succesfully Sql Query in DB: employees
+ 'select count(*) as numb from dept_manager']
+[7-Aug-2022 11:30:37] [Date: 2022-08-07 11:30:37 | root execute succesfully Select query in employees
+ 'SELECT * FROM dept_manager limit 0,15;']
+[7-Aug-2022 11:31:46] [Date: 2022-08-07 11:31:46 | root connect succesfully to 'penjub']
+[7-Aug-2022 11:31:46] [Date: 2022-08-07 11:31:46 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 11:31:49] [Date: 2022-08-07 11:31:49 | root connect succesfully to 'penjub']
+[7-Aug-2022 11:31:49] [Date: 2022-08-07 11:31:49 | root execute succesfully show tables query
+ 'describe tbl_persona;']
+[7-Aug-2022 11:31:50] [Date: 2022-08-07 11:31:50 | root connect succesfully to 'penjub']
+[7-Aug-2022 11:31:50] [Date: 2022-08-07 11:31:50 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_persona']
+[7-Aug-2022 11:31:50] [Date: 2022-08-07 11:31:50 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona limit 0,15;']
+[7-Aug-2022 11:33:45] [Date: 2022-08-07 11:33:45 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 11:33:45] [Date: 2022-08-07 11:33:45 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 11:33:47] [Date: 2022-08-07 11:33:47 | root connect succesfully to 'penjub']
+[7-Aug-2022 11:33:47] [Date: 2022-08-07 11:33:47 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 11:33:49] [Date: 2022-08-07 11:33:49 | root connect succesfully to 'penjub']
+[7-Aug-2022 11:33:49] [Date: 2022-08-07 11:33:49 | root execute succesfully show tables query
+ 'describe tbl_persona;']
+[7-Aug-2022 11:33:51] [Date: 2022-08-07 11:33:51 | root connect succesfully to 'penjub']
+[7-Aug-2022 11:33:51] [Date: 2022-08-07 11:33:51 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_persona']
+[7-Aug-2022 11:33:51] [Date: 2022-08-07 11:33:51 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona limit 0,15;']
+[7-Aug-2022 11:34:21] [Date: 2022-08-07 11:34:21 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 11:34:21] [Date: 2022-08-07 11:34:21 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 11:34:22] [Date: 2022-08-07 11:34:22 | root connect succesfully to 'penjub']
+[7-Aug-2022 11:34:22] [Date: 2022-08-07 11:34:22 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 11:34:25] [Date: 2022-08-07 11:34:25 | root connect succesfully to 'penjub']
+[7-Aug-2022 11:34:25] [Date: 2022-08-07 11:34:25 | root execute succesfully show tables query
+ 'describe tbl_persona;']
+[7-Aug-2022 11:34:27] [Date: 2022-08-07 11:34:27 | root connect succesfully to 'penjub']
+[7-Aug-2022 11:34:27] [Date: 2022-08-07 11:34:27 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_persona']
+[7-Aug-2022 11:34:27] [Date: 2022-08-07 11:34:27 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona limit 0,15;']
+[7-Aug-2022 11:40:53] [Date: 2022-08-07 11:40:53 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 11:40:53] [Date: 2022-08-07 11:40:53 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 11:40:55] [Date: 2022-08-07 11:40:55 | root connect succesfully to 'penjub']
+[7-Aug-2022 11:40:55] [Date: 2022-08-07 11:40:55 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 11:40:58] [Date: 2022-08-07 11:40:58 | root connect succesfully to 'penjub']
+[7-Aug-2022 11:40:58] [Date: 2022-08-07 11:40:58 | root execute succesfully show tables query
+ 'describe tbl_persona;']
+[7-Aug-2022 11:40:59] [Date: 2022-08-07 11:40:59 | root connect succesfully to 'penjub']
+[7-Aug-2022 11:40:59] [Date: 2022-08-07 11:40:59 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_persona']
+[7-Aug-2022 11:40:59] [Date: 2022-08-07 11:40:59 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona limit 0,15;']
+[7-Aug-2022 11:41:07] [Date: 2022-08-07 11:41:07 |  CONNECT DB 'penjub' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[7-Aug-2022 11:42:36] [Date: 2022-08-07 11:42:36 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 11:42:36] [Date: 2022-08-07 11:42:36 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 11:42:38] [Date: 2022-08-07 11:42:38 | root connect succesfully to 'penjub']
+[7-Aug-2022 11:42:38] [Date: 2022-08-07 11:42:38 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 11:42:43] [Date: 2022-08-07 11:42:43 | root connect succesfully to 'penjub']
+[7-Aug-2022 11:42:43] [Date: 2022-08-07 11:42:43 | root execute succesfully show tables query
+ 'describe tbl_persona;']
+[7-Aug-2022 11:42:46] [Date: 2022-08-07 11:42:46 | root connect succesfully to 'penjub']
+[7-Aug-2022 11:42:46] [Date: 2022-08-07 11:42:46 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_persona']
+[7-Aug-2022 11:42:46] [Date: 2022-08-07 11:42:46 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona limit 0,15;']
+[7-Aug-2022 11:42:50] [Date: 2022-08-07 11:42:50 |  CONNECT DB 'penjub' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[7-Aug-2022 11:48:26] [Date: 2022-08-07 11:48:26 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 11:48:26] [Date: 2022-08-07 11:48:26 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 11:48:28] [Date: 2022-08-07 11:48:28 | root connect succesfully to 'penjub']
+[7-Aug-2022 11:48:28] [Date: 2022-08-07 11:48:28 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 11:48:30] [Date: 2022-08-07 11:48:30 | root connect succesfully to 'penjub']
+[7-Aug-2022 11:48:30] [Date: 2022-08-07 11:48:30 | root execute succesfully show tables query
+ 'describe tbl_persona;']
+[7-Aug-2022 11:48:32] [Date: 2022-08-07 11:48:32 | root connect succesfully to 'penjub']
+[7-Aug-2022 11:48:32] [Date: 2022-08-07 11:48:32 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_persona']
+[7-Aug-2022 11:48:32] [Date: 2022-08-07 11:48:32 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona limit 0,15;']
+[7-Aug-2022 12:13:32] [Date: 2022-08-07 12:13:32 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 12:13:32] [Date: 2022-08-07 12:13:32 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 12:13:34] [Date: 2022-08-07 12:13:34 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:13:34] [Date: 2022-08-07 12:13:34 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 12:13:36] [Date: 2022-08-07 12:13:36 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:13:36] [Date: 2022-08-07 12:13:36 | root execute succesfully show tables query
+ 'describe tbl_persona;']
+[7-Aug-2022 12:13:38] [Date: 2022-08-07 12:13:38 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:13:38] [Date: 2022-08-07 12:13:38 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[7-Aug-2022 12:13:40] [Date: 2022-08-07 12:13:40 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:13:40] [Date: 2022-08-07 12:13:40 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_ciudad']
+[7-Aug-2022 12:13:40] [Date: 2022-08-07 12:13:40 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 0,15;']
+[7-Aug-2022 12:15:13] [Date: 2022-08-07 12:15:13 |  CONNECT DB 'penjub' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[7-Aug-2022 12:18:06] [Date: 2022-08-07 12:18:06 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 12:18:06] [Date: 2022-08-07 12:18:06 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 12:18:07] [Date: 2022-08-07 12:18:07 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:18:07] [Date: 2022-08-07 12:18:07 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 12:18:08] [Date: 2022-08-07 12:18:08 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:18:08] [Date: 2022-08-07 12:18:08 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[7-Aug-2022 12:18:10] [Date: 2022-08-07 12:18:10 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:18:10] [Date: 2022-08-07 12:18:10 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_ciudad']
+[7-Aug-2022 12:18:10] [Date: 2022-08-07 12:18:10 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 0,15;']
+[7-Aug-2022 12:18:32] [Date: 2022-08-07 12:18:32 |  CONNECT DB 'penjub' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[7-Aug-2022 12:22:18] [Date: 2022-08-07 12:22:18 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 12:22:18] [Date: 2022-08-07 12:22:18 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 12:22:20] [Date: 2022-08-07 12:22:20 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:22:20] [Date: 2022-08-07 12:22:20 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 12:22:27] [Date: 2022-08-07 12:22:27 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:22:27] [Date: 2022-08-07 12:22:27 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[7-Aug-2022 12:22:29] [Date: 2022-08-07 12:22:29 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:22:29] [Date: 2022-08-07 12:22:29 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_ciudad']
+[7-Aug-2022 12:22:29] [Date: 2022-08-07 12:22:29 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 0,15;']
+[7-Aug-2022 12:23:19] [Date: 2022-08-07 12:23:19 |  CONNECT DB 'penjub' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[7-Aug-2022 12:25:24] [Date: 2022-08-07 12:25:24 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 12:25:24] [Date: 2022-08-07 12:25:24 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 12:25:26] [Date: 2022-08-07 12:25:26 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:25:26] [Date: 2022-08-07 12:25:26 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 12:25:29] [Date: 2022-08-07 12:25:29 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:25:29] [Date: 2022-08-07 12:25:29 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[7-Aug-2022 12:25:30] [Date: 2022-08-07 12:25:30 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:25:30] [Date: 2022-08-07 12:25:30 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_ciudad']
+[7-Aug-2022 12:25:30] [Date: 2022-08-07 12:25:30 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 0,15;']
+[7-Aug-2022 12:25:37] [Date: 2022-08-07 12:25:37 |  CONNECT DB 'penjub' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[7-Aug-2022 12:26:31] [Date: 2022-08-07 12:26:31 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 12:26:31] [Date: 2022-08-07 12:26:31 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 12:26:33] [Date: 2022-08-07 12:26:33 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:26:33] [Date: 2022-08-07 12:26:33 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 12:26:35] [Date: 2022-08-07 12:26:35 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:26:35] [Date: 2022-08-07 12:26:35 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[7-Aug-2022 12:26:36] [Date: 2022-08-07 12:26:36 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:26:36] [Date: 2022-08-07 12:26:36 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_ciudad']
+[7-Aug-2022 12:26:36] [Date: 2022-08-07 12:26:36 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 0,15;']
+[7-Aug-2022 12:26:39] [Date: 2022-08-07 12:26:39 |  CONNECT DB 'penjub' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[7-Aug-2022 12:28:29] [Date: 2022-08-07 12:28:29 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 12:28:29] [Date: 2022-08-07 12:28:29 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 12:28:31] [Date: 2022-08-07 12:28:31 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:28:31] [Date: 2022-08-07 12:28:31 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 12:28:32] [Date: 2022-08-07 12:28:32 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:28:32] [Date: 2022-08-07 12:28:32 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[7-Aug-2022 12:28:33] [Date: 2022-08-07 12:28:33 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:28:33] [Date: 2022-08-07 12:28:33 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_ciudad']
+[7-Aug-2022 12:28:33] [Date: 2022-08-07 12:28:33 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 0,15;']
+[7-Aug-2022 12:29:13] [Date: 2022-08-07 12:29:13 |  CONNECT DB 'penjub' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[7-Aug-2022 12:31:39] [Date: 2022-08-07 12:31:39 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 12:31:39] [Date: 2022-08-07 12:31:39 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 12:31:41] [Date: 2022-08-07 12:31:41 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:31:41] [Date: 2022-08-07 12:31:41 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 12:31:43] [Date: 2022-08-07 12:31:43 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:31:43] [Date: 2022-08-07 12:31:43 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[7-Aug-2022 12:31:44] [Date: 2022-08-07 12:31:44 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:31:44] [Date: 2022-08-07 12:31:44 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_ciudad']
+[7-Aug-2022 12:31:44] [Date: 2022-08-07 12:31:44 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 0,15;']
+[7-Aug-2022 12:31:52] [Date: 2022-08-07 12:31:52 |  CONNECT DB 'penjub' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[7-Aug-2022 12:33:24] [Date: 2022-08-07 12:33:24 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 12:33:24] [Date: 2022-08-07 12:33:24 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 12:33:26] [Date: 2022-08-07 12:33:26 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:33:26] [Date: 2022-08-07 12:33:26 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 12:33:29] [Date: 2022-08-07 12:33:29 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:33:29] [Date: 2022-08-07 12:33:29 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[7-Aug-2022 12:33:30] [Date: 2022-08-07 12:33:30 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:33:30] [Date: 2022-08-07 12:33:30 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_ciudad']
+[7-Aug-2022 12:33:30] [Date: 2022-08-07 12:33:30 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 0,15;']
+[7-Aug-2022 12:33:35] [Date: 2022-08-07 12:33:35 |  CONNECT DB 'penjub' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[7-Aug-2022 12:35:46] [Date: 2022-08-07 12:35:46 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 12:35:46] [Date: 2022-08-07 12:35:46 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 12:35:48] [Date: 2022-08-07 12:35:48 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:35:48] [Date: 2022-08-07 12:35:48 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 12:35:51] [Date: 2022-08-07 12:35:51 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:35:51] [Date: 2022-08-07 12:35:51 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[7-Aug-2022 12:35:52] [Date: 2022-08-07 12:35:52 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:35:52] [Date: 2022-08-07 12:35:52 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_ciudad']
+[7-Aug-2022 12:35:52] [Date: 2022-08-07 12:35:52 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 0,15;']
+[7-Aug-2022 12:36:23] [Date: 2022-08-07 12:36:23 |  CONNECT DB 'penjub' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[7-Aug-2022 12:36:59] [Date: 2022-08-07 12:36:59 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 12:36:59] [Date: 2022-08-07 12:36:59 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 12:37:01] [Date: 2022-08-07 12:37:01 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:37:01] [Date: 2022-08-07 12:37:01 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 12:37:13] [Date: 2022-08-07 12:37:13 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:37:13] [Date: 2022-08-07 12:37:13 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[7-Aug-2022 12:37:14] [Date: 2022-08-07 12:37:14 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:37:14] [Date: 2022-08-07 12:37:14 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_ciudad']
+[7-Aug-2022 12:37:14] [Date: 2022-08-07 12:37:14 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 0,15;']
+[7-Aug-2022 12:37:20] [Date: 2022-08-07 12:37:20 |  CONNECT DB 'penjub' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[7-Aug-2022 12:42:54] [Date: 2022-08-07 12:42:54 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 12:42:54] [Date: 2022-08-07 12:42:54 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 12:42:56] [Date: 2022-08-07 12:42:56 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:42:56] [Date: 2022-08-07 12:42:56 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 12:42:59] [Date: 2022-08-07 12:42:59 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:42:59] [Date: 2022-08-07 12:42:59 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[7-Aug-2022 12:43:01] [Date: 2022-08-07 12:43:01 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:43:01] [Date: 2022-08-07 12:43:01 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_ciudad']
+[7-Aug-2022 12:43:01] [Date: 2022-08-07 12:43:01 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 0,15;']
+[7-Aug-2022 12:48:56] [Date: 2022-08-07 12:48:56 |  CONNECT DB 'penjub' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[7-Aug-2022 12:49:02] [Date: 2022-08-07 12:49:02 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 12:49:02] [Date: 2022-08-07 12:49:02 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 12:49:04] [Date: 2022-08-07 12:49:04 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:49:04] [Date: 2022-08-07 12:49:04 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 12:49:07] [Date: 2022-08-07 12:49:07 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:49:07] [Date: 2022-08-07 12:49:07 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[7-Aug-2022 12:49:11] [Date: 2022-08-07 12:49:11 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:49:11] [Date: 2022-08-07 12:49:11 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_ciudad']
+[7-Aug-2022 12:49:11] [Date: 2022-08-07 12:49:11 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 0,15;']
+[7-Aug-2022 12:49:26] [Date: 2022-08-07 12:49:26 |  CONNECT DB 'penjub' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[7-Aug-2022 12:51:24] [Date: 2022-08-07 12:51:24 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 12:51:24] [Date: 2022-08-07 12:51:24 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 12:51:26] [Date: 2022-08-07 12:51:26 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:51:26] [Date: 2022-08-07 12:51:26 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 12:51:29] [Date: 2022-08-07 12:51:29 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:51:29] [Date: 2022-08-07 12:51:29 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[7-Aug-2022 12:51:31] [Date: 2022-08-07 12:51:31 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:51:31] [Date: 2022-08-07 12:51:31 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_ciudad']
+[7-Aug-2022 12:51:31] [Date: 2022-08-07 12:51:31 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 0,15;']
+[7-Aug-2022 12:51:33] [Date: 2022-08-07 12:51:33 |  CONNECT DB 'penjub' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'localhost' (using password: NO)]
+[7-Aug-2022 12:52:24] [Date: 2022-08-07 12:52:24 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 12:52:24] [Date: 2022-08-07 12:52:24 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 12:52:26] [Date: 2022-08-07 12:52:26 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:52:26] [Date: 2022-08-07 12:52:26 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 12:52:28] [Date: 2022-08-07 12:52:28 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:52:28] [Date: 2022-08-07 12:52:28 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[7-Aug-2022 12:52:29] [Date: 2022-08-07 12:52:29 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:52:29] [Date: 2022-08-07 12:52:29 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_ciudad']
+[7-Aug-2022 12:52:29] [Date: 2022-08-07 12:52:29 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 0,15;']
+[7-Aug-2022 12:52:32] [Date: 2022-08-07 12:52:32 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:52:32] [Date: 2022-08-07 12:52:32 | select query in penjub FAILED 
+ 'SELECT * FROM limit 15,15;' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'limit 15,15' at line 1]
+[7-Aug-2022 12:58:26] [Date: 2022-08-07 12:58:26 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 12:58:26] [Date: 2022-08-07 12:58:26 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 12:58:28] [Date: 2022-08-07 12:58:28 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:58:28] [Date: 2022-08-07 12:58:28 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 12:58:29] [Date: 2022-08-07 12:58:29 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:58:29] [Date: 2022-08-07 12:58:29 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[7-Aug-2022 12:58:31] [Date: 2022-08-07 12:58:31 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:58:31] [Date: 2022-08-07 12:58:31 | Sql_Query_try_catch: query in penjub FAILED !
+ 'select count(*) as numb from' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1]
+[7-Aug-2022 12:59:34] [Date: 2022-08-07 12:59:34 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 12:59:34] [Date: 2022-08-07 12:59:34 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 12:59:35] [Date: 2022-08-07 12:59:35 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:59:35] [Date: 2022-08-07 12:59:35 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 12:59:38] [Date: 2022-08-07 12:59:38 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:59:38] [Date: 2022-08-07 12:59:38 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[7-Aug-2022 12:59:39] [Date: 2022-08-07 12:59:39 | root connect succesfully to 'penjub']
+[7-Aug-2022 12:59:39] [Date: 2022-08-07 12:59:39 | Sql_Query_try_catch: query in penjub FAILED !
+ 'select count(*) as numb from' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1]
+[7-Aug-2022 13:02:30] [Date: 2022-08-07 13:02:30 | root connect succesfully to '127.0.0.1']
+
+[7-Aug-2022 13:02:30] [Date: 2022-08-07 13:02:30 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 13:02:30] [Date: 2022-08-07 13:02:30 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 13:02:32] [Date: 2022-08-07 13:02:32 | root connect succesfully to 'penjub']
+[7-Aug-2022 13:02:32] [Date: 2022-08-07 13:02:32 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 13:02:34] [Date: 2022-08-07 13:02:34 | root connect succesfully to 'penjub']
+[7-Aug-2022 13:02:34] [Date: 2022-08-07 13:02:34 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[7-Aug-2022 13:02:35] [Date: 2022-08-07 13:02:35 | root connect succesfully to 'penjub']
+[7-Aug-2022 13:02:35] [Date: 2022-08-07 13:02:35 | Sql_Query_try_catch: query in penjub FAILED !
+ 'select count(*) as numb from' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1]
+[7-Aug-2022 13:03:46] [Date: 2022-08-07 13:03:46 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[7-Aug-2022 13:03:46] [Date: 2022-08-07 13:03:46 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 13:03:49] [Date: 2022-08-07 13:03:49 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 13:03:49] [Date: 2022-08-07 13:03:49 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 13:03:49] [Date: 2022-08-07 13:03:49 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 13:03:49] [Date: 2022-08-07 13:03:49 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 13:03:49] [Date: 2022-08-07 13:03:49 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 13:03:49] [Date: 2022-08-07 13:03:49 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 13:03:51] [Date: 2022-08-07 13:03:51 | root connect succesfully to 'penjub']
+[7-Aug-2022 13:03:51] [Date: 2022-08-07 13:03:51 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 13:03:55] [Date: 2022-08-07 13:03:55 | root connect succesfully to 'penjub']
+[7-Aug-2022 13:03:55] [Date: 2022-08-07 13:03:55 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[7-Aug-2022 13:03:56] [Date: 2022-08-07 13:03:56 | root connect succesfully to 'penjub']
+[7-Aug-2022 13:03:56] [Date: 2022-08-07 13:03:56 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_ciudad']
+[7-Aug-2022 13:03:56] [Date: 2022-08-07 13:03:56 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 0,15']
+[7-Aug-2022 13:04:05] [Date: 2022-08-07 13:04:05 | root connect succesfully to 'penjub']
+[7-Aug-2022 13:04:05] [Date: 2022-08-07 13:04:05 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 15,15']
+[7-Aug-2022 13:04:18] [Date: 2022-08-07 13:04:18 | root connect succesfully to 'penjub']
+[7-Aug-2022 13:04:18] [Date: 2022-08-07 13:04:18 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 15,15']
+[7-Aug-2022 13:04:22] [Date: 2022-08-07 13:04:22 | root connect succesfully to 'penjub']
+[7-Aug-2022 13:04:22] [Date: 2022-08-07 13:04:22 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 0,15']
+[7-Aug-2022 13:04:39] [Date: 2022-08-07 13:04:39 | root connect succesfully to 'penjub']
+[7-Aug-2022 13:04:39] [Date: 2022-08-07 13:04:39 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 15,15']
+[7-Aug-2022 13:04:51] [Date: 2022-08-07 13:04:51 | root connect succesfully to 'penjub']
+[7-Aug-2022 13:04:51] [Date: 2022-08-07 13:04:51 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 15,15']
+[7-Aug-2022 13:04:59] [Date: 2022-08-07 13:04:59 | root connect succesfully to 'penjub']
+[7-Aug-2022 13:04:59] [Date: 2022-08-07 13:04:59 | root execute succesfully show tables query
+ 'describe tbl_persona;']
+[7-Aug-2022 13:05:00] [Date: 2022-08-07 13:05:00 | root connect succesfully to 'penjub']
+[7-Aug-2022 13:05:00] [Date: 2022-08-07 13:05:00 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_persona']
+[7-Aug-2022 13:05:00] [Date: 2022-08-07 13:05:00 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona limit 0,15']
+[7-Aug-2022 13:05:20] [Date: 2022-08-07 13:05:20 | root connect succesfully to 'penjub']
+[7-Aug-2022 13:05:20] [Date: 2022-08-07 13:05:20 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona limit 15,15']
+[7-Aug-2022 13:05:37] [Date: 2022-08-07 13:05:37 | root connect succesfully to 'penjub']
+[7-Aug-2022 13:05:37] [Date: 2022-08-07 13:05:37 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona limit 30,15']
+[7-Aug-2022 13:05:43] [Date: 2022-08-07 13:05:43 | root connect succesfully to 'penjub']
+[7-Aug-2022 13:05:43] [Date: 2022-08-07 13:05:43 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona limit 45,15']
+[7-Aug-2022 13:07:25] [Date: 2022-08-07 13:07:25 | root connect succesfully to 'penjub']
+[7-Aug-2022 13:07:25] [Date: 2022-08-07 13:07:25 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona limit 45,15']
+[7-Aug-2022 13:08:19] [Date: 2022-08-07 13:08:19 | root connect succesfully to '127.0.0.1']
+[7-Aug-2022 13:08:19] [Date: 2022-08-07 13:08:19 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[7-Aug-2022 13:08:20] [Date: 2022-08-07 13:08:20 | root connect succesfully to 'penjub']
+[7-Aug-2022 13:08:20] [Date: 2022-08-07 13:08:20 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[7-Aug-2022 13:08:22] [Date: 2022-08-07 13:08:22 | root connect succesfully to 'penjub']
+[7-Aug-2022 13:08:22] [Date: 2022-08-07 13:08:22 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[7-Aug-2022 13:08:25] [Date: 2022-08-07 13:08:25 | root connect succesfully to 'penjub']
+[7-Aug-2022 13:08:25] [Date: 2022-08-07 13:08:25 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_ciudad']
+[7-Aug-2022 13:08:25] [Date: 2022-08-07 13:08:25 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 0,15']
+[7-Aug-2022 13:08:30] [Date: 2022-08-07 13:08:30 | root connect succesfully to 'penjub']
+[7-Aug-2022 13:08:30] [Date: 2022-08-07 13:08:30 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 15,15']

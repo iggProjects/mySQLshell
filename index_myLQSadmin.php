@@ -213,7 +213,7 @@ echo "
                 else {    
                     // Check if actualPage is active
                     if ( document.getElementById('display-sql-console-Down').classList.contains('showDiv') ) { _tag = 'display-sql-console-Down'; }                         
-                    Fetch_js(_tag,'./include/AJAX_php_js/ajax_ViewTbl.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table')+'&page=1');
+                    Fetch_js(_tag,'./include/AJAX_php_js/ajax_ViewTbl.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&table='+table_param.getAttribute('table')+'&page=1'+'&rec_num_init=0');
                 }
 
                 break;    
@@ -437,8 +437,8 @@ echo "
         var page = document.getElementById('actualPage').getAttribute('page');
         var table_param = document.getElementById('display-result-nav-title');
         var query = document.getElementById("actualQuery").textContent;  
-        var totRecords = document.getElementById('actualPage').getAttribute('totRecords');
-        var rec_numb = 0;
+        var num_rec_init = parseInt(document.getElementById('actualPage').getAttribute('num_rec_init'));
+        var totRecords = parseInt(document.getElementById('actualPage').getAttribute('totRecords'));        
         var newPage = 1;
 
         //alert("display_sql_result: " + document.getElementById("display_sql_result").classList);
@@ -448,39 +448,48 @@ echo "
 
             case '1':
                 page = 1;
-                alert('Query: ' + query + ', page: ' + page + ', rec_numb: ' + rec_numb + ', action: ' + char); 
+                alert('Query: ' + query + '\n' + ', page: ' + page + ', num_rec_init: ' + num_rec_init + ', totRecords: ' + totRecords + '\n' + ', action: ' + char); 
                 break;
 
             case '-1':                
                 if ( parseInt(page) > 1 ) { 
                     page = parseInt(page) -1 ;
-                    rec_numb = (page-1) * 15;
+                    num_rec_init = num_rec_init - 15;
                 }
-                alert('Query: ' + query + ', page: ' + page + ', rec_numb: ' + rec_numb + ', action: ' + char); 
+                alert('Query: ' + query + '\n' + ', page: ' + page + ', num_rec_init: ' + num_rec_init + ', totRecords: ' + totRecords + '\n' + ', action: ' + char); 
                 break; 
 
             case '+1':
-                page = parseInt(page);
-                rec_numb = page * 15;
-                alert('Query: ' + query + ', page: ' + (page+1) + ', rec_numb: ' + rec_numb + ', action: ' + char); 
+                page = parseInt(page) + 1;
+                num_rec_init = num_rec_init + 15;
+                // put IF (num_rec_init > totRecords) {}
+                alert('Query: ' + query + '\n' + ', page: ' + page + ', num_rec_init: ' + num_rec_init + ', totRecords: ' + totRecords + '\n' + ', action: ' + char); 
                 break;   
 
             case '2':
-                page = Math.floor(totRecords / 15);
-                rec_numb = page * 15;
-                alert('Query: ' + query + ', page: ' + (page +1) + ', rec_numb: ' + rec_numb + ', action: ' + char); 
+                page = Math.floor(totRecords / 15) +1;
+                num_rec_init = (page-1)*15;
+                // put IF (num_rec_init > totRecords) {}                
+                alert('Query: ' + query + '\n' + ', page: ' + page + ', num_rec_init: ' + num_rec_init + ', totRecords: ' + totRecords + '\n' + ', action: ' + char); 
                 break;
 
             default:
                 break;  
 
         }    
-
         
-        // tag's:  display_sql_result and display-sql-console-Down   
+        // tag's:  display_sql_result and display-sql-console-Down  
+        var post_str = ''; 
         if ( document.getElementById('display_sql_result').classList.contains('showDiv') ) {
             var tag = 'display_sql_result';
-            //Fetch_js(tag,'./include/AJAX_php_js/ajax_ViewTbl.php?host_numb=' + table_param.getAttribute('host_numb') + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&sql_query='+query+'&rec_numb='+rec_numb);
+            post_str= "host_numb=" + table_param.getAttribute('host_numb');
+            post_str += "&hostName=" + table_param.getAttribute('host');
+            post_str += "&dbName=" + table_param.getAttribute('db');
+            post_str += "&table=" + table_param.getAttribute('table');
+            post_str += "&page=" + page + "&num_rec_init=" +num_rec_init + "&totRecords=" +totRecords;
+            // post_str += "&sql_query=" + query + "&page=" + page + "&num_rec_init=" +num_rec_init;
+            alert('post_str' + post_str);
+            Fetch_js(tag,'./include/AJAX_php_js/ajax_ViewTbl.php?'+post_str); 
         } else if ( document.getElementById('display-sql-console-Down').classList.contains('showDiv') )  {
             var tag = 'display-sql-console-Down'; 
             //Fetch_js(tag,'./include/AJAX_php_js/ajax_Sql_Query.php?host_numb=' + table_param.getAttribute('host_numb') + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&sql_query='+query+'&rec_numb='+rec_numb);
