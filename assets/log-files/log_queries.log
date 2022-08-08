@@ -31934,3 +31934,74 @@
 [8-Aug-2022 13:02:57] [Date: 2022-08-08 13:02:57 | root connect succesfully to 'employees']
 [8-Aug-2022 13:02:57] [Date: 2022-08-08 13:02:57 | root execute succesfully show tables query
  'describe dept_emp;']
+[8-Aug-2022 13:03:38] [Date: 2022-08-08 13:03:38 | root connect succesfully to '127.0.0.1']
+[8-Aug-2022 13:03:38] [Date: 2022-08-08 13:03:38 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[8-Aug-2022 13:03:39] [Date: 2022-08-08 13:03:39 | root connect succesfully to 'mysql']
+[8-Aug-2022 13:03:39] [Date: 2022-08-08 13:03:39 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[8-Aug-2022 13:03:41] [Date: 2022-08-08 13:03:41 | root connect succesfully to 'mvc_example']
+[8-Aug-2022 13:03:41] [Date: 2022-08-08 13:03:41 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[8-Aug-2022 13:03:42] [Date: 2022-08-08 13:03:42 | root connect succesfully to 'mvc_example']
+[8-Aug-2022 13:03:42] [Date: 2022-08-08 13:03:42 | root execute succesfully show tables query
+ 'describe products;']
+[8-Aug-2022 13:03:44] [Date: 2022-08-08 13:03:44 | root connect succesfully to 'mvc_example']
+[8-Aug-2022 13:03:44] [Date: 2022-08-08 13:03:44 | root execute succesfully Sql Query in DB: mvc_example
+ 'select count(*) as numb from products']
+[8-Aug-2022 13:03:44] [Date: 2022-08-08 13:03:44 | root execute succesfully Select query in mvc_example
+ 'SELECT * FROM products limit 0,15']
+[8-Aug-2022 13:03:46] [Date: 2022-08-08 13:03:46 | root connect succesfully to 'employees']
+[8-Aug-2022 13:03:46] [Date: 2022-08-08 13:03:46 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[8-Aug-2022 13:03:49] [Date: 2022-08-08 13:03:49 | root connect succesfully to 'employees']
+[8-Aug-2022 13:03:49] [Date: 2022-08-08 13:03:49 | root execute succesfully show tables query
+ 'describe departments;']
+[8-Aug-2022 13:03:50] [Date: 2022-08-08 13:03:50 | root connect succesfully to 'employees']
+[8-Aug-2022 13:03:50] [Date: 2022-08-08 13:03:50 | root execute succesfully show tables query
+ 'describe departments;']
+[8-Aug-2022 13:03:51] [Date: 2022-08-08 13:03:51 | root connect succesfully to 'employees']
+[8-Aug-2022 13:03:51] [Date: 2022-08-08 13:03:51 | root execute succesfully Sql Query in DB: employees
+ 'select count(*) as numb from departments']
+[8-Aug-2022 13:03:51] [Date: 2022-08-08 13:03:51 | root execute succesfully Select query in employees
+ 'SELECT * FROM departments limit 0,15']
+[8-Aug-2022 13:04:22] [Date: 2022-08-08 13:04:22 | root connect succesfully to 'my_lqs_admin']
+[8-Aug-2022 13:04:22] [Date: 2022-08-08 13:04:22 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[8-Aug-2022 13:04:24] [Date: 2022-08-08 13:04:24 | root connect succesfully to 'my_lqs_admin']
+[8-Aug-2022 13:04:24] [Date: 2022-08-08 13:04:24 | root execute succesfully show tables query
+ 'describe favorite_queries;']
+[8-Aug-2022 13:04:26] [Date: 2022-08-08 13:04:26 | root connect succesfully to 'my_lqs_admin']
+[8-Aug-2022 13:04:26] [Date: 2022-08-08 13:04:26 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'select count(*) as numb from favorite_queries']
+[8-Aug-2022 13:04:34] [Date: 2022-08-08 13:04:34 | root connect succesfully to 'my_lqs_admin']
+[8-Aug-2022 13:04:34] [Date: 2022-08-08 13:04:34 | root execute succesfully show tables query
+ 'describe standard_queries;']
+[8-Aug-2022 13:04:36] [Date: 2022-08-08 13:04:36 | root connect succesfully to 'my_lqs_admin']
+[8-Aug-2022 13:04:36] [Date: 2022-08-08 13:04:36 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'select count(*) as numb from standard_queries']
+[8-Aug-2022 13:04:36] [Date: 2022-08-08 13:04:36 | root execute succesfully Select query in my_lqs_admin
+ 'SELECT * FROM standard_queries limit 0,15']
+[8-Aug-2022 13:04:42] [Date: 2022-08-08 13:04:42 | root connect succesfully to 'penjub']
+[8-Aug-2022 13:04:42] [Date: 2022-08-08 13:04:42 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[8-Aug-2022 13:04:45] [Date: 2022-08-08 13:04:45 | root connect succesfully to 'penjub']
+[8-Aug-2022 13:04:45] [Date: 2022-08-08 13:04:45 | root execute succesfully show tables query
+ 'describe tbl_archivos;']
+[8-Aug-2022 13:04:49] [Date: 2022-08-08 13:04:49 | root connect succesfully to 'penjub']
+[8-Aug-2022 13:04:49] [Date: 2022-08-08 13:04:49 | root execute succesfully show tables query
+ 'describe tbl_arch_imagen_persona;']
+[8-Aug-2022 13:04:54] [Date: 2022-08-08 13:04:54 | root connect succesfully to 'penjub']
+[8-Aug-2022 13:04:54] [Date: 2022-08-08 13:04:54 | root execute succesfully show tables query
+ 'describe tbl_relacion_persona;']
+[8-Aug-2022 13:04:56] [Date: 2022-08-08 13:04:56 | root connect succesfully to 'penjub']
+[8-Aug-2022 13:04:56] [Date: 2022-08-08 13:04:56 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_relacion_persona']
+[8-Aug-2022 13:04:56] [Date: 2022-08-08 13:04:56 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_relacion_persona limit 0,15']
+[8-Aug-2022 13:04:59] [Date: 2022-08-08 13:04:59 | root connect succesfully to 'my_lqs_admin']
+[8-Aug-2022 13:04:59] [Date: 2022-08-08 13:04:59 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[8-Aug-2022 13:04:59] [Date: 2022-08-08 13:04:59 | root connect succesfully to 'penjub']
+[8-Aug-2022 13:04:59] [Date: 2022-08-08 13:04:59 | root execute succesfully show tables query
+ 'SHOW TABLES;']
