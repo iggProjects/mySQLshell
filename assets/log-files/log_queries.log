@@ -31837,3 +31837,100 @@
  'select count(*) as numb from tbl_consulado']
 [8-Aug-2022 12:59:54] [Date: 2022-08-08 12:59:54 | root execute succesfully Select query in penjub
  'SELECT * FROM tbl_consulado limit 0,15']
+[8-Aug-2022 13:01:24] [Date: 2022-08-08 13:01:24 | root connect succesfully to '127.0.0.1']
+[8-Aug-2022 13:01:24] [Date: 2022-08-08 13:01:24 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[8-Aug-2022 13:01:25] [Date: 2022-08-08 13:01:25 | root connect succesfully to 'penjub']
+[8-Aug-2022 13:01:25] [Date: 2022-08-08 13:01:25 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[8-Aug-2022 13:01:30] [Date: 2022-08-08 13:01:30 | root connect succesfully to 'penjub']
+[8-Aug-2022 13:01:30] [Date: 2022-08-08 13:01:30 | root execute succesfully show tables query
+ 'describe tbl_archivos;']
+[8-Aug-2022 13:01:32] [Date: 2022-08-08 13:01:32 | root connect succesfully to 'penjub']
+[8-Aug-2022 13:01:32] [Date: 2022-08-08 13:01:32 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_archivos']
+[8-Aug-2022 13:01:32] [Date: 2022-08-08 13:01:32 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_archivos limit 0,15']
+[8-Aug-2022 13:01:42] [Date: 2022-08-08 13:01:42 | root connect succesfully to 'penjub'][8-Aug-2022 13:01:42] [Date: 2022-08-08 13:01:42 | root connect succesfully to 'penjub']
+[8-Aug-2022 13:01:42] [Date: 2022-08-08 13:01:42 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_archivos']
+[8-Aug-2022 13:01:42] [Date: 2022-08-08 13:01:42 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_archivos limit 0,15']
+[8-Aug-2022 13:01:42] [Date: 2022-08-08 13:01:42 | root connect succesfully to 'penjub']
+[8-Aug-2022 13:01:42] [Date: 2022-08-08 13:01:42 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[8-Aug-2022 13:01:42] [Date: 2022-08-08 13:01:42 | root execute succesfully show tables query
+ 'describe tbl_archivos;']
+[8-Aug-2022 13:01:47] [Date: 2022-08-08 13:01:47 | root connect succesfully to 'penjub']
+[8-Aug-2022 13:01:47] [Date: 2022-08-08 13:01:47 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[8-Aug-2022 13:01:48] [Date: 2022-08-08 13:01:48 | root connect succesfully to 'penjub']
+[8-Aug-2022 13:01:48] [Date: 2022-08-08 13:01:48 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_ciudad']
+[8-Aug-2022 13:01:48] [Date: 2022-08-08 13:01:48 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 0,15']
+[8-Aug-2022 13:01:52] [Date: 2022-08-08 13:01:52 | root connect succesfully to 'penjub']
+[8-Aug-2022 13:01:52] [Date: 2022-08-08 13:01:52 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 15,15']
+[8-Aug-2022 13:01:55] [Date: 2022-08-08 13:01:55 | root connect succesfully to 'penjub']
+[8-Aug-2022 13:01:55] [Date: 2022-08-08 13:01:55 | root execute succesfully show tables query
+ 'describe tbl_persona;']
+[8-Aug-2022 13:01:56] [Date: 2022-08-08 13:01:56 | root connect succesfully to 'penjub']
+[8-Aug-2022 13:01:56] [Date: 2022-08-08 13:01:56 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_persona']
+[8-Aug-2022 13:01:56] [Date: 2022-08-08 13:01:56 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona limit 0,15']
+[8-Aug-2022 13:01:59] [Date: 2022-08-08 13:01:59 | root connect succesfully to 'penjub']
+[8-Aug-2022 13:01:59] [Date: 2022-08-08 13:01:59 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona limit 15,15']
+[8-Aug-2022 13:02:00] [Date: 2022-08-08 13:02:00 | root connect succesfully to 'my_lqs_admin']
+[8-Aug-2022 13:02:00] [Date: 2022-08-08 13:02:00 | root connect succesfully to 'penjub'][8-Aug-2022 13:02:00] [Date: 2022-08-08 13:02:00 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+
+[8-Aug-2022 13:02:00] [Date: 2022-08-08 13:02:00 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[8-Aug-2022 13:02:10] [Date: 2022-08-08 13:02:10 | root connect succesfully to 'penjub']
+[8-Aug-2022 13:02:10] [Date: 2022-08-08 13:02:10 | root execute succesfully Sql Query in DB: penjub
+ 'select * from tbl_ciudad']
+[8-Aug-2022 13:02:10] [Date: 2022-08-08 13:02:10 | root execute succesfully Sql Query in DB: penjub
+ 'select * from tbl_ciudad limit 0,15']
+[8-Aug-2022 13:02:14] [Date: 2022-08-08 13:02:14 | root connect succesfully to 'employees']
+[8-Aug-2022 13:02:14] [Date: 2022-08-08 13:02:14 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[8-Aug-2022 13:02:17] [Date: 2022-08-08 13:02:17 | root connect succesfully to 'employees']
+[8-Aug-2022 13:02:17] [Date: 2022-08-08 13:02:17 | root execute succesfully show tables query
+ 'describe departments;']
+[8-Aug-2022 13:02:18] [Date: 2022-08-08 13:02:18 | root connect succesfully to 'employees']
+[8-Aug-2022 13:02:18] [Date: 2022-08-08 13:02:18 | root execute succesfully Sql Query in DB: employees
+ 'select count(*) as numb from departments']
+[8-Aug-2022 13:02:18] [Date: 2022-08-08 13:02:18 | root execute succesfully Select query in employees
+ 'SELECT * FROM departments limit 0,15']
+[8-Aug-2022 13:02:24] [Date: 2022-08-08 13:02:24 | root connect succesfully to 'employees']
+[8-Aug-2022 13:02:24] [Date: 2022-08-08 13:02:24 | root execute succesfully show tables query
+ 'describe departments;']
+[8-Aug-2022 13:02:27] [Date: 2022-08-08 13:02:27 | root connect succesfully to 'employees']
+[8-Aug-2022 13:02:27] [Date: 2022-08-08 13:02:27 | root execute succesfully show tables query
+ 'describe dept_emp;']
+[8-Aug-2022 13:02:29] [Date: 2022-08-08 13:02:29 | root connect succesfully to 'employees']
+[8-Aug-2022 13:02:30] [Date: 2022-08-08 13:02:30 | root execute succesfully Sql Query in DB: employees
+ 'select count(*) as numb from dept_emp']
+[8-Aug-2022 13:02:30] [Date: 2022-08-08 13:02:30 | root execute succesfully Select query in employees
+ 'SELECT * FROM dept_emp limit 0,15']
+[8-Aug-2022 13:02:45] [Date: 2022-08-08 13:02:45 | root connect succesfully to 'employees']
+[8-Aug-2022 13:02:45] [Date: 2022-08-08 13:02:45 | root execute succesfully Sql Query in DB: employees
+ 'SELECT * FROM dept_emp limit 15,15']
+[8-Aug-2022 13:02:45] [Date: 2022-08-08 13:02:45 | root connect succesfully to 'employees']
+[8-Aug-2022 13:02:45] [Date: 2022-08-08 13:02:45 | root execute succesfully Sql Query in DB: employees
+ 'SELECT * FROM dept_emp limit 30,15']
+[8-Aug-2022 13:02:46] [Date: 2022-08-08 13:02:46 | root connect succesfully to 'employees']
+[8-Aug-2022 13:02:46] [Date: 2022-08-08 13:02:46 | root execute succesfully Sql Query in DB: employees
+ 'SELECT * FROM dept_emp limit 45,15']
+[8-Aug-2022 13:02:48] [Date: 2022-08-08 13:02:48 | root connect succesfully to 'employees']
+[8-Aug-2022 13:02:48] [Date: 2022-08-08 13:02:48 | root execute succesfully Sql Query in DB: employees
+ 'SELECT * FROM dept_emp limit 331590,15']
+[8-Aug-2022 13:02:50] [Date: 2022-08-08 13:02:50 | root connect succesfully to 'employees']
+[8-Aug-2022 13:02:50] [Date: 2022-08-08 13:02:50 | root execute succesfully Sql Query in DB: employees
+ 'SELECT * FROM dept_emp limit 0,15']
+[8-Aug-2022 13:02:57] [Date: 2022-08-08 13:02:57 | root connect succesfully to 'employees']
+[8-Aug-2022 13:02:57] [Date: 2022-08-08 13:02:57 | root execute succesfully show tables query
+ 'describe dept_emp;']

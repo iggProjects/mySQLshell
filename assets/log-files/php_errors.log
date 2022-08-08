@@ -15321,3 +15321,30 @@ Stack trace:
 [08-Aug-2022 12:59:53 Europe/Berlin] PHP Warning:  Undefined variable $divHtml in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 86
 [08-Aug-2022 12:59:54 Europe/Berlin] PHP Warning:  Undefined array key "num_rec_init" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 38
 [08-Aug-2022 12:59:54 Europe/Berlin] PHP Warning:  Undefined array key "totRecords" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 44
+[08-Aug-2022 13:01:25 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[08-Aug-2022 13:01:30 Europe/Berlin] PHP Warning:  Undefined variable $divHtml in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 86
+[08-Aug-2022 13:01:32 Europe/Berlin] PHP Warning:  Undefined array key "num_rec_init" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 38
+[08-Aug-2022 13:01:32 Europe/Berlin] PHP Warning:  Undefined array key "totRecords" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 44
+[08-Aug-2022 13:01:42 Europe/Berlin] PHP Warning:  Undefined array key "num_rec_init" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 38
+[08-Aug-2022 13:01:42 Europe/Berlin] PHP Warning:  Undefined array key "totRecords" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 44
+[08-Aug-2022 13:01:42 Europe/Berlin] PHP Warning:  Undefined variable $divHtml in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 86
+[08-Aug-2022 13:01:42 Europe/Berlin] PHP Warning:  Undefined variable $divHtml in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 86
+[08-Aug-2022 13:01:47 Europe/Berlin] PHP Warning:  Undefined variable $divHtml in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 86
+[08-Aug-2022 13:01:48 Europe/Berlin] PHP Warning:  Undefined array key "num_rec_init" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 38
+[08-Aug-2022 13:01:48 Europe/Berlin] PHP Warning:  Undefined array key "totRecords" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 44
+[08-Aug-2022 13:01:55 Europe/Berlin] PHP Warning:  Undefined variable $divHtml in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 86
+[08-Aug-2022 13:01:56 Europe/Berlin] PHP Warning:  Undefined array key "num_rec_init" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 38
+[08-Aug-2022 13:01:56 Europe/Berlin] PHP Warning:  Undefined array key "totRecords" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 44
+[08-Aug-2022 13:02:00 Europe/Berlin] PHP Warning:  Undefined array key "host_numb" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_SelectOptions_Query.php on line 18
+[08-Aug-2022 13:02:00 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[08-Aug-2022 13:02:10 Europe/Berlin] PHP Warning:  Undefined array key "num_rec_init" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 38
+[08-Aug-2022 13:02:10 Europe/Berlin] PHP Warning:  Undefined array key "totRecords" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 44
+[08-Aug-2022 13:02:14 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ListTables.php on line 50
+[08-Aug-2022 13:02:17 Europe/Berlin] PHP Warning:  Undefined variable $divHtml in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 86
+[08-Aug-2022 13:02:18 Europe/Berlin] PHP Warning:  Undefined array key "num_rec_init" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 38
+[08-Aug-2022 13:02:18 Europe/Berlin] PHP Warning:  Undefined array key "totRecords" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 44
+[08-Aug-2022 13:02:24 Europe/Berlin] PHP Warning:  Undefined variable $divHtml in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 86
+[08-Aug-2022 13:02:27 Europe/Berlin] PHP Warning:  Undefined variable $divHtml in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 86
+[08-Aug-2022 13:02:29 Europe/Berlin] PHP Warning:  Undefined array key "num_rec_init" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 38
+[08-Aug-2022 13:02:29 Europe/Berlin] PHP Warning:  Undefined array key "totRecords" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_ViewTbl.php on line 44
+[08-Aug-2022 13:02:57 Europe/Berlin] PHP Warning:  Undefined variable $divHtml in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_DescribeTbl.php on line 86
