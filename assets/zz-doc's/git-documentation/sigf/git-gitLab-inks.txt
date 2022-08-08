@@ -1,8 +1,0 @@
-
-http://git-cheatsheet.com/
-
-https://git-scm.com/docs/git-difftool
-
-www.atmos.albany.edu/daes/atmclasses/atm350/vi_cheat_sheet.pdf
-
-https://tmuxcheatsheet.com/
