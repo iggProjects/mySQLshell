@@ -238,7 +238,7 @@
         // CASE totRecords vs num_rec_init+15 or num_rec_init-15
 
         if ( str_contains($_query, 'SELECT') || str_contains($_query, 'select') ) {   
-            echo "<div class='pagination'>";
+            echo "<div id='pagination' class='pagination'>";
                 echo "<button class='select-btns' onclick='displayPage(\"1\")'>First</button>";                
                 echo "<button class='select-btns' onclick='displayPage(\"-1\")'>Previous</button>";
                 echo "<button class='select-btns' onclick='displayPage(\"+1\")'>Next</button>";                

@@ -51,7 +51,7 @@ $dbuser  = $cfg_s['Servers'][$host_numb]['user'];
 $dbpass = $cfg_s['Servers'][$host_numb]['password'];
 $dbcharset = 'utf8mb4';
 
-$msg = 'HOST number: ' . $_REQUEST['host_numb'];
+$msg = 'FROM viewTbl --> HOST number: ' . $_REQUEST['host_numb'];
 $msg .= ' - hostName: ' . $_REQUEST['hostName'] .  ' - table: ' . $_REQUEST['table'] . ' - user: ' . $dbuser . ' - pass: ' . $dbpass . ' - page: ' . $page  . '-' . $num_rec_init . '-' . $totRecords;
 My_Log_Message ($msg,$log_comments_path);
 
@@ -69,25 +69,33 @@ if ( gettype($conex_db) === 'object' ) {
     // calculate record number from page selected    
     if( $totRecords == 0 ) {
         $count_query = "select count(*) as numb from $dbtable";  
-        $records = Sql_Query_try_catch($conex_db,$dbname,$dbuser,$count_query,$log_queries_path);    
+        $records = Sql_Query_try_catch($conex_db,$dbname,$dbuser,$count_query,$log_queries_path);           
 
         if (  gettype($records) === 'object' || gettype($records) === 'array') {
             $totRecords = $records[0]['numb'];   
             $route = "display_data";    
+            $msg .= " | totRecords: " . $totRecords;
         } else {
             $route = "display_error";
             $error_msg = "???????? MySql error: select in '$dbtable' query FAILED !<br>Contact Admin.";
         }
     } 
+
     if ( $totRecords > 0 && $route = "display_data" ) {
+        // $sql_query = substr($sql_query, 0, strpos($sql_query, 'limit'));
         $select_query = "SELECT * FROM $dbtable limit $num_rec_init,$jump";
+
+        $msg .= " | select_query: " . $select_query;
+        My_Log_Message ($msg,$log_comments_path);
+
         $resultado = SELECT_try_catch($conex_db,$dbname,$dbuser,$dbtable,$select_query,$log_queries_path); 
         if ( gettype($resultado) === 'object' || gettype($resultado) === 'array' ) {  
             $route = "display_data";        
         } else {
             $route = "display_error";
             $error_msg = "MySql error: select in '$dbtable' query FAILED !<br>Contact Admin.";
-        }    
+        }
+
     } else {
         $route = "display_error";
         $error_msg = "new msg here .... MySql error: select in '$dbtable' query FAILED !<br>Contact Admin.";

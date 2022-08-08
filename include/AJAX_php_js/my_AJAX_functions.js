@@ -54,7 +54,10 @@ function openTree(host_arr) {
             var dbName = this.parentElement.getAttribute('db');   // needed?????
 
             // clear html of 'der-console associated tag's'
-            clearDerConsoleAreas();            
+            clearDerConsoleAreas();        
+            
+            // clear 'display-sql-console-up & display-sql-console-Down'                
+            ClearSqlQueryAreas(); 
         
             // tag for display host and DB           
             document.getElementById('display-result-nav-title').innerHTML = 'Host: \"' + hostName + '\"' + ', DB: \"' + dbName + '\"';
