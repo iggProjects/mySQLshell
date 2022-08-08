@@ -1,6 +1,4 @@
 
-https://gitlab.com/jpelorat/frutas/-/blob/main/lista.txt
-
 http://git-cheatsheet.com/
 
 https://git-scm.com/docs/git-difftool
