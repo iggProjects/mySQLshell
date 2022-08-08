@@ -1,8 +1,0 @@
-# TMUX [USUARIO 1]
-
-    Split screen vertically: Ctrl+b and Shift+5
-    * Split screen horizontally: Ctrl+b and Shift+"
-    * Toggle between panes: Ctrl+b and o
-    Close current pane: Ctrl+b and x
-
-# https://www.howtoforge.com/sharing-terminal-sessions-with-tmux-and-screen
