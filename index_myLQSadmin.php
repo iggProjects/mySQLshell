@@ -1,11 +1,8 @@
 <?php
 
-include_once "./include/php_general_funct/navegacion_servers.php";
 include_once "./include/php_general_funct/my_PHP_functions.php";
 include_once "./include/sql_funct/my_SQL_functions_servers.php";
-// include_once "./include/my_AJAX_functions.js";
 include_once "./config/config.servers.php";
-// include_once "../../config.servers.php";
 
 // pass connection to ajax query in js
 // https://www.php.net/manual/es/pdo.connections.php
@@ -24,8 +21,6 @@ ini_set('display_errors', FALSE);
 ini_set("log_errors",TRUE);
 ini_set('error_log',$php_errors_log);
 // ini_set('display_errors', 1);
-
-// $conex = ""; # variable global de conexión a la servidor seleccionado
 
 ?>
 
