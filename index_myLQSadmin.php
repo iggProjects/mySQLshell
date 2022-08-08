@@ -171,9 +171,8 @@ echo "
                 var table_param = document.getElementById('display-result-nav-title');
                 table_param.setAttribute('host_numb',host_n);
                 table_param.setAttribute('host',hostSelected.value);
-                table_param.innerHTML = "host_numb: " + host_n + " | host: " + hostSelected.value;
-
-                Display_div_nav_izq('html_div_nav_izq',host_array,php_sql_url);   
+                table_param.innerHTML = "host_numb: " + host_n + " | host: " + hostSelected.value;                
+                Display_div_nav_izq('html_div_nav_izq',host_array,php_sql_url);  
 
             } else {
                 document.getElementById('html_div_nav_izq').innerHTML = ""; 
@@ -212,6 +211,9 @@ echo "
                     { alert( 'please, select a table' ); } 
                 else {    
                     // Check if actualPage is active
+                    //document.getElementById('sql-query-area').value = "SELECT * FROM " + table_param.getAttribute('table'); // for avoid conflicts with ajax_Sql_Query finction
+                    document.getElementById('sql-query-area').value = ''; // for avoid conflicts with ajax_Sql_Query finction
+
                     if ( document.getElementById('display-sql-console-Down').classList.contains('showDiv') ) { _tag = 'display-sql-console-Down'; }                         
                     Fetch_js(_tag,'./include/AJAX_php_js/ajax_ViewTbl.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&table='+table_param.getAttribute('table')+'&page=1'+'&rec_num_init=0');
                 }
@@ -385,6 +387,12 @@ echo "
         // read query
         var _query = document.getElementById("sql-query-area").value;   
         
+        // Clear table in tag 'display-result-nav-title'
+        var table_param = document.getElementById('display-result-nav-title');         
+        table_param.innerHTML = "Host: " + table_param.getAttribute('host');
+        table_param.innerHTML += ", DB: " + table_param.getAttribute('db');
+        table_param.removeAttribute('table');
+
         // delete char ';' at the end of query string 
         if ( _query[_query.length-1] == ';' ) { _query = _query.slice(0, -1); }
 
@@ -410,7 +418,9 @@ echo "
             document.getElementById('display-sql-console-Down').style.height='73%';              
 
             // add 'LIMIT parameters' if is a SELECT query
-            if ( _query.includes("select") || _query.includes("SELECT") ) { _query += ' limit 0,15'; }     
+            if ( _query.includes("select") || _query.includes("SELECT") ) { _query += ' limit 0,15'; }   
+            
+            alert('_query is: ' + _query);
             
             // read host name and db name
             // var sql_host_db = document.getElementById('display-result-nav-title');
@@ -490,7 +500,7 @@ echo "
             post_str= "host_numb=" + table_param.getAttribute('host_numb');
             post_str += "&hostName=" + table_param.getAttribute('host');
             post_str += "&dbName=" + table_param.getAttribute('db');
-            post_str += "&sql_query="+query;
+            post_str += "&sql_query=" + query;
             //post_str += "&table=" + table_param.getAttribute('table');
             post_str += "&page=" + page + "&num_rec_init=" +num_rec_init + "&totRecords=" +totRecords;
             Fetch_js(tag,'./include/AJAX_php_js/ajax_Sql_Query.php?'+post_str);
