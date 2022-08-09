@@ -60,7 +60,7 @@ My_Log_Message ($msg,$log_comments_path);
 $conex_db = try_catch_connect_host_db($dbhost,$dbname,$dbuser,$dbpass,$dbcharset,$log_queries_path);
 
 $route = "";
-$error_msg = "MySql error was found";
+$error_msg = "";
 $divHtml = "";
 $thead_titles = [];
 $jump = 15;
@@ -92,7 +92,7 @@ if ( gettype($conex_db) === 'object' ) {
             
         } else {
             $route = "display_error";
-            $error_msg = "???????? MySql error: select in '$dbtable' query FAILED !<br>Contact Admin.";
+            // $error_msg = "???????? MySql error: select in '$dbtable' query FAILED !<br>Contact Admin.";
         }
     }
 
@@ -118,10 +118,10 @@ if ( gettype($conex_db) === 'object' ) {
             $route = "display_data";        
         } else {
             $route = "display_error";
-            $error_msg = "MySql error: select query FAILED !<br>Contact Admin.";
+            // $error_msg = "MySql error: select query FAILED !<br>Contact Admin.";
         }    
 
-    } elseif ($totRecords == 0 ) {  // queries distinct to SELECT or select
+    } elseif ($totRecords == 0 && $route != 'display_error' ) {  // queries distinct to SELECT or select
 
         $select_query = $sql_query;
         
@@ -137,12 +137,12 @@ if ( gettype($conex_db) === 'object' ) {
             $route = "display_data";        
         } else {
             $route = "display_error";
-            $error_msg = "MySql error: select query FAILED !<br>Contact Admin.";
+            // $error_msg = "MySql error: select query FAILED !<br>Contact Admin.";
         }
 
     } else {
         $route = "display_error";
-        $error_msg = "new msg here .... MySql error: select in '$dbtable' query FAILED !<br>Contact Admin.";
+        //$error_msg = "new msg here .... MySql error: select in '$dbtable' query FAILED !<br>Contact Admin.";
     }
 
 } else {    

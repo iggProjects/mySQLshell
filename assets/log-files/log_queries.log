@@ -33276,3 +33276,277 @@
  'select * from tbl_ciudad']
 [9-Aug-2022 17:58:05] [Date: 2022-08-09 17:58:05 | root execute succesfully Sql Query in DB: penjub
  'select * from tbl_ciudad limit 0,15']
+[9-Aug-2022 17:59:47] [Date: 2022-08-09 17:59:47 | root connect succesfully to 'penjub']
+[9-Aug-2022 17:59:47] [Date: 2022-08-09 17:59:47 | Sql_Query_try_catch: query in penjub FAILED !
+ 'select * fro tbl_ciudad' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'fro tbl_ciudad' at line 1]
+[9-Aug-2022 17:59:47] [Date: 2022-08-09 17:59:47 | Sql_Query_try_catch: query in penjub FAILED !
+ 'select * fro tbl_ciudad' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'fro tbl_ciudad' at line 1]
+[9-Aug-2022 18:06:05] [Date: 2022-08-09 18:06:05 | root connect succesfully to 'penjub']
+[9-Aug-2022 18:06:05] [Date: 2022-08-09 18:06:05 | root execute succesfully show tables query
+ 'describe tbl_persona;']
+[9-Aug-2022 18:06:06] [Date: 2022-08-09 18:06:06 | root connect succesfully to 'penjub']
+[9-Aug-2022 18:06:06] [Date: 2022-08-09 18:06:06 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[9-Aug-2022 18:06:06] [Date: 2022-08-09 18:06:06 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona'']
+[9-Aug-2022 18:06:06] [Date: 2022-08-09 18:06:06 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
+[9-Aug-2022 18:06:07] [Date: 2022-08-09 18:06:07 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona'']
+[9-Aug-2022 18:16:41] [Date: 2022-08-09 18:16:41 | root connect succesfully to 'penjub']
+[9-Aug-2022 18:16:41] [Date: 2022-08-09 18:16:41 | Sql_Query_try_catch: query in penjub FAILED !
+ 'select * fro tbl_ciudad' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'fro tbl_ciudad' at line 1]
+[9-Aug-2022 18:16:41] [Date: 2022-08-09 18:16:41 | Sql_Query_try_catch: query in penjub FAILED !
+ 'select * fro tbl_ciudad' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'fro tbl_ciudad' at line 1]
+[9-Aug-2022 18:26:14] [Date: 2022-08-09 18:26:14 | root connect succesfully to '127.0.0.1']
+[9-Aug-2022 18:26:15] [Date: 2022-08-09 18:26:15 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[9-Aug-2022 18:26:16] [Date: 2022-08-09 18:26:16 | root connect succesfully to 'employees']
+[9-Aug-2022 18:26:16] [Date: 2022-08-09 18:26:16 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:26:18] [Date: 2022-08-09 18:26:18 | root connect succesfully to 'my_lqs_admin'][9-Aug-2022 18:26:18] [Date: 2022-08-09 18:26:18 | root connect succesfully to 'employees']
+
+[9-Aug-2022 18:26:18] [Date: 2022-08-09 18:26:18 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries'][9-Aug-2022 18:26:18] [Date: 2022-08-09 18:26:18 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:26:27] [Date: 2022-08-09 18:26:27 | root connect succesfully to 'employees']
+[9-Aug-2022 18:26:27] [Date: 2022-08-09 18:26:27 | Sql_Query_try_catch: query in employees FAILED !
+ 'select * fr employees' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'fr employees' at line 1]
+[9-Aug-2022 18:27:10] [Date: 2022-08-09 18:27:10 | root connect succesfully to '127.0.0.1']
+[9-Aug-2022 18:27:10] [Date: 2022-08-09 18:27:10 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[9-Aug-2022 18:27:12] [Date: 2022-08-09 18:27:12 | root connect succesfully to 'employees']
+[9-Aug-2022 18:27:12] [Date: 2022-08-09 18:27:12 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:27:13] [Date: 2022-08-09 18:27:13 | root connect succesfully to 'my_lqs_admin']
+[9-Aug-2022 18:27:13] [Date: 2022-08-09 18:27:13 | root connect succesfully to 'employees']
+[9-Aug-2022 18:27:13] [Date: 2022-08-09 18:27:13 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[9-Aug-2022 18:27:13] [Date: 2022-08-09 18:27:13 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:27:21] [Date: 2022-08-09 18:27:21 | root connect succesfully to 'employees']
+[9-Aug-2022 18:27:21] [Date: 2022-08-09 18:27:21 | Sql_Query_try_catch: query in employees FAILED !
+ 'select * from employ' SQLSTATE[42S02]: Base table or view not found: 1146 Table 'employees.employ' doesn't exist]
+[9-Aug-2022 18:28:03] [Date: 2022-08-09 18:28:03 | root connect succesfully to '127.0.0.1']
+[9-Aug-2022 18:28:03] [Date: 2022-08-09 18:28:03 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[9-Aug-2022 18:28:05] [Date: 2022-08-09 18:28:05 | root connect succesfully to 'penjub']
+[9-Aug-2022 18:28:05] [Date: 2022-08-09 18:28:05 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:28:07] [Date: 2022-08-09 18:28:07 | root connect succesfully to 'penjub']
+[9-Aug-2022 18:28:07] [Date: 2022-08-09 18:28:07 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[9-Aug-2022 18:28:08] [Date: 2022-08-09 18:28:08 | root connect succesfully to 'penjub']
+[9-Aug-2022 18:28:08] [Date: 2022-08-09 18:28:08 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[9-Aug-2022 18:28:10] [Date: 2022-08-09 18:28:10 | root connect succesfully to 'penjub']
+[9-Aug-2022 18:28:10] [Date: 2022-08-09 18:28:10 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_ciudad']
+[9-Aug-2022 18:28:10] [Date: 2022-08-09 18:28:10 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 0,15']
+[9-Aug-2022 18:28:11] [Date: 2022-08-09 18:28:11 | root connect succesfully to 'my_lqs_admin']
+[9-Aug-2022 18:28:11] [Date: 2022-08-09 18:28:11 | root connect succesfully to 'penjub']
+[9-Aug-2022 18:28:11] [Date: 2022-08-09 18:28:11 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[9-Aug-2022 18:28:11] [Date: 2022-08-09 18:28:11 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:28:18] [Date: 2022-08-09 18:28:18 | root connect succesfully to 'penjub']
+[9-Aug-2022 18:28:18] [Date: 2022-08-09 18:28:18 | Sql_Query_try_catch: query in penjub FAILED !
+ 'sele * from tlb' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'sele  * from tlb' at line 1]
+[9-Aug-2022 18:30:48] [Date: 2022-08-09 18:30:48 | root connect succesfully to '127.0.0.1']
+[9-Aug-2022 18:30:48] [Date: 2022-08-09 18:30:48 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[9-Aug-2022 18:30:50] [Date: 2022-08-09 18:30:50 | root connect succesfully to 'employees']
+[9-Aug-2022 18:30:50] [Date: 2022-08-09 18:30:50 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:30:52] [Date: 2022-08-09 18:30:52 | root connect succesfully to 'employees']
+[9-Aug-2022 18:30:52] [Date: 2022-08-09 18:30:52 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:30:52] [Date: 2022-08-09 18:30:52 | root connect succesfully to 'my_lqs_admin']
+[9-Aug-2022 18:30:52] [Date: 2022-08-09 18:30:52 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[9-Aug-2022 18:31:01] [Date: 2022-08-09 18:31:01 | root connect succesfully to 'employees']
+[9-Aug-2022 18:31:01] [Date: 2022-08-09 18:31:01 | Sql_Query_try_catch: query in employees FAILED !
+ 'select * fr employees' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'fr employees' at line 1]
+[9-Aug-2022 18:31:46] [Date: 2022-08-09 18:31:46 | root connect succesfully to '127.0.0.1']
+[9-Aug-2022 18:31:46] [Date: 2022-08-09 18:31:46 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[9-Aug-2022 18:31:48] [Date: 2022-08-09 18:31:48 | root connect succesfully to 'penjub']
+[9-Aug-2022 18:31:48] [Date: 2022-08-09 18:31:48 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:31:50] [Date: 2022-08-09 18:31:50 | root connect succesfully to 'my_lqs_admin']
+[9-Aug-2022 18:31:50] [Date: 2022-08-09 18:31:50 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[9-Aug-2022 18:31:51] [Date: 2022-08-09 18:31:51 | root connect succesfully to 'penjub']
+[9-Aug-2022 18:31:51] [Date: 2022-08-09 18:31:51 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:32:00] [Date: 2022-08-09 18:32:00 | root connect succesfully to 'penjub']
+[9-Aug-2022 18:32:00] [Date: 2022-08-09 18:32:00 | Sql_Query_try_catch: query in penjub FAILED !
+ 'selec * fro rbl_ciudad' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'selec * fro rbl_ciudad' at line 1]
+[9-Aug-2022 18:32:48] [Date: 2022-08-09 18:32:48 | root connect succesfully to '127.0.0.1']
+[9-Aug-2022 18:32:48] [Date: 2022-08-09 18:32:48 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[9-Aug-2022 18:32:50] [Date: 2022-08-09 18:32:50 | root connect succesfully to 'employees']
+[9-Aug-2022 18:32:50] [Date: 2022-08-09 18:32:50 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:32:51] [Date: 2022-08-09 18:32:51 | root connect succesfully to 'my_lqs_admin']
+[9-Aug-2022 18:32:51] [Date: 2022-08-09 18:32:51 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[9-Aug-2022 18:32:51] [Date: 2022-08-09 18:32:51 | root connect succesfully to 'employees']
+[9-Aug-2022 18:32:51] [Date: 2022-08-09 18:32:51 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:33:06] [Date: 2022-08-09 18:33:06 | root connect succesfully to 'employees']
+[9-Aug-2022 18:33:06] [Date: 2022-08-09 18:33:06 | Sql_Query_try_catch: query in employees FAILED !
+ 'selec * from employees' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'selec * from employees' at line 1]
+[9-Aug-2022 18:34:11] [Date: 2022-08-09 18:34:11 | root connect succesfully to '127.0.0.1']
+[9-Aug-2022 18:34:11] [Date: 2022-08-09 18:34:11 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[9-Aug-2022 18:34:12] [Date: 2022-08-09 18:34:12 | root connect succesfully to 'penjub']
+[9-Aug-2022 18:34:12] [Date: 2022-08-09 18:34:12 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:34:14] [Date: 2022-08-09 18:34:14 | root connect succesfully to 'penjub']dmin']
+
+[9-Aug-2022 18:34:14] [Date: 2022-08-09 18:34:14 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+9-Aug-2022 18:34:14] [Date: 2022-08-09 18:34:14 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:34:31] [Date: 2022-08-09 18:34:31 | root connect succesfully to 'penjub']
+[9-Aug-2022 18:34:31] [Date: 2022-08-09 18:34:31 | Sql_Query_try_catch: query in penjub FAILED !
+ 'sel * from tbl_ciudad' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'sel * from tbl_ciudad' at line 1]
+[9-Aug-2022 18:36:16] [Date: 2022-08-09 18:36:16 | root connect succesfully to '127.0.0.1']
+[9-Aug-2022 18:36:16] [Date: 2022-08-09 18:36:16 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[9-Aug-2022 18:36:17] [Date: 2022-08-09 18:36:17 | root connect succesfully to 'penjub']
+[9-Aug-2022 18:36:17] [Date: 2022-08-09 18:36:17 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:36:19] [Date: 2022-08-09 18:36:19 | root connect succesfully to 'my_lqs_admin']
+[9-Aug-2022 18:36:19] [Date: 2022-08-09 18:36:19 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[9-Aug-2022 18:36:19] [Date: 2022-08-09 18:36:19 | root connect succesfully to 'penjub']
+[9-Aug-2022 18:36:19] [Date: 2022-08-09 18:36:19 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:36:26] [Date: 2022-08-09 18:36:26 | root connect succesfully to 'penjub']
+[9-Aug-2022 18:36:26] [Date: 2022-08-09 18:36:26 | Sql_Query_try_catch: query in penjub FAILED !
+ 'sele * from tbl_ciudad' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'sele * from tbl_ciudad' at line 1]
+[9-Aug-2022 18:37:15] [Date: 2022-08-09 18:37:15 | root connect succesfully to '127.0.0.1']
+[9-Aug-2022 18:37:15] [Date: 2022-08-09 18:37:15 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[9-Aug-2022 18:37:17] [Date: 2022-08-09 18:37:17 | root connect succesfully to 'penjub']
+[9-Aug-2022 18:37:17] [Date: 2022-08-09 18:37:17 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:37:19] [Date: 2022-08-09 18:37:19 | root connect succesfully to 'my_lqs_admin']
+[9-Aug-2022 18:37:19] [Date: 2022-08-09 18:37:19 | root connect succesfully to 'penjub'][9-Aug-2022 18:37:19] [Date: 2022-08-09 18:37:19 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[9-Aug-2022 18:37:19] [Date: 2022-08-09 18:37:19 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:37:29] [Date: 2022-08-09 18:37:29 | root connect succesfully to 'penjub']
+[9-Aug-2022 18:37:29] [Date: 2022-08-09 18:37:29 | Sql_Query_try_catch: query in penjub FAILED !
+ 'seecle * from tbl' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'seecle * from tbl' at line 1]
+[9-Aug-2022 18:40:59] [Date: 2022-08-09 18:40:59 | root connect succesfully to '127.0.0.1']
+[9-Aug-2022 18:41:00] [Date: 2022-08-09 18:41:00 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[9-Aug-2022 18:41:02] [Date: 2022-08-09 18:41:02 | root connect succesfully to 'employees']
+[9-Aug-2022 18:41:02] [Date: 2022-08-09 18:41:02 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:41:05] [Date: 2022-08-09 18:41:05 | root connect succesfully to 'my_lqs_admin']
+[9-Aug-2022 18:41:05] [Date: 2022-08-09 18:41:05 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[9-Aug-2022 18:41:05] [Date: 2022-08-09 18:41:05 | root connect succesfully to 'employees']
+[9-Aug-2022 18:41:05] [Date: 2022-08-09 18:41:05 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:41:17] [Date: 2022-08-09 18:41:17 | root connect succesfully to 'employees']
+[9-Aug-2022 18:41:17] [Date: 2022-08-09 18:41:17 | Sql_Query_try_catch: query in employees FAILED !
+ 'select * fr employees' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'fr employees' at line 1]
+[9-Aug-2022 18:43:04] [Date: 2022-08-09 18:43:04 | root connect succesfully to '127.0.0.1']
+[9-Aug-2022 18:43:04] [Date: 2022-08-09 18:43:04 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[9-Aug-2022 18:43:07] [Date: 2022-08-09 18:43:07 | root connect succesfully to 'employees']
+[9-Aug-2022 18:43:07] [Date: 2022-08-09 18:43:07 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:43:08] [Date: 2022-08-09 18:43:08 | root connect succesfully to 'my_lqs_admin']
+[9-Aug-2022 18:43:08] [Date: 2022-08-09 18:43:08 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[9-Aug-2022 18:43:08] [Date: 2022-08-09 18:43:08 | root connect succesfully to 'employees']
+[9-Aug-2022 18:43:08] [Date: 2022-08-09 18:43:08 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:43:16] [Date: 2022-08-09 18:43:16 | root connect succesfully to 'employees']
+[9-Aug-2022 18:43:16] [Date: 2022-08-09 18:43:16 | Sql_Query_try_catch: query in employees FAILED !
+ 'sele * fr employees' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'sele  * fr employees' at line 1]
+[9-Aug-2022 18:44:11] [Date: 2022-08-09 18:44:11 | root connect succesfully to '127.0.0.1']
+[9-Aug-2022 18:44:11] [Date: 2022-08-09 18:44:11 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[9-Aug-2022 18:45:01] [Date: 2022-08-09 18:45:01 | root connect succesfully to '127.0.0.1']
+[9-Aug-2022 18:45:01] [Date: 2022-08-09 18:45:01 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[9-Aug-2022 18:45:03] [Date: 2022-08-09 18:45:03 | root connect succesfully to 'employees']
+[9-Aug-2022 18:45:03] [Date: 2022-08-09 18:45:03 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:45:04] [Date: 2022-08-09 18:45:04 | root connect succesfully to 'my_lqs_admin']
+[9-Aug-2022 18:45:04] [Date: 2022-08-09 18:45:04 | root connect succesfully to 'employees']
+[9-Aug-2022 18:45:04] [Date: 2022-08-09 18:45:04 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[9-Aug-2022 18:45:04] [Date: 2022-08-09 18:45:04 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:45:13] [Date: 2022-08-09 18:45:13 | root connect succesfully to 'employees']
+[9-Aug-2022 18:45:13] [Date: 2022-08-09 18:45:13 | Sql_Query_try_catch: query in employees FAILED !
+ 'selec * from employees' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'selec * from employees' at line 1]
+[9-Aug-2022 18:45:38] [Date: 2022-08-09 18:45:38 | root connect succesfully to '127.0.0.1']
+[9-Aug-2022 18:45:38] [Date: 2022-08-09 18:45:38 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[9-Aug-2022 18:45:40] [Date: 2022-08-09 18:45:40 | root connect succesfully to 'penjub']
+[9-Aug-2022 18:45:40] [Date: 2022-08-09 18:45:40 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:45:41] [Date: 2022-08-09 18:45:41 | root connect succesfully to 'my_lqs_admin']
+[9-Aug-2022 18:45:41] [Date: 2022-08-09 18:45:41 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[9-Aug-2022 18:45:41] [Date: 2022-08-09 18:45:41 | root connect succesfully to 'penjub']
+[9-Aug-2022 18:45:41] [Date: 2022-08-09 18:45:41 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:45:49] [Date: 2022-08-09 18:45:49 | root connect succesfully to 'penjub']
+[9-Aug-2022 18:45:49] [Date: 2022-08-09 18:45:49 | Sql_Query_try_catch: query in penjub FAILED !
+ 'select * fr tbl' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'fr tbl' at line 1]
+[9-Aug-2022 18:48:54] [Date: 2022-08-09 18:48:54 | root connect succesfully to '127.0.0.1']
+[9-Aug-2022 18:48:54] [Date: 2022-08-09 18:48:54 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[9-Aug-2022 18:48:56] [Date: 2022-08-09 18:48:56 | root connect succesfully to 'employees']
+[9-Aug-2022 18:48:56] [Date: 2022-08-09 18:48:56 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:48:58] [Date: 2022-08-09 18:48:58 | root connect succesfully to 'my_lqs_admin']
+[9-Aug-2022 18:48:58] [Date: 2022-08-09 18:48:58 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[9-Aug-2022 18:48:58] [Date: 2022-08-09 18:48:58 | root connect succesfully to 'employees']
+[9-Aug-2022 18:48:58] [Date: 2022-08-09 18:48:58 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:49:06] [Date: 2022-08-09 18:49:06 | root connect succesfully to 'employees']
+[9-Aug-2022 18:49:06] [Date: 2022-08-09 18:49:06 | Sql_Query_try_catch: query in employees FAILED !
+ 'sel * from employees' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'sel * from employees' at line 1]
+[9-Aug-2022 18:49:52] [Date: 2022-08-09 18:49:52 | root connect succesfully to '127.0.0.1']
+[9-Aug-2022 18:49:52] [Date: 2022-08-09 18:49:52 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[9-Aug-2022 18:49:53] [Date: 2022-08-09 18:49:53 | root connect succesfully to 'employees']
+[9-Aug-2022 18:49:53] [Date: 2022-08-09 18:49:53 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:49:55] [Date: 2022-08-09 18:49:55 | root connect succesfully to 'my_lqs_admin']
+[9-Aug-2022 18:49:55] [Date: 2022-08-09 18:49:55 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[9-Aug-2022 18:49:55] [Date: 2022-08-09 18:49:55 | root connect succesfully to 'employees']
+[9-Aug-2022 18:49:55] [Date: 2022-08-09 18:49:55 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:50:02] [Date: 2022-08-09 18:50:02 | root connect succesfully to 'employees']
+[9-Aug-2022 18:50:02] [Date: 2022-08-09 18:50:02 | Sql_Query_try_catch: query in employees FAILED !
+ 'sdel * from tbl' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'sdel * from tbl' at line 1]
+[9-Aug-2022 18:50:54] [Date: 2022-08-09 18:50:54 | root connect succesfully to '127.0.0.1']
+[9-Aug-2022 18:50:54] [Date: 2022-08-09 18:50:54 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[9-Aug-2022 18:50:56] [Date: 2022-08-09 18:50:56 | root connect succesfully to 'employees']
+[9-Aug-2022 18:50:56] [Date: 2022-08-09 18:50:56 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:50:57] [Date: 2022-08-09 18:50:57 | root connect succesfully to 'my_lqs_admin']
+[9-Aug-2022 18:50:57] [Date: 2022-08-09 18:50:57 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[9-Aug-2022 18:50:57] [Date: 2022-08-09 18:50:57 | root connect succesfully to 'employees']
+[9-Aug-2022 18:50:57] [Date: 2022-08-09 18:50:57 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 18:51:03] [Date: 2022-08-09 18:51:03 | root connect succesfully to 'employees']
+[9-Aug-2022 18:51:03] [Date: 2022-08-09 18:51:03 | Sql_Query_try_catch: query in employees FAILED !
+ 'sel * fr tbl' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'sel * fr tbl' at line 1]

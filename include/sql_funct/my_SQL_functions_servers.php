@@ -297,7 +297,6 @@ function DescribeTables_try_catch($conn_active,$db_name,$db_user,$describetables
 
 }
 
-
 function Sql_Query_try_catch($conn_active,$db_name,$db_user,$sql_query,$log_comments) {
 
     # mail parameters
@@ -342,9 +341,10 @@ function Sql_Query_try_catch($conn_active,$db_name,$db_user,$sql_query,$log_comm
         # print in Log File
         My_Log_Message($cuerpo1, $log_comments);    
        //  $result = $e->getMessage();  
-        $error_msg = "<br>MySql error 😌😌😌<br><br>[Date: " . date('Y-m-d H:i:s') . "]<br><br>";
-        $error_msg .= "Function <span style='color:blue;'>\"Sql_Query_try_catch\" in \"DB $db_name\"</span> FAILED !<br><br>";
-        $error_msg .= "<span style='color:green;'>$sql_query_trim:</span><br><span style='color:#990000;'>" . $e->getMessage() . "</span>";  
+        $error_msg = "<br>MySql error 😌<br><br>[Date: " . date('Y-m-d H:i:s') . "]<br><br>";
+        $error_msg .= "QUERY:<br>\"<span style='color:#990000;'> $sql_query_trim </span>\"<br><br>";
+        $error_msg .= "Error executing query in function \"Sql_Query_try_catch\" in DB \"$db_name\"";
+        $error_msg .= "<br><br><span style='color:#990000;'>" . $e->getMessage() . "</span>";  
         echo $error_msg;
 
     }
