@@ -74,7 +74,8 @@ echo "
                         echo "<button id='btn-view' class='nav-btn showBtn'>View<br>Table</button>";
                         echo "<button id='btn-diagram' class='nav-btn showBtn'>Diagram</button>";                        
                         echo "<button id='btn-insert' class='nav-btn showBtn'>Insert<br>Record</button>";
-                        echo "<button id='btn-update' class='nav-btn showBtn'>Update<br>Record</button>";                        
+                        echo "<button id='btn-update' class='nav-btn showBtn'>Update<br>Record</button>"; 
+                        echo "<button id='btn-delete' class='nav-btn showBtn'>Delete<br>Record</button>";                                                 
                         echo "<button id='btn-export' class='nav-btn showBtn'>Export</button>";
                         echo "<button id='btn-import' class='nav-btn showBtn'>Import</button>";                        
                         echo "<button id='btn-bakcup' class='nav-btn showBtn'>Backup</button>";
@@ -269,7 +270,7 @@ echo "
                     // tag for display BUTTONS table in second NAV 
                     btns = document.querySelectorAll(".nav-btn");   
                     for ( var i=0; i<btns.length; i++ ) { 
-                        if ( btns[i].id != 'btn-desc' && btns[i].id != 'btn-view' && btns[i].id != 'btn-diagram' && btns[i].id != 'btn-insert' && btns[i].id != 'btn-update' && btns[i].id != 'btn-export' && btns[i].id != 'btn-import' ) {  
+                        if ( btns[i].id != 'btn-desc' && btns[i].id != 'btn-view' && btns[i].id != 'btn-diagram' && btns[i].id != 'btn-insert' && btns[i].id != 'btn-update' && btns[i].id != 'btn-delete' && btns[i].id != 'btn-export' && btns[i].id != 'btn-import' ) {  
                         // if ( btns[i].id != 'btn-desc' && btns[i].id != 'btn-view' && btns[i].id != 'btn-sql' && btns[i].id != 'btn-export' && btns[i].id != 'btn-import' ) {      
                             // btns[i].classList.toggle("hideBtn"); 
                             btns[i].classList.remove("showBtn");
@@ -547,9 +548,7 @@ echo "
         
         if ( table_selected === null ) { alert('Please, select a table !'); } 
         else {
-
             Fetch_canvas_data_array('./include/AJAX_php_js/ajax_Sql_Arrays.php?host_numb=' + host_n + '&hostName='+host_sel+'&dbName='+db_sel+'&tblName='+table_selected); 
-            
         }           
     }
 

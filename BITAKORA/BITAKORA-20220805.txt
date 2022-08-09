@@ -10,16 +10,20 @@ IÑAKI - DARREN ( pendiente para version 1.0 )
 IÑAKI - PENDIENTE AL 09-08-2022
 
 - README 
+  - caso str_contains (php 8) buscar el equivalente en php 7.4
+    (https://www.codegrepper.com/code-examples/php/str_contains+php+7)
 
 - PAGINATION FOR "SELECT REPORTS"  ✔✔😎😎
     - en caso ajax_Sql_Query, buscar equivalente en js a:
-       $sql_query = substr($sql_query, 0, strpos($sql_query, 'limit'));   
+      $sql_query = substr($sql_query, 0, strpos($sql_query, 'limit')); ✔✔😎😎  
 
 - Check toogle effect in DB-tables in left side tag "html_div_nav_izq" ✔✔😎😎
   see function "openTree" (my_AJAX_functions.js lines 79 to 89) 
 
 - show databases in tag 'display_right_aside' when host is selected
   (left aside only show DB's with tables)
+
+- Check mysql error messages in "select cases". For example, when a table does not have records  
 
 - CSS case overflow in #display-result  
 

@@ -123,7 +123,7 @@ function openTree(host_arr) {
 
             // tag for display host, DB, table in second NAV
             var _titleTag = 'display-result-nav-title';
-            document.getElementById(_titleTag).innerHTML = 'Host: \"' + host_arr[hostNumb] + '\"' + ', DB: \"' + dbName + '\"' +  '<br><span style=\'color:blue;font-size:20px;\'>Table: \"' + tblName + '\" ';
+            document.getElementById(_titleTag).innerHTML = 'Host: \"' + host_arr[hostNumb] + '\"' + ', DB: \"' + dbName + '\"' +  '<br><span style=\'color:blue;font-size:17px;\'>Table: \"' + tblName + '\" ';
             document.getElementById(_titleTag).setAttribute('host_numb',hostNumb);
             document.getElementById(_titleTag).setAttribute('host',host_arr[hostNumb]);
             document.getElementById(_titleTag).setAttribute('db',dbName);

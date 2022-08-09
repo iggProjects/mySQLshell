@@ -244,18 +244,18 @@
                 echo "<button class='select-btns' onclick='displayPage(\"+1\")'>Next</button>";                
                 echo "<button class='select-btns' onclick='displayPage(\"2\")'>Last</button>";
             echo "</div>";        
-            echo "<p id='actualPage' style='margin-top:0px; font-size:12px;' page='" . $thead_titles_array['page'] . "' num_rec_init='" . $thead_titles_array['num_rec_init'] . "' totRecords='" . $thead_titles_array['totRecords'] . "' style='margin-top:5px;  margin-bottom:10px; text-align:center; font-size:12px; color:#990000'><span style='color:black;'>Total Records: " . number_format($thead_titles_array['totRecords']) . " | page: " . number_format($thead_titles_array['page']) . "</span><br><span style='colOr:blue;font-size:11px;'>QUERY: </span></p>";      }           
-            echo "<p id='actualQuery' style='margin-top:0px; margin-bottom:10px; text-align:center; font-size:12px; color:#990000'>$_query</p>";
+            echo "<p id='actualPage' style='margin-top:0px; ' page='" . $thead_titles_array['page'] . "' num_rec_init='" . $thead_titles_array['num_rec_init'] . "' totRecords='" . $thead_titles_array['totRecords'] . "' style='margin-top:5px;  margin-bottom:10px; text-align:center; font-size:12px; color:#990000'><span style='color:black;'>Total Records: " . number_format($thead_titles_array['totRecords']) . " | page: " . number_format($thead_titles_array['page']) . "</span><br><span style='colOr:blue;font-size:11px;'>QUERY: </span></p>";      }           
+            echo "<p id='actualQuery' style='margin-top:0px; margin-bottom:10px; text-align:center; color:#990000'>$_query</p>";
         
         $i=1;        
         echo "<table id='sql-table-result' style='max-width: $table_width%;'>";          
         // echo "<table style='max-width: $table_width%; overflow:scroll;'>";          
         
             $tr_thead = "<tr>";
-            $tr_thead .= "<th style='text-align:center; padding-right:10px; font-size:12px; color:#666666; '>#</th>";
+            $tr_thead .= "<th style='text-align:center; padding-right:10px;  color:#666666; '>#</th>";
             if ( count($data_array) > 0 ) {
                 foreach ( $data_array[0] as $key => $value ) {  
-                    $th = "<th style='padding:1px; font-size:13px; color:#666666; '>" . $key  . "</th>"; 
+                    $th = "<th style='padding:1px;  color:#666666; '>" . $key  . "</th>"; 
                     $tr_thead .= $th;
                 }                
             }
@@ -263,12 +263,12 @@
             echo $tr_thead; 
             foreach ( $data_array as $row ) {
                 echo "<tr>
-                <td style='text-align:center; padding-right:10px; font-size:12px; color:green; '>$i → </td>";      
+                <td style='text-align:center; padding-right:10px;  color:green; '>$i → </td>";      
                 foreach ( $row as $col ) {
                     if ( str_contains($_query, 'TABLES') ) {    
-                        echo "<td table-name= " . $col . " class='left-aside-btn display-fields' style='text-align:center; font-size:13px; color:#1a1aff; padding-left:3px; padding-right:3px;'>" .$col . "</td>";
+                        echo "<td table-name= " . $col . " class='left-aside-btn display-fields' style='text-align:center;  color:#1a1aff; padding-left:3px; padding-right:3px;'>" .$col . "</td>";
                     } else {
-                        echo "<td style='text-align:center; font-size:13px; color:#1a1aff; padding-left:3px; padding-right:3px; '>" .$col . "</td>";
+                        echo "<td style='text-align:center;  color:#1a1aff; padding-left:3px; padding-right:3px; '>" .$col . "</td>";
                     }    
                 }
                 echo "</tr>";
