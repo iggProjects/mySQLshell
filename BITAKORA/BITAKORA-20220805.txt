@@ -7,7 +7,7 @@ IÑAKI - DARREN ( pendiente para version 1.0 )
 
 ********************************************************************
 
-IÑAKI - PENDIENTE AL 07-08-2022
+IÑAKI - PENDIENTE AL 09-08-2022
 
 - README 
 
@@ -20,6 +20,8 @@ IÑAKI - PENDIENTE AL 07-08-2022
 
 - show databases in tag 'display_right_aside' when host is selected
   (left aside only show DB's with tables)
+
+- CSS case overflow in #display-result  
 
 - Permitir abrir make query apenas se selecciones el host 
   - esto permitiría al root, o al administrador actuar sobre el servidor, sea para crear nuevas DB 

@@ -69,18 +69,17 @@ echo "
             echo "<div class='div-der disp-row-center'>";
 
                     echo "<div class='nav-btns disp-col-center'>";
-                        echo "<button id='btn-sql' class='nav-btn showBtn' style='color:blue;'><b>TEST<br>QUERIES</b></button>";
+                        echo "<button id='btn-sql' class='nav-btn showBtn'>TEST<br>QUERIES</button>";
                         echo "<button id='btn-desc' class='nav-btn showBtn'>Desc<br>Table</button>";
                         echo "<button id='btn-view' class='nav-btn showBtn'>View<br>Table</button>";
-                        echo "<button id='btn-diagram' class='nav-btn showBtn'>Diagram</button>";
-                        // echo "<button id='btn-diagram' class='nav-btn showBtn' onclick='table_diagram()'>Diagram</button>";
+                        echo "<button id='btn-diagram' class='nav-btn showBtn'>Diagram</button>";                        
                         echo "<button id='btn-insert' class='nav-btn showBtn'>Insert<br>Record</button>";
                         echo "<button id='btn-update' class='nav-btn showBtn'>Update<br>Record</button>";                        
                         echo "<button id='btn-export' class='nav-btn showBtn'>Export</button>";
-                        echo "<button id='btn-import' class='nav-btn showBtn'>Import</button>";
-                        echo "<button id='btn-privil' class='nav-btn showBtn'>Privileges</button>";
+                        echo "<button id='btn-import' class='nav-btn showBtn'>Import</button>";                        
                         echo "<button id='btn-bakcup' class='nav-btn showBtn'>Backup</button>";
                         echo "<button id='btn-restore' class='nav-btn showBtn'>Restore</button>";
+                        echo "<button id='btn-users' class='nav-btn showBtn'>Users</button>";
                     echo "</div>";
 
                     echo "<div class='der-console disp-row-center' >";
