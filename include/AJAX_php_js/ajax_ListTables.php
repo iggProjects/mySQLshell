@@ -27,22 +27,6 @@ if ( $_REQUEST['dbName'] ) {
     $dbname = $_REQUEST['dbName']; 
 }
 
-/*
-if ( $dbhost == 'POAPMYSQL119.dns-servicio.com:3306' ) {
-    $dbuser = "inaki2022";
-    $dbpass = "Inaki@2022";
-    $dbcharset = 'utf8mb4';
-    $h=1;
-} elseif ( $dbhost == '127.0.0.1' ) {
-    $dbuser = "root";
-    $dbpass = "@mysql@";
-    $dbcharset = 'utf8mb4';
-    $h=2;
-} else {
-    // upssssss msg
-}
-*/
-
 $dbuser  = $cfg_s['Servers'][$host_numb]['user'];
 $dbpass = $cfg_s['Servers'][$host_numb]['password'];
 $dbcharset = 'utf8mb4';

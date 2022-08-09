@@ -34,8 +34,6 @@ function object_descriptor (_method,tag,tag_object) {
     }
 }
 
-
-
 function object_properties(_object,idTag) {    
 
     //const _object = { a: 1, b: 2, c: 3 };

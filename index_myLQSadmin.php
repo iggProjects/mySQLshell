@@ -415,7 +415,7 @@ echo "
             // add 'LIMIT parameters' if is a SELECT query
             if ( _query.includes("select") || _query.includes("SELECT") ) { _query += ' limit 0,15'; }   
             
-            alert('_query is: ' + _query);
+            // alert('_query is: ' + _query);
             
             // read host name and db name
             // var sql_host_db = document.getElementById('display-result-nav-title');

@@ -37,9 +37,6 @@ $dbuser  = $cfg_s['Servers'][2]['user'];
 $dbpass = $cfg_s['Servers'][2]['password'];
 $dbcharset = 'utf8mb4';
 
-//$msg = 'HOST param: ' . $_REQUEST['host_numb'] . '-'. $hostName . '-' . $dbuser . '-' . $dbpass;
-//My_Log_Message ($msg,$log_comments_path);
-
 # connection to DB using $db_parameters
 $conex_db = try_catch_connect_host_db($dbhost,$dbname,$dbuser,$dbpass,$dbcharset,$log_queries_path);
 

@@ -20,35 +20,10 @@ if ( $_REQUEST['host_numb'] ) {
     $host_numb = $_REQUEST['host_numb']; 
 } else {}
 
-/*
-if ( $_REQUEST['hostName'] ) {
-    $hostName = $_REQUEST['hostName']; 
-} else {}
-*/
-/*
-if ( $hostName == 'POAPMYSQL119.dns-servicio.com:3306' ) {
-    $hostUser = "inaki2022";
-    $hostPassw = "Inaki@2022";
-    $dbcharset = 'utf8mb4';
-    $h=1;
-} elseif ( $hostName == '127.0.0.1' ) {
-    $hostUser = "root";    
-    $hostPassw = "@mysql@";
-    $dbcharset = 'utf8mb4';
-    $h=2;
-} else {
-    // upssssss msg
-}
-*/
 $hostName  = $cfg_s['Servers'][$host_numb]['host'];
 $hostUser  = $cfg_s['Servers'][$host_numb]['user'];
 $hostPassw = $cfg_s['Servers'][$host_numb]['password'];
 $dbcharset = 'utf8mb4';
-
-/*
-$msg = 'HOST param: ' . $_REQUEST['host_numb'] . '-'. $hostName . '-' . $hostUser . '-' . $hostPassw;
-My_Log_Message ($msg,$log_comments_path);
-*/
 
 $host_pointer = $host_numb;   
 // $host_pointer = $h;   

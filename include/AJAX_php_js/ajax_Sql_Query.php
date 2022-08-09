@@ -152,28 +152,6 @@ if ( gettype($conex_db) === 'object' ) {
 }
 
 My_Log_Message ($msg,$log_comments_path);
-/*
-if ( gettype($conex_db) === 'object' ) {
-
-    // calculate record number from page selected
-    
-    $count_query = substr($sql_query, 0, strpos($sql_query, 'limit'));
-    $num_records = count(Sql_Query_try_catch($conex_db,$dbname,$dbuser,$count_query,$log_queries_path));   
-
-    $resultado = Sql_Query_try_catch($conex_db,$dbname,$dbuser,$sql_query,$log_queries_path);
-    if ( gettype($resultado) === 'object' || gettype($resultado) === 'array' ) {  
-        $route = "display_data";        
-    } else {
-        $route = "display_error";
-        echo "<script>alert('display error')</script>";
-        $error_msg = "MySql error: sql query " . $sql_query . "FAILED !<br>Contact Admin.";
-    }    
-
-} else {    
-    $route = "display_error";
-    $error_msg = "MySql error: Connection to $dbhost and $dbname FAILED !<br>Contact Admin.";
-}
-*/
 
 # HTML DATA FOR DIV
 if ($route == 'display_data') { # display html data   

@@ -17,21 +17,8 @@ function Fetch_canvas_data_array(php_sql_url) {
     })
     
     .then(data => {
-
         let data_array = JSON.parse(data);
-/*
-        console_Log ('data array: ','black','white',2);
-        console.log(data_array);
-        console_Log ('data array["table"]: ','black','white',2);
-        console.log(data_array['table']);
-        console_Log ('data array["left"]: ','black','white',2);
-        console.log(data_array['left']);
-        console_Log ('data array["right"]: ','black','white',2);
-        console.log(data_array['right']);        
-*/
-
         draw_table_canvas(data_array,data_array['table'],data_array['left'],data_array['right']);
-
     })    
 
     .catch(err => {
@@ -86,8 +73,6 @@ function draw_pair_points_x_y(_ctx,x1,y1,x2,y2) {
     _ctx.stroke();
 }
 
-
-
 /*  USED FOR "LEFT" AND "RIGHT" POINTS ARRAYS  */
 function draw_table_relations_lines(points_array) {
 
@@ -129,7 +114,6 @@ function draw_ppal_table(_ctx,_table,_x,_y,_w,_h,cent_points_array){
     }
     txt = '';
 }
-
 
 function draw_left_table(_ctx,_table,_x,_y,_w,_h,lf_points_array){  
     console_Log('draw_table--> ','gray','white',2);      
@@ -193,10 +177,7 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
     //      with the chosen table (left and right sides)    
     //
 
-    var left_points_x_y_array = [];         
-    // testing
-    // left_points_x_y_array.push({'table': 'table1','field': 'field1','x1':0,'y1':400});
-
+    var left_points_x_y_array = [];    
     var center_points_x_y_array = [];
     var right_points_x_y_array = []; 
 
@@ -256,14 +237,9 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
 
         }
         
-        // falta un if de condición de borde en i
         draw_left_table(ctx,temp_array,x,y,text_w,row_h,left_points_x_y_array);
-//        console.log('valor i: ' + i);
-//        console.log('table_name i-2: ' + left_tables_array[i-2]['REF_TBL'] +  ' --- table_name i-1: ' +  left_tables_array[i-1]['REF_TBL']);
 
     }
-
-    // Drawing right side (relations) of ppal table
 
     console_Log('-----------------end of left tables-------------------','red','white',2);
 
@@ -273,7 +249,6 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
         console_Log('------------------ init right_tables-------------------','green','white',2);
         console.log('right_tables_array');
         console.log(right_tables_array);
-
 
         x = w-20;
         max_large_text = 250;     
@@ -306,10 +281,7 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
 
         }
 
-        // Chequear si falta un if de condición de borde en i
         draw_right_table(ctx,temp_array,x,y,text_w,row_h,right_points_x_y_array);
-//        console.log('valor i: ' + i);
-//        console.log('table_name i-2: ' + right_tables_array[i-2]['REF_TBL'] +  ' --- table_name i-1: ' +  right_tables_array[i-1]['REF_TBL']);
 
         console_Log('-----------------end of right tables-------------------','red','white',2);
     }
@@ -375,44 +347,7 @@ function draw_db(w,h,ppal_table_array,left_tables_array,right_tables_array){
                 draw_pair_points_x_y(ctx,x_1,y_1,x_2,y_2);
         
             }
-
-        }        
-
-
+        }
     }  
 
-
-
-
 }
-
-
-/*    
-    var left_lines_x_y_array = []; 
-    left_lines_x_y_array['left'] = [];
-    left_lines_x_y_array['table'] = [];
-
-    // testing
-    left_lines_x_y_array['left'].push({'table': 'table1','field': 'field1','x1':0,'y1':400,'x2':50,'y2':200});   
-    console.log('********************************');
-    console.log('TESTING points left array ');
-    console.log('table: ' + left_lines_x_y_array['left'][0]['table'] + ', field: ' + left_lines_x_y_array['left'][0]['field']);
-    console.log('x1: ' + left_lines_x_y_array['left'][0]['x1']);
-    console.log('y1: ' + left_lines_x_y_array['left'][0]['y1']);
-    console.log('x2: ' + left_lines_x_y_array['left'][0]['x2']);
-    console.log('y2: ' + left_lines_x_y_array['left'][0]['y2']);
-    console.log('********************************');
-
-    var left_points_x_y_array = []; 
-    // testing
-    left_points_x_y_array.push({'table': 'table1','field': 'field1','x1':0,'y1':400});
-    console.log('********************************');
-    console.log('TESTING points left array ');
-    console.log('table: ' + left_points_x_y_array[0]['table'] + ', field: ' + left_points_x_y_array[0]['field']);
-    console.log('x1: ' + left_points_x_y_array[0]['x1']);
-    console.log('y1: ' + left_points_x_y_array[0]['y1']);
-    console.log('********************************');   
-
-
-
-*/

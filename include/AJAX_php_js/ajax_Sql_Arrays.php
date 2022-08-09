@@ -32,13 +32,6 @@ if ( $_REQUEST['tblName'] ) {
     $tblname = $_REQUEST['tblName']; 
 }
 
-/*
-if ( $_REQUEST['sql_query'] ) {
-    $sql_query = $_REQUEST['sql_query']; 
-}
-*/
-
-
 $dbuser  = $cfg_s['Servers'][$host_numb]['user'];
 $dbpass = $cfg_s['Servers'][$host_numb]['password'];
 $dbcharset = 'utf8mb4';

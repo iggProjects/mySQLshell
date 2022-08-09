@@ -1,6 +1,6 @@
 /*
 
-    Recursive function to to view json in console
+    Recursive function to view any json in console
     previous work -> Json-AssociativeArray-v1.html
 
 */

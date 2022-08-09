@@ -33206,3 +33206,73 @@
 [9-Aug-2022 17:36:27] [Date: 2022-08-09 17:36:27 | root connect succesfully to 'phpmyadmin']
 [9-Aug-2022 17:36:27] [Date: 2022-08-09 17:36:27 | root execute succesfully show tables query
  'describe pma__bookmark;']
+[9-Aug-2022 17:56:00] [Date: 2022-08-09 17:56:00 | root connect succesfully to '127.0.0.1']
+[9-Aug-2022 17:56:00] [Date: 2022-08-09 17:56:00 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[9-Aug-2022 17:56:02] [Date: 2022-08-09 17:56:02 | root connect succesfully to 'penjub']
+[9-Aug-2022 17:56:02] [Date: 2022-08-09 17:56:02 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 17:56:04] [Date: 2022-08-09 17:56:04 | root connect succesfully to 'penjub']
+[9-Aug-2022 17:56:04] [Date: 2022-08-09 17:56:04 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[9-Aug-2022 17:56:05] [Date: 2022-08-09 17:56:05 | root connect succesfully to 'penjub']
+[9-Aug-2022 17:56:05] [Date: 2022-08-09 17:56:05 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[9-Aug-2022 17:56:06] [Date: 2022-08-09 17:56:06 | root connect succesfully to 'penjub']
+[9-Aug-2022 17:56:06] [Date: 2022-08-09 17:56:06 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_ciudad']
+[9-Aug-2022 17:56:06] [Date: 2022-08-09 17:56:06 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 0,15']
+[9-Aug-2022 17:56:07] [Date: 2022-08-09 17:56:07 | root connect succesfully to 'penjub']
+[9-Aug-2022 17:56:07] [Date: 2022-08-09 17:56:07 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 15,15']
+[9-Aug-2022 17:56:09] [Date: 2022-08-09 17:56:09 | root connect succesfully to 'penjub']
+[9-Aug-2022 17:56:09] [Date: 2022-08-09 17:56:09 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_ciudad' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_ciudad' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_ciudad'']
+[9-Aug-2022 17:56:09] [Date: 2022-08-09 17:56:09 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_ciudad'']
+[9-Aug-2022 17:56:09] [Date: 2022-08-09 17:56:09 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_ciudad'']
+[9-Aug-2022 17:56:09] [Date: 2022-08-09 17:56:09 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_ciudad'']
+[9-Aug-2022 17:56:13] [Date: 2022-08-09 17:56:13 | root connect succesfully to 'penjub']
+[9-Aug-2022 17:56:13] [Date: 2022-08-09 17:56:13 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 17:56:13] [Date: 2022-08-09 17:56:13 | root connect succesfully to 'my_lqs_admin']
+[9-Aug-2022 17:56:13] [Date: 2022-08-09 17:56:13 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[9-Aug-2022 17:56:32] [Date: 2022-08-09 17:56:32 | root connect succesfully to 'penjub']
+[9-Aug-2022 17:56:32] [Date: 2022-08-09 17:56:32 | root execute succesfully Sql Query in DB: penjub
+ 'select * from tbl_ciudad where id<5']
+[9-Aug-2022 17:56:32] [Date: 2022-08-09 17:56:32 | root execute succesfully Sql Query in DB: penjub
+ 'select * from tbl_ciudad where id<5 limit 0,15']
+[9-Aug-2022 17:57:17] [Date: 2022-08-09 17:57:17 | root connect succesfully to 'penjub']
+[9-Aug-2022 17:57:17] [Date: 2022-08-09 17:57:17 | root execute succesfully Sql Query in DB: penjub
+ 'select * from tbl_ciudad where id<5']
+[9-Aug-2022 17:57:17] [Date: 2022-08-09 17:57:17 | root execute succesfully Sql Query in DB: penjub
+ 'select * from tbl_ciudad where id<5 limit 0,15']
+[9-Aug-2022 17:57:32] [Date: 2022-08-09 17:57:32 | root connect succesfully to '127.0.0.1']
+[9-Aug-2022 17:57:32] [Date: 2022-08-09 17:57:32 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[9-Aug-2022 17:57:34] [Date: 2022-08-09 17:57:34 | root connect succesfully to 'penjub']
+[9-Aug-2022 17:57:34] [Date: 2022-08-09 17:57:34 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 17:57:37] [Date: 2022-08-09 17:57:37 | root connect succesfully to 'penjub']
+[9-Aug-2022 17:57:37] [Date: 2022-08-09 17:57:37 | root execute succesfully show tables query
+ 'describe tbl_consulado;']
+[9-Aug-2022 17:57:39] [Date: 2022-08-09 17:57:39 | root connect succesfully to 'penjub']
+[9-Aug-2022 17:57:39] [Date: 2022-08-09 17:57:39 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[9-Aug-2022 17:57:39] [Date: 2022-08-09 17:57:39 | root connect succesfully to 'my_lqs_admin']
+[9-Aug-2022 17:57:39] [Date: 2022-08-09 17:57:39 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[9-Aug-2022 17:57:46] [Date: 2022-08-09 17:57:46 | root connect succesfully to 'penjub']
+[9-Aug-2022 17:57:46] [Date: 2022-08-09 17:57:46 | Sql_Query_try_catch: query in penjub FAILED !
+ 'select * from' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1]
+[9-Aug-2022 17:57:46] [Date: 2022-08-09 17:57:46 | Sql_Query_try_catch: query in penjub FAILED !
+ 'select * from' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1]
+[9-Aug-2022 17:58:05] [Date: 2022-08-09 17:58:05 | root connect succesfully to 'penjub']
+[9-Aug-2022 17:58:05] [Date: 2022-08-09 17:58:05 | root execute succesfully Sql Query in DB: penjub
+ 'select * from tbl_ciudad']
+[9-Aug-2022 17:58:05] [Date: 2022-08-09 17:58:05 | root execute succesfully Sql Query in DB: penjub
+ 'select * from tbl_ciudad limit 0,15']

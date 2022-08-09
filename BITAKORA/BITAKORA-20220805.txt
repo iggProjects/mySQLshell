@@ -67,3 +67,26 @@ BUTTONS FILTERS
   - probar queries en sql query area 
 
 - Pass CSS to SCSS, including in SCSS the "style's inside tag's; and then remove it.  
+
+
+- MYSQL  
+
+      manual : https://dev.mysql.com/doc/refman/8.0/en/
+
+      conexiones persistentes https://www.php.net/manual/es/pdo.connections.php  
+      $mbd = new PDO('mysql:host=localhost;dbname=prueba', $usuario, $contraseña, array(
+          PDO::ATTR_PERSISTENT => true
+      ));
+      $dbh = new PDO('mysql:host=localhost;dbname=test', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+
+      stmt->closeCursor(); http://php.adamharvey.name/manual/en/pdo.connections.php
+
+      //Kill the connection with a KILL Statement.  //https://thisinterestsme.com/close-pdo-connection/
+      $pdo->query('KILL CONNECTION_ID()');
+
+      //Set the PDO object to NULL.
+      $pdo = null;
+
+      // laravel->  https://laravel.com/docs/9.x/database
+
+    

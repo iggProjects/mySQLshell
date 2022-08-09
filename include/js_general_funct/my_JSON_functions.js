@@ -2,7 +2,6 @@
    Functions to read and write JSON's
 */
 
-
 // recursive function
 function json_level(json_key,json_file) {    
     console_Log('_____ key: "' + json_key + '", value: ' + json_file[json_key]  + '" _____','gray','yellow',2);
@@ -53,28 +52,6 @@ function write_json(_key,my_json_file) {
         }           
     }
 
-    /* OJO OJO OJO que no corre este pedacito
-    console_Log('__________________ looping recursive mode __________________','#b3b3b3','blue',2);
-
-    function json_recursive(json_key,json_value) {
-    
-        if ( typeof json_value === 'string' ) {
-            console_Log('_____ recursive funct for key: "' + json_key + '", value: ' + json_value  + '" _____','gray','yellow',2);
-            console_Log('ENTRIES of ' + json_key + ', ' + json_value[json_key],'','green',1);    
-            console.log(Object.entries(json_value));
-         } else {
-            var _key= json_value[json_key];
-            json_recursive(_key,json_value[json_key]);
-        }
-    
-    }
-    
-    // main
-    for (key_act in my_json_file) {
-        console_Log('ENTRIES of ' + key_act + ', ' + my_json_file[key_act],'','green',1);
-        json_recursive(key_act,my_json_file[key_act]);
-    }
-    */
 
     //
     //    III mode
@@ -205,38 +182,3 @@ function write_Json_as_Text(my_json_file,html_id) {
     return document.getElementById(html_id).innerHTML = text;
 
 }
-// recursive function
-
-/* Object.keys(json_ex).length
-
-function write_object(json_object,key_act,flag){
-        
-        // key_act_value = my_json_file[key_act];
-        // console_Log(key_prev,'red','blue',3);
-        
-        
-        // try with while previos = next
-        while ( flag ) {
-
-            if ( typeof json_object[key_act] == 'object' && key_prev == key_act ) {
-                    key_prev = key_act;
-                    write_object(key_prev,json_object[key_act]);
-            } else {
-                    console_Log('my_json_file[key_act] :  [' + Object.keys(json_object[key_act]) + ':' + Object.values(json_object[key_act]) + ']','black','yellow',1);                    
-                    // console_Log(i + ' object: ' + key_prev + ', key: '+ key_act + ', value: '+  key_act_value,'','green',2);
-            }
-        
-        }   
-
-}
-
-*/
-
-// Object.entries
-    /* example
-    const obj = { 10: 'adam', 200: 'billy', 35: 'chris' };
-    console_Log('obj: ','','red',1);
-    console.log(Object.entries(obj));
-    console.log(Object.entries(obj)[1]);
-    */
-
