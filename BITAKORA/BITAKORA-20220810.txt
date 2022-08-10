@@ -13,21 +13,8 @@ IÑAKI - PENDIENTE AL 10-08-2022
   - caso str_contains (php 8) buscar el equivalente en php 7.4
     (https://www.codegrepper.com/code-examples/php/str_contains+php+7)
 
-- Clasify nav-btns in two sub classes type1 (home - ), type2 (test query screen)   
-
 - first version for "help url" for troubles in mysql...  URL google para errores mysql
   - https://www.googleguide.com/linking.html
-
-- Check mysql error messages in "select cases"
-  - For example, when a table does not have records  
-
-- Evaluar botones para ofrecer "máscaras" para queries tipo:
-  - SHOW CREATE TABLE 'myTable' versus Describe Table
-    SELECT, INSERT, UPDATE, DELETE, DROP, IMPORT, EXPORT, BACKUP, RESTORE  
-  - Check syntaxis, and change especial words to uppercase and color blue.... 
-        (SELECT, FROM, WHERE, INNER JOIN, ORDER BY, ....)  
-        Ej --> INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...);  
-        - y rellenamos a mano los datos de cada campo
 
 - PROCESOS BACKUP (), RESTORE (), IMPORT (CSV/EXCEL), EXPORT TABLE SELECT TO (CSV/EXCEL)
   - restore .SQL
@@ -37,6 +24,23 @@ IÑAKI - PENDIENTE AL 10-08-2022
   ( mysqldump -uroot -p  my_lqs_admin > my_lqs_admin.sql ) take care with CHARSET
 
 - Al ejecutar "Clear Query" chequear que coloque los selectores en opc '0'  
+
+- FILTERS FOR QUERIES 
+  - FILTROS: check for type cols, cases 'BLOB' (example: mediumblob in 'tbl_arch_imagen_persona' in penjub)
+  - CASE sql query: filter scripts, some chars.....  
+
+- Clasify nav-btns in two sub classes type1 (home - ), type2 (test query screen) ✔✔😎😎  
+
+- Check mysql error messages in "select cases"
+  - For example, when a table does not have records  
+
+- Evaluar botones para ofrecer "máscaras" para queries tipo:  ✔✔😎😎
+  - SHOW CREATE TABLE 'myTable' versus Describe Table
+    SELECT, INSERT, UPDATE, DELETE, DROP, IMPORT, EXPORT, BACKUP, RESTORE  
+  - Check syntaxis, and change especial words to uppercase and color blue.... 
+        (SELECT, FROM, WHERE, INNER JOIN, ORDER BY, ....)  
+        Ej --> INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...);  
+        - y rellenamos a mano los datos de cada campo
 
 - PAGINATION FOR "SELECT REPORTS"  ✔✔😎😎
     - en caso ajax_Sql_Query, buscar equivalente en js a:
@@ -56,10 +60,6 @@ IÑAKI - PENDIENTE AL 10-08-2022
     y crear sus algunas tablas. Esto traería como consecuencia que debemos sustituir el query en ajax_Display_div_nav_izq 
     (línea 68) $select_query = "SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;"; 
 
-
-BUTTONS FILTERS 
-  - FILTROS: check for type cols, cases 'BLOB' (example: mediumblob in 'tbl_arch_imagen_persona' in penjub)
-  - CASE sql query: filter scripts, some chars.....  
 
 - DB nativa de myLQSadmin: "my_sql_admin" 
   - crear las primeras tablas usuarios, standard_queries, favorite_queries, .... ✔✔  - 
