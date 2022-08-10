@@ -69,18 +69,18 @@ echo "
             echo "<div class='div-der disp-row-center'>";
 
                     echo "<div class='nav-btns disp-col-center'>";
-                        echo "<button id='btn-sql' class='nav-btn showBtn'>TEST<br>QUERIES</button>";
                         echo "<button id='btn-desc' class='nav-btn showBtn'>Desc<br>Table</button>";
                         echo "<button id='btn-view' class='nav-btn showBtn'>View<br>Table</button>";
-                        echo "<button id='btn-diagram' class='nav-btn showBtn'>Diagram</button>";                        
-                        echo "<button id='btn-insert' class='nav-btn showBtn'>Insert<br>Record</button>";
-                        echo "<button id='btn-update' class='nav-btn showBtn'>Update<br>Record</button>"; 
-                        echo "<button id='btn-delete' class='nav-btn showBtn'>Delete<br>Record</button>";                                                 
-                        echo "<button id='btn-export' class='nav-btn showBtn'>Export</button>";
-                        echo "<button id='btn-import' class='nav-btn showBtn'>Import</button>";                        
+                        echo "<button id='btn-sql' class='nav-btn showBtn'>QUERIES<br>AREA</button>";
+                        echo "<button id='btn-diagram' class='nav-btn hideBtn'>Diagram</button>";                        
+                        echo "<button id='btn-insert' class='nav-btn hideBtn'>Insert<br>Record</button>";
+                        echo "<button id='btn-update' class='nav-btn hideBtn'>Update<br>Record</button>"; 
+                        echo "<button id='btn-delete' class='nav-btn hideBtn'>Delete<br>Record</button>";  
+                        echo "<button id='btn-users' class='nav-btn showBtn'>USERS</button>";                                               
+                        echo "<button id='btn-export' class='nav-btn hideBtn'>Export</button>";
+                        echo "<button id='btn-import' class='nav-btn hideBtn'>Import</button>";                        
                         echo "<button id='btn-bakcup' class='nav-btn showBtn'>Backup</button>";
-                        echo "<button id='btn-restore' class='nav-btn showBtn'>Restore</button>";
-                        echo "<button id='btn-users' class='nav-btn showBtn'>Users</button>";
+                        echo "<button id='btn-restore' class='nav-btn showBtn'>Restore</button>";                        
                     echo "</div>";
 
                     echo "<div class='der-console disp-row-center' >";
@@ -183,10 +183,6 @@ echo "
         })
     });
 
-    // Listeners for buttons of class "nav-btn"
-
-    // considerar un listener para display-result-nav-title de manera de tener los parámetros
-    //      cada vez que cambie la tabla 
 
     function doButtonAction(){
 
@@ -211,8 +207,8 @@ echo "
                     { alert( 'please, select a table' ); } 
                 else {    
                     // Check if actualPage is active
-                    //document.getElementById('sql-query-area').value = "SELECT * FROM " + table_param.getAttribute('table'); // for avoid conflicts with ajax_Sql_Query finction
-                    document.getElementById('sql-query-area').value = ''; // for avoid conflicts with ajax_Sql_Query finction
+                    // document.getElementById('sql-query-area').value = "SELECT * FROM " + table_param.getAttribute('table'); // for avoid conflicts with ajax_Sql_Query finction
+                    // document.getElementById('sql-query-area').value = ''; // for avoid conflicts with ajax_Sql_Query finction
 
                     if ( document.getElementById('display-sql-console-Down').classList.contains('showDiv') ) { _tag = 'display-sql-console-Down'; }                         
                     Fetch_js(_tag,'./include/AJAX_php_js/ajax_ViewTbl.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&table='+table_param.getAttribute('table')+'&page=1'+'&rec_num_init=0');
@@ -222,6 +218,44 @@ echo "
 
             case 'btn-diagram':   
                 table_diagram();
+                break;
+
+            case 'btn-insert':
+                if ( table_param.getAttribute('table') == null ) 
+                    { alert( 'please, select a table' ); } 
+                else { // write insert format in tag #sql-query-area
+                    var insertMask = '';
+                    insertMask = 'INSERT INTO ' + table_param.getAttribute('table') + ' \n\n';
+                    insertMask += '(\' \',\' \',\' \',....) ' + '\n\n';   
+                    insertMask += 'VALUES (\' \',\' \',\' \',....)';   
+                    document.getElementById('sql-query-area').value=insertMask;
+                    Fetch_js('display-sql-console-Down','./include/AJAX_php_js/ajax_DescribeTbl.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table'));                                    
+                }
+                break;
+
+            case 'btn-update':
+                if ( table_param.getAttribute('table') == null ) 
+                    { alert( 'please, select a table' ); } 
+                else {   
+                    var updateText = '';
+                    updateMask = 'UPDATE ' + table_param.getAttribute('table') + ' \n\n';
+                    updateMask += 'SET \'field\'=\'value\', ....' + '\n\n';   
+                    updateMask += 'WHERE \'your condition\'';   
+                    document.getElementById('sql-query-area').value=updateMask;
+                    Fetch_js('display-sql-console-Down','./include/AJAX_php_js/ajax_DescribeTbl.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table'));                                    
+                }
+                break;
+
+            case 'btn-delete':
+                if ( table_param.getAttribute('table') == null ) 
+                    { alert( 'please, select a table' ); } 
+                else {   
+                    var updateText = '';
+                    updateMask = 'DELETE FROM ' + table_param.getAttribute('table') + ' \n\n';                    
+                    updateMask += 'WHERE \'your condition\'';   
+                    document.getElementById('sql-query-area').value=updateMask;
+                    Fetch_js('display-sql-console-Down','./include/AJAX_php_js/ajax_DescribeTbl.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table'));                                    
+                }
                 break;
 
             case 'btn-sql':   
@@ -234,33 +268,22 @@ echo "
                     alert('Please select a DB Server ! 😎');                    
                 } 
                 else {
-                    // clear areas
-                    // document.getElementById('display_right_aside').innerHTML = "";
-                    //document.getElementById('display-sql-console-Up').innerHTML = "";
-                    //document.getElementById('display-sql-console-Down').innerHTML = "";                        
 
                     // Hide 'display_sql_result'
                     document.getElementById('display_sql_result').classList.remove("showDiv");
                     document.getElementById('display_sql_result').classList.add("hideDiv"); 
-
                     // show 'display-sql-console-Up'
                     document.getElementById('display-sql-console-Up').classList.remove("hideDiv");
                     document.getElementById('display-sql-console-Up').classList.add("showDiv");
                     // clear textarea 'sql-query-area' 
                     document.getElementById("sql-query-area").value = '';  
-
                     // show 'display-sql-console-Down'
-                    //document.getElementById('paginationBtns').classList.remove("hideDiv");
-                    //document.getElementById('paginationBtns').classList.add("showDiv");
-                    //document.getElementById('actualPage').display='block';      
                     document.getElementById('display-sql-console-Down').classList.remove("hideDiv");
                     document.getElementById('display-sql-console-Down').classList.add("showDiv");
-                    
                     // hide button 'up'
                     document.getElementById('extend-console-up-btn').style.display='block';
                     // hide button 'compress'
                     document.getElementById('compress-console-up-btn').style.display='block';
-
                     // height for 'display-sql-console-Up'
                     document.getElementById('display-sql-console-Up').style.height='30%';
                     // height 'display-sql-console-Down'
@@ -275,18 +298,19 @@ echo "
                     // tag for display BUTTONS table in second NAV 
                     btns = document.querySelectorAll(".nav-btn");   
                     for ( var i=0; i<btns.length; i++ ) { 
-                        if ( btns[i].id != 'btn-desc' && btns[i].id != 'btn-view' && btns[i].id != 'btn-diagram' && btns[i].id != 'btn-insert' && btns[i].id != 'btn-update' && btns[i].id != 'btn-delete' && btns[i].id != 'btn-export' && btns[i].id != 'btn-import' ) {  
-                        // if ( btns[i].id != 'btn-desc' && btns[i].id != 'btn-view' && btns[i].id != 'btn-sql' && btns[i].id != 'btn-export' && btns[i].id != 'btn-import' ) {      
-                            // btns[i].classList.toggle("hideBtn"); 
+                        if ( btns[i].id == 'btn-diagram' || btns[i].id == 'btn-insert' || btns[i].id == 'btn-update' || btns[i].id == 'btn-delete' || btns[i].id == 'btn-import' || btns[i].id == 'btn-export' ) {  
+                            btns[i].classList.remove("hideBtn");
+                            btns[i].classList.add("showBtn");
+                        } else if ( btns[i].id == 'btn-users' || btns[i].id == 'btn-sql' ) {
                             btns[i].classList.remove("showBtn");
                             btns[i].classList.add("hideBtn");
-                        }  
+                        } else {
+                            // upsssss
+                        }
                     }                
-
 
                     // tag for show options in "Std Queries" SELECT
                     _tag= 'std-queriesList';
-
                     _query = 'SELECT btn_name, comment, query FROM standard_queries'; 
                     Fetch_js(_tag,'./include/AJAX_php_js/ajax_SelectOptions_Query.php?hostName=127.0.0.1&dbName=my_lqs_admin&sql_query='+_query);                      
 /*
@@ -308,7 +332,7 @@ echo "
                 break;    
 
             default:    
-                alert('This function will be available' + '\n' + 'in version 1.1 !');
+                alert('Function avalaible in version 1.1 !');
 
         }
        
@@ -320,12 +344,6 @@ echo "
         buttonSelected[i].addEventListener('click', doButtonAction, false);
     }
   
-/*    
-    var leftAside_Btn_Selected = document.getElementsByClassName('left-aside-btn');    
-    for (var i = 0; i < leftAside_Btn_Selected.length; i++) {
-        leftAside_Btn_Selected[i].addEventListener('click', doLeftAsideButtonAction, false);
-    }   
-*/
     function doLeftAsideButtonAction(){
 
         // clear #sql-query-area & #display_sql_result
@@ -344,11 +362,9 @@ echo "
         table_param.innerHTML += ' || DB: \"' + table_param.getAttribute('db') + '<br>';
         table_param.innerHTML +='<span style=\"font-size:20px;color:blue;\">Table: ' + table_Name  + '</span>';           
 
-
         // update tag 'display_sql_result' with tbl fields
         let _tag = 'display_sql_result';
         Fetch_js(_tag,'./include/AJAX_php_js/ajax_DescribeTbl.php?host_numb=' + table_param.getAttribute('host_numb') + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table'));                                    
-
 
     }    
 
@@ -372,15 +388,17 @@ echo "
         // tag for display BUTTONS table in first NAV (up)
         btns = document.querySelectorAll(".nav-btn");   
         for ( var i=0; i<btns.length; i++ ) { 
-            if ( btns[i].id != 'btn-desc' && btns[i].id != 'btn-view' && btns[i].id != 'btn-export' && btns[i].id != 'btn-import' ) {  
+            if ( btns[i].id == 'btn-diagram' || btns[i].id == 'btn-insert' || btns[i].id == 'btn-update' || btns[i].id == 'btn-delete' || btns[i].id == 'btn-import' || btns[i].id == 'btn-export' ) {  
             //if ( btns[i].id != 'btn-desc' && btns[i].id != 'btn-view' && btns[i].id != 'btn-sql' && btns[i].id != 'btn-export' && btns[i].id != 'btn-import' ) {      
+                btns[i].classList.remove("showBtn");
+                btns[i].classList.add("hideBtn");
+            } else {
                 btns[i].classList.remove("hideBtn");
                 btns[i].classList.add("showBtn");
-           }  
-        } 
+            } 
 
-    }    
-
+        }  
+    }
 
     function execute_query(){
 
@@ -389,21 +407,16 @@ echo "
         
         // Clear table in tag 'display-result-nav-title'
         var table_param = document.getElementById('display-result-nav-title');         
-        table_param.innerHTML = "HOST: " + table_param.getAttribute('host');
-        table_param.innerHTML += " || DB: " + table_param.getAttribute('db');
-        table_param.removeAttribute('table');
 
         // delete char ';' at the end of query string 
         if ( _query[_query.length-1] == ';' ) { _query = _query.slice(0, -1); }
 
         // IF to check: host and DB exists & query is not empty
         // capture host and db from tag -> #display-result-nav-title
-        // var table_param = document.getElementById('display-result-nav-title');
         var sql_host_db = document.getElementById('display-result-nav-title');
         let host_n = sql_host_db.getAttribute('host_numb');
 
         if ( _query == "" || sql_host_db.getAttribute('host') == null || sql_host_db.getAttribute('db') == null ) { 
-        //if ( _query == "" || table_param.getAttribute('host') == null || table_param.getAttribute('db') == null ) { 
             alert('check if you select HOST and DB and you write an sql query ! 😎') 
         } else {
 
@@ -420,23 +433,13 @@ echo "
             // add 'LIMIT parameters' if is a SELECT query
             if ( _query.includes("select") || _query.includes("SELECT") ) { _query += ' limit 0,15'; }   
             
-            // alert('_query is: ' + _query);
-            
-            // read host name and db name
-            // var sql_host_db = document.getElementById('display-result-nav-title');
             var hostName = sql_host_db.getAttribute('host');
             var dbName = sql_host_db.getAttribute('db');
-
-            // alert('hostName: ' + hostName + ', dnName: ' + dbName);
 
             // call AJAX for execute query            
             var _tag = 'display-sql-console-Down';
             //Fetch_js(_tag,'./include/AJAX_php_js/ajax_Sql_Query.php?host_numb=' + host_n + '&hostName='+sql_host_db.getAttribute('host')+'&dbName='+sql_host_db.getAttribute('db')+'&sql_query='+_query);
             Fetch_js(_tag,'./include/AJAX_php_js/ajax_Sql_Query.php?host_numb=' + host_n + '&hostName='+sql_host_db.getAttribute('host')+'&dbName='+sql_host_db.getAttribute('db')+'&sql_query='+_query+'&page=1');
-
-            // IF _query.includes("select")
-            // class 'select-btns' -> put addEventListener("click"... 
-            // Fetch....
 
         }
 
@@ -519,26 +522,17 @@ echo "
         document.getElementById('display-sql-console-Down').style.height="58%"; 
     }                                    
 
-
-    /*
-     * 
-        const relations_query = 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL ';
-        relations_query += 'FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE ';
-        relations_query += 'WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()';
-
-
-    */
+/*
     function tables_relations() {
         const relations_query = `SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL \nFROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE \nWHERE REFERENCED_TABLE_SCHEMA = SCHEMA()`;
         document.getElementById('sql-query-area').value = relations_query;
     }
 
-
-    // round(((data_length + index_length) / 1024 / 1024), 2)  --- round(data_length / 1024)
     function tables_size() {
         const size_query = `SELECT table_name TBL, round( (data_length / 1024 / 1024) , 2) SIZE_MB  \nFROM information_schema.TABLES \nWHERE table_schema = SCHEMA()`;
         document.getElementById('sql-query-area').value = size_query;
     }
+*/
 
     // DIAGRAM FOR TABLE SELECTED
     function table_diagram() {
@@ -557,14 +551,13 @@ echo "
         }           
     }
 
-
     /*
     * Clear html of 'der-console associated tag's'  
     */
     function clearDerConsoleAreas() {
+
         document.getElementById('display-result-nav-title').innerHTML = "";
         document.getElementById('display_sql_result').innerHTML = "";
-
         document.getElementById('display-result-nav-title').removeAttribute('table');
 
         //alert(document.getElementById('sql-query-area').value);
@@ -574,21 +567,8 @@ echo "
         
         // clear table in display-sql-console-Down-result div
         if ( document.getElementById('sql-table-result') ) { document.getElementById('sql-table-result').innerHTML = ""; }
-        // document.getElementById('display-sql-console-Down').textContent = "";
 
-        // document.getElementById('p-comment').innerHTML = "";
-    /*    
-        // hide 'display-sql-console-Up' and clear html
-        document.getElementById('display-sql-console-Up').classList.remove("showDiv");
-        document.getElementById('display-sql-console-Up').classList.add("hideDiv");     
-        //document.getElementById('display-sql-console-Up').innerHTML = "";
-        // hide 'display-sql-console-Down' and clear html
-        document.getElementById('display-sql-console-Down').classList.remove("showDiv");
-        document.getElementById('display-sql-console-Down').classList.add("hideDiv");     
-        // document.getElementById('display-sql-console-Down').innerHTML = "";
-    */    
         document.getElementById('display_right_aside').innerHTML = "";
-
 
     }
 
@@ -614,8 +594,6 @@ echo "
         document.getElementById("canvas-diagram").style.display="none";
         document.getElementById("canvas").innerHTML = "";
     }
-
-
 
     function console_Log (msG,bckgCol,col,lines){
         var linesJump=''; 
