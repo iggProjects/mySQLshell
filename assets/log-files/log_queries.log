@@ -33672,3 +33672,71 @@
 [10-Aug-2022 09:57:13] [Date: 2022-08-10 09:57:13 | root execute succesfully Sql Query in DB: my_lqs_admin
  'SELECT btn_name, comment, query FROM standard_queries']
 [10-Aug-2022 09:57:14] [Date: 2022-08-10 09:57:14 | inaki2022 CONNECT DB 'null' FAIL !SQLSTATE[HY000] [1044] Access denied for user 'inaki2022'@'%' to database 'null']
+[10-Aug-2022 10:14:27] [Date: 2022-08-10 10:14:27 | root connect succesfully to '127.0.0.1']
+[10-Aug-2022 10:14:27] [Date: 2022-08-10 10:14:27 | root connect succesfully to '127.0.0.1']
+[10-Aug-2022 10:14:27] [Date: 2022-08-10 10:14:27 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[10-Aug-2022 10:14:27] [Date: 2022-08-10 10:14:27 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[10-Aug-2022 10:14:29] [Date: 2022-08-10 10:14:29 | root connect succesfully to 'employees']
+[10-Aug-2022 10:14:29] [Date: 2022-08-10 10:14:29 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[10-Aug-2022 10:17:25] [Date: 2022-08-10 10:17:25 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[10-Aug-2022 10:17:25] [Date: 2022-08-10 10:17:25 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[10-Aug-2022 10:17:25] [Date: 2022-08-10 10:17:25 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[10-Aug-2022 10:17:25] [Date: 2022-08-10 10:17:25 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[10-Aug-2022 10:19:42] [Date: 2022-08-10 10:19:42 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[10-Aug-2022 10:19:42] [Date: 2022-08-10 10:19:42 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[10-Aug-2022 10:19:42] [Date: 2022-08-10 10:19:42 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[10-Aug-2022 10:19:42] [Date: 2022-08-10 10:19:42 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[10-Aug-2022 10:19:47] [Date: 2022-08-10 10:19:47 | inaki2022 connect succesfully to 'information_schema']
+[10-Aug-2022 10:19:47] [Date: 2022-08-10 10:19:47 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[10-Aug-2022 10:20:21] [Date: 2022-08-10 10:20:21 | inaki2022 connect succesfully to 'information_schema']
+[10-Aug-2022 10:20:21] [Date: 2022-08-10 10:20:21 | inaki2022 execute succesfully show tables query
+ 'describe CHARACTER_SETS;']
+[10-Aug-2022 10:21:58] [Date: 2022-08-10 10:21:58 | root connect succesfully to '127.0.0.1']
+[10-Aug-2022 10:21:58] [Date: 2022-08-10 10:21:58 | root connect succesfully to '127.0.0.1']
+[10-Aug-2022 10:21:58] [Date: 2022-08-10 10:21:58 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[10-Aug-2022 10:21:58] [Date: 2022-08-10 10:21:58 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[10-Aug-2022 10:22:00] [Date: 2022-08-10 10:22:00 | root connect succesfully to 'mvc_example']
+[10-Aug-2022 10:22:00] [Date: 2022-08-10 10:22:00 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[10-Aug-2022 10:22:02] [Date: 2022-08-10 10:22:02 | root connect succesfully to 'mvc_example']
+[10-Aug-2022 10:22:02] [Date: 2022-08-10 10:22:02 | root execute succesfully show tables query
+ 'describe products;']
+[10-Aug-2022 10:22:08] [Date: 2022-08-10 10:22:08 | root connect succesfully to 'employees']
+[10-Aug-2022 10:22:08] [Date: 2022-08-10 10:22:08 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[10-Aug-2022 10:22:50] [Date: 2022-08-10 10:22:50 | root connect succesfully to '127.0.0.1'][10-Aug-2022 10:22:50] [Date: 2022-08-10 10:22:50 | root connect succesfully to '127.0.0.1']
+[10-Aug-2022 10:22:50] [Date: 2022-08-10 10:22:50 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[10-Aug-2022 10:22:50] [Date: 2022-08-10 10:22:50 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[10-Aug-2022 10:22:51] [Date: 2022-08-10 10:22:51 | root connect succesfully to 'employees']
+[10-Aug-2022 10:22:51] [Date: 2022-08-10 10:22:51 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[10-Aug-2022 10:22:56] [Date: 2022-08-10 10:22:56 | root connect succesfully to 'employees']
+[10-Aug-2022 10:22:56] [Date: 2022-08-10 10:22:56 | root execute succesfully show tables query
+ 'describe current_dept_emp;']
+[10-Aug-2022 10:23:40] [Date: 2022-08-10 10:23:40 | root connect succesfully to '127.0.0.1']
+[10-Aug-2022 10:23:40] [Date: 2022-08-10 10:23:40 | root connect succesfully to '127.0.0.1']
+[10-Aug-2022 10:23:40] [Date: 2022-08-10 10:23:40 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[10-Aug-2022 10:23:40] [Date: 2022-08-10 10:23:40 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[10-Aug-2022 10:23:46] [Date: 2022-08-10 10:23:46 | root connect succesfully to 'employees']
+[10-Aug-2022 10:23:46] [Date: 2022-08-10 10:23:46 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[10-Aug-2022 10:23:49] [Date: 2022-08-10 10:23:49 | root connect succesfully to 'employees']
+[10-Aug-2022 10:23:49] [Date: 2022-08-10 10:23:49 | root execute succesfully show tables query
+ 'describe dept_emp;']
+[10-Aug-2022 10:23:51] [Date: 2022-08-10 10:23:51 | root connect succesfully to 'mvc_example']
+[10-Aug-2022 10:23:51] [Date: 2022-08-10 10:23:51 | root execute succesfully show tables query
+ 'SHOW TABLES;']

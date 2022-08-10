@@ -166,7 +166,7 @@ echo "
                 var table_param = document.getElementById('display-result-nav-title');
                 table_param.setAttribute('host_numb',host_n);
                 table_param.setAttribute('host',hostSelected.value);
-                table_param.innerHTML = "host_numb: " + host_n + " | host: " + hostSelected.value;                
+                table_param.innerHTML = "host_numb: " + host_n + " || HOST: " + hostSelected.value;                
                 Display_div_nav_izq('html_div_nav_izq',host_array,php_sql_url);  
                 
                 // Display query "show databases" in tag "display_right_aside"                 
@@ -270,7 +270,7 @@ echo "
                     let active_table = '';        
                     if ( table_param.getAttribute('table') != '' ) { active_table = table_param.getAttribute('table') } 
                     
-                    table_param.innerHTML = 'Host: \"' + table_param.getAttribute('host') + '\"' + ' DB: \"' + table_param.getAttribute('db') + '<br><span style=\"font-size:20px;color:blue;\">' + active_table + '</span>';
+                    table_param.innerHTML = 'HOST: \"' + table_param.getAttribute('host') + '\"' + ' || DB: \"' + table_param.getAttribute('db') + '<br><span style=\"font-size:20px;color:blue;\">' + active_table + '</span>';
 
                     // tag for display BUTTONS table in second NAV 
                     btns = document.querySelectorAll(".nav-btn");   
@@ -340,8 +340,8 @@ echo "
         
         var table_param = document.getElementById('display-result-nav-title');
         table_param.setAttribute('table',table_Name);      
-        table_param.innerHTML = 'Host: \"' + table_param.getAttribute('host') + '\"';
-        table_param.innerHTML += ', DB: \"' + table_param.getAttribute('db') + '<br>';
+        table_param.innerHTML = 'HOST: \"' + table_param.getAttribute('host') + '\"';
+        table_param.innerHTML += ' || DB: \"' + table_param.getAttribute('db') + '<br>';
         table_param.innerHTML +='<span style=\"font-size:20px;color:blue;\">Table: ' + table_Name  + '</span>';           
 
 
@@ -389,8 +389,8 @@ echo "
         
         // Clear table in tag 'display-result-nav-title'
         var table_param = document.getElementById('display-result-nav-title');         
-        table_param.innerHTML = "Host: " + table_param.getAttribute('host');
-        table_param.innerHTML += ", DB: " + table_param.getAttribute('db');
+        table_param.innerHTML = "HOST: " + table_param.getAttribute('host');
+        table_param.innerHTML += " || DB: " + table_param.getAttribute('db');
         table_param.removeAttribute('table');
 
         // delete char ';' at the end of query string 
