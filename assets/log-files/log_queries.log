@@ -33740,3 +33740,34 @@
 [10-Aug-2022 10:23:51] [Date: 2022-08-10 10:23:51 | root connect succesfully to 'mvc_example']
 [10-Aug-2022 10:23:51] [Date: 2022-08-10 10:23:51 | root execute succesfully show tables query
  'SHOW TABLES;']
+[10-Aug-2022 10:52:49] [Date: 2022-08-10 10:52:49 | root connect succesfully to 'my_lqs_admin']
+
+[10-Aug-2022 10:52:49] [Date: 2022-08-10 10:52:49 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[10-Aug-2022 10:52:49] [Date: 2022-08-10 10:52:49 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[10-Aug-2022 10:53:14] [Date: 2022-08-10 10:53:14 | root connect succesfully to 'mvc_example']
+[10-Aug-2022 10:53:14] [Date: 2022-08-10 10:53:14 | Sql_Query_try_catch: query in mvc_example FAILED !
+ 'select * fr tbl products' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'fr tbl products' at line 1]
+[10-Aug-2022 11:04:33] [Date: 2022-08-10 11:04:33 | root connect succesfully to 'my_lqs_admin']
+[10-Aug-2022 11:04:33] [Date: 2022-08-10 11:04:33 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[10-Aug-2022 11:04:35] [Date: 2022-08-10 11:04:35 | root connect succesfully to 'employees']
+[10-Aug-2022 11:04:35] [Date: 2022-08-10 11:04:35 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[10-Aug-2022 11:04:38] [Date: 2022-08-10 11:04:38 | root connect succesfully to 'employees']
+[10-Aug-2022 11:04:38] [Date: 2022-08-10 11:04:38 | root execute succesfully show tables query
+ 'describe dept_manager;']
+[10-Aug-2022 11:04:40] [Date: 2022-08-10 11:04:40 | root connect succesfully to 'employees']
+[10-Aug-2022 11:04:40] [Date: 2022-08-10 11:04:40 | root execute succesfully Sql Query in DB: employees
+ 'select count(*) as numb from dept_manager']
+[10-Aug-2022 11:04:40] [Date: 2022-08-10 11:04:40 | root execute succesfully Select query in employees
+ 'SELECT * FROM dept_manager limit 0,15']
+[10-Aug-2022 11:07:13] [Date: 2022-08-10 11:07:13 | root connect succesfully to 'employees']
+[10-Aug-2022 11:07:13] [Date: 2022-08-10 11:07:13 | root execute succesfully show tables query
+ 'describe posts;']
+[10-Aug-2022 11:07:16] [Date: 2022-08-10 11:07:16 | root connect succesfully to 'employees']
+[10-Aug-2022 11:07:16] [Date: 2022-08-10 11:07:16 | root execute succesfully Sql Query in DB: employees
+ 'select count(*) as numb from posts']
+[10-Aug-2022 11:07:16] [Date: 2022-08-10 11:07:16 | root execute succesfully Select query in employees
+ 'SELECT * FROM posts limit 0,15']
