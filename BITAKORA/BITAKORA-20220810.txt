@@ -20,8 +20,42 @@ IÑAKI - PENDIENTE AL 10-08-2022
   - restore .SQL
   - backup to .SQL        
 
-- backup from MySql console
-  ( mysqldump -uroot -p  my_lqs_admin > my_lqs_admin.sql ) take care with CHARSET
+- backup-restore 
+
+  FROM SHELL COMAND LINE  
+  backup:   mysqldump --default-character-set=utf8mb4 --routines -hlocalhost -uroot -p@mysql@  my_lqs_admin > my_lqs_admin.sql
+  restore:  mysql -h{$server_name} -u{$username} -p{$password} {$database} < {$database}.sql
+
+  FROM PHP --> https://stackoverflow.com/questions/22217397/backup-and-restore-mysql-database-in-php
+
+    BACKUP
+    <?php
+      define("BACKUP_PATH", "/dir/subdir/");
+      $server_name   = "localhost";
+      $username      = "root";
+      $password      = "root passw";
+      $database_name = "DBname";
+      $date_string   = date("Ymd");
+      $cmd = "mysqldump --routines -h {$server_name} -u {$username} -p{$password} {$database_name} > " . BACKUP_PATH . "{$date_string}_{$database_name}.sql";
+      exec($cmd);
+    ?>  
+
+    RESTORE
+
+    <?php
+      $restore_sql  = "/dir/subdir/database.sql";
+      $server_name   = "localhost";
+      $username      = "root";
+      $password      = "root";
+      $database_name = "database";
+      $cmd = "mysql -h {$server_name} -u {$username} -p{$password} {$database_name} < $restore_sql";
+      exec($cmd);
+    ?>
+
+    BACKUP FOR SOME TABLE OR TABLE's 
+      $database_name $table1 
+      $database_name $table1 $table2 $table3 ...
+
 
 - Al ejecutar "Clear Query" chequear que coloque los selectores en opc '0'  
 
