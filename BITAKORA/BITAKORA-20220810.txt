@@ -26,7 +26,10 @@ IÑAKI - PENDIENTE AL 10-08-2022
   backup:   mysqldump --default-character-set=utf8mb4 --routines -hlocalhost -uroot -p@mysql@  my_lqs_admin > my_lqs_admin.sql
   restore:  mysql -h{$server_name} -u{$username} -p{$password} {$database} < {$database}.sql
 
-  FROM PHP --> https://stackoverflow.com/questions/22217397/backup-and-restore-mysql-database-in-php
+  FROM PHP 
+  
+    - https://stackoverflow.com/questions/22217397/backup-and-restore-mysql-database-in-php
+    - https://dba.stackexchange.com/questions/9306/how-do-you-mysqldump-specific-tables
 
     BACKUP
     <?php
