@@ -195,6 +195,61 @@ function SELECT_try_catch($conn_active,$db_name,$db_user,$db_table,$select_query
 * 
 */
 
+function Show_DB_try_catch($conn_active,$db_user,$showDB_query,$log_comments) {
+
+    # mail parameters
+    $mailto='igg.git.h@gmail.com';
+    // $mailto='igg.git.h@gmail.com,albertomozodocente@gmail.com;';
+    $cabeceras = 'From: igg.git.h@gmail.com' . "\r\n" . 
+    'Reply-To: igg.git.h@gmail.com' . "\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+
+    # clean spaces in \$showDB_query for email and log file
+    $show_DB_query_trim = implode(' ',array_filter(explode(' ',$showDB_query))); 
+    $show_DB_query_trim = preg_replace("/\r\n+|\r+|\n+|\t+/i", " ", $show_DB_query_trim);
+
+    try {
+
+        $conn_active->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $conn_active->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
+        
+        $stmt = $conn_active->prepare($show_DB_query_trim);
+        $stmt->execute();
+        $result = $stmt->fetchAll(PDO::FETCH_ASSOC);           
+
+        # mail param's
+        $subject1 = "$db_user: Show tables query succesfully executed in tbl_users";
+        $cuerpo1 = "Date: " . date('Y-m-d H:i:s') . " | $db_user execute succesfully show tables query" . "\r\n" . " '$show_DB_query_trim'";
+        // mail($mailto,$subject1,$cuerpo1,$cabeceras);
+
+        # print in Log File
+        My_Log_Message ($cuerpo1, $log_comments);
+
+        # return data
+        return $result;	
+
+    } catch (PDOException $e) {
+
+        // $conn_active=null;
+        # mail param's
+        $subject1 = "$db_user, Show Tables query  FAILED";
+        $cuerpo1 = "Date: " . date('Y-m-d H:i:s') . " | show tables query FAILED " . "\r\n" . " '$show_DB_query_trim' " . $e->getMessage();
+        mail($mailto,$subject1,$cuerpo1,$cabeceras);
+
+        # print in Log File
+        My_Log_Message($cuerpo1, $log_comments);        
+        return $e->getMessage();
+
+    }
+
+}
+
+
+
+/*
+* 
+*/
+
 function ShowTables_try_catch($conn_active,$db_name,$db_user,$showtables_query,$log_comments) {
 
     # mail parameters

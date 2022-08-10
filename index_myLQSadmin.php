@@ -162,12 +162,17 @@ echo "
                 console.log('ajax php=> ' + php_sql_url); 
                 var host_array = <?php echo json_encode($host_serv); ?>;
 
-                // ser display-result-nav-title values
+                // select display-result-nav-title values
                 var table_param = document.getElementById('display-result-nav-title');
                 table_param.setAttribute('host_numb',host_n);
                 table_param.setAttribute('host',hostSelected.value);
                 table_param.innerHTML = "host_numb: " + host_n + " | host: " + hostSelected.value;                
                 Display_div_nav_izq('html_div_nav_izq',host_array,php_sql_url);  
+                
+                // Display query "show databases" in tag "display_right_aside"                 
+                document.getElementById('p-comment').innerHTML='DATABASES';        
+                // tag for show tables of DB selected                   
+                Fetch_js('display_right_aside','./include/AJAX_php_js/ajax_List_DB.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host'));
 
             } else {
                 document.getElementById('html_div_nav_izq').innerHTML = ""; 

@@ -12,6 +12,10 @@ LOGIN
 
 CANVAS PARA TODAS LAS TABLAS DE LA DB  
 
+CSS: 
+  - CSS case overflow in #display-result (for version 1.1) 
+  - light and dark theme's
+
 NEW STANDARD QUERIES
 
       SELECT table_name, column_name, column_type, column_key 
