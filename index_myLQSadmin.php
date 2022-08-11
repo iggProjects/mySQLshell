@@ -79,7 +79,7 @@ echo "
                         echo "<button id='btn-users' class='nav-btn showBtn'>USERS</button>";                                               
                         echo "<button id='btn-export' class='nav-btn hideBtn'>Export</button>";
                         echo "<button id='btn-import' class='nav-btn hideBtn'>Import</button>";                        
-                        echo "<button id='btn-bakcup' class='nav-btn showBtn'>Backup</button>";
+                        echo "<button id='btn-backup' class='nav-btn showBtn'>Backup</button>";
                         echo "<button id='btn-restore' class='nav-btn showBtn'>Restore</button>";                        
                     echo "</div>";
 
@@ -101,8 +101,8 @@ echo "
                                         <button id='go-back-btn' style='width:50px;padding:1px;color:blue;font-size:14px;' onclick='go_back()'><b>Exit</b></button>                                                                        
                                     </div>
 
-                                    <button id='query-btn' onclick='execute_query()'><b>Process Query</b></button> 
-                                    <button id='clear-query-btn' onclick='ClearSqlQueryAreas()'><b>Clear Query</b></button> 
+                                    <button id='query-btn' onclick='execute_query()'><b>Process</b></button> 
+                                    <button id='clear-query-btn' onclick='ClearSqlQueryAreas()'><b>Clear Area</b></button> 
 
                                     <div>
                                         <select class='queries-List' name='std-queries-List' id='std-queriesList'>
@@ -237,7 +237,7 @@ echo "
                 if ( table_param.getAttribute('table') == null ) 
                     { alert( 'please, select a table' ); } 
                 else {   
-                    var updateText = '';
+                    var updateMask = '';
                     updateMask = 'UPDATE ' + table_param.getAttribute('table') + ' \n\n';
                     updateMask += 'SET \'field\'=\'value\', ....' + '\n\n';   
                     updateMask += 'WHERE \'your condition\'';   
@@ -250,16 +250,17 @@ echo "
                 if ( table_param.getAttribute('table') == null ) 
                     { alert( 'please, select a table' ); } 
                 else {   
-                    var updateText = '';
-                    updateMask = 'DELETE FROM ' + table_param.getAttribute('table') + ' \n\n';                    
-                    updateMask += 'WHERE \'your condition\'';   
-                    document.getElementById('sql-query-area').value=updateMask;
+                    var deleteMask = '';
+                    deleteMask = 'DELETE FROM ' + table_param.getAttribute('table') + ' \n\n';                    
+                    deleteMask += 'WHERE \'your condition\'';   
+                    document.getElementById('sql-query-area').value=deleteMask;
                     Fetch_js('display-sql-console-Down','./include/AJAX_php_js/ajax_DescribeTbl.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table'));                                    
                 }
                 break;
 
-            case 'btn-sql':   
-
+            case 'btn-sql':              
+                
+                alert('first this.id: ' + this.id);
                 // IF to check: host and DB exists & query is not empty
                 // capture host and db from tag -> #display-result-nav-title
                 var table_param = document.getElementById('display-result-nav-title');                
@@ -298,7 +299,7 @@ echo "
                     // tag for display BUTTONS table in second NAV 
                     btns = document.querySelectorAll(".nav-btn");   
                     for ( var i=0; i<btns.length; i++ ) { 
-                        if ( btns[i].id == 'btn-diagram' || btns[i].id == 'btn-insert' || btns[i].id == 'btn-update' || btns[i].id == 'btn-delete' || btns[i].id == 'btn-import' || btns[i].id == 'btn-export' ) {  
+                        if ( btns[i].id == 'btn-diagram' || btns[i].id == 'btn-insert' || btns[i].id == 'btn-update' || btns[i].id == 'btn-delete' || btns[i].id == 'btn-import' || btns[i].id == 'btn-export' || btns[i].id == 'btn-backup' || btns[i].id == 'btn-restore' ) {  
                             btns[i].classList.remove("hideBtn");
                             btns[i].classList.add("showBtn");
                         } else if ( btns[i].id == 'btn-users' || btns[i].id == 'btn-sql' ) {
@@ -325,11 +326,66 @@ echo "
                     // document.getElementById('display-result-nav-title').innerHTML="";
                     document.getElementById('p-comment').innerHTML='TABLES';        
                     // tag for show tables of DB selected
-                    _tag= 'display_right_aside';   
+                    _tag= 'display_right_aside';                       
                     Fetch_js(_tag,'./include/AJAX_php_js/ajax_ListTables.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db'));
+
+                /*    
+                    if ( this.id='btn-sql' ) {
+                        alert('second this.id: ' + this.id);
+                        document.getElementById('sql-query-area').value = '';                                        
+                    } else if ( this.id='btn-backup' ) {
+                        alert('second this.id: ' + this.id);
+                        if ( table_param.getAttribute('db') == null  ) 
+                            { alert( 'please, select DB' ); } 
+                        else {   
+                            // mysqldump --routines -h {$server_name} -u {$username} -p{$password} {$database_name} > " . BACKUP_PATH . "{$date_string}_{$database_name}.sql
+                            var backupListMask = "";                 
+                            backupListMask = '?hostName=' + table_param.getAttribute('host') + '&dbName=' + table_param.getAttribute('db') + '&tableList=\'table 1 table2 table3 ...\'';                     
+                            document.getElementById('sql-query-area').value=backupListMask;
+                            Fetch_js(_tag,'./include/AJAX_php_js/ajax_ListTables.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db'));
+                            //Fetch_js('display-sql-console-Down','./include/AJAX_php_js/ajax_backup_DB.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table'));                                    
+                        }
+                    } else { 'upsss..........' }
+                */    
+
                 }
 
                 break;    
+           
+                case 'btn-backup':
+                    alert('this.id: ' + this.id);
+                    if ( table_param.getAttribute('db') == null  ) 
+                        { alert( 'please, select DB, or, if you wish, add the list of tables you want to back up' ); } 
+                    else {
+                        
+                        // Hide 'display_sql_result'
+                        document.getElementById('display_sql_result').classList.remove("showDiv");
+                        document.getElementById('display_sql_result').classList.add("hideDiv"); 
+                        // show 'display-sql-console-Up'
+                        document.getElementById('display-sql-console-Up').classList.remove("hideDiv");
+                        document.getElementById('display-sql-console-Up').classList.add("showDiv");
+                        // clear textarea 'sql-query-area' 
+                        document.getElementById("sql-query-area").value = '';  
+                        // show 'display-sql-console-Down'
+                        document.getElementById('display-sql-console-Down').classList.remove("hideDiv");
+                        document.getElementById('display-sql-console-Down').classList.add("showDiv");
+                        // hide button 'up'
+                        document.getElementById('extend-console-up-btn').style.display='block';
+                        // hide button 'compress'
+                        document.getElementById('compress-console-up-btn').style.display='block';
+                        // height for 'display-sql-console-Up'
+                        document.getElementById('display-sql-console-Up').style.height='30%';
+                        // height 'display-sql-console-Down'
+                        document.getElementById('display-sql-console-Down').style.height='58%';
+                        
+                        // mysqldump --routines -h {$server_name} -u {$username} -p{$password} {$database_name} > " . BACKUP_PATH . "{$date_string}_{$database_name}.sql
+                        var backupListMask = "";                 
+                        backupListMask = '?process=backup&hostName=' + table_param.getAttribute('host') + '&dbName=' + table_param.getAttribute('db') + '&tableList=\'table 1 table2 table3 ...\'';                     
+                        document.getElementById('sql-query-area').value=backupListMask;
+                        Fetch_js(_tag,'./include/AJAX_php_js/ajax_ListTables.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db'));                        
+                    }
+                break;
+               
 
             default:    
                 alert('Function avalaible in version 1.1 !');
