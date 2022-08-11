@@ -260,7 +260,7 @@ echo "
 
             case 'btn-sql':              
                 
-                alert('first this.id: ' + this.id);
+                // alert('first this.id: ' + this.id);
                 // IF to check: host and DB exists & query is not empty
                 // capture host and db from tag -> #display-result-nav-title
                 var table_param = document.getElementById('display-result-nav-title');                
@@ -353,7 +353,7 @@ echo "
                 break;    
            
                 case 'btn-backup':
-                    alert('this.id: ' + this.id);
+                    // alert('this.id: ' + this.id);
                     if ( table_param.getAttribute('db') == null  ) 
                         { alert( 'please, select DB, or, if you wish, add the list of tables you want to back up' ); } 
                     else {
@@ -377,13 +377,14 @@ echo "
                         document.getElementById('display-sql-console-Up').style.height='30%';
                         // height 'display-sql-console-Down'
                         document.getElementById('display-sql-console-Down').style.height='58%';
+                        // clear 'display-sql-console-Down'
+                        document.getElementById('display-sql-console-Down').innerHTML="";
                         
                         // mysqldump --routines -h {$server_name} -u {$username} -p{$password} {$database_name} > " . BACKUP_PATH . "{$date_string}_{$database_name}.sql
-                        var backupListMask = "";                 
-                        backupListMask = '?process=backup&tableList=\'table 1 table2 table3 ...\'';                     
-                        // backupListMask = '?process=backup&hostName=' + table_param.getAttribute('host') + '&dbName=' + table_param.getAttribute('db') + '&tableList=\'table 1 table2 table3 ...\'';                     
-                        document.getElementById('sql-query-area').value=backupListMask;
-                        Fetch_js(_tag,'./include/AJAX_php_js/ajax_ListTables.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db'));                        
+                        document.getElementById('sql-query-area').value = 'process=backup&tableList=\'table 1 table2 table3 ...\'';
+                        var _query =  document.getElementById('sql-query-area').value;
+                        Fetch_js(_tag,'./include/AJAX_php_js/ajax_Sql_Query.php?host_numb=' + host_n + '&hostName='+sql_host_db.getAttribute('host')+'&dbName='+sql_host_db.getAttribute('db')+'&sql_query='+_query);
+                     
                     }
                 break;
                
