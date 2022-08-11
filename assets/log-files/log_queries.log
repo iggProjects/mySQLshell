@@ -35364,3 +35364,120 @@
 [11-Aug-2022 15:29:51] [Date: 2022-08-11 15:29:51 | inaki2022 connect succesfully to '8661316_laninaki22']
 [11-Aug-2022 15:29:51] [Date: 2022-08-11 15:29:51 | inaki2022 execute succesfully show tables query
  'SHOW TABLES;']
+[11-Aug-2022 15:45:33] [Date: 2022-08-11 15:45:33 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 15:45:33] [Date: 2022-08-11 15:45:33 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 15:45:33] [Date: 2022-08-11 15:45:33 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 15:45:33] [Date: 2022-08-11 15:45:33 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 15:45:37] [Date: 2022-08-11 15:45:37 | root connect succesfully to 'my_lqs_admin']
+[11-Aug-2022 15:45:37] [Date: 2022-08-11 15:45:37 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[11-Aug-2022 15:53:36] [Date: 2022-08-11 15:53:36 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 15:53:36] [Date: 2022-08-11 15:53:36 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 15:53:36] [Date: 2022-08-11 15:53:36 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 15:53:36] [Date: 2022-08-11 15:53:36 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 15:53:42] [Date: 2022-08-11 15:53:42 | root connect succesfully to 'my_lqs_admin']
+[11-Aug-2022 15:53:42] [Date: 2022-08-11 15:53:42 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[11-Aug-2022 15:56:54] [Date: 2022-08-11 15:56:54 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 15:56:54] [Date: 2022-08-11 15:56:54 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 15:56:54] [Date: 2022-08-11 15:56:54 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 15:56:54] [Date: 2022-08-11 15:56:54 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 15:57:08] [Date: 2022-08-11 15:57:08 | root connect succesfully to 'penjub']
+[11-Aug-2022 15:57:08] [Date: 2022-08-11 15:57:08 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[11-Aug-2022 16:01:15] [Date: 2022-08-11 16:01:15 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 16:01:15] [Date: 2022-08-11 16:01:15 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 16:01:15] [Date: 2022-08-11 16:01:15 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 16:01:15] [Date: 2022-08-11 16:01:15 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 16:01:17] [Date: 2022-08-11 16:01:17 | root connect succesfully to 'penjub']
+[11-Aug-2022 16:01:17] [Date: 2022-08-11 16:01:17 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[11-Aug-2022 16:03:10] [Date: 2022-08-11 16:03:10 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 16:03:10] [Date: 2022-08-11 16:03:10 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 16:03:10] [Date: 2022-08-11 16:03:10 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 16:03:10] [Date: 2022-08-11 16:03:10 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 16:03:12] [Date: 2022-08-11 16:03:12 | root connect succesfully to 'penjub']
+[11-Aug-2022 16:03:12] [Date: 2022-08-11 16:03:12 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[11-Aug-2022 16:04:03] [Date: 2022-08-11 16:04:03 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 16:04:03] [Date: 2022-08-11 16:04:03 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 16:04:03] [Date: 2022-08-11 16:04:03 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 16:04:03] [Date: 2022-08-11 16:04:03 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 16:04:05] [Date: 2022-08-11 16:04:05 | root connect succesfully to 'penjub']
+[11-Aug-2022 16:04:05] [Date: 2022-08-11 16:04:05 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[11-Aug-2022 16:05:27] [Date: 2022-08-11 16:05:27 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 16:05:27] [Date: 2022-08-11 16:05:27 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 16:05:27] [Date: 2022-08-11 16:05:27 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 16:05:27] [Date: 2022-08-11 16:05:27 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 16:05:29] [Date: 2022-08-11 16:05:29 | root connect succesfully to 'penjub']
+[11-Aug-2022 16:05:29] [Date: 2022-08-11 16:05:29 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[11-Aug-2022 16:15:57] [Date: 2022-08-11 16:15:57 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 16:15:57] [Date: 2022-08-11 16:15:57 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 16:15:57] [Date: 2022-08-11 16:15:57 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 16:15:57] [Date: 2022-08-11 16:15:57 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 16:15:59] [Date: 2022-08-11 16:15:59 | root connect succesfully to 'penjub']
+[11-Aug-2022 16:15:59] [Date: 2022-08-11 16:15:59 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[11-Aug-2022 16:23:00] [Date: 2022-08-11 16:23:00 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 16:23:00] [Date: 2022-08-11 16:23:00 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 16:23:00] [Date: 2022-08-11 16:23:00 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 16:23:01] [Date: 2022-08-11 16:23:01 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 16:23:02] [Date: 2022-08-11 16:23:02 | root connect succesfully to 'my_lqs_admin']
+[11-Aug-2022 16:23:02] [Date: 2022-08-11 16:23:02 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[11-Aug-2022 16:28:29] [Date: 2022-08-11 16:28:29 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 16:28:29] [Date: 2022-08-11 16:28:29 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 16:28:29] [Date: 2022-08-11 16:28:29 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 16:28:29] [Date: 2022-08-11 16:28:29 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 16:28:35] [Date: 2022-08-11 16:28:35 | root connect succesfully to 'mvc_example']
+[11-Aug-2022 16:28:35] [Date: 2022-08-11 16:28:35 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[11-Aug-2022 16:28:38] [Date: 2022-08-11 16:28:38 | root connect succesfully to 'mvc_example']
+[11-Aug-2022 16:28:38] [Date: 2022-08-11 16:28:38 | root execute succesfully show tables query
+ 'describe products;']
+[11-Aug-2022 16:28:51] [Date: 2022-08-11 16:28:51 | root connect succesfully to 'my_lqs_admin']
+[11-Aug-2022 16:28:51] [Date: 2022-08-11 16:28:51 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[11-Aug-2022 16:29:58] [Date: 2022-08-11 16:29:58 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 16:29:58] [Date: 2022-08-11 16:29:58 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 16:29:58] [Date: 2022-08-11 16:29:58 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 16:29:58] [Date: 2022-08-11 16:29:58 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 16:30:03] [Date: 2022-08-11 16:30:03 | root connect succesfully to 'penjub']
+[11-Aug-2022 16:30:03] [Date: 2022-08-11 16:30:03 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[11-Aug-2022 16:30:51] [Date: 2022-08-11 16:30:51 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 16:30:51] [Date: 2022-08-11 16:30:51 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 16:30:51] [Date: 2022-08-11 16:30:51 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 16:30:51] [Date: 2022-08-11 16:30:51 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 16:30:53] [Date: 2022-08-11 16:30:53 | root connect succesfully to 'penjub']
+[11-Aug-2022 16:30:53] [Date: 2022-08-11 16:30:53 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[11-Aug-2022 16:47:55] [Date: 2022-08-11 16:47:55 | root connect succesfully to 'employees']
+[11-Aug-2022 16:47:55] [Date: 2022-08-11 16:47:55 | root execute succesfully show tables query
+ 'SHOW TABLES;']
