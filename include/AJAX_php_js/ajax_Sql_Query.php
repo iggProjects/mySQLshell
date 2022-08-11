@@ -27,12 +27,8 @@ if ( $_REQUEST['dbName'] ) {
     $dbname = $_REQUEST['dbName']; 
 }
 
-if ( $_REQUEST['tableList'] ) {
-    $dbname = $_REQUEST['tableList']; 
-}
-
 if ( $_REQUEST['sql_query'] ) {
-    $sql_query = $_REQUEST['sql_query']; 
+    $sql_query = $_REQUEST['sql_query'];     
 }
 
 if ( $_REQUEST['page'] ) {
@@ -57,7 +53,16 @@ $dbcharset = 'utf8mb4';
 
 // IF to separate 'process' from 'sql' code
 if ( str_contains($sql_query,'process') ) { 
-    echo "PROCESS SELECTED";
+
+    echo "PROCESS: " . $sql_query . " | hostName: " . $dbhost . " | dbName: " . $dbname . " | tableList: " . $_REQUEST['tableList'];
+
+    define("BACKUP_PATH", "../../backup_area/");
+    $date_string   = date("Ymd");
+    $cmd = "mysqldump --default-character-set=utf8mb4 --routines -h $dbhost -u $dbuser -p $dbpass $dbname > " . BACKUP_PATH . "$date_string_$dbname.sql";
+    echo "<br><br>backup statement: " . $cmd;
+    exec($cmd);
+
+
 } else {
     
     $msg = 'FROM Sql_Query --> First sql_query: ' . $_REQUEST['sql_query'] . ' | ' . ' HOST number: ' . $_REQUEST['host_numb'];
