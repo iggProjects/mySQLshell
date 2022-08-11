@@ -380,7 +380,8 @@ echo "
                         
                         // mysqldump --routines -h {$server_name} -u {$username} -p{$password} {$database_name} > " . BACKUP_PATH . "{$date_string}_{$database_name}.sql
                         var backupListMask = "";                 
-                        backupListMask = '?process=backup&hostName=' + table_param.getAttribute('host') + '&dbName=' + table_param.getAttribute('db') + '&tableList=\'table 1 table2 table3 ...\'';                     
+                        backupListMask = '?process=backup&tableList=\'table 1 table2 table3 ...\'';                     
+                        // backupListMask = '?process=backup&hostName=' + table_param.getAttribute('host') + '&dbName=' + table_param.getAttribute('db') + '&tableList=\'table 1 table2 table3 ...\'';                     
                         document.getElementById('sql-query-area').value=backupListMask;
                         Fetch_js(_tag,'./include/AJAX_php_js/ajax_ListTables.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db'));                        
                     }
