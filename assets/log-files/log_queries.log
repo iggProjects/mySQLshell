@@ -35817,3 +35817,228 @@
 [11-Aug-2022 21:31:44] [Date: 2022-08-11 21:31:44 | root connect succesfully to 'mylqsadmin_db']
 [11-Aug-2022 21:31:44] [Date: 2022-08-11 21:31:44 | Sql_Query_try_catch: query in mylqsadmin_db FAILED !
  'SELECT usuario FROM usuario' SQLSTATE[42S02]: Base table or view not found: 1146 Table 'mylqsadmin_db.usuario' doesn't exist]
+[11-Aug-2022 22:28:04] [Date: 2022-08-11 22:28:04 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:04] [Date: 2022-08-11 22:28:04 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:09] [Date: 2022-08-11 22:28:09 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[11-Aug-2022 22:28:09] [Date: 2022-08-11 22:28:09 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[11-Aug-2022 22:28:09] [Date: 2022-08-11 22:28:09 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 22:28:09] [Date: 2022-08-11 22:28:09 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 22:28:09] [Date: 2022-08-11 22:28:09 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[11-Aug-2022 22:28:09] [Date: 2022-08-11 22:28:09 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[11-Aug-2022 22:28:09] [Date: 2022-08-11 22:28:09 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 22:28:09] [Date: 2022-08-11 22:28:09 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 22:28:09] [Date: 2022-08-11 22:28:09 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[11-Aug-2022 22:28:09] [Date: 2022-08-11 22:28:09 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[11-Aug-2022 22:28:09] [Date: 2022-08-11 22:28:09 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 22:28:10] [Date: 2022-08-11 22:28:10 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 22:28:12] [Date: 2022-08-11 22:28:12 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:12] [Date: 2022-08-11 22:28:12 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:12] [Date: 2022-08-11 22:28:12 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:12] [Date: 2022-08-11 22:28:12 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:12] [Date: 2022-08-11 22:28:12 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:12] [Date: 2022-08-11 22:28:12 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:12] [Date: 2022-08-11 22:28:12 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)][11-Aug-2022 22:28:12] [Date: 2022-08-11 22:28:12 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+
+[11-Aug-2022 22:28:12] [Date: 2022-08-11 22:28:12 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:12] [Date: 2022-08-11 22:28:12 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:32] [Date: 2022-08-11 22:28:32 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[11-Aug-2022 22:28:32] [Date: 2022-08-11 22:28:32 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[11-Aug-2022 22:28:32] [Date: 2022-08-11 22:28:32 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 22:28:32] [Date: 2022-08-11 22:28:32 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 22:28:32] [Date: 2022-08-11 22:28:32 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[11-Aug-2022 22:28:32] [Date: 2022-08-11 22:28:32 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[11-Aug-2022 22:28:32] [Date: 2022-08-11 22:28:32 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 22:28:32] [Date: 2022-08-11 22:28:32 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 22:28:32] [Date: 2022-08-11 22:28:32 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[11-Aug-2022 22:28:32] [Date: 2022-08-11 22:28:32 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[11-Aug-2022 22:28:32] [Date: 2022-08-11 22:28:32 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 22:28:32] [Date: 2022-08-11 22:28:32 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 22:28:32] [Date: 2022-08-11 22:28:32 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[11-Aug-2022 22:28:32] [Date: 2022-08-11 22:28:32 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[11-Aug-2022 22:28:32] [Date: 2022-08-11 22:28:32 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 22:28:32] [Date: 2022-08-11 22:28:32 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 22:28:32] [Date: 2022-08-11 22:28:32 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[11-Aug-2022 22:28:32] [Date: 2022-08-11 22:28:32 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[11-Aug-2022 22:28:32] [Date: 2022-08-11 22:28:32 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 22:28:32] [Date: 2022-08-11 22:28:32 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 22:28:32] [Date: 2022-08-11 22:28:32 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[11-Aug-2022 22:28:32] [Date: 2022-08-11 22:28:32 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[11-Aug-2022 22:28:32] [Date: 2022-08-11 22:28:32 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 22:28:33] [Date: 2022-08-11 22:28:33 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 22:28:33] [Date: 2022-08-11 22:28:33 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[11-Aug-2022 22:28:33] [Date: 2022-08-11 22:28:33 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 22:28:33] [Date: 2022-08-11 22:28:33 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[11-Aug-2022 22:28:33] [Date: 2022-08-11 22:28:33 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 22:28:36] [Date: 2022-08-11 22:28:36 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:36] [Date: 2022-08-11 22:28:36 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:36] [Date: 2022-08-11 22:28:36 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:36] [Date: 2022-08-11 22:28:36 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:36] [Date: 2022-08-11 22:28:36 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:36] [Date: 2022-08-11 22:28:36 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:36] [Date: 2022-08-11 22:28:36 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:36] [Date: 2022-08-11 22:28:36 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:36] [Date: 2022-08-11 22:28:36 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:36] [Date: 2022-08-11 22:28:36 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:36] [Date: 2022-08-11 22:28:36 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:36] [Date: 2022-08-11 22:28:36 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:36] [Date: 2022-08-11 22:28:36 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:36] [Date: 2022-08-11 22:28:36 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:36] [Date: 2022-08-11 22:28:36 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:36] [Date: 2022-08-11 22:28:36 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:36] [Date: 2022-08-11 22:28:36 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:28:36] [Date: 2022-08-11 22:28:36 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)]
+[11-Aug-2022 22:29:21] [Date: 2022-08-11 22:29:21 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 22:29:21] [Date: 2022-08-11 22:29:21 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 22:29:21] [Date: 2022-08-11 22:29:21 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 22:29:22] [Date: 2022-08-11 22:29:22 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 22:29:25] [Date: 2022-08-11 22:29:25 | root connect succesfully to 'penjub']
+[11-Aug-2022 22:29:25] [Date: 2022-08-11 22:29:25 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[11-Aug-2022 22:29:26] [Date: 2022-08-11 22:29:26 | root connect succesfully to 'my_lqs_admin']
+
+[11-Aug-2022 22:29:26] [Date: 2022-08-11 22:29:26 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[11-Aug-2022 22:29:26] [Date: 2022-08-11 22:29:26 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[11-Aug-2022 22:29:37] [Date: 2022-08-11 22:29:37 | root connect succesfully to 'penjub']
+[11-Aug-2022 22:29:37] [Date: 2022-08-11 22:29:37 | Sql_Query_try_catch: query in penjub FAILED !
+ 'selevt * from tbl_ciudad' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'selevt * from tbl_ciudad' at line 1]
+[11-Aug-2022 22:37:54] [Date: 2022-08-11 22:37:54 | root connect succesfully to '127.0.0.1'][11-Aug-2022 22:37:54] [Date: 2022-08-11 22:37:54 | root connect succesfully to '127.0.0.1']
+
+[11-Aug-2022 22:37:54] [Date: 2022-08-11 22:37:54 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 22:37:54] [Date: 2022-08-11 22:37:54 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 22:37:58] [Date: 2022-08-11 22:37:58 | root connect succesfully to 'penjub']
+[11-Aug-2022 22:37:58] [Date: 2022-08-11 22:37:58 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[11-Aug-2022 22:38:00] [Date: 2022-08-11 22:38:00 | root connect succesfully to 'penjub']dmin']
+
+[11-Aug-2022 22:38:00] [Date: 2022-08-11 22:38:00 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[11-Aug-2022 22:38:00] [Date: 2022-08-11 22:38:00 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[11-Aug-2022 22:38:11] [Date: 2022-08-11 22:38:11 | root connect succesfully to 'penjub']
+[11-Aug-2022 22:38:11] [Date: 2022-08-11 22:38:11 | Sql_Query_try_catch: query in penjub FAILED !
+ 'sec * from tbl' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'sec * from tbl' at line 1]
+[11-Aug-2022 22:38:42] [Date: 2022-08-11 22:38:42 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 22:38:42] [Date: 2022-08-11 22:38:42 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 22:38:42] [Date: 2022-08-11 22:38:42 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 22:38:42] [Date: 2022-08-11 22:38:42 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 22:38:44] [Date: 2022-08-11 22:38:44 | root connect succesfully to 'penjub']
+[11-Aug-2022 22:38:44] [Date: 2022-08-11 22:38:44 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[11-Aug-2022 22:38:50] [Date: 2022-08-11 22:38:50 | root connect succesfully to 'penjub']
+[11-Aug-2022 22:38:50] [Date: 2022-08-11 22:38:50 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[11-Aug-2022 22:38:52] [Date: 2022-08-11 22:38:52 | root connect succesfully to 'penjub']
+[11-Aug-2022 22:38:52] [Date: 2022-08-11 22:38:52 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_ciudad']
+[11-Aug-2022 22:38:52] [Date: 2022-08-11 22:38:52 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 0,15']
+[11-Aug-2022 22:38:56] [Date: 2022-08-11 22:38:56 | root connect succesfully to 'penjub']
+[11-Aug-2022 22:38:56] [Date: 2022-08-11 22:38:56 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[11-Aug-2022 22:38:57] [Date: 2022-08-11 22:38:57 | root connect succesfully to 'penjub']
+[11-Aug-2022 22:38:57] [Date: 2022-08-11 22:38:57 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_ciudad']
+[11-Aug-2022 22:38:57] [Date: 2022-08-11 22:38:57 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 0,15']
+[11-Aug-2022 22:39:01] [Date: 2022-08-11 22:39:01 | root connect succesfully to 'penjub']
+[11-Aug-2022 22:39:01] [Date: 2022-08-11 22:39:01 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 15,15']
+[11-Aug-2022 22:39:05] [Date: 2022-08-11 22:39:05 | root connect succesfully to 'my_lqs_admin']
+[11-Aug-2022 22:39:05] [Date: 2022-08-11 22:39:05 | root connect succesfully to 'penjub']
+[11-Aug-2022 22:39:05] [Date: 2022-08-11 22:39:05 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[11-Aug-2022 22:39:05] [Date: 2022-08-11 22:39:05 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[11-Aug-2022 22:39:14] [Date: 2022-08-11 22:39:14 | root connect succesfully to 'penjub']
+[11-Aug-2022 22:39:14] [Date: 2022-08-11 22:39:14 | root execute succesfully Sql Query in DB: penjub
+ 'select * from tbl_persona']
+[11-Aug-2022 22:39:14] [Date: 2022-08-11 22:39:14 | root execute succesfully Sql Query in DB: penjub
+ 'select * from tbl_persona limit 0,15']
+[11-Aug-2022 22:39:16] [Date: 2022-08-11 22:39:16 | root connect succesfully to 'penjub']
+[11-Aug-2022 22:39:16] [Date: 2022-08-11 22:39:16 | root execute succesfully Sql Query in DB: penjub
+ 'select * from tbl_persona limit 15,15']
+[11-Aug-2022 22:39:17] [Date: 2022-08-11 22:39:17 | root connect succesfully to 'penjub']
+[11-Aug-2022 22:39:17] [Date: 2022-08-11 22:39:17 | root execute succesfully Sql Query in DB: penjub
+ 'select * from tbl_persona limit 30,15']
+[11-Aug-2022 22:39:17] [Date: 2022-08-11 22:39:17 | root connect succesfully to 'penjub']
+[11-Aug-2022 22:39:17] [Date: 2022-08-11 22:39:17 | root execute succesfully Sql Query in DB: penjub
+ 'select * from tbl_persona limit 45,15']
+[11-Aug-2022 22:39:21] [Date: 2022-08-11 22:39:21 | root connect succesfully to 'penjub']
+[11-Aug-2022 22:39:21] [Date: 2022-08-11 22:39:21 | root execute succesfully Sql Query in DB: penjub
+ 'select * from tbl_persona limit 0,15']
+[11-Aug-2022 22:39:27] [Date: 2022-08-11 22:39:27 | root connect succesfully to 'penjub']
+[11-Aug-2022 22:39:27] [Date: 2022-08-11 22:39:27 | Sql_Query_try_catch: query in penjub FAILED !
+ 'select * from tbl_person' SQLSTATE[42S02]: Base table or view not found: 1146 Table 'penjub.tbl_person' doesn't exist]
+[11-Aug-2022 22:41:46] [Date: 2022-08-11 22:41:46 | root connect succesfully to 'penjub']
+[11-Aug-2022 22:41:46] [Date: 2022-08-11 22:41:46 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[11-Aug-2022 22:41:55] [Date: 2022-08-11 22:41:55 | root connect succesfully to 'penjub']
+[11-Aug-2022 22:41:55] [Date: 2022-08-11 22:41:55 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[11-Aug-2022 22:43:56] [Date: 2022-08-11 22:43:56 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 22:43:56] [Date: 2022-08-11 22:43:56 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 22:43:56] [Date: 2022-08-11 22:43:56 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 22:43:56] [Date: 2022-08-11 22:43:56 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 22:43:58] [Date: 2022-08-11 22:43:58 | root connect succesfully to 'penjub']
+[11-Aug-2022 22:43:58] [Date: 2022-08-11 22:43:58 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[11-Aug-2022 22:43:59] [Date: 2022-08-11 22:43:59 | root connect succesfully to 'my_lqs_admin']
+[11-Aug-2022 22:43:59] [Date: 2022-08-11 22:43:59 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[11-Aug-2022 22:43:59] [Date: 2022-08-11 22:43:59 | root connect succesfully to 'penjub']
+[11-Aug-2022 22:43:59] [Date: 2022-08-11 22:43:59 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[11-Aug-2022 22:44:05] [Date: 2022-08-11 22:44:05 | root connect succesfully to 'penjub']
+[11-Aug-2022 22:44:05] [Date: 2022-08-11 22:44:05 | Sql_Query_try_catch: query in penjub FAILED !
+ 'sel * from tbl' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'sel * from tbl' at line 1]
+[11-Aug-2022 22:44:23] [Date: 2022-08-11 22:44:23 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 22:44:23] [Date: 2022-08-11 22:44:23 | root connect succesfully to '127.0.0.1']
+[11-Aug-2022 22:44:23] [Date: 2022-08-11 22:44:23 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[11-Aug-2022 22:44:24] [Date: 2022-08-11 22:44:24 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[11-Aug-2022 22:44:25] [Date: 2022-08-11 22:44:25 | root connect succesfully to 'penjub']
+[11-Aug-2022 22:44:25] [Date: 2022-08-11 22:44:25 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[11-Aug-2022 22:44:28] [Date: 2022-08-11 22:44:28 | root connect succesfully to 'my_lqs_admin']
+[11-Aug-2022 22:44:28] [Date: 2022-08-11 22:44:28 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+11-Aug-2022 22:44:28] [Date: 2022-08-11 22:44:28 | root connect succesfully to 'penjub']
+[11-Aug-2022 22:44:28] [Date: 2022-08-11 22:44:28 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[11-Aug-2022 22:44:33] [Date: 2022-08-11 22:44:33 | root connect succesfully to 'penjub']
+[11-Aug-2022 22:44:33] [Date: 2022-08-11 22:44:33 | Sql_Query_try_catch: query in penjub FAILED !
+ 'sel * from tbl' SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'sel * from tbl' at line 1]
+[11-Aug-2022 22:46:37] [Date: 2022-08-11 22:46:37 | root connect succesfully to 'penjub']
+[11-Aug-2022 22:46:37] [Date: 2022-08-11 22:46:37 | Sql_Query_try_catch: query in penjub FAILED !
+ 'select * from tbl' SQLSTATE[42S02]: Base table or view not found: 1146 Table 'penjub.tbl' doesn't exist]

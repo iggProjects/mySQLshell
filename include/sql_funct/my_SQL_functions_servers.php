@@ -401,8 +401,8 @@ function Sql_Query_try_catch($conn_active,$db_name,$db_user,$sql_query,$log_comm
         $error_msg .= "Error executing query in function \"Sql_Query_try_catch\" in DB \"$db_name\"";
         $error_msg .= "<br><br><span style='color:#990000;'>" . $e->getMessage() . "</span>";  
         echo $error_msg;
-        echo "<br>";
-        echo '<a href='.getURIGoogle($e->getMessage()).' target="_blank">Search details in Google</a>';
+        echo "<br><br>";
+        echo '<a href='. getURIGoogle($e->getMessage()) .' target="_blank">Search "error info" in Google</a>';
     }
 
 }
