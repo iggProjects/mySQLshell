@@ -35481,3 +35481,25 @@
 [11-Aug-2022 16:47:55] [Date: 2022-08-11 16:47:55 | root connect succesfully to 'employees']
 [11-Aug-2022 16:47:55] [Date: 2022-08-11 16:47:55 | root execute succesfully show tables query
  'SHOW TABLES;']
+[11-Aug-2022 16:50:25] [Date: 2022-08-11 16:50:25 | root connect succesfully to 'employees']
+[11-Aug-2022 16:50:25] [Date: 2022-08-11 16:50:25 | root execute succesfully Sql Query in DB: employees
+ 'select * from departments']
+[11-Aug-2022 16:50:25] [Date: 2022-08-11 16:50:25 | root execute succesfully Sql Query in DB: employees
+ 'select * from departments limit 0,15']
+[11-Aug-2022 16:50:32] [Date: 2022-08-11 16:50:32 | root connect succesfully to 'employees']
+[11-Aug-2022 16:50:32] [Date: 2022-08-11 16:50:32 | root execute succesfully show tables query
+ 'describe employees;']
+[11-Aug-2022 16:50:37] [Date: 2022-08-11 16:50:37 | root connect succesfully to 'employees']
+[11-Aug-2022 16:50:37] [Date: 2022-08-11 16:50:37 | root execute succesfully Sql Query in DB: employees
+ 'select count(*) as numb from employees']
+[11-Aug-2022 16:50:37] [Date: 2022-08-11 16:50:37 | root execute succesfully Select query in employees
+ 'SELECT * FROM employees limit 0,15']
+[11-Aug-2022 16:50:40] [Date: 2022-08-11 16:50:40 | root connect succesfully to 'employees']
+[11-Aug-2022 16:50:40] [Date: 2022-08-11 16:50:40 | root execute succesfully Sql Query in DB: employees
+ 'SELECT * FROM employees limit 15,15']
+[11-Aug-2022 16:50:55] [Date: 2022-08-11 16:50:55 | root connect succesfully to 'employees']
+[11-Aug-2022 16:50:55] [Date: 2022-08-11 16:50:55 | root execute succesfully Sql Query in DB: employees
+ 'SELECT * FROM employees limit 300015,15']
+[11-Aug-2022 16:50:57] [Date: 2022-08-11 16:50:57 | root connect succesfully to 'employees']
+[11-Aug-2022 16:50:57] [Date: 2022-08-11 16:50:57 | root execute succesfully Sql Query in DB: employees
+ 'SELECT * FROM employees limit 0,15']
