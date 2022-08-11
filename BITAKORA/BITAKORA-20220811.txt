@@ -19,6 +19,8 @@ IÑAKI - PENDIENTE AL 10-08-2022
 - Caso count(*) when Select comes from sql_quey_area 
   - substitute string SELECT "fields list" FROM ..... with SELECT count(*) FROM ..... 
 
+- revisar caso de tbl_relacion en el canvas  
+
 - PROCESOS BACKUP (), RESTORE (), IMPORT (CSV/EXCEL), EXPORT TABLE SELECT TO (CSV/EXCEL)  
   - backup to .SQL ✔✔😎😎        
   - restore .SQL
