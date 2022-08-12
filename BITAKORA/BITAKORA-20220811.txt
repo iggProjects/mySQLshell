@@ -21,7 +21,23 @@ IÑAKI - PENDIENTE AL 10-08-2022
 
 - revisar caso de tbl_relacion en el canvas  
 
+
+- php exec() function
+    - https://www.php.net/manual/es/function.exec.php
+      exec(string $command, array &$output = ?, int &$return_var = ?): string  
+    - https://stackoverflow.com/questions/11875820/checking-exec-runs-successfully-or-not 
+    - https://stackoverflow.com/questions/17419364/how-to-find-if-command-executed-in-exec-command-fails  
+                    
+    exec('C://abc//wkhtmltopdf home.html sample.pdf', $output, $return_var);
+    if($return_var !== 0){ // exec is successful only if the $return_var was set to 0. !== means equal and identical, that is it is an integer and it also is zero.
+        echo "PDF not created";
+    }
+    else{
+        echo "PDF Created Successfully";
+    }
+
 - PROCESOS BACKUP (), RESTORE (), IMPORT (CSV/EXCEL), EXPORT TABLE SELECT TO (CSV/EXCEL)  
+
   - backup to .SQL ✔✔😎😎        
   - restore .SQL
   - IMPORT
@@ -32,6 +48,8 @@ IÑAKI - PENDIENTE AL 10-08-2022
     FROM SHELL COMAND LINE  
     backup:   mysqldump --default-character-set=utf8mb4 --routines -hlocalhost -uroot -p@mysql@  my_lqs_admin > my_lqs_admin.sql
     restore:  mysql -h{$server_name} -u{$username} -p{$password} {$database} < {$database}.sql
+
+
 
     FROM PHP 
     

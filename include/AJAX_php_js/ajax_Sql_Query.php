@@ -104,24 +104,6 @@ if ( str_contains($sql_query,'process') ) {
                 exec($cmd);
                 //   
                 //  code: capture success vs error  
-                //      - https://www.php.net/manual/es/function.exec.php
-                //          exec(string $command, array &$output = ?, int &$return_var = ?): string  
-                //      - https://stackoverflow.com/questions/11875820/checking-exec-runs-successfully-or-not 
-                //      - https://stackoverflow.com/questions/17419364/how-to-find-if-command-executed-in-exec-command-fails  
-                /*                
-                exec('C://abc//wkhtmltopdf home.html sample.pdf', $output, $return_var);
-                if($return_var !== 0){ // exec is successful only if the $return_var was set to 0. !== means equal and identical, that is it is an integer and it also is zero.
-                    echo "PDF not created";
-                }
-                else{
-                    echo "PDF Created Successfully";
-                }
-                */
-
-                
-
-
-
                 //    
 
                 break;
