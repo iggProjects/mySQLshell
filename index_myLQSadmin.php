@@ -381,13 +381,49 @@ echo "
                         document.getElementById('display-sql-console-Down').innerHTML="";
                         
                         // mysqldump --routines -h {$server_name} -u {$username} -p{$password} {$database_name} > " . BACKUP_PATH . "{$date_string}_{$database_name}.sql
-                        document.getElementById('sql-query-area').value = 'process=backup&tableList=\'table 1 table2 table3 ...\'';
+                        document.getElementById('sql-query-area').value = 'process&process=backup&tableList=\'table 1 table2 table3 ...\'';
                         var _query =  document.getElementById('sql-query-area').value;
-                        Fetch_js(_tag,'./include/AJAX_php_js/ajax_Sql_Query.php?host_numb=' + host_n + '&hostName='+sql_host_db.getAttribute('host')+'&dbName='+sql_host_db.getAttribute('db')+'&sql_query='+_query);
+                        //Fetch_js(_tag,'./include/AJAX_php_js/ajax_Sql_Query.php?host_numb=' + host_n + '&hostName='+sql_host_db.getAttribute('host')+'&dbName='+sql_host_db.getAttribute('db')+'&sql_query='+_query);
                      
                     }
                 break;
-               
+
+                case 'btn-restore':
+                    alert('this.id: ' + this.id);
+                    if ( table_param.getAttribute('db') == null  ) 
+                        { alert( 'please, select DB, or, if you wish, add the list of tables you want to back up' ); } 
+                    else {
+                        
+                        // Hide 'display_sql_result'
+                        document.getElementById('display_sql_result').classList.remove("showDiv");
+                        document.getElementById('display_sql_result').classList.add("hideDiv"); 
+                        // show 'display-sql-console-Up'
+                        document.getElementById('display-sql-console-Up').classList.remove("hideDiv");
+                        document.getElementById('display-sql-console-Up').classList.add("showDiv");
+                        // clear textarea 'sql-query-area' 
+                        document.getElementById("sql-query-area").value = '';  
+                        // show 'display-sql-console-Down'
+                        document.getElementById('display-sql-console-Down').classList.remove("hideDiv");
+                        document.getElementById('display-sql-console-Down').classList.add("showDiv");
+                        // hide button 'up'
+                        document.getElementById('extend-console-up-btn').style.display='block';
+                        // hide button 'compress'
+                        document.getElementById('compress-console-up-btn').style.display='block';
+                        // height for 'display-sql-console-Up'
+                        document.getElementById('display-sql-console-Up').style.height='30%';
+                        // height 'display-sql-console-Down'
+                        document.getElementById('display-sql-console-Down').style.height='58%';
+                        // clear 'display-sql-console-Down'
+                        document.getElementById('display-sql-console-Down').innerHTML="";
+                        
+                        // $restore_sql  = "/dir/subdir/database.sql";
+                        // $cmd = "mysql -h {$server_name} -u {$username} -p{$password} {$database_name} < "/backup_area/backup.sql";
+                        document.getElementById('sql-query-area').value = 'process&process=restore&backup_file=backup.sql';
+                        var _query =  document.getElementById('sql-query-area').value;
+                        // Fetch_js(_tag,'./include/AJAX_php_js/ajax_Sql_Query.php?host_numb=' + host_n + '&hostName='+sql_host_db.getAttribute('host')+'&dbName='+sql_host_db.getAttribute('db')+'&sql_query='+_query);
+                     
+                    }
+                break;
 
             default:    
                 alert('Function avalaible in version 1.1 !');
@@ -411,8 +447,7 @@ echo "
         // clear #display-sql-console-Down
         document.getElementById('display-sql-console-Down').innerText = '____ query result area ____';
 
-        var table_Name = this.getAttribute('table-name');
-        // alert('table name' + table_Name );
+        var table_Name = this.getAttribute('table-name');        
         
         var table_param = document.getElementById('display-result-nav-title');
         table_param.setAttribute('table',table_Name);      
@@ -436,8 +471,7 @@ echo "
         // change class of #display-sql-console-Up to hideDiv and clear html
         document.getElementById('display-sql-console-Up').classList.remove("showDiv");
         document.getElementById('display-sql-console-Up').classList.add("hideDiv");  
-        // document.getElementById('display-sql-console-Up').innerHTML = "";      
-        
+       
         // change class of #display-sql-console-Down to hideDiv and clear html
         document.getElementById('display-sql-console-Down').classList.remove("showDiv");
         document.getElementById('display-sql-console-Down').classList.add("hideDiv");
@@ -446,8 +480,7 @@ echo "
         // tag for display BUTTONS table in first NAV (up)
         btns = document.querySelectorAll(".nav-btn");   
         for ( var i=0; i<btns.length; i++ ) { 
-            if ( btns[i].id == 'btn-diagram' || btns[i].id == 'btn-insert' || btns[i].id == 'btn-update' || btns[i].id == 'btn-delete' || btns[i].id == 'btn-import' || btns[i].id == 'btn-export' ) {  
-            //if ( btns[i].id != 'btn-desc' && btns[i].id != 'btn-view' && btns[i].id != 'btn-sql' && btns[i].id != 'btn-export' && btns[i].id != 'btn-import' ) {      
+            if ( btns[i].id == 'btn-diagram' || btns[i].id == 'btn-insert' || btns[i].id == 'btn-update' || btns[i].id == 'btn-delete' || btns[i].id == 'btn-import' || btns[i].id == 'btn-export' ) {              
                 btns[i].classList.remove("showBtn");
                 btns[i].classList.add("hideBtn");
             } else {
@@ -478,14 +511,12 @@ echo "
             alert('check if you select HOST and DB and you write an sql query ! 😎') 
         } else {
 
-            // display button 'up'
-            document.getElementById('extend-console-up-btn').style.display='block';
-            // display button 'reduce'
+            // display button 'increase' or 'reduce'
+            document.getElementById('extend-console-up-btn').style.display='block'; 
             document.getElementById('compress-console-up-btn').style.display='block';
 
-            // reducir altura 'display-sql-console-Up'
+            // reduce or increase hight 'display-sql-console-Up'
             document.getElementById('display-sql-console-Up').style.height='15%';
-            // aumentar altura 'display-sql-console-Down'
             document.getElementById('display-sql-console-Down').style.height='73%';              
 
             // add 'LIMIT parameters' if is a SELECT query
@@ -495,8 +526,7 @@ echo "
             var dbName = sql_host_db.getAttribute('db');
 
             // call AJAX for execute query            
-            var _tag = 'display-sql-console-Down';
-            //Fetch_js(_tag,'./include/AJAX_php_js/ajax_Sql_Query.php?host_numb=' + host_n + '&hostName='+sql_host_db.getAttribute('host')+'&dbName='+sql_host_db.getAttribute('db')+'&sql_query='+_query);
+            var _tag = 'display-sql-console-Down';            
             Fetch_js(_tag,'./include/AJAX_php_js/ajax_Sql_Query.php?host_numb=' + host_n + '&hostName='+sql_host_db.getAttribute('host')+'&dbName='+sql_host_db.getAttribute('db')+'&sql_query='+_query+'&page=1');
 
         }
@@ -505,13 +535,11 @@ echo "
 
 
     function displayPage(char) {
-        // document.getElementById('sql-table-result').innerHTML = '';
         var page = document.getElementById('actualPage').getAttribute('page');
         var table_param = document.getElementById('display-result-nav-title');
         var query = document.getElementById("actualQuery").textContent;  
         var num_rec_init = parseInt(document.getElementById('actualPage').getAttribute('num_rec_init'));
         var totRecords = parseInt(document.getElementById('actualPage').getAttribute('totRecords'));        
-        // var newPage = 1;
 
         var do_it = 1; 
 
@@ -524,19 +552,15 @@ echo "
 
             case '-1':                
                 if ( parseInt(page) > 1 ) {  page = parseInt(page) -1 ; num_rec_init = num_rec_init - 15; } else { alert('You are in the first page !'); do_it = 0; }
-                //alert('Query: ' + query + '\n' + ', page: ' + page + ', num_rec_init: ' + num_rec_init + ', totRecords: ' + totRecords + '\n' + ', action: ' + char); 
                 break; 
 
             case '+1':
-                // page = parseInt(page) + 1;                
                 if ( num_rec_init > totRecords -15 ) { alert('You are in the last page !'); do_it = 0; } else { page = parseInt(page) + 1; num_rec_init = num_rec_init + 15; }                
-                //alert('Query: ' + query + '\n' + ', page: ' + page + ', num_rec_init: ' + num_rec_init + ', totRecords: ' + totRecords + '\n' + ', action: ' + char); 
                 break;   
 
             case '2':
                 var last_page = Math.floor(totRecords / 15) +1;                
                 if ( last_page == page ) { alert('You are in the last page !'); do_it = 0; } else { num_rec_init = (last_page-1)*15; page = last_page; }                
-                //alert('Query: ' + query + '\n' + ', page: ' + page + ', num_rec_init: ' + num_rec_init + ', totRecords: ' + totRecords + '\n' + ', action: ' + char); 
                 break;
 
             default:

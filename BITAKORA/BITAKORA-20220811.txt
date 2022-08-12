@@ -38,6 +38,10 @@ IÑAKI - PENDIENTE AL 10-08-2022
       - https://stackoverflow.com/questions/22217397/backup-and-restore-mysql-database-in-php
       - https://dba.stackexchange.com/questions/9306/how-do-you-mysqldump-specific-tables
 
+        if(filesize($path) < 16 && empty(trim(file_get_contents($path))) )
+      - https://stackoverflow.com/questions/17615003/file-get-contents-with-empty-file-not-working-php/17615078
+
+
       BACKUP
       <?php
         define("BACKUP_PATH", "/dir/subdir/");

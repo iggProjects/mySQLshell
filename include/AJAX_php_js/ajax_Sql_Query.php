@@ -54,29 +54,80 @@ $dbcharset = 'utf8mb4';
 // IF to separate 'process' from 'sql' code
 if ( str_contains($sql_query,'process') ) { 
 
-    echo "<br><br>" . $sql_query . " | hostName: " . $dbhost . " | dbName: " . $dbname . " | tableList: " . $_REQUEST['tableList'];
+    if ( $_REQUEST['process'] ) { 
+        $process = $_REQUEST['process'];
+    }      
 
-    if ( $_REQUEST['tableList'] ) { 
-        $tableList = $_REQUEST['tableList'];
-    } else {
-        $tableList = "";
+    switch ($process) {
+        case 'backup':
+
+            echo "<br><br>process: $process | hostName: $dbhost | dbName: $dbname | process: $process | tableList: " .$_REQUEST['tableList'];
+
+            if ( $_REQUEST['tableList'] ) { 
+                $tableList = $_REQUEST['tableList'];
+            } else {
+                $tableList = "";
+            }
+        
+            define("BACKUP_PATH", "../../backup_area/");
+            $date_string = date("Ymd_His");
+            $cmd = "mysqldump --default-character-set=utf8mb4 -h{$dbhost} -u{$dbuser} -p{$dbpass} {$dbname} {$tableList} > " . BACKUP_PATH . "{$dbname}_{$date_string}.sql";
+            $cmd_screen = "mysqldump --default-character-set=utf8mb4 -h{$dbhost} -u{$dbuser} -p{********} {$dbname} > " . BACKUP_PATH . "{$dbname}_{$date_string}.sql";
+            echo "<br><br>Backup Statement for php execution<br><br>exec(<span style='color:#990000; font-size: 18px;'>" . $cmd_screen . ")</span>";
+            exec($cmd);
+        
+            $file_path = BACKUP_PATH . "{$dbname}_{$date_string}.sql";
+            if ( file_exists($file_path) && filesize($file_path) != 0 ) { 
+                echo "<br><br>Backup procees was succesfully executed !"; } 
+            else { 
+                echo "<span style='color: red;'>Backup process failed !</span>"; 
+            }
+
+            break;
+
+            case 'restore':
+                
+                define("RESTORE_PATH", "../../backup_area/");
+                if ( $_REQUEST['backup_file'] ) { 
+                    $backup_file = RESTORE_PATH . $_REQUEST['backup_file'];
+                } else {
+                    $backup_file = "";
+                }            
+
+                echo "<br><br>process: $process | hostName: $dbhost | dbName: $dbname | backup_file: " . $backup_file;
+                
+                $date_string = date("Ymd_His");
+
+                $cmd = "mysql -h{$dbhost} -u{$dbuser} -p{$dbpass} {$dbname} < $backup_file";                
+                $cmd_screen = "mysql -h{$dbhost} -u{$dbuser} -p********* {$dbname} < $backup_file";
+                echo "<br><br>Restore Statement for php execution<br><br>exec(<span style='color:#990000; font-size: 18px;'>" . $cmd_screen . ")</span>";
+                exec($cmd);
+                //   
+                //  code: capture success vs error  
+                //      - https://www.php.net/manual/es/function.exec.php
+                //          exec(string $command, array &$output = ?, int &$return_var = ?): string  
+                //      - https://stackoverflow.com/questions/11875820/checking-exec-runs-successfully-or-not 
+                //      - https://stackoverflow.com/questions/17419364/how-to-find-if-command-executed-in-exec-command-fails  
+                /*                
+                exec('C://abc//wkhtmltopdf home.html sample.pdf', $output, $return_var);
+                if($return_var !== 0){ // exec is successful only if the $return_var was set to 0. !== means equal and identical, that is it is an integer and it also is zero.
+                    echo "PDF not created";
+                }
+                else{
+                    echo "PDF Created Successfully";
+                }
+                */
+
+                
+
+
+
+                //    
+
+                break;
+
     }
 
-    define("BACKUP_PATH", "../../backup_area/");
-    $date_string = date("Ymd");
-    $cmd = "mysqldump --default-character-set=utf8mb4 -h{$dbhost} -u{$dbuser} -p{$dbpass} {$dbname} {$tableList} > " . BACKUP_PATH . "{$dbname}_{$date_string}.sql";
-    $cmd_screen = "mysqldump --default-character-set=utf8mb4 -h{$dbhost} -u{$dbuser} -p{********} {$dbname} > " . BACKUP_PATH . "{$dbname}_{$date_string}.sql";
-    echo "<br><br>Backup Statement for php execution<br><br>exec(<span style='color:#990000; font-size: 18px;'>" . $cmd_screen . ")</span>";
-    exec($cmd);
-
-    $file_path = BACKUP_PATH . "{$dbname}_{$date_string}.sql";
-    // if(filesize($path) < 16 && empty(trim(file_get_contents($path))) )
-    // https://stackoverflow.com/questions/17615003/file-get-contents-with-empty-file-not-working-php/17615078
-    if ( file_exists($file_path) && filesize($file_path) != 0 ) { 
-        echo "<br><br>Backup procees was succesfully executed !"; } 
-    else { 
-        echo "<span style='color: red;'>Backup process failed !</span>"; 
-    }
    
 
 } else {

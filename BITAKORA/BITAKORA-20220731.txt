@@ -9,6 +9,10 @@ IÑAKI - DARREN
 
 
 ********************************************************************
+
+Localhost y la IP Local
+  - https://robolid.net/cual-es-la-diferencia-entre-locahost-y-la-direccion-ip-local/
+
 IÑAKI - METAS DÍA 
 
 ( mysqldump -uroot -p  my_lqs_admin > my_lqs_admin.sql )
