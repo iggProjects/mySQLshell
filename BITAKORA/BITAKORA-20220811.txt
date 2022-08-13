@@ -20,41 +20,77 @@ IÑAKI - PENDIENTE AL 10-08-2022
   - substitute string SELECT "fields list" FROM ..... with SELECT count(*) FROM ..... 
 
 - revisar caso de tbl_relacion en el canvas  
+  - Flechas: 
+    - https://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
+    - https://riptutorial.com/html5-canvas/example/18136/line-with-arrowheads
+    - https://codepen.io/chanthy/pen/WxQoVG
+
+  - Drag&Drop in CANVAS  
+    - https://stackoverflow.com/questions/24926028/drag-and-drop-multiple-objects-in-html5-canvas 
+    - https://codepen.io/atindo23/pen/OJLbdrJ
 
 
-- php exec() function
+- php "exec()" function
+
     - https://www.php.net/manual/es/function.exec.php
       exec(string $command, array &$output = ?, int &$return_var = ?): string  
     - https://stackoverflow.com/questions/11875820/checking-exec-runs-successfully-or-not 
     - https://stackoverflow.com/questions/17419364/how-to-find-if-command-executed-in-exec-command-fails  
                     
-    exec('C://abc//wkhtmltopdf home.html sample.pdf', $output, $return_var);
-    if($return_var !== 0){ // exec is successful only if the $return_var was set to 0. !== means equal and identical, that is it is an integer and it also is zero.
-        echo "PDF not created";
-    }
-    else{
-        echo "PDF Created Successfully";
-    }
+      exec('C://abc//wkhtmltopdf home.html sample.pdf', $output, $return_var);
+      if($return_var !== 0){ // exec is successful only if the $return_var was set to 0. !== means equal and identical, that is it is an integer and it also is zero.
+          echo "PDF not created";
+      }
+      else{
+          echo "PDF Created Successfully";
+      }
 
 - PROCESOS BACKUP (), RESTORE (), IMPORT (CSV/EXCEL), EXPORT TABLE SELECT TO (CSV/EXCEL)  
 
   - backup to .SQL ✔✔😎😎        
   - restore .SQL
-  - IMPORT
-  - EXPORT
+  - IMPORT / EXPORT
+    - https://www.a2zwebhelp.com/export-data-to-csv
+    - https://www.mysqltutorial.org/mysql-export-table-to-csv/
+    - https://www.cloudways.com/blog/import-export-csv-using-php-and-mysql/
+    - https://stackoverflow.com/questions/36721418/php-csv-export-from-stored-mysql-procedure
+    - https://write.corbpie.com/load-and-execute-sql-files-with-php/
 
-  - backup-restore 
+  export code:
+      SET $deta_time = DATE_FORMAT(NOW(),'_%Y_%m_%d_%H_%i_%s');
+
+      SET $FOLDER = 'c:/tmp/';
+      SET $PREFIX = 'orders';
+      SET $EXT    = '.csv';
+      SET $CMD = CONCAT("SELECT * FROM orders INTO OUTFILE '",@FOLDER,@PREFIX,@TS,@EXT,
+                "' FIELDS ENCLOSED BY '\"' TERMINATED BY ';' ESCAPED BY '\"'",
+                "  LINES TERMINATED BY '\r\n';");
+      PREPARE statement FROM $CMD;
+      EXECUTE statement;  
+
+      tbl_ciudad
+        SELECT * FROM tbl_ciudad INTO OUTFILE 'C:/xampp/htdocs/tbl_ciudad.csv' 
+        FIELDS ENCLOSED BY '"' 
+        TERMINATED BY ';' 
+        ESCAPED BY '"' 
+        LINES TERMINATED BY '\r\n'
+
+
+
+    - ARRAy to CSV 
+      - https://stackoverflow.com/questions/23530145/mysql-result-to-array-to-write-to-csv-file
+
+  - BACKUP-RESTORE 
 
     FROM SHELL COMAND LINE  
-    backup:   mysqldump --default-character-set=utf8mb4 --routines -hlocalhost -uroot -p@mysql@  my_lqs_admin > my_lqs_admin.sql
-    restore:  mysql -h{$server_name} -u{$username} -p{$password} {$database} < {$database}.sql
-
-
+      - backup:   mysqldump --default-character-set=utf8mb4 --routines -hlocalhost -uroot -p@mysql@  my_lqs_admin > my_lqs_admin.sql
+      - restore:  mysql -h{$server_name} -u{$username} -p{$password} {$database} < {$database}.sql
 
     FROM PHP 
     
       - https://stackoverflow.com/questions/22217397/backup-and-restore-mysql-database-in-php
       - https://dba.stackexchange.com/questions/9306/how-do-you-mysqldump-specific-tables
+      - https://stackoverflow.com/questions/147821/loading-sql-files-from-within-php
 
         if(filesize($path) < 16 && empty(trim(file_get_contents($path))) )
       - https://stackoverflow.com/questions/17615003/file-get-contents-with-empty-file-not-working-php/17615078

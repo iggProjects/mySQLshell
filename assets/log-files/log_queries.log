@@ -36616,3 +36616,31 @@
 [12-Aug-2022 19:21:23] [Date: 2022-08-12 19:21:23 | root connect succesfully to 'my_lqs_admin']
 [12-Aug-2022 19:21:23] [Date: 2022-08-12 19:21:23 | root execute succesfully show tables query
  'SHOW TABLES;']
+[13-Aug-2022 17:51:25] [Date: 2022-08-13 17:51:25 | root connect succesfully to '127.0.0.1']
+[13-Aug-2022 17:51:25] [Date: 2022-08-13 17:51:25 | root connect succesfully to '127.0.0.1']
+[13-Aug-2022 17:51:25] [Date: 2022-08-13 17:51:25 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[13-Aug-2022 17:51:26] [Date: 2022-08-13 17:51:26 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[13-Aug-2022 17:51:28] [Date: 2022-08-13 17:51:28 | root connect succesfully to 'penjub']
+[13-Aug-2022 17:51:28] [Date: 2022-08-13 17:51:28 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[13-Aug-2022 17:51:29] [Date: 2022-08-13 17:51:29 | root connect succesfully to 'penjub']
+[13-Aug-2022 17:51:29] [Date: 2022-08-13 17:51:29 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[13-Aug-2022 17:51:29] [Date: 2022-08-13 17:51:29 | root connect succesfully to 'my_lqs_admin']
+[13-Aug-2022 17:51:29] [Date: 2022-08-13 17:51:29 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[13-Aug-2022 17:51:38] [Date: 2022-08-13 17:51:38 | root connect succesfully to 'penjub']
+[13-Aug-2022 17:51:38] [Date: 2022-08-13 17:51:38 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT * FROM tbl_ciudad INTO OUTFILE 'C:/xampp/htdocs/tbl_ciudad.csv' FIELDS ENCLOSED BY '"' TERMINATED BY ';' ESCAPED BY '"' LINES TERMINATED BY '\r\n';']
+[13-Aug-2022 17:51:38] [Date: 2022-08-13 17:51:38 | Sql_Query_try_catch: query in penjub FAILED !
+ 'SELECT * FROM tbl_ciudad INTO OUTFILE 'C:/xampp/htdocs/tbl_ciudad.csv' FIELDS ENCLOSED BY '"' TERMINATED BY ';' ESCAPED BY '"' LINES TERMINATED BY '\r\n';' SQLSTATE[HY000]: General error: 1086 File 'C:/xampp/htdocs/tbl_ciudad.csv' already exists]
+[13-Aug-2022 17:52:06] [Date: 2022-08-13 17:52:06 | root connect succesfully to 'penjub']
+[13-Aug-2022 17:52:06] [Date: 2022-08-13 17:52:06 | Sql_Query_try_catch: query in penjub FAILED !
+ 'SELECT * FROM tbl_ciudad INTO OUTFILE 'C:/xampp/htdocs/tbl_ciudad.csv' FIELDS ENCLOSED BY '"' TERMINATED BY ';' ESCAPED BY '"' LINES TERMINATED BY '\r\n'' SQLSTATE[HY000]: General error: 1086 File 'C:/xampp/htdocs/tbl_ciudad.csv' already exists]
+[13-Aug-2022 17:52:59] [Date: 2022-08-13 17:52:59 | root connect succesfully to 'penjub']
+[13-Aug-2022 17:52:59] [Date: 2022-08-13 17:52:59 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT * FROM tbl_ciudad INTO OUTFILE 'C:/xampp/htdocs/tbl_ciudad.csv' FIELDS ENCLOSED BY '"' TERMINATED BY ';' ESCAPED BY '"' LINES TERMINATED BY '\r\n'']
+[13-Aug-2022 17:52:59] [Date: 2022-08-13 17:52:59 | Sql_Query_try_catch: query in penjub FAILED !
+ 'SELECT * FROM tbl_ciudad INTO OUTFILE 'C:/xampp/htdocs/tbl_ciudad.csv' FIELDS ENCLOSED BY '"' TERMINATED BY ';' ESCAPED BY '"' LINES TERMINATED BY '\r\n'' SQLSTATE[HY000]: General error: 1086 File 'C:/xampp/htdocs/tbl_ciudad.csv' already exists]
