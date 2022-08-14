@@ -78,9 +78,9 @@ if ( str_contains($sql_query,'process') ) {
         
             $file_path = BACKUP_PATH . "{$dbname}_{$date_string}.sql";
             if ( file_exists($file_path) && filesize($file_path) != 0 ) { 
-                echo "<br><br>Backup procees was succesfully executed !"; } 
+                echo "<br><br><span style='color: black; font-size:20px;'><b>Backup procees was succesfully executed !</b></span>"; } 
             else { 
-                echo "<br><br><span style='color: red; font-size:16px;'>Backup process failed !</span>"; 
+                echo "<br><br><span style='color: red; font-size:20px;'><b>Backup process failed !</b></span>"; 
             }
 
             break;
