@@ -7,13 +7,15 @@ IÑAKI - DARREN ( pendiente para version 1.0 )
 
 ********************************************************************
 
-IÑAKI - PENDIENTE AL 10-08-2022
+IÑAKI - PENDIENTE AL 14-08-2022
 
 - README 
   - caso str_contains (php 8) buscar el equivalente en php 7.4
     (https://www.codegrepper.com/code-examples/php/str_contains+php+7)
 
-- first version for "help url" for troubles in mysql...  URL google para errores mysql
+- "asking for yes or no" in Backup and Restore buttons    
+
+- first version for "help url" for troubles in mysql...  URL google para errores mysql  ✔✔😎😎
   - https://www.googleguide.com/linking.html
 
 - Caso count(*) when Select comes from sql_quey_area 
@@ -28,7 +30,6 @@ IÑAKI - PENDIENTE AL 10-08-2022
   - Drag&Drop in CANVAS  
     - https://stackoverflow.com/questions/24926028/drag-and-drop-multiple-objects-in-html5-canvas 
     - https://codepen.io/atindo23/pen/OJLbdrJ
-
 
 - php "exec()" function
 
