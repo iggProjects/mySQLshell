@@ -567,9 +567,11 @@ echo "
         }    
         
         // tag's:  display_sql_result and display-sql-console-Down  
-        var post_str = ''; 
+        var post_str = '';
+        
+        tag = ''; 
         if ( document.getElementById('display_sql_result').classList.contains('showDiv') && do_it == 1 ) {
-            var tag = 'display_sql_result';
+            tag = 'display_sql_result';
             post_str= "host_numb=" + table_param.getAttribute('host_numb');
             post_str += "&hostName=" + table_param.getAttribute('host');
             post_str += "&dbName=" + table_param.getAttribute('db');
@@ -579,7 +581,7 @@ echo "
             // alert('post_str' + post_str);
             Fetch_js(tag,'./include/AJAX_php_js/ajax_ViewTbl.php?'+post_str); 
         } else if ( document.getElementById('display-sql-console-Down').classList.contains('showDiv') && do_it == 1 )  {
-            var tag = 'display-sql-console-Down'; 
+            tag = 'display-sql-console-Down'; 
             post_str= "host_numb=" + table_param.getAttribute('host_numb');
             post_str += "&hostName=" + table_param.getAttribute('host');
             post_str += "&dbName=" + table_param.getAttribute('db');
@@ -590,8 +592,40 @@ echo "
             //Fetch_js(tag,'./include/AJAX_php_js/ajax_Sql_Query.php?host_numb=' + table_param.getAttribute('host_numb') + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&sql_query='+query+'&rec_numb='+rec_numb);
         } else { 
             // upssssss
+            console.log('displayPage(): upsssssssssssss, something wrong');            
         } 
 
+    }
+
+    function table_to_csv() {        
+        var _query = '';
+        var _tag = '';
+        var post_str = '';
+        var table_param = document.getElementById('display-result-nav-title');
+
+        console.log('get in table_to_csv()');
+        
+        if ( document.getElementById('display_sql_result').classList.contains('showDiv') ) {
+            _query = 'SELECT * FROM ' + table_param.getAttribute('table'); 
+            _tag='sql-query-area';  
+        } else if (document.getElementById('display-sql-console-Down').classList.contains('showDiv') ) {
+            _query = document.getElementById('display-sql-console-Down').value;
+            _tag='sql-query-area';  
+        } else {
+            // upssssssssssss
+            console.log('table_to_csv(): upsssssssssssss, something wrong');            
+        }           
+
+        if ( _query != '' ) {
+            post_str = "host_numb=" + table_param.getAttribute('host_numb');
+            post_str += "&hostName=" + table_param.getAttribute('host');
+            post_str += "&dbName=" + table_param.getAttribute('db');
+            post_str += "&sql_query=" + _query;
+
+            console.log('table_to_csv() post_str: ' + post_str);
+
+            Fetch_js(_tag,'./include/AJAX_php_js/ajax_table_to_csv.php?'+post_str);
+        }
     }
 
 

@@ -86,9 +86,7 @@ IÑAKI - PENDIENTE AL 14-08-2022
         TERMINATED BY ';' 
         ESCAPED BY '"' 
         LINES TERMINATED BY '\r\n'
-
-
-
+        
     - ARRAy to CSV 
       - https://stackoverflow.com/questions/23530145/mysql-result-to-array-to-write-to-csv-file
 

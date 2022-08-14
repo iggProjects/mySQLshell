@@ -243,7 +243,7 @@
                 echo "<button class='select-btns' onclick='displayPage(\"-1\")'>Previous</button>";
                 echo "<button class='select-btns' onclick='displayPage(\"+1\")'>Next</button>";                
                 echo "<button class='select-btns' onclick='displayPage(\"2\")'>Last</button>";
-                echo "&nbsp;&nbsp;&nbsp;&nbsp;<button class='select-btns' onclick=''>Get CSV</button>";
+                echo "&nbsp;&nbsp;&nbsp;&nbsp;<button class='select-btns' onclick='table_to_csv()'>Get CSV</button>";
             echo "</div>";        
             echo "<p id='actualPage' style='margin-top:0px; ' page='" . $thead_titles_array['page'] . "' num_rec_init='" . $thead_titles_array['num_rec_init'] . "' totRecords='" . $thead_titles_array['totRecords'] . "' style='margin-top:5px;  margin-bottom:10px; text-align:center; font-size:12px; color:#990000'><span style='color:black;'>Total Records: " . number_format($thead_titles_array['totRecords']) . " | page: " . number_format($thead_titles_array['page']) . "</span><br><span style='colOr:blue;font-size:11px;'>QUERY: </span></p>";      }           
             echo "<p id='actualQuery' style='margin-top:0px; margin-bottom:10px; text-align:center; color:#990000'>$_query</p>";
