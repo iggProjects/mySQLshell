@@ -329,25 +329,6 @@ echo "
                     _tag= 'display_right_aside';                       
                     Fetch_js(_tag,'./include/AJAX_php_js/ajax_ListTables.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db'));
 
-                /*    
-                    if ( this.id='btn-sql' ) {
-                        alert('second this.id: ' + this.id);
-                        document.getElementById('sql-query-area').value = '';                                        
-                    } else if ( this.id='btn-backup' ) {
-                        alert('second this.id: ' + this.id);
-                        if ( table_param.getAttribute('db') == null  ) 
-                            { alert( 'please, select DB' ); } 
-                        else {   
-                            // mysqldump --routines -h {$server_name} -u {$username} -p{$password} {$database_name} > " . BACKUP_PATH . "{$date_string}_{$database_name}.sql
-                            var backupListMask = "";                 
-                            backupListMask = '?hostName=' + table_param.getAttribute('host') + '&dbName=' + table_param.getAttribute('db') + '&tableList=\'table 1 table2 table3 ...\'';                     
-                            document.getElementById('sql-query-area').value=backupListMask;
-                            Fetch_js(_tag,'./include/AJAX_php_js/ajax_ListTables.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db'));
-                            //Fetch_js('display-sql-console-Down','./include/AJAX_php_js/ajax_backup_DB.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table'));                                    
-                        }
-                    } else { 'upsss..........' }
-                */    
-
                 }
 
                 break;    

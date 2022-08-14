@@ -80,7 +80,7 @@ if ( str_contains($sql_query,'process') ) {
             if ( file_exists($file_path) && filesize($file_path) != 0 ) { 
                 echo "<br><br>Backup procees was succesfully executed !"; } 
             else { 
-                echo "<span style='color: red;'>Backup process failed !</span>"; 
+                echo "<br><br><span style='color: red; font-size:16px;'>Backup process failed !</span>"; 
             }
 
             break;
