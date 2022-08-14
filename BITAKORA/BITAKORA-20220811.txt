@@ -56,6 +56,9 @@ IÑAKI - PENDIENTE AL 10-08-2022
     - https://stackoverflow.com/questions/36721418/php-csv-export-from-stored-mysql-procedure
     - https://write.corbpie.com/load-and-execute-sql-files-with-php/
 
+  - Query to CSV
+    - make buttton in t
+
   export code:
       SET $deta_time = DATE_FORMAT(NOW(),'_%Y_%m_%d_%H_%i_%s');
 
