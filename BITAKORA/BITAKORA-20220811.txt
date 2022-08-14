@@ -13,7 +13,9 @@ IÑAKI - PENDIENTE AL 14-08-2022
   - caso str_contains (php 8) buscar el equivalente en php 7.4
     (https://www.codegrepper.com/code-examples/php/str_contains+php+7)
 
-- "asking for yes or no" in Backup and Restore buttons    
+- "asking for yes or no" in Backup and Restore buttons   
+
+- create function table_to_CSV ( with fetch_js)
 
 - first version for "help url" for troubles in mysql...  URL google para errores mysql  ✔✔😎😎
   - https://www.googleguide.com/linking.html
