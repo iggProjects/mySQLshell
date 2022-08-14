@@ -145,7 +145,7 @@ if ( str_contains($sql_query,'process') ) {
             // $msg .= " | \$count_query: " . $count_query;
 
             My_Log_Message ($msg,$log_comments_path);
-
+            
             $records = Sql_Query_try_catch($conex_db,$dbname,$dbuser,$sql_query,$log_queries_path); 
 
             if (  gettype($records) === 'object' || gettype($records) === 'array') {
@@ -226,7 +226,7 @@ if ( str_contains($sql_query,'process') ) {
             $thead_titles['totRecords'] = $totRecords;
         } 
         
-        $divHtml = displayTable($sql_query,90,$thead_titles,$resultado);
+        $divHtml .= displayTable($sql_query,90,$thead_titles,$resultado);
         // $divHtml = displayTable($select_query,90,$thead_titles,$resultado);
         return $divHtml;
 

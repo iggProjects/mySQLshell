@@ -15,6 +15,12 @@ IÑAKI - PENDIENTE AL 14-08-2022
 
 - "asking for yes or no" in Backup and Restore buttons   
 
+- progress bar for large amount of data for some query
+  - https://stackoverflow.com/questions/15298071/progress-bar-with-mysql-query-with-php
+  - https://www.plus2net.com/php_tutorial/ajax-progress2.php
+  - https://dba.stackexchange.com/questions/17367/how-can-i-monitor-the-progress-of-an-import-of-a-large-sql-file
+
+
 - create function table_to_CSV ( with fetch_js)
 
 - first version for "help url" for troubles in mysql...  URL google para errores mysql  ✔✔😎😎

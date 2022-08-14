@@ -197,6 +197,13 @@ echo "
                 if ( table_param.getAttribute('table') == null ) 
                     { alert( 'please, select a table' ); } 
                 else {   
+
+                    // query value in tag #sql-query-area                    v 
+                    if ( document.getElementById('display-sql-console-Up').classList.contains('showDiv') ) { 
+                        var table = table_param.getAttribute('table')
+                        document.getElementById('sql-query-area').value = 'DESCRIBE ' +  table;
+                    }
+
                     if ( document.getElementById('display-sql-console-Down').classList.contains('showDiv') ) { _tag = 'display-sql-console-Down'; }            
                     Fetch_js(_tag,'./include/AJAX_php_js/ajax_DescribeTbl.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&tblName='+table_param.getAttribute('table'));                                    
                 }
@@ -210,7 +217,16 @@ echo "
                     // document.getElementById('sql-query-area').value = "SELECT * FROM " + table_param.getAttribute('table'); // for avoid conflicts with ajax_Sql_Query finction
                     // document.getElementById('sql-query-area').value = ''; // for avoid conflicts with ajax_Sql_Query finction
 
-                    if ( document.getElementById('display-sql-console-Down').classList.contains('showDiv') ) { _tag = 'display-sql-console-Down'; }                         
+                    // query value in tag #sql-query-area                    v 
+                    if ( document.getElementById('display-sql-console-Up').classList.contains('showDiv') ) { 
+                        var table = table_param.getAttribute('table')
+                        document.getElementById('sql-query-area').value = 'SELECT * FROM ' +  table + " limit 0,15";
+                    }
+
+                    if ( document.getElementById('display-sql-console-Down').classList.contains('showDiv') ) { 
+                        _tag = 'display-sql-console-Down';                        
+                    }                         
+                    document.getElementById(_tag).innerHTML =  'Please wait a bit, searching the data';
                     Fetch_js(_tag,'./include/AJAX_php_js/ajax_ViewTbl.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db')+'&table='+table_param.getAttribute('table')+'&page=1'+'&rec_num_init=0');
                 }
 
@@ -507,7 +523,8 @@ echo "
             var dbName = sql_host_db.getAttribute('db');
 
             // call AJAX for execute query            
-            var _tag = 'display-sql-console-Down';            
+            var _tag = 'display-sql-console-Down';   
+            document.getElementById(_tag).innerHTML =  'Please wait a bit, searching the data';         
             Fetch_js(_tag,'./include/AJAX_php_js/ajax_Sql_Query.php?host_numb=' + host_n + '&hostName='+sql_host_db.getAttribute('host')+'&dbName='+sql_host_db.getAttribute('db')+'&sql_query='+_query+'&page=1');
 
         }

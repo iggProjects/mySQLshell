@@ -64,7 +64,7 @@ $divHtml = "";
 $thead_titles = [];
 $jump = 15;
 
-if ( gettype($conex_db) === 'object' ) {
+if ( gettype($conex_db) === 'object' ) {    
 
     // calculate record number from page selected    
     if( $totRecords == 0 ) {
@@ -86,7 +86,7 @@ if ( gettype($conex_db) === 'object' ) {
         $select_query = "SELECT * FROM $dbtable limit $num_rec_init,$jump";
 
         $msg .= " | select_query: " . $select_query;
-        My_Log_Message ($msg,$log_comments_path);
+        My_Log_Message ($msg,$log_comments_path);        
 
         $resultado = SELECT_try_catch($conex_db,$dbname,$dbuser,$dbtable,$select_query,$log_queries_path); 
         if ( gettype($resultado) === 'object' || gettype($resultado) === 'array' ) {  

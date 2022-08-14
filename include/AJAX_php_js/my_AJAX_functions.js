@@ -149,7 +149,7 @@ function openTree(host_arr) {
 /*   For describe table structure */ 
 function Fetch_js(tag,php_sql_url){   
     console.log('tag=> ' + tag) 
-    console.log('php_sql_url====> ' + php_sql_url) 
+    console.log('php_sql_url====> ' + php_sql_url)    
     
     fetch(php_sql_url)
 
