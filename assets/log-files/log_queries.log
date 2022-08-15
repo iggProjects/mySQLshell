@@ -2912,3 +2912,59 @@
  'SHOW DATABASES;']
 [15-Aug-2022 19:27:30] [Date: 2022-08-15 19:27:30 | root execute succesfully Select query in 
  'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[15-Aug-2022 19:29:33] [Date: 2022-08-15 19:29:33 | root connect succesfully to 'mvc_example']
+[15-Aug-2022 19:29:33] [Date: 2022-08-15 19:29:33 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[15-Aug-2022 19:29:35] [Date: 2022-08-15 19:29:35 | root connect succesfully to 'mysql']
+[15-Aug-2022 19:29:35] [Date: 2022-08-15 19:29:35 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[15-Aug-2022 19:29:38] [Date: 2022-08-15 19:29:38 | root connect succesfully to 'mysql']
+[15-Aug-2022 19:29:38] [Date: 2022-08-15 19:29:38 | root execute succesfully show tables query
+ 'describe db;']
+[15-Aug-2022 19:29:41] [Date: 2022-08-15 19:29:41 | root connect succesfully to 'mysql']
+[15-Aug-2022 19:29:41] [Date: 2022-08-15 19:29:41 | root execute succesfully Sql Query in DB: mysql
+ 'select count(*) as numb from db']
+[15-Aug-2022 19:29:41] [Date: 2022-08-15 19:29:41 | select query in mysql FAILED 
+ 'SELECT * FROM db limit 0,15' SQLSTATE[HY000]: General error: 1030 Got error 176 "Read page with wrong checksum" from storage engine Aria]
+[15-Aug-2022 19:29:49] [Date: 2022-08-15 19:29:49 | root connect succesfully to 'mysql']
+[15-Aug-2022 19:29:49] [Date: 2022-08-15 19:29:49 | root execute succesfully show tables query
+ 'describe db;']
+[15-Aug-2022 19:29:54] [Date: 2022-08-15 19:29:54 | root connect succesfully to 'mysql']
+[15-Aug-2022 19:29:54] [Date: 2022-08-15 19:29:54 | root execute succesfully Sql Query in DB: mysql
+ 'select count(*) as numb from db']
+[15-Aug-2022 19:29:54] [Date: 2022-08-15 19:29:54 | select query in mysql FAILED 
+ 'SELECT * FROM db limit 0,15' SQLSTATE[HY000]: General error: 1030 Got error 176 "Read page with wrong checksum" from storage engine Aria]
+[15-Aug-2022 19:30:00] [Date: 2022-08-15 19:30:00 | root connect succesfully to 'mysql']
+[15-Aug-2022 19:30:00] [Date: 2022-08-15 19:30:00 | root execute succesfully show tables query
+ 'describe general_log;']
+[15-Aug-2022 19:30:02] [Date: 2022-08-15 19:30:02 | root connect succesfully to 'mysql']
+[15-Aug-2022 19:30:02] [Date: 2022-08-15 19:30:02 | root execute succesfully Sql Query in DB: mysql
+ 'select count(*) as numb from general_log']
+[15-Aug-2022 19:30:04] [Date: 2022-08-15 19:30:04 | root connect succesfully to 'mysql']
+[15-Aug-2022 19:30:04] [Date: 2022-08-15 19:30:04 | root execute succesfully show tables query
+ 'describe columns_priv;']
+[15-Aug-2022 19:30:06] [Date: 2022-08-15 19:30:06 | root connect succesfully to 'mysql']
+[15-Aug-2022 19:30:06] [Date: 2022-08-15 19:30:06 | root execute succesfully Sql Query in DB: mysql
+ 'select count(*) as numb from columns_priv']
+[15-Aug-2022 19:30:08] [Date: 2022-08-15 19:30:08 | root connect succesfully to 'employees']
+[15-Aug-2022 19:30:08] [Date: 2022-08-15 19:30:08 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[15-Aug-2022 19:30:09] [Date: 2022-08-15 19:30:09 | root connect succesfully to 'employees']
+[15-Aug-2022 19:30:09] [Date: 2022-08-15 19:30:09 | root execute succesfully show tables query
+ 'describe dept_emp_latest_date;']
+[15-Aug-2022 19:30:10] [Date: 2022-08-15 19:30:10 | root connect succesfully to 'employees']
+[15-Aug-2022 19:30:11] [Date: 2022-08-15 19:30:11 | root execute succesfully Sql Query in DB: employees
+ 'select count(*) as numb from dept_emp_latest_date']
+[15-Aug-2022 19:30:11] [Date: 2022-08-15 19:30:11 | root execute succesfully Select query in employees
+ 'SELECT * FROM dept_emp_latest_date limit 0,15']
+[15-Aug-2022 19:30:17] [Date: 2022-08-15 19:30:17 | root connect succesfully to 'mysql']
+[15-Aug-2022 19:30:17] [Date: 2022-08-15 19:30:17 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[15-Aug-2022 19:30:19] [Date: 2022-08-15 19:30:19 | root connect succesfully to 'mysql']
+[15-Aug-2022 19:30:19] [Date: 2022-08-15 19:30:19 | root execute succesfully show tables query
+ 'describe help_topic;']
+[15-Aug-2022 19:30:22] [Date: 2022-08-15 19:30:22 | root connect succesfully to 'mysql']
+[15-Aug-2022 19:30:22] [Date: 2022-08-15 19:30:22 | root execute succesfully Sql Query in DB: mysql
+ 'select count(*) as numb from help_topic']
+[15-Aug-2022 19:30:22] [Date: 2022-08-15 19:30:22 | root execute succesfully Select query in mysql
+ 'SELECT * FROM help_topic limit 0,15']

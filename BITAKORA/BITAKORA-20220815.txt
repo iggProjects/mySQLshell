@@ -16,10 +16,10 @@ IÑAKI - PENDIENTE AL 14-08-2022
 - Caso count(*) when Select comes from sql_quey_area 
   - substitute string SELECT "fields list" FROM ..... with SELECT count(*) FROM ..... 
 
+- cases when query result doesn't have any records (totRecords = 0) 
+
 - confirm "yes or no" in Backup and Restore buttons   
   - https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_confirm3
-
-- Al ejecutar "Clear Query" chequear que coloque los selectores en opc '0'
 
 - FILTERS FOR QUERIES 
   - FILTROS: check for type cols, cases 'BLOB' (example: mediumblob in 'tbl_arch_imagen_persona' in penjub)
@@ -37,6 +37,8 @@ IÑAKI - PENDIENTE AL 14-08-2022
   - https://stackoverflow.com/questions/15298071/progress-bar-with-mysql-query-with-php
   - https://www.plus2net.com/php_tutorial/ajax-progress2.php
   - https://dba.stackexchange.com/questions/17367/how-can-i-monitor-the-progress-of-an-import-of-a-large-sql-file
+
+- Al ejecutar "Clear Query" chequear que coloque los selectores en opc '0'  ✔✔😎😎  
 
 - if host server is change, or db is changed, clear corrsponding data tag's   ✔✔😎😎
   - 'display_sql_result'
