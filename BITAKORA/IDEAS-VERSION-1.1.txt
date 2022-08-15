@@ -10,7 +10,10 @@ LOGIN
   - creación de usuarios
   - login email para el usuario, y opción se te olvidó....
 
-CANVAS PARA TODAS LAS TABLAS DE LA DB  
+CANVAS PARA TODAS LAS TABLAS DE LA DB + Drag&Drop 
+  - https://stackoverflow.com/questions/24926028/drag-and-drop-multiple-objects-in-html5-canvas 
+  - https://codepen.io/atindo23/pen/OJLbdrJ
+
 
 CSS: 
   - CSS case overflow in #display-result (for version 1.1) 

@@ -78,7 +78,7 @@ if ( str_contains($sql_query,'process') ) {
         
             $file_path = BACKUP_PATH . "{$dbname}_{$date_string}.sql";
             if ( file_exists($file_path) && filesize($file_path) != 0 ) { 
-                echo "<br><br><span style='color: black; font-size:20px;'><b>Backup procees was succesfully executed !</b></span>"; } 
+                echo "<br><br><span style='color: black; font-size:18px;'><b>Backup procees was succesfully executed !</span><br><span style='font-size:15px;'>Check 'backup_area directory.'</b></span>"; } 
             else { 
                 echo "<br><br><span style='color: red; font-size:20px;'><b>Backup process failed !</b></span>"; 
             }
@@ -101,10 +101,17 @@ if ( str_contains($sql_query,'process') ) {
                 $cmd = "mysql -h{$dbhost} -u{$dbuser} -p{$dbpass} {$dbname} < $backup_file";                
                 $cmd_screen = "mysql -h{$dbhost} -u{$dbuser} -p********* {$dbname} < $backup_file";
                 echo "<br><br>Restore Statement for php execution<br><br>exec(<span style='color:#990000; font-size: 18px;'>" . $cmd_screen . ")</span>";
-                exec($cmd);
-                //   
-                //  code: capture success vs error  
-                //    
+                
+                $out_array = [];
+                exec($cmd,$out_array,$return_val);
+
+                if ( $return_val == 0 ) {
+                    echo "<br><br><span style='color: black; font-size:18px;'><b>Restore process was succesfully executed !</span>"; 
+                } else { 
+                    echo "<br><br><span style='color: black; font-size:18px;'><b>Restore process failed !</span>";
+                }
+                
+                My_Log_Message ('out_array: ' . json_encode($out_array),$log_comments_path);
 
                 break;
 

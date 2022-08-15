@@ -13,21 +13,19 @@ IÑAKI - PENDIENTE AL 14-08-2022
   - caso str_contains (php 8) buscar el equivalente en php 7.4
     (https://www.codegrepper.com/code-examples/php/str_contains+php+7)
 
-- "asking for yes or no" in Backup and Restore buttons   
-
-- progress bar for large amount of data for some query
-  - https://stackoverflow.com/questions/15298071/progress-bar-with-mysql-query-with-php
-  - https://www.plus2net.com/php_tutorial/ajax-progress2.php
-  - https://dba.stackexchange.com/questions/17367/how-can-i-monitor-the-progress-of-an-import-of-a-large-sql-file
-
-
-- create function table_to_CSV ( with fetch_js)
-
-- first version for "help url" for troubles in mysql...  URL google para errores mysql  ✔✔😎😎
-  - https://www.googleguide.com/linking.html
-
 - Caso count(*) when Select comes from sql_quey_area 
   - substitute string SELECT "fields list" FROM ..... with SELECT count(*) FROM ..... 
+
+- confirm "yes or no" in Backup and Restore buttons   
+  - https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_confirm3
+
+- Al ejecutar "Clear Query" chequear que coloque los selectores en opc '0'
+
+- FILTERS FOR QUERIES 
+  - FILTROS: check for type cols, cases 'BLOB' (example: mediumblob in 'tbl_arch_imagen_persona' in penjub)
+  - CASE sql query: filter scripts, some chars.....  
+
+- customizar "window alert"
 
 - revisar caso de tbl_relacion en el canvas  
   - Flechas: 
@@ -35,11 +33,22 @@ IÑAKI - PENDIENTE AL 14-08-2022
     - https://riptutorial.com/html5-canvas/example/18136/line-with-arrowheads
     - https://codepen.io/chanthy/pen/WxQoVG
 
-  - Drag&Drop in CANVAS  
-    - https://stackoverflow.com/questions/24926028/drag-and-drop-multiple-objects-in-html5-canvas 
-    - https://codepen.io/atindo23/pen/OJLbdrJ
+- progress bar for large amount of data for some query
+  - https://stackoverflow.com/questions/15298071/progress-bar-with-mysql-query-with-php
+  - https://www.plus2net.com/php_tutorial/ajax-progress2.php
+  - https://dba.stackexchange.com/questions/17367/how-can-i-monitor-the-progress-of-an-import-of-a-large-sql-file
 
-- php "exec()" function
+- if host server is change, or db is changed, clear corrsponding data tag's   ✔✔😎😎
+  - 'display_sql_result'
+
+- check errors with command "exec()"  ✔✔😎😎    
+
+- create function table_to_CSV ( with fetch_js)  ✔✔😎😎
+
+- first version for "help url" for troubles in mysql...  URL google para errores mysql  ✔✔😎😎
+  - https://www.googleguide.com/linking.html
+
+- php "exec()" function   ✔✔😎😎
 
     - https://www.php.net/manual/es/function.exec.php
       exec(string $command, array &$output = ?, int &$return_var = ?): string  
@@ -56,9 +65,9 @@ IÑAKI - PENDIENTE AL 14-08-2022
 
 - PROCESOS BACKUP (), RESTORE (), IMPORT (CSV/EXCEL), EXPORT TABLE SELECT TO (CSV/EXCEL)  
 
-  - backup to .SQL ✔✔😎😎        
-  - restore .SQL
-  - IMPORT / EXPORT
+  - backup to .SQL   ✔✔😎😎        
+  - restore .SQL     ✔✔😎😎 
+  - IMPORT / EXPORT  ✔✔😎😎
     - https://www.a2zwebhelp.com/export-data-to-csv
     - https://www.mysqltutorial.org/mysql-export-table-to-csv/
     - https://www.cloudways.com/blog/import-export-csv-using-php-and-mysql/
@@ -66,7 +75,7 @@ IÑAKI - PENDIENTE AL 14-08-2022
     - https://write.corbpie.com/load-and-execute-sql-files-with-php/
 
   - Query to CSV
-    - make buttton in t
+    - make buttton  ✔✔😎😎
 
   export code:
       SET $deta_time = DATE_FORMAT(NOW(),'_%Y_%m_%d_%H_%i_%s');
@@ -133,12 +142,6 @@ IÑAKI - PENDIENTE AL 14-08-2022
       BACKUP FOR SOME TABLE OR TABLE's 
         $database_name $table1 
         $database_name $table1 $table2 $table3 ...
-
-- Al ejecutar "Clear Query" chequear que coloque los selectores en opc '0'  
-
-- FILTERS FOR QUERIES 
-  - FILTROS: check for type cols, cases 'BLOB' (example: mediumblob in 'tbl_arch_imagen_persona' in penjub)
-  - CASE sql query: filter scripts, some chars.....  
 
 - Clasify nav-btns in two sub classes type1 (home - ), type2 (test query screen) ✔✔😎😎  
 

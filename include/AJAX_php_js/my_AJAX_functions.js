@@ -160,9 +160,13 @@ function Fetch_js(tag,php_sql_url){
             throw new Error(response.status)
     })
 
-    .then(data => {        
+    .then(data => {     
         
-        document.getElementById(tag).innerHTML = data;    
+        if ( php_sql_url.includes("table_to_csv")  ) { 
+            alert('Csv file succesfully generated !' + '\n\n' + 'Check csv_files directory'); 
+        } else {      
+            document.getElementById(tag).innerHTML = data;
+        }        
 
         // LISTENERS for case '#display_right_aside'  
         if ( tag == 'display_right_aside') {

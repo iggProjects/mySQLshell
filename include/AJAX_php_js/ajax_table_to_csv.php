@@ -40,18 +40,19 @@ $msg .= ' | hostName: ' . $_REQUEST['hostName'] .  ' | user: ' . $dbuser . ' | p
 
 My_Log_Message ($msg,$log_comments_path);
 
-// https://www.php.net/manual/es/function.fputcsv.php
-
-# Cabeceras de página/archivo para que el navegador solicite guardar en vez de presentar
-header('Content-Type: text/csv; charset=utf-8');
-header('Content-Disposition: attachment; filename=SelectList.csv');
-# File pointer to the output to save
-// $salida = fopen('php://output', 'w');
-$csv_file = fopen('../../csv_files/SelectList.csv', 'w');
-
 $conex_db = try_catch_connect_host_db($dbhost,$dbname,$dbuser,$dbpass,$dbcharset,$log_queries_path);
 
 if ( gettype($conex_db) === 'object' ) {
+
+    // https://www.php.net/manual/es/function.fputcsv.php
+    # Cabeceras de página/archivo para que el navegador solicite guardar en vez de presentar
+    header('Content-Type: text/csv; charset=utf-8');
+    header('Content-Disposition: attachment; filename=SelectList.csv');
+
+    # data and hour for file name
+    $date_string = date("Ymd_His");
+    $file_name = '../../csv_files/SelectList_' . $date_string . '.csv';
+    $csv_file = fopen($file_name, 'w');
 
     # Ejecuta consulta y construyo el CSV
     //$lines = $conexion->query($query)->fetchAll(PDO::FETCH_ASSOC);
@@ -60,14 +61,21 @@ if ( gettype($conex_db) === 'object' ) {
 
     if (  gettype($lines) === 'object' || gettype($lines) === 'array') {
 
+        // title for csv
+        $title_array = [];
+        array_push($title_array,$dbname. ' - ' . $dbuser);
+        array_push($title_array,$sql_query);
+        fputcsv($csv_file,$title_array);
+
+        // fields names for columns
         $fields_names = [];
         foreach ( $lines[0] as $key => $value ) {  
             My_Log_Message ('key: '. $key,$log_comments_path);            
             array_push($fields_names,$key);       
-        }    
-
+        }
         fputcsv($csv_file,$fields_names);
-            
+
+        // columns data    
         foreach($lines as $line) {
             fputcsv($csv_file, $line);
         }
@@ -89,12 +97,11 @@ if ( gettype($conex_db) === 'object' ) {
 
 # HTML DATA FOR DIV
 if ($route == 'display_data') { # display html data  
-    My_Log_Message ($msg,$log_comments_path);
-    //echo "<br><br><br>CSV file succesfully generated !";
+    My_Log_Message ($msg,$log_comments_path);  
+    // echo "<br><br>CSV file succesfully generated !<br><br> Check csv_files directory. <br>";  
 } else { # display error msg        
     My_Log_Message ($error_msg,$log_comments_path);
     echo "<br><br><br>" . $error_msg;     
 }
-
 
 ?>

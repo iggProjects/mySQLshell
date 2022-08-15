@@ -75,15 +75,15 @@ echo "
                         echo "<button id='btn-diagram' class='nav-btn hideBtn'>Diagram</button>";                        
                         echo "<button id='btn-insert' class='nav-btn hideBtn'>Insert<br>Record</button>";
                         echo "<button id='btn-update' class='nav-btn hideBtn'>Update<br>Record</button>"; 
-                        echo "<button id='btn-delete' class='nav-btn hideBtn'>Delete<br>Record</button>";  
+                        echo "<button id='btn-delete' class='nav-btn hideBtn'>Delete<br>Record</button>"; 
+                        echo "<button id='btn-backup' class='nav-btn showBtn'>Backup</button>";
+                        echo "<button id='btn-restore' class='nav-btn showBtn'>Restore</button>"; 
                         echo "<button id='btn-users' class='nav-btn showBtn'>USERS</button>";                                               
                         echo "<button id='btn-export' class='nav-btn hideBtn'>Export</button>";
-                        echo "<button id='btn-import' class='nav-btn hideBtn'>Import</button>";                        
-                        echo "<button id='btn-backup' class='nav-btn showBtn'>Backup</button>";
-                        echo "<button id='btn-restore' class='nav-btn showBtn'>Restore</button>";                        
+                        echo "<button id='btn-import' class='nav-btn hideBtn'>Import</button>";       
                     echo "</div>";
 
-                    echo "<div class='der-console disp-row-center' >";
+                    echo "<div id='der-console' class='der-console disp-row-center' >";
 
                         echo "<div id='display_result' class='my-scroll-bar'>
 
@@ -154,12 +154,21 @@ echo "
 
             let host_n = event.target.selectedOptions[0].getAttribute("host_numb");    
             // alert('host bumber ' + host_n); 
-            
-            if (hostSelected.value != 0 ) {
 
+            // clear html of 'der-console associated tag's'
+            clearDerConsoleAreas();       
+            // clear 'display-sql-console-up & display-sql-console-Down'                
+            ClearSqlQueryAreas(); 
+            // IF tal #display-sql-console-Up is active
+            if ( document.getElementById('display-sql-console-Up').classList.contains('showDiv')) {
+                go_back();
+            }
+           
+            if (hostSelected.value != 0 ) {
+                
                 // call ajax function to display DB-info area in div_nav_izq
                 php_sql_url = './include/AJAX_php_js/ajax_Display_div_nav_izq.php?host_numb=' + host_n + '&hostName='+hostSelected.value;
-                console.log('ajax php=> ' + php_sql_url); 
+                //console.log('ajax php=> ' + php_sql_url); 
                 var host_array = <?php echo json_encode($host_serv); ?>;
 
                 // select display-result-nav-title values
@@ -177,7 +186,8 @@ echo "
             } else {
                 document.getElementById('html_div_nav_izq').innerHTML = ""; 
                 document.getElementById('display-result-nav-title').innerHTML = ""; 
-                document.getElementById('display_right_aside').innerHTML = ""; 
+                document.getElementById('display_sql_result').innerHTML = "";
+                document.getElementById('display_right_aside').innerHTML = "";                 
             }
 
         })
@@ -386,7 +396,7 @@ echo "
                 break;
 
                 case 'btn-restore':
-                    alert('this.id: ' + this.id);
+                    // alert('this.id: ' + this.id);
                     if ( table_param.getAttribute('db') == null  ) 
                         { alert( 'please, select DB, or, if you wish, add the list of tables you want to back up' ); } 
                     else {
@@ -607,9 +617,9 @@ echo "
         
         if ( document.getElementById('display_sql_result').classList.contains('showDiv') ) {
             _query = 'SELECT * FROM ' + table_param.getAttribute('table'); 
-            _tag='sql-query-area';  
+            _tag='display_sql_result';  
         } else if (document.getElementById('display-sql-console-Down').classList.contains('showDiv') ) {
-            _query = document.getElementById('display-sql-console-Down').value;
+            _query = document.getElementById('sql-query-area').value;
             _tag='sql-query-area';  
         } else {
             // upssssssssssss
