@@ -40,7 +40,7 @@ ini_set('error_log',$php_errors_log);
 echo "    
     <div class='div-DB-view disp-row-center my-scroll-bar'>
         <div class='div-header-text'>
-            <h2>myLQS@admin 1.0</h2>  
+            <h2>mySQLshell 1.0</h2>  
         </div>";
 
         echo "<div id='canvas-diagram' class='canvas-area' style='margin:auto; text-align: center;'>  
