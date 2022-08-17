@@ -3060,3 +3060,88 @@
 [17-Aug-2022 09:07:42] [Date: 2022-08-17 09:07:42 | root CONNECT DB 'null' FAIL !SQLSTATE[HY000] [1049] Unknown database 'null']
 [17-Aug-2022 09:07:42] [Date: 2022-08-17 09:07:42 | root execute succesfully Sql Query in DB: my_lqs_admin
  'SELECT btn_name, comment, query FROM standard_queries']
+[17-Aug-2022 09:08:46] [Date: 2022-08-17 09:08:46 | root connect succesfully to 'my_lqs_admin']
+[17-Aug-2022 09:08:46] [Date: 2022-08-17 09:08:46 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[17-Aug-2022 09:08:46] [Date: 2022-08-17 09:08:46 | root CONNECT DB 'null' FAIL !SQLSTATE[HY000] [1049] Unknown database 'null']
+[17-Aug-2022 09:09:22] [Date: 2022-08-17 09:09:22 | root connect succesfully to 'employees']
+[17-Aug-2022 09:09:22] [Date: 2022-08-17 09:09:22 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Aug-2022 09:09:34] [Date: 2022-08-17 09:09:34 | root connect succesfully to 'my_lqs_admin']
+[17-Aug-2022 09:09:34] [Date: 2022-08-17 09:09:34 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[17-Aug-2022 09:09:34] [Date: 2022-08-17 09:09:34 | root connect succesfully to 'employees']
+[17-Aug-2022 09:09:34] [Date: 2022-08-17 09:09:34 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Aug-2022 09:10:22] [Date: 2022-08-17 09:10:22 | root connect succesfully to '127.0.0.1']
+[17-Aug-2022 09:10:22] [Date: 2022-08-17 09:10:22 | root connect succesfully to '127.0.0.1']
+[17-Aug-2022 09:10:22] [Date: 2022-08-17 09:10:22 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[17-Aug-2022 09:10:22] [Date: 2022-08-17 09:10:22 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Aug-2022 09:10:24] [Date: 2022-08-17 09:10:24 | root connect succesfully to 'my_lqs_admin']
+17-Aug-2022 09:10:24] [Date: 2022-08-17 09:10:24 | root CONNECT DB 'null' FAIL !SQLSTATE[HY000] [1049] Unknown database 'null']
+[17-Aug-2022 09:10:24] [Date: 2022-08-17 09:10:24 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[17-Aug-2022 09:10:46] [Date: 2022-08-17 09:10:46 | root connect succesfully to '127.0.0.1']
+[17-Aug-2022 09:10:46] [Date: 2022-08-17 09:10:46 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[17-Aug-2022 09:10:46] [Date: 2022-08-17 09:10:46 | root connect succesfully to '127.0.0.1']
+[17-Aug-2022 09:10:47] [Date: 2022-08-17 09:10:47 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Aug-2022 09:10:49] [Date: 2022-08-17 09:10:49 | root connect succesfully to 'employees']
+[17-Aug-2022 09:10:49] [Date: 2022-08-17 09:10:49 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Aug-2022 09:10:50] [Date: 2022-08-17 09:10:50 | root connect succesfully to 'my_lqs_admin']
+[17-Aug-2022 09:10:50] [Date: 2022-08-17 09:10:50 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[17-Aug-2022 09:10:50] [Date: 2022-08-17 09:10:50 | root connect succesfully to 'employees']
+[17-Aug-2022 09:10:50] [Date: 2022-08-17 09:10:50 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Aug-2022 09:11:28] [Date: 2022-08-17 09:11:28 | root connect succesfully to '127.0.0.1']
+[17-Aug-2022 09:11:28] [Date: 2022-08-17 09:11:28 | root connect succesfully to '127.0.0.1']
+[17-Aug-2022 09:11:28] [Date: 2022-08-17 09:11:28 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[17-Aug-2022 09:11:28] [Date: 2022-08-17 09:11:28 | root connect succesfully to '127.0.0.1']
+[17-Aug-2022 09:11:28] [Date: 2022-08-17 09:11:28 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[17-Aug-2022 09:11:28] [Date: 2022-08-17 09:11:28 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Aug-2022 09:11:28] [Date: 2022-08-17 09:11:28 | root connect succesfully to '127.0.0.1']
+[17-Aug-2022 09:11:28] [Date: 2022-08-17 09:11:28 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Aug-2022 09:11:29] [Date: 2022-08-17 09:11:29 | root connect succesfully to 'employees']
+[17-Aug-2022 09:11:29] [Date: 2022-08-17 09:11:29 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Aug-2022 09:11:30] [Date: 2022-08-17 09:11:30 | root connect succesfully to 'my_lqs_admin']
+[17-Aug-2022 09:11:30] [Date: 2022-08-17 09:11:30 | root connect succesfully to 'employees']
+[17-Aug-2022 09:11:30] [Date: 2022-08-17 09:11:30 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[17-Aug-2022 09:11:30] [Date: 2022-08-17 09:11:30 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Aug-2022 09:11:50] [Date: 2022-08-17 09:11:50 | root connect succesfully to '127.0.0.1']
+[17-Aug-2022 09:11:50] [Date: 2022-08-17 09:11:50 | root connect succesfully to '127.0.0.1']
+[17-Aug-2022 09:11:50] [Date: 2022-08-17 09:11:50 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[17-Aug-2022 09:11:50] [Date: 2022-08-17 09:11:50 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Aug-2022 09:11:52] [Date: 2022-08-17 09:11:52 | root connect succesfully to 'employees']
+[17-Aug-2022 09:11:52] [Date: 2022-08-17 09:11:52 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Aug-2022 09:11:53] [Date: 2022-08-17 09:11:53 | root connect succesfully to 'my_lqs_admin'][17-Aug-2022 09:11:53] [Date: 2022-08-17 09:11:53 | root connect succesfully to 'employees']
+
+[17-Aug-2022 09:11:53] [Date: 2022-08-17 09:11:53 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[17-Aug-2022 09:11:53] [Date: 2022-08-17 09:11:53 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Aug-2022 09:12:14] [Date: 2022-08-17 09:12:14 | root connect succesfully to 'penjub']
+[17-Aug-2022 09:12:14] [Date: 2022-08-17 09:12:14 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Aug-2022 09:12:18] [Date: 2022-08-17 09:12:18 | root connect succesfully to 'penjub']
+[17-Aug-2022 09:12:18] [Date: 2022-08-17 09:12:18 | root execute succesfully show tables query
+ 'describe tbl_persona;']
+[17-Aug-2022 09:12:20] [Date: 2022-08-17 09:12:20 | root connect succesfully to 'penjub']
+[17-Aug-2022 09:12:20] [Date: 2022-08-17 09:12:20 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_persona']
+[17-Aug-2022 09:12:20] [Date: 2022-08-17 09:12:20 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona limit 0,15']

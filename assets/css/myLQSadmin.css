@@ -145,7 +145,7 @@ https://codepen.io/Jopzik/pen/xaWzMB/
 
 .div-DB-view .DB-info .div-der .der-console #display_result #display-sql-console-Up .display-sql-console-Up-btns #go-back-btn { margin-top:4px; font-size: 12px; padding: 2px;}  
 
-.div-DB-view .DB-info .div-der .der-console #display_result #display-sql-console-Up #sql-query-area { min-width: 98%; max-width:98%; height:73%; margin:3px; border:2px solid #e2e2e2; }
+.div-DB-view .DB-info .div-der .der-console #display_result #display-sql-console-Up #sql-query-area { min-width: 98%; max-width:98%; min-height:70%; margin:3px; border:2px solid #e2e2e2; }
 
 .div-DB-view .DB-info .div-der .der-console #display_result #display-sql-console-Down { width:100%; height: 58%; overflow:scroll; margin:auto; padding-top:10px; text-align: center; border:2px solid #d4d4d4; background-color: #b4b4b4;}
 
