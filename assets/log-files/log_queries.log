@@ -3011,3 +3011,52 @@
 [15-Aug-2022 19:34:54] [Date: 2022-08-15 19:34:54 | root connect succesfully to 'employees']
 [15-Aug-2022 19:34:54] [Date: 2022-08-15 19:34:54 | root execute succesfully show tables query
  'SHOW TABLES;']
+[17-Aug-2022 09:04:26] [Date: 2022-08-17 09:04:26 | root connect succesfully to '127.0.0.1']
+[17-Aug-2022 09:04:26] [Date: 2022-08-17 09:04:26 | root connect succesfully to '127.0.0.1']
+[17-Aug-2022 09:04:26] [Date: 2022-08-17 09:04:26 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[17-Aug-2022 09:04:27] [Date: 2022-08-17 09:04:27 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Aug-2022 09:04:28] [Date: 2022-08-17 09:04:28 | root connect succesfully to 'penjub']
+[17-Aug-2022 09:04:28] [Date: 2022-08-17 09:04:28 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Aug-2022 09:04:30] [Date: 2022-08-17 09:04:30 | root connect succesfully to 'penjub']
+[17-Aug-2022 09:04:30] [Date: 2022-08-17 09:04:30 | root execute succesfully show tables query
+ 'describe tbl_persona;']
+[17-Aug-2022 09:04:31] [Date: 2022-08-17 09:04:31 | root connect succesfully to 'penjub']
+[17-Aug-2022 09:04:31] [Date: 2022-08-17 09:04:31 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_persona']
+[17-Aug-2022 09:04:31] [Date: 2022-08-17 09:04:31 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona limit 0,15']
+[17-Aug-2022 09:05:02] [Date: 2022-08-17 09:05:02 | root connect succesfully to 'penjub']
+[17-Aug-2022 09:05:02] [Date: 2022-08-17 09:05:02 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT * FROM tbl_persona']
+[17-Aug-2022 09:05:25] [Date: 2022-08-17 09:05:25 | root connect succesfully to 'penjub']
+[17-Aug-2022 09:05:25] [Date: 2022-08-17 09:05:25 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_persona limit 45,15']
+[17-Aug-2022 09:05:29] [Date: 2022-08-17 09:05:29 | root connect succesfully to 'my_lqs_admin']
+[17-Aug-2022 09:05:29] [Date: 2022-08-17 09:05:29 | root connect succesfully to 'penjub']
+[17-Aug-2022 09:05:29] [Date: 2022-08-17 09:05:29 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[17-Aug-2022 09:05:29] [Date: 2022-08-17 09:05:29 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[17-Aug-2022 09:06:32] [Date: 2022-08-17 09:06:32 | root connect succesfully to '127.0.0.1']
+[17-Aug-2022 09:06:32] [Date: 2022-08-17 09:06:32 | root connect succesfully to '127.0.0.1']
+[17-Aug-2022 09:06:32] [Date: 2022-08-17 09:06:32 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[17-Aug-2022 09:06:32] [Date: 2022-08-17 09:06:32 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Aug-2022 09:06:33] [Date: 2022-08-17 09:06:33 | root connect succesfully to 'my_lqs_admin']
+[17-Aug-2022 09:06:33] [Date: 2022-08-17 09:06:33 | root CONNECT DB 'null' FAIL !SQLSTATE[HY000] [1049] Unknown database 'null']
+[17-Aug-2022 09:06:33] [Date: 2022-08-17 09:06:33 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[17-Aug-2022 09:07:40] [Date: 2022-08-17 09:07:40 | root connect succesfully to '127.0.0.1']
+[17-Aug-2022 09:07:40] [Date: 2022-08-17 09:07:40 | root connect succesfully to '127.0.0.1']
+[17-Aug-2022 09:07:40] [Date: 2022-08-17 09:07:40 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[17-Aug-2022 09:07:40] [Date: 2022-08-17 09:07:40 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[17-Aug-2022 09:07:42] [Date: 2022-08-17 09:07:42 | root connect succesfully to 'my_lqs_admin']
+[17-Aug-2022 09:07:42] [Date: 2022-08-17 09:07:42 | root CONNECT DB 'null' FAIL !SQLSTATE[HY000] [1049] Unknown database 'null']
+[17-Aug-2022 09:07:42] [Date: 2022-08-17 09:07:42 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
