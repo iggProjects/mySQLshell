@@ -1,15 +1,3 @@
-IÑAKI - DARREN 
-
-  1.- LOGIN
-  2.- HELP ERRORES
-  3.- DOWNLOAD
-  4.- DIAGRAM
-      - https://codepen.io/Nelms/pen/wvMMJg
-
-
-
-********************************************************************
-
 Localhost y la IP Local
   - https://robolid.net/cual-es-la-diferencia-entre-locahost-y-la-direccion-ip-local/
 

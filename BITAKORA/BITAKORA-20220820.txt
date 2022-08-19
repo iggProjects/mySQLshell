@@ -7,7 +7,7 @@ IÑAKI - DARREN ( pendiente para version 1.0 )
 
 ********************************************************************
 
-IÑAKI - PENDIENTE AL 14-08-2022
+IÑAKI - PENDIENTE VERSION 1.0 AL 20-08-2022
 
 - README 
   - caso str_contains (php 8) buscar el equivalente en php 7.4
@@ -18,25 +18,34 @@ IÑAKI - PENDIENTE AL 14-08-2022
 
 - cases when query result doesn't have any records (totRecords = 0) 
 
-- confirm "yes or no" in Backup and Restore buttons   
+- ask to confirm "yes or no" in Backup and Restore buttons   
   - https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_confirm3
 
 - FILTERS FOR QUERIES 
   - FILTROS: check for type cols, cases 'BLOB' (example: mediumblob in 'tbl_arch_imagen_persona' in penjub)
   - CASE sql query: filter scripts, some chars.....  
 
-- customizar "window alert"
-
-- revisar caso de tbl_relacion en el canvas  
-  - Flechas: 
-    - https://stackoverflow.com/questions/808826/draw-arrow-on-canvas-tag
-    - https://riptutorial.com/html5-canvas/example/18136/line-with-arrowheads
-    - https://codepen.io/chanthy/pen/WxQoVG
+- customize "window alert"
 
 - progress bar for large amount of data for some query
   - https://stackoverflow.com/questions/15298071/progress-bar-with-mysql-query-with-php
   - https://www.plus2net.com/php_tutorial/ajax-progress2.php
   - https://dba.stackexchange.com/questions/17367/how-can-i-monitor-the-progress-of-an-import-of-a-large-sql-file
+
+- DB nativa de myLQSadmin: "my_sql_admin" 
+  - crear las primeras tablas usuarios, standard_queries, favorite_queries, .... ✔✔  - 
+  - standard queries aplican a cualquier DB (campos: id, user, comment, btn_name, query, creation_date)   
+  - "favorite" queries: insert-update-delete-drop
+    - Fields: id, user, db, comment, query
+
+- COLOCAR DB KONT PARA PRACTICAR CON DATA
+  - Tables width data???   
+  - probar queries en sql query area 
+
+- Pass CSS to SCSS, including in SCSS the "style's inside tag's; and then remove it.  
+
+
+DO IT - ✔✔😎😎
 
 - Al ejecutar "Clear Query" chequear que coloque los selectores en opc '0'  ✔✔😎😎  
 
@@ -177,37 +186,5 @@ IÑAKI - PENDIENTE AL 14-08-2022
     (línea 68) $select_query = "SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;"; 
 
 
-- DB nativa de myLQSadmin: "my_sql_admin" 
-  - crear las primeras tablas usuarios, standard_queries, favorite_queries, .... ✔✔  - 
-  - standard queries aplican a cualquier DB (campos: id, user, comment, btn_name, query, creation_date)   
-  - "favorite" queries: insert-update-delete-drop
-    - Fields: id, user, db, comment, query
-
-- COLOCAR DB KONT
-  - Tables width data???   
-  - probar queries en sql query area 
-
-- Pass CSS to SCSS, including in SCSS the "style's inside tag's; and then remove it.  
 
 
-- MYSQL  
-
-      manual : https://dev.mysql.com/doc/refman/8.0/en/
-
-      conexiones persistentes https://www.php.net/manual/es/pdo.connections.php  
-      $mbd = new PDO('mysql:host=localhost;dbname=prueba', $usuario, $contraseña, array(
-          PDO::ATTR_PERSISTENT => true
-      ));
-      $dbh = new PDO('mysql:host=localhost;dbname=test', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
-
-      stmt->closeCursor(); http://php.adamharvey.name/manual/en/pdo.connections.php
-
-      //Kill the connection with a KILL Statement.  //https://thisinterestsme.com/close-pdo-connection/
-      $pdo->query('KILL CONNECTION_ID()');
-
-      //Set the PDO object to NULL.
-      $pdo = null;
-
-      // laravel->  https://laravel.com/docs/9.x/database
-
-    
