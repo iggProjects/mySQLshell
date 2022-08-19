@@ -39,7 +39,6 @@ $i_serv++;
 // Authentication type and info 
 $cfg_s['Servers'][$i_serv]['auth_type'] = 'config';
 $cfg_s['Servers'][$i_serv]['user'] = 'root';
-//$cfg_s['Servers'][$i_serv]['password'] = '';
 $cfg_s['Servers'][$i_serv]['password'] = '';
 $cfg_s['Servers'][$i_serv]['extension'] = 'mysqli';
 $cfg_s['Servers'][$i_serv]['AllowNoPassword'] = false;
@@ -50,18 +49,15 @@ $cfg_s['Servers'][$i_serv]['host'] = '127.0.0.1';
 $cfg_s['Servers'][$i_serv]['hostShortName'] = 'Localhost DB server';
 $cfg_s['Servers'][$i_serv]['connect_type'] = 'tcp';
 
-
-// Change variable
+// Change ARRAYS
 $host_serv = [];
 $host_serv_ShortName = [];
-// $host_serv_db= [];
 $host_serv_user = [];
 $host_serv_pasw = [];
 
 foreach ( $cfg_s as $server) { 
     for ( $k=0; $k < count($server); $k++ ) {         
-        $host_serv[$k+1] = $server[$k+1]['host'];
-        // echo $host_serv[$k+1] . "<br>";
+        $host_serv[$k+1] = $server[$k+1]['host'];        
         $host_serv_ShortName[$k+1] = $server[$k+1]['hostShortName'];
         $host_serv_user[$k+1] = $server[$k+1]['user'];
         $host_serv_passw[$k+1] = $server[$k+1]['password'];
