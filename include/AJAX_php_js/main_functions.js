@@ -1,58 +1,5 @@
-
-
-
 /*
-    *  Listeners  
-*/
-
-/*
-// Listener to select HOST and Display TREE of DB and Tbl's
-var hostSelected = document.getElementById("serverList");
-hostSelected.addEventListener("click", () => {
-    hostSelected.addEventListener("change", () => {  
-                    
-        document.getElementById('hostNavIzq').innerHTML = hostSelected.value;            
-
-        let host_n = event.target.selectedOptions[0].getAttribute("host_numb");    
-        // alert('host bumber ' + host_n); 
-
-        // clear html of 'der-console associated tag's'
-        clearDerConsoleAreas();       
-        // clear 'display-sql-console-up & display-sql-console-Down'                
-        ClearSqlQueryAreas(); 
-        // IF tal #display-sql-console-Up is active
-        if ( document.getElementById('display-sql-console-Up').classList.contains('showDiv')) {
-            go_back();
-        }
-        
-        if (hostSelected.value != 0 ) {
-            
-            // call ajax function to display DB-info area in div_nav_izq
-            php_sql_url = './include/AJAX_php_js/ajax_Display_div_nav_izq.php?host_numb=' + host_n + '&hostName='+hostSelected.value;
-            //console.log('ajax php=> ' + php_sql_url); 
-            var host_array = <?php echo json_encode($host_serv); ?>;
-
-            // select display-result-nav-title values
-            var table_param = document.getElementById('display-result-nav-title');
-            table_param.setAttribute('host_numb',host_n);
-            table_param.setAttribute('host',hostSelected.value);
-            table_param.innerHTML = "host_numb: " + host_n + " || HOST: " + hostSelected.value;                
-            Display_div_nav_izq('html_div_nav_izq',host_array,php_sql_url);  
-            
-            // Display query "show databases" in tag "display_right_aside"                 
-            document.getElementById('p-comment').innerHTML='DATABASES';        
-            // tag for show tables of DB selected                   
-            Fetch_js('display_right_aside','./include/AJAX_php_js/ajax_List_DB.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host'));
-
-        } else {
-            document.getElementById('html_div_nav_izq').innerHTML = ""; 
-            document.getElementById('display-result-nav-title').innerHTML = ""; 
-            document.getElementById('display_sql_result').innerHTML = "";
-            document.getElementById('display_right_aside').innerHTML = "";                 
-        }
-
-    })
-});
+    *  Functions  
 */
 
 function doButtonAction(){
@@ -299,13 +246,6 @@ function doButtonAction(){
     }
     
 } 
-
-/*
-var buttonSelected = document.getElementsByClassName('nav-btn');
-for (var i = 0; i < buttonSelected.length; i++) {
-    buttonSelected[i].addEventListener('click', doButtonAction, false);
-}
-*/
 
 function doLeftAsideButtonAction(){
 

@@ -998,3 +998,7 @@
 [19-Aug-2022 17:27:40] [HOST param: 1--inaki2022-Inaki@2022]
 [19-Aug-2022 17:27:40] [HOST param: 1--inaki2022-Inaki@2022]
 [19-Aug-2022 17:27:41] [HOST param: 1--inaki2022-Inaki@2022]
+[19-Aug-2022 17:35:28] [HOST param: 2--root-@mysql@]
+[19-Aug-2022 17:35:30] [HOST param: 2--root-@mysql@]
+[19-Aug-2022 17:35:35] [FROM viewTbl --> HOST number: 2 - hostName: 127.0.0.1 - table: tbl_ciudad - user: root - pass: @mysql@ - page: 1-0-0]
+[19-Aug-2022 17:35:35] [FROM viewTbl --> HOST number: 2 - hostName: 127.0.0.1 - table: tbl_ciudad - user: root - pass: @mysql@ - page: 1-0-0 | totRecords: 27 | select_query: SELECT * FROM tbl_ciudad limit 0,15]
