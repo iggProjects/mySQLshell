@@ -31,6 +31,7 @@ ini_set('error_log',$php_errors_log);
     <link rel="stylesheet" href="./assets/css/myLQSadmin.css">
     <script type='text/javascript' src='./include/AJAX_php_js/my_AJAX_functions.js'></script>
     <script type='text/javascript' src='./include/AJAX_php_js/my_CANVAS_functions.js'></script>
+    <script type='text/javascript' src='./include/AJAX_php_js/main_functions.js'></script>
   <style></style>
 </head>
 <body>
@@ -193,7 +194,7 @@ echo "
         })
     });
 
-
+/*
     function doButtonAction(){
 
         var table_param = document.getElementById('display-result-nav-title');
@@ -340,14 +341,6 @@ echo "
                     _tag= 'std-queriesList';
                     _query = 'SELECT btn_name, comment, query FROM standard_queries'; 
                     Fetch_js(_tag,'./include/AJAX_php_js/ajax_SelectOptions_Query.php?hostName=127.0.0.1&dbName=my_lqs_admin&sql_query='+_query);                      
-/*
-                    // tag for show options in "Fav Queries" SELECT
-                    _tag= 'fav-queriesList';
-                    // OJO en este caso, la query tiene que ver con el usuario y la DB específica
-                    // PENSAR BIEN como implementar                    
-                    _query = 'SELECT btn_name, query FROM favorite_queries '; 
-                    Fetch_js(_tag,'./include/AJAX_php_js/ajax_SelectOptions_Query.php?hostName=127.0.0.1&dbName=my_lqs_admin&tbl=favorite_queries&sql_query='+_query);                      
-*/
 
                     // document.getElementById('display-result-nav-title').innerHTML="";
                     document.getElementById('p-comment').innerHTML='TABLES';        
@@ -438,13 +431,15 @@ echo "
         }
        
     } 
+*/
 
+var buttonSelected = document.getElementsByClassName('nav-btn');
+for (var i = 0; i < buttonSelected.length; i++) {
+    buttonSelected[i].addEventListener('click', doButtonAction, false);
+}
 
-    var buttonSelected = document.getElementsByClassName('nav-btn');
-    for (var i = 0; i < buttonSelected.length; i++) {
-        buttonSelected[i].addEventListener('click', doButtonAction, false);
-    }
-  
+/*
+
     function doLeftAsideButtonAction(){
 
         // clear #sql-query-area & #display_sql_result
@@ -646,17 +641,6 @@ echo "
         document.getElementById('display-sql-console-Down').style.height="58%"; 
     }                                    
 
-/*
-    function tables_relations() {
-        const relations_query = `SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL \nFROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE \nWHERE REFERENCED_TABLE_SCHEMA = SCHEMA()`;
-        document.getElementById('sql-query-area').value = relations_query;
-    }
-
-    function tables_size() {
-        const size_query = `SELECT table_name TBL, round( (data_length / 1024 / 1024) , 2) SIZE_MB  \nFROM information_schema.TABLES \nWHERE table_schema = SCHEMA()`;
-        document.getElementById('sql-query-area').value = size_query;
-    }
-*/
 
     // DIAGRAM FOR TABLE SELECTED
     function table_diagram() {
@@ -675,9 +659,9 @@ echo "
         }           
     }
 
-    /*
-    * Clear html of 'der-console associated tag's'  
-    */
+    #
+    # Clear html of 'der-console associated tag's'  
+    #
     function clearDerConsoleAreas() {
 
         document.getElementById('display-result-nav-title').innerHTML = "";
@@ -728,7 +712,7 @@ echo "
         var colEffects='line-height:20px; background:'+bckgCol+'; color:'+col; 
         console.log(msg,colEffects);                
     }
-
+*/
 </script>
 
 </body>
