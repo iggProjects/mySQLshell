@@ -17,6 +17,17 @@
         echo "<script>console.log('$msg');</script>";  
     }   
 
+    /*
+    * 
+    */
+    function getURIGoogle($error_msg):String{
+        $codeState= mb_substr($error_msg,mb_strpos($error_msg,"[")+1,mb_strpos($error_msg,"]")-9);
+        $uriGoogle="https://www.google.com/search?q={{codeState}}+mysql&rlz=1C1GCEA_enES814ES814&oq={{codeState}}+mysql&aqs=chrome.0.69i59j0i19i22i30l3j69i60.25026j0j7&sourceid=chrome&ie=UTF-8";
+        $uriGoogle=str_replace("{{codeState}}",$codeState,$uriGoogle);
+        return $uriGoogle;
+    };
+
+
     /* Funcion validarTexto 
      *
      * Valida si el contenido de campos de texto es correcto en cantidad de caracteres.
