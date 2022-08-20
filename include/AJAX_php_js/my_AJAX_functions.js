@@ -163,7 +163,7 @@ function Fetch_js(tag,php_sql_url){
     .then(data => {     
         
         if ( php_sql_url.includes("table_to_csv")  ) { 
-            alert('Csv file succesfully generated !' + '\n\n' + 'Check csv_files directory'); 
+            invoke_Alert_Window('Csv file succesfully generated ! 😎' + '\n\n' + 'Check csv_files directory'); 
         } else {      
             document.getElementById(tag).innerHTML = data;
         }        

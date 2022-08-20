@@ -23,7 +23,7 @@ function Fetch_canvas_data_array(php_sql_url) {
 
     .catch(err => {
         console.error("ERROR: ", err.message);
-        alert("ERROR Fetch_canvas_data_array: " + err.message); 
+        invoke_Alert_Window("😌 ERROR Fetch_canvas_data_array: " + err.message); 
 
     });
    
