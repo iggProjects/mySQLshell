@@ -1,0 +1,55 @@
+<html>
+<head>
+</script>
+   <style>
+      #alert {
+         display: none;
+         background-color: rgb(252, 219, 219);
+         border: 1px solid green;
+         position: fixed;
+         height: 80px;
+         width: 250px;
+         left: 40%;
+         top: 45%;
+         padding: 6px 8px 8px;
+         text-align: center;
+      }
+      p {
+         font-size: 18px;
+         color: green;
+      }
+      button {
+         border-radius: 12px;
+         height: 2rem;
+         padding: 7px;
+         cursor: pointer;
+         border: 2px solid green;
+         background-color: aqua;
+      }
+      #close {
+         position: absolute;
+         right: 20px;
+         bottom: 10px;
+      }
+   </style>
+</head>
+<body>
+   <h2>Change the color of alert box in Javascript.</h2>
+   <h4>Creating custom alert box using <i> vanilla Javascript.</i></h4>
+   <div id = "alert">
+      <p>Welcome to the tutorialsPoint!</p>
+      <button id = "close" onclick = "closeDialog()">Close</button>
+   </div>
+   <button onclick = 'invokeAlert();'>Show Alert Box</button>
+   <script>
+      var alertDiv = document.getElementById("alert");
+      function invokeAlert() {
+         alertDiv.style.display = "block";
+      }
+      function closeDialog() {
+         alertDiv.style.display = "none";
+      }
+   </script>
+</body>
+</html>
+

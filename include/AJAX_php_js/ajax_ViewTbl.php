@@ -81,7 +81,7 @@ if ( gettype($conex_db) === 'object' ) {
         }
     } 
 
-    if ( $totRecords > 0 && $route = "display_data" ) {
+    if ( $totRecords >= 0 && $route = "display_data" ) {
         // $sql_query = substr($sql_query, 0, strpos($sql_query, 'limit'));
         $select_query = "SELECT * FROM $dbtable limit $num_rec_init,$jump";
 
