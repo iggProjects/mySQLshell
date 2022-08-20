@@ -36,12 +36,17 @@ ini_set('error_log',$php_errors_log);
             <h2>mySQLshell 1.0</h2>  
         </div> 
 
-         <div id='canvas-diagram' class='canvas-area' style='margin:auto; text-align: center;'>  
+        <div id='canvas-diagram' class='canvas-area' style='margin:auto; text-align: center;'>  
             <div><button style='width:100px;margin-left:50px;margin-right:50px;margin-bottom:10px;padding:3px;color:white;font-size:16px;background-color:gray; border-radius:10px;' onclick='clear_canvas()'><b>EXIT</b><button></div>  
             <canvas class='canvas-area' id='canvas' width='900px' height='600px' style='border:5px solid gray;'></canvas>
         </div> 
+
+        <div id = "my-alert-window">
+            <p id="p-alert-msg"></p>
+            <button id="alert-close" class="alert-button" onclick = "close_Alert_Window()">Close</button>
+        </div>    
         
-         <div id='div-DB-info' class='DB-info'> 
+        <div id='div-DB-info' class='DB-info'> 
         
              <div id='div_nav_izq' class='nav-izq my-scroll-bar'>   
                 <p style='margin-top:5px; margin-bottom:10px;color:#990000;'>USER:</p>  
@@ -189,6 +194,16 @@ ini_set('error_log',$php_errors_log);
     for (var i = 0; i < buttonSelected.length; i++) {
         buttonSelected[i].addEventListener('click', doButtonAction, false);
     }
+
+
+    function invoke_Alert_Window(my_msg) {
+        document.getElementById('p-alert-msg').innerHTML = my_msg;
+         document.getElementById("my-alert-window").style.display = "block";
+    }
+      function close_Alert_Window() {
+         document.getElementById("my-alert-window").style.display = "none";
+    }
+
 
 </script>
 

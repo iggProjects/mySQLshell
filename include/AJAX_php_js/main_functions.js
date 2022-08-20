@@ -13,7 +13,7 @@ function doButtonAction(){
 
         case 'btn-desc':
             if ( table_param.getAttribute('table') == null ) 
-                { alert( 'please, select a table' ); } 
+                { invoke_Alert_Window( 'please, select a table ! 😎' ); } 
             else {   
 
                 // query value in tag #sql-query-area                    v 
@@ -29,7 +29,7 @@ function doButtonAction(){
 
         case 'btn-view':   
             if ( table_param.getAttribute('table') == null ) 
-                { alert( 'please, select a table' ); } 
+                { invoke_Alert_Window( 'please, select a table ! 😎' ); } 
             else {    
                 // Check if actualPage is active
                 // document.getElementById('sql-query-area').value = "SELECT * FROM " + table_param.getAttribute('table'); // for avoid conflicts with ajax_Sql_Query finction
@@ -56,7 +56,7 @@ function doButtonAction(){
 
         case 'btn-insert':
             if ( table_param.getAttribute('table') == null ) 
-                { alert( 'please, select a table' ); } 
+                { invoke_Alert_Window( 'please, select a table' ); } 
             else { // write insert format in tag #sql-query-area
                 var insertMask = '';
                 insertMask = 'INSERT INTO ' + table_param.getAttribute('table') + ' \n\n';
@@ -69,7 +69,7 @@ function doButtonAction(){
 
         case 'btn-update':
             if ( table_param.getAttribute('table') == null ) 
-                { alert( 'please, select a table' ); } 
+                { invoke_Alert_Window( 'please, select a table ! 😎' ); } 
             else {   
                 var updateMask = '';
                 updateMask = 'UPDATE ' + table_param.getAttribute('table') + ' \n\n';
@@ -82,7 +82,7 @@ function doButtonAction(){
 
         case 'btn-delete':
             if ( table_param.getAttribute('table') == null ) 
-                { alert( 'please, select a table' ); } 
+                { invoke_Alert_Window( 'please, select a table ! 😎' ); } 
             else {   
                 var deleteMask = '';
                 deleteMask = 'DELETE FROM ' + table_param.getAttribute('table') + ' \n\n';                    
@@ -94,13 +94,13 @@ function doButtonAction(){
 
         case 'btn-sql':              
             
-            // alert('first this.id: ' + this.id);
+            // invoke_Alert_Window('first this.id: ' + this.id);
             // IF to check: host and DB exists & query is not empty
             // capture host and db from tag -> #display-result-nav-title
             var table_param = document.getElementById('display-result-nav-title');                
 
             if ( table_param.getAttribute('host') == null ) { 
-                alert('Please select a DB Server ! 😎');                    
+                invoke_Alert_Window('Please select a DB Server ! 😎');                    
             } 
             else {
 
@@ -170,7 +170,7 @@ function doButtonAction(){
             case 'btn-backup':
                 // alert('this.id: ' + this.id);
                 if ( table_param.getAttribute('db') == null  ) 
-                    { alert( 'please, select DB, or, if you wish, add the list of tables you want to back up' ); } 
+                    { invoke_Alert_Window( 'please, select DB, or, if you wish, add the list of tables you want to back up 😎' ); } 
                 else {
                     
                     // Hide 'display_sql_result'
@@ -206,7 +206,7 @@ function doButtonAction(){
             case 'btn-restore':
                 // alert('this.id: ' + this.id);
                 if ( table_param.getAttribute('db') == null  ) 
-                    { alert( 'please, select DB, or, if you wish, add the list of tables you want to back up' ); } 
+                    { invoke_Alert_Window( 'please, select DB, or, if you wish, add the list of tables you want to back up 😎' ); } 
                 else {
                     
                     // Hide 'display_sql_result'
@@ -241,7 +241,7 @@ function doButtonAction(){
             break;
 
         default:    
-            alert('Function avalaible in version 1.1 !');
+        invoke_Alert_Window('Function avalaible in version 1.1 ! 😎');
 
     }
     
@@ -317,7 +317,7 @@ function execute_query(){
     let host_n = sql_host_db.getAttribute('host_numb');
 
     if ( _query == "" || sql_host_db.getAttribute('host') == null || sql_host_db.getAttribute('db') == null ) { 
-        alert('check if you select HOST and DB and you write an sql query ! 😎') 
+        invoke_Alert_Window('check if you select HOST and DB and you write an sql query ! 😎') 
     } else {
 
         // display button 'increase' or 'reduce'
@@ -356,21 +356,21 @@ function displayPage(char) {
     switch (char) {
 
         case '1':
-            if ( page == 1 ) { alert('You are in the first page !'); do_it=0; } else { num_rec_init = 0; page=1; }                
-            //alert('Query: ' + query + '\n' + ', page: ' + page + ', num_rec_init: ' + num_rec_init + ', totRecords: ' + totRecords + '\n' + ', action: ' + char); 
+            if ( page == 1 ) { invoke_Alert_Window('You are in the first page ! 😎'); do_it=0; } else { num_rec_init = 0; page=1; }                
+            //invoke_Alert_Window('Query: ' + query + '\n' + ', page: ' + page + ', num_rec_init: ' + num_rec_init + ', totRecords: ' + totRecords + '\n' + ', action: ' + char); 
             break;
 
         case '-1':                
-            if ( parseInt(page) > 1 ) {  page = parseInt(page) -1 ; num_rec_init = num_rec_init - 15; } else { alert('You are in the first page !'); do_it = 0; }
+            if ( parseInt(page) > 1 ) {  page = parseInt(page) -1 ; num_rec_init = num_rec_init - 15; } else { invoke_Alert_Window('You are in the first page ! 😎'); do_it = 0; }
             break; 
 
         case '+1':
-            if ( num_rec_init > totRecords -15 ) { alert('You are in the last page !'); do_it = 0; } else { page = parseInt(page) + 1; num_rec_init = num_rec_init + 15; }                
+            if ( num_rec_init > totRecords -15 ) { invoke_Alert_Window('You are in the last page ! 😎'); do_it = 0; } else { page = parseInt(page) + 1; num_rec_init = num_rec_init + 15; }                
             break;   
 
         case '2':
             var last_page = Math.floor(totRecords / 15) +1;                
-            if ( last_page == page ) { alert('You are in the last page !'); do_it = 0; } else { num_rec_init = (last_page-1)*15; page = last_page; }                
+            if ( last_page == page ) { invoke_Alert_Window('You are in the last page ! 😎'); do_it = 0; } else { num_rec_init = (last_page-1)*15; page = last_page; }                
             break;
 
         default:
@@ -459,7 +459,7 @@ function table_diagram() {
     let db_sel = table_param.getAttribute('db');
     let table_selected = table_param.getAttribute('table');      
     
-    if ( table_selected === null ) { alert('Please, select a table !'); } 
+    if ( table_selected === null ) { invoke_Alert_Window('Please, select a table ! 😎'); } 
     else {
         Fetch_canvas_data_array('./include/AJAX_php_js/ajax_Sql_Arrays.php?host_numb=' + host_n + '&hostName='+host_sel+'&dbName='+db_sel+'&tblName='+table_selected); 
     }           

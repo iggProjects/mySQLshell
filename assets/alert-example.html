@@ -2,31 +2,34 @@
 <head>
 </script>
    <style>
-      #alert {
+      #my-alert-window {
          display: none;
-         background-color: rgb(252, 219, 219);
-         border: 1px solid green;
+         background-color: #e2e2e2;
+         border: 10px solid rgb(172, 172, 254);
+         border-radius: 10px;
          position: fixed;
-         height: 80px;
+         height: 120px;
          width: 250px;
          left: 40%;
          top: 45%;
          padding: 6px 8px 8px;
          text-align: center;
       }
-      p {
+      #p-alert-msg {
          font-size: 18px;
          color: green;
       }
-      button {
+      .alert-button {
          border-radius: 12px;
-         height: 2rem;
-         padding: 7px;
+         height: 3rem;
+         padding-left: 5px;
+         padding-right: 5px;
          cursor: pointer;
-         border: 2px solid green;
-         background-color: aqua;
+         border: 5px solid white;
+         background-color: rgb(150, 127, 252);
+         color:white;
       }
-      #close {
+      #alert-close {
          position: absolute;
          right: 20px;
          bottom: 10px;
@@ -36,18 +39,20 @@
 <body>
    <h2>Change the color of alert box in Javascript.</h2>
    <h4>Creating custom alert box using <i> vanilla Javascript.</i></h4>
-   <div id = "alert">
-      <p>Welcome to the tutorialsPoint!</p>
-      <button id = "close" onclick = "closeDialog()">Close</button>
+   <div id = "my-alert-window">
+      <p id="p-alert-msg"></p>
+      <button id = "alert-close" class="alert-button" onclick = "close_Alert_Window()">Close</button>
    </div>
-   <button onclick = 'invokeAlert();'>Show Alert Box</button>
+   <button class="alert-button" onclick = 'invoke_Alert_Window();'>Show Alert Box</button>
    <script>
-      var alertDiv = document.getElementById("alert");
-      function invokeAlert() {
-         alertDiv.style.display = "block";
+      // var alertDiv = document.getElementById("my-alert-window");
+      function invoke_Alert_Window() {
+         document.getElementById('p-alert-msg').innerHTML = "Jelouuuu";
+         document.getElementById("my-alert-window").style.display = "block";
       }
-      function closeDialog() {
-         alertDiv.style.display = "none";
+      function close_Alert_Window() {
+         document.getElementById('p-alert-msg').innerHTML = "";
+         document.getElementById("my-alert-window").style.display = "none";
       }
    </script>
 </body>
