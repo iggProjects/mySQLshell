@@ -21,14 +21,11 @@ $cfg_s['Servers'][$i_serv]['user'] = 'inaki2022';
 $cfg_s['Servers'][$i_serv]['password'] = 'Inaki@2022';
 $cfg_s['Servers'][$i_serv]['extension'] = 'mysqli';
 $cfg_s['Servers'][$i_serv]['AllowNoPassword'] = true;
-// $cfg_s['Lang'] = '';
 
 // Bind to the localhost ipv4 address and tcp 
 $cfg_s['Servers'][$i_serv]['host'] = 'POAPMYSQL119.dns-servicio.com:3306';
 $cfg_s['Servers'][$i_serv]['hostShortName'] = 'Areafor DB Server';
 $cfg_s['Servers'][$i_serv]['connect_type'] = 'tcp';
-
-// $dbcharset = 'utf8mb4';
 
 /*
  * Second server
@@ -43,7 +40,6 @@ $cfg_s['Servers'][$i_serv]['user'] = 'root';
 $cfg_s['Servers'][$i_serv]['password'] = '@mysql@';
 $cfg_s['Servers'][$i_serv]['extension'] = 'mysqli';
 $cfg_s['Servers'][$i_serv]['AllowNoPassword'] = false;
-// $cfg_s['Lang'] = '';
 
 // Bind to the localhost ipv4 address and tcp 
 $cfg_s['Servers'][$i_serv]['host'] = '127.0.0.1';
@@ -69,8 +65,6 @@ foreach ( $cfg_s as $server) {
 };
 
 $dbcharset = 'utf8mb4';
-
-
 
 /*
 

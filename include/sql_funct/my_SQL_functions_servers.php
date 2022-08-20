@@ -21,7 +21,7 @@ function try_catch_connect_host($db_host,$db_user,$db_pass,$db_charset,$log_comm
         # mail to inform
         $subject1 = "Connection to host '$db_host' OK | ";
         $cuerpo1 = "Date: " . date('Y-m-d H:i:s') . " | $db_user connect succesfully to '$db_host'";
-        // // mail($mailto,$subject1,$cuerpo1,$cabeceras);
+        // mail($mailto,$subject1,$cuerpo1,$cabeceras);
         # Log file updated
         My_Log_Message ($cuerpo1, $log_comments );
         
@@ -234,7 +234,7 @@ function Show_DB_try_catch($conn_active,$db_user,$showDB_query,$log_comments) {
         # mail param's
         $subject1 = "$db_user, Show Tables query  FAILED";
         $cuerpo1 = "Date: " . date('Y-m-d H:i:s') . " | show tables query FAILED " . "\r\n" . " '$show_DB_query_trim' " . $e->getMessage();
-        mail($mailto,$subject1,$cuerpo1,$cabeceras);
+        // mail($mailto,$subject1,$cuerpo1,$cabeceras);
 
         # print in Log File
         My_Log_Message($cuerpo1, $log_comments);        
@@ -289,7 +289,7 @@ function ShowTables_try_catch($conn_active,$db_name,$db_user,$showtables_query,$
         # mail param's
         $subject1 = "$db_user, Show Tables query in $db_name FAILED";
         $cuerpo1 = "Date: " . date('Y-m-d H:i:s') . " | show tables query FAILED " . "\r\n" . " '$showtables_query_trim' " . $e->getMessage();
-        mail($mailto,$subject1,$cuerpo1,$cabeceras);
+        // mail($mailto,$subject1,$cuerpo1,$cabeceras);
 
         # print in Log File
         My_Log_Message($cuerpo1, $log_comments);        
@@ -342,7 +342,7 @@ function DescribeTables_try_catch($conn_active,$db_name,$db_user,$describetables
         # mail param's
         $subject1 = "$db_user, Show Tables query in $db_name FAILED";
         $cuerpo1 = "Date: " . date('Y-m-d H:i:s') . " | show tables query FAILED " . "\r\n" . " '$describetables_query_trim' " . $e->getMessage();
-        mail($mailto,$subject1,$cuerpo1,$cabeceras);
+        //mail($mailto,$subject1,$cuerpo1,$cabeceras);
 
         # print in Log File
         My_Log_Message($cuerpo1, $log_comments);        
@@ -456,7 +456,7 @@ function DROP_try_catch($conn_active,$db_name,$db_user,$db_table,$droptables_que
         # mail param's
         $subject1 = "$db_user, Drop Tables query in $db_name FAILED";
         $cuerpo1 = "Date: " . date('Y-m-d H:i:s') . " | $db_user drop table query FAILED " . "\r\n" . " '$droptables_query_trim' " . $e->getMessage();
-        mail($mailto,$subject1,$cuerpo1,$cabeceras);
+        //mail($mailto,$subject1,$cuerpo1,$cabeceras);
 
         # print in Log File
         My_Log_Message($cuerpo1, $log_comments);        
@@ -510,7 +510,7 @@ function restoreTable_try_catch($conn_active,$db_name,$db_user,$db_table,$restor
         # mail param's
         $subject1 = "$db_user, restore table query FAILED";
         $cuerpo1 = "Date: " . date('Y-m-d H:i:s') . " | $db_user restore table '$db_table' query FAILED " . "\r\n" . " '$restoreTable_query_trim' " . $e->getMessage();
-        mail($mailto,$subject1,$cuerpo1,$cabeceras);
+        //mail($mailto,$subject1,$cuerpo1,$cabeceras);
 
         # print in Log File
         My_Log_Message($cuerpo1, $log_comments);        
