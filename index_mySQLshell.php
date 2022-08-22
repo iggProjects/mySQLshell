@@ -1,21 +1,21 @@
 <?php
 
-include_once "./include/php_general_funct/my_PHP_functions.php";
-include_once "./include/sql_funct/my_SQL_functions_servers.php";
-include_once "./config/config.servers.php";
+    include_once "./include/php_general_funct/my_PHP_functions.php";
+    include_once "./include/sql_funct/my_SQL_functions_servers.php";
+    include_once "./config/config.servers.php";
 
-# my log files for queries and comments 
-$log_comments_path = "./assets/log-files/log_comments.log";
-$log_queries_path = "./assets/log-files/log_queries.log";
+    # my log files for queries and comments 
+    $log_comments_path = "./assets/log-files/log_comments.log";
+    $log_queries_path = "./assets/log-files/log_queries.log";
 
-# my configuration for redirect errors.log 
-$php_errors_log =  "./assets/log-files/php_errors.log";
-error_reporting(E_ALL);
-ini_set('ignore_repeated_errors',TRUE);
-ini_set('display_errors', FALSE);
-ini_set("log_errors",TRUE);
-ini_set('error_log',$php_errors_log);
-// ini_set('display_errors', 1);
+    # my configuration for redirect errors.log 
+    $php_errors_log =  "./assets/log-files/php_errors.log";
+    error_reporting(E_ALL);
+    ini_set('ignore_repeated_errors',TRUE);
+    ini_set('display_errors', FALSE);
+    ini_set("log_errors",TRUE);
+    ini_set('error_log',$php_errors_log);
+    // ini_set('display_errors', 1);
 
 ?>
 
