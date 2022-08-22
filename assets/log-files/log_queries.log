@@ -1,404 +1,47 @@
-[19-Aug-2022 17:27:40] [Date: 2022-08-19 17:27:40 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
-[19-Aug-2022 17:27:40] [Date: 2022-08-19 17:27:40 |  execute succesfully show tables query
+[22-Aug-2022 09:42:04] [Date: 2022-08-22 09:42:04 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Aug-2022 09:42:04] [Date: 2022-08-22 09:42:04 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Aug-2022 09:42:04] [Date: 2022-08-22 09:42:04 |  execute succesfully show tables query
  'SHOW DATABASES;']
-[19-Aug-2022 17:27:41] [Date: 2022-08-19 17:27:41 | inaki2022 execute succesfully Select query in 
+[22-Aug-2022 09:42:04] [Date: 2022-08-22 09:42:04 | inaki2022 execute succesfully Select query in 
  'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
-[19-Aug-2022 17:27:41] [Date: 2022-08-19 17:27:41 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
-[19-Aug-2022 17:27:41] [Date: 2022-08-19 17:27:41 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
-[19-Aug-2022 17:27:41] [Date: 2022-08-19 17:27:41 |  execute succesfully show tables query
+[22-Aug-2022 09:42:07] [Date: 2022-08-22 09:42:07 | root connect succesfully to '127.0.0.1']
+[22-Aug-2022 09:42:07] [Date: 2022-08-22 09:42:07 | root connect succesfully to '127.0.0.1']
+[22-Aug-2022 09:42:07] [Date: 2022-08-22 09:42:07 |  execute succesfully show tables query
  'SHOW DATABASES;']
-[19-Aug-2022 17:27:41] [Date: 2022-08-19 17:27:41 | inaki2022 execute succesfully Select query in 
- 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
-[19-Aug-2022 17:35:28] [Date: 2022-08-19 17:35:28 | root connect succesfully to '127.0.0.1']
-[19-Aug-2022 17:35:28] [Date: 2022-08-19 17:35:28 | root connect succesfully to '127.0.0.1']
-[19-Aug-2022 17:35:28] [Date: 2022-08-19 17:35:28 |  execute succesfully show tables query
+[22-Aug-2022 09:42:07] [Date: 2022-08-22 09:42:07 | root connect succesfully to '127.0.0.1']
+[22-Aug-2022 09:42:07] [Date: 2022-08-22 09:42:07 |  execute succesfully show tables query
  'SHOW DATABASES;']
-[19-Aug-2022 17:35:28] [Date: 2022-08-19 17:35:28 | root execute succesfully Select query in 
+[22-Aug-2022 09:42:07] [Date: 2022-08-22 09:42:07 | root connect succesfully to '127.0.0.1']
+[22-Aug-2022 09:42:07] [Date: 2022-08-22 09:42:07 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[22-Aug-2022 09:42:09] [Date: 2022-08-22 09:42:09 | root execute succesfully Select query in 
  'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
-[19-Aug-2022 17:35:30] [Date: 2022-08-19 17:35:30 | root connect succesfully to 'penjub']
-[19-Aug-2022 17:35:30] [Date: 2022-08-19 17:35:30 | root execute succesfully show tables query
+[22-Aug-2022 09:42:09] [Date: 2022-08-22 09:42:09 | root connect succesfully to '127.0.0.1']
+[22-Aug-2022 09:42:09] [Date: 2022-08-22 09:42:09 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Aug-2022 09:42:09] [Date: 2022-08-22 09:42:09 | root connect succesfully to '127.0.0.1']
+[22-Aug-2022 09:42:09] [Date: 2022-08-22 09:42:09 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Aug-2022 09:42:11] [Date: 2022-08-22 09:42:11 | root connect succesfully to 'penjub']
+[22-Aug-2022 09:42:11] [Date: 2022-08-22 09:42:11 | root execute succesfully show tables query
  'SHOW TABLES;']
-[19-Aug-2022 17:35:34] [Date: 2022-08-19 17:35:34 | root connect succesfully to 'penjub']
-[19-Aug-2022 17:35:34] [Date: 2022-08-19 17:35:34 | root execute succesfully show tables query
+[22-Aug-2022 09:42:15] [Date: 2022-08-22 09:42:15 | root connect succesfully to 'penjub']
+[22-Aug-2022 09:42:15] [Date: 2022-08-22 09:42:15 | root execute succesfully show tables query
  'describe tbl_ciudad;']
-[19-Aug-2022 17:35:35] [Date: 2022-08-19 17:35:35 | root connect succesfully to 'penjub']
-[19-Aug-2022 17:35:35] [Date: 2022-08-19 17:35:35 | root execute succesfully Sql Query in DB: penjub
+[22-Aug-2022 09:42:16] [Date: 2022-08-22 09:42:16 | root connect succesfully to 'penjub']
+[22-Aug-2022 09:42:16] [Date: 2022-08-22 09:42:16 | root execute succesfully Sql Query in DB: penjub
  'select count(*) as numb from tbl_ciudad']
-[19-Aug-2022 17:35:35] [Date: 2022-08-19 17:35:35 | root execute succesfully Select query in penjub
+[22-Aug-2022 09:42:16] [Date: 2022-08-22 09:42:16 | root execute succesfully Select query in penjub
  'SELECT * FROM tbl_ciudad limit 0,15']
-[20-Aug-2022 14:34:59] [Date: 2022-08-20 14:34:59 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)]
-[20-Aug-2022 14:34:59] [Date: 2022-08-20 14:34:59 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)]
-[20-Aug-2022 14:35:02] [Date: 2022-08-20 14:35:02 |  CONNECT host 'POAPMYSQL119.dns-servicio.com:3306' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'85.86.161.44' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user ''@'85.86.161.44' (using password: NO)]
-[20-Aug-2022 14:35:02] [Date: 2022-08-20 14:35:02 |  CONNECT host 'POAPMYSQL119.dns-servicio.com:3306' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'85.86.161.44' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user ''@'85.86.161.44' (using password: NO)]
-[20-Aug-2022 14:35:03] [Date: 2022-08-20 14:35:03 |  CONNECT host 'POAPMYSQL119.dns-servicio.com:3306' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'85.86.161.44' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user ''@'85.86.161.44' (using password: NO)]
-[20-Aug-2022 14:35:03] [Date: 2022-08-20 14:35:03 |  CONNECT host 'POAPMYSQL119.dns-servicio.com:3306' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'85.86.161.44' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user ''@'85.86.161.44' (using password: NO)]
-[20-Aug-2022 14:35:03] [Date: 2022-08-20 14:35:03 |  CONNECT host 'POAPMYSQL119.dns-servicio.com:3306' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'85.86.161.44' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user ''@'85.86.161.44' (using password: NO)]
-[20-Aug-2022 14:35:03] [Date: 2022-08-20 14:35:03 |  CONNECT host 'POAPMYSQL119.dns-servicio.com:3306' FAIL !SQLSTATE[HY000] [1045] Access denied for user ''@'85.86.161.44' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user ''@'85.86.161.44' (using password: NO)]
-[20-Aug-2022 14:35:14] [Date: 2022-08-20 14:35:14 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)]
-[20-Aug-2022 14:35:14] [Date: 2022-08-20 14:35:14 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)]
-[20-Aug-2022 14:35:14] [Date: 2022-08-20 14:35:14 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)]
-[20-Aug-2022 14:35:14] [Date: 2022-08-20 14:35:14 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)]
-[20-Aug-2022 14:35:14] [Date: 2022-08-20 14:35:14 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)]
-[20-Aug-2022 14:35:14] [Date: 2022-08-20 14:35:14 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)]
-[20-Aug-2022 14:35:14] [Date: 2022-08-20 14:35:14 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)]
-[20-Aug-2022 14:35:14] [Date: 2022-08-20 14:35:14 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)]
-[20-Aug-2022 14:35:14] [Date: 2022-08-20 14:35:14 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)]
-[20-Aug-2022 14:35:14] [Date: 2022-08-20 14:35:14 | root CONNECT host '127.0.0.1' FAIL !SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)]
-[20-Aug-2022 14:35:42] [Date: 2022-08-20 14:35:42 | root connect succesfully to '127.0.0.1']
-[20-Aug-2022 14:35:42] [Date: 2022-08-20 14:35:42 | root connect succesfully to '127.0.0.1']
-[20-Aug-2022 14:35:42] [Date: 2022-08-20 14:35:42 |  execute succesfully show tables query
- 'SHOW DATABASES;']
-[20-Aug-2022 14:35:44] [Date: 2022-08-20 14:35:44 | root execute succesfully Select query in 
- 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
-[20-Aug-2022 15:20:16] [Date: 2022-08-20 15:20:16 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
-[20-Aug-2022 15:20:16] [Date: 2022-08-20 15:20:16 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
-[20-Aug-2022 15:20:17] [Date: 2022-08-20 15:20:17 |  execute succesfully show tables query
- 'SHOW DATABASES;']
-[20-Aug-2022 15:20:17] [Date: 2022-08-20 15:20:17 | inaki2022 execute succesfully Select query in 
- 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
-[20-Aug-2022 15:20:20] [Date: 2022-08-20 15:20:20 | root connect succesfully to '127.0.0.1']
-
-[20-Aug-2022 15:20:20] [Date: 2022-08-20 15:20:20 |  execute succesfully show tables query
- 'SHOW DATABASES;']
-[20-Aug-2022 15:20:20] [Date: 2022-08-20 15:20:20 | root connect succesfully to '127.0.0.1']
-[20-Aug-2022 15:20:20] [Date: 2022-08-20 15:20:20 |  execute succesfully show tables query
- 'SHOW DATABASES;']
-[20-Aug-2022 15:20:20] [Date: 2022-08-20 15:20:20 | root connect succesfully to '127.0.0.1']
-[20-Aug-2022 15:20:20] [Date: 2022-08-20 15:20:20 |  execute succesfully show tables query
- 'SHOW DATABASES;']
-[20-Aug-2022 15:20:20] [Date: 2022-08-20 15:20:20 | root execute succesfully Select query in 
- 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
-[20-Aug-2022 15:20:20] [Date: 2022-08-20 15:20:20 | root connect succesfully to '127.0.0.1']
-[20-Aug-2022 15:20:20] [Date: 2022-08-20 15:20:20 | root execute succesfully Select query in 
- 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
-[20-Aug-2022 15:20:20] [Date: 2022-08-20 15:20:20 | root connect succesfully to '127.0.0.1']
-[20-Aug-2022 15:20:21] [Date: 2022-08-20 15:20:21 | root execute succesfully Select query in 
- 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
-[20-Aug-2022 15:20:22] [Date: 2022-08-20 15:20:22 | root connect succesfully to 'penjub']
-[20-Aug-2022 15:20:22] [Date: 2022-08-20 15:20:22 | root execute succesfully show tables query
- 'SHOW TABLES;']
-[20-Aug-2022 15:20:24] [Date: 2022-08-20 15:20:24 | root connect succesfully to 'penjub']
-[20-Aug-2022 15:20:24] [Date: 2022-08-20 15:20:24 | root execute succesfully show tables query
- 'describe tbl_persona;']
-[20-Aug-2022 15:20:27] [Date: 2022-08-20 15:20:27 | root connect succesfully to 'penjub']
-[20-Aug-2022 15:20:27] [Date: 2022-08-20 15:20:27 | root execute succesfully Sql Query in DB: penjub
- 'select count(*) as numb from tbl_persona']
-[20-Aug-2022 15:20:27] [Date: 2022-08-20 15:20:27 | root execute succesfully Select query in penjub
- 'SELECT * FROM tbl_persona limit 0,15']
-[20-Aug-2022 15:20:28] [Date: 2022-08-20 15:20:28 | root connect succesfully to 'penjub']
-[20-Aug-2022 15:20:28] [Date: 2022-08-20 15:20:28 | root execute succesfully Select query in penjub
- 'SELECT * FROM tbl_persona limit 45,15']
-[20-Aug-2022 15:20:30] [Date: 2022-08-20 15:20:30 | root connect succesfully to 'penjub']
-[20-Aug-2022 15:20:30] [Date: 2022-08-20 15:20:30 | root execute succesfully show tables query
- 'SHOW TABLES;']
-[20-Aug-2022 15:20:30] [Date: 2022-08-20 15:20:30 | root connect succesfully to 'my_lqs_admin']
-[20-Aug-2022 15:20:30] [Date: 2022-08-20 15:20:30 | root execute succesfully Sql Query in DB: my_lqs_admin
- 'SELECT btn_name, comment, query FROM standard_queries']
-[20-Aug-2022 15:20:31] [Date: 2022-08-20 15:20:31 | root connect succesfully to 'penjub']
-[20-Aug-2022 15:20:32] [Date: 2022-08-20 15:20:32 | root execute succesfully Sql Query in DB: penjub
- 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
-[20-Aug-2022 15:20:32] [Date: 2022-08-20 15:20:32 | root execute succesfully Sql Query in DB: penjub
- 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_persona'']
-[20-Aug-2022 15:20:32] [Date: 2022-08-20 15:20:32 | root execute succesfully Sql Query in DB: penjub
- 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND TABLE_NAME = 'tbl_persona'']
-[20-Aug-2022 15:20:32] [Date: 2022-08-20 15:20:32 | root execute succesfully Sql Query in DB: penjub
- 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'penjub' AND REFERENCED_TABLE_NAME = 'tbl_persona'']
-[20-Aug-2022 15:20:44] [Date: 2022-08-20 15:20:44 | root connect succesfully to 'penjub']
-[20-Aug-2022 15:20:45] [Date: 2022-08-20 15:20:45 | root execute succesfully show tables query
- 'describe tbl_persona;']
-[20-Aug-2022 15:20:53] [Date: 2022-08-20 15:20:53 | root connect succesfully to 'employees']
-[20-Aug-2022 15:20:53] [Date: 2022-08-20 15:20:53 | root execute succesfully show tables query
- 'SHOW TABLES;']
-[20-Aug-2022 15:20:57] [Date: 2022-08-20 15:20:57 | root connect succesfully to 'employees']
-[20-Aug-2022 15:20:57] [Date: 2022-08-20 15:20:57 | root execute succesfully show tables query
- 'describe departments;']
-[20-Aug-2022 15:21:01] [Date: 2022-08-20 15:21:01 | root connect succesfully to 'employees']
-[20-Aug-2022 15:21:01] [Date: 2022-08-20 15:21:01 | root execute succesfully Sql Query in DB: employees
- 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA()']
-[20-Aug-2022 15:21:01] [Date: 2022-08-20 15:21:01 | root execute succesfully Sql Query in DB: employees
- 'SELECT TABLE_NAME TBL,COLUMN_NAME COL,CONSTRAINT_NAME IBFK, REFERENCED_TABLE_NAME REF_TBL,REFERENCED_COLUMN_NAME REF_COL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = SCHEMA() limit 0,15']
-[20-Aug-2022 15:21:03] [Date: 2022-08-20 15:21:03 | root connect succesfully to 'employees']
-[20-Aug-2022 15:21:04] [Date: 2022-08-20 15:21:04 | root execute succesfully Sql Query in DB: employees
- 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'departments' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND REFERENCED_TABLE_NAME = 'departments' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND TABLE_NAME = 'departments'']
-[20-Aug-2022 15:21:04] [Date: 2022-08-20 15:21:04 | root execute succesfully Sql Query in DB: employees
- 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'departments'']
-[20-Aug-2022 15:21:04] [Date: 2022-08-20 15:21:04 | root execute succesfully Sql Query in DB: employees
- 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND TABLE_NAME = 'departments'']
-[20-Aug-2022 15:21:04] [Date: 2022-08-20 15:21:04 | root execute succesfully Sql Query in DB: employees
- 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = 'employees' AND REFERENCED_TABLE_NAME = 'departments'']
-[20-Aug-2022 15:22:36] [Date: 2022-08-20 15:22:36 | root connect succesfully to 'employees']
-[20-Aug-2022 15:22:36] [Date: 2022-08-20 15:22:36 | root execute succesfully Sql Query in DB: employees
- 'select count(*) as numb from departments']
-[20-Aug-2022 15:22:36] [Date: 2022-08-20 15:22:36 | root execute succesfully Select query in employees
- 'SELECT * FROM departments limit 0,15']
-[20-Aug-2022 15:22:58] [Date: 2022-08-20 15:22:58 | root connect succesfully to 'employees']
-[20-Aug-2022 15:22:58] [Date: 2022-08-20 15:22:58 | Sql_Query_try_catch: query in employees FAILED !
- 'SELECT * FROM departments where id>9' SQLSTATE[42S22]: Column not found: 1054 Unknown column 'id' in 'where clause']
-[20-Aug-2022 15:23:06] [Date: 2022-08-20 15:23:06 | root connect succesfully to 'employees']
-[20-Aug-2022 15:23:06] [Date: 2022-08-20 15:23:06 | root execute succesfully show tables query
- 'describe departments;']
-[20-Aug-2022 15:23:13] [Date: 2022-08-20 15:23:13 | root connect succesfully to 'employees']
-[20-Aug-2022 15:23:13] [Date: 2022-08-20 15:23:13 | root execute succesfully Sql Query in DB: employees
- 'select count(*) as numb from departments']
-[20-Aug-2022 15:23:13] [Date: 2022-08-20 15:23:13 | root execute succesfully Select query in employees
- 'SELECT * FROM departments limit 0,15']
-[20-Aug-2022 15:23:33] [Date: 2022-08-20 15:23:33 | root connect succesfully to 'employees']
-[20-Aug-2022 15:23:33] [Date: 2022-08-20 15:23:33 | root execute succesfully show tables query
- 'describe departments;']
-[20-Aug-2022 15:23:37] [Date: 2022-08-20 15:23:37 | root connect succesfully to 'employees']
-[20-Aug-2022 15:23:37] [Date: 2022-08-20 15:23:37 | root execute succesfully Sql Query in DB: employees
- 'select count(*) as numb from departments']
-[20-Aug-2022 15:23:37] [Date: 2022-08-20 15:23:37 | root execute succesfully Select query in employees
- 'SELECT * FROM departments limit 0,15']
-[20-Aug-2022 15:23:59] [Date: 2022-08-20 15:23:59 | root connect succesfully to 'employees']
-[20-Aug-2022 15:23:59] [Date: 2022-08-20 15:23:59 | root execute succesfully Sql Query in DB: employees
- 'SELECT * FROM departments where dept_no > 9']
-[20-Aug-2022 15:23:59] [Date: 2022-08-20 15:23:59 | root execute succesfully Sql Query in DB: employees
- 'SELECT * FROM departments where dept_no > 9']
-[20-Aug-2022 15:26:22] [Date: 2022-08-20 15:26:22 | root connect succesfully to 'employees']
-[20-Aug-2022 15:26:22] [Date: 2022-08-20 15:26:22 | root execute succesfully show tables query
- 'describe current_dept_emp;']
-[20-Aug-2022 15:26:25] [Date: 2022-08-20 15:26:25 | root connect succesfully to 'employees']
-[20-Aug-2022 15:26:29] [Date: 2022-08-20 15:26:29 | root execute succesfully Sql Query in DB: employees
- 'select count(*) as numb from current_dept_emp']
-[20-Aug-2022 15:26:31] [Date: 2022-08-20 15:26:31 | root execute succesfully Select query in employees
- 'SELECT * FROM current_dept_emp limit 0,15']
-[20-Aug-2022 15:26:35] [Date: 2022-08-20 15:26:35 | root connect succesfully to 'employees']
-[20-Aug-2022 15:26:36] [Date: 2022-08-20 15:26:36 | root execute succesfully Sql Query in DB: employees
- 'SELECT * FROM current_dept_emp limit 15,15']
-[20-Aug-2022 15:26:41] [Date: 2022-08-20 15:26:41 | root connect succesfully to 'employees']
-[20-Aug-2022 15:26:41] [Date: 2022-08-20 15:26:41 | root execute succesfully show tables query
- 'describe dept_emp_latest_date;']
-[20-Aug-2022 15:26:43] [Date: 2022-08-20 15:26:43 | root connect succesfully to 'employees']
-[20-Aug-2022 15:26:44] [Date: 2022-08-20 15:26:44 | root execute succesfully Sql Query in DB: employees
- 'select count(*) as numb from dept_emp_latest_date']
-[20-Aug-2022 15:26:45] [Date: 2022-08-20 15:26:45 | root execute succesfully Select query in employees
- 'SELECT * FROM dept_emp_latest_date limit 0,15']
-[20-Aug-2022 15:26:51] [Date: 2022-08-20 15:26:51 | root connect succesfully to 'employees']
-[20-Aug-2022 15:26:51] [Date: 2022-08-20 15:26:51 | root execute succesfully show tables query
- 'describe posts;']
-[20-Aug-2022 15:26:52] [Date: 2022-08-20 15:26:52 | root connect succesfully to 'employees']
-[20-Aug-2022 15:26:52] [Date: 2022-08-20 15:26:52 | root execute succesfully show tables query
- 'describe queries;']
-[20-Aug-2022 15:26:54] [Date: 2022-08-20 15:26:54 | root connect succesfully to 'employees']
-[20-Aug-2022 15:26:54] [Date: 2022-08-20 15:26:54 | root execute succesfully Sql Query in DB: employees
- 'select count(*) as numb from queries']
-[20-Aug-2022 15:27:54] [Date: 2022-08-20 15:27:54 | root connect succesfully to 'employees']
-[20-Aug-2022 15:27:54] [Date: 2022-08-20 15:27:54 | root execute succesfully show tables query
- 'describe queries;']
-[20-Aug-2022 15:27:58] [Date: 2022-08-20 15:27:58 | root connect succesfully to 'employees']
-[20-Aug-2022 15:27:58] [Date: 2022-08-20 15:27:58 | root execute succesfully Sql Query in DB: employees
- 'select count(*) as numb from queries']
-[20-Aug-2022 15:27:58] [Date: 2022-08-20 15:27:58 | root execute succesfully Select query in employees
- 'SELECT * FROM queries limit 0,15']
-[20-Aug-2022 15:28:05] [Date: 2022-08-20 15:28:05 | root connect succesfully to 'employees']
-[20-Aug-2022 15:28:05] [Date: 2022-08-20 15:28:05 | root execute succesfully show tables query
- 'describe users;']
-[20-Aug-2022 15:28:07] [Date: 2022-08-20 15:28:07 | root connect succesfully to 'employees']
-[20-Aug-2022 15:28:07] [Date: 2022-08-20 15:28:07 | root execute succesfully Sql Query in DB: employees
- 'SELECT * FROM queries']
-[20-Aug-2022 15:28:07] [Date: 2022-08-20 15:28:07 | root execute succesfully Sql Query in DB: employees
- 'SELECT * FROM queries']
-[20-Aug-2022 15:28:10] [Date: 2022-08-20 15:28:10 | root connect succesfully to 'employees']
-[20-Aug-2022 15:28:10] [Date: 2022-08-20 15:28:10 | root execute succesfully show tables query
- 'describe current_dept_emp;']
-[20-Aug-2022 15:28:24] [Date: 2022-08-20 15:28:24 | root connect succesfully to 'employees']
-[20-Aug-2022 15:28:29] [Date: 2022-08-20 15:28:29 | root execute succesfully Sql Query in DB: employees
- 'select count(*) as numb from current_dept_emp']
-[20-Aug-2022 15:28:31] [Date: 2022-08-20 15:28:31 | root execute succesfully Select query in employees
- 'SELECT * FROM current_dept_emp limit 0,15']
-[20-Aug-2022 15:28:32] [Date: 2022-08-20 15:28:32 | root connect succesfully to 'employees']
-[20-Aug-2022 15:28:32] [Date: 2022-08-20 15:28:32 | root execute succesfully show tables query
- 'describe titles;']
-[20-Aug-2022 15:28:35] [Date: 2022-08-20 15:28:35 | root connect succesfully to 'employees']
-[20-Aug-2022 15:28:35] [Date: 2022-08-20 15:28:35 | root execute succesfully show tables query
- 'describe titles;']
-[20-Aug-2022 15:28:36] [Date: 2022-08-20 15:28:36 | root connect succesfully to 'employees']
-[20-Aug-2022 15:28:36] [Date: 2022-08-20 15:28:36 | root execute succesfully show tables query
- 'describe users;']
-[20-Aug-2022 15:28:42] [Date: 2022-08-20 15:28:42 | root connect succesfully to 'employees']
-[20-Aug-2022 15:28:42] [Date: 2022-08-20 15:28:42 | root execute succesfully Sql Query in DB: employees
- 'select count(*) as numb from users']
-[20-Aug-2022 15:28:42] [Date: 2022-08-20 15:28:42 | root execute succesfully Select query in employees
- 'SELECT * FROM users limit 0,15']
-[20-Aug-2022 15:28:45] [Date: 2022-08-20 15:28:45 | root connect succesfully to 'employees']
-[20-Aug-2022 15:28:45] [Date: 2022-08-20 15:28:45 | root execute succesfully show tables query
- 'describe posts;']
-[20-Aug-2022 15:28:46] [Date: 2022-08-20 15:28:46 | root connect succesfully to 'employees']
-[20-Aug-2022 15:28:46] [Date: 2022-08-20 15:28:46 | root execute succesfully Sql Query in DB: employees
- 'select count(*) as numb from posts']
-[20-Aug-2022 15:28:46] [Date: 2022-08-20 15:28:46 | root execute succesfully Select query in employees
- 'SELECT * FROM posts limit 0,15']
-[20-Aug-2022 15:28:49] [Date: 2022-08-20 15:28:49 | root connect succesfully to 'employees']
-[20-Aug-2022 15:28:49] [Date: 2022-08-20 15:28:49 | root execute succesfully show tables query
- 'describe dept_manager;']
-[20-Aug-2022 15:28:50] [Date: 2022-08-20 15:28:50 | root connect succesfully to 'employees']
-[20-Aug-2022 15:28:50] [Date: 2022-08-20 15:28:50 | root execute succesfully Sql Query in DB: employees
- 'select count(*) as numb from dept_manager']
-[20-Aug-2022 15:28:50] [Date: 2022-08-20 15:28:50 | root execute succesfully Select query in employees
- 'SELECT * FROM dept_manager limit 0,15']
-[20-Aug-2022 15:28:52] [Date: 2022-08-20 15:28:52 | root connect succesfully to 'employees']
-[20-Aug-2022 15:28:52] [Date: 2022-08-20 15:28:52 | root execute succesfully show tables query
- 'describe dept_emp_latest_date;']
-[20-Aug-2022 15:28:54] [Date: 2022-08-20 15:28:54 | root connect succesfully to 'employees']
-[20-Aug-2022 15:28:54] [Date: 2022-08-20 15:28:54 | root execute succesfully Sql Query in DB: employees
- 'select count(*) as numb from dept_emp_latest_date']
-[20-Aug-2022 15:28:55] [Date: 2022-08-20 15:28:55 | root execute succesfully Select query in employees
- 'SELECT * FROM dept_emp_latest_date limit 0,15']
-[20-Aug-2022 17:28:14] [Date: 2022-08-20 17:28:14 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
-[20-Aug-2022 17:28:14] [Date: 2022-08-20 17:28:14 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
-[20-Aug-2022 17:28:14] [Date: 2022-08-20 17:28:14 |  execute succesfully show tables query
- 'SHOW DATABASES;']
-[20-Aug-2022 17:28:14] [Date: 2022-08-20 17:28:14 | inaki2022 execute succesfully Select query in 
- 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
-[20-Aug-2022 17:28:17] [Date: 2022-08-20 17:28:17 | inaki2022 connect succesfully to '8661316_laninaki22']
-[20-Aug-2022 17:28:17] [Date: 2022-08-20 17:28:17 | inaki2022 execute succesfully show tables query
- 'SHOW TABLES;']
-[20-Aug-2022 17:28:19] [Date: 2022-08-20 17:28:19 | root connect succesfully to 'my_lqs_admin']
-[20-Aug-2022 17:28:19] [Date: 2022-08-20 17:28:19 | root execute succesfully Sql Query in DB: my_lqs_admin
- 'SELECT btn_name, comment, query FROM standard_queries']
-[20-Aug-2022 17:28:19] [Date: 2022-08-20 17:28:19 | inaki2022 connect succesfully to '8661316_laninaki22']
-[20-Aug-2022 17:28:19] [Date: 2022-08-20 17:28:19 | inaki2022 execute succesfully show tables query
- 'SHOW TABLES;']
-[20-Aug-2022 17:28:23] [Date: 2022-08-20 17:28:23 | inaki2022 connect succesfully to '8661316_laninaki22']
-[20-Aug-2022 17:28:23] [Date: 2022-08-20 17:28:23 | inaki2022 execute succesfully show tables query
- 'describe tbl_users;']
-[20-Aug-2022 17:28:25] [Date: 2022-08-20 17:28:25 | inaki2022 connect succesfully to '8661316_laninaki22']
-[20-Aug-2022 17:28:25] [Date: 2022-08-20 17:28:25 | inaki2022 execute succesfully Sql Query in DB: 8661316_laninaki22
- 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_users' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = '8661316_laninaki22' AND REFERENCED_TABLE_NAME = 'tbl_users' UNION SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = '8661316_laninaki22' AND TABLE_NAME = 'tbl_users'']
-[20-Aug-2022 17:28:25] [Date: 2022-08-20 17:28:25 | inaki2022 execute succesfully Sql Query in DB: 8661316_laninaki22
- 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, ORDINAL_POSITION REF_COL, DATA_TYPE REF_TBL FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_NAME = 'tbl_users'']
-[20-Aug-2022 17:28:25] [Date: 2022-08-20 17:28:25 | inaki2022 execute succesfully Sql Query in DB: 8661316_laninaki22
- 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = '8661316_laninaki22' AND TABLE_NAME = 'tbl_users'']
-[20-Aug-2022 17:28:25] [Date: 2022-08-20 17:28:25 | inaki2022 execute succesfully Sql Query in DB: 8661316_laninaki22
- 'SELECT TABLE_NAME TBL,COLUMN_NAME COL, REFERENCED_COLUMN_NAME REF_COL, REFERENCED_TABLE_NAME REF_TBL FROM INFORMATION_SCHEMA.KEY_COLUMN_USAGE WHERE REFERENCED_TABLE_SCHEMA = '8661316_laninaki22' AND REFERENCED_TABLE_NAME = 'tbl_users'']
-[20-Aug-2022 17:42:51] [Date: 2022-08-20 17:42:51 | root connect succesfully to '127.0.0.1']
-[20-Aug-2022 17:42:51] [Date: 2022-08-20 17:42:51 | root connect succesfully to '127.0.0.1']
-[20-Aug-2022 17:42:51] [Date: 2022-08-20 17:42:51 |  execute succesfully show tables query
- 'SHOW DATABASES;']
-[20-Aug-2022 17:42:51] [Date: 2022-08-20 17:42:51 | root execute succesfully Select query in 
- 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
-[20-Aug-2022 17:44:55] [Date: 2022-08-20 17:44:55 | root connect succesfully to '127.0.0.1']
-[20-Aug-2022 17:44:55] [Date: 2022-08-20 17:44:55 | root connect succesfully to '127.0.0.1']
-[20-Aug-2022 17:44:55] [Date: 2022-08-20 17:44:55 |  execute succesfully show tables query
- 'SHOW DATABASES;']
-[20-Aug-2022 17:44:55] [Date: 2022-08-20 17:44:55 | root execute succesfully Select query in 
- 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
-[20-Aug-2022 17:46:42] [Date: 2022-08-20 17:46:42 | root connect succesfully to '127.0.0.1']
-
-[20-Aug-2022 17:46:42] [Date: 2022-08-20 17:46:42 |  execute succesfully show tables query
- 'SHOW DATABASES;']
-[20-Aug-2022 17:46:42] [Date: 2022-08-20 17:46:42 | root execute succesfully Select query in 
- 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
-[20-Aug-2022 17:46:45] [Date: 2022-08-20 17:46:45 | root connect succesfully to 'employees']
-[20-Aug-2022 17:46:45] [Date: 2022-08-20 17:46:45 | root execute succesfully show tables query
- 'SHOW TABLES;']
-[20-Aug-2022 17:47:29] [Date: 2022-08-20 17:47:29 | root connect succesfully to '127.0.0.1']
-[20-Aug-2022 17:47:29] [Date: 2022-08-20 17:47:29 | root connect succesfully to '127.0.0.1']
-[20-Aug-2022 17:47:29] [Date: 2022-08-20 17:47:29 |  execute succesfully show tables query
- 'SHOW DATABASES;']
-[20-Aug-2022 17:47:29] [Date: 2022-08-20 17:47:29 | root execute succesfully Select query in 
- 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
-[20-Aug-2022 17:47:31] [Date: 2022-08-20 17:47:31 | root connect succesfully to 'employees']
-[20-Aug-2022 17:47:31] [Date: 2022-08-20 17:47:31 | root execute succesfully show tables query
- 'SHOW TABLES;']
-[20-Aug-2022 17:48:31] [Date: 2022-08-20 17:48:31 | root connect succesfully to '127.0.0.1'][20-Aug-2022 17:48:31] [Date: 2022-08-20 17:48:31 | root connect succesfully to '127.0.0.1']
-
-[20-Aug-2022 17:48:31] [Date: 2022-08-20 17:48:31 |  execute succesfully show tables query
- 'SHOW DATABASES;']
-[20-Aug-2022 17:48:31] [Date: 2022-08-20 17:48:31 | root execute succesfully Select query in 
- 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
-[20-Aug-2022 17:49:54] [Date: 2022-08-20 17:49:54 | root connect succesfully to '127.0.0.1']
-[20-Aug-2022 17:49:54] [Date: 2022-08-20 17:49:54 | root connect succesfully to '127.0.0.1']
-[20-Aug-2022 17:49:54] [Date: 2022-08-20 17:49:54 |  execute succesfully show tables query
- 'SHOW DATABASES;']
-[20-Aug-2022 17:49:54] [Date: 2022-08-20 17:49:54 | root execute succesfully Select query in 
- 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
-[20-Aug-2022 17:51:35] [Date: 2022-08-20 17:51:35 | root connect succesfully to '127.0.0.1']
-[20-Aug-2022 17:51:35] [Date: 2022-08-20 17:51:35 | root connect succesfully to '127.0.0.1']
-[20-Aug-2022 17:51:35] [Date: 2022-08-20 17:51:35 |  execute succesfully show tables query
- 'SHOW DATABASES;']
-[20-Aug-2022 17:51:35] [Date: 2022-08-20 17:51:35 | root execute succesfully Select query in 
- 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
-[20-Aug-2022 17:51:36] [Date: 2022-08-20 17:51:36 | root connect succesfully to 'penjub']
-[20-Aug-2022 17:51:36] [Date: 2022-08-20 17:51:36 | root execute succesfully show tables query
- 'SHOW TABLES;']
-[20-Aug-2022 17:52:25] [Date: 2022-08-20 17:52:25 | root connect succesfully to '127.0.0.1']
-[20-Aug-2022 17:52:25] [Date: 2022-08-20 17:52:25 | root connect succesfully to '127.0.0.1']
-[20-Aug-2022 17:52:25] [Date: 2022-08-20 17:52:25 |  execute succesfully show tables query
- 'SHOW DATABASES;']
-[20-Aug-2022 17:52:25] [Date: 2022-08-20 17:52:25 | root execute succesfully Select query in 
- 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
-[20-Aug-2022 17:53:30] [Date: 2022-08-20 17:53:30 | root connect succesfully to '127.0.0.1']
-[20-Aug-2022 17:53:30] [Date: 2022-08-20 17:53:30 | root connect succesfully to '127.0.0.1']
-[20-Aug-2022 17:53:30] [Date: 2022-08-20 17:53:30 |  execute succesfully show tables query
- 'SHOW DATABASES;']
-[20-Aug-2022 17:53:30] [Date: 2022-08-20 17:53:30 | root execute succesfully Select query in 
- 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
-[20-Aug-2022 17:53:32] [Date: 2022-08-20 17:53:32 | root connect succesfully to 'employees']
-[20-Aug-2022 17:53:32] [Date: 2022-08-20 17:53:32 | root execute succesfully show tables query
- 'SHOW TABLES;']
-[20-Aug-2022 17:54:40] [Date: 2022-08-20 17:54:40 | root connect succesfully to '127.0.0.1']
-[20-Aug-2022 17:54:40] [Date: 2022-08-20 17:54:40 | root connect succesfully to '127.0.0.1']
-[20-Aug-2022 17:54:40] [Date: 2022-08-20 17:54:40 |  execute succesfully show tables query
- 'SHOW DATABASES;']
-[20-Aug-2022 17:54:40] [Date: 2022-08-20 17:54:40 | root execute succesfully Select query in 
- 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
-[20-Aug-2022 17:54:41] [Date: 2022-08-20 17:54:41 | root connect succesfully to 'mvc_example']
-[20-Aug-2022 17:54:41] [Date: 2022-08-20 17:54:41 | root execute succesfully show tables query
- 'SHOW TABLES;']
-[20-Aug-2022 18:03:05] [Date: 2022-08-20 18:03:05 | root connect succesfully to '127.0.0.1']
-[20-Aug-2022 18:03:05] [Date: 2022-08-20 18:03:05 | root connect succesfully to '127.0.0.1']
-[20-Aug-2022 18:03:05] [Date: 2022-08-20 18:03:05 |  execute succesfully show tables query
- 'SHOW DATABASES;']
-[20-Aug-2022 18:03:05] [Date: 2022-08-20 18:03:05 | root execute succesfully Select query in 
- 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
-[20-Aug-2022 18:03:08] [Date: 2022-08-20 18:03:08 | root connect succesfully to 'penjub']
-[20-Aug-2022 18:03:08] [Date: 2022-08-20 18:03:08 | root execute succesfully show tables query
- 'SHOW TABLES;']
-[20-Aug-2022 18:03:11] [Date: 2022-08-20 18:03:11 | root connect succesfully to 'my_lqs_admin']
-[20-Aug-2022 18:03:11] [Date: 2022-08-20 18:03:11 | root execute succesfully Sql Query in DB: my_lqs_admin
- 'SELECT btn_name, comment, query FROM standard_queries']
-[20-Aug-2022 18:03:11] [Date: 2022-08-20 18:03:11 | root connect succesfully to 'penjub']
-[20-Aug-2022 18:03:11] [Date: 2022-08-20 18:03:11 | root execute succesfully show tables query
- 'SHOW TABLES;']
-[20-Aug-2022 18:03:18] [Date: 2022-08-20 18:03:18 | root connect succesfully to 'penjub']
-[20-Aug-2022 18:03:18] [Date: 2022-08-20 18:03:18 | root execute succesfully show tables query
- 'describe tbl_ciudad;']
-[20-Aug-2022 18:03:19] [Date: 2022-08-20 18:03:19 | root connect succesfully to 'penjub']
-[20-Aug-2022 18:03:19] [Date: 2022-08-20 18:03:19 | root execute succesfully Sql Query in DB: penjub
- 'select count(*) as numb from tbl_ciudad']
-[20-Aug-2022 18:03:19] [Date: 2022-08-20 18:03:19 | root execute succesfully Select query in penjub
- 'SELECT * FROM tbl_ciudad limit 0,15']
-[20-Aug-2022 18:03:20] [Date: 2022-08-20 18:03:20 | root connect succesfully to 'penjub']
-[20-Aug-2022 18:03:20] [Date: 2022-08-20 18:03:20 | root execute succesfully Sql Query in DB: penjub
+[22-Aug-2022 09:42:18] [Date: 2022-08-22 09:42:18 | root connect succesfully to 'penjub']
+[22-Aug-2022 09:42:18] [Date: 2022-08-22 09:42:18 | root execute succesfully Select query in penjub
  'SELECT * FROM tbl_ciudad limit 15,15']
-[20-Aug-2022 18:03:27] [Date: 2022-08-20 18:03:27 | root connect succesfully to 'penjub']
-[20-Aug-2022 18:03:27] [Date: 2022-08-20 18:03:27 | root execute succesfully Sql Query in DB: penjub
- 'SELECT * FROM tbl_ciudad limit 0,15']
-[20-Aug-2022 18:03:31] [Date: 2022-08-20 18:03:31 | root connect succesfully to 'penjub']
-[20-Aug-2022 18:03:31] [Date: 2022-08-20 18:03:31 | root execute succesfully Sql Query in DB: penjub
- 'SELECT * FROM tbl_ciudad limit 15,15']
-[20-Aug-2022 18:03:36] [Date: 2022-08-20 18:03:36 | root connect succesfully to 'penjub']
-[20-Aug-2022 18:03:36] [Date: 2022-08-20 18:03:36 | root execute succesfully show tables query
- 'describe tbl_ciudad;']
-[20-Aug-2022 18:03:41] [Date: 2022-08-20 18:03:41 | root connect succesfully to 'mvc_example']
-[20-Aug-2022 18:03:41] [Date: 2022-08-20 18:03:41 | root execute succesfully show tables query
+[22-Aug-2022 09:42:19] [Date: 2022-08-22 09:42:19 | root connect succesfully to 'penjub']
+[22-Aug-2022 09:42:19] [Date: 2022-08-22 09:42:19 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT * FROM tbl_ciudad']
+[22-Aug-2022 09:42:35] [Date: 2022-08-22 09:42:35 | root connect succesfully to 'my_lqs_admin']
+[22-Aug-2022 09:42:35] [Date: 2022-08-22 09:42:35 | root connect succesfully to 'penjub']
+[22-Aug-2022 09:42:35] [Date: 2022-08-22 09:42:35 | root execute succesfully Sql Query in DB: my_lqs_admin
+ 'SELECT btn_name, comment, query FROM standard_queries']
+[22-Aug-2022 09:42:35] [Date: 2022-08-22 09:42:35 | root execute succesfully show tables query
  'SHOW TABLES;']
-[20-Aug-2022 18:04:01] [Date: 2022-08-20 18:04:01 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306'][20-Aug-2022 18:04:01] [Date: 2022-08-20 18:04:01 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
-
-[20-Aug-2022 18:04:01] [Date: 2022-08-20 18:04:01 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306'][20-Aug-2022 18:04:01] [Date: 2022-08-20 18:04:01 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
-
-[20-Aug-2022 18:04:01] [Date: 2022-08-20 18:04:01 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
-[20-Aug-2022 18:04:01] [Date: 2022-08-20 18:04:01 |  execute succesfully show tables query
- 'SHOW DATABASES;']
-[20-Aug-2022 18:04:01] [Date: 2022-08-20 18:04:01 |  execute succesfully show tables query
- 'SHOW DATABASES;']
-[20-Aug-2022 18:04:01] [Date: 2022-08-20 18:04:01 |  execute succesfully show tables query
- 'SHOW DATABASES;']
-[20-Aug-2022 18:04:01] [Date: 2022-08-20 18:04:01 | inaki2022 execute succesfully Select query in 
- 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
-[20-Aug-2022 18:04:01] [Date: 2022-08-20 18:04:01 | inaki2022 execute succesfully Select query in 
- 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
-[20-Aug-2022 18:04:01] [Date: 2022-08-20 18:04:01 | inaki2022 execute succesfully Select query in 
- 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
