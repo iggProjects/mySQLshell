@@ -56,7 +56,7 @@ function doButtonAction(){
 
         case 'btn-insert':
             if ( table_param.getAttribute('table') == null ) 
-                { invoke_Alert_Window( 'please, select a table' ); } 
+                { invoke_Alert_Window( 'please, select a table ! 😎' ); } 
             else { // write insert format in tag #sql-query-area
                 var insertMask = '';
                 insertMask = 'INSERT INTO ' + table_param.getAttribute('table') + ' \n\n';
@@ -170,7 +170,7 @@ function doButtonAction(){
             case 'btn-backup':
                 // alert('this.id: ' + this.id);
                 if ( table_param.getAttribute('db') == null  ) 
-                    { invoke_Alert_Window( 'please, select DB, or, if you wish, add the list of tables you want to back up 😎' ); } 
+                    { invoke_Alert_Window( 'please, select DB, or, if you wish, ' + '\n\n' + 'add the list of tables you want to back up 😎' ); } 
                 else {
                     
                     // Hide 'display_sql_result'
@@ -206,7 +206,7 @@ function doButtonAction(){
             case 'btn-restore':
                 // alert('this.id: ' + this.id);
                 if ( table_param.getAttribute('db') == null  ) 
-                    { invoke_Alert_Window( 'please, select DB, or, if you wish, add the list of tables you want to back up 😎' ); } 
+                    { invoke_Alert_Window( 'please, select DB, or, if you wish,' + '\n\n' + 'add the list of tables you want to back up 😎' ); } 
                 else {
                     
                     // Hide 'display_sql_result'

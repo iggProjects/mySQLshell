@@ -45,3 +45,50 @@
  'SELECT btn_name, comment, query FROM standard_queries']
 [22-Aug-2022 09:42:35] [Date: 2022-08-22 09:42:35 | root execute succesfully show tables query
  'SHOW TABLES;']
+[22-Aug-2022 10:02:21] [Date: 2022-08-22 10:02:21 | root connect succesfully to '127.0.0.1']
+[22-Aug-2022 10:02:21] [Date: 2022-08-22 10:02:21 | root connect succesfully to '127.0.0.1']
+[22-Aug-2022 10:02:21] [Date: 2022-08-22 10:02:21 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[22-Aug-2022 10:02:21] [Date: 2022-08-22 10:02:21 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Aug-2022 10:02:23] [Date: 2022-08-22 10:02:23 | root connect succesfully to 'employees']
+[22-Aug-2022 10:02:23] [Date: 2022-08-22 10:02:23 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[22-Aug-2022 10:02:29] [Date: 2022-08-22 10:02:29 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Aug-2022 10:02:29] [Date: 2022-08-22 10:02:29 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Aug-2022 10:02:29] [Date: 2022-08-22 10:02:29 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[22-Aug-2022 10:02:29] [Date: 2022-08-22 10:02:29 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Aug-2022 10:02:29] [Date: 2022-08-22 10:02:29 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Aug-2022 10:02:29] [Date: 2022-08-22 10:02:29 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Aug-2022 10:02:29] [Date: 2022-08-22 10:02:29 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[22-Aug-2022 10:02:29] [Date: 2022-08-22 10:02:29 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Aug-2022 10:02:29] [Date: 2022-08-22 10:02:29 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Aug-2022 10:02:29] [Date: 2022-08-22 10:02:29 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Aug-2022 10:02:29] [Date: 2022-08-22 10:02:29 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[22-Aug-2022 10:02:30] [Date: 2022-08-22 10:02:30 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Aug-2022 10:02:54] [Date: 2022-08-22 10:02:54 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Aug-2022 10:02:54] [Date: 2022-08-22 10:02:54 | inaki2022 connect succesfully to 'POAPMYSQL119.dns-servicio.com:3306']
+[22-Aug-2022 10:02:54] [Date: 2022-08-22 10:02:54 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[22-Aug-2022 10:02:54] [Date: 2022-08-22 10:02:54 | inaki2022 execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[22-Aug-2022 10:03:08] [Date: 2022-08-22 10:03:08 | inaki2022 connect succesfully to '8661316_laninaki22']
+[22-Aug-2022 10:03:08] [Date: 2022-08-22 10:03:08 | inaki2022 execute succesfully show tables query
+ 'SHOW TABLES;']
+[22-Aug-2022 10:03:12] [Date: 2022-08-22 10:03:12 | inaki2022 connect succesfully to '8661316_laninaki22']
+[22-Aug-2022 10:03:12] [Date: 2022-08-22 10:03:12 | inaki2022 execute succesfully show tables query
+ 'describe tbl_users;']
+[22-Aug-2022 10:03:13] [Date: 2022-08-22 10:03:13 | inaki2022 connect succesfully to '8661316_laninaki22']
+[22-Aug-2022 10:03:13] [Date: 2022-08-22 10:03:13 | inaki2022 execute succesfully show tables query
+ 'describe tbl_users;']
+[22-Aug-2022 10:03:14] [Date: 2022-08-22 10:03:14 | inaki2022 connect succesfully to '8661316_laninaki22']
+[22-Aug-2022 10:03:14] [Date: 2022-08-22 10:03:14 | inaki2022 execute succesfully Sql Query in DB: 8661316_laninaki22
+ 'select count(*) as numb from tbl_users']
+[22-Aug-2022 10:03:14] [Date: 2022-08-22 10:03:14 | inaki2022 execute succesfully Select query in 8661316_laninaki22
+ 'SELECT * FROM tbl_users limit 0,15']
