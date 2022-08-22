@@ -108,9 +108,7 @@
                                         </select> 
                                         <select class='queries-List' name='fav-queries-List' id='fav-queriesList'>  
                                             <option class='fav-queryOpt'  value='' selected>Sel Fav Query</option>              
-                                        </select> 
-        
-                                        <!-- <button id='tbls-View' onclick='table_diagram()'>Diagram</button>  -->
+                                        </select>                                       
                                     </div>
 
                                 </div>
@@ -148,8 +146,7 @@
                         
             document.getElementById('hostNavIzq').innerHTML = hostSelected.value;            
 
-            let host_n = event.target.selectedOptions[0].getAttribute("host_numb");    
-            // alert('host bumber ' + host_n); 
+            let host_n = event.target.selectedOptions[0].getAttribute("host_numb");                
 
             // clear html of 'der-console associated tag's'
             clearDerConsoleAreas();       
@@ -164,7 +161,7 @@
                 
                 // call ajax function to display DB-info area in div_nav_izq
                 php_sql_url = './include/AJAX_php_js/ajax_Display_div_nav_izq.php?host_numb=' + host_n + '&hostName='+hostSelected.value;
-                //console.log('ajax php=> ' + php_sql_url); 
+                
                 var host_array = <?php echo json_encode($host_serv); ?>;
 
                 // select display-result-nav-title values
