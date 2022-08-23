@@ -18,6 +18,8 @@ IÑAKI - PENDIENTE VERSION 1.0 AL 20-08-2022
   - caso str_contains (php 8) buscar el equivalente en php 7.4
     (https://www.codegrepper.com/code-examples/php/str_contains+php+7)
 
+- foavourites button    
+
 - Caso count(*) when Select comes from sql_quey_area 
   - substitute string SELECT "fields list" FROM ..... with SELECT count(*) FROM ..... 
 
