@@ -18,7 +18,7 @@ IÑAKI - PENDIENTE VERSION 1.0 AL 20-08-2022
   - caso str_contains (php 8) buscar el equivalente en php 7.4
     (https://www.codegrepper.com/code-examples/php/str_contains+php+7)
 
-- foavourites button    
+- favourites button    
 
 - Caso count(*) when Select comes from sql_quey_area 
   - substitute string SELECT "fields list" FROM ..... with SELECT count(*) FROM ..... 
@@ -29,6 +29,42 @@ IÑAKI - PENDIENTE VERSION 1.0 AL 20-08-2022
 - FILTERS FOR QUERIES 
   - FILTROS: check for type cols, cases 'BLOB' (example: mediumblob in 'tbl_arch_imagen_persona' in penjub)
   - CASE sql query: filter scripts, some chars.....  
+    - HTML entities
+      - https://www.w3schools.com/html/html_entities.asp
+      - https://www.freeformatter.com/html-entities.html
+
+    - addslashes
+      - https://www.php.net/manual/es/function.addslashes.php
+      - https://www.w3schools.com/php/phptryit.asp?filename=tryphp_func_string_addslashes  
+
+    - https://stackoverflow.com/questions/895659/how-do-i-block-or-restrict-special-characters-from-input-fields-with-jquery
+    - https://stackoverflow.com/questions/4374822/remove-all-special-characters-with-regexp
+    - https://social.msdn.microsoft.com/Forums/en-US/bf1bd253-04fb-40b6-bb2f-20b97578f812/how-to-filter-special-character-ltgt-in-text-field-input-by-user?forum=aspwebforms
+
+        I've done this test in a console app, because its more easy to me to handling your characters
+
+        1    // crate a array of unwanted characters
+        2    // for simply use a array of string
+        3    string[] exp = new string[] { "<", "/", "," };
+        4    
+        5    // do it in a console-app because i cant handle all
+        6    // the special characters from the vietnames language
+        7    string input = Console.ReadLine();
+        8    
+        9    // iterate through the array and clean them up
+        10   foreach (string c in exp)
+        11   {
+        12   	input = Regex.Replace(input, c, "");
+        13   }
+        14   
+        15   // show the result
+        16   Console.WriteLine(input);
+        17   // wait for end
+        18   Console.ReadLine();
+
+
+
+
 
 - progress bar for large amount of data for some query
   - https://stackoverflow.com/questions/15298071/progress-bar-with-mysql-query-with-php
