@@ -7,6 +7,11 @@ IÑAKI - DARREN ( pendiente para version 1.0 )
 
 ********************************************************************
 
+(
+  GITHUB "upload a project to github"
+  https://stackoverflow.com/questions/12799719/how-to-upload-a-project-to-github
+)
+
 IÑAKI - PENDIENTE VERSION 1.0 AL 20-08-2022
 
 - README 
