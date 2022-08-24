@@ -41,3 +41,11 @@
 [24-Aug-2022 10:38:12 Europe/Berlin] PHP Warning:  Undefined array key "totRecords" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 44
 [24-Aug-2022 10:38:12 Europe/Berlin] PHP Warning:  Undefined array key "tableList" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 64
 [24-Aug-2022 10:38:12 Europe/Berlin] PHP Warning:  Undefined array key "tableList" in C:\xampp\htdocs\curso-backend-areafor-server\myLQSadmin\include\AJAX_php_js\ajax_Sql_Query.php on line 66
+[24-Aug-2022 10:48:10 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\mySQLshell\include\AJAX_php_js\ajax_List_DB.php on line 30
+[24-Aug-2022 10:48:10 Europe/Berlin] PHP Warning:  Undefined variable $db_user in C:\xampp\htdocs\mySQLshell\include\AJAX_php_js\ajax_List_DB.php on line 45
+[24-Aug-2022 10:48:12 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\mySQLshell\include\AJAX_php_js\ajax_List_DB.php on line 30
+[24-Aug-2022 10:48:12 Europe/Berlin] PHP Warning:  Undefined variable $db_user in C:\xampp\htdocs\mySQLshell\include\AJAX_php_js\ajax_List_DB.php on line 45
+[24-Aug-2022 10:48:12 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\mySQLshell\include\AJAX_php_js\ajax_List_DB.php on line 30
+[24-Aug-2022 10:48:12 Europe/Berlin] PHP Warning:  Undefined variable $db_user in C:\xampp\htdocs\mySQLshell\include\AJAX_php_js\ajax_List_DB.php on line 45
+[24-Aug-2022 10:48:12 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\mySQLshell\include\AJAX_php_js\ajax_List_DB.php on line 30
+[24-Aug-2022 10:48:12 Europe/Berlin] PHP Warning:  Undefined variable $db_user in C:\xampp\htdocs\mySQLshell\include\AJAX_php_js\ajax_List_DB.php on line 45
