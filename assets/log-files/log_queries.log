@@ -92,3 +92,32 @@
  'select count(*) as numb from tbl_users']
 [22-Aug-2022 10:03:14] [Date: 2022-08-22 10:03:14 | inaki2022 execute succesfully Select query in 8661316_laninaki22
  'SELECT * FROM tbl_users limit 0,15']
+[24-Aug-2022 10:37:33] [Date: 2022-08-24 10:37:33 | root connect succesfully to '127.0.0.1']
+[24-Aug-2022 10:37:33] [Date: 2022-08-24 10:37:33 | root connect succesfully to '127.0.0.1']
+[24-Aug-2022 10:37:33] [Date: 2022-08-24 10:37:33 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[24-Aug-2022 10:37:34] [Date: 2022-08-24 10:37:34 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
+[24-Aug-2022 10:37:36] [Date: 2022-08-24 10:37:36 | root connect succesfully to 'penjub']
+[24-Aug-2022 10:37:36] [Date: 2022-08-24 10:37:36 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[24-Aug-2022 10:37:41] [Date: 2022-08-24 10:37:41 | root connect succesfully to 'penjub']
+[24-Aug-2022 10:37:41] [Date: 2022-08-24 10:37:41 | root execute succesfully show tables query
+ 'describe tbl_ciudad;']
+[24-Aug-2022 10:37:46] [Date: 2022-08-24 10:37:46 | root connect succesfully to 'penjub']
+[24-Aug-2022 10:37:46] [Date: 2022-08-24 10:37:46 | root execute succesfully Sql Query in DB: penjub
+ 'select count(*) as numb from tbl_ciudad']
+[24-Aug-2022 10:37:46] [Date: 2022-08-24 10:37:46 | root execute succesfully Select query in penjub
+ 'SELECT * FROM tbl_ciudad limit 0,15']
+[24-Aug-2022 10:37:49] [Date: 2022-08-24 10:37:49 | root connect succesfully to 'penjub']
+[24-Aug-2022 10:37:49] [Date: 2022-08-24 10:37:49 | root execute succesfully Sql Query in DB: penjub
+ 'SELECT * FROM tbl_ciudad']
+[24-Aug-2022 10:37:59] [Date: 2022-08-24 10:37:59 | root connect succesfully to 'mvc_example']
+[24-Aug-2022 10:37:59] [Date: 2022-08-24 10:37:59 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[24-Aug-2022 10:38:02] [Date: 2022-08-24 10:38:02 | root connect succesfully to 'penjub']
+[24-Aug-2022 10:38:02] [Date: 2022-08-24 10:38:02 | root execute succesfully show tables query
+ 'SHOW TABLES;']
+[24-Aug-2022 10:38:04] [Date: 2022-08-24 10:38:04 | root connect succesfully to 'mylqsadmin_db']
+[24-Aug-2022 10:38:04] [Date: 2022-08-24 10:38:04 | root execute succesfully show tables query
+ 'SHOW TABLES;']

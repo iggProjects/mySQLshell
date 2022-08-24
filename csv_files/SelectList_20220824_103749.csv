@@ -1,0 +1,29 @@
+"penjub - root","SELECT * FROM tbl_ciudad"
+id,id_provincia,descripcion
+1,1,Donostia
+2,2,Bilbo
+3,3,Gasteiz
+4,4,Iruña
+5,2,Algorta
+6,3,Oyon
+7,5,Emtrabasaguas
+8,2,Galdakao
+9,2,Getxo
+10,1,Zarautz
+11,1,Zumaia
+12,1,Azkoitia
+13,1,Ordizia
+14,1,Getaria
+15,4,"Valle Egues"
+16,4,"Zizur Mayor"
+17,7,S/N
+18,2,Bakio
+20,1,Hondarribi
+21,2,Gernika
+22,2,Erandio
+23,4,"Zizur Menor"
+24,6,Logroño
+25,4,Ayegui
+26,4,Estella
+27,5,Arce
+28,2,Mungia
