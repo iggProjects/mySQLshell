@@ -14,9 +14,9 @@ $i_serv++;
 // Authentication type and info for "localhost"
 $cfg_s['Servers'][$i_serv]['auth_type'] = 'config';
 $cfg_s['Servers'][$i_serv]['user'] = 'root';
-$cfg_s['Servers'][$i_serv]['password'] = '';
+$cfg_s['Servers'][$i_serv]['password'] = '@mysql@';
 $cfg_s['Servers'][$i_serv]['extension'] = 'mysqli';
-$cfg_s['Servers'][$i_serv]['AllowNoPassword'] = false;
+$cfg_s['Servers'][$i_serv]['AllowNoPassword'] = true;
 
 // Bind to the localhost ipv4 address and tcp 
 $cfg_s['Servers'][$i_serv]['host'] = '127.0.0.1';

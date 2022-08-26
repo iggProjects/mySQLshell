@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/myLQSadmin.scss"
+    ],
+    "names": [],
+    "file": "myLQSadmin.min.css"
+}
