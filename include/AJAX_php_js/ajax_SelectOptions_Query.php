@@ -46,13 +46,11 @@ $divHtml = "";
 
 if ( gettype($conex_db) === 'object' ) {
     
-    //$resultado = SELECT_try_catch($conex_db,$dbname,$dbuser,$dbtable,$select_query,$log_queries_path);      
     $resultado = Sql_Query_try_catch($conex_db,$dbname,$dbuser,$sql_query,$log_queries_path);
     if ( gettype($resultado) === 'object' || gettype($resultado) === 'array' ) {  
         $route = "display_data";        
     } else {
-        $route = "display_error";
-        // echo "<script>alert('display error')</script>";
+        $route = "display_error";        
         $error_msg = "MySql error: sql query " . $sql_query . "FAILED !<br>Contact Admin.";
     }    
 
@@ -67,8 +65,8 @@ if ($route == 'display_data') { # display html data
     //$divHtml  = "<p>\$conex_db is: " . gettype($conex_db) . " | var_dump(\$conex_db)</p>";
     //$divHtml .= "<pre>" . var_dump($conex_db) . "</pre>";   
             
-    $query = "<span style='color:black;'>QUERY<br></span> \"" . $sql_query . "\"";   
-    //$divHtml .= displayTable($query,90,'',$resultado);
+    $query = "<span style='color:black;'>QUERY<br></span> \"" . $sql_query . "\"";       
+    My_Log_Message ("queries options data -> " . print_r($data_array),$log_comments_path);
     $divHtml .= displaySelect($resultado);
 
 } else { # display error msq

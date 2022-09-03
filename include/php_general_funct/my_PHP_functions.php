@@ -181,9 +181,6 @@
     }
 
 
-
-
-
     // This function will take $_SERVER['REQUEST_URI'] and build a breadcrumb based on the user's current path
     function breadcrumbs($separator = ' &raquo; ', $home = 'Home') {
 
@@ -232,7 +229,7 @@
     }
 
     function displaySelect($data_array){
-    
+
         // CREATE SELECT OPTIONS FOR 'standard_queries'
         echo "<select class='servers_List' name='servers_List' id='serverList'>    
             <option class='queryOpt'  value='' selected>Sel Std Query</option>";

@@ -157,9 +157,9 @@ function doButtonAction(){
                 Fetch_js(_tag,'./include/AJAX_php_js/ajax_SelectOptions_Query.php?hostName=127.0.0.1&dbName=my_lqs_admin&tbl=favorite_queries&sql_query='+_query);                      
 */
 
-                // document.getElementById('display-result-nav-title').innerHTML="";
+                // show tables in DB                
                 document.getElementById('p-comment').innerHTML='TABLES';        
-                // tag for show tables of DB selected
+                // tag for show tables of DB selected, in tag 'display_right_aside'
                 _tag= 'display_right_aside';                       
                 Fetch_js(_tag,'./include/AJAX_php_js/ajax_ListTables.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host')+'&dbName='+table_param.getAttribute('db'));
 
