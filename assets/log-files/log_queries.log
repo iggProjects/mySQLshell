@@ -1,0 +1,6 @@
+[3-Sep-2022 12:18:31] [Date: 2022-09-03 12:18:31 | root connect succesfully to '127.0.0.1']
+[3-Sep-2022 12:18:31] [Date: 2022-09-03 12:18:31 |  execute succesfully show tables query
+ 'SHOW DATABASES;']
+[3-Sep-2022 12:18:31] [Date: 2022-09-03 12:18:31 | root connect succesfully to '127.0.0.1']
+[3-Sep-2022 12:18:31] [Date: 2022-09-03 12:18:31 | root execute succesfully Select query in 
+ 'SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;']
