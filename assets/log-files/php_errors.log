@@ -1,2 +1,0 @@
-[03-Sep-2022 12:18:31 Europe/Berlin] PHP Warning:  Undefined variable $hostName in C:\xampp\htdocs\mySQLshell\include\AJAX_php_js\ajax_List_DB.php on line 30
-[03-Sep-2022 12:18:31 Europe/Berlin] PHP Warning:  Undefined variable $db_user in C:\xampp\htdocs\mySQLshell\include\AJAX_php_js\ajax_List_DB.php on line 45
