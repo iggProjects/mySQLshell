@@ -33,8 +33,8 @@ if ( $_REQUEST['sql_query'] ) {
 
 
 /* ONLY WORKING IN LOCALHOST IN 'my_lqs_admin' DB */
-$dbuser  = $cfg_s['Servers'][2]['user'];
-$dbpass = $cfg_s['Servers'][2]['password'];
+$dbuser  = $cfg_s['Servers'][1]['user'];
+$dbpass = $cfg_s['Servers'][1]['password'];
 $dbcharset = 'utf8mb4';
 
 # connection to DB using $db_parameters
