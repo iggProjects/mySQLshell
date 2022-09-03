@@ -52,7 +52,7 @@ $dbpass = $cfg_s['Servers'][$host_numb]['password'];
 $dbcharset = 'utf8mb4';
 
 $msg = 'FROM viewTbl --> HOST number: ' . $_REQUEST['host_numb'];
-$msg .= ' - hostName: ' . $_REQUEST['hostName'] .  ' - table: ' . $_REQUEST['table'] . ' - user: ' . $dbuser . ' - pass: ' . $dbpass . ' - page: ' . $page  . '-' . $num_rec_init . '-' . $totRecords;
+$msg .= ' - hostName: ' . $_REQUEST['hostName'] .  ' - table: ' . $_REQUEST['table'] . ' | user: ' . $dbuser . ' - pass: ******* | page: ' . $page  . '-' . $num_rec_init . '-' . $totRecords;
 My_Log_Message ($msg,$log_comments_path);
 
 # connection to DB using $db_parameters
