@@ -5,7 +5,7 @@
 $i_serv = 0;
 
 /*
- * First server: areafor DB server -> 'POAPMYSQL119.dns-servicio.com:3306'
+ * First server: Localhost
 */
 
 // count server iterator
@@ -25,7 +25,7 @@ $cfg_s['Servers'][$i_serv]['hostShortName'] = 'Localhost DB server';
 $cfg_s['Servers'][$i_serv]['connect_type'] = 'tcp';
 
 /*
- * Second server: Localhost
+ * Second server: areafor DB server -> 'POAPMYSQL119.dns-servicio.com:3306'
 */
 
 $i_serv++;
