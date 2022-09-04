@@ -4,6 +4,11 @@
     include_once "./include/sql_funct/my_SQL_functions_servers.php";
     include_once "./config/config.servers.php";
 
+    # create (if not exits ) "/assets/log-files
+    if (!file_exists('./assets/log-files')) {
+        mkdir('./assets/log-files', 0777, true); // review permissions
+    }  
+
     # my log files for queries and comments 
     $log_comments_path = "./assets/log-files/log_comments.log";
     $log_queries_path = "./assets/log-files/log_queries.log";
