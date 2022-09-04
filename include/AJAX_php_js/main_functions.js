@@ -304,7 +304,8 @@ function analize_query() {
 
     var query = 'ANALYZE ' + document.getElementById("sql-query-area").value;
 
-    invoke_Alert_Window('analyzing query: ' + query); 
+    invoke_Alert_Window('Analyzing query  ⇓'); 
+    // invoke_Alert_Window('analyzing query: ' + query); 
 
     execute_query(query);
 
