@@ -300,10 +300,25 @@ function go_back() {
     }  
 }
 
-function execute_query(){
+function analize_query() {
 
-    // read query
-    var _query = document.getElementById("sql-query-area").value;   
+    var query = 'ANALYZE ' + document.getElementById("sql-query-area").value;
+
+    invoke_Alert_Window('analyzing query: ' + query); 
+
+    execute_query(query);
+
+}
+
+
+function execute_query(q){
+
+    if ( q == null ) {
+        // read query from tag "sql-query-area"
+        var _query = document.getElementById("sql-query-area").value;  
+    } else {
+        _query = q;
+    }
     
     // Clear table in tag 'display-result-nav-title'
     var table_param = document.getElementById('display-result-nav-title');         

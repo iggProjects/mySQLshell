@@ -100,9 +100,11 @@ https://codepen.io/Jopzik/pen/xaWzMB/
   border: 10px solid rgb(172, 172, 254);
   border-radius: 10px;
   position: fixed;
-  height: 150px;
-  width: 350px;
-  left: 40%;
+  min-height: 150px;
+  min-width: 350px;
+  max-width: 700px;
+  left: auto;
+  /* left: 40%; */
   top: 15%;
   padding: 6px 8px 8px;
   text-align: center;
@@ -157,6 +159,8 @@ https://codepen.io/Jopzik/pen/xaWzMB/
 .div-DB-view .DB-info .div-der .der-console #display_result #display-sql-console-Up .display-sql-console-Up-btns #extend-console-up-btn { padding-top:2px; } 
 
 .div-DB-view .DB-info .div-der .der-console #display_result #display-sql-console-Up .display-sql-console-Up-btns #compress-console-up-btn { padding-top:2px; } 
+
+.div-DB-view .DB-info .div-der .der-console #display_result #display-sql-console-Up .display-sql-console-Up-btns #analyze-btn { margin-top:2px; font-size: 12px; height:30px; padding: 2px 10px; /* color:white; background-color: #808080; border-radius: 10px; */ }
 
 .div-DB-view .DB-info .div-der .der-console #display_result #display-sql-console-Up .display-sql-console-Up-btns #query-btn { margin-top:2px; font-size: 12px; height:30px; padding: 2px 10px; /* color:white; background-color: #808080; border-radius: 10px; */ }
 

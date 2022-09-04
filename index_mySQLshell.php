@@ -104,6 +104,7 @@
                                         <button id='go-back-btn' style='width:50px;padding:1px;color:blue;font-size:14px;' onclick='go_back()'><b>Exit</b></button>                                                                        
                                     </div>
 
+                                    <button id='analyze-btn' onclick='analize_query()'><b>Analyze query</b></button> 
                                     <button id='query-btn' onclick='execute_query()'><b>Process</b></button> 
                                     <button id='clear-query-btn' onclick='ClearSqlQueryAreas()'><b>Clear Area</b></button> 
 
@@ -200,9 +201,10 @@
 
     function invoke_Alert_Window(my_msg) {
         document.getElementById('p-alert-msg').innerHTML = my_msg;
-         document.getElementById("my-alert-window").style.display = "block";
+        document.getElementById("my-alert-window").style.display = "block";
     }
-      function close_Alert_Window() {
+    
+    function close_Alert_Window() {
          document.getElementById("my-alert-window").style.display = "none";
     }
 

@@ -7,8 +7,7 @@ IÑAKI - DARREN ( pendiente para version 1.0 )
 
 ********************************************************************
 
-(
-  GITHUB "upload a project to github"
+( GITHUB "upload a project to github"
   https://stackoverflow.com/questions/12799719/how-to-upload-a-project-to-github
 )
 
@@ -17,6 +16,8 @@ IÑAKI - PENDIENTE VERSION 1.0 AL 20-08-2022
 - README 
   - caso str_contains (php 8) buscar el equivalente en php 7.4
     (https://www.codegrepper.com/code-examples/php/str_contains+php+7)
+
+- button ANALYZE "queries" in sql area     
 
 - favourites button for favourites queries of users (now only for "root")   
 
@@ -61,9 +62,6 @@ IÑAKI - PENDIENTE VERSION 1.0 AL 20-08-2022
         16   Console.WriteLine(input);
         17   // wait for end
         18   Console.ReadLine();
-
-
-
 
 
 - progress bar for large amount of data for some query
