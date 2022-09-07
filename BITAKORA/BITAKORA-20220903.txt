@@ -19,6 +19,8 @@ IÑAKI - PENDIENTE VERSION 1.0 AL 20-08-2022
 
 - favourites button for favourites queries of users (now only for "root")   
 
+- Corregir en my_lqs_queries standard, el comment de la opción size
+
 - Caso count(*) when Select comes from sql_quey_area 
   - substitute string SELECT "fields list" FROM ..... with SELECT count(*) FROM ..... 
 
