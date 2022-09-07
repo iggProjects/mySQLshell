@@ -104,8 +104,8 @@
                                         <button id='go-back-btn' style='width:50px;padding:1px;color:blue;font-size:14px;' onclick='go_back()'><b>Exit</b></button>                                                                        
                                     </div>
 
-                                    <button id='analyze-btn' onclick='analize_query()'><b>Analyze query</b></button> 
-                                    <button id='query-btn' onclick='execute_query()'><b>Process</b></button> 
+                                    <button id='analyze-btn' onclick='analize_query()' title='The "ANALYZE statement" is similar to the EXPLAIN statement. ANALYZE statement will invoke the optimizer, execute the statement, and then produce EXPLAIN output instead of the result set.'><b>Analyze query</b></button> 
+                                    <button id='query-btn' onclick='execute_query()' title='Process the "sql query" or the "php command".'><b>Process</b></button> 
                                     <button id='clear-query-btn' onclick='ClearSqlQueryAreas()'><b>Clear Area</b></button> 
 
                                     <div>
