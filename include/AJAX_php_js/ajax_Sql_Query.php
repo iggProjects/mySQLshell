@@ -35,6 +35,10 @@ if ( $_REQUEST['page'] ) {
     $page = $_REQUEST['page']; 
 }
 
+if ( $_REQUEST['table'] ) {
+    $table = $_REQUEST['table']; 
+}
+
 if ( $_REQUEST['num_rec_init'] ) {
     $num_rec_init = $_REQUEST['num_rec_init']; 
 } else {
@@ -61,7 +65,7 @@ if ( str_contains($sql_query,'process') ) {
     switch ($process) {
         case 'backup':
 
-            echo "<br><br>process: $process | hostName: $dbhost | dbName: $dbname | process: $process | tableList: " .$_REQUEST['tableList'];
+            echo "<br><br>process: $process | hostName: $dbhost | dbName: $dbname | process: $process | tableList: " . $_REQUEST['tableList'];
 
             if ( $_REQUEST['tableList'] ) { 
                 $tableList = $_REQUEST['tableList'];
@@ -116,13 +120,12 @@ if ( str_contains($sql_query,'process') ) {
                 break;
 
     }
-
-   
+  
 
 } else {
     
     $msg = 'FROM Sql_Query --> First sql_query: ' . $_REQUEST['sql_query'] . ' | ' . ' HOST number: ' . $_REQUEST['host_numb'];
-    $msg .= ' | hostName: ' . $_REQUEST['hostName'] .  ' | user: ' . $dbuser . ' | pass: ' . $dbpass . ' | page: ' . $page  . ' | ' . $num_rec_init . ' | ' . $totRecords;
+    $msg .= ' | hostName: ' . $_REQUEST['hostName'] .  ' | user: ' . $dbuser . ' | pass: ***** | page: ' . $page  . ' | ' . $num_rec_init . ' | ' . $totRecords;
 
     My_Log_Message ($msg,$log_comments_path);
 
@@ -139,7 +142,7 @@ if ( str_contains($sql_query,'process') ) {
         $sql_query = substr($sql_query, 0, strpos($sql_query, 'limit'));
     }    
 
-    $msg .= " | extract select: " . $sql_query;
+    $msg .= " | extract limit in select: " . $sql_query;
 
     if ( gettype($conex_db) === 'object' ) {
 
@@ -151,13 +154,18 @@ if ( str_contains($sql_query,'process') ) {
             
             // $msg .= " | \$count_query: " . $count_query;
 
-            My_Log_Message ($msg,$log_comments_path);
-            
-            $records = Sql_Query_try_catch($conex_db,$dbname,$dbuser,$sql_query,$log_queries_path); 
+            My_Log_Message ($msg,$log_comments_path);            
+           
+            //$records = Sql_Query_try_catch($conex_db,$dbname,$dbuser,$sql_query,$log_queries_path); 
+
+            // Check if table exists and calculate records via SELECT COUNT
+            if ( $table != '' ) { $count_query = "SELECT COUNT(*) AS numRec FROM $table"; } else { $count_query = $sql_query; }
+            $records = Sql_Query_try_catch($conex_db,$dbname,$dbuser,$count_query,$log_queries_path); 
 
             if (  gettype($records) === 'object' || gettype($records) === 'array') {
-                //$totRecords = $records[0]['numb'];  
-                $totRecords = count($records); 
+                //$totRecords = $records[0]['numRec'];  
+                $totRecords = $records[0]['numRec']; 
+                // $totRecords = count($records); 
                 $route = "display_data";    
                 
             } else {

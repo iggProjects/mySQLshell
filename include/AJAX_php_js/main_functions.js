@@ -304,7 +304,7 @@ function analize_query() {
 
     var query = 'ANALYZE ' + document.getElementById("sql-query-area").value;
 
-    invoke_Alert_Window('Analyzing query  ⇓'); 
+    // invoke_Alert_Window('Analyzing query  ⇓'); 
     // invoke_Alert_Window('analyzing query: ' + query); 
 
     execute_query(query);
@@ -321,13 +321,10 @@ function execute_query(q){
         _query = q;
     }
     
-    // Clear table in tag 'display-result-nav-title'
-    var table_param = document.getElementById('display-result-nav-title');         
-
     // delete char ';' at the end of query string 
     if ( _query[_query.length-1] == ';' ) { _query = _query.slice(0, -1); }
 
-    // IF to check: host and DB exists & query is not empty
+    // IF to check host and DB exists & query is not empty
     // capture host and db from tag -> #display-result-nav-title
     var sql_host_db = document.getElementById('display-result-nav-title');
     let host_n = sql_host_db.getAttribute('host_numb');
@@ -349,11 +346,18 @@ function execute_query(q){
         
         var hostName = sql_host_db.getAttribute('host');
         var dbName = sql_host_db.getAttribute('db');
+        
+        // Check if table is specified
+        if ( sql_host_db.getAttribute('table')) {
+            var db_table = sql_host_db.getAttribute('table'); 
+        } else {
+            var db_table = '';
+        }
 
         // call AJAX for execute query            
         var _tag = 'display-sql-console-Down';   
         document.getElementById(_tag).innerHTML =  'Please wait a bit, searching the data';         
-        Fetch_js(_tag,'./include/AJAX_php_js/ajax_Sql_Query.php?host_numb=' + host_n + '&hostName='+sql_host_db.getAttribute('host')+'&dbName='+sql_host_db.getAttribute('db')+'&sql_query='+_query+'&page=1');
+        Fetch_js(_tag,'./include/AJAX_php_js/ajax_Sql_Query.php?host_numb=' + host_n + '&hostName='+sql_host_db.getAttribute('host')+'&dbName='+sql_host_db.getAttribute('db')+'&sql_query='+_query+'&page=1&table=' + db_table);
 
     }
 
