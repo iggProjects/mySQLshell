@@ -63,7 +63,8 @@ IÑAKI - PENDIENTE VERSION 1.0 AL 20-08-2022
   - https://www.plus2net.com/php_tutorial/ajax-progress2.php
   - https://dba.stackexchange.com/questions/17367/how-can-i-monitor-the-progress-of-an-import-of-a-large-sql-file
 
-- DB nativa de myLQSadmin: "my_sql_admin" 
+- DB nativa de mySQLshell: "my_sql_admin" 
+  - rename my_sql_admin my_sql_shell
   - crear las primeras tablas usuarios, standard_queries, favorite_queries, .... ✔✔  - 
   - standard queries aplican a cualquier DB (campos: id, user, comment, btn_name, query, creation_date)   
   - "favorite" queries: insert-update-delete-drop
