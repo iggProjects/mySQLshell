@@ -109,13 +109,13 @@
                                     <button id='clear-query-btn' onclick='ClearSqlQueryAreas()'><b>Clear Area</b></button> 
 
                                     <div id='div-queriesList' class='disp-row-center'>
-                                        <select id='std-queriesList' class='queries-List' name='std-queries-List'>
+                                        <select id='std-queriesList' class='queries-List' name='std-queries-List' title='Select query' >
                                             <option class='queryOpt' value='' selected>Sel Std Query</option>                
                                         </select> 
-                                        <select id='fav-queriesList' class='queries-List' name='fav-queries-List'>  
-                                            <option class='queryOpt'  value='' selected>Sel Fav Query</option>              
+                                        <select id='fav-queriesList' class='queries-List' name='fav-queries-List' title='Select your favourite query'  >  
+                                            <option class='queryOpt' value='' selected>Sel Fav Query</option>              
                                         </select>   
-                                        <button id='' style='width:23px; height:23px; border:none;' onclick=''><img style='width:16px; height:16px;padding-top:1px;' src='http://imgur.com/I0EwG.png'/></button>                                                     
+                                        <button id='' style='width:23px; height:23px; border:none;' title='Save query' onclick=''><img style='width:16px; height:16px;padding-top:1px;' src='http://imgur.com/I0EwG.png'/></button>                                                     
                                     </div>
 
                                     
