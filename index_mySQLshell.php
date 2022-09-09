@@ -56,7 +56,7 @@
              <div id='div_nav_izq' class='nav-izq my-scroll-bar'>   
                 <p style='margin-top:5px; margin-bottom:10px;color:#990000;'>USER:</p>  
             <?php    
-                echo "<select class='servers_List' name='servers_List' id='serverList'>";                
+                echo "<select id='serverList' class='servers_List' name='servers_List' >";                
                     echo "<option class='serverOpt' host_numb='' value='' selected>Select Server</option>"; 
                     for ( $k=0; $k < $i_serv; $k++ ) {                         
                         echo "<option class='serverOpt'  host_numb='" . ($k+1) . "'  value='" . $host_serv[$k+1] . "' >" . $host_serv_ShortName[$k+1] . "</option>"; 
@@ -108,14 +108,17 @@
                                     <button id='query-btn' onclick='execute_query()' title='Process the "sql query" or the "php command".'><b>Process</b></button> 
                                     <button id='clear-query-btn' onclick='ClearSqlQueryAreas()'><b>Clear Area</b></button> 
 
-                                    <div>
-                                        <select class='queries-List' name='std-queries-List' id='std-queriesList'>
-                                            <option class='queryOpt'  value='' selected>Sel Std Query\"</option>                
+                                    <div id='div-queriesList' class='disp-row-center'>
+                                        <select id='std-queriesList' class='queries-List' name='std-queries-List'>
+                                            <option class='queryOpt' value='' selected>Sel Std Query</option>                
                                         </select> 
-                                        <select class='queries-List' name='fav-queries-List' id='fav-queriesList'>  
-                                            <option class='fav-queryOpt'  value='' selected>Sel Fav Query</option>              
-                                        </select>                                       
+                                        <select id='fav-queriesList' class='queries-List' name='fav-queries-List'>  
+                                            <option class='queryOpt'  value='' selected>Sel Fav Query</option>              
+                                        </select>   
+                                        <button id='' style='width:23px; height:23px; border:none;' onclick=''><img style='width:16px; height:16px;padding-top:1px;' src='http://imgur.com/I0EwG.png'/></button>                                                     
                                     </div>
+
+                                    
 
                                 </div>
 
