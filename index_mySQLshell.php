@@ -46,11 +46,20 @@
             <canvas class='canvas-area' id='canvas' width='900px' height='600px' style='border:5px solid gray;'></canvas>
         </div> 
 
-        <div id = "my-alert-window">
+        <div id="my-alert-window">
             <p id="p-alert-msg"></p>
-            <button id="alert-close" class="alert-button" onclick = "close_Alert_Window()">Close</button>
+            <button id="alert-close" class="alert-button" onclick = "close_Alert_Window()">Close<br>Window</button>
         </div>    
-        
+
+        <div id="my-prompt-window">
+            <p id="p-prompt-msg"></p>
+            <textarea id="prompt-comment" placeholder="Your short comment  ...... "></textarea>
+            <div class='disp-row-center'>
+                <button id="prompt-close" class="prompt-button" onclick = "get_comment_fav_query()">Get<br>Comment</button>
+                <button id="prompt-close" class="prompt-button" onclick = "close_Prompt_Window()">Close<br>Window</button>
+            </div>
+        </div>    
+
         <div id='div-DB-info' class='DB-info'> 
         
              <div id='div_nav_izq' class='nav-izq my-scroll-bar'>   
@@ -109,16 +118,14 @@
                                     <button id='clear-query-btn' onclick='ClearSqlQueryAreas()'><b>Clear Area</b></button> 
 
                                     <div id='div-queriesList' class='disp-row-center'>
-                                        <select id='std-queriesList' class='queries-List' name='std-queries-List' title='Select query' >
+                                        <select id='std-queriesList' class='queries-List' name='std-queries-List' title='Select standard query' >
                                             <option class='queryOpt' value='' selected>Sel Std Query</option>                
                                         </select> 
                                         <select id='fav-queriesList' class='queries-List' name='fav-queries-List' title='Select your favourite query'  >  
                                             <option class='queryOpt' value='' selected>Sel Fav Query</option>              
                                         </select>   
-                                        <button id='' style='width:23px; height:23px; border:none;' title='Save query' onclick=''><img style='width:16px; height:16px;padding-top:1px;' src='http://imgur.com/I0EwG.png'/></button>                                                     
+                                        <button id='' style='width:23px; height:23px; border:none;' title='Save query' onclick='get_favourite_query()'><img style='width:16px; height:16px;padding-top:1px;' src='http://imgur.com/I0EwG.png'/></button>                                                     
                                     </div>
-
-                                    
 
                                 </div>
 
@@ -201,15 +208,38 @@
         buttonSelected[i].addEventListener('click', doButtonAction, false);
     }
 
-
     function invoke_Alert_Window(my_msg) {
         document.getElementById('p-alert-msg').innerHTML = my_msg;
         document.getElementById("my-alert-window").style.display = "block";
     }
-    
+
     function close_Alert_Window() {
          document.getElementById("my-alert-window").style.display = "none";
     }
+
+    function invoke_Prompt_Window(my_msg) {
+        document.getElementById('p-prompt-msg').innerHTML = my_msg;
+        document.getElementById("my-prompt-window").style.display = "block";
+    }
+
+    function get_comment_fav_query() {
+        // Read comment if exists
+        if ( document.getElementById('prompt-comment').value != '' ) { 
+            alert('there is a comment '); 
+            close_Prompt_Window()
+        } else { 
+            alert('no comment '); 
+            close_Prompt_Window()
+        }
+
+
+    }
+
+    function close_Prompt_Window() {
+        document.getElementById("my-prompt-window").style.display = "none";
+    }
+
+    
 
 
 </script>

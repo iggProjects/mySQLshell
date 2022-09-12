@@ -363,6 +363,18 @@ function execute_query(q){
 
 }    
 
+function ClearSqlQueryAreas(){    
+    document.getElementById('sql-query-area').value="";   
+    document.getElementById('display-sql-console-Up').style.height="30%";  
+    document.getElementById('display-sql-console-Down').innerHTML=""; 
+    document.getElementById('display-sql-console-Down').style.height="58%"; 
+}                                    
+
+
+// INSERT my "favourite query" in my_sql_queries. 
+function get_favourite_query() {
+    invoke_Prompt_Window('Please write a short comment to describe your query ! 😎');
+}
 
 function displayPage(char) {
     var page = document.getElementById('actualPage').getAttribute('page');
@@ -460,13 +472,6 @@ function table_to_csv() {
     }
 }
 
-
-function ClearSqlQueryAreas(){    
-    document.getElementById('sql-query-area').value="";   
-    document.getElementById('display-sql-console-Up').style.height="30%";  
-    document.getElementById('display-sql-console-Down').innerHTML=""; 
-    document.getElementById('display-sql-console-Down').style.height="58%"; 
-}                                    
 
 // DIAGRAM FOR TABLE SELECTED
 function table_diagram() {
