@@ -55,7 +55,7 @@
             <p id="p-prompt-msg"></p>
             <textarea id="prompt-comment" placeholder="Your short comment  ...... "></textarea>
             <div class='disp-row-center'>
-                <button id="prompt-close" class="prompt-button" onclick = "get_comment_fav_query()">Get<br>Comment</button>
+                <button id="prompt-close" class="prompt-button" onclick = "get_comment_fav_query()">Save favourite<br>query</button>
                 <button id="prompt-close" class="prompt-button" onclick = "close_Prompt_Window()">Close<br>Window</button>
             </div>
         </div>    
@@ -63,12 +63,12 @@
         <div id='div-DB-info' class='DB-info'> 
         
              <div id='div_nav_izq' class='nav-izq my-scroll-bar'>   
-                <p style='margin-top:5px; margin-bottom:10px;color:#990000;'>USER:</p>  
+                <p style='margin-top:5px; margin-bottom:10px;color:#990000;'>Servers Tree</p>  
             <?php    
                 echo "<select id='serverList' class='servers_List' name='servers_List' >";                
-                    echo "<option class='serverOpt' host_numb='' value='' selected>Select Server</option>"; 
+                    echo "<option class='serverOpt' host_numb='' value='' selected>Select Server-User</option>"; 
                     for ( $k=0; $k < $i_serv; $k++ ) {                         
-                        echo "<option class='serverOpt'  host_numb='" . ($k+1) . "'  value='" . $host_serv[$k+1] . "' >" . $host_serv_ShortName[$k+1] . "</option>"; 
+                        echo "<option class='serverOpt'  host_numb='" . ($k+1) . "'  value='" . $host_serv[$k+1] . "' >" . $host_serv_ShortName[$k+1] . " (" . $host_serv_user[$k+1] . ")</option>"; 
                     }
                 echo "</select>"; 
             ?>    
@@ -219,25 +219,50 @@
 
     function invoke_Prompt_Window(my_msg) {
         document.getElementById('p-prompt-msg').innerHTML = my_msg;
+        document.getElementById('prompt-comment').value = '';
         document.getElementById("my-prompt-window").style.display = "block";
+    }
+
+    function close_Prompt_Window() {
+        document.getElementById('prompt-comment').value = ''
+        document.getElementById("my-prompt-window").style.display = "none";
     }
 
     function get_comment_fav_query() {
         // Read comment if exists
+       
         if ( document.getElementById('prompt-comment').value != '' ) { 
-            alert('there is a comment '); 
-            close_Prompt_Window()
-        } else { 
-            alert('no comment '); 
-            close_Prompt_Window()
+
+            let comment = document.getElementById('prompt-comment').value;
+            document.getElementById("my-alert-window").style.zIndex = 1;
+            // invoke_Alert_Window('Your comment about favourite query is: ' + '\n\n' + comment);              
+            //document.getElementById('prompt-comment').value = '';
+            
+            // make query for INSERT FAVOURITE QUERY
+            // Parameters in table favourites_queries:  User, DB, Query, comment, option_name
+            // FECTH AJAX function for insert -> ajax_Sql_Query
+            // close_Prompt_Window();
+
+            // MASK in tag "sql-query-area" for process ???
+            //    Versus
+            // Fetch_js('display_right_aside','./include/AJAX_php_js/ajax_List_DB.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host'));
+
+            // set time before close
+            setInterval(close_Prompt_Window,1000);
+            // Write message in display-sql-console-Down
+            setInterval(document.getElementById('display-sql-console-Down').innerHTML='Insert favourite query procedure was succesfully executed',5000);  
+
+
+            
+        } else {             
+            document.getElementById("my-alert-window").style.zIndex = 1;
+            invoke_Alert_Window('Plis write your comment about favourite query !');              
+            document.getElementById('prompt-comment').value = '';            
         }
 
 
     }
 
-    function close_Prompt_Window() {
-        document.getElementById("my-prompt-window").style.display = "none";
-    }
 
     
 
