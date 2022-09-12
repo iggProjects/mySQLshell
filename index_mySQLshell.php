@@ -250,6 +250,7 @@
             // set time before close
             setInterval(close_Prompt_Window,1000);
             // Write message in display-sql-console-Down
+            document.getElementById('sql-query-area').value = '';
             setInterval(document.getElementById('display-sql-console-Down').innerHTML='Insert favourite query procedure was succesfully executed',5000);  
 
 
