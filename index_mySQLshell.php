@@ -53,9 +53,12 @@
 
         <div id="my-prompt-window">
             <p id="p-prompt-msg"></p>
-            <textarea id="prompt-comment" placeholder="Your short comment  ...... "></textarea>
+            <div class='disp-col-center' style='margin:auto; margin-bottom:10px;'> 
+                <textarea id="prompt-comment"  placeholder="Write a short comment  ...... "></textarea>
+                <textarea id="prompt-btn-name" placeholder="Write a short name for this query  ...... "></textarea>
+            </div>
             <div class='disp-row-center'>
-                <button id="prompt-close" class="prompt-button" onclick = "get_comment_fav_query()">Save favourite<br>query</button>
+                <button id="prompt-close" class="prompt-button" onclick = "get_fav_query()">Save favourite<br>query</button>
                 <button id="prompt-close" class="prompt-button" onclick = "close_Prompt_Window()">Close<br>Window</button>
             </div>
         </div>    
@@ -63,7 +66,7 @@
         <div id='div-DB-info' class='DB-info'> 
         
              <div id='div_nav_izq' class='nav-izq my-scroll-bar'>   
-                <p style='margin-top:5px; margin-bottom:10px;color:#990000;'>Servers Tree</p>  
+                <p style='margin-top:5px; margin-bottom:10px;color:#990000;font-size:20px;'>Servers Tree</p>  
             <?php    
                 echo "<select id='serverList' class='servers_List' name='servers_List' >";                
                     echo "<option class='serverOpt' host_numb='' value='' selected>Select Server-User</option>"; 
@@ -224,41 +227,60 @@
     }
 
     function close_Prompt_Window() {
+        document.getElementById('sql-query-area').value = '';
         document.getElementById('prompt-comment').value = ''
+        document.getElementById('prompt-btn-name').value = '';            
         document.getElementById("my-prompt-window").style.display = "none";
     }
 
-    function get_comment_fav_query() {
-        // Read comment if exists
-       
-        if ( document.getElementById('prompt-comment').value != '' ) { 
-
-            let comment = document.getElementById('prompt-comment').value;
-            document.getElementById("my-alert-window").style.zIndex = 1;
-            // invoke_Alert_Window('Your comment about favourite query is: ' + '\n\n' + comment);              
-            //document.getElementById('prompt-comment').value = '';
-            
-            // make query for INSERT FAVOURITE QUERY
-            // Parameters in table favourites_queries:  User, DB, Query, comment, option_name
-            // FECTH AJAX function for insert -> ajax_Sql_Query
-            // close_Prompt_Window();
-
+    function get_fav_query() {
+        // Read query, comment and btn-name if exists       
+        
+        if ( document.getElementById('sql-query-area').value != '' && document.getElementById('prompt-comment').value != '' && document.getElementById('prompt-btn-name').value != '' ) { 
+           
             // MASK in tag "sql-query-area" for process ???
             //    Versus
-            // Fetch_js('display_right_aside','./include/AJAX_php_js/ajax_List_DB.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host'));
+            // FETCH           
+            
+            // Parameters in table favourites_queries:  Host, DB, User, Query, comment, option_name, html_msg for success or fail
+            let sql_host_db = document.getElementById('display-result-nav-title');
+            let host_n = sql_host_db.getAttribute('host_numb');
+            let hostName = sql_host_db.getAttribute('host');
+            let dbName = sql_host_db.getAttribute('db');
+            let _query = document.getElementById('sql-query-area').value;
+            let db_table = 'favourites_queries'; 
+            let comment = document.getElementById('prompt-comment').value;
+            let btn_name = document.getElementById('prompt-btn-name').value;
+            // document.getElementById("my-alert-window").style.zIndex = 1;
+            // Write message in display-sql-console-Down
+            // let html_msg = '<p style=\'margin-top:20px;\'>Your favourite query was succesfully saved</p>' + '<br>' + '<p style=\'width:60%; font-size:14; color:#900000\'>'+ document.getElementById('sql-query-area').value + '</p>'; 
+
+            // call AJAX for execute query 
+            let _tag = 'display-sql-console-Down';               
+            post_string = 'host_numb=' + host_n + '&hostName=' + sql_host_db.getAttribute('host');
+            post_string += '&dbName=' + sql_host_db.getAttribute('db') + '&table=' + db_table;
+            post_string += '&comment=' + comment + '&btn_name=' + btn_name + '&sql_query=' +_query;
+
+            document.getElementById(_tag).innerHTML =  'Processing query, please wait a bit,<br><br>' + post_string;      
+            close_Prompt_Window();  
+
+            // Fetch_js(_tag,'./include/AJAX_php_js/ajax_Sql_Query.php?post_string');
 
             // set time before close
-            setInterval(close_Prompt_Window,1000);
-            // Write message in display-sql-console-Down
-            document.getElementById('sql-query-area').value = '';
-            setInterval(document.getElementById('display-sql-console-Down').innerHTML='Insert favourite query procedure was succesfully executed',5000);  
+            //setInterval(document.getElementById('display-sql-console-Down').innerHTML=html_msg,1000);  
 
-
-            
         } else {             
             document.getElementById("my-alert-window").style.zIndex = 1;
-            invoke_Alert_Window('Plis write your comment about favourite query !');              
-            document.getElementById('prompt-comment').value = '';            
+            if (document.getElementById('sql-query-area').value == '') {
+                invoke_Alert_Window('Plis write your favourite query !');                   
+            } else if ( document.getElementById('prompt-comment').value == '' ) {
+                invoke_Alert_Window('Plis write a "short comment" for your favourite query !');                       
+            } else if ( document.getElementById('prompt-btn-name').value == '' ) {
+                invoke_Alert_Window('Plis write a "short name" for option list !');                           
+            } else {
+                invoke_Alert_Window('From favourite query, something is wrong 🙄 !');                       
+            }
+            
         }
 
 

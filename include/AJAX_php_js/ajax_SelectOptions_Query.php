@@ -32,7 +32,7 @@ if ( $_REQUEST['sql_query'] ) {
 }
 
 
-/* ONLY WORKING IN LOCALHOST IN 'my_lqs_admin' DB */
+/* ONLY WORKING IN LOCALHOST IN 'my_sql_shell' DB */
 $dbuser  = $cfg_s['Servers'][1]['user'];
 $dbpass = $cfg_s['Servers'][1]['password'];
 $dbcharset = 'utf8mb4';

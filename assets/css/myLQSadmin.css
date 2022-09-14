@@ -129,6 +129,7 @@ https://codepen.io/Jopzik/pen/xaWzMB/
   text-align: center;
 }
 .div-DB-view #my-prompt-window #prompt-comment { margin:10px; min-width: 300px; min-height:130px; }
+.div-DB-view #my-prompt-window #prompt-btn-name { margin:10px; min-width: 300px; min-height:30px; }
 .div-DB-view #my-prompt-window button { color:blue; font-size: 12px; padding:3px; border:1px solid rgb(172, 172, 254); border-radius: 10px;}
 
 .div-DB-view .DB-info { width:100%; height:93%; margin-top:0px; display:flex;} 

@@ -147,7 +147,8 @@ function doButtonAction(){
                 // tag for show options in "Std Queries" SELECT
                 _tag= 'std-queriesList';
                 _query = 'SELECT btn_name, comment, query FROM standard_queries'; 
-                Fetch_js(_tag,'./include/AJAX_php_js/ajax_SelectOptions_Query.php?hostName=127.0.0.1&dbName=my_lqs_admin&sql_query='+_query);                      
+                Fetch_js(_tag,'./include/AJAX_php_js/ajax_SelectOptions_Query.php?hostName=127.0.0.1&dbName=my_sql_shell&sql_query='+_query);                      
+                // Fetch_js(_tag,'./include/AJAX_php_js/ajax_SelectOptions_Query.php?hostName=127.0.0.1&dbName=my_lqs_admin&sql_query='+_query);                      
 /*
                 // tag for show options in "Fav Queries" SELECT
                 _tag= 'fav-queriesList';

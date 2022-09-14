@@ -51,6 +51,9 @@ if ( $_REQUEST['totRecords'] ) {
     $totRecords = 0;
 }
 
+// 'Processing query, please wait a bit,<br><br>' + post_string;  
+// '&comment=' + comment + '&btn_name=' + btn_name
+
 $dbuser  = $cfg_s['Servers'][$host_numb]['user'];
 $dbpass = $cfg_s['Servers'][$host_numb]['password'];
 $dbcharset = 'utf8mb4';
