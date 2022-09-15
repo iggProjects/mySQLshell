@@ -253,7 +253,7 @@
             let user_name = sql_host_db.getAttribute('user_name');             
             let host_n = sql_host_db.getAttribute('host_numb');            
             let hostName = sql_host_db.getAttribute('host');
-            let dbName = sql_host_db.getAttribute('db');
+            let dbName = 'my_sql_shell';
             let db_table = 'favourite_queries'; 
             let fav_query = document.getElementById('sql-query-area').value;            
             let comment = document.getElementById('prompt-comment').value;
@@ -264,7 +264,7 @@
             // let html_msg = '<p style=\'margin-top:20px;\'>Your favourite query was succesfully saved</p>' + '<br>' + '<p style=\'width:60%; font-size:14; color:#900000\'>'+ document.getElementById('sql-query-area').value + '</p>'; 
 
             let _query = 'INSERT INTO ' + db_table + ' (host_name, user, db, comment, btn_name, query) ';
-            _query += 'VALUES (' + hostName + ',' + user_name + ',' + dbName + ',' + comment + ',' + option_name + ',' + fav_query + ')';
+            _query += 'VALUES (\'' + hostName + '\',\'' + user_name + '\',\'' + dbName + '\',\'' + comment + '\',\'' + option_name + '\',\'' + fav_query + '\')';
 
             // call AJAX for execute query 
             let _tag = 'display-sql-console-Down';               
