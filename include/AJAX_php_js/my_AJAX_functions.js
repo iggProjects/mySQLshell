@@ -45,6 +45,8 @@ function openTree(host_arr) {
             console.log('this class: ' + this.classList + ', tag: '+ this.tagName);
             console.log('parent El: ' + this.parentElement.tagName  + ', class: '+ this.parentElement.classList);
 
+            // get user
+            let user_name = document.getElementById('display-result-nav-title').getAttribute('user_name');
             // get host_numb
             let host_n = document.getElementById('display-result-nav-title').getAttribute('host_numb');
             // get host name
@@ -58,8 +60,8 @@ function openTree(host_arr) {
             // clear 'display-sql-console-up & display-sql-console-Down'                
             ClearSqlQueryAreas(); 
         
-            // tag for display host and DB           
-            document.getElementById('display-result-nav-title').innerHTML = 'HOST: \"' + hostName + '\"' + ' || DB: \"' + dbName + '\"';
+            // tag for display user, host and DB           
+            document.getElementById('display-result-nav-title').innerHTML = 'User: ' + user_name + ' || Host name: \"' + hostName + '\"' + ' || DB: \"' + dbName + '\"';
 
             // document.getElementById('display-result-nav-title').setAttribute('host',hostName);
             document.getElementById('display-result-nav-title').setAttribute('db',dbName);    
@@ -114,6 +116,8 @@ function openTree(host_arr) {
             // Parameters for calling ajax junction
             var point = this.getAttribute('point');
 
+            let user_name = document.getElementById('display-result-nav-title').getAttribute('user_name'); 
+
             var hostNumb = this.getAttribute('host_numb');
             //var hostNumb = this.getAttribute('host');
 
@@ -122,7 +126,8 @@ function openTree(host_arr) {
 
             // tag for display host, DB, table in second NAV
             var _titleTag = 'display-result-nav-title';
-            document.getElementById(_titleTag).innerHTML = 'HOST: \"' + host_arr[hostNumb] + '\"' + ' || DB: \"' + dbName + '\"' +  '<br><span style=\'color:blue;font-size:17px;\'>Table: \"' + tblName + '\" ';
+            document.getElementById(_titleTag).innerHTML = 'user: ' + user_name + ' || host name: \"' + host_arr[hostNumb] + '\"' + ' || DB: \"' + dbName + '\"' +  '<br><span style=\'color:blue;font-size:17px;\'>Table: \"' + tblName + '\" ';
+            document.getElementById(_titleTag).setAttribute('user_name',user_name);
             document.getElementById(_titleTag).setAttribute('host_numb',hostNumb);
             document.getElementById(_titleTag).setAttribute('host',host_arr[hostNumb]);
             document.getElementById(_titleTag).setAttribute('db',dbName);

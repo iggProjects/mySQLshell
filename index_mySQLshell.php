@@ -71,7 +71,7 @@
                 echo "<select id='serverList' class='servers_List' name='servers_List' >";                
                     echo "<option class='serverOpt' host_numb='' value='' selected>Select Server-User</option>"; 
                     for ( $k=0; $k < $i_serv; $k++ ) {                         
-                        echo "<option class='serverOpt'  host_numb='" . ($k+1) . "'  value='" . $host_serv[$k+1] . "' >" . $host_serv_ShortName[$k+1] . " (" . $host_serv_user[$k+1] . ")</option>"; 
+                        echo "<option class='serverOpt'  user='" . $host_serv_user[$k+1] . "' host_numb='" . ($k+1) . "'  value='" . $host_serv[$k+1] . "' >" . $host_serv_ShortName[$k+1] . " (" . $host_serv_user[$k+1] . ")</option>"; 
                     }
                 echo "</select>"; 
             ?>    
@@ -163,9 +163,11 @@
     hostSelected.addEventListener("click", () => {
         hostSelected.addEventListener("change", () => {  
                         
-            document.getElementById('hostNavIzq').innerHTML = hostSelected.value;            
+            document.getElementById('hostNavIzq').innerHTML = hostSelected.value;  
+            
+            let user_name = event.target.selectedOptions[0].getAttribute("user");                
 
-            let host_n = event.target.selectedOptions[0].getAttribute("host_numb");                
+            let host_n = event.target.selectedOptions[0].getAttribute("host_numb");            
 
             // clear html of 'der-console associated tag's'
             clearDerConsoleAreas();       
@@ -185,9 +187,12 @@
 
                 // select display-result-nav-title values
                 var table_param = document.getElementById('display-result-nav-title');
+
+                table_param.setAttribute('user_name',user_name);
                 table_param.setAttribute('host_numb',host_n);
                 table_param.setAttribute('host',hostSelected.value);
-                table_param.innerHTML = "host_numb: " + host_n + " || HOST: " + hostSelected.value;                
+                table_param.innerHTML = "user: " + user_name + " || host_numb: " + host_n + " || host url: " + hostSelected.value;  
+
                 Display_div_nav_izq('html_div_nav_izq',host_array,php_sql_url);  
                 
                 // Display query "show databases" in tag "display_right_aside"                 
@@ -244,24 +249,31 @@
             
             // Parameters in table favourites_queries:  Host, DB, User, Query, comment, option_name, html_msg for success or fail
             let sql_host_db = document.getElementById('display-result-nav-title');
-            let host_n = sql_host_db.getAttribute('host_numb');
+
+            let user_name = sql_host_db.getAttribute('user_name');             
+            let host_n = sql_host_db.getAttribute('host_numb');            
             let hostName = sql_host_db.getAttribute('host');
             let dbName = sql_host_db.getAttribute('db');
-            let _query = document.getElementById('sql-query-area').value;
-            let db_table = 'favourites_queries'; 
+            let db_table = 'favourite_queries'; 
+            let fav_query = document.getElementById('sql-query-area').value;            
             let comment = document.getElementById('prompt-comment').value;
-            let btn_name = document.getElementById('prompt-btn-name').value;
+            let option_name = document.getElementById('prompt-btn-name').value;
             // document.getElementById("my-alert-window").style.zIndex = 1;
+            
             // Write message in display-sql-console-Down
             // let html_msg = '<p style=\'margin-top:20px;\'>Your favourite query was succesfully saved</p>' + '<br>' + '<p style=\'width:60%; font-size:14; color:#900000\'>'+ document.getElementById('sql-query-area').value + '</p>'; 
 
+            let _query = 'INSERT INTO ' + db_table + ' (host_name, user, db, comment, btn_name, query) ';
+            _query += 'VALUES (' + hostName + ',' + user_name + ',' + dbName + ',' + comment + ',' + option_name + ',' + fav_query + ')';
+
             // call AJAX for execute query 
             let _tag = 'display-sql-console-Down';               
-            post_string = 'host_numb=' + host_n + '&hostName=' + sql_host_db.getAttribute('host');
-            post_string += '&dbName=' + sql_host_db.getAttribute('db') + '&table=' + db_table;
-            post_string += '&comment=' + comment + '&btn_name=' + btn_name + '&sql_query=' +_query;
+            post_string = 'host_numb=' + host_n + '&hostName=' + hostName;
+            post_string += '&dbName=' + dbName + '&table=' + db_table;
+            post_string += '&sql_query=' +_query;
+            // post_string += '&comment=' + comment + '&btn_name=' + btn_name + '&sql_query=' +_query;
 
-            document.getElementById(_tag).innerHTML =  'Processing query, please wait a bit,<br><br>' + post_string;      
+            document.getElementById(_tag).innerHTML =  'Processing query, please wait a bit,<br><br>' + _query;      
             close_Prompt_Window();  
 
             // Fetch_js(_tag,'./include/AJAX_php_js/ajax_Sql_Query.php?post_string');

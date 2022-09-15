@@ -19,6 +19,8 @@ IÑAKI - PENDIENTE VERSION 1.0 AL 20-08-2022
 
 - Update action of clear areas when working in "queries area" mode and move from one table (db) to another    
 
+- remove QUERY: from "right aside" 
+
 - favourites button for favourites queries of users (now only for "root")   
   - change field btn_name to opt_name
 

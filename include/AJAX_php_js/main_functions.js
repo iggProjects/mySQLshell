@@ -128,7 +128,7 @@ function doButtonAction(){
                 let active_table = '';        
                 if ( table_param.getAttribute('table') != '' ) { active_table = table_param.getAttribute('table') } 
                 
-                table_param.innerHTML = 'HOST: \"' + table_param.getAttribute('host') + '\"' + ' || DB: \"' + table_param.getAttribute('db') + '<br><span style=\"font-size:20px;color:blue;\">' + active_table + '</span>';
+                table_param.innerHTML = 'user: ' + table_param.getAttribute('user_name') + ' || host name: \"' + table_param.getAttribute('host') + '\"' + ' || DB: \"' + table_param.getAttribute('db') + '<br><span style=\"font-size:20px;color:blue;\">' + active_table + '</span>';
 
                 // tag for display BUTTONS table in second NAV 
                 btns = document.querySelectorAll(".nav-btn");   
@@ -260,8 +260,9 @@ function doLeftAsideButtonAction(){
     var table_Name = this.getAttribute('table-name');        
     
     var table_param = document.getElementById('display-result-nav-title');
-    table_param.setAttribute('table',table_Name);      
-    table_param.innerHTML = 'HOST: \"' + table_param.getAttribute('host') + '\"';
+    table_param.setAttribute('table',table_Name);  
+    table_param.innerHTML = 'user: \"' + table_param.getAttribute('user_name') + '\"';
+    table_param.innerHTML += ' || Host name: \"' + table_param.getAttribute('host') + '\"';
     table_param.innerHTML += ' || DB: \"' + table_param.getAttribute('db') + '<br>';
     table_param.innerHTML +='<span style=\"font-size:20px;color:blue;\">Table: ' + table_Name  + '</span>';           
 

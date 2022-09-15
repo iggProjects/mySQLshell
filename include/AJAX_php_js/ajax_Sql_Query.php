@@ -51,8 +51,17 @@ if ( $_REQUEST['totRecords'] ) {
     $totRecords = 0;
 }
 
+/*
+if ( $_REQUEST['comment'] ) {
+    $comment = $_REQUEST['comment']; 
+}
+
+if ( $_REQUEST['btn_name'] ) {
+    $btn_name = $_REQUEST['btn_name']; 
+}
+*/
+
 // 'Processing query, please wait a bit,<br><br>' + post_string;  
-// '&comment=' + comment + '&btn_name=' + btn_name
 
 $dbuser  = $cfg_s['Servers'][$host_numb]['user'];
 $dbpass = $cfg_s['Servers'][$host_numb]['password'];
