@@ -82,7 +82,25 @@ https://codepen.io/Jopzik/pen/xaWzMB/
   /* border-radius: 10px; */
 } 
 
-.div-DB-view { width:98%; height:100vh; overflow-y: scroll; margin:auto; margin-top:0px; padding:5px; /*border:5px solid #e2e2e2;*/ } 
+.login-modal { 
+  display:block; 
+  background-color:#ffcc00;
+  border: 10px solid rgb(149, 149, 253); 
+  border-radius: 10px;
+  position: fixed;
+  height: 350px;
+  width: 34%;  
+  left: 33%;
+  /* left: 40%; */
+  top: 25%;
+  padding: 6px 8px 8px;
+  text-align: center;
+  z-index: 1;
+}
+
+.login-modal .user-data { margin:50px; } 
+
+.div-DB-view { width:98%; height:100vh; overflow-y: scroll; margin:auto; margin-top:0px; padding:5px; /*z-index:-1; opacity:0.5;*/ /*border:5px solid #e2e2e2;*/ } 
 
 .div-DB-view p { color:blue; margin-left:5px;}
 

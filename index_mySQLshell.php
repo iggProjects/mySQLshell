@@ -36,6 +36,18 @@
 </head>
 <body>
 
+    <div id='login-modal' class='login-modal disp-row-center'>  
+        <div class='user-data'>
+            <p>User</p>
+            <input type="text" id="user" name="user">
+            <br><br>
+            <p>Password</p>  
+            <input type="password" id="passw" name="passw">
+            <br><br>
+            <button style='padding:5px;' onclick='alert("jelouuuu")'>Enter</button>              
+        </div>              
+    </div> 
+
     <div class='div-DB-view disp-row-center my-scroll-bar'>
         <div class='div-header-text'>
             <h2>mySQLshell 1.0</h2>  
@@ -153,6 +165,15 @@
      </div> 
 
 <script>
+
+    /*
+     *  LOGIN MODAL functions, Read (User, Password), Fetch to check in DB, case OK, go to INDEX with credentials 
+     *              to create select options for host-db   
+    */
+
+
+
+
 
     /*
      *  Some Listeners  
