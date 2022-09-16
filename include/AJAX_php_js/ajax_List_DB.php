@@ -59,7 +59,8 @@ if ( gettype($conex_host) === 'object' ) {
 # HTML DATA FOR DIV
 if ($route == 'display_data') { # display html data   
 
-    $query = "<span style='color:black;'>query:</span> \"" . $show_DB_query . "\"";   
+    $query = $show_DB_query;   
+    // $query = "<span style='color:black;'>query:</span> \"" . $show_DB_query . "\"";   
     $divHtml .= displayTable($query,90,'',$resultado);
 
 } else { # display error msq

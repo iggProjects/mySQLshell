@@ -149,14 +149,14 @@ function doButtonAction(){
                 _query = 'SELECT btn_name, comment, query FROM standard_queries'; 
                 Fetch_js(_tag,'./include/AJAX_php_js/ajax_SelectOptions_Query.php?hostName=127.0.0.1&dbName=my_sql_shell&sql_query='+_query);                      
                 // Fetch_js(_tag,'./include/AJAX_php_js/ajax_SelectOptions_Query.php?hostName=127.0.0.1&dbName=my_lqs_admin&sql_query='+_query);                      
-/*
+
                 // tag for show options in "Fav Queries" SELECT
                 _tag= 'fav-queriesList';
                 // OJO en este caso, la query tiene que ver con el usuario y la DB específica
                 // PENSAR BIEN como implementar                    
-                _query = 'SELECT btn_name, query FROM favorite_queries '; 
-                Fetch_js(_tag,'./include/AJAX_php_js/ajax_SelectOptions_Query.php?hostName=127.0.0.1&dbName=my_lqs_admin&tbl=favorite_queries&sql_query='+_query);                      
-*/
+                _query = 'SELECT btn_name, comment, query FROM favourite_queries'; 
+                Fetch_js(_tag,'./include/AJAX_php_js/ajax_SelectOptions_Query.php?hostName=127.0.0.1&dbName=my_sql_shell&sql_query='+_query);                      
+                // Fetch_js(_tag,'./include/AJAX_php_js/ajax_SelectOptions_Query.php?hostName=127.0.0.1&dbName=my_sql_shell&tbl=favourite_queries&sql_query='+_query);                      
 
                 // show tables in DB                
                 document.getElementById('p-comment').innerHTML='TABLES';        

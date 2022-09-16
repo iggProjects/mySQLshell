@@ -198,6 +198,27 @@ function Fetch_js(tag,php_sql_url){
             });          
         }
 
+        // LISTENERS for case select options in '#fav-queriesList'
+        // OJO: completar leyendo la tabla que está activa
+        if ( tag == 'fav-queriesList') {
+            // Listener to select QUERY from "standard_queries" in "my_lqs_queries" DB
+            var querySelected = document.getElementById("fav-queriesList");
+            // var tbl = document.getElementById("display-result-nav-title").getAttribute('table');
+            querySelected.addEventListener("click", () => {
+                querySelected.addEventListener("change", () => {                      
+                    if (querySelected.value != '' ) {    
+                        const relations_query = querySelected.value;
+                        document.getElementById('sql-query-area').value = relations_query;
+                        //document.getElementById('sql-query-area').value = relations_query + "'" + tbl + "'";
+                    } else {   }  // upssssssss
+                })
+            });          
+        }
+
+
+
+
+
     })
 
     .catch(err => {

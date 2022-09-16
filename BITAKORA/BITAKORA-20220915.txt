@@ -17,13 +17,13 @@ IÑAKI - PENDIENTE VERSION 1.0 AL 20-08-2022
   - caso str_contains (php 8) buscar el equivalente en php 7.4
     (https://www.codegrepper.com/code-examples/php/str_contains+php+7)  
 
+- LOGIN multi user    
+
 - Update action of clear areas when working in "queries area" mode and move from one table (db) to another    
 
-- remove QUERY: from "right aside" 
-
-- favourites button for favourites queries of users (now only for "root")   
+- favourites button for users favourites queries (now only for "root")     
   - change field btn_name to opt_name
-
+  - Make schema for several users
   - html,css 
      https://codepen.io/jcoulterdesign/pen/azQMqG/
 
