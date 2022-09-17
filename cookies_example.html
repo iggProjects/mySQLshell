@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="cookie-consent-modal">
+        <div class="cookie-content">
+            <h1>Allow Cookies</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum saepe beatae amet iure ipsam, officia exercitationem nam nemo autem? Nam harum, aut libero sapiente quae numquam amet distinctio doloremque, rem reiciendis quas dolorem autem ipsam odio deserunt illo cumque voluptates perferendis! Ipsa voluptatum adipisci exercitationem. Tempora, impedit? Hic, ex accusantium.</p>
+            <div class="btns-cook">
+                <button class="btn-cook cancel">cancel</button>
+                <button class="btn-cook accept">accept</button>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="main.js"></script> -->
+</body>
+</html>
+
+<script>
+
+    console.log('Entré a cookies js')
+
+    let cookieModal = document.querySelector(".cookie-consent-modal")
+    let cancelCookieBtn = document.querySelector(".btn-cook.cancel")
+    let acceptCookieBtn = document.querySelector(".btn-cook.accept")
+
+    cancelCookieBtn.addEventListener("click", function (){
+        cookieModal.classList.remove("active")
+    })
+    acceptCookieBtn.addEventListener("click", function (){
+        cookieModal.classList.remove("active")
+        // localStorage.setItem("cookieAccepted", "yes")
+    })
+
+    setTimeout(function (){
+        let cookieAccepted = localStorage.getItem("cookieAccepted")
+        if (cookieAccepted != "yes"){
+            cookieModal.classList.add("active")
+        }
+    }, 2000)
+    
+</script>
+
+
+
+<style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(250, 211, 161);    
+}
+
+.cookie-consent-modal{
+    height: 50vh;
+    width: 50vw;
+    /* width: 100vw; */
+    background-color: rgba(0,0,0,0.5);    
+    position: fixed;
+    top: 25vh;
+    left: 25vw;
+    z-index: 1;
+    display: none;
+    align-items: flex-end;
+}
+
+.cookie-consent-modal.active{
+    display: flex;
+}
+
+.cookie-content{
+    background-color: rgb(173, 199, 9);
+    padding: 10px;
+    /* padding: 5vw 3vw; */
+    border-radius: 10px 10px 0 0;
+}
+
+.cookie-content p { margin-top:10px;}
+
+.btns-cook{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2em;
+}
+
+.btn-cook{
+    border: none;
+    outline: none;
+    padding: .8em 1.5em;
+    width: 100px;
+    margin-right: 2em;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.btn-cook.accept{
+    background-color: rgb(0, 25, 185);
+    color: #fff;
+}
+</style>
