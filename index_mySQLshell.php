@@ -29,6 +29,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/css/myLQSadmin.css">
+    <!-- <link rel="stylesheet" href="./assets/css/myLQSlogin.css"> -->
     <script type='text/javascript' src='./include/AJAX_php_js/my_AJAX_functions.js'></script>
     <script type='text/javascript' src='./include/AJAX_php_js/my_CANVAS_functions.js'></script>
     <script type='text/javascript' src='./include/AJAX_php_js/main_functions.js'></script>
@@ -37,14 +38,21 @@
 <body>
 
     <div id='login-modal' class='login-modal disp-row-center'>  
-        <div class='user-data'>
-            <p>User</p>
-            <input type="text" id="user" name="user">
+        <div class='login-content'>
             <br><br>
-            <p>Password</p>  
-            <input type="password" id="passw" name="passw">
-            <br><br>
-            <button style='padding:5px;' onclick='alert("jelouuuu")'>Enter</button>              
+            <div class='login-msg'>
+                <p id='login-msg'>mySQLshell 1.0</p>           
+            </div> 
+            <br><br><br>
+            <div class="login-data">
+                <p>User</p>
+                <input type="text" id="user" name="user">
+                <br><br>
+                <p>Password</p>  
+                <input type="password" id="passw" name="passw">
+                <br><br><br>
+                <button style='padding:5px;' onclick='document.getElementById("login-msg").innerHTML=document.getElementById("user").value + " - " + document.getElementById("passw").value'>Login</button>              
+            </div>
         </div>              
     </div> 
 
@@ -107,7 +115,8 @@
                          <button id='btn-restore' class='nav-btn showBtn'>Restore</button>  
                          <button id='btn-users' class='nav-btn showBtn'>USERS</button>                                                
                          <button id='btn-export' class='nav-btn hideBtn'>Export</button> 
-                         <button id='btn-import' class='nav-btn hideBtn'>Import</button>        
+                         <button id='btn-import' class='nav-btn hideBtn'>Import</button>
+                         <button id='btn-logout' class='nav-btn showBtn'>Logout</button>        
                      </div> 
 
                      <div id='der-console' class='der-console disp-row-center' > 

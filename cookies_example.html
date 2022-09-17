@@ -9,6 +9,10 @@
 </head>
 
 <body>
+
+    <div style="text-align:center;margin:auto;">
+        <button style='font-size:20px; padding:5px;' onclick="alert('jelouuuuu')">click here</button>
+    </div>
     <div class="cookie-consent-modal">
         <div class="cookie-content">
             <h1>Allow Cookies</h1>
@@ -39,12 +43,16 @@
         // localStorage.setItem("cookieAccepted", "yes")
     })
 
+    cookieModal.classList.add("active")
+
+    /*
     setTimeout(function (){
         let cookieAccepted = localStorage.getItem("cookieAccepted")
         if (cookieAccepted != "yes"){
             cookieModal.classList.add("active")
         }
     }, 2000)
+    */
     
 </script>
 
@@ -98,8 +106,27 @@ body{
     text-transform: uppercase;
 }
 
+/*
 .btn-cook.accept{
     background-color: rgb(0, 25, 185);
     color: #fff;
 }
+
+.btn-cook.cancel{
+    background-color: rgb(0, 25, 185);
+    color: rgb(0, 25, 185);
+}
+*/
+
+.cancel:hover {
+    background-color: rgb(0, 25, 185);
+    color: #fff
+}
+
+.accept:hover {
+    background-color: rgb(0, 25, 185);
+    color: #fff;
+}
+
+
 </style>

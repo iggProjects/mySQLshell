@@ -83,24 +83,41 @@ https://codepen.io/Jopzik/pen/xaWzMB/
 } 
 
 .login-modal { 
-  display:block; 
-  background-color:#ffcc00;
-  border: 10px solid rgb(149, 149, 253); 
+  display:block;  
+  /* 
+  background-color:#ffcc00; 
+  background-color:rgb(149, 149, 253);  
+  border: 10px solid #ffcc00;
+  */
   border-radius: 10px;
   position: fixed;
-  height: 350px;
-  width: 34%;  
-  left: 33%;
-  /* left: 40%; */
-  top: 25%;
+  height: 100vh;
+  width: 100vw;  
+  /*
+  left: 15vw;  
+  top: 15vh;
+  */
   padding: 6px 8px 8px;
   text-align: center;
   z-index: 1;
 }
 
-.login-modal .user-data { margin:50px; } 
+.login-modal .login-content { 
+  background-color:#ffcc00; 
+  border: 15px solid rgb(149, 149, 253);
+  border-radius: 20px;
+  margin-top:6%;
+  height:70vh;
+  width:50vh;  
+} 
 
-.div-DB-view { width:98%; height:100vh; overflow-y: scroll; margin:auto; margin-top:0px; padding:5px; /*z-index:-1; opacity:0.5;*/ /*border:5px solid #e2e2e2;*/ } 
+.login-modal .login-content .login-msg { font-size: 20px; color:rgb(129, 129, 255);}
+
+.login-modal .login-content .login-data { margin-top: 10%; }
+
+.login-modal .login-content .login-data input,button { padding:5px; width: 90%; height:40px; font-size: 20px;}
+
+.div-DB-view { width:98%; height:100vh; overflow-y: scroll; margin:auto; margin-top:0px; padding:5px; z-index:-1; opacity:0.2; /*border:5px solid #e2e2e2;*/ } 
 
 .div-DB-view p { color:blue; margin-left:5px;}
 

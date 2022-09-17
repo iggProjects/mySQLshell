@@ -1,0 +1,51 @@
+/*
+*    login modal style
+*/
+
+.login-modal{
+    height: 70vh;
+    width: 70vw;
+    /* width: 100vw; */
+    /* background-color: rgba(0,0,0,0.5);  */  
+    position: fixed;
+    top: 15vh;
+    left: 15vw;
+    z-index: 1;
+    display: none;
+    align-items: flex-end;
+}
+
+
+.login-modal.active{
+    display: flex;
+}
+
+.login-content{
+    background-color: rgb(173, 199, 9);
+    padding: 10px;
+    /* padding: 5vw 3vw; */
+    border-radius: 10px 10px 0 0;
+}
+
+.cookie-content p { margin-top:10px;}
+
+.login-btns{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2em;
+}
+
+.btn-cook{
+    border: none;
+    outline: none;
+    padding: .8em 1.5em;
+    width: 100px;
+    margin-right: 2em;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.btn-cook.accept{
+    background-color: rgb(0, 25, 185);
+    color: #fff;
+}
