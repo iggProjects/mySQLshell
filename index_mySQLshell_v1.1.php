@@ -45,14 +45,18 @@
             </div> 
             <br><br><br>
             <div class="login-data">
-                <p>User</p>
-                <input type="text" id="user" name="user">
-                <br><br>
-                <p>Password</p>  
-                <input type="password" id="passw" name="passw">
-                <br><br><br>
-                <button onclick='doLogin()'>Login</button>              
-                <!-- <button onclick='document.getElementById("login-msg").innerHTML=document.getElementById("user").value + " - " + document.getElementById("passw").value'>Login</button> -->             
+                
+                    <p>User</p>
+                    <textarea type="text" id="user" name="user" col="20"></textarea>
+                    <!-- <input type="text" id="user" name="user"> -->
+                    <br><br>
+                    <p>Password</p>  
+                    <textarea type="password" id="passw" name="passw"></textarea>
+                    <!-- <input type="password" id="passw" name="passw"> -->
+                    <br><br><br>
+                    <button onclick='doLogin()'>Login</button>              
+                
+
             </div>
         </div>              
     </div> 
@@ -88,17 +92,26 @@
         
              <div id='div_nav_izq' class='nav-izq my-scroll-bar'>   
                 <p style='margin-top:5px; margin-bottom:10px;color:#990000;font-size:20px;'>Servers Tree</p>  
+                <p id='temp'></p>
+               
             <?php    
+            /*
                 echo "<select id='serverList' class='servers_List' name='servers_List' >";                
                     echo "<option class='serverOpt' host_numb='' value='' selected>Select Server-User</option>"; 
                     for ( $k=0; $k < $i_serv; $k++ ) {                         
                         echo "<option class='serverOpt'  user='" . $host_serv_user[$k+1] . "' host_numb='" . ($k+1) . "'  value='" . $host_serv[$k+1] . "' >" . $host_serv_ShortName[$k+1] . " (" . $host_serv_user[$k+1] . ")</option>"; 
                     }
                 echo "</select>"; 
+            */    
             ?>    
-                 <p id='hostNavIzq' style='margin-top:5px; margin-bottom:10px; color:gray; font-size:12px;'><b></b></p>      
+          
+                <select id='serverList' class='servers_List' name='servers_List'>
+                    <option class='serverOpt' host_numb='' value='' selected>Select Server-User</option>
+                </select>    
+
+                <p id='hostNavIzq' style='margin-top:5px; margin-bottom:10px; color:gray; font-size:12px;'><b></b></p>      
                 
-                 <div id='html_div_nav_izq' style='width:98%;'></div> 
+                <div id='html_div_nav_izq' style='width:98%;'></div> 
 
              </div> 
 
@@ -183,10 +196,36 @@
 
     
     function doLogin() {
-/*                
+               
         let user = document.getElementById("user").value;
         let passw = document.getElementById("passw").value;
-        document.getElementById("login-msg").innerHTML = user + ' | ' + passw;
+        //document.getElementById("temp").innerHTML = user + ' | ' + passw;
+        
+        var host_serv = <?php echo json_encode($host_serv); ?>;
+        var host_serv_user = <?php echo json_encode($host_serv_user); ?>;
+        var host_serv_ShortName = <?php echo json_encode($host_serv_ShortName); ?>;
+
+        document.getElementById("temp").innerHTML = user + ' | ' + passw + ' | count: ' + host_serv.length;
+        
+        // CREATE SELECT OPTIONS FOR 'servers for user'
+        //let servers_select = "<select id='servers_List' name='servers_List' id='serverList'>";
+/*
+        echo "<option class='serverOpt' host_numb='' value='' selected>Select Server-User</option>"; 
+        for ( $k=0; $k < $i_serv; $k++ ) {                         
+            echo "<option class='serverOpt'  user='" . $host_serv_user[$k+1] . "' host_numb='" . ($k+1) . "'  value='" . $host_serv[$k+1] . "' >" . $host_serv_ShortName[$k+1] . " (" . $host_serv_user[$k+1] . ")</option>"; 
+        }
+*/
+        let servers_select = "<select id='servers_List' name='servers_List' id='serverList'>";
+        servers_select += "<option class='serverOpt' host_numb='' value='' selected>Select Server-User</option>";
+        for ( var k=0; k < host_serv.length; k++ ) {                         
+            servers_select += "<option class='serverOpt'  user='" + host_serv_user[k+1] + "' host_numb='" + (k+1) + "'  value='" + host_serv[k+1] + "' >" + host_serv_ShortName[k+1] + " (" + host_serv_user[k+1] + ")</option>"; 
+        }
+        servers_select += "</select>";
+        document.getElementById('serverList').innerHTML = servers_select;
+          
+        
+        
+/*    
 
         // console.log('tag=> ' + tag + '\nphp_sql_url=> ' + php_sql_url) 
         // Fetch_js('display_right_aside','./include/AJAX_php_js/ajax_List_DB.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host'));
