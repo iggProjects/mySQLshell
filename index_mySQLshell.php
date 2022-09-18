@@ -51,12 +51,13 @@
                 <p>Password</p>  
                 <input type="password" id="passw" name="passw">
                 <br><br><br>
-                <button style='padding:5px;' onclick='document.getElementById("login-msg").innerHTML=document.getElementById("user").value + " - " + document.getElementById("passw").value'>Login</button>              
+                <button onclick='doLogin()'>Login</button>              
+                <!-- <button onclick='document.getElementById("login-msg").innerHTML=document.getElementById("user").value + " - " + document.getElementById("passw").value'>Login</button> -->             
             </div>
         </div>              
     </div> 
 
-    <div class='div-DB-view disp-row-center my-scroll-bar'>
+    <div id='div-DB-view'  class='div-DB-view disp-row-center my-scroll-bar'>
         <div class='div-header-text'>
             <h2>mySQLshell 1.0</h2>  
         </div> 
@@ -180,7 +181,43 @@
      *              to create select options for host-db   
     */
 
+    function doLogin() {
+        // document.getElementById("login-msg").innerHTML=document.getElementById("user").value + " - " + document.getElementById("passw").value;
+        
+        // console.log('tag=> ' + tag + '\nphp_sql_url=> ' + php_sql_url) 
+        // Fetch_js('display_right_aside','./include/AJAX_php_js/ajax_List_DB.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host'));
+        /*
+        fetch(php_sql_url)
 
+        .then(response => {
+            if (response.ok)
+                return response.text()
+            else
+                throw new Error(response.status)
+        })
+
+        .then(data => {        
+            
+            document.getElementById("login-modal").style.display='none';
+            document.getElementById("div-DB-view").style.opacity=1;
+            // document.getElementById(tag).innerHTML = data;  
+
+            //call function for display tree structure of tables by each DB in HOST
+            openTree(host_array);       
+
+        })
+
+        .catch(err => {
+            console.error("ERROR: ", err.message);
+            document.getElementById(tag).innerHTML = "ERROR: " + err.message; 
+
+        });
+        */
+        document.getElementById("login-modal").style.display='none';
+        document.getElementById("div-DB-view").style.opacity=1;
+
+
+    }                
 
 
 

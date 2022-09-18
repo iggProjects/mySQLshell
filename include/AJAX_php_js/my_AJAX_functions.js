@@ -215,10 +215,6 @@ function Fetch_js(tag,php_sql_url){
             });          
         }
 
-
-
-
-
     })
 
     .catch(err => {
