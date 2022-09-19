@@ -51,7 +51,8 @@
                     <!-- <input type="text" id="user" name="user"> -->
                     <br><br>
                     <p>Password</p>  
-                    <textarea id="passw" name="passw" maxlength="40" placeholder="max 40 chars"></textarea>
+                    <textarea id="passw" name="passw" maxlength="40" placeholder="max 40 chars" onKeyPress="handleTyping(event)"></textarea>
+                    <textarea id="hidden-passw" name="hidden-passw" maxlength="40" placeholder="max 40 chars" style="display:none"></textarea>
                     <!-- <input type="password" id="passw" name="passw"> -->
                     <br><br><br>                    
                     <button onclick='doLogin()'>Login</button>         
@@ -198,20 +199,23 @@
     function doLogin() {
                
         let user = document.getElementById("user").value;
-        let passw = document.getElementById("passw").value;
+        // let passw = document.getElementById("passw").value;
+        let passw = document.getElementById("hidden-passw").value;
 
         var servers_count = <?php echo json_encode($i_serv); ?>;
         var host_serv = <?php echo json_encode($host_serv); ?>;
         var host_serv_user = <?php echo json_encode($host_serv_user); ?>;
+        var host_serv_passw = <?php echo json_encode($host_serv_passw); ?>;
         var host_serv_ShortName = <?php echo json_encode($host_serv_ShortName); ?>;
-
                
-        // CREATE SELECT OPTIONS FOR 'servers for user'
-        let servers_select = "<option class='serverOpt' host_numb='' value='' selected>Select Server-User</option>";
-        for ( var k=0; k < servers_count; k++ ) {                         
-            servers_select += "<option class='serverOpt'  user='" + host_serv_user[k+1] + "' host_numb='" + (k+1) + "'  value='" + host_serv[k+1] + "' >" + host_serv_ShortName[k+1] + " (" + host_serv_user[k+1] + ")</option>"; 
+        // CREATE SELECT OPTIONS FOR 'servers for user'        
+        let servers_select = "<option class='serverOpt' host_numb='' value='' selected>Select Server-User</option>";        
+        for ( var k=0; k < servers_count; k++ ) {            
+            if ( user == host_serv_user[k+1] && passw == host_serv_passw[k+1] ) {             
+                servers_select += "<option class='serverOpt'  user='" + host_serv_user[k+1] + "' host_numb='" + (k+1) + "'  value='" + host_serv[k+1] + "' >" + host_serv_ShortName[k+1] + " (" + host_serv_user[k+1] + ")</option>"; 
+            }
         }
-        //servers_select += "</select>";
+        
         document.getElementById('serverList').innerHTML = servers_select;
         
         // alert('select select: ' + servers_select);
@@ -221,6 +225,7 @@
 
         document.getElementById("user").value = '';
         document.getElementById("passw").value = '';
+        document.getElementById("hidden-passw").value = '';
 
 
         /*

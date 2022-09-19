@@ -563,3 +563,34 @@ function console_Log (msG,bckgCol,col,lines){
     var colEffects='line-height:20px; background:'+bckgCol+'; color:'+col; 
     console.log(msg,colEffects);                
 }
+
+function handleTyping(e){
+    setTimeout(function(){handleTypingDelayed(e)},500);
+}
+
+function handleTypingDelayed(e){
+
+    var text = document.getElementById('hidden-passw').value;
+    var stars = document.getElementById('hidden-passw').value.length;
+    unicode = eval(unicode);
+    var unicode=e.keyCode? e.keyCode : e.charCode;
+
+    if ( (unicode >=42 && unicode <=57) || (unicode >=64 && unicode <=90) || (unicode >=97 && unicode <=122) ) {
+        text = text + String.fromCharCode(unicode);  
+        stars += 1;
+    }else{
+        stars -= 1;
+    }
+
+    document.getElementById('hidden-passw').value = text;
+    document.getElementById('passw').value = generateStars(stars);
+
+}
+
+function generateStars(n){
+    var stars = '';
+    for (var i=0; i<n;i++){
+        stars += '*';
+    }
+    return stars;
+}
