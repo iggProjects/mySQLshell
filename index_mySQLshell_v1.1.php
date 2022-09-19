@@ -47,11 +47,11 @@
             <div class="login-data">
                 
                     <p>User</p>
-                    <textarea type="text" id="user" name="user" col="20"></textarea>
+                    <textarea id="user" name="user" maxlength="20" placeholder="max 20 chars"></textarea>
                     <!-- <input type="text" id="user" name="user"> -->
                     <br><br>
                     <p>Password</p>  
-                    <textarea type="password" id="passw" name="passw"></textarea>
+                    <textarea id="passw" name="passw" maxlength="40" placeholder="max 40 chars"></textarea>
                     <!-- <input type="password" id="passw" name="passw"> -->
                     <br><br><br>                    
                     <button onclick='doLogin()'>Login</button>         
@@ -224,7 +224,7 @@
 
 
         /*
-        *  Listeners for server select options
+        *  Listeners for server select options for user who has accessed via login
         */
         
         // Listener to select HOST and Display TREE of DB and Tbl's

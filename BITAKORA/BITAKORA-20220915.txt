@@ -19,8 +19,13 @@ IÑAKI - PENDIENTE VERSION 1.0 AL 20-08-2022
 
 - LOGIN multi user    
 
+- textarea with type like password
+  - https://stackoverflow.com/questions/12895774/how-to-make-a-textarea-act-like-a-password-field
+  - https://stackoverflow.com/questions/16058008/is-there-a-known-way-to-have-a-textarea-with-the-password-type
+  - https://activewidgets.com/datagrid.12319/textarea-and-password-type.html
+
 - LOGOUT
-  - clear servers tree
+  - clear "right areas"
 
 - Update action of clear areas when working in "queries area" mode and move from one table (db) to another    
 

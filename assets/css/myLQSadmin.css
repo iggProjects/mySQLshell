@@ -105,7 +105,7 @@ https://codepen.io/Jopzik/pen/xaWzMB/
 #login-modal .login-content .login-msg { font-size: 20px; color:rgb(129, 129, 255);}
 #login-modal .login-content .login-data { margin-top: 10%; }
 #login-modal .login-content .login-data p { font-size: 20px; color:#575656; } 
-#login-modal .login-content .login-data textarea { resize:none; padding:5px; width: 90%; height:40px; font-size: 15px; color:#004a90; border:3px solid rgb(74, 74, 254); border-radius: 5px; }
+#login-modal .login-content .login-data textarea { text-align: center; padding:5px; width: 90%; height:40px; font-size: 15px; color:#004a90; border:3px solid rgb(74, 74, 254); border-radius: 5px; }
 /* #login-modal .login-content .login-data input { padding:5px; width: 90%; height:40px; font-size: 15px; color:#004a90; border:3px solid rgb(74, 74, 254); border-radius: 5px; } */
 #login-modal .login-content .login-data button { padding:5px; width: 90%; height:40px; font-size: 15px; color:#004a90; border:3px solid rgb(74, 74, 254); border-radius: 5px; }
 

@@ -241,10 +241,21 @@ function doButtonAction(){
                 }
             break;
 
-        case 'btn-logout':                
+        case 'btn-logout':            
+
+                // active login layer and increase opacity of div-DB-view 
                 document.getElementById("login-modal").style.display='flex';
                 document.getElementById("login-content").style.textAlign='center';
                 document.getElementById("div-DB-view").style.opacity=0.2;
+                // Clear servers select options
+                document.getElementById("hostNavIzq").innerHTML = "";
+                let servers_select = "<select id='serverList' class='servers_List' name='servers_List'><option class='serverOpt' host_numb='' value='' selected>Select Server-User</option></select>";
+                document.getElementById("serverList").innerHTML = servers_select;       
+                // Clear tree area         
+                document.getElementById("html_div_nav_izq").innerHTML = "";
+                // Clear right areas
+                
+
             break;    
 
 
