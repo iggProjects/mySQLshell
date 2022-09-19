@@ -241,8 +241,15 @@ function doButtonAction(){
                 }
             break;
 
+        case 'btn-logout':                
+                document.getElementById("login-modal").style.display='flex';
+                document.getElementById("login-content").style.textAlign='center';
+                document.getElementById("div-DB-view").style.opacity=0.2;
+            break;    
+
+
         default:    
-        invoke_Alert_Window('Function avalaible in version 1.1 ! 😎');
+            invoke_Alert_Window('Function avalaible in version 1.1 ! 😎');
 
     }
     

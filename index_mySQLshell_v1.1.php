@@ -38,7 +38,7 @@
 <body>
 
     <div id='login-modal' class='login-modal disp-row-center'>  
-        <div class='login-content'>
+        <div id='login-content' class='login-content'>
             <br><br>
             <div class='login-msg'>
                 <p id='login-msg'>mySQLshell 1.0</p>           
@@ -53,8 +53,8 @@
                     <p>Password</p>  
                     <textarea type="password" id="passw" name="passw"></textarea>
                     <!-- <input type="password" id="passw" name="passw"> -->
-                    <br><br><br>
-                    <button onclick='doLogin()'>Login</button>              
+                    <br><br><br>                    
+                    <button onclick='doLogin()'>Login</button>         
                 
 
             </div>
@@ -95,20 +95,20 @@
                 <p id='temp'></p>
                
             <?php    
-            /*
+        /*    
                 echo "<select id='serverList' class='servers_List' name='servers_List' >";                
                     echo "<option class='serverOpt' host_numb='' value='' selected>Select Server-User</option>"; 
                     for ( $k=0; $k < $i_serv; $k++ ) {                         
                         echo "<option class='serverOpt'  user='" . $host_serv_user[$k+1] . "' host_numb='" . ($k+1) . "'  value='" . $host_serv[$k+1] . "' >" . $host_serv_ShortName[$k+1] . " (" . $host_serv_user[$k+1] . ")</option>"; 
                     }
                 echo "</select>"; 
-            */    
+        */        
             ?>    
-          
+            
                 <select id='serverList' class='servers_List' name='servers_List'>
                     <option class='serverOpt' host_numb='' value='' selected>Select Server-User</option>
-                </select>    
-
+                </select>  
+                    
                 <p id='hostNavIzq' style='margin-top:5px; margin-bottom:10px; color:gray; font-size:12px;'><b></b></p>      
                 
                 <div id='html_div_nav_izq' style='width:98%;'></div> 
@@ -199,129 +199,87 @@
                
         let user = document.getElementById("user").value;
         let passw = document.getElementById("passw").value;
-        //document.getElementById("temp").innerHTML = user + ' | ' + passw;
-        
+
+        var servers_count = <?php echo json_encode($i_serv); ?>;
         var host_serv = <?php echo json_encode($host_serv); ?>;
         var host_serv_user = <?php echo json_encode($host_serv_user); ?>;
         var host_serv_ShortName = <?php echo json_encode($host_serv_ShortName); ?>;
 
-        document.getElementById("temp").innerHTML = user + ' | ' + passw + ' | count: ' + host_serv.length;
-        
+               
         // CREATE SELECT OPTIONS FOR 'servers for user'
-        //let servers_select = "<select id='servers_List' name='servers_List' id='serverList'>";
-/*
-        echo "<option class='serverOpt' host_numb='' value='' selected>Select Server-User</option>"; 
-        for ( $k=0; $k < $i_serv; $k++ ) {                         
-            echo "<option class='serverOpt'  user='" . $host_serv_user[$k+1] . "' host_numb='" . ($k+1) . "'  value='" . $host_serv[$k+1] . "' >" . $host_serv_ShortName[$k+1] . " (" . $host_serv_user[$k+1] . ")</option>"; 
-        }
-*/
-        let servers_select = "<select id='servers_List' name='servers_List' id='serverList'>";
-        servers_select += "<option class='serverOpt' host_numb='' value='' selected>Select Server-User</option>";
-        for ( var k=0; k < host_serv.length; k++ ) {                         
+        let servers_select = "<option class='serverOpt' host_numb='' value='' selected>Select Server-User</option>";
+        for ( var k=0; k < servers_count; k++ ) {                         
             servers_select += "<option class='serverOpt'  user='" + host_serv_user[k+1] + "' host_numb='" + (k+1) + "'  value='" + host_serv[k+1] + "' >" + host_serv_ShortName[k+1] + " (" + host_serv_user[k+1] + ")</option>"; 
         }
-        servers_select += "</select>";
+        //servers_select += "</select>";
         document.getElementById('serverList').innerHTML = servers_select;
-          
         
-        
-/*    
-
-        // console.log('tag=> ' + tag + '\nphp_sql_url=> ' + php_sql_url) 
-        // Fetch_js('display_right_aside','./include/AJAX_php_js/ajax_List_DB.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host'));
-        
-        let tag = "login-msg";
-        let php_sql_url = "./include/AJAX_php_js/ajax_do_Login.php?";
-
-        fetch(tag,host_array,php_sql_url)
-        
-        .then(response => {
-            if (response.ok)
-                return response.text()
-            else
-                throw new Error(response.status)
-        })
-
-        .then(data => {        
-            
-            document.getElementById("login-modal").style.display='none';
-            document.getElementById("div-DB-view").style.opacity=1;
-            // document.getElementById(tag).innerHTML = data;  
-
-            //call function for display tree structure of tables by each DB in HOST
-            openTree(host_array);       
-
-        })
-
-        .catch(err => {
-            console.error("ERROR: ", err.message);
-            document.getElementById(tag).innerHTML = "ERROR: " + err.message; 
-
-        });
-*/        
+        // alert('select select: ' + servers_select);
+    
         document.getElementById("login-modal").style.display='none';
         document.getElementById("div-DB-view").style.opacity=1;
 
+        document.getElementById("user").value = '';
+        document.getElementById("passw").value = '';
 
-    }                
-    
 
-    /*
-     *  Some Listeners  
-    */
-    
-    // Listener to select HOST and Display TREE of DB and Tbl's
-    var hostSelected = document.getElementById("serverList");
-    hostSelected.addEventListener("click", () => {
-        hostSelected.addEventListener("change", () => {  
-                        
-            document.getElementById('hostNavIzq').innerHTML = hostSelected.value;  
+        /*
+        *  Listeners for server select options
+        */
+        
+        // Listener to select HOST and Display TREE of DB and Tbl's
+        var hostSelected = document.getElementById("serverList");
+        hostSelected.addEventListener("click", () => {
+            hostSelected.addEventListener("change", () => {  
+                            
+                document.getElementById('hostNavIzq').innerHTML = hostSelected.value;  
+                
+                let user_name = event.target.selectedOptions[0].getAttribute("user");                
+
+                let host_n = event.target.selectedOptions[0].getAttribute("host_numb");            
+
+                // clear html of 'der-console associated tag's'
+                clearDerConsoleAreas();       
+                // clear 'display-sql-console-up & display-sql-console-Down'                
+                ClearSqlQueryAreas(); 
+                // IF tal #display-sql-console-Up is active
+                if ( document.getElementById('display-sql-console-Up').classList.contains('showDiv')) {
+                    go_back();
+                }
             
-            let user_name = event.target.selectedOptions[0].getAttribute("user");                
+                if (hostSelected.value != 0 ) {
+                    
+                    // call ajax function to display DB-info area in div_nav_izq
+                    php_sql_url = './include/AJAX_php_js/ajax_Display_div_nav_izq.php?host_numb=' + host_n + '&hostName='+hostSelected.value;
+                    
+                    var host_array = <?php echo json_encode($host_serv); ?>;
 
-            let host_n = event.target.selectedOptions[0].getAttribute("host_numb");            
+                    // select display-result-nav-title values
+                    var table_param = document.getElementById('display-result-nav-title');
 
-            // clear html of 'der-console associated tag's'
-            clearDerConsoleAreas();       
-            // clear 'display-sql-console-up & display-sql-console-Down'                
-            ClearSqlQueryAreas(); 
-            // IF tal #display-sql-console-Up is active
-            if ( document.getElementById('display-sql-console-Up').classList.contains('showDiv')) {
-                go_back();
-            }
-           
-            if (hostSelected.value != 0 ) {
-                
-                // call ajax function to display DB-info area in div_nav_izq
-                php_sql_url = './include/AJAX_php_js/ajax_Display_div_nav_izq.php?host_numb=' + host_n + '&hostName='+hostSelected.value;
-                
-                var host_array = <?php echo json_encode($host_serv); ?>;
+                    table_param.setAttribute('user_name',user_name);
+                    table_param.setAttribute('host_numb',host_n);
+                    table_param.setAttribute('host',hostSelected.value);
+                    table_param.innerHTML = "user: " + user_name + " || host_numb: " + host_n + " || host url: " + hostSelected.value;  
 
-                // select display-result-nav-title values
-                var table_param = document.getElementById('display-result-nav-title');
+                    Display_div_nav_izq('html_div_nav_izq',host_array,php_sql_url);  
+                    
+                    // Display query "show databases" in tag "display_right_aside"                 
+                    document.getElementById('p-comment').innerHTML='DATABASES';        
+                    // tag for show tables of DB selected                   
+                    Fetch_js('display_right_aside','./include/AJAX_php_js/ajax_List_DB.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host'));
 
-                table_param.setAttribute('user_name',user_name);
-                table_param.setAttribute('host_numb',host_n);
-                table_param.setAttribute('host',hostSelected.value);
-                table_param.innerHTML = "user: " + user_name + " || host_numb: " + host_n + " || host url: " + hostSelected.value;  
+                } else {
+                    document.getElementById('html_div_nav_izq').innerHTML = ""; 
+                    document.getElementById('display-result-nav-title').innerHTML = ""; 
+                    document.getElementById('display_sql_result').innerHTML = "";
+                    document.getElementById('display_right_aside').innerHTML = "";                 
+                }
 
-                Display_div_nav_izq('html_div_nav_izq',host_array,php_sql_url);  
-                
-                // Display query "show databases" in tag "display_right_aside"                 
-                document.getElementById('p-comment').innerHTML='DATABASES';        
-                // tag for show tables of DB selected                   
-                Fetch_js('display_right_aside','./include/AJAX_php_js/ajax_List_DB.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host'));
+            })
+        });
 
-            } else {
-                document.getElementById('html_div_nav_izq').innerHTML = ""; 
-                document.getElementById('display-result-nav-title').innerHTML = ""; 
-                document.getElementById('display_sql_result').innerHTML = "";
-                document.getElementById('display_right_aside').innerHTML = "";                 
-            }
-
-        })
-    });
-
+    }       
 
     var buttonSelected = document.getElementsByClassName('nav-btn');
     for (var i = 0; i < buttonSelected.length; i++) {
