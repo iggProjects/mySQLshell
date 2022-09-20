@@ -28,34 +28,13 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./assets/css/myLQSadmin.css">
-    <!-- <link rel="stylesheet" href="./assets/css/myLQSlogin.css"> -->
+    <link rel="stylesheet" href="./assets/css/myLQSadmin-v1.0.css">    
     <script type='text/javascript' src='./include/AJAX_php_js/my_AJAX_functions.js'></script>
     <script type='text/javascript' src='./include/AJAX_php_js/my_CANVAS_functions.js'></script>
     <script type='text/javascript' src='./include/AJAX_php_js/main_functions.js'></script>
   <style></style>
 </head>
 <body>
-
-    <div id='login-modal' class='login-modal disp-row-center'>  
-        <div class='login-content'>
-            <br><br>
-            <div class='login-msg'>
-                <p id='login-msg'>mySQLshell 1.0</p>           
-            </div> 
-            <br><br><br>
-            <div class="login-data">
-                <p>User</p>
-                <input type="text" id="user" name="user">
-                <br><br>
-                <p>Password</p>  
-                <input type="password" id="passw" name="passw">
-                <br><br><br>
-                <button onclick='doLogin()'>Login</button>              
-                <!-- <button onclick='document.getElementById("login-msg").innerHTML=document.getElementById("user").value + " - " + document.getElementById("passw").value'>Login</button> -->             
-            </div>
-        </div>              
-    </div> 
 
     <div id='div-DB-view'  class='div-DB-view disp-row-center my-scroll-bar'>
         <div class='div-header-text'>
@@ -116,8 +95,7 @@
                          <button id='btn-restore' class='nav-btn showBtn'>Restore</button>  
                          <button id='btn-users' class='nav-btn showBtn'>USERS</button>                                                
                          <button id='btn-export' class='nav-btn hideBtn'>Export</button> 
-                         <button id='btn-import' class='nav-btn hideBtn'>Import</button>
-                         <button id='btn-logout' class='nav-btn showBtn'>Logout</button>        
+                         <button id='btn-import' class='nav-btn hideBtn'>Import</button>                         
                      </div> 
 
                      <div id='der-console' class='der-console disp-row-center' > 
@@ -176,56 +154,6 @@
 
 <script>
 
-    /*
-     *  LOGIN MODAL functions, Read (User, Password), Fetch to check in DB, case OK, go to INDEX with credentials 
-     *              to create select options for host-db   
-    */
-
-    
-    function doLogin() {
-/*                
-        let user = document.getElementById("user").value;
-        let passw = document.getElementById("passw").value;
-        document.getElementById("login-msg").innerHTML = user + ' | ' + passw;
-
-        // console.log('tag=> ' + tag + '\nphp_sql_url=> ' + php_sql_url) 
-        // Fetch_js('display_right_aside','./include/AJAX_php_js/ajax_List_DB.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host'));
-        
-        let tag = "login-msg";
-        let php_sql_url = "./include/AJAX_php_js/ajax_do_Login.php?";
-
-        fetch(tag,host_array,php_sql_url)
-        
-        .then(response => {
-            if (response.ok)
-                return response.text()
-            else
-                throw new Error(response.status)
-        })
-
-        .then(data => {        
-            
-            document.getElementById("login-modal").style.display='none';
-            document.getElementById("div-DB-view").style.opacity=1;
-            // document.getElementById(tag).innerHTML = data;  
-
-            //call function for display tree structure of tables by each DB in HOST
-            openTree(host_array);       
-
-        })
-
-        .catch(err => {
-            console.error("ERROR: ", err.message);
-            document.getElementById(tag).innerHTML = "ERROR: " + err.message; 
-
-        });
-*/        
-        document.getElementById("login-modal").style.display='none';
-        document.getElementById("div-DB-view").style.opacity=1;
-
-
-    }                
-    
 
     /*
      *  Some Listeners  
@@ -370,10 +298,6 @@
 
 
     }
-
-
-    
-
 
 </script>
 

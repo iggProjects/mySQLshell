@@ -1,8 +1,10 @@
 BITAKORA VERSION 1.1
 
-SERVERS basic info... 
-    - how to obtain the info?
+SERVERS basic info of PHP and Mariadb version? (like phpmyadmin)
 
+    - how to obtain this ?
+        👇👇
+        
     Example: phpmyadmin
         DB server
             Servidor: 127.0.0.1 via TCP/IP
@@ -21,7 +23,8 @@ SERVERS basic info...
 
 Account management
     - https://mariadb.com/kb/en/account-management-sql-commands/
-    - https://www.daniloaz.com/es/como-crear-un-usuario-en-mysql-mariadb-y-concederle-permisos-para-una-base-de-datos-desde-la-linea-de-comandos/
+    - https://www.daniloaz.com/es/    
+        - como-crear-un-usuario-en-mysql-mariadb-y-concederle-permisos-para-una-base-de-datos-desde-la-linea-de-comandos/
 
 ANALYZE - EXPLAIN commands
     - https://mariadb.org/wp-content/uploads/2020/09/analyze-statement_serverfest2020.pdf

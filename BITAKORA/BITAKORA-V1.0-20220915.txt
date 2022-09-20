@@ -1,0 +1,253 @@
+IÑAKI - DARREN ( pendiente para version 1.0 )
+
+  1.- LOGIN
+  2.- HELP ERRORES
+  3.- DOWNLOAD
+  4.- README
+
+********************************************************************
+
+( GITHUB "upload a project to github"
+  https://stackoverflow.com/questions/12799719/how-to-upload-a-project-to-github
+)
+
+IÑAKI - PUNTOS PENDIENTES VERSION 1.0 AL 15-09-2022
+
+- README 
+  - caso str_contains (php 8) buscar el equivalente en php 7.4
+    (https://www.codegrepper.com/code-examples/php/str_contains+php+7)  
+
+- Update action of clear areas when working in "queries area" mode and move from one table (db) to another    
+
+- ask to confirm "yes or no" in Backup and Restore buttons   
+  - https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_confirm3
+
+- FILTERS FOR QUERIES 
+  - FILTROS: check for type cols, cases 'BLOB' (example: mediumblob in 'tbl_arch_imagen_persona' in penjub)
+  - CASE sql query: filter scripts, some chars.....  
+    - HTML entities
+      - https://www.w3schools.com/html/html_entities.asp
+      - https://www.freeformatter.com/html-entities.html
+
+    - addslashes
+      - https://www.php.net/manual/es/function.addslashes.php
+      - https://www.w3schools.com/php/phptryit.asp?filename=tryphp_func_string_addslashes  
+
+    - https://stackoverflow.com/questions/895659/how-do-i-block-or-restrict-special-characters-from-input-fields-with-jquery
+    - https://stackoverflow.com/questions/4374822/remove-all-special-characters-with-regexp
+    - https://social.msdn.microsoft.com/Forums/en-US/bf1bd253-04fb-40b6-bb2f-20b97578f812/how-to-filter-special-character-ltgt-in-text-field-input-by-user?forum=aspwebforms
+
+        I've done this test in a console app, because its more easy to me to handling your characters
+
+        1    // crate a array of unwanted characters
+        2    // for simply use a array of string
+        3    string[] exp = new string[] { "<", "/", "," };
+        4    
+        5    // do it in a console-app because i cant handle all
+        6    // the special characters from the vietnames language
+        7    string input = Console.ReadLine();
+        8    
+        9    // iterate through the array and clean them up
+        10   foreach (string c in exp)
+        11   {
+        12   	input = Regex.Replace(input, c, "");
+        13   }
+        14   
+        15   // show the result
+        16   Console.WriteLine(input);
+        17   // wait for end
+        18   Console.ReadLine();
+
+- progress bar for large amount of data for some query
+  - https://stackoverflow.com/questions/15298071/progress-bar-with-mysql-query-with-php
+  - https://www.plus2net.com/php_tutorial/ajax-progress2.php
+  - https://dba.stackexchange.com/questions/17367/how-can-i-monitor-the-progress-of-an-import-of-a-large-sql-file
+
+- COLOCAR DB KONT PARA PRACTICAR CON DATA
+  - Tables width data???   
+  - probar queries en sql query area 
+
+- Pass CSS to SCSS, including in SCSS the "style's inside tag's; and then remove it.  
+
+
+DO IT - ✔✔😎😎
+
+- favourites button for users favourites queries (now only for "root")  ✔✔😎😎   
+  - change field btn_name to opt_name
+  - Make schema for several users
+  - html,css 
+     https://codepen.io/jcoulterdesign/pen/azQMqG/
+
+
+- DB nativa de mySQLshell: "my_sql_admin"   ✔✔😎😎
+
+  - rename my_sql_admin my_sql_shell
+  - crear las primeras tablas usuarios, standard_queries, favorite_queries, .... ✔✔  - 
+  - standard queries aplican a cualquier DB (campos: id, user, comment, btn_name, query, creation_date)   
+  - "favorite" queries: insert-update-delete-drop
+    - Fields: id, user, db, comment, query
+
+
+- Caso count(*) when Select comes from sql_quey_area  ✔✔😎😎
+  - substitute string SELECT "fields list" FROM ..... with SELECT count(*) FROM ..... 
+
+- button ANALYZE "queries" in sql area ✔✔😎😎 
+
+- Create sub dir "\assets\log-files" (if not exists)  (via php)  ✔✔😎😎 
+  - https://stackoverflow.com/questions/2303372/create-a-folder-if-it-doesnt-already-exist
+      if (!file_exists('path/to/directory')) {
+        mkdir('path/to/directory', 0777, true); // review permissions
+      }  
+
+- cases when query result doesn't have any records (totRecords = 0)  ✔✔😎😎
+
+- customize "window alert"  ✔✔😎😎
+  - https://codepen.io/nishanc/pen/NWWPdZE
+  - https://stackoverflow.com/questions/7853130/how-to-change-the-style-of-alert-box 
+  - https://www.delftstack.com/howto/javascript/javascript-customize-alert-box/
+  - https://www.w3schools.com/howto/howto_js_alert.asp
+  - https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_alert3
+  - https://www.anerbarrena.com/javascript-confirm-js-5508/
+  - https://stackoverflow.com/questions/7853130/how-to-change-the-style-of-alert-box
+
+- Al ejecutar "Clear Query" chequear que coloque los selectores en opc '0'  ✔✔😎😎  
+
+- if host server is change, or db is changed, clear corrsponding data tag's   ✔✔😎😎
+  - 'display_sql_result'
+
+- check errors with command "exec()"  ✔✔😎😎    
+
+- create function table_to_CSV ( with fetch_js)  ✔✔😎😎
+
+- first version for "help url" for troubles in mysql...  URL google para errores mysql  ✔✔😎😎
+  - https://www.googleguide.com/linking.html
+
+- php "exec()" function   ✔✔😎😎
+
+    - https://www.php.net/manual/es/function.exec.php
+      exec(string $command, array &$output = ?, int &$return_var = ?): string  
+    - https://stackoverflow.com/questions/11875820/checking-exec-runs-successfully-or-not 
+    - https://stackoverflow.com/questions/17419364/how-to-find-if-command-executed-in-exec-command-fails  
+                    
+      exec('C://abc//wkhtmltopdf home.html sample.pdf', $output, $return_var);
+      if($return_var !== 0){ // exec is successful only if the $return_var was set to 0. !== means equal and identical, that is it is an integer and it also is zero.
+          echo "PDF not created";
+      }
+      else{
+          echo "PDF Created Successfully";
+      }
+
+- PROCESOS BACKUP (), RESTORE (), IMPORT (CSV/EXCEL), EXPORT TABLE SELECT TO (CSV/EXCEL)  
+
+  - backup to .SQL   ✔✔😎😎        
+  - restore .SQL     ✔✔😎😎 
+  - IMPORT / EXPORT  ✔✔😎😎
+    - https://www.a2zwebhelp.com/export-data-to-csv
+    - https://www.mysqltutorial.org/mysql-export-table-to-csv/
+    - https://www.cloudways.com/blog/import-export-csv-using-php-and-mysql/
+    - https://stackoverflow.com/questions/36721418/php-csv-export-from-stored-mysql-procedure
+    - https://write.corbpie.com/load-and-execute-sql-files-with-php/
+
+  - Query to CSV
+    - make buttton  ✔✔😎😎
+
+  export code:
+      SET $deta_time = DATE_FORMAT(NOW(),'_%Y_%m_%d_%H_%i_%s');
+
+      SET $FOLDER = 'c:/tmp/';
+      SET $PREFIX = 'orders';
+      SET $EXT    = '.csv';
+      SET $CMD = CONCAT("SELECT * FROM orders INTO OUTFILE '",@FOLDER,@PREFIX,@TS,@EXT,
+                "' FIELDS ENCLOSED BY '\"' TERMINATED BY ';' ESCAPED BY '\"'",
+                "  LINES TERMINATED BY '\r\n';");
+      PREPARE statement FROM $CMD;
+      EXECUTE statement;  
+
+      tbl_ciudad
+        SELECT * FROM tbl_ciudad INTO OUTFILE 'C:/xampp/htdocs/tbl_ciudad.csv' 
+        FIELDS ENCLOSED BY '"' 
+        TERMINATED BY ';' 
+        ESCAPED BY '"' 
+        LINES TERMINATED BY '\r\n'
+        
+    - ARRAy to CSV 
+      - https://stackoverflow.com/questions/23530145/mysql-result-to-array-to-write-to-csv-file
+
+  - BACKUP-RESTORE 
+
+    FROM SHELL COMAND LINE  
+      - backup:   mysqldump --default-character-set=utf8mb4 --routines -hlocalhost -uroot -p@mysql@  my_lqs_admin > my_lqs_admin.sql
+      - restore:  mysql -h{$server_name} -u{$username} -p{$password} {$database} < {$database}.sql
+
+    FROM PHP 
+    
+      - https://stackoverflow.com/questions/22217397/backup-and-restore-mysql-database-in-php
+      - https://dba.stackexchange.com/questions/9306/how-do-you-mysqldump-specific-tables
+      - https://stackoverflow.com/questions/147821/loading-sql-files-from-within-php
+
+        if(filesize($path) < 16 && empty(trim(file_get_contents($path))) )
+      - https://stackoverflow.com/questions/17615003/file-get-contents-with-empty-file-not-working-php/17615078
+
+
+      BACKUP
+      <?php
+        define("BACKUP_PATH", "/dir/subdir/");
+        $server_name   = "localhost";
+        $username      = "root";
+        $password      = "root passw";
+        $database_name = "DBname";
+        $date_string   = date("Ymd");
+        $cmd = "mysqldump --routines -h {$server_name} -u {$username} -p{$password} {$database_name} > " . BACKUP_PATH . "{$date_string}_{$database_name}.sql";
+        exec($cmd);
+      ?>  
+
+      RESTORE
+
+      <?php
+        $restore_sql  = "/dir/subdir/database.sql";
+        $server_name   = "localhost";
+        $username      = "root";
+        $password      = "root";
+        $database_name = "database";
+        $cmd = "mysql -h {$server_name} -u {$username} -p{$password} {$database_name} < $restore_sql";
+        exec($cmd);
+      ?>
+
+      BACKUP FOR SOME TABLE OR TABLE's 
+        $database_name $table1 
+        $database_name $table1 $table2 $table3 ...
+
+- Clasify nav-btns in two sub classes type1 (home - ), type2 (test query screen) ✔✔😎😎  
+
+- Check mysql error messages in "select cases"
+  - For example, when a table does not have records  
+
+- Evaluar botones para ofrecer "máscaras" para queries tipo:  ✔✔😎😎
+  - SHOW CREATE TABLE 'myTable' versus Describe Table
+    SELECT, INSERT, UPDATE, DELETE, DROP, IMPORT, EXPORT, BACKUP, RESTORE  
+  - Check syntaxis, and change especial words to uppercase and color blue.... 
+        (SELECT, FROM, WHERE, INNER JOIN, ORDER BY, ....)  
+        Ej --> INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...);  
+        - y rellenamos a mano los datos de cada campo
+
+- PAGINATION FOR "SELECT REPORTS"  ✔✔😎😎
+    - en caso ajax_Sql_Query, buscar equivalente en js a:
+      $sql_query = substr($sql_query, 0, strpos($sql_query, 'limit')); ✔✔😎😎  
+
+- Check toogle effect in DB-tables in left side tag "html_div_nav_izq" ✔✔😎😎
+  see function "openTree" (my_AJAX_functions.js lines 79 to 89) 
+
+- show databases in tag 'display_right_aside' when host is selected  ✔✔😎😎
+  (left aside only show DB's with tables)
+
+- Permitir abrir make query apenas se selecciones el host   ✔✔😎😎
+  - esto permitiría al root, o al administrador actuar sobre el servidor, sea para crear nuevas DB 
+    o para modificar DB, respaldar, eliminar, restore backups........
+  - OJO: esto solo debe ser una opción para usuarios root o administrador con todos los privilegios  
+  - Si seleccionamos un server, deberíamos acceder a la sql console. Por ejemplo, para crear una nueva DB en Localhost, 
+    y crear sus algunas tablas. Esto traería como consecuencia que debemos sustituir el query en ajax_Display_div_nav_izq 
+    (línea 68) $select_query = "SELECT TABLE_SCHEMA, TABLE_NAME, TABLE_TYPE, TABLE_ROWS, TABLE_COLLATION FROM information_schema.tables;"; 
+
+
+
+
