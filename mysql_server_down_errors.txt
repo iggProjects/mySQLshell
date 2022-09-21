@@ -21,7 +21,8 @@ https://stackoverflow.com/questions/18022809/how-to-solve-error-mysql-shutdown-u
 
   Instead, first try using the MySQL backup folder which is included with XAMPP. So do next steps:
 
-  0.- EN PHMYADMIN/CONFIG.INC.PHP, CAMBIAR CLAVE POR '' PARA USUARIO ROOT EN LOCALHOST (y poner password false??)
+  0.- EN PHMYADMIN/CONFIG.INC.PHP, CAMBIAR CLAVE POR '' PARA USUARIO ROOT EN LOCALHOST,y poner "AllowNoPassword" true)
+      En /localhost/mysqlshell/config.servers hacer lo mismo
   1.- Rename folder mysql/data to mysql/data_old
   2.- Make a copy of mysql/backup folder and name it as mysql/data
   3.- Copy all your database folders from mysql/data_old into mysql/data (except mysql, performance_schema, and phpmyadmin folders)
@@ -31,9 +32,10 @@ https://stackoverflow.com/questions/18022809/how-to-solve-error-mysql-shutdown-u
   LUEGO DE REALIZAR LOS PASOS ANTERIORES, HACER:  
   1.- INGRESAR EN "phpmyadmin";
   2.- REPARAR EN MYSQL LA TABLE "DB";
-  3.- CHEQUEAR SI VOLVIÓ A PONER CLAVE ROOT EN ''. CASO + ENTONCES CAMBIAR CLAVE EN PHPMYADMIN
-  3.- VOLVER A COLOCAR LA CLAVE DE ROOT EN LOCALHOST Y 127.0.0.1 DEL CONFIG.SERVERS.PHP
-  4.- REGRESAR LA CLAVE DE ROOT LOCALHOST EN EL FILE PHMYADMIN/CONFIG.INC.PHP
+  3.- ASIGNAR CLAVE A ROOT VIA PHPMYADMIN. 
+  4.- COLOCAR ESA CLAVE DE ROOT LOCALHOST EN EL FILE PHMYADMIN/CONFIG.INC.PHP
+  5.- COLOCAR ESA CLAVE DE ROOT EN LOCALHOST Y 127.0.0.1 DEL CONFIG.SERVERS.PHP
+   
 
 
 https://gist.github.com/josemmo/24e35f2b4984a4370ce2c164f5956437
