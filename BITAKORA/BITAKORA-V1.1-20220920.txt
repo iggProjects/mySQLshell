@@ -4,6 +4,8 @@
 
 IÑAKI - PENDIENTE VERSION 1.1 AL 20-09-2022
 
+- MAKE "mysql_server_down_errors.txt" VERSION FOR MYSQL SHELL (WITH MYSQL COMMANDS)
+
 - README 
   - caso str_contains (php 8) buscar el equivalente en php 7.4
     (https://www.codegrepper.com/code-examples/php/str_contains+php+7)
