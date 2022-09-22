@@ -11,24 +11,99 @@ IÑAKI - PENDIENTE VERSION 1.1 AL 20-09-2022
     (https://www.codegrepper.com/code-examples/php/str_contains+php+7)
 
 - LOGIN 
-  - Deny access if user is not in congi.servers
-      
+  - Deny access if user is not in congi.servers      
 
 - LOGOUT
   - clear all working areas (left, nav, right....)
+
+- ANALYZE, OPTIMIZE AND REPAIR TABLES
+
+  - queries, example with db & globa_priv: 
+      - ANALYZE TABLE `db`, `global_priv`;
+      - OPTIMIZE TABLE `db`, `global_priv`;
+      - REPAIR TABLE `db`, `global_priv`;
+
+  - mysql index for table DB is corrupt... repair it 
+    - https://stackoverflow.com/questions/57128891/how-repair-corrupt-xampp-mysql-user-table
+
+    This is almost certainly a known bug in mariaDB (ie mySQL). See ApacheFriends.org for the description. Problem occurs after user password changes - often user root.
+    General advice seems to be to cut your losses and downgrade your XAMPP to 7.3.5
+    Otherwise the problem may later recur even after a complete uninstall/re-install of 7.3.7 for example.
+
+    🙄 repair table DATABASENAME.TABLENAME use_fr  
+        REPAIR TABLE db EXTENDED USE_FRM    
+
+    Step 1. In your XAMPP installation directory find the " \phpMyAdmin\libraries\ "
+
+    Step 2. In above folder, find this file > " check_user_privileges.inc.php "
+
+    Step 3. Open above file in a code editor of your choice and find line number 28
+      " $checkUserPrivileges->analyseShowGrant(); "
+
+    Step 4. Delete Line Number 28 and add below code instead:
+      $GLOBALS['is_create_db_priv'] = true;
+      $GLOBALS['is_reload_priv'] = true;
+      $GLOBALS['db_to_create'] = '';
+      $GLOBALS['dbs_where_create_table_allowed'] = array('*');
+      $GLOBALS['dbs_to_test'] = false;
+      $GLOBALS['db_priv'] = true;
+      $GLOBALS['col_priv'] = true;
+      $GLOBALS['table_priv'] = true;
+      $GLOBALS['proc_priv'] = true;
+
+    Step 5. Save file and restart XAMPP.
+
+  - codegrepper global_priv is corrupt
+    https://www.codegrepper.com/code-examples/whatever/mysqli%3A%3Aquery%28%29%3A+%28HY000%2F1034%29%3A+Index+for+table+%27global_priv%27+is+corrupt%3B+try+to+repair+it
+        Run XAMPP Web Server
+        Go to Folder\xampp\mysql\bin
+        Run mysql_upgrade.exe
+        REFRESH & ENJOY
+
+
+  - 1030 error 176 read page with wrong checksum desde el manejador de la tabla aria
+    - https://stackoverflow.com/questions/60864367/1030-got-error-176-read-page-with-wrong-checksum-from-storage-engine-aria
 
 
 - OPTION users 
 
   - review "user creation" topic
-    - FLUSH PRIVILEGES; when we grant some privileges for a user, running the command flush privileges will reloads the grant tables in the mysql database enabling the changes to take effect without reloading or restarting mysql service.
+    - FLUSH PRIVILEGES; when we grant some privileges for a user, running the command flush privileges will reloads the grant tables 
+        in the mysql database enabling the changes to take effect without reloading or restarting mysql service.
       - https://www.interserver.net/tips/kb/mysql-flush-commands/
       - 
 
-  - create Mariadb users
+
+
+  - CREATE USER in Mariadb
+    - https://mariadb.com/kb/en/create-user/
+        The CREATE USER statement creates new MariaDB accounts. To use it, you must have the global CREATE USER privilege or the INSERT privilege for the mysql database. For each account, CREATE USER creates a new row in mysql.user (until MariaDB 10.3 this is a table, from MariaDB 10.4 it's a view) or mysql.global_priv_table (from MariaDB 10.4) that has no privileges.
+
+        If any of the specified accounts, or any permissions for the specified accounts, already exist, then the server returns ERROR 1396 (HY000). If an error occurs, CREATE USER will still create the accounts that do not result in an error. Only one error is produced for all users which have not been created:  ERROR 1396 (HY000):  Operation CREATE USER failed for 'u1'@'%','u2'@'%'
+
+        CREATE USER, DROP USER, CREATE ROLE, and DROP ROLE all produce the same error code when they fail.
+
+        Account names
+          - https://mariadb.com/kb/en/create-user/#account-names
+            Account names have both a user name component and a host name component, and are specified as 'user_name'@'host_name'.
+            The user name and host name may be unquoted, quoted as strings using double quotes (") or single quotes ('), or quoted as identifiers using backticks (`). You must use quotes when using special characters (such as a hyphen) or wildcard characters. If you quote, you must quote the user name and host name separately (for example 'user_name'@'host_name').
+
+
     - https://www.digitalocean.com/community/tutorials/crear-un-nuevo-usuario-y-otorgarle-permisos-en-mysql-es
 
-  - 
+  - GLOBAL_PRIV Table
+    - https://mariadb.com/kb/en/mysqlglobal_priv-table/
+      The mysql.global_priv table contains information about users that have permission to access the MariaDB server, and their global privileges.
+      Note that the MariaDB privileges occur at many levels. A user may not be granted create privilege at the user level, but may still have create permission on certain tables or databases, for example. See privileges for a more complete view of the MariaDB privilege system.
+
+      Insert in Standard queries: SELECT CONCAT(user, '@', host, ' => ', JSON_DETAILED(priv)) FROM mysql.global_priv;
+
+  - FLUSH in Mariadb
+    - https://mariadb.com/kb/en/flush/
+    The FLUSH statement clears or reloads various internal caches used by MariaDB. To execute FLUSH, you must have the RELOAD privilege. See GRANT.
+    The RESET statement is similar to FLUSH. See RESET.
+    You cannot issue a FLUSH statement from within a stored function or a trigger. Doing so within a stored procedure is permitted, as long as it is not called by a stored function or trigger. See Stored Routine Limitations, Stored Function Limitations and Trigger Limitations.
+
 
 - DB Diagram (for DB with max 20 tables)
 
