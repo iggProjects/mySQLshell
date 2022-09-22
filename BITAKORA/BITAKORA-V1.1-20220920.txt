@@ -16,6 +16,50 @@ IÑAKI - PENDIENTE VERSION 1.1 AL 20-09-2022
 - LOGOUT
   - clear all working areas (left, nav, right....)
 
+- MySql logs
+  - https://www.youtube.com/watch?v=GSDTZ76df3I
+
+  "SHOW VARIABLES LIKE '%log_file%';"
+
+- SQL history
+    - Display history of queries
+      - https://stackoverflow.com/questions/7818031/sql-command-to-display-history-of-queries
+      - https://stackoverflow.com/questions/650238/how-to-show-the-last-queries-executed-on-mysql
+
+      (SHOW VARIABLES LIKE 'general_%';)
+
+      For those blessed with MySQL >= 5.1.12, you can control this option globally at runtime:
+        EXECUTE:
+          1.- SET GLOBAL log_output = 'TABLE';
+          2.- SET GLOBAL general_log = 'ON';
+          Take a look at the table mysql.general_log
+          
+          If you prefer to output to a file instead of a table:
+
+          1.- SET GLOBAL log_output = "FILE"; the default.
+          2.- SET GLOBAL general_log_file = "/path/to/your/logfile.log";
+          3.- SET GLOBAL general_log = 'ON';
+
+    - How to enable the MySQL/MariaDB general query logs
+      - https://gist.github.com/joseluisq/40ec9169669aa1848492141fa6f57fcb
+          SET GLOBAL general_log_file='/var/log/mysql/mycustom.log';
+          SET GLOBAL log_output = 'FILE'; (or TABLE)
+          SET GLOBAL general_log = 'ON';
+          SHOW VARIABLES LIKE "general_log%";
+          SET GLOBAL general_log = 'OFF';
+
+    - Working with history
+      - https://dev.mysql.com/doc/mysql-shell/8.0/en/mysql-shell-working-with-history.html 
+      - https://mariadb.com/kb/en/writing-logs-into-tables/ 
+
+    - queries log file
+      - https://tableplus.com/blog/2018/10/how-to-show-queries-log-in-mysql.html
+        SET global general_log = 1; (active)
+        SET global log_output = 'table';
+        SET global general_log = 0; (inactive)
+
+      - https://www.youtube.com/watch?v=4haU7uAcRjs
+
 - ANALYZE, OPTIMIZE AND REPAIR TABLES
 
   - queries, example with db & globa_priv: 
@@ -23,7 +67,7 @@ IÑAKI - PENDIENTE VERSION 1.1 AL 20-09-2022
       - OPTIMIZE TABLE `db`, `global_priv`;
       - REPAIR TABLE `db`, `global_priv`;
 
-  - mysql index for table DB is corrupt... repair it 
+  - mysql "index for table DB is corrupt... repair it" 
     - https://stackoverflow.com/questions/57128891/how-repair-corrupt-xampp-mysql-user-table
 
     This is almost certainly a known bug in mariaDB (ie mySQL). See ApacheFriends.org for the description. Problem occurs after user password changes - often user root.
@@ -57,11 +101,9 @@ IÑAKI - PENDIENTE VERSION 1.1 AL 20-09-2022
     https://www.codegrepper.com/code-examples/whatever/mysqli%3A%3Aquery%28%29%3A+%28HY000%2F1034%29%3A+Index+for+table+%27global_priv%27+is+corrupt%3B+try+to+repair+it
         Run XAMPP Web Server
         Go to Folder\xampp\mysql\bin
-        Run mysql_upgrade.exe
-        REFRESH & ENJOY
+        Run mysql_upgrade.exe        
 
-
-  - 1030 error 176 read page with wrong checksum desde el manejador de la tabla aria
+  - "1030 error 176 read page with wrong checksum desde el manejador de la tabla aria"
     - https://stackoverflow.com/questions/60864367/1030-got-error-176-read-page-with-wrong-checksum-from-storage-engine-aria
 
 
@@ -72,7 +114,6 @@ IÑAKI - PENDIENTE VERSION 1.1 AL 20-09-2022
         in the mysql database enabling the changes to take effect without reloading or restarting mysql service.
       - https://www.interserver.net/tips/kb/mysql-flush-commands/
       - 
-
 
 
   - CREATE USER in Mariadb
@@ -87,6 +128,8 @@ IÑAKI - PENDIENTE VERSION 1.1 AL 20-09-2022
           - https://mariadb.com/kb/en/create-user/#account-names
             Account names have both a user name component and a host name component, and are specified as 'user_name'@'host_name'.
             The user name and host name may be unquoted, quoted as strings using double quotes (") or single quotes ('), or quoted as identifiers using backticks (`). You must use quotes when using special characters (such as a hyphen) or wildcard characters. If you quote, you must quote the user name and host name separately (for example 'user_name'@'host_name').
+
+    - examples:
 
 
     - https://www.digitalocean.com/community/tutorials/crear-un-nuevo-usuario-y-otorgarle-permisos-en-mysql-es
