@@ -21,8 +21,8 @@ https://stackoverflow.com/questions/18022809/how-to-solve-error-mysql-shutdown-u
 
   Instead, first try using the MySQL backup folder which is included with XAMPP. So do next steps:
 
-  0.- EN PHMYADMIN/CONFIG.INC.PHP, CAMBIAR CLAVE POR '' PARA USUARIO ROOT EN LOCALHOST, y poner "AllowNoPassword" true
-  1.- En /localhost/mysqlshell/config.servers hacer lo mismo
+  1.- EN PHMYADMIN/CONFIG.INC.PHP, CAMBIAR CLAVE POR '' PARA USUARIO ROOT EN LOCALHOST, y poner "AllowNoPassword" true
+      ( En /localhost/mysqlshell/config.servers hacer lo mismo )
   2.- Rename folder mysql/data to mysql/data_old
   3.- Make a copy of mysql/backup folder and name it as mysql/data
   4.- Copy all your database folders from mysql/data_old into mysql/data (except mysql, performance_schema, and phpmyadmin folders)

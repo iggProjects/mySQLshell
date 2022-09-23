@@ -21,7 +21,10 @@ IÑAKI - PENDIENTE VERSION 1.1 AL 20-09-2022
 
   "SHOW VARIABLES LIKE '%log_file%';"
 
-- SQL history
+- DROP DATABASES problems
+  - #1010 - Error eliminando la base de datos (No puedo borrar directorio '.\my_queries', error 41 "Directory not empty")  
+
+- SQL queries history files/tables
     - Display history of queries
       - https://stackoverflow.com/questions/7818031/sql-command-to-display-history-of-queries
       - https://stackoverflow.com/questions/650238/how-to-show-the-last-queries-executed-on-mysql
