@@ -245,7 +245,7 @@
 
         // CASE totRecords vs num_rec_init+15 or num_rec_init-15
 
-        if ( str_contains($_query, 'SELECT') || str_contains($_query, 'select') ) {   
+        if ( strpos($_query, 'SELECT') || strpos($_query, 'select') ) {   
             echo "<div id='pagination' class='pagination'>";
                 echo "<button class='select-btns' onclick='displayPage(\"1\")'>First</button>";                
                 echo "<button class='select-btns' onclick='displayPage(\"-1\")'>Previous</button>";
@@ -276,7 +276,7 @@
                 echo "<tr>
                 <td style='text-align:center; padding-right:10px;  color:green; '>$i → </td>";      
                 foreach ( $row as $col ) {
-                    if ( str_contains($_query, 'TABLES') ) {    
+                    if ( strpos($_query, 'TABLES') ) {    
                         echo "<td table-name= " . $col . " class='left-aside-btn display-fields' style='text-align:center;  color:#1a1aff; padding-left:3px; padding-right:3px;'>" .$col . "</td>";
                     } else {
                         echo "<td style='text-align:center;  color:#1a1aff; padding-left:3px; padding-right:3px; '>" .$col . "</td>";
