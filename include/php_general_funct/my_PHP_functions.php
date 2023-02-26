@@ -245,7 +245,9 @@
 
         // CASE totRecords vs num_rec_init+15 or num_rec_init-15        
 
-        if ( $thead_titles_array != null ) {
+        if ( $thead_titles_array === null ) {
+            
+        } else {
             //if ( str_contains($_query, 'SELECT') || str_contains($_query, 'select') ) {               
             if ( strpos($_query, 'SELECT') >=0 || strpos($_query, 'select') >= 0 ) {   
                 echo "<div id='pagination' class='pagination'>";
@@ -256,8 +258,8 @@
                     echo "&nbsp;&nbsp;&nbsp;&nbsp;<button class='select-btns' onclick='table_to_csv()'>Get CSV</button>";
                 echo "</div>";    
                 echo "<p id='actualPage' style='margin-top:-2px; font-size:12px;' page='" . $thead_titles_array['page'] . "' num_rec_init='" . $thead_titles_array['num_rec_init'] . "' totRecords='" . $thead_titles_array['totRecords'] . "' style='margin-top:5px;  margin-bottom:10px; text-align:center; font-size:12px; color:#990000'><span style='color:black;'>Total Records: " . number_format($thead_titles_array['totRecords']) . " | page: " . number_format($thead_titles_array['page']) . "</p>";          
-            }     
-        }    
+            }   
+        } 
 
         echo "<p style='color:blue;font-size:12px;text-align:center;'>QUERY</p>";
         echo "<p id='actualQuery' style='margin-top:0px; margin-bottom:10px; text-align:center; color:#990000'></span>$_query</p>";
