@@ -199,7 +199,8 @@
                 // Display query "show databases" in tag "display_right_aside"                 
                 document.getElementById('p-comment').innerHTML='DATABASES';        
                 // tag for show tables of DB selected                   
-                Fetch_js('display_right_aside','./include/AJAX_php_js/ajax_List_DB.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host'));
+                //Fetch_js('display_right_aside','./include/AJAX_php_js/ajax_ListTables.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host'));
+                //Fetch_js('display_right_aside','./include/AJAX_php_js/ajax_List_DB.php?host_numb=' + host_n + '&hostName='+table_param.getAttribute('host'));
 
             } else {
                 document.getElementById('html_div_nav_izq').innerHTML = ""; 
