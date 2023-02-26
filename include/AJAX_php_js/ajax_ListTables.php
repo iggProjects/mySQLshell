@@ -66,7 +66,7 @@ if ($route == 'display_data') { # display html data
             
     $query = $showtables_query;   
     // $query = "<span style='color:black;'>query:</span> \"" . $showtables_query . "\"";   
-    $divHtml .= displayTable($query,90,'',$resultado);
+    $divHtml .= displayTable($query,90,null,$resultado);
 
 } else { # display error msq
 

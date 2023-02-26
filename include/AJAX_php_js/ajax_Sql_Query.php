@@ -68,7 +68,7 @@ $dbpass = $cfg_s['Servers'][$host_numb]['password'];
 $dbcharset = 'utf8mb4';
 
 // IF to separate 'process' from 'sql' code
-if ( strpos($sql_query,'process') ) { 
+if ( strpos($sql_query,'process') >= 0 ) { 
 
     if ( $_REQUEST['process'] ) { 
         $process = $_REQUEST['process'];
@@ -150,7 +150,7 @@ if ( strpos($sql_query,'process') ) {
     $thead_titles = [];
     $jump = 15;
 
-    if( ( strpos($sql_query, 'SELECT') || strpos($sql_query, 'select') ) &&  strpos($sql_query, 'limit')  ) {    
+    if( ( strpos($sql_query, 'SELECT') >=0 || strpos($sql_query, 'select') >= 0 ) &&  strpos($sql_query, 'limit') >= 0  ) {    
         $sql_query = substr($sql_query, 0, strpos($sql_query, 'limit'));
     }    
 
@@ -159,7 +159,7 @@ if ( strpos($sql_query,'process') ) {
     if ( gettype($conex_db) === 'object' ) {
 
         // calculate record number from page selected    
-        if( $totRecords == 0 && ( strpos($sql_query, 'SELECT') || strpos($sql_query, 'select') ) ) {    
+        if( $totRecords == 0 && ( strpos($sql_query, 'SELECT') >= 0 || strpos($sql_query, 'select') >= 0 ) ) {    
             // $sql_query = substr($sql_query, 0, strpos($sql_query, 'limit'));
             $msg .= " | second sql query: " . $sql_query;
             // $count_query = substr($sql_query, 0, strpos($sql_query, 'limit'));
@@ -190,7 +190,8 @@ if ( strpos($sql_query,'process') ) {
 
         if ( $totRecords > 0 ) {  // queries type SELECT or select    
 
-            if ( strpos($sql_query, 'SELECT') || strpos($sql_query, 'select') ) {
+            if ( strpos($sql_query, 'SELECT') >= 0 || strpos($sql_query, 'select') >= 0 ) {    
+            #if ( strpos($sql_query, 'SELECT') || strpos($sql_query, 'select') ) {
                 // $sql_query = substr($sql_query, 0, strpos($sql_query, 'limit'));
                 $select_query = $sql_query . " limit $num_rec_init,$jump ";
             } else {
@@ -246,7 +247,7 @@ if ( strpos($sql_query,'process') ) {
     # HTML DATA FOR DIV
     if ($route == 'display_data') { # display html data   
 
-        if ( strpos($sql_query, 'SELECT') || strpos($sql_query, 'select') ) {   
+        if ( strpos($sql_query, 'SELECT') >= 0 || strpos($sql_query, 'select') >= 0 ) {   
             $thead_titles['page'] = $page;   
             $thead_titles['num_rec_init'] = $num_rec_init;
             $thead_titles['jump']  = $jump;    

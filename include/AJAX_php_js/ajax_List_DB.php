@@ -61,10 +61,12 @@ if ($route == 'display_data') { # display html data
 
     $query = $show_DB_query;   
     // $query = "<span style='color:black;'>query:</span> \"" . $show_DB_query . "\"";   
-    $divHtml .= displayTable($query,90,'',$resultado);
+    My_Log_Message ('====== FROM ajax_List_DB | query: ' . $query . ' display DB tables right aside: ' . print_r($resultado),$log_comments_path);
+    $divHtml .= displayTable($query,90,null,$resultado);
 
 } else { # display error msq
 
+    // My_Log_Message (' ******************  display DB tables right aside: ',$resultado);
     $divHtml = $error_msg;    
 
 }

@@ -243,22 +243,27 @@
 
     function displayTable($_query,$table_width,$thead_titles_array,$data_array){
 
-        // CASE totRecords vs num_rec_init+15 or num_rec_init-15
+        // CASE totRecords vs num_rec_init+15 or num_rec_init-15        
 
-        if ( strpos($_query, 'SELECT') || strpos($_query, 'select') ) {   
-            echo "<div id='pagination' class='pagination'>";
-                echo "<button class='select-btns' onclick='displayPage(\"1\")'>First</button>";                
-                echo "<button class='select-btns' onclick='displayPage(\"-1\")'>Previous</button>";
-                echo "<button class='select-btns' onclick='displayPage(\"+1\")'>Next</button>";                
-                echo "<button class='select-btns' onclick='displayPage(\"2\")'>Last</button>";
-                echo "&nbsp;&nbsp;&nbsp;&nbsp;<button class='select-btns' onclick='table_to_csv()'>Get CSV</button>";
-            echo "</div>";    
-            echo "<p id='actualPage' style='margin-top:-2px; font-size:12px;' page='" . $thead_titles_array['page'] . "' num_rec_init='" . $thead_titles_array['num_rec_init'] . "' totRecords='" . $thead_titles_array['totRecords'] . "' style='margin-top:5px;  margin-bottom:10px; text-align:center; font-size:12px; color:#990000'><span style='color:black;'>Total Records: " . number_format($thead_titles_array['totRecords']) . " | page: " . number_format($thead_titles_array['page']) . "</p>";          
-        }     
+        if ( $thead_titles_array != null ) {
+            //if ( str_contains($_query, 'SELECT') || str_contains($_query, 'select') ) {               
+            if ( strpos($_query, 'SELECT') >=0 || strpos($_query, 'select') >= 0 ) {   
+                echo "<div id='pagination' class='pagination'>";
+                    echo "<button class='select-btns' onclick='displayPage(\"1\")'>First</button>";                
+                    echo "<button class='select-btns' onclick='displayPage(\"-1\")'>Previous</button>";
+                    echo "<button class='select-btns' onclick='displayPage(\"+1\")'>Next</button>";                
+                    echo "<button class='select-btns' onclick='displayPage(\"2\")'>Last</button>";
+                    echo "&nbsp;&nbsp;&nbsp;&nbsp;<button class='select-btns' onclick='table_to_csv()'>Get CSV</button>";
+                echo "</div>";    
+                echo "<p id='actualPage' style='margin-top:-2px; font-size:12px;' page='" . $thead_titles_array['page'] . "' num_rec_init='" . $thead_titles_array['num_rec_init'] . "' totRecords='" . $thead_titles_array['totRecords'] . "' style='margin-top:5px;  margin-bottom:10px; text-align:center; font-size:12px; color:#990000'><span style='color:black;'>Total Records: " . number_format($thead_titles_array['totRecords']) . " | page: " . number_format($thead_titles_array['page']) . "</p>";          
+            }     
+        }    
+
         echo "<p style='color:blue;font-size:12px;text-align:center;'>QUERY</p>";
         echo "<p id='actualQuery' style='margin-top:0px; margin-bottom:10px; text-align:center; color:#990000'></span>$_query</p>";
         
-        $i=1;        
+        $i=$thead_titles_array['num_rec_init'] + 1;
+        #$i=1;        
         echo "<table id='sql-table-result' style='max-width: $table_width%;'>";          
         // echo "<table style='max-width: $table_width%; overflow:scroll;'>";          
         
@@ -276,10 +281,10 @@
                 echo "<tr>
                 <td style='text-align:center; padding-right:10px;  color:green; '>$i → </td>";      
                 foreach ( $row as $col ) {
-                    if ( strpos($_query, 'TABLES') ) {    
+                    if ( strpos($_query, 'TABLES') >= 0 ) {    
                         echo "<td table-name= " . $col . " class='left-aside-btn display-fields' style='text-align:center;  color:#1a1aff; padding-left:3px; padding-right:3px;'>" .$col . "</td>";
                     } else {
-                        echo "<td style='text-align:center;  color:#1a1aff; padding-left:3px; padding-right:3px; '>" .$col . "</td>";
+                        echo "<td style='text-align:center;  color:#1a1aff; padding-left:3px; padding-right:3px; '>" . $col . "</td>";
                     }    
                 }
                 echo "</tr>";
