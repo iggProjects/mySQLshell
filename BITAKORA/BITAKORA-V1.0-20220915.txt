@@ -20,6 +20,8 @@ IÑAKI - PUNTOS PENDIENTES VERSION 1.0 AL 15-09-2022
       - https://www.geeksforgeeks.org/php-str_contains-function/
       - https://www.php.net/manual/en/function.strpos.php
 
+- PHP Deprecated --> number_format(): Passing null to parameter #1 ($num) of type float is deprecated in C:\xampp\htdocs\mySQLshell\include\php_general_funct\my_PHP_functions.php on line 256
+
 - Update action of clear areas when working in "queries area" mode and move from one table (db) to another    
 
 - ask to confirm "yes or no" in Backup and Restore buttons   
