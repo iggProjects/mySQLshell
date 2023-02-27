@@ -51,6 +51,12 @@ if ( $_REQUEST['totRecords'] ) {
     $totRecords = 0;
 }
 
+if ( $_REQUEST['process'] ) { 
+    $process = $_REQUEST['process'];
+} else {
+    $process = false;
+}      
+
 /*
 if ( $_REQUEST['comment'] ) {
     $comment = $_REQUEST['comment']; 
@@ -69,14 +75,16 @@ $dbcharset = 'utf8mb4';
 
 My_Log_Message ('=== ajaxSql_Query ====',$log_comments_path);
 
-// IF to separate 'process' from 'sql' code
-if ( strpos($sql_query,'process') ) { 
-#if ( strpos($sql_query,'process') >= 0 ) {     
 
+// IF to separate 'process' from 'sql' code
+if ( $process ) { 
+#if ( strpos($sql_query,'process') ) {     
+#if ( strpos($sql_query,'process') >= 0 ) {     
+/*
     if ( $_REQUEST['process'] ) { 
         $process = $_REQUEST['process'];
     }      
-
+*/
     My_Log_Message ('=== FROM ajaxSql_Query.php: I am in process option',$log_comments_path);
     
     switch ($process) {
@@ -155,7 +163,8 @@ if ( strpos($sql_query,'process') ) {
     $thead_titles = [];
     $jump = 15;
 
-    if( ( strpos($sql_query, 'SELECT') >=0 || strpos($sql_query, 'select') >= 0 ) &&  strpos($sql_query, 'limit') >= 0  ) {    
+    if( ( strpos($sql_query, 'SELECT') >=0 || strpos($sql_query, 'select') >= 0 ) &&  strpos($sql_query, 'limit') ) {            
+    #if( ( strpos($sql_query, 'SELECT') >=0 || strpos($sql_query, 'select') >= 0 ) &&  strpos($sql_query, 'limit') >= 0  ) {                
         $sql_query = substr($sql_query, 0, strpos($sql_query, 'limit'));
     }    
 

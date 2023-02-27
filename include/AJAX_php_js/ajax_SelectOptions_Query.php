@@ -65,9 +65,15 @@ if ($route == 'display_data') { # display html data
     //$divHtml  = "<p>\$conex_db is: " . gettype($conex_db) . " | var_dump(\$conex_db)</p>";
     //$divHtml .= "<pre>" . var_dump($conex_db) . "</pre>";   
             
-    $query = "<span style='color:black;'>QUERY<br></span> \"" . $sql_query . "\"";       
-    My_Log_Message ("queries options data -> " . print_r($data_array),$log_comments_path);
-    $divHtml .= displaySelect($resultado);
+    // $query = "<span style='color:black;'>QUERY<br></span> \"" . $sql_query . "\"";       
+    My_Log_Message ("queries options data -> " . print_r($resultado),$log_comments_path);
+    #My_Log_Message ("queries options data -> " . print_r($data_array),$log_comments_path);
+    if ( strpos($sql_query,'favourite') ) {
+        $divHtml .= displaySelect('fav',$resultado);
+    } else {
+        $divHtml .= displaySelect('std',$resultado);
+    }
+    //$divHtml .= displaySelect($resultado);
 
 } else { # display error msq
 

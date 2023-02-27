@@ -228,11 +228,16 @@
 
     }
 
-    function displaySelect($data_array){
+    function displaySelect($sel,$data_array){
 
         // CREATE SELECT OPTIONS FOR 'standard_queries'
+        if ( $sel == 'std' ) {
+            $sel = "Std Query";
+        } else {
+            $sel = "Fav Query";
+        }
         echo "<select class='servers_List' name='servers_List' id='serverList'>    
-            <option class='queryOpt'  value='' selected>Sel Std Query</option>";
+            <option class='queryOpt'  value='' selected>" . $sel . "</option>";
             for ( $k=0; $k < count($data_array); $k++ ) {                         
                 echo "<option class='queryOpt'  title='" . $data_array[$k]['comment'] . "' host_numb=''  value='" . $data_array[$k]['query'] . "' >" . $data_array[$k]['btn_name'] . "</option>"; 
             }
