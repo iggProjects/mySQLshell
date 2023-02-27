@@ -243,7 +243,10 @@
 
     function displayTable($_query,$table_width,$thead_titles_array,$data_array){
 
-        // CASE totRecords vs num_rec_init+15 or num_rec_init-15        
+        // CASE totRecords vs num_rec_init+15 or num_rec_init-15  
+        $log_comments_path = "../../assets/log-files/log_comments.log";
+        #My_Log_Message ('=== FROM displayTable: $thead_titles_array: '  . $thead_titles_array['page'] . ' | ' . $thead_titles_array['num_rec_init']  . ' | ' . $thead_titles_array['totRecords'],$log_comments_path);      
+        #My_Log_Message ('=== FROM displayTable: $thead_titles_array: '  . print_r($thead_titles_array),$log_comments_path);      
 
         if ( $thead_titles_array === null ) {
             

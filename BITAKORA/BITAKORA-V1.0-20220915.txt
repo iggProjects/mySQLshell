@@ -15,6 +15,8 @@ IÑAKI - PUNTOS PENDIENTES VERSION 1.0 AL 15-09-2022
 
 - README
 
+- "sql_area" : check previous. next oprtions in displayTable
+
 - index.php --> "process" event --- call execute_query() js function in main_functions.js ---> ajax_Sql_Query.php
 
 - caso str_contains (php 8) buscar el equivalente en php 7.4

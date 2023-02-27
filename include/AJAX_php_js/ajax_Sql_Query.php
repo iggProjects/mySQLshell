@@ -67,13 +67,18 @@ $dbuser  = $cfg_s['Servers'][$host_numb]['user'];
 $dbpass = $cfg_s['Servers'][$host_numb]['password'];
 $dbcharset = 'utf8mb4';
 
+My_Log_Message ('=== ajaxSql_Query ====',$log_comments_path);
+
 // IF to separate 'process' from 'sql' code
-if ( strpos($sql_query,'process') >= 0 ) { 
+if ( strpos($sql_query,'process') ) { 
+#if ( strpos($sql_query,'process') >= 0 ) {     
 
     if ( $_REQUEST['process'] ) { 
         $process = $_REQUEST['process'];
     }      
 
+    My_Log_Message ('=== FROM ajaxSql_Query.php: I am in process option',$log_comments_path);
+    
     switch ($process) {
         case 'backup':
 
@@ -136,7 +141,7 @@ if ( strpos($sql_query,'process') >= 0 ) {
 
 } else {
     
-    $msg = 'FROM Sql_Query --> First sql_query: ' . $_REQUEST['sql_query'] . ' | ' . ' HOST number: ' . $_REQUEST['host_numb'];
+    $msg = 'FROM ajax_Sql_Query.php --> First sql_query: ' . $_REQUEST['sql_query'] . ' | ' . ' HOST number: ' . $_REQUEST['host_numb'];
     $msg .= ' | hostName: ' . $_REQUEST['hostName'] .  ' | user: ' . $dbuser . ' | pass: ***** | page: ' . $page  . ' | ' . $num_rec_init . ' | ' . $totRecords;
 
     My_Log_Message ($msg,$log_comments_path);
