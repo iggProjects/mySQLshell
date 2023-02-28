@@ -156,8 +156,6 @@ IÑAKI - PENDIENTE VERSION 1.1 AL 20-09-2022
 
 - DB Diagram (for DB with max 20 tables)
 
-
-
 - simple version of LOGIN multi sql users (without mail, forgot key, first time...)  
 
   - textarea with type like password
