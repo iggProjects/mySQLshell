@@ -15,6 +15,14 @@ IÑAKI - PUNTOS PENDIENTES VERSION 1.0 AL 27-02-2023
 
 - README
 
+- MySQL first pasword for user root
+  - https://dev.mysql.com/doc/refman/8.0/en/default-privileges.html
+  - https://www.ibm.com/docs/en/spectrum-lsf-rtm/10.2.0?topic=ssl-configuring-default-root-password-mysqlmariadb
+  - https://stackoverflow.com/questions/55971012/how-to-set-the-mysql-root-password-for-the-first-time
+    If you have never set a root password for MySQL, the server does not require a password at all for connecting as root. 
+    To set up a root password for the first time, use the mysqladmin command at the shell prompt as follows:
+      --> mysqladmin -u root password newpass
+
 - ask to confirm "yes or no" in Backup and Restore buttons   
   - https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_confirm3
 
