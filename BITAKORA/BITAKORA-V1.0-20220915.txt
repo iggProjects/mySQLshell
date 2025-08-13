@@ -1,4 +1,4 @@
-IÑAKI - DARREN ( pendiente para version 1.0 )
+IÑAKI ( pendiente para version 1.0 )
 
   1.- LOGIN
   2.- HELP ERRORES
