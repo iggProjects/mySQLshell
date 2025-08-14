@@ -1,4 +1,4 @@
-PUNTOS
+PUNTOS PENDIENtes
 
 0.- respaldos periódicos -> batch
     - https://ubuntu.com/server/docs/backups-shell-scripts
