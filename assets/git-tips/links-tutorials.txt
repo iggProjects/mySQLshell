@@ -1,4 +1,10 @@
 Git
+
+   holamundo -> https://www.youtube.com/watch?v=VdGzPZ31ts8 
+   David Mahler -> https://www.youtube.com/watch?v=uR6G2v_WsRA
+                -> https://www.youtube.com/watch?v=FyAAIHHClqI
+                -> https://www.youtube.com/watch?v=Gg4bLk8cGNo
+
    https://git-scm.com/	
 
    https://www.digitalocean.com/community/tutorials/how-to-contribute-to-open-source-getting-started-with-git
